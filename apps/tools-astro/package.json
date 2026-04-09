@@ -1,0 +1,29 @@
+{
+  "name": "@al/tools-astro",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev --port 3001",
+    "build": "astro build",
+    "start": "astro preview",
+    "lint": "eslint src",
+    "typecheck": "astro check"
+  },
+  "dependencies": {
+    "astro": "^6.1.5",
+    "@astrojs/react": "^4.2.1",
+    "@astrojs/tailwind": "^5.1.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "@al/ui": "workspace:*",
+    "@al/analytics": "workspace:*",
+    "@al/content": "workspace:*"
+  },
+  "devDependencies": {
+    "@al/config-tsconfig": "workspace:*",
+    "@al/config-eslint": "workspace:*",
+    "@types/react": "^19.1.1",
+    "tailwindcss": "^4.1.3",
+    "typescript": "^5.8.3"
+  }
+}

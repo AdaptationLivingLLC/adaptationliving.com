@@ -1,0 +1,13 @@
+{
+  "name": "@al/config-tsconfig",
+  "version": "0.0.1",
+  "private": true,
+  "files": ["*.json"],
+  "exports": {
+    "./base": "./base.json",
+    "./nextjs": "./nextjs.json",
+    "./astro": "./astro.json",
+    "./svelte": "./svelte.json",
+    "./vite": "./vite.json"
+  }
+}

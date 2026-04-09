@@ -1,0 +1,70 @@
+/* ─── Brand Design Tokens ────────────────────────────────────────────────── */
+/* Sourced from legacy adaptationliving.com CSS variables — canonical source */
+
+@theme {
+  /* Colors */
+  --color-bg-dark:      #0a0a0a;
+  --color-bg-card:      rgba(20, 20, 20, 0.75);
+  --color-bg-card-strong: rgba(20, 20, 20, 0.95);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+
+  --color-primary:      #ffffff;
+  --color-accent:       #e74c3c;
+  --color-accent-glow:  rgba(231, 76, 60, 0.15);
+  --color-gold:         #d4af37;
+  --color-gold-glow:    rgba(212, 175, 55, 0.4);
+
+  --color-text-main:    #ffffff;
+  --color-text-muted:   #cccccc;
+  --color-text-dim:     #aaaaaa;
+
+  /* Typography */
+  --font-display: 'Cinzel', serif;
+  --font-body:    'Inter', sans-serif;
+
+  /* Transitions */
+  --transition-default: all 0.3s ease;
+
+  /* Spacing */
+  --navbar-height: 80px;
+
+  /* Glass morphism */
+  --glass-blur: blur(12px);
+  --glass-blur-light: blur(8px);
+}
+
+/* ─── Utility Classes ─────────────────────────────────────────────────────── */
+
+@layer utilities {
+  .font-display    { font-family: var(--font-display); }
+  .font-body       { font-family: var(--font-body); }
+
+  .glass {
+    background: var(--color-bg-card);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--color-glass-border);
+  }
+
+  .glass-strong {
+    background: var(--color-bg-card-strong);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--color-glass-border);
+  }
+
+  .text-gold    { color: var(--color-gold); }
+  .text-accent  { color: var(--color-accent); }
+  .text-muted   { color: var(--color-text-muted); }
+  .text-dim     { color: var(--color-text-dim); }
+
+  .glow-gold {
+    box-shadow: 0 0 20px var(--color-gold-glow);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 20px var(--color-accent-glow);
+  }
+
+  .navbar-offset {
+    padding-top: var(--navbar-height);
+  }
+}

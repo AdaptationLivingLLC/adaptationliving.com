@@ -1,0 +1,12 @@
+{
+  "name": "@al/auth",
+  "version": "0.0.1",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@al/config-tsconfig": "workspace:*",
+    "typescript": "^5.8.3"
+  }
+}

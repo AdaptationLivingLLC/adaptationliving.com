@@ -1,0 +1,13 @@
+{
+  "name": "@al/vanilla-fundamentals",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite --port 3004",
+    "build": "vite build",
+    "start": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.1"
+  }
+}
