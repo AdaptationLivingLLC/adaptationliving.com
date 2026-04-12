@@ -1,15 +1,5 @@
 import type { Metadata } from "next";
-import {
-  Bot,
-  Code,
-  Facebook,
-  Github,
-  GraduationCap,
-  Linkedin,
-  Mail,
-  Phone,
-  Twitter,
-} from "lucide-react";
+import { Bot, Code, GraduationCap, Mail, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
   title:
@@ -293,50 +283,6 @@ export default function HomePage() {
       />
 
       <main>
-        {/* ══════════════════════════════════════════
-            NAVIGATION
-            ══════════════════════════════════════════ */}
-        <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-[5%] py-6 bg-gradient-to-b from-black/80 to-transparent backdrop-blur-sm">
-          <a href="/" className="font-display text-lg font-bold text-white tracking-wide">
-            ADAPTATION LIVING
-            <span className="text-text-muted text-xs ml-2 font-display tracking-widest">
-              LLC
-            </span>
-          </a>
-          <div className="flex gap-8 items-center">
-            <a
-              href="/"
-              className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all hidden sm:inline"
-            >
-              Home
-            </a>
-            <a
-              href="/services"
-              className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all hidden sm:inline"
-            >
-              Services
-            </a>
-            <a
-              href="/services"
-              className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all hidden md:inline"
-            >
-              Pricing
-            </a>
-            <a
-              href="/contact"
-              className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all hidden md:inline"
-            >
-              Contact
-            </a>
-            <a
-              href="/intake"
-              className="text-sm uppercase tracking-widest border border-white px-5 py-2 rounded hover:bg-white hover:text-bg-dark transition-all"
-            >
-              Start Project
-            </a>
-          </div>
-        </nav>
-
         {/* ══════════════════════════════════════════
             HERO
             ══════════════════════════════════════════ */}
@@ -817,65 +763,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ══════════════════════════════════════════
-            FOOTER
-            ══════════════════════════════════════════ */}
-        <footer className="bg-black py-16 px-8 text-center border-t border-glass-border">
-          <div className="flex justify-center gap-6 mb-8">
-            <a href="#" className="text-text-muted hover:text-accent transition-all">
-              <Twitter className="w-6 h-6" />
-            </a>
-            <a href="#" className="text-text-muted hover:text-accent transition-all">
-              <Facebook className="w-6 h-6" />
-            </a>
-            <a href="#" className="text-text-muted hover:text-accent transition-all">
-              <Github className="w-6 h-6" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/brandon-bible-7b78b2393"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-text-muted hover:text-accent transition-all"
-            >
-              <Linkedin className="w-6 h-6" />
-            </a>
-          </div>
-
-          {/* Government Credentials */}
-          <div className="mx-auto max-w-3xl py-8 border-t border-white/5 text-white/40 text-xs tracking-wider leading-relaxed">
-            <div className="uppercase font-semibold text-white/60 mb-2">
-              Adaptation Living LLC &bull; Government Services Division
-            </div>
-            <span>SAM.gov Registered</span> &bull;{" "}
-            <span>CAGE: 95WK4</span> &bull;{" "}
-            <span>UEI: J3XGTRT7DYU5</span> &bull;{" "}
-            <span>
-              NAICS: 541511 &bull; 541512 (Custom Computer Programming &bull;
-              Computer Systems Design)
-            </span>
-            <div className="mt-4">
-              <a
-                href="/legal"
-                className="inline-block px-3 py-1 border-2 border-accent rounded font-bold tracking-wider text-white hover:bg-white/10 transition-all"
-              >
-                Privacy Policy / Legal Notice
-              </a>
-            </div>
-          </div>
-
-          <div className="text-neutral-600 text-sm mt-8">
-            &copy; 2021–2026 Adaptation Living LLC. All rights reserved. |
-            Phoenix, AZ
-            <br />
-            <a
-              href="mailto:info@adaptationliving.com"
-              className="text-text-muted hover:text-accent"
-            >
-              info@adaptationliving.com
-            </a>{" "}
-            | 623-219-1237
-          </div>
-        </footer>
       </main>
     </>
   );
