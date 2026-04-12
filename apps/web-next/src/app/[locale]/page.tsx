@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Bot, Code, GraduationCap, Mail, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
-  title:
-    "AI Automation & Custom Web Development Phoenix AZ | Veteran-Owned | Adaptation Living LLC",
+  title: {
+    absolute:
+      "AI Automation & Web Dev Phoenix AZ | Adaptation Living LLC",
+  },
   description:
-    "Veteran-owned AI automation studio in Phoenix, AZ. Custom web development, GoHighLevel CRM setup, AI agents, workflow automation, and app development for small businesses. VOSB — Adaptation Living LLC.",
+    "Veteran-owned AI automation studio in Phoenix, AZ. Web development, CRM setup, AI agents & workflow automation for small businesses.",
   keywords: [
     "AI automation services Phoenix AZ",
     "veteran owned web development Phoenix",
@@ -19,9 +22,9 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title:
-      "AI Automation & Custom Web Development Phoenix AZ | Veteran-Owned | Adaptation Living LLC",
+      "AI Automation & Web Dev Phoenix AZ | Adaptation Living LLC",
     description:
-      "Veteran-owned AI automation studio in Phoenix, AZ. Custom web development, GoHighLevel CRM setup, AI agents, workflow automation, and app development for small businesses.",
+      "Veteran-owned AI automation studio in Phoenix, AZ. Web development, CRM setup, AI agents & workflow automation for small businesses.",
     url: "https://adaptationliving.com",
     images: [
       {
@@ -32,17 +35,17 @@ export const metadata: Metadata = {
   },
   twitter: {
     title:
-      "AI Automation & Custom Web Development Phoenix AZ | Veteran-Owned | Adaptation Living LLC",
+      "AI Automation & Web Dev Phoenix AZ | Adaptation Living LLC",
     description:
-      "Veteran-owned AI automation studio in Phoenix, AZ. Custom web development, GoHighLevel CRM, AI agents, and workflow automation for small businesses.",
+      "Veteran-owned AI automation studio in Phoenix, AZ. Web development, CRM setup, AI agents & workflow automation for small businesses.",
     images: ["https://adaptationliving.com/images/banner.jpg"],
   },
   alternates: {
-    canonical: "https://adaptationliving.com/",
+    canonical: "https://adaptationliving.com",
     languages: {
-      en: "https://adaptationliving.com/",
+      en: "https://adaptationliving.com",
       es: "https://adaptationliving.com/es",
-      "x-default": "https://adaptationliving.com/",
+      "x-default": "https://adaptationliving.com",
     },
   },
 };
@@ -282,7 +285,7 @@ export default function HomePage() {
         }}
       />
 
-      <main>
+      <main id="main-content">
         {/* ══════════════════════════════════════════
             HERO
             ══════════════════════════════════════════ */}
@@ -295,6 +298,7 @@ export default function HomePage() {
             playsInline
             preload="metadata"
             poster="/images/banner.jpg"
+            aria-hidden="true"
             className="absolute inset-0 w-full h-full object-cover -z-10 opacity-30"
           >
             <source src="/assets/video/hero-bg.mp4" type="video/mp4" />
@@ -575,16 +579,18 @@ export default function HomePage() {
                 highest.
               </p>
               <a
-                href="/lifesaver"
+                href="/services"
                 className="px-8 py-4 text-sm uppercase tracking-widest font-semibold border-2 border-accent bg-accent text-white hover:bg-transparent hover:text-accent transition-all inline-block"
               >
-                See the Case Study
+                View Our Services
               </a>
             </div>
             <div>
-              <img
+              <Image
                 src="/images/ls2025-seal-front.png"
                 alt="LS-2025 Veteran Suicide Prevention Device — Built by Adaptation Living LLC, Phoenix AZ"
+                width={800}
+                height={800}
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
             </div>

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function LegalPage() {
   return (
-    <main className="navbar-offset">
+    <main id="main-content" className="navbar-offset">
       <BreadcrumbSchema items={[{ name: "Legal", path: "/legal" }]} />
       <article className="max-w-[800px] mx-auto px-8 pt-16 pb-24 prose prose-invert prose-sm">
         <h1 className="font-display text-4xl font-bold mb-8 text-white">
@@ -58,11 +58,35 @@ export default function LegalPage() {
           3. Third-Party Services
         </h2>
         <p className="text-text-muted leading-relaxed">
-          We use GoHighLevel for CRM and client communications, Google
-          Analytics for website analytics, and Stripe for payment processing.
-          Each of these services has its own privacy policy governing the data
-          they process on our behalf.
+          We use the following third-party services to operate our platform.
+          Each processes data on our behalf under their own privacy policies:
         </p>
+        <ul className="text-text-muted leading-relaxed mt-4 space-y-2 list-disc list-inside">
+          <li>
+            <strong className="text-white">GoHighLevel</strong> — CRM, client
+            communications, form submissions, and appointment scheduling.
+          </li>
+          <li>
+            <strong className="text-white">Google Tag Manager &amp; Google Analytics</strong> — Website
+            analytics, traffic analysis, and conversion tracking.
+          </li>
+          <li>
+            <strong className="text-white">Meta (Facebook) Pixel</strong> — Conversion tracking and
+            advertising audience optimization.
+          </li>
+          <li>
+            <strong className="text-white">Microsoft Clarity</strong> — Session
+            recording, heatmaps, and user behavior analytics.
+          </li>
+          <li>
+            <strong className="text-white">Stripe</strong> — Secure payment
+            processing for invoices and service agreements.
+          </li>
+          <li>
+            <strong className="text-white">Vercel</strong> — Website hosting and
+            content delivery.
+          </li>
+        </ul>
 
         <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-white">
           4. Data Retention

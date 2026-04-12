@@ -7,10 +7,9 @@ import {
   pageTwitter,
 } from "../../../lib/seo";
 
-const title =
-  "Services & Pricing — AI Automation, Web Development, CRM Setup | Phoenix AZ";
+const title = "Services & Pricing";
 const description =
-  "AI automation, GoHighLevel CRM setup, custom web development, training, and consulting. Clear pricing tiers from $1,200 to $6,500+. Veteran-owned studio in Phoenix, AZ.";
+  "AI automation, GoHighLevel CRM, web development, training & consulting. Pricing from $1,200-$6,500+. Veteran-owned, Phoenix AZ.";
 
 export const metadata: Metadata = {
   title,
@@ -60,7 +59,7 @@ function PricingCard({ name, price, period, features, highlighted }: Tier) {
 
 export default function ServicesPage() {
   return (
-    <main className="navbar-offset">
+    <main id="main-content" className="navbar-offset">
       <BreadcrumbSchema items={[{ name: "Services & Pricing", path: "/services" }]} />
 
       {/* Service Schema — structured data for each offering */}

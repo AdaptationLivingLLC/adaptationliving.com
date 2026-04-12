@@ -8,9 +8,9 @@ import {
   pageTwitter,
 } from "../../../lib/seo";
 
-const title = "Start Your Project — AI Automation & Web Development Phoenix AZ";
+const title = "Start Your Project";
 const description =
-  "Tell us about your project. AI automation, custom web development, GoHighLevel CRM setup, and more. Veteran-owned studio in Phoenix, AZ. Free discovery call.";
+  "Tell us about your project. AI automation, web development, CRM setup & more. Veteran-owned studio, Phoenix AZ. Free discovery call.";
 
 export const metadata: Metadata = {
   title,
@@ -24,7 +24,7 @@ export default function IntakePage() {
   const formId = process.env.NEXT_PUBLIC_GHL_FORM_ID;
 
   return (
-    <main className="navbar-offset">
+    <main id="main-content" className="navbar-offset">
       <BreadcrumbSchema items={[{ name: "Start Your Project", path: "/intake" }]} />
       {/* Hero */}
       <section className="max-w-[900px] mx-auto px-8 pt-16 pb-8 text-center">

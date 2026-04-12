@@ -151,6 +151,11 @@ export default async function LocaleLayout({
       </head>
       <body>
         <IntlProvider locale={locale} messages={messages}>
+          {/* Skip to main content for accessibility */}
+          <a href="#main-content" className="skip-nav">
+            Skip to main content
+          </a>
+
           {/* Site-wide Navigation */}
           <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-[5%] py-6 bg-gradient-to-b from-black/80 to-transparent backdrop-blur-sm">
             <a href="/" className="font-display text-lg font-bold text-white tracking-wide">

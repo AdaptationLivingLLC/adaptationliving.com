@@ -8,9 +8,9 @@ import {
   pageTwitter,
 } from "../../../lib/seo";
 
-const title = "Contact Adaptation Living LLC — Phoenix AZ AI Automation Studio";
+const title = "Contact Us";
 const description =
-  "Contact Adaptation Living LLC. Call 623-219-1237, email info@adaptationliving.com, or book a free discovery call. Veteran-owned AI automation studio in Phoenix, AZ.";
+  "Contact Adaptation Living LLC. Call 623-219-1237 or book a free discovery call. Veteran-owned AI studio, Phoenix AZ.";
 
 export const metadata: Metadata = {
   title,
@@ -24,7 +24,7 @@ export default function ContactPage() {
   const calendarId = process.env.NEXT_PUBLIC_GHL_CALENDAR_ID;
 
   return (
-    <main className="navbar-offset">
+    <main id="main-content" className="navbar-offset">
       <BreadcrumbSchema items={[{ name: "Contact", path: "/contact" }]} />
       <section className="max-w-[1200px] mx-auto px-8 pt-16 pb-24">
         <div className="text-center mb-16">
