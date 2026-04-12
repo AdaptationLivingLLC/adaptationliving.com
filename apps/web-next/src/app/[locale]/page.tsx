@@ -10,7 +10,6 @@ import {
   Phone,
   Twitter,
 } from "lucide-react";
-import { NavBar } from "@al/ui/components/navbar";
 
 export const metadata: Metadata = {
   title:
@@ -297,7 +296,46 @@ export default function HomePage() {
         {/* ══════════════════════════════════════════
             NAVIGATION
             ══════════════════════════════════════════ */}
-        <NavBar />
+        <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-[5%] py-6 bg-gradient-to-b from-black/80 to-transparent backdrop-blur-sm">
+          <a href="/" className="font-display text-lg font-bold text-white tracking-wide">
+            ADAPTATION LIVING
+            <span className="text-text-muted text-xs ml-2 font-display tracking-widest">
+              LLC
+            </span>
+          </a>
+          <div className="flex gap-8 items-center">
+            <a
+              href="/"
+              className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all hidden sm:inline"
+            >
+              Home
+            </a>
+            <a
+              href="/services"
+              className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all hidden sm:inline"
+            >
+              Services
+            </a>
+            <a
+              href="/services"
+              className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all hidden md:inline"
+            >
+              Pricing
+            </a>
+            <a
+              href="/contact"
+              className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all hidden md:inline"
+            >
+              Contact
+            </a>
+            <a
+              href="/intake"
+              className="text-sm uppercase tracking-widest border border-white px-5 py-2 rounded hover:bg-white hover:text-bg-dark transition-all"
+            >
+              Start Project
+            </a>
+          </div>
+        </nav>
 
         {/* ══════════════════════════════════════════
             HERO
