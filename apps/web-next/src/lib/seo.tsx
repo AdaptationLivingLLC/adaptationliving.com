@@ -53,7 +53,7 @@ export function pageOg(title: string, description: string, path: string) {
     url: `${baseUrl}${path}`,
     images: [
       {
-        url: `${baseUrl}/images/banner.svg`,
+        url: `${baseUrl}/images/banner.jpg`,
         width: 1200,
         height: 630,
         alt: "Adaptation Living LLC — AI Automation and Web Development Studio in Phoenix AZ",
@@ -67,6 +67,6 @@ export function pageTwitter(title: string, description: string) {
     card: "summary_large_image" as const,
     title,
     description,
-    images: [`${baseUrl}/images/banner.svg`],
+    images: [`${baseUrl}/images/banner.jpg`],
   };
 }

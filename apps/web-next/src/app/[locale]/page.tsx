@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     url: "https://adaptationliving.com",
     images: [
       {
-        url: "https://adaptationliving.com/images/banner.svg",
+        url: "https://adaptationliving.com/images/banner.jpg",
         alt: "Adaptation Living LLC — AI Automation and Web Development Studio in Phoenix AZ",
       },
     ],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
       "AI Automation & Custom Web Development Phoenix AZ | Veteran-Owned | Adaptation Living LLC",
     description:
       "Veteran-owned AI automation studio in Phoenix, AZ. Custom web development, GoHighLevel CRM, AI agents, and workflow automation for small businesses.",
-    images: ["https://adaptationliving.com/images/banner.svg"],
+    images: ["https://adaptationliving.com/images/banner.jpg"],
   },
   alternates: {
     canonical: "https://adaptationliving.com/",
@@ -72,7 +72,7 @@ export default function HomePage() {
             alternateName: "Adaptation Living",
             url: "https://adaptationliving.com",
             logo: "https://adaptationliving.com/images/adaptation-seal-icon.svg",
-            image: "https://adaptationliving.com/images/banner.svg",
+            image: "https://adaptationliving.com/images/banner.jpg",
             description:
               "Veteran-owned AI automation studio in Phoenix, AZ. Custom web development, GoHighLevel CRM setup, AI agents, workflow automation, and app development for small businesses.",
             foundingDate: "2021",
@@ -302,7 +302,19 @@ export default function HomePage() {
         {/* ══════════════════════════════════════════
             HERO
             ══════════════════════════════════════════ */}
-        <header className="min-h-screen flex flex-col justify-center items-center text-center px-4">
+        <header className="relative min-h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+          {/* Background timelapse video */}
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/images/banner.jpg"
+            className="absolute inset-0 w-full h-full object-cover -z-10 opacity-30"
+          >
+            <source src="/assets/video/hero-bg.mp4" type="video/mp4" />
+          </video>
           <div className="flex gap-6 mb-8 font-display text-base text-accent uppercase tracking-[3px]">
             <span>AI Automation</span>
             <span>&bull;</span>
@@ -587,7 +599,7 @@ export default function HomePage() {
             </div>
             <div>
               <img
-                src="/images/adaptation-seal-icon.svg"
+                src="/images/ls2025-seal-front.png"
                 alt="LS-2025 Veteran Suicide Prevention Device — Built by Adaptation Living LLC, Phoenix AZ"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
