@@ -4,6 +4,7 @@ import { Cinzel, Inter } from "next/font/google";
 import { hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Clarity } from "@al/analytics/clarity";
+import { GoogleAnalytics } from "@al/analytics/ga4";
 import { GoogleTagManager } from "@al/analytics/gtm";
 import { MetaPixel } from "@al/analytics/meta-pixel";
 import { IntlProvider, locales } from "@al/i18n";
@@ -116,7 +117,8 @@ export default async function LocaleLayout({
   }
 
   const messages = await getMessages();
-  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID ?? "GTM-MJ4PX9C3";
+  const gaId = process.env.NEXT_PUBLIC_GA4_ID;
   const fbPixelId = process.env.NEXT_PUBLIC_FB_PIXEL_ID;
   const clarityId = process.env.NEXT_PUBLIC_CLARITY_ID;
 
@@ -142,6 +144,7 @@ export default async function LocaleLayout({
 
         {/* Analytics */}
         {gtmId && <GoogleTagManager gtmId={gtmId} />}
+        {gaId && <GoogleAnalytics gaId={gaId} />}
         {fbPixelId && <MetaPixel pixelId={fbPixelId} />}
         {clarityId && <Clarity projectId={clarityId} />}
       </head>

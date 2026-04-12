@@ -5,6 +5,7 @@
   "sideEffects": false,
   "exports": {
     ".": "./src/index.ts",
+    "./ga4": "./src/ga4.tsx",
     "./gtm": "./src/gtm.tsx",
     "./meta-pixel": "./src/meta-pixel.tsx",
     "./clarity": "./src/clarity.tsx",
