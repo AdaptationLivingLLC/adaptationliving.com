@@ -1,30 +1,4 @@
 {
-  "rewrites": [
-    {
-      "source": "/arsenal",
-      "destination": "TOOLS_ASTRO_URL/arsenal"
-    },
-    {
-      "source": "/tools/:path*",
-      "destination": "TOOLS_ASTRO_URL/tools/:path*"
-    },
-    {
-      "source": "/perf/:path*",
-      "destination": "PERF_SVELTE_URL/perf/:path*"
-    },
-    {
-      "source": "/three/:path*",
-      "destination": "THREE_R3F_URL/three/:path*"
-    },
-    {
-      "source": "/fundamentals/:path*",
-      "destination": "VANILLA_URL/fundamentals/:path*"
-    },
-    {
-      "source": "/ai/:path*",
-      "destination": "AI_PLAYGROUND_URL/ai/:path*"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",

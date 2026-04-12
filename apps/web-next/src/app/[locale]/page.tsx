@@ -1,4 +1,16 @@
 import type { Metadata } from "next";
+import {
+  Bot,
+  Code,
+  Facebook,
+  Github,
+  GraduationCap,
+  Linkedin,
+  Mail,
+  Phone,
+  Twitter,
+} from "lucide-react";
+import { NavBar } from "@al/ui/components/navbar";
 
 export const metadata: Metadata = {
   title:
@@ -24,7 +36,7 @@ export const metadata: Metadata = {
     url: "https://adaptationliving.com",
     images: [
       {
-        url: "https://adaptationliving.com/images/banner.jpg",
+        url: "https://adaptationliving.com/images/banner.svg",
         alt: "Adaptation Living LLC — AI Automation and Web Development Studio in Phoenix AZ",
       },
     ],
@@ -34,10 +46,15 @@ export const metadata: Metadata = {
       "AI Automation & Custom Web Development Phoenix AZ | Veteran-Owned | Adaptation Living LLC",
     description:
       "Veteran-owned AI automation studio in Phoenix, AZ. Custom web development, GoHighLevel CRM, AI agents, and workflow automation for small businesses.",
-    images: ["https://adaptationliving.com/images/banner.jpg"],
+    images: ["https://adaptationliving.com/images/banner.svg"],
   },
   alternates: {
     canonical: "https://adaptationliving.com/",
+    languages: {
+      en: "https://adaptationliving.com/",
+      es: "https://adaptationliving.com/es",
+      "x-default": "https://adaptationliving.com/",
+    },
   },
 };
 
@@ -54,8 +71,8 @@ export default function HomePage() {
             name: "Adaptation Living LLC",
             alternateName: "Adaptation Living",
             url: "https://adaptationliving.com",
-            logo: "https://adaptationliving.com/images/adaptation-seal-icon.jpg",
-            image: "https://adaptationliving.com/images/banner.jpg",
+            logo: "https://adaptationliving.com/images/adaptation-seal-icon.svg",
+            image: "https://adaptationliving.com/images/banner.svg",
             description:
               "Veteran-owned AI automation studio in Phoenix, AZ. Custom web development, GoHighLevel CRM setup, AI agents, workflow automation, and app development for small businesses.",
             foundingDate: "2021",
@@ -205,44 +222,82 @@ export default function HomePage() {
         }}
       />
 
+      {/* WebSite Schema — enables sitelinks search box in Google */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Adaptation Living LLC",
+            alternateName: "Adaptation Living",
+            url: "https://adaptationliving.com",
+            inLanguage: ["en", "es"],
+            potentialAction: {
+              "@type": "SearchAction",
+              target: {
+                "@type": "EntryPoint",
+                urlTemplate:
+                  "https://adaptationliving.com/services?q={search_term_string}",
+              },
+              "query-input": "required name=search_term_string",
+            },
+          }),
+        }}
+      />
+
+      {/* Organization Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Adaptation Living LLC",
+            legalName: "Adaptation Living LLC",
+            url: "https://adaptationliving.com",
+            logo: "https://adaptationliving.com/images/adaptation-seal-icon.svg",
+            foundingDate: "2021",
+            founder: {
+              "@type": "Person",
+              name: "Brandon Bible",
+              jobTitle: "Founder & CEO",
+              url: "https://www.linkedin.com/in/brandon-bible-7b78b2393",
+            },
+            contactPoint: [
+              {
+                "@type": "ContactPoint",
+                telephone: "+1-623-219-1237",
+                contactType: "sales",
+                email: "info@adaptationliving.com",
+                availableLanguage: ["English", "Spanish"],
+                areaServed: "US",
+              },
+            ],
+            sameAs: [
+              "https://www.linkedin.com/in/brandon-bible-7b78b2393",
+            ],
+            numberOfEmployees: {
+              "@type": "QuantitativeValue",
+              value: 1,
+            },
+            knowsAbout: [
+              "Artificial Intelligence",
+              "Web Development",
+              "Workflow Automation",
+              "GoHighLevel CRM",
+              "AI Agents",
+              "Search Engine Optimization",
+            ],
+          }),
+        }}
+      />
+
       <main>
         {/* ══════════════════════════════════════════
             NAVIGATION
             ══════════════════════════════════════════ */}
-        <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-[5%] py-6 bg-gradient-to-b from-black/80 to-transparent backdrop-blur-sm">
-          <div className="font-display text-lg font-bold text-white tracking-wide">
-            ADAPTATION LIVING
-            <span className="text-text-muted text-xs ml-2 font-display tracking-widest">
-              LLC
-            </span>
-          </div>
-          <div className="flex gap-8 items-center">
-            <a
-              href="#services"
-              className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all"
-            >
-              Services
-            </a>
-            <a
-              href="#process"
-              className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all"
-            >
-              Process
-            </a>
-            <a
-              href="#faq"
-              className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all"
-            >
-              FAQ
-            </a>
-            <a
-              href="/intake"
-              className="text-sm uppercase tracking-widest border border-white px-5 py-2 rounded hover:bg-white hover:text-bg-dark transition-all"
-            >
-              Start Project
-            </a>
-          </div>
-        </nav>
+        <NavBar />
 
         {/* ══════════════════════════════════════════
             HERO
@@ -302,14 +357,14 @@ export default function HomePage() {
                 href="tel:6232191237"
                 className="flex items-center gap-2 text-lg font-semibold hover:text-accent transition-all"
               >
-                <i className="fas fa-phone text-accent text-xl" />
+                <Phone className="text-accent w-5 h-5" />
                 623-219-1237
               </a>
               <a
                 href="mailto:info@adaptationliving.com"
                 className="flex items-center gap-2 text-lg font-semibold hover:text-accent transition-all"
               >
-                <i className="fas fa-envelope text-accent text-xl" />
+                <Mail className="text-accent w-5 h-5" />
                 info@adaptationliving.com
               </a>
               <a
@@ -337,7 +392,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="glass rounded-lg p-10 hover:-translate-y-1 hover:border-accent transition-all">
-              <i className="fas fa-robot text-4xl text-accent mb-6 block" />
+              <Bot className="text-accent w-10 h-10 mb-6" />
               <h3 className="font-display text-xl font-bold mb-4">
                 AI Agents &amp; Workflow Automation
               </h3>
@@ -356,7 +411,7 @@ export default function HomePage() {
             </div>
 
             <div className="glass rounded-lg p-10 hover:-translate-y-1 hover:border-accent transition-all">
-              <i className="fas fa-code text-4xl text-accent mb-6 block" />
+              <Code className="text-accent w-10 h-10 mb-6" />
               <h3 className="font-display text-xl font-bold mb-4">
                 Web &amp; App Development
               </h3>
@@ -376,7 +431,7 @@ export default function HomePage() {
             </div>
 
             <div className="glass rounded-lg p-10 hover:-translate-y-1 hover:border-accent transition-all">
-              <i className="fas fa-chalkboard-teacher text-4xl text-accent mb-6 block" />
+              <GraduationCap className="text-accent w-10 h-10 mb-6" />
               <h3 className="font-display text-xl font-bold mb-4">
                 Training &amp; One-on-One Support
               </h3>
@@ -532,7 +587,7 @@ export default function HomePage() {
             </div>
             <div>
               <img
-                src="/images/ls2025-seal-front.png"
+                src="/images/adaptation-seal-icon.svg"
                 alt="LS-2025 Veteran Suicide Prevention Device — Built by Adaptation Living LLC, Phoenix AZ"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
@@ -692,14 +747,14 @@ export default function HomePage() {
                 href="tel:6232191237"
                 className="flex items-center gap-2 text-lg font-semibold hover:text-accent transition-all"
               >
-                <i className="fas fa-phone text-accent" />
+                <Phone className="text-accent w-5 h-5" />
                 623-219-1237
               </a>
               <a
                 href="mailto:info@adaptationliving.com"
                 className="flex items-center gap-2 text-lg font-semibold hover:text-accent transition-all"
               >
-                <i className="fas fa-envelope text-accent" />
+                <Mail className="text-accent w-5 h-5" />
                 info@adaptationliving.com
               </a>
             </div>
@@ -717,22 +772,22 @@ export default function HomePage() {
             ══════════════════════════════════════════ */}
         <footer className="bg-black py-16 px-8 text-center border-t border-glass-border">
           <div className="flex justify-center gap-6 mb-8">
-            <a href="#" className="text-2xl text-text-muted hover:text-accent transition-all">
-              <i className="fab fa-twitter" />
+            <a href="#" className="text-text-muted hover:text-accent transition-all">
+              <Twitter className="w-6 h-6" />
             </a>
-            <a href="#" className="text-2xl text-text-muted hover:text-accent transition-all">
-              <i className="fab fa-facebook-f" />
+            <a href="#" className="text-text-muted hover:text-accent transition-all">
+              <Facebook className="w-6 h-6" />
             </a>
-            <a href="#" className="text-2xl text-text-muted hover:text-accent transition-all">
-              <i className="fab fa-github" />
+            <a href="#" className="text-text-muted hover:text-accent transition-all">
+              <Github className="w-6 h-6" />
             </a>
             <a
               href="https://www.linkedin.com/in/brandon-bible-7b78b2393"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-2xl text-text-muted hover:text-accent transition-all"
+              className="text-text-muted hover:text-accent transition-all"
             >
-              <i className="fab fa-linkedin-in" />
+              <Linkedin className="w-6 h-6" />
             </a>
           </div>
 

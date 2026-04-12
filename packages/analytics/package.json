@@ -2,11 +2,21 @@
   "name": "@al/analytics",
   "version": "0.0.1",
   "private": true,
+  "sideEffects": false,
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./gtm": "./src/gtm.tsx",
+    "./meta-pixel": "./src/meta-pixel.tsx",
+    "./clarity": "./src/clarity.tsx",
+    "./events": "./src/events.ts"
   },
   "devDependencies": {
     "@al/config-tsconfig": "workspace:*",
+    "@types/react": "^19.1.1",
+    "react": "^19.1.0",
     "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": ">=19.0.0"
   }
 }

@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "siteName": "Adaptation Living",
+    "tagline": "Adapt to the new era."
+  },
+  "nav": {
+    "home": "Home",
+    "arsenal": "Arsenal",
+    "caseStudies": "Case Studies",
+    "pricing": "Pricing",
+    "intake": "Get Started"
+  },
+  "home": {
+    "hero": {
+      "headline": "AI Automation & Web Development for Phoenix Businesses",
+      "subheadline": "Veteran-owned. Built in Phoenix. Serving clients worldwide.",
+      "cta": "Start Your Project"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} Adaptation Living LLC. All rights reserved.",
+    "contact": "Contact",
+    "legal": "Legal"
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Something went wrong. Please try again.",
+    "save": "Save",
+    "cancel": "Cancel"
+  }
+}
