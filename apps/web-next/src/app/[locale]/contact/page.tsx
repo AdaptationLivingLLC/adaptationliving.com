@@ -157,6 +157,25 @@ export default function ContactPage() {
         <p className="text-center text-sm text-text-muted mt-4">
           3030 N Central Ave Suite 507 · Phoenix, AZ 85012 · Bank of America Building
         </p>
+
+        {/* LinkedIn banner CTA */}
+        <a
+          href="https://www.linkedin.com/company/adaptation-living"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block mt-10 rounded-2xl overflow-hidden hover:opacity-90 transition-opacity"
+        >
+          <Image
+            src="/images/uploads/al-linkedin-banner.png"
+            alt="Follow Adaptation Living LLC on LinkedIn — AI Systems · Automation · Revenue Infrastructure"
+            width={1128}
+            height={191}
+            className="w-full h-auto"
+          />
+        </a>
+        <p className="text-center text-sm text-text-muted mt-3">
+          Follow us on LinkedIn
+        </p>
       </section>
     </main>
   );
