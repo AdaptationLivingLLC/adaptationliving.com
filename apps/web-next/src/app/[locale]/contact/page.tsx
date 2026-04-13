@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { GhlEmbed } from "../../../components/ghl-embed";
 import {
@@ -71,9 +72,11 @@ export default function ContactPage() {
               <div>
                 <h2 className="font-display text-xl font-bold mb-1">Office</h2>
                 <p className="text-text-muted">
-                  Phoenix, AZ
+                  3030 N Central Ave Suite 507
                   <br />
-                  Serving clients nationwide
+                  Phoenix, AZ 85012
+                  <br />
+                  Bank of America Building
                 </p>
               </div>
             </div>
@@ -127,6 +130,33 @@ export default function ContactPage() {
             )}
           </div>
         </div>
+      </section>
+
+      {/* Office photos */}
+      <section className="max-w-[1200px] mx-auto px-8 pb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <Image
+              src="/images/al-hq-daytime.png"
+              alt="Adaptation Living LLC office — 3030 N Central Ave Suite 507, Phoenix AZ"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          </div>
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <Image
+              src="/images/al-hq-night.jpg"
+              alt="Adaptation Living LLC — Bank of America Building at night, Uptown Phoenix"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          </div>
+        </div>
+        <p className="text-center text-sm text-text-muted mt-4">
+          3030 N Central Ave Suite 507 · Phoenix, AZ 85012 · Bank of America Building
+        </p>
       </section>
     </main>
   );

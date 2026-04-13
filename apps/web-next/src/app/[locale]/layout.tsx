@@ -178,7 +178,7 @@ export default async function LocaleLayout({
                 Services
               </a>
               <a
-                href="/services"
+                href="/pricing"
                 className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all hidden md:inline"
               >
                 Pricing
@@ -244,8 +244,9 @@ export default async function LocaleLayout({
             </div>
 
             <div className="text-neutral-600 text-sm mt-8">
-              &copy; 2021–2026 Adaptation Living LLC. All rights reserved. |
-              Phoenix, AZ
+              &copy; 2021–2026 Adaptation Living LLC. All rights reserved.
+              <br />
+              3030 N Central Ave Suite 507, Phoenix, AZ 85012
               <br />
               <a
                 href="mailto:info@adaptationliving.com"
