@@ -230,7 +230,7 @@ export default function HomePage() {
             },
             telephone: "+1-623-219-1237",
             email: "info@adaptationliving.com",
-            priceRange: "$5,000 - $200,000+",
+            priceRange: "$99 - $10,000+",
           }),
         }}
       />
@@ -523,32 +523,32 @@ export default function HomePage() {
         <section className="border-y border-glass-border bg-gradient-to-br from-accent/8 to-black py-24">
           <div className="mx-auto max-w-[1400px] px-8">
             <div className="mb-12 max-w-3xl">
-              <p className="mb-3 text-sm uppercase tracking-[0.24em] text-accent">Three Ways To Work With Us</p>
-              <h2 className="font-display text-4xl font-bold sm:text-5xl">Premium systems. Clear ranges. One team.</h2>
+              <p className="mb-3 text-sm uppercase tracking-[0.24em] text-accent">Simple Pricing. Serious Systems.</p>
+              <h2 className="font-display text-4xl font-bold sm:text-5xl">One setup. One monthly price. Everything included.</h2>
               <p className="mt-4 text-lg leading-relaxed text-text-muted">
-                Serious buyers want the range. We price for outcomes, depth, and operational scope, then map the right implementation path.
+                Your setup fee covers the complete build — website, CRM, integrations, SEO, everything. Your monthly plan determines how much AI and automation powers your business.
               </p>
             </div>
             <div className="grid gap-6 lg:grid-cols-3">
               {[
-                ["Market Entry", "$15K-$25K setup", "$3.5K-$5K/mo", "Launch a custom website, lead capture, review automation, and a core operating layer."],
-                ["Accelerated Growth", "$45K-$70K setup", "$8.5K-$15K/mo", "Add deeper CRM automation, AI-assisted engagement, SEO authority, and aggressive scale systems."],
-                ["Enterprise Domination", "$100K-$200K+ setup", "$25K-$50K+/mo", "Total digital control: enterprise architecture, advanced automation, visibility, and multi-layer growth systems."],
-              ].map(([title, setup, monthly, copy], index) => (
+                ["Setup", "From $1,500", "one-time", "Custom website, CRM, integrations, SEO, social media setup, Google Business Profile — everything built and configured for your business."],
+                ["Managed", "$500/mo", "recommended", "AI phone receptionist, chat agents, advanced automation, multi-pipeline, review campaigns, monthly strategy — the full system, fully managed."],
+                ["Starter", "$99.99/mo", "entry", "CRM, calendar, missed call text-back, basic automation, chat widget — everything you need to capture and follow up on leads."],
+              ].map(([title, price, tag, copy], index) => (
                 <div key={title} className={`rounded-[28px] border p-8 ${index === 1 ? "border-accent bg-accent/8" : "border-white/10 bg-black/35"}`}>
                   <p className="text-sm uppercase tracking-[0.2em] text-accent">{title}</p>
-                  <p className="mt-5 font-display text-4xl font-bold">{setup}</p>
-                  <p className="mt-2 text-lg text-white/80">{monthly}</p>
+                  <p className="mt-5 font-display text-4xl font-bold">{price}</p>
+                  <p className="mt-2 text-lg text-white/80">{tag}</p>
                   <p className="mt-5 text-base leading-relaxed text-text-muted">{copy}</p>
                 </div>
               ))}
             </div>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a href="/services" className="inline-flex items-center justify-center gap-2 border-2 border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent">
-                See Full Pricing <ArrowRight className="h-4 w-4" />
+                See All Plans <ArrowRight className="h-4 w-4" />
               </a>
               <a href="/intake" className="inline-flex items-center justify-center gap-2 border-2 border-white/70 px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-white hover:text-bg-dark">
-                Request A Proposal
+                Start Your Build
               </a>
             </div>
           </div>
