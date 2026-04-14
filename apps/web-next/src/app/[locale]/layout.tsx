@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import Script from "next/script";
 import { Cinzel, Inter } from "next/font/google";
 import { Linkedin } from "lucide-react";
 import { hasLocale } from "next-intl";
@@ -178,6 +179,12 @@ export default async function LocaleLayout({
                 Services
               </a>
               <a
+                href="/showcase"
+                className="text-[10px] sm:text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all"
+              >
+                Showcase
+              </a>
+              <a
                 href="/ai"
                 className="text-[10px] sm:text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all"
               >
@@ -250,19 +257,15 @@ export default async function LocaleLayout({
           </footer>
         </IntlProvider>
 
-        {/* Chat Widget */}
-        <div
-          data-chat-widget
-          data-widget-id="69db6e04d0d6ea75797b53f6"
-          data-location-id="sGH3QiqY0eyRYqgyg1CX"
-        />
-        <script
-          src="https://widgets.leadconnectorhq.com/loader.js"
-          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-          data-widget-id="69db6e04d0d6ea75797b53f6"
-          async
-        />
       </body>
+      {/* GHL Chat Widget — floats in bottom corner, loads after page is interactive */}
+      <Script
+        id="ghl-chat-widget"
+        src="https://widgets.leadconnectorhq.com/loader.js"
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+        data-widget-id="69db6e04d0d6ea75797b53f6"
+        strategy="lazyOnload"
+      />
     </html>
   );
 }
