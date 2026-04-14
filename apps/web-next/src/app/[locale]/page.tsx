@@ -416,12 +416,14 @@ export default function HomePage() {
                 <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2"><Building2 className="h-4 w-4 text-accent" /> 3030 N Central Ave Suite 507</span>
                 <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2"><CalendarClock className="h-4 w-4 text-accent" /> In-Person Demos Available</span>
               </div>
-              <h2 className="font-display text-4xl font-bold leading-tight">We are not a freelancer working from a coffee shop.</h2>
+              <h2 className="font-display text-4xl font-bold leading-tight">A headquartered team, built for serious operators.</h2>
               <p className="mt-5 max-w-3xl text-lg leading-relaxed text-text-muted">
-                Adaptation Living operates out of a real office in the Bank of America building in Uptown Phoenix.
-                When you work with us, you are working with a veteran-owned company with a physical location,
-                a real team, and the infrastructure to deliver what we promise. Phoenix-area business owners
-                can meet in person, see the systems run live, and walk through the plan face to face.
+                Adaptation Living is a veteran-owned technology company headquartered on the
+                5th floor of the Bank of America Tower in Uptown Phoenix. Our clients partner
+                with an established firm — a permanent office, a full team, and the operational
+                infrastructure to deliver every system we design. Phoenix-area leaders are
+                welcome to meet in our office, see the platform running live, and review the
+                engagement plan in person.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a href="/contact" className="inline-flex items-center justify-center gap-2 border-2 border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent">
