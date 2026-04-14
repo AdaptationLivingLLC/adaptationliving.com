@@ -9,7 +9,7 @@ import {
 
 const title = "Services & Pricing";
 const description =
-  "AI automation, GoHighLevel CRM, web development, SEO & visibility, training & consulting. Veteran-owned studio, Phoenix AZ.";
+  "AI automation, CRM systems, web development, SEO & visibility, training & consulting. Veteran-owned studio, Phoenix AZ.";
 
 export const metadata: Metadata = {
   title,
@@ -75,7 +75,7 @@ export default function ServicesPage() {
                 position: 1,
                 name: "AI Agents & Workflow Automation",
                 description:
-                  "Custom AI agents, automated email and SMS sequences, GoHighLevel CRM integrations, and intelligent workflows.",
+                  "Custom AI agents, automated email and SMS sequences, CRM integrations, and intelligent workflows.",
                 provider: {
                   "@type": "Organization",
                   name: "Adaptation Living LLC",
@@ -92,9 +92,9 @@ export default function ServicesPage() {
               {
                 "@type": "Service",
                 position: 2,
-                name: "AI Revenue Systems — GoHighLevel CRM",
+                name: "AI Revenue Systems",
                 description:
-                  "GoHighLevel-powered lead nurture, missed call text-back, review campaigns, and automated follow-up.",
+                  "Automated lead nurture, missed call text-back, review campaigns, and intelligent follow-up sequences.",
                 provider: {
                   "@type": "Organization",
                   name: "Adaptation Living LLC",
@@ -227,7 +227,7 @@ export default function ServicesPage() {
             price="$1,200"
             features={[
               "1 custom AI workflow",
-              "GoHighLevel CRM integration",
+              "CRM integration",
               "Email or SMS automation",
               "30-day support",
               "Documentation & training",
@@ -240,7 +240,7 @@ export default function ServicesPage() {
             features={[
               "Up to 3 AI workflows",
               "Multi-channel automation (email, SMS, voice)",
-              "GoHighLevel full pipeline setup",
+              "Full pipeline setup",
               "AI chatbot or voice agent",
               "60-day support + optimization",
               "Team training session",
@@ -273,7 +273,7 @@ export default function ServicesPage() {
           </h2>
         </div>
         <p className="text-text-muted text-base mb-8 max-w-3xl">
-          GoHighLevel-powered lead nurture, missed call text-back, review
+          Automated lead nurture, missed call text-back, review
           campaigns, and automated follow-up that turns cold leads into booked
           calls.
         </p>
@@ -282,7 +282,7 @@ export default function ServicesPage() {
             name="CRM Setup"
             price="$1,500–$3,000"
             features={[
-              "GoHighLevel sub-account config",
+              "CRM platform configuration",
               "Pipeline & stage setup",
               "Contact import + cleanup",
               "Missed call text-back",

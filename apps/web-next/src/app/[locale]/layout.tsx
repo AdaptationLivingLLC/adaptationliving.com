@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     template: "%s | Adaptation Living LLC",
   },
   description:
-    "Veteran-owned AI automation studio in Phoenix, AZ. Custom web development, GoHighLevel CRM setup, AI agents, workflow automation, and app development for small businesses. VOSB certified.",
+    "Veteran-owned AI automation studio in Phoenix, AZ. Custom web development, CRM setup, AI agents, workflow automation, and app development for small businesses. VOSB certified.",
   keywords: [
     "AI automation Phoenix AZ",
     "web development Phoenix",
-    "GoHighLevel CRM setup",
+    "CRM setup and automation",
     "AI agents",
     "workflow automation",
     "veteran-owned web development",
@@ -250,7 +250,7 @@ export default async function LocaleLayout({
           </footer>
         </IntlProvider>
 
-        {/* GoHighLevel Chat Widget */}
+        {/* Chat Widget */}
         <div
           data-chat-widget
           data-widget-id="69db6e04d0d6ea75797b53f6"

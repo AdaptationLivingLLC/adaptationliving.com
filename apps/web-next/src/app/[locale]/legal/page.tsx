@@ -63,7 +63,7 @@ export default function LegalPage() {
         </p>
         <ul className="text-text-muted leading-relaxed mt-4 space-y-2 list-disc list-inside">
           <li>
-            <strong className="text-white">GoHighLevel</strong> — CRM, client
+            <strong className="text-white">Adaptation Living CRM Platform</strong> — Client
             communications, form submissions, and appointment scheduling.
           </li>
           <li>

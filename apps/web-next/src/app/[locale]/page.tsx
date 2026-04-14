@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   keywords: [
     "AI automation services Phoenix AZ",
     "veteran owned web development Phoenix",
-    "GoHighLevel CRM setup for law firms",
+    "CRM setup and automation",
     "custom web development Phoenix",
     "AI agents",
     "workflow automation",
@@ -207,7 +207,7 @@ export default function HomePage() {
             logo: "https://adaptationliving.com/images/adaptation-seal-icon.svg",
             image: "https://adaptationliving.com/images/banner.jpg",
             description:
-              "Veteran-owned AI automation studio in Phoenix, AZ. Custom web development, GoHighLevel CRM setup, AI agents, workflow automation, and app development for small businesses.",
+              "Veteran-owned AI automation studio in Phoenix, AZ. Custom web development, CRM setup, AI agents, workflow automation, and app development for small businesses.",
             foundingDate: "2021",
             founder: {
               "@type": "Person",
@@ -400,43 +400,32 @@ export default function HomePage() {
           <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-stretch gap-8 px-8 lg:grid-cols-[0.95fr_1.05fr]">
             <div className="relative min-h-[320px] overflow-hidden rounded-[28px] border border-white/10">
               <Image
-                src="/images/al-hq-daytime.png"
-                alt="Adaptation Living Uptown Phoenix office demo environment"
+                src="/images/al-hq-night.jpg"
+                alt="Adaptation Living LLC — Bank of America Building, Uptown Phoenix at night"
                 fill
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="text-[11px] uppercase tracking-[0.24em] text-accent">Uptown Phoenix Demo Access</p>
-                <p className="mt-2 font-display text-3xl font-bold">See It Before You Buy It</p>
+                <p className="text-[11px] uppercase tracking-[0.24em] text-accent">Uptown Phoenix</p>
+                <p className="mt-2 font-display text-3xl font-bold">Real Office. Real Team. Real Results.</p>
               </div>
             </div>
             <div className="glass-strong rounded-[28px] p-8 lg:p-10">
               <div className="mb-6 flex flex-wrap gap-3 text-[11px] uppercase tracking-[0.22em] text-white/70">
                 <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2"><Building2 className="h-4 w-4 text-accent" /> 3030 N Central Ave Suite 507</span>
-                <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2"><CalendarClock className="h-4 w-4 text-accent" /> In-Person Demos</span>
+                <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2"><CalendarClock className="h-4 w-4 text-accent" /> In-Person Demos Available</span>
               </div>
-              <h2 className="font-display text-4xl font-bold leading-tight">Phoenix-area business owners can meet in person and watch the system run live.</h2>
+              <h2 className="font-display text-4xl font-bold leading-tight">We are not a freelancer working from a coffee shop.</h2>
               <p className="mt-5 max-w-3xl text-lg leading-relaxed text-text-muted">
-                We host private demos and strategy sessions in our Uptown Phoenix office in the Bank of America building on Central Avenue.
-                Sit down at the 8-person conference table, see the workflow on the 65-inch smart TV, and map the plan on the glass whiteboard.
-                No Zoom theater. No slide decks. Real systems, demonstrated in person.
+                Adaptation Living operates out of a real office in the Bank of America building in Uptown Phoenix.
+                When you work with us, you are working with a veteran-owned company with a physical location,
+                a real team, and the infrastructure to deliver what we promise. Phoenix-area business owners
+                can meet in person, see the systems run live, and walk through the plan face to face.
               </p>
-              <div className="mt-6 grid gap-4 sm:grid-cols-3">
-                {[
-                  ["8-Person Table", "Decision-makers and operators in one room."],
-                  ["65-Inch Smart TV", "Live demo the system, not a mockup."],
-                  ["Glass Whiteboard", "Map process, pain points, and rollout on-site."],
-                ].map(([title, copy]) => (
-                  <div key={title} className="rounded-2xl border border-white/8 bg-white/[0.03] p-5">
-                    <p className="font-display text-lg font-bold">{title}</p>
-                    <p className="mt-2 text-sm text-text-muted">{copy}</p>
-                  </div>
-                ))}
-              </div>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a href="/contact" className="inline-flex items-center justify-center gap-2 border-2 border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent">
-                  Book Your In-Person Demo <ArrowRight className="h-4 w-4" />
+                  Book A Demo <ArrowRight className="h-4 w-4" />
                 </a>
                 <a href="tel:6232191237" className="inline-flex items-center justify-center gap-2 border-2 border-white/70 px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-white hover:text-bg-dark">
                   Call 623-219-1237
