@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bot, Code, GraduationCap, LineChart, Lightbulb } from "lucide-react";
+import { Bot, Code, GraduationCap, LineChart, Lightbulb, Search } from "lucide-react";
 import {
   BreadcrumbSchema,
   pageAlternates,
@@ -9,7 +9,7 @@ import {
 
 const title = "Services & Pricing";
 const description =
-  "AI automation, GoHighLevel CRM, web development, training & consulting. Pricing from $1,200-$6,500+. Veteran-owned, Phoenix AZ.";
+  "AI automation, GoHighLevel CRM, web development, SEO & visibility, training & consulting. Veteran-owned studio, Phoenix AZ.";
 
 export const metadata: Metadata = {
   title,
@@ -149,6 +149,25 @@ export default function ServicesPage() {
               {
                 "@type": "Service",
                 position: 5,
+                name: "Search & Visibility (SEO)",
+                description:
+                  "Local SEO, AI overview positioning, technical site architecture, Google Business Profile optimization, and authority systems.",
+                provider: {
+                  "@type": "Organization",
+                  name: "Adaptation Living LLC",
+                },
+                areaServed: "US",
+                serviceType: "SEO & Digital Visibility",
+                offers: {
+                  "@type": "AggregateOffer",
+                  lowPrice: "1500",
+                  highPrice: "5000",
+                  priceCurrency: "USD",
+                },
+              },
+              {
+                "@type": "Service",
+                position: 6,
                 name: "Training & Support",
                 description:
                   "Hands-on AI literacy, coding education, and ongoing strategic support for teams and individuals.",
@@ -175,9 +194,18 @@ export default function ServicesPage() {
         <h1 className="font-display text-4xl sm:text-5xl font-bold mb-4">
           Services &amp; Pricing
         </h1>
-        <p className="text-text-muted text-lg max-w-2xl mx-auto">
+        <p className="text-text-muted text-lg max-w-2xl mx-auto mb-4">
           Clear scope. Fixed pricing. No surprises. Every engagement starts
           with a free discovery call.
+        </p>
+        <p className="text-text-dim text-sm max-w-2xl mx-auto">
+          Individual services are priced below. Full business system builds
+          (website + CRM + automation + SEO) start at $15K and scale with
+          scope.{" "}
+          <a href="/contact" className="text-accent hover:underline">
+            Book a discovery call
+          </a>{" "}
+          to map the right package.
         </p>
       </section>
 
@@ -464,6 +492,64 @@ export default function ServicesPage() {
               "Bug fixes & updates",
               "Performance monitoring",
               "Monthly check-in calls",
+            ]}
+          />
+        </div>
+      </section>
+
+      {/* ─── SEO & Visibility ─── */}
+      <section
+        id="seo"
+        className="max-w-[1200px] mx-auto px-8 py-16 border-t border-glass-border"
+      >
+        <div className="flex items-center gap-3 mb-2">
+          <Search className="text-accent w-7 h-7" />
+          <h2 className="font-display text-3xl font-bold">
+            Search &amp; Visibility
+          </h2>
+        </div>
+        <p className="text-text-muted text-base mb-8 max-w-3xl">
+          Local SEO, AI overview positioning, technical site architecture, and
+          authority systems that keep your business discoverable in search and
+          answer engines.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <PricingCard
+            name="SEO Foundation"
+            price="$1,500"
+            features={[
+              "Technical SEO audit & fixes",
+              "Google Business Profile setup",
+              "Schema.org structured data",
+              "Local citation building",
+              "Keyword strategy & mapping",
+            ]}
+          />
+          <PricingCard
+            name="Growth SEO"
+            price="$2,500"
+            period="/mo"
+            highlighted
+            features={[
+              "Everything in Foundation",
+              "Monthly content strategy",
+              "Backlink acquisition",
+              "AI overview optimization",
+              "Monthly ranking reports",
+              "Competitor monitoring",
+            ]}
+          />
+          <PricingCard
+            name="Domination"
+            price="$5,000+"
+            period="/mo"
+            features={[
+              "Everything in Growth",
+              "Multi-location SEO",
+              "Advanced AI visibility",
+              "Programmatic content",
+              "Custom reporting dashboard",
+              "Weekly strategy calls",
             ]}
           />
         </div>

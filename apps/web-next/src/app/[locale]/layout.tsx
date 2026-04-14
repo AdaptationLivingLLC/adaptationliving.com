@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Cinzel, Inter } from "next/font/google";
-import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import { hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Clarity } from "@al/analytics/clarity";
@@ -157,41 +157,35 @@ export default async function LocaleLayout({
           </a>
 
           {/* Site-wide Navigation */}
-          <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-[5%] py-6 bg-gradient-to-b from-black/80 to-transparent backdrop-blur-sm">
-            <a href="/" className="font-display text-lg font-bold text-white tracking-wide">
+          <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-[5%] py-4 sm:py-6 bg-gradient-to-b from-black/80 to-transparent backdrop-blur-sm">
+            <a href="/" className="font-display text-base sm:text-lg font-bold text-white tracking-wide">
               ADAPTATION LIVING
               <span className="text-text-muted text-xs ml-2 font-display tracking-widest">
                 LLC
               </span>
             </a>
-            <div className="flex gap-8 items-center">
+            <div className="flex gap-3 sm:gap-6 lg:gap-8 items-center">
               <a
                 href="/"
-                className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all hidden sm:inline"
+                className="text-[10px] sm:text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all"
               >
                 Home
               </a>
               <a
                 href="/services"
-                className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all hidden sm:inline"
+                className="text-[10px] sm:text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all"
               >
                 Services
               </a>
               <a
-                href="/pricing"
-                className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all hidden md:inline"
-              >
-                Pricing
-              </a>
-              <a
                 href="/contact"
-                className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all hidden md:inline"
+                className="text-[10px] sm:text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all"
               >
                 Contact
               </a>
               <a
                 href="/intake"
-                className="text-sm uppercase tracking-widest border border-white px-5 py-2 rounded hover:bg-white hover:text-bg-dark transition-all"
+                className="text-[10px] sm:text-sm uppercase tracking-widest border border-white px-3 sm:px-5 py-1.5 sm:py-2 rounded hover:bg-white hover:text-bg-dark transition-all"
               >
                 Start Project
               </a>
@@ -203,17 +197,8 @@ export default async function LocaleLayout({
           {/* Site-wide Footer */}
           <footer className="bg-black py-16 px-8 text-center border-t border-glass-border">
             <div className="flex justify-center gap-6 mb-8">
-              <a href="#" className="text-text-muted hover:text-accent transition-all">
-                <Twitter className="w-6 h-6" />
-              </a>
-              <a href="#" className="text-text-muted hover:text-accent transition-all">
-                <Facebook className="w-6 h-6" />
-              </a>
-              <a href="#" className="text-text-muted hover:text-accent transition-all">
-                <Github className="w-6 h-6" />
-              </a>
               <a
-                href="https://www.linkedin.com/in/brandon-bible-7b78b2393"
+                href="https://www.linkedin.com/company/adaptation-living"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text-muted hover:text-accent transition-all"

@@ -65,42 +65,42 @@ const painPoints = [
     pain: "When you miss a call, someone else gets the sale.",
     answer:
       "Missed-call text-back fires immediately, recovers momentum, and keeps the lead from leaving your orbit.",
-    href: "/services/automation",
+    href: "/services#automation",
   },
   {
     title: "Slow Follow-Up",
     pain: "Your leads are hottest in the first five minutes.",
     answer:
       "AI-assisted SMS, email, and chat workflows respond in seconds instead of hours.",
-    href: "/services/automation",
+    href: "/services#automation",
   },
   {
     title: "Disconnected Software",
     pain: "Eight tools. Eight logins. Eight bills. Zero coordination.",
     answer:
       "A unified business operating system replaces the stack with one cleaner environment.",
-    href: "/services/automation",
+    href: "/services#ai-revenue",
   },
   {
     title: "Weak Website",
     pain: "If it looks like a template, buyers treat you like a commodity.",
     answer:
       "Custom web architecture elevates trust, speed, and conversion before the sales process even begins.",
-    href: "/services/web-design",
+    href: "/services#web-suites",
   },
   {
     title: "Poor Conversion",
     pain: "Traffic without conversion is just another expense.",
     answer:
       "Conversion-engineered pages, CTA hierarchy, and cleaner user flow turn attention into action.",
-    href: "/services/web-design",
+    href: "/services#web-suites",
   },
   {
     title: "Invisible Online",
     pain: "If Google does not show you, customers find someone else.",
     answer:
       "High-intent SEO and AI visibility systems make you harder to ignore in search and answer engines.",
-    href: "/services/seo",
+    href: "/services#seo",
   },
 ];
 
@@ -109,35 +109,35 @@ const worlds = [
     title: "Business Operating Systems",
     description:
       "CRM infrastructure, missed-call text-back, booking, reminders, pipeline control, and one operating layer for growth.",
-    href: "/services/automation",
+    href: "/services#ai-revenue",
     icon: Workflow,
   },
   {
     title: "AI Automation",
     description:
       "AI-assisted intake, qualification, follow-up, routing, and customer engagement systems that work around the clock.",
-    href: "/services/automation",
+    href: "/services#automation",
     icon: BrainCircuit,
   },
   {
     title: "Custom Web Architecture",
     description:
       "Custom websites, landing pages, and digital experiences engineered to convert and outperform template competitors.",
-    href: "/services/web-design",
+    href: "/services#web-suites",
     icon: Code,
   },
   {
     title: "Revenue Tools",
     description:
       "Elegant calculators and diagnostic instruments that quantify lost time, wasted spend, and recoverable revenue.",
-    href: "/pricing",
+    href: "/services#strategy",
     icon: MonitorSmartphone,
   },
   {
     title: "Search & Visibility",
     description:
       "Local SEO, AI overview positioning, technical architecture, and authority systems built to keep you discoverable.",
-    href: "/services/seo",
+    href: "/services#seo",
     icon: Search,
   },
 ];
@@ -149,7 +149,7 @@ const showcaseCards = [
     description:
       "Quantify how much delayed follow-up is costing your business in missed revenue and lost momentum.",
     value: "$12,800 recoverable monthly revenue",
-    href: "/services/automation",
+    href: "/services#automation",
   },
   {
     kicker: "System Economics",
@@ -157,7 +157,7 @@ const showcaseCards = [
     description:
       "Show business owners what fragmented CRM, chat, scheduling, and review tools are costing every month.",
     value: "$2,340 monthly gain from consolidation",
-    href: "/services/automation",
+    href: "/services#ai-revenue",
   },
   {
     kicker: "Office Demo",
@@ -264,13 +264,8 @@ export default function HomePage() {
             url: "https://adaptationliving.com",
             inLanguage: ["en", "es"],
             potentialAction: {
-              "@type": "SearchAction",
-              target: {
-                "@type": "EntryPoint",
-                urlTemplate:
-                  "https://adaptationliving.com/services?q={search_term_string}",
-              },
-              "query-input": "required name=search_term_string",
+              "@type": "ReadAction",
+              target: "https://adaptationliving.com/services",
             },
           }),
         }}
@@ -405,7 +400,7 @@ export default function HomePage() {
           <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-stretch gap-8 px-8 lg:grid-cols-[0.95fr_1.05fr]">
             <div className="relative min-h-[320px] overflow-hidden rounded-[28px] border border-white/10">
               <Image
-                src="/images/adaptation-living-hq.png"
+                src="/images/al-hq-daytime.png"
                 alt="Adaptation Living Uptown Phoenix office demo environment"
                 fill
                 className="object-cover"
@@ -517,7 +512,7 @@ export default function HomePage() {
                 understands expensive problems in practical terms.
               </p>
             </div>
-            <a href="/pricing" className="inline-flex items-center gap-2 border-b border-dotted border-accent pb-1 text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+            <a href="/services" className="inline-flex items-center gap-2 border-b border-dotted border-accent pb-1 text-sm font-semibold uppercase tracking-[0.18em] text-accent">
               View pricing and implementation paths <ArrowRight className="h-4 w-4" />
             </a>
           </div>
@@ -560,7 +555,7 @@ export default function HomePage() {
               ))}
             </div>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <a href="/pricing" className="inline-flex items-center justify-center gap-2 border-2 border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent">
+              <a href="/services" className="inline-flex items-center justify-center gap-2 border-2 border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent">
                 See Full Pricing <ArrowRight className="h-4 w-4" />
               </a>
               <a href="/intake" className="inline-flex items-center justify-center gap-2 border-2 border-white/70 px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-white hover:text-bg-dark">
