@@ -76,7 +76,7 @@ export default function ContactPage() {
                   <br />
                   Phoenix, AZ 85012
                   <br />
-                  Bank of America Building
+                  Bank of America Tower
                 </p>
               </div>
             </div>
@@ -132,30 +132,20 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Office photos */}
+      {/* Office photo */}
       <section className="max-w-[1200px] mx-auto px-8 pb-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-            <Image
-              src="/images/al-hq-daytime.png"
-              alt="Adaptation Living LLC office — 3030 N Central Ave Suite 507, Phoenix AZ"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-            <Image
-              src="/images/al-hq-night.jpg"
-              alt="Adaptation Living LLC — Bank of America Building at night, Uptown Phoenix"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
+        <div className="relative aspect-[16/9] overflow-hidden rounded-2xl">
+          <Image
+            src="/images/al-hq-daytime.png"
+            alt="Adaptation Living LLC headquarters — Bank of America Tower, 3030 N Central Ave Suite 507, Phoenix AZ"
+            fill
+            className="object-cover"
+            sizes="(max-width: 1200px) 100vw, 1200px"
+            priority
+          />
         </div>
         <p className="text-center text-sm text-text-muted mt-4">
-          3030 N Central Ave Suite 507 · Phoenix, AZ 85012 · Bank of America Building
+          3030 N Central Ave Suite 507 · Phoenix, AZ 85012 · Bank of America Tower
         </p>
 
         {/* LinkedIn banner CTA */}
