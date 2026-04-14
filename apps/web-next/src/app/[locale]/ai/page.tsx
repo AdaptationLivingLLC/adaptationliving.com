@@ -447,14 +447,14 @@ export default function AIPage() {
           <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-8">
             Blog posts, social media captions, email campaigns, text message copy, ad text,
             website content — generated in your brand voice in seconds. Need a custom image
-            for a social post? Six cents. Need 1,000 words of website copy? Nine cents. Need a
+            for a social post? Four cents. Need 1,000 words of website copy? Nine cents. Need a
             new landing page? Free — describe what you want and the AI builds it. A freelance
             writer charges $200+ for what the AI creates in seconds.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="glass rounded-2xl p-6 text-center">
-              <p className="font-display text-xl font-bold text-accent">$0.063</p>
-              <p className="text-sm text-text-muted mt-1">Per AI image</p>
+              <p className="font-display text-xl font-bold text-accent">$0.04+</p>
+              <p className="text-sm text-text-muted mt-1">Per AI image (DALL-E 3)</p>
             </div>
             <div className="glass rounded-2xl p-6 text-center">
               <p className="font-display text-xl font-bold text-accent">$0.09</p>

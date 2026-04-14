@@ -230,7 +230,7 @@ export default function HomePage() {
             },
             telephone: "+1-623-219-1237",
             email: "info@adaptationliving.com",
-            priceRange: "$99 - $10,000+",
+            priceRange: "$297 - $5,997",
           }),
         }}
       />
@@ -523,32 +523,32 @@ export default function HomePage() {
         <section className="border-y border-glass-border bg-gradient-to-br from-accent/8 to-black py-24">
           <div className="mx-auto max-w-[1400px] px-8">
             <div className="mb-12 max-w-3xl">
-              <p className="mb-3 text-sm uppercase tracking-[0.24em] text-accent">Simple Pricing. Serious Systems.</p>
-              <h2 className="font-display text-4xl font-bold sm:text-5xl">One setup. One monthly price. Everything included.</h2>
+              <p className="mb-3 text-sm uppercase tracking-[0.24em] text-accent">Adaptation OS</p>
+              <h2 className="font-display text-4xl font-bold sm:text-5xl">Instant access. No setup fee. Cancel anytime.</h2>
               <p className="mt-4 text-lg leading-relaxed text-text-muted">
-                Your setup fee covers the complete build — website, CRM, integrations, SEO, everything. Your monthly plan determines how much AI and automation powers your business.
+                Buy a plan, log in the same day, and run your entire business on one platform. CRM, AI agents, automation, funnels, calendars, reviews, campaigns — all included. Or go done-for-you and we build it all for you.
               </p>
             </div>
             <div className="grid gap-6 lg:grid-cols-3">
               {[
-                ["Setup", "From $1,500", "one-time", "Custom website, CRM, integrations, SEO, social media setup, Google Business Profile — everything built and configured for your business."],
-                ["Managed", "$500/mo", "recommended", "AI phone receptionist, chat agents, advanced automation, multi-pipeline, review campaigns, monthly strategy — the full system, fully managed."],
-                ["Starter", "$99.99/mo", "entry", "CRM, calendar, missed call text-back, basic automation, chat widget — everything you need to capture and follow up on leads."],
+                ["Starter", "$297/mo", "or $2,970/yr — save $594", "Up to 3 users · CRM, calendars, forms, basic automations, email support, $10 credits/mo."],
+                ["Growth", "$597/mo", "or $5,970/yr — save $1,194", "Up to 10 users · AI agents, funnels, pipelines, integrations, live onboarding, $25 credits/mo."],
+                ["Scale", "$1,197/mo", "or $11,970/yr — save $2,394", "Up to 50 users · Everything unlocked, branded mobile app, priority phone support, $100 credits/mo."],
               ].map(([title, price, tag, copy], index) => (
-                <div key={title} className={`rounded-[28px] border p-8 ${index === 1 ? "border-accent bg-accent/8" : "border-white/10 bg-black/35"}`}>
+                <div key={title} className={`rounded-[28px] border p-8 ${index === 1 ? "border-accent bg-accent/8 ring-1 ring-accent/40" : "border-white/10 bg-black/35"}`}>
                   <p className="text-sm uppercase tracking-[0.2em] text-accent">{title}</p>
                   <p className="mt-5 font-display text-4xl font-bold">{price}</p>
-                  <p className="mt-2 text-lg text-white/80">{tag}</p>
+                  <p className="mt-2 text-sm text-white/70">{tag}</p>
                   <p className="mt-5 text-base leading-relaxed text-text-muted">{copy}</p>
                 </div>
               ))}
             </div>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <a href="/services" className="inline-flex items-center justify-center gap-2 border-2 border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent">
-                See All Plans <ArrowRight className="h-4 w-4" />
+              <a href="/services#self-serve" className="inline-flex items-center justify-center gap-2 border-2 border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent">
+                Buy Self-Serve <ArrowRight className="h-4 w-4" />
               </a>
-              <a href="/intake" className="inline-flex items-center justify-center gap-2 border-2 border-white/70 px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-white hover:text-bg-dark">
-                Start Your Build
+              <a href="/services#done-for-you" className="inline-flex items-center justify-center gap-2 border-2 border-white/70 px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-white hover:text-bg-dark">
+                See Done-For-You
               </a>
             </div>
           </div>

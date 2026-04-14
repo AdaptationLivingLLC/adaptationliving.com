@@ -10,28 +10,32 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "next": "^16.2.3",
-    "next-intl": "^4.9.1",
-    "lucide-react": "^0.503.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "@al/ui": "workspace:*",
     "@al/analytics": "workspace:*",
+    "@al/auth": "workspace:*",
+    "@al/content": "workspace:*",
+    "@al/db": "workspace:*",
     "@al/i18n": "workspace:*",
     "@al/mail": "workspace:*",
-    "@al/auth": "workspace:*",
     "@al/payments": "workspace:*",
-    "@al/db": "workspace:*",
-    "@al/content": "workspace:*"
+    "@al/ui": "workspace:*",
+    "@react-three/drei": "^10.0.6",
+    "@react-three/fiber": "^9.1.2",
+    "lucide-react": "^0.503.0",
+    "next": "^16.2.3",
+    "next-intl": "^4.9.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "three": "^0.175.0"
   },
   "devDependencies": {
-    "@al/config-tsconfig": "workspace:*",
     "@al/config-eslint": "workspace:*",
+    "@al/config-tsconfig": "workspace:*",
+    "@tailwindcss/postcss": "^4.1.3",
     "@types/node": "^22.14.0",
     "@types/react": "^19.1.1",
     "@types/react-dom": "^19.1.1",
+    "@types/three": "^0.175.0",
     "tailwindcss": "^4.1.3",
-    "@tailwindcss/postcss": "^4.1.3",
     "typescript": "^5.8.3"
   }
 }
