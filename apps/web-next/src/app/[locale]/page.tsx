@@ -144,27 +144,27 @@ const worlds = [
 
 const showcaseCards = [
   {
-    kicker: "Automation ROI",
-    title: "Lead Response Revenue Instrument",
+    kicker: "AI That Works",
+    title: "24/7 AI Phone & Chat",
     description:
-      "Quantify how much delayed follow-up is costing your business in missed revenue and lost momentum.",
-    value: "$12,800 recoverable monthly revenue",
-    href: "/services#automation",
+      "Your AI receptionist answers calls, captures leads, and books appointments around the clock. Your chat agent handles every website visitor, DM, and text instantly.",
+    value: "Included in the $500/mo managed plan",
+    href: "/ai",
   },
   {
-    kicker: "System Economics",
-    title: "CRM Consolidation Savings",
+    kicker: "One System",
+    title: "Replace 8 Tools With 1",
     description:
-      "Show business owners what fragmented CRM, chat, scheduling, and review tools are costing every month.",
-    value: "$2,340 monthly gain from consolidation",
-    href: "/services#ai-revenue",
+      "CRM, email, SMS, chat, calendar, reviews, pipeline, reporting — all in one platform. Stop paying for eight disconnected subscriptions.",
+    value: "Setup from $1,500 · Managed from $500/mo",
+    href: "/services",
   },
   {
-    kicker: "Office Demo",
-    title: "Live Demo Sessions",
+    kicker: "In Person",
+    title: "Live Demo in Phoenix",
     description:
-      "Phoenix-area business owners can meet in person and watch the system run live before making a decision.",
-    value: "Uptown Phoenix demo room available",
+      "See the entire system running live at our Uptown Phoenix office. No slide decks. No Zoom. Real systems demonstrated in person.",
+    value: "3030 N Central Ave Suite 507",
     href: "/contact",
   },
 ];
