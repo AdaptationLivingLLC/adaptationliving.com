@@ -178,6 +178,12 @@ export default async function LocaleLayout({
                 Services
               </a>
               <a
+                href="/ai"
+                className="text-[10px] sm:text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all"
+              >
+                AI
+              </a>
+              <a
                 href="/contact"
                 className="text-[10px] sm:text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all"
               >
