@@ -89,7 +89,54 @@ export default function LegalPage() {
         </ul>
 
         <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-white">
-          4. Data Retention
+          4. Cookies &amp; Tracking Technologies
+        </h2>
+        <p className="text-text-muted leading-relaxed">
+          We and our third-party providers use cookies and similar
+          technologies to operate our site, measure performance, and support
+          advertising:
+        </p>
+        <ul className="text-text-muted leading-relaxed mt-4 space-y-2 list-disc list-inside">
+          <li>
+            <strong className="text-white">Session cookies</strong> — Keep you
+            signed in to your account and maintain secure sessions.
+          </li>
+          <li>
+            <strong className="text-white">Analytics cookies</strong> — Google
+            Analytics 4, loaded via Google Tag Manager, to measure traffic and
+            page performance.
+          </li>
+          <li>
+            <strong className="text-white">Meta Pixel</strong> — Ad
+            measurement, conversion tracking, and audience building for
+            Facebook and Instagram campaigns.
+          </li>
+          <li>
+            <strong className="text-white">Microsoft Clarity</strong> —
+            Session recording and heatmaps to understand how visitors use the
+            site.
+          </li>
+          <li>
+            <strong className="text-white">Chat widget</strong> — Stores
+            visitor conversation history so support agents can see prior
+            messages.
+          </li>
+        </ul>
+        <p className="text-text-muted leading-relaxed mt-4">
+          You can opt out of non-essential cookies through your browser
+          settings. California residents may request deletion of personal
+          information collected through these tools by emailing{" "}
+          <a
+            href="mailto:info@adaptationliving.com"
+            className="text-accent hover:underline"
+          >
+            info@adaptationliving.com
+          </a>
+          .
+        </p>
+
+        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-white">
+          5. Data Retention
         </h2>
         <p className="text-text-muted leading-relaxed">
           We retain client data for the duration of our business relationship
@@ -99,7 +146,7 @@ export default function LegalPage() {
         </p>
 
         <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-white">
-          5. Contact
+          6. Contact
         </h2>
         <p className="text-text-muted leading-relaxed">
           For questions about this policy, contact Adaptation Living LLC at{" "}
@@ -128,6 +175,94 @@ export default function LegalPage() {
           purposes. Pricing displayed on this site is subject to change and
           does not constitute a binding offer. Final pricing is confirmed in
           writing before any work begins.
+        </p>
+
+        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-white">
+          Subscriptions &amp; Billing
+        </h3>
+        <p className="text-text-muted leading-relaxed">
+          We offer monthly and yearly subscription plans. Subscriptions renew
+          automatically at the end of each billing period using the payment
+          method you have on file with Stripe, our payment processor.
+          Applicable sales taxes are passed through at checkout. We may change
+          plan pricing with at least 30 days&apos; written notice sent to the
+          email on your account; continued use after a price change
+          constitutes acceptance of the new price.
+        </p>
+
+        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-white">
+          Cancellation
+        </h3>
+        <p className="text-text-muted leading-relaxed">
+          You can cancel anytime from your account settings or by emailing{" "}
+          <a
+            href="mailto:info@adaptationliving.com"
+            className="text-accent hover:underline"
+          >
+            info@adaptationliving.com
+          </a>
+          . Access continues through the end of the current billing period.
+          We do not issue prorated refunds for partial months.
+        </p>
+
+        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-white">
+          Refunds
+        </h3>
+        <p className="text-text-muted leading-relaxed">
+          First-time subscribers may request a refund within 14 days of the
+          initial charge if the subscription is unused. &quot;Unused&quot;
+          means: no integrations connected, no campaigns sent, and fewer than
+          5 AI credits consumed. After 14 days, all sales are final. Yearly
+          plans follow the same 14-day window; if a yearly plan is refunded
+          mid-term and otherwise qualifies, the refund is prorated based on
+          the months already used, charged at the equivalent monthly rate.
+        </p>
+
+        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-white">
+          Chargebacks
+        </h3>
+        <p className="text-text-muted leading-relaxed">
+          Before initiating a chargeback with your card issuer, please
+          contact us at{" "}
+          <a
+            href="mailto:info@adaptationliving.com"
+            className="text-accent hover:underline"
+          >
+            info@adaptationliving.com
+          </a>{" "}
+          so we can resolve the issue directly. Chargebacks determined to be
+          fraudulent may result in account termination and loss of access.
+        </p>
+
+        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-white">
+          Acceptable Use
+        </h3>
+        <p className="text-text-muted leading-relaxed">
+          You agree not to use the platform for illegal content, spam, or
+          scraping. Any SMS or email campaigns sent through the system must
+          comply with applicable laws, including the TCPA and CAN-SPAM Act.
+          You are responsible for maintaining proper consent records for your
+          contacts.
+        </p>
+
+        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-white">
+          Limitation of Liability
+        </h3>
+        <p className="text-text-muted leading-relaxed">
+          Services are provided &quot;as is&quot; without warranties of any
+          kind. To the maximum extent permitted by law, Adaptation Living
+          LLC&apos;s total liability for any claim arising out of or related
+          to the services is capped at the total amounts you paid us in the
+          12 months preceding the claim.
+        </p>
+
+        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-white">
+          Jurisdiction
+        </h3>
+        <p className="text-text-muted leading-relaxed">
+          These terms are governed by the laws of the State of Arizona. Any
+          disputes will be resolved exclusively in the state or federal
+          courts located in Maricopa County, Arizona, USA.
         </p>
 
         <hr className="border-glass-border my-12" />

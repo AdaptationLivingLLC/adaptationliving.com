@@ -20,8 +20,20 @@ export const metadata: Metadata = {
   twitter: pageTwitter(title, description),
 };
 
-export default function IntakePage() {
+const PLAN_LABELS: Record<string, string> = {
+  "managed-starter": "Managed Starter ($1,497/mo + $1,997 setup)",
+  "managed-growth": "Managed Growth ($2,997/mo + $3,997 setup)",
+  "managed-scale": "Managed Scale ($5,997/mo + $7,997 setup)",
+};
+
+export default async function IntakePage({
+  searchParams,
+}: {
+  searchParams: Promise<{ plan?: string }>;
+}) {
   const formId = process.env.NEXT_PUBLIC_GHL_FORM_ID;
+  const { plan } = await searchParams;
+  const planLabel = plan ? PLAN_LABELS[plan] : undefined;
 
   return (
     <main id="main-content" className="navbar-offset">
@@ -36,6 +48,20 @@ export default function IntakePage() {
           No sales funnels, no intake gates. Just a conversation.
         </p>
       </section>
+
+      {/* Plan acknowledgment banner */}
+      {planLabel && (
+        <section className="max-w-[700px] mx-auto px-8 pb-6">
+          <div className="rounded-lg border border-accent/30 bg-accent/10 p-6 text-center">
+            <p className="text-base sm:text-lg leading-relaxed">
+              You&apos;re booking a call for the{" "}
+              <strong className="text-accent">{planLabel}</strong> plan.
+              Tell us about your business and we&apos;ll prepare a tailored
+              walk-through.
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* Form */}
       <section className="max-w-[700px] mx-auto px-8 pb-16">

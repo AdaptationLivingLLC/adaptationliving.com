@@ -187,12 +187,12 @@ export default function ShowcasePage() {
           <PriceTag
             label="Agencies charge"
             theirs="$3,000–$8,000 setup"
-            ours="Included at $500/mo"
+            ours="Included in Growth plan — $597/mo"
           />
           <p className="text-text-muted text-sm max-w-md">
             Most AI chat setups are sold as standalone projects. We integrate it into
             your website, Facebook, Instagram, Google, and SMS — all included in
-            your managed plan.
+            your Growth plan.
           </p>
         </div>
       </section>
@@ -237,7 +237,7 @@ export default function ShowcasePage() {
           <PriceTag
             label="Agencies charge"
             theirs="$10,000+ setup + $500/mo"
-            ours="Included at $500/mo"
+            ours="Included in Growth plan — $597/mo"
           />
         </div>
       </section>
@@ -284,7 +284,7 @@ export default function ShowcasePage() {
           <PriceTag
             label="GoDaddy / Agencies"
             theirs="$10,000–$20,000 for 5 pages"
-            ours="Setup from $1,500"
+            ours="From $297/mo self-serve · no setup fee"
           />
         </div>
       </section>
@@ -336,11 +336,11 @@ export default function ShowcasePage() {
             Not a pitch. Not a mockup. The real thing.
           </p>
           <p className="max-w-xl mx-auto text-white/50 text-sm mb-8">
-            Setup from $1,500. Managed from $500/mo. Two businesses? $350/mo each.
+            From $297/mo self-serve · No setup fee · Done-for-you from $1,497/mo + $1,997 setup.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <a href="/intake" className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-accent bg-accent text-white hover:bg-transparent hover:text-accent transition-all inline-block">
-              Start Your Build
+            <a href="/services#self-serve" className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-accent bg-accent text-white hover:bg-transparent hover:text-accent transition-all inline-block">
+              Buy Self-Serve
             </a>
             <a href="/services" className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-white/70 bg-transparent text-white hover:bg-white hover:text-bg-dark transition-all inline-block">
               See All Plans

@@ -65,35 +65,35 @@ const painPoints = [
     pain: "When you miss a call, someone else gets the sale.",
     answer:
       "Missed-call text-back fires immediately, recovers momentum, and keeps the lead from leaving your orbit.",
-    href: "/services#automation",
+    href: "/services#self-serve",
   },
   {
     title: "Slow Follow-Up",
     pain: "Your leads are hottest in the first five minutes.",
     answer:
       "AI-assisted SMS, email, and chat workflows respond in seconds instead of hours.",
-    href: "/services#automation",
+    href: "/services#self-serve",
   },
   {
     title: "Disconnected Software",
     pain: "Eight tools. Eight logins. Eight bills. Zero coordination.",
     answer:
       "A unified business operating system replaces the stack with one cleaner environment.",
-    href: "/services#ai-revenue",
+    href: "/services#done-for-you",
   },
   {
     title: "Weak Website",
     pain: "If it looks like a template, buyers treat you like a commodity.",
     answer:
       "Custom web architecture elevates trust, speed, and conversion before the sales process even begins.",
-    href: "/services#web-suites",
+    href: "/services#self-serve",
   },
   {
     title: "Poor Conversion",
     pain: "Traffic without conversion is just another expense.",
     answer:
       "Conversion-engineered pages, CTA hierarchy, and cleaner user flow turn attention into action.",
-    href: "/services#web-suites",
+    href: "/services#self-serve",
   },
   {
     title: "Invisible Online",
@@ -109,28 +109,28 @@ const worlds = [
     title: "Business Operating Systems",
     description:
       "CRM infrastructure, missed-call text-back, booking, reminders, pipeline control, and one operating layer for growth.",
-    href: "/services#ai-revenue",
+    href: "/services#done-for-you",
     icon: Workflow,
   },
   {
     title: "AI Automation",
     description:
       "AI-assisted intake, qualification, follow-up, routing, and customer engagement systems that work around the clock.",
-    href: "/services#automation",
+    href: "/services#self-serve",
     icon: BrainCircuit,
   },
   {
     title: "Custom Web Architecture",
     description:
       "Custom websites, landing pages, and digital experiences engineered to convert and outperform template competitors.",
-    href: "/services#web-suites",
+    href: "/services#self-serve",
     icon: Code,
   },
   {
     title: "Revenue Tools",
     description:
       "Elegant calculators and diagnostic instruments that quantify lost time, wasted spend, and recoverable revenue.",
-    href: "/services#strategy",
+    href: "/services#done-for-you",
     icon: MonitorSmartphone,
   },
   {
@@ -148,7 +148,7 @@ const showcaseCards = [
     title: "24/7 AI Phone & Chat",
     description:
       "Your AI receptionist answers calls, captures leads, and books appointments around the clock. Your chat agent handles every website visitor, DM, and text instantly.",
-    value: "Included in the $500/mo managed plan",
+    value: "Included in Growth plan — $597/mo",
     href: "/ai",
   },
   {
@@ -156,7 +156,7 @@ const showcaseCards = [
     title: "Replace 8 Tools With 1",
     description:
       "CRM, email, SMS, chat, calendar, reviews, pipeline, reporting — all in one platform. Stop paying for eight disconnected subscriptions.",
-    value: "Setup from $1,500 · Managed from $500/mo",
+    value: "From $297/mo · No setup fee",
     href: "/services",
   },
   {
@@ -337,10 +337,10 @@ export default function HomePage() {
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
-                  href="/intake"
+                  href="/services#self-serve"
                   className="inline-flex items-center justify-center gap-2 border-2 border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent"
                 >
-                  Start Your Build <ArrowRight className="h-4 w-4" />
+                  Buy Self-Serve <ArrowRight className="h-4 w-4" />
                 </a>
                 <a
                   href="/contact"
@@ -650,8 +650,8 @@ export default function HomePage() {
               </span>
             </div>
             <div className="flex justify-center gap-4 flex-wrap">
-              <a href="/intake" className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-accent bg-accent text-white hover:bg-transparent hover:text-accent transition-all inline-block">
-                Start Your Build
+              <a href="/services#self-serve" className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-accent bg-accent text-white hover:bg-transparent hover:text-accent transition-all inline-block">
+                Buy Self-Serve
               </a>
               <a href="/contact" className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-white/70 bg-transparent text-white hover:bg-white hover:text-bg-dark transition-all inline-block">
                 Book A Demo

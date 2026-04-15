@@ -58,8 +58,8 @@ export default function AIPage() {
             serviceType: "AI Business Automation",
             offers: {
               "@type": "AggregateOffer",
-              lowPrice: "99.99",
-              highPrice: "5000",
+              lowPrice: "297",
+              highPrice: "5997",
               priceCurrency: "USD",
             },
           }),
@@ -136,7 +136,7 @@ export default function AIPage() {
             Sign up both companies and get our fully managed system — AI phone answering,
             chat agents, CRM, automation, SEO, everything — for
             each business at <strong className="text-white">$350/month per business</strong> instead
-            of $500. Same quality. Same service. $300/month in savings.
+            of the standard Growth rate. Same quality. Same service.
           </p>
           <div className="flex justify-center gap-6 flex-wrap text-sm mb-6">
             <span className="flex items-center gap-2 text-white/80">
@@ -270,14 +270,14 @@ export default function AIPage() {
             <div className="space-y-4">
               <div className="rounded-2xl border border-accent/20 bg-accent/5 p-6">
                 <p className="text-[11px] uppercase tracking-[0.22em] text-accent mb-2">Included In</p>
-                <p className="text-white font-semibold text-lg">Managed Plan ($500/mo) and above</p>
+                <p className="text-white font-semibold text-lg">Growth plan ($597/mo) and above</p>
                 <p className="text-text-muted text-sm mt-2">No extra charge. No per-call fees. Included in your plan.</p>
               </div>
               <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
                 <p className="text-[11px] uppercase tracking-[0.22em] text-white/50 mb-2">What Others Charge</p>
                 <p className="text-text-muted text-sm">Human answering services: $200–$500/mo (limited hours)</p>
                 <p className="text-text-muted text-sm">AI agencies: $10,000+ setup + $500/mo ongoing</p>
-                <p className="text-accent text-sm font-semibold mt-2">We include it in your managed plan. Zero setup fee for this feature.</p>
+                <p className="text-accent text-sm font-semibold mt-2">We include it starting in Growth ($597/mo). Zero setup fee on self-serve.</p>
               </div>
             </div>
           </div>
@@ -330,7 +330,7 @@ export default function AIPage() {
             <div className="space-y-4">
               <div className="rounded-2xl border border-accent/20 bg-accent/5 p-6">
                 <p className="text-[11px] uppercase tracking-[0.22em] text-accent mb-2">Included In</p>
-                <p className="text-white font-semibold text-lg">Managed Plan ($500/mo) and above</p>
+                <p className="text-white font-semibold text-lg">Growth plan ($597/mo) and above</p>
               </div>
               <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
                 <p className="text-white/80 text-sm">
@@ -385,8 +385,8 @@ export default function AIPage() {
             <div className="space-y-4">
               <div className="rounded-2xl border border-accent/20 bg-accent/5 p-6">
                 <p className="text-[11px] uppercase tracking-[0.22em] text-accent mb-2">Included In</p>
-                <p className="text-white font-semibold">Basic automation: Growth Plan ($200/mo)</p>
-                <p className="text-white font-semibold">Advanced AI workflows: Managed Plan ($500/mo)</p>
+                <p className="text-white font-semibold">Basic automation: Starter ($297/mo)</p>
+                <p className="text-white font-semibold">Advanced AI workflows: Growth plan ($597/mo)</p>
               </div>
               <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
                 <p className="text-text-muted text-sm">Individual AI workflow actions cost one penny each ($0.01). The visual workflow builder is free — describe what you want and the AI creates it.</p>
@@ -509,7 +509,7 @@ export default function AIPage() {
           </div>
           <div className="mt-8 rounded-2xl border border-accent/20 bg-accent/5 p-6 inline-block">
             <p className="text-[11px] uppercase tracking-[0.22em] text-accent mb-2">Included In</p>
-            <p className="text-white font-semibold">Business Plan ($1,000/mo) and above</p>
+            <p className="text-white font-semibold">Managed Scale ($5,997/mo + $7,997 setup)</p>
           </div>
         </div>
       </section>
@@ -587,13 +587,13 @@ export default function AIPage() {
               </thead>
               <tbody>
                 {[
-                  { f: "24/7 AI Phone Answering", t: "$200–$500/mo (humans, limited hours)", a: "$10,000+ setup + $500/mo", u: "Included at $500/mo" },
-                  { f: "AI Chat (website + social)", t: "$300–$1,000/mo (humans, business hours)", a: "$3,000–$8,000 setup", u: "Included at $500/mo" },
-                  { f: "CRM + Automation", t: "$150–$500/mo (software only)", a: "$5,000–$15,000 setup", u: "Included in setup" },
+                  { f: "24/7 AI Phone Answering", t: "$200–$500/mo (humans, limited hours)", a: "$10,000+ setup + $500/mo", u: "Included in Growth ($597/mo)" },
+                  { f: "AI Chat (website + social)", t: "$300–$1,000/mo (humans, business hours)", a: "$3,000–$8,000 setup", u: "Included in Growth ($597/mo)" },
+                  { f: "CRM + Automation", t: "$150–$500/mo (software only)", a: "$5,000–$15,000 setup", u: "Included in every plan" },
                   { f: "Review Management", t: "$100–$300/mo", a: "$2,000+ setup", u: "$0.01/review (included)" },
                   { f: "Content Generation", t: "$500–$2,000/mo (freelancer)", a: "$3,000–$5,000/mo (retainer)", u: "$0.09/1K words" },
                   { f: "Workflow Automation", t: "Manual (your time)", a: "$5,000–$20,000 setup", u: "$0.01/action + FREE builder" },
-                  { f: "Custom Website", t: "$3,000–$10,000 (template)", a: "$10,000–$20,000", u: "In setup ($1,500–$10K)" },
+                  { f: "Custom Website", t: "$3,000–$10,000 (template)", a: "$10,000–$20,000", u: "Included in every plan" },
                   { f: "SEO Optimization", t: "$2,000–$5,000/mo", a: "$2,000–$5,000/mo", u: "Included every tier" },
                 ].map((row) => (
                   <tr key={row.f} className="border-b border-white/5">
@@ -608,7 +608,7 @@ export default function AIPage() {
           </div>
           <p className="text-white/40 text-sm mt-6">
             Add it up. The same stack agencies sell for $30,000–$50,000+ in setup and $3,000–$8,000/mo
-            in management — we deliver for $1,500–$10,000 setup and $500/mo managed.
+            in management — we deliver from $297/mo self-serve, or done-for-you from $1,497/mo + $1,997 setup.
             Same features. Better technology. A fraction of the cost.
           </p>
         </div>
@@ -668,15 +668,15 @@ export default function AIPage() {
             we build for your business.
           </p>
           <p className="max-w-xl mx-auto text-white/60 text-sm mb-4">
-            Managed plans start at $500/mo. Setup starts at $1,500. AI receptionist, chat
+            Self-serve plans start at $297/mo with no setup fee. Done-for-you plans start at $1,497/mo + $1,997 setup. AI receptionist, chat
             agent, CRM, automation, SEO, and a custom website — all included.
           </p>
           <p className="max-w-xl mx-auto text-accent text-sm font-semibold mb-8">
             Two businesses? $350/mo each. Same everything.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <a href="/intake" className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-accent bg-accent text-white hover:bg-transparent hover:text-accent transition-all inline-block">
-              Start Your Build
+            <a href="/services#self-serve" className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-accent bg-accent text-white hover:bg-transparent hover:text-accent transition-all inline-block">
+              Buy Self-Serve
             </a>
             <a href="/contact" className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-white/70 bg-transparent text-white hover:bg-white hover:text-bg-dark transition-all inline-block">
               Book A Demo

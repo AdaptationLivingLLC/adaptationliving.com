@@ -6,7 +6,7 @@ import { Linkedin } from "lucide-react";
 import { hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Clarity } from "@al/analytics/clarity";
-import { GoogleAnalytics } from "@al/analytics/ga4";
+// GA4 is loaded via GTM container — do not add GoogleAnalytics here
 import { GoogleTagManager } from "@al/analytics/gtm";
 import { MetaPixel } from "@al/analytics/meta-pixel";
 import { IntlProvider, locales } from "@al/i18n";
@@ -119,8 +119,7 @@ export default async function LocaleLayout({
   }
 
   const messages = await getMessages();
-  const gtmId = process.env.NEXT_PUBLIC_GTM_ID ?? "GTM-MJ4PX9C3";
-  const gaId = process.env.NEXT_PUBLIC_GA4_ID;
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
   const fbPixelId = process.env.NEXT_PUBLIC_FB_PIXEL_ID;
   const clarityId = process.env.NEXT_PUBLIC_CLARITY_ID;
 
@@ -144,13 +143,13 @@ export default async function LocaleLayout({
           <link rel="dns-prefetch" href="https://connect.facebook.net" />
         )}
 
-        {/* Analytics */}
-        {gtmId && <GoogleTagManager gtmId={gtmId} />}
-        {gaId && <GoogleAnalytics gaId={gaId} />}
+        {/* Analytics (head-only: Meta Pixel + Clarity). GTM is rendered in <body> so its <noscript> iframe is a valid body child. */}
         {fbPixelId && <MetaPixel pixelId={fbPixelId} />}
         {clarityId && <Clarity projectId={clarityId} />}
       </head>
       <body>
+        {/* GTM — placed as first child of <body>; component injects head <script> and body <noscript> correctly */}
+        {gtmId && <GoogleTagManager gtmId={gtmId} />}
         <IntlProvider locale={locale} messages={messages}>
           {/* Skip to main content for accessibility */}
           <a href="#main-content" className="skip-nav">
@@ -257,15 +256,15 @@ export default async function LocaleLayout({
           </footer>
         </IntlProvider>
 
+        {/* GHL Chat Widget — floats in bottom corner, loads after page is interactive */}
+        <Script
+          id="ghl-chat-widget"
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="69db6e04d0d6ea75797b53f6"
+          strategy="lazyOnload"
+        />
       </body>
-      {/* GHL Chat Widget — floats in bottom corner, loads after page is interactive */}
-      <Script
-        id="ghl-chat-widget"
-        src="https://widgets.leadconnectorhq.com/loader.js"
-        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-        data-widget-id="69db6e04d0d6ea75797b53f6"
-        strategy="lazyOnload"
-      />
     </html>
   );
 }

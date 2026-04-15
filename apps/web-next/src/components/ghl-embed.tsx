@@ -7,6 +7,7 @@ interface GhlEmbedProps {
   calendarId?: string;
   className?: string;
   height?: string;
+  allowMedia?: boolean;
 }
 
 export function GhlEmbed({
@@ -14,6 +15,7 @@ export function GhlEmbed({
   calendarId,
   className = "",
   height = "600px",
+  allowMedia = false,
 }: GhlEmbedProps) {
   const [loaded, setLoaded] = useState(false);
   const src = formId
@@ -36,7 +38,8 @@ export function GhlEmbed({
         style={{ width: "100%", height, border: "none" }}
         onLoad={() => setLoaded(true)}
         title={formId ? "Contact Form" : "Book a Call"}
-        allow="camera; microphone"
+        sandbox="allow-scripts allow-forms allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+        {...(allowMedia ? { allow: "camera; microphone" } : {})}
       />
     </div>
   );

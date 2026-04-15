@@ -481,7 +481,7 @@ export default function ServicesPage() {
       <section className="max-w-[1400px] mx-auto px-8 py-16 border-t border-glass-border">
         <h2 className="font-display text-3xl font-bold mb-3">Find Your Fit</h2>
         <p className="text-text-muted text-base mb-8 max-w-3xl">
-          Not sure which tier fits? Here&apos;s how we map team size to plan.
+          Not sure which tier fits? Here's how we map team size to plan.
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
@@ -490,7 +490,7 @@ export default function ServicesPage() {
               title: "Solo / Startup",
               range: "1–3 users",
               plan: "Starter · $297/mo",
-              desc: "You&apos;re doing everything yourself. You need CRM, follow-up, and a professional presence.",
+              desc: "You're doing everything yourself. You need CRM, follow-up, and a professional presence.",
             },
             {
               icon: Workflow,
