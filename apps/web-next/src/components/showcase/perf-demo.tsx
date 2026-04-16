@@ -23,7 +23,7 @@ export function PerfDemo() {
   const [particleCount, setParticleCount] = useState(0);
   const lastTimeRef = useRef(performance.now());
 
-  const colors = ["#d4af37", "#e74c3c", "#ffffff", "#d4af37", "#e74c3c"];
+  const colors = ["#D4AF37", "#FDF6EC", "#ffffff", "#B8941F", "#D4AF37"];
 
   const spawnParticles = useCallback((x: number, y: number, count: number) => {
     for (let i = 0; i < count; i++) {
@@ -155,18 +155,18 @@ export function PerfDemo() {
   }, [spawnParticles]);
 
   return (
-    <div className="relative w-full h-[400px] rounded-2xl overflow-hidden border border-white/10 bg-black/90">
+    <div className="relative w-full h-[400px] rounded-2xl overflow-hidden border border-white/10 bg-[#0B1D3A]/90">
       <canvas
         ref={canvasRef}
         className="w-full h-full cursor-crosshair"
         style={{ display: "block" }}
       />
       <div className="absolute top-4 left-4 flex gap-3">
-        <div className="rounded-lg bg-black/70 border border-white/10 px-3 py-1.5">
+        <div className="rounded-lg bg-[#0B1D3A]/70 border border-white/10 px-3 py-1.5">
           <p className="text-[10px] uppercase tracking-widest text-accent">FPS</p>
           <p className="font-display text-lg font-bold text-white">{fps}</p>
         </div>
-        <div className="rounded-lg bg-black/70 border border-white/10 px-3 py-1.5">
+        <div className="rounded-lg bg-[#0B1D3A]/70 border border-white/10 px-3 py-1.5">
           <p className="text-[10px] uppercase tracking-widest text-accent">Particles</p>
           <p className="font-display text-lg font-bold text-white">{particleCount}</p>
         </div>

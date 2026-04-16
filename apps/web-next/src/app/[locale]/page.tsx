@@ -344,7 +344,7 @@ export default function HomePage() {
           >
             <source src="/assets/video/hero-bg.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(212,175,55,0.18),transparent_24%),radial-gradient(circle_at_bottom_right,rgba(231,76,60,0.2),transparent_22%),linear-gradient(180deg,rgba(0,0,0,0.62),rgba(10,10,10,0.96))]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(212,175,55,0.18),transparent_24%),radial-gradient(circle_at_bottom_right,rgba(212,175,55,0.2),transparent_22%),linear-gradient(180deg,rgba(11,29,58,0.62),rgba(11,29,58,0.96))]" />
           <div className="relative mx-auto grid min-h-screen max-w-[1400px] grid-cols-1 gap-10 px-8 pb-20 pt-36 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
             <div>
               <div className="mb-6 flex flex-wrap items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-accent">
@@ -410,7 +410,7 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
-              <div className="mt-4 rounded-2xl border border-white/8 bg-black/25 p-5">
+              <div className="mt-4 rounded-2xl border border-white/8 bg-[#0B1D3A]/25 p-5">
                 <p className="mb-3 text-[11px] uppercase tracking-[0.22em] text-accent">System Layers</p>
                 <div className="flex flex-wrap gap-3 text-sm text-white/85">
                   {["Website", "CRM", "AI Follow-Up", "Booking", "Reporting", "Review Automation"].map((item) => (
@@ -424,8 +424,8 @@ export default function HomePage() {
           </div>
         </header>
 
-        <section className="relative overflow-hidden border-b border-glass-border bg-[#050505] py-28">
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(212,175,55,0.18),transparent_35%),radial-gradient(circle_at_85%_90%,rgba(231,76,60,0.18),transparent_40%)]" />
+        <section className="relative overflow-hidden border-b border-glass-border bg-[#091529] py-28">
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(212,175,55,0.18),transparent_35%),radial-gradient(circle_at_85%_90%,rgba(212,175,55,0.18),transparent_40%)]" />
           <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/60 to-transparent" />
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
 
@@ -456,17 +456,17 @@ export default function HomePage() {
             <div className="group relative">
               <div
                 aria-hidden="true"
-                className="absolute -inset-1 rounded-[34px] bg-[conic-gradient(from_120deg_at_50%_50%,rgba(212,175,55,0.55),rgba(231,76,60,0.45),rgba(212,175,55,0.55))] opacity-60 blur-xl transition-opacity duration-500 group-hover:opacity-90"
+                className="absolute -inset-1 rounded-[34px] bg-[conic-gradient(from_120deg_at_50%_50%,rgba(212,175,55,0.55),rgba(212,175,55,0.45),rgba(212,175,55,0.55))] opacity-60 blur-xl transition-opacity duration-500 group-hover:opacity-90"
               />
               <div
                 aria-hidden="true"
                 className="absolute -inset-px rounded-[30px] bg-gradient-to-br from-accent/70 via-white/20 to-accent/40"
               />
-              <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-black shadow-[0_40px_120px_-20px_rgba(212,175,55,0.35)]">
-                <div className="pointer-events-none absolute left-6 top-6 z-10 flex items-center gap-2 rounded-full border border-white/15 bg-black/60 px-3 py-1.5 text-[10px] uppercase tracking-[0.28em] text-white/85 backdrop-blur">
+              <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-[#0B1D3A] shadow-[0_40px_120px_-20px_rgba(212,175,55,0.35)]">
+                <div className="pointer-events-none absolute left-6 top-6 z-10 flex items-center gap-2 rounded-full border border-white/15 bg-[#0B1D3A]/60 px-3 py-1.5 text-[10px] uppercase tracking-[0.28em] text-white/85 backdrop-blur">
                   <span className="h-1.5 w-1.5 rounded-full bg-red-500" /> Adaptation OS · Live Demo
                 </div>
-                <div className="pointer-events-none absolute right-6 top-6 z-10 rounded-full border border-white/15 bg-black/60 px-3 py-1.5 text-[10px] uppercase tracking-[0.28em] text-white/75 backdrop-blur">
+                <div className="pointer-events-none absolute right-6 top-6 z-10 rounded-full border border-white/15 bg-[#0B1D3A]/60 px-3 py-1.5 text-[10px] uppercase tracking-[0.28em] text-white/75 backdrop-blur">
                   4K · Phoenix, AZ
                 </div>
                 <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
@@ -518,7 +518,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="border-b border-glass-border bg-gradient-to-r from-accent/10 via-black to-black/95 py-18">
+        <section className="border-b border-glass-border bg-gradient-to-r from-accent/10 via-[#0B1D3A] to-[#0B1D3A]/95 py-18">
           <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-stretch gap-8 px-8 lg:grid-cols-[0.95fr_1.05fr]">
             <div className="relative min-h-[320px] overflow-hidden rounded-[28px] border border-white/10">
               <Image
@@ -527,7 +527,7 @@ export default function HomePage() {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B1D3A] via-[#0B1D3A]/30 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <p className="text-[11px] uppercase tracking-[0.24em] text-accent">Uptown Phoenix</p>
                 <p className="mt-2 font-display text-3xl font-bold">Real Office. Real Team. Real Results.</p>
@@ -559,28 +559,32 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-[1400px] px-8 py-24">
-          <div className="mb-12 max-w-3xl">
-            <p className="mb-3 text-sm uppercase tracking-[0.24em] text-accent">You Already Know What Is Broken</p>
-            <h2 className="font-display text-4xl font-bold sm:text-5xl">The problems costing business owners money are not mysterious.</h2>
-            <p className="mt-4 text-lg leading-relaxed text-text-muted">
-              Missed calls, slow follow-up, disconnected software, weak websites, invisible search presence, and no clear operating layer.
-              We build the systems that close those gaps.
-            </p>
-          </div>
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {painPoints.map((item) => (
-              <a key={item.title} href={item.href} className="glass rounded-[26px] p-8 transition-all hover:-translate-y-1 hover:border-accent">
-                <p className="mb-3 text-sm uppercase tracking-[0.2em] text-accent">{item.title}</p>
-                <h3 className="font-display text-2xl font-bold">{item.pain}</h3>
-                <p className="mt-4 text-base leading-relaxed text-text-muted">{item.answer}</p>
-                <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-white/85">
-                  Explore the Fix <ArrowRight className="h-4 w-4 text-accent" />
-                </span>
-              </a>
-            ))}
+        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
+        <section className="section-cream mx-auto px-8 py-24">
+          <div className="mx-auto max-w-[1400px]">
+            <div className="mb-12 max-w-3xl">
+              <p className="mb-3 text-sm uppercase tracking-[0.24em] text-accent">You Already Know What Is Broken</p>
+              <h2 className="font-display text-4xl font-bold text-[#0B1D3A] sm:text-5xl">The problems costing business owners money are not mysterious.</h2>
+              <p className="mt-4 text-lg leading-relaxed text-text-muted">
+                Missed calls, slow follow-up, disconnected software, weak websites, invisible search presence, and no clear operating layer.
+                We build the systems that close those gaps.
+              </p>
+            </div>
+            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              {painPoints.map((item) => (
+                <a key={item.title} href={item.href} className="rounded-[26px] bg-white/80 border border-[#D4AF37]/15 p-8 transition-all hover:-translate-y-1 hover:border-accent">
+                  <p className="mb-3 text-sm uppercase tracking-[0.2em] text-accent">{item.title}</p>
+                  <h3 className="font-display text-2xl font-bold text-[#0B1D3A]">{item.pain}</h3>
+                  <p className="mt-4 text-base leading-relaxed text-text-muted">{item.answer}</p>
+                  <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-[#0B1D3A]/85">
+                    Explore the Fix <ArrowRight className="h-4 w-4 text-accent" />
+                  </span>
+                </a>
+              ))}
+            </div>
           </div>
         </section>
+        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
 
         <section id="services" className="border-y border-glass-border bg-white/[0.02] py-24">
           <div className="mx-auto max-w-[1400px] px-8">
@@ -599,8 +603,8 @@ export default function HomePage() {
                   href={world.href}
                   className={`group rounded-[30px] border p-8 transition-all hover:-translate-y-1 ${
                     index === 0 || index === 3
-                      ? "border-accent/35 bg-gradient-to-br from-accent/12 via-black to-black"
-                      : "border-white/10 bg-black/40"
+                      ? "border-accent/35 bg-gradient-to-br from-accent/12 via-[#0B1D3A] to-[#0B1D3A]"
+                      : "border-white/10 bg-[#0B1D3A]/40"
                   }`}
                 >
                   <world.icon className="mb-5 h-10 w-10 text-accent" />
@@ -635,7 +639,7 @@ export default function HomePage() {
                 <p className="mb-3 text-sm uppercase tracking-[0.2em] text-accent">{card.kicker}</p>
                 <h3 className="font-display text-2xl font-bold">{card.title}</h3>
                 <p className="mt-4 text-base leading-relaxed text-text-muted">{card.description}</p>
-                <div className="mt-6 rounded-2xl border border-white/10 bg-black/35 p-5">
+                <div className="mt-6 rounded-2xl border border-white/10 bg-[#0B1D3A]/35 p-5">
                   <p className="text-[11px] uppercase tracking-[0.2em] text-white/60">Preview Output</p>
                   <p className="mt-3 text-lg text-white/88">{card.value}</p>
                 </div>
@@ -644,11 +648,12 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="border-y border-glass-border bg-gradient-to-br from-accent/8 to-black py-24">
+        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
+        <section className="section-cream py-24">
           <div className="mx-auto max-w-[1400px] px-8">
             <div className="mb-12 max-w-3xl">
               <p className="mb-3 text-sm uppercase tracking-[0.24em] text-accent">Adaptation OS</p>
-              <h2 className="font-display text-4xl font-bold sm:text-5xl">Instant access. No setup fee. Cancel anytime.</h2>
+              <h2 className="font-display text-4xl font-bold text-[#0B1D3A] sm:text-5xl">Instant access. No setup fee. Cancel anytime.</h2>
               <p className="mt-4 text-lg leading-relaxed text-text-muted">
                 Buy a plan, log in the same day, and run your entire business on one platform. CRM, AI agents, automation, funnels, calendars, reviews, campaigns — all included. Or go done-for-you and we build it all for you.
               </p>
@@ -659,10 +664,10 @@ export default function HomePage() {
                 ["Growth", "$597/mo", "or $5,970/yr — save $1,194", "Up to 10 users · AI agents, funnels, pipelines, integrations, live onboarding, $25 credits/mo."],
                 ["Scale", "$1,197/mo", "or $11,970/yr — save $2,394", "Up to 50 users · Everything unlocked, branded mobile app, priority phone support, $100 credits/mo."],
               ].map(([title, price, tag, copy], index) => (
-                <div key={title} className={`rounded-[28px] border p-8 ${index === 1 ? "border-accent bg-accent/8 ring-1 ring-accent/40" : "border-white/10 bg-black/35"}`}>
+                <div key={title} className={`rounded-[28px] border p-8 ${index === 1 ? "border-accent bg-accent/8 ring-1 ring-accent/40" : "border-[#0B1D3A]/10 bg-white/80"}`}>
                   <p className="text-sm uppercase tracking-[0.2em] text-accent">{title}</p>
-                  <p className="mt-5 font-display text-4xl font-bold">{price}</p>
-                  <p className="mt-2 text-sm text-white/70">{tag}</p>
+                  <p className="mt-5 font-display text-4xl font-bold text-[#0B1D3A]">{price}</p>
+                  <p className="mt-2 text-sm text-[#0B1D3A]/70">{tag}</p>
                   <p className="mt-5 text-base leading-relaxed text-text-muted">{copy}</p>
                 </div>
               ))}
@@ -671,12 +676,13 @@ export default function HomePage() {
               <a href="/services#self-serve" className="inline-flex items-center justify-center gap-2 border-2 border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent">
                 Buy Self-Serve <ArrowRight className="h-4 w-4" />
               </a>
-              <a href="/services#done-for-you" className="inline-flex items-center justify-center gap-2 border-2 border-white/70 px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-white hover:text-bg-dark">
+              <a href="/services#done-for-you" className="inline-flex items-center justify-center gap-2 border-2 border-[#0B1D3A]/70 px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-[#0B1D3A] transition-all hover:bg-[#0B1D3A] hover:text-white">
                 See Done-For-You
               </a>
             </div>
           </div>
         </section>
+        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
 
         <section className="py-16 text-center border-t border-b border-glass-border">
           <div className="max-w-[1200px] mx-auto px-8">
@@ -700,53 +706,59 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section id="process" className="max-w-[1200px] mx-auto px-8 py-24">
-          <h2 className="font-display text-4xl font-bold text-center mb-4">How We Work</h2>
-          <p className="text-center max-w-2xl mx-auto text-text-muted text-lg mb-12">
-            From first conversation to live system — a clear, phased process with direct access to the people doing the work.
-          </p>
+        <section id="process" className="section-cream py-24">
+          <div className="max-w-[1200px] mx-auto px-8">
+            <h2 className="font-display text-4xl font-bold text-center text-[#0B1D3A] mb-4">How We Work</h2>
+            <p className="text-center max-w-2xl mx-auto text-text-muted text-lg mb-12">
+              From first conversation to live system — a clear, phased process with direct access to the people doing the work.
+            </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              ["01", "Reach Out", "Call, email, or submit the intake form. A real team member responds within hours."],
-              ["02", "Map Your Needs", "We identify what is broken, what it costs, and what the system needs to do."],
-              ["03", "Build & Deploy", "Your system is built, tested, and launched with clear visibility at every stage."],
-              ["04", "Support & Scale", "After launch, we optimize, maintain, and expand as your business grows."],
-            ].map(([step, title, copy]) => (
-              <div key={step} className="text-center p-8">
-                <span className="font-display text-5xl text-accent font-bold block mb-4">{step}</span>
-                <h3 className="font-display text-xl font-bold mb-3">{title}</h3>
-                <p className="text-text-muted text-base">{copy}</p>
-              </div>
-            ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                ["01", "Reach Out", "Call, email, or submit the intake form. A real team member responds within hours."],
+                ["02", "Map Your Needs", "We identify what is broken, what it costs, and what the system needs to do."],
+                ["03", "Build & Deploy", "Your system is built, tested, and launched with clear visibility at every stage."],
+                ["04", "Support & Scale", "After launch, we optimize, maintain, and expand as your business grows."],
+              ].map(([step, title, copy]) => (
+                <div key={step} className="text-center p-8">
+                  <span className="font-display text-5xl text-accent font-bold block mb-4">{step}</span>
+                  <h3 className="font-display text-xl font-bold text-[#0B1D3A] mb-3">{title}</h3>
+                  <p className="text-text-muted text-base">{copy}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
+        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
 
-        <section id="faq" className="max-w-[1200px] mx-auto px-8 py-24">
-          <h2 className="font-display text-4xl font-bold text-center mb-4">Common Questions</h2>
-          <p className="text-center max-w-2xl mx-auto text-text-muted text-lg mb-12">
-            Honest answers about demos, build speed, AI, and what it looks like to work with a serious operating partner.
-          </p>
+        <section id="faq" className="section-cream py-24">
+          <div className="max-w-[1200px] mx-auto px-8">
+            <h2 className="font-display text-4xl font-bold text-center text-[#0B1D3A] mb-4">Common Questions</h2>
+            <p className="text-center max-w-2xl mx-auto text-text-muted text-lg mb-12">
+              Honest answers about demos, build speed, AI, and what it looks like to work with a serious operating partner.
+            </p>
 
-          <div className="max-w-3xl mx-auto">
-            {faqs.map((item) => (
-              <details key={item.q} className="border-b border-glass-border group">
-                <summary className="flex justify-between items-center cursor-pointer py-6 text-lg font-semibold select-none">
-                  {item.q}
-                  <span className="text-accent text-2xl ml-4 group-open:hidden">+</span>
-                  <span className="text-accent text-2xl ml-4 hidden group-open:inline">−</span>
-                </summary>
-                <p className="text-text-muted leading-relaxed pb-6">{item.a}</p>
-              </details>
-            ))}
+            <div className="max-w-3xl mx-auto">
+              {faqs.map((item) => (
+                <details key={item.q} className="border-b border-[#0B1D3A]/10 group">
+                  <summary className="flex justify-between items-center cursor-pointer py-6 text-lg font-semibold text-[#0B1D3A] select-none">
+                    {item.q}
+                    <span className="text-accent text-2xl ml-4 group-open:hidden">+</span>
+                    <span className="text-accent text-2xl ml-4 hidden group-open:inline">−</span>
+                  </summary>
+                  <p className="text-text-muted leading-relaxed pb-6">{item.a}</p>
+                </details>
+              ))}
+            </div>
+            <p className="mt-10 text-center text-sm uppercase tracking-[0.2em] text-[#0B1D3A]/65">
+              Still have questions? Call us directly at{" "}
+              <a href="tel:6232191237" className="text-accent">
+                623-219-1237
+              </a>
+            </p>
           </div>
-          <p className="mt-10 text-center text-sm uppercase tracking-[0.2em] text-white/65">
-            Still have questions? Call us directly at{" "}
-            <a href="tel:6232191237" className="text-accent">
-              623-219-1237
-            </a>
-          </p>
         </section>
+        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
 
         <section className="py-24 text-center bg-gradient-to-br from-accent/10 to-bg-dark/90 border-t border-glass-border">
           <div className="max-w-[1200px] mx-auto px-8">

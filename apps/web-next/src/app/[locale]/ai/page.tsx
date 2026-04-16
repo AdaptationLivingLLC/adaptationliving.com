@@ -70,7 +70,7 @@ export default function AIPage() {
       {/* HERO                                       */}
       {/* ═══════════════════════════════════════════ */}
       <section className="relative overflow-hidden border-b border-glass-border">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.15),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(231,76,60,0.12),transparent_35%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.15),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(212,175,55,0.12),transparent_35%)]" />
         <div className="relative max-w-[1400px] mx-auto px-8 pt-20 pb-16">
           <div className="mb-6 flex flex-wrap gap-3 text-[11px] uppercase tracking-[0.28em] text-accent">
             <span className="rounded-full border border-accent/40 bg-accent/10 px-4 py-2">Built &amp; Managed by Adaptation Living</span>
@@ -158,7 +158,7 @@ export default function AIPage() {
       {/* ═══════════════════════════════════════════ */}
       {/* THE 2 AM SCENARIO                          */}
       {/* ═══════════════════════════════════════════ */}
-      <section className="border-b border-glass-border bg-gradient-to-r from-accent/8 via-black to-black/95 py-20">
+      <section className="border-b border-glass-border bg-gradient-to-r from-accent/8 via-[#0B1D3A] to-[#0B1D3A]/95 py-20">
         <div className="max-w-[1200px] mx-auto px-8">
           <div className="mb-10">
             <p className="text-sm uppercase tracking-[0.24em] text-accent mb-3">See The Difference</p>
@@ -287,7 +287,7 @@ export default function AIPage() {
       {/* ═══════════════════════════════════════════ */}
       {/* AI CHAT AGENT                              */}
       {/* ═══════════════════════════════════════════ */}
-      <section id="chat" className="py-20 border-b border-glass-border bg-black/40">
+      <section id="chat" className="py-20 border-b border-glass-border bg-[#0B1D3A]/40">
         <div className="max-w-[1200px] mx-auto px-8">
           <div className="flex items-center gap-3 mb-2">
             <MessageSquare className="text-accent w-8 h-8" />
@@ -400,7 +400,7 @@ export default function AIPage() {
       {/* ═══════════════════════════════════════════ */}
       {/* REVIEW MANAGEMENT                          */}
       {/* ═══════════════════════════════════════════ */}
-      <section id="reviews" className="py-20 border-b border-glass-border bg-black/40">
+      <section id="reviews" className="py-20 border-b border-glass-border bg-[#0B1D3A]/40">
         <div className="max-w-[1200px] mx-auto px-8">
           <div className="flex items-center gap-3 mb-2">
             <Star className="text-accent w-8 h-8" />
@@ -475,7 +475,7 @@ export default function AIPage() {
       {/* ═══════════════════════════════════════════ */}
       {/* CUSTOM AI AGENTS                           */}
       {/* ═══════════════════════════════════════════ */}
-      <section id="agents" className="py-20 border-b border-glass-border bg-black/40">
+      <section id="agents" className="py-20 border-b border-glass-border bg-[#0B1D3A]/40">
         <div className="max-w-[1200px] mx-auto px-8">
           <div className="flex items-center gap-3 mb-2">
             <Users className="text-accent w-8 h-8" />
@@ -567,7 +567,7 @@ export default function AIPage() {
       {/* ═══════════════════════════════════════════ */}
       {/* COST COMPARISON                            */}
       {/* ═══════════════════════════════════════════ */}
-      <section className="py-20 border-b border-glass-border bg-gradient-to-br from-accent/8 to-black">
+      <section className="py-20 border-b border-glass-border bg-gradient-to-br from-accent/8 to-[#0B1D3A]">
         <div className="max-w-[1200px] mx-auto px-8">
           <div className="mb-12">
             <p className="text-sm uppercase tracking-[0.24em] text-accent mb-3">The Real Numbers</p>

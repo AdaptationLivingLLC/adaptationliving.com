@@ -26,7 +26,7 @@ function AnimatedSphere() {
       >
         <icosahedronGeometry args={[1, 4]} />
         <MeshDistortMaterial
-          color={hovered ? "#e74c3c" : "#d4af37"}
+          color={hovered ? "#C9952B" : "#d4af37"}
           roughness={0.2}
           metalness={0.8}
           distort={hovered ? 0.5 : 0.3}
@@ -93,11 +93,11 @@ function Particles() {
 
 export function ThreeDemo() {
   return (
-    <div className="w-full h-[500px] rounded-2xl overflow-hidden border border-white/10 bg-black/80">
+    <div className="w-full h-[500px] rounded-2xl overflow-hidden border border-white/10 bg-[#0B1D3A]/80">
       <Canvas camera={{ position: [0, 0, 8], fov: 50 }}>
         <ambientLight intensity={0.3} />
         <pointLight position={[10, 10, 10]} intensity={1} color="#d4af37" />
-        <pointLight position={[-10, -5, -10]} intensity={0.5} color="#e74c3c" />
+        <pointLight position={[-10, -5, -10]} intensity={0.5} color="#D4AF37" />
         <spotLight position={[0, 10, 0]} angle={0.3} penumbra={1} intensity={0.5} />
         <AnimatedSphere />
         <FloatingRings />

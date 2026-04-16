@@ -228,7 +228,7 @@ export default function ServicesPage() {
               className={`rounded-[28px] border p-8 flex flex-col ${
                 plan.highlighted
                   ? "border-accent bg-accent/8 ring-1 ring-accent/40"
-                  : "border-white/10 bg-black/35"
+                  : "border-white/10 bg-[#0B1D3A]/35"
               }`}
             >
               {plan.highlighted && (
@@ -312,7 +312,7 @@ export default function ServicesPage() {
               className={`rounded-[28px] border p-8 flex flex-col ${
                 plan.highlighted
                   ? "border-accent bg-accent/8 ring-1 ring-accent/40"
-                  : "border-white/10 bg-black/35"
+                  : "border-white/10 bg-[#0B1D3A]/35"
               }`}
             >
               {plan.highlighted && (
