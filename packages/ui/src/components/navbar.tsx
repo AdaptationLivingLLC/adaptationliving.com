@@ -4,9 +4,10 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const navLinks = [
-  { href: "#services", label: "Services" },
-  { href: "#process", label: "Process" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/services", label: "Services" },
+  { href: "/showcase", label: "Showcase" },
+  { href: "/ai", label: "AI" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export function NavBar() {
@@ -34,8 +35,14 @@ export function NavBar() {
           </a>
         ))}
         <a
+          href="https://app.adaptationliving.com"
+          className="text-sm uppercase tracking-widest text-[#D4AF37] hover:text-[#D4AF37]/80 transition-all"
+        >
+          Sign In
+        </a>
+        <a
           href="/intake"
-          className="text-sm uppercase tracking-widest border border-white px-5 py-2 rounded hover:bg-white hover:text-bg-dark transition-all"
+          className="text-sm uppercase tracking-widest bg-[#D4AF37] text-[#0B1D3A] px-5 py-2 rounded font-bold hover:bg-[#D4AF37]/90 transition-all"
         >
           Start Project
         </a>
