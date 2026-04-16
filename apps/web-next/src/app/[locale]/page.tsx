@@ -421,6 +421,25 @@ export default function HomePage() {
           </div>
         </header>
 
+        <section className="section-cream py-16 border-b border-glass-border">
+          <div className="max-w-4xl mx-auto px-6 text-center">
+            <p className="mb-3 text-sm uppercase tracking-[0.24em] text-[#D4AF37]">Free Instant Analysis</p>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0B1D3A] mb-4">
+              Get Your Free SEO &amp; Marketing Report In Seconds
+            </h2>
+            <p className="text-[#4A5568] text-lg mb-8 max-w-2xl mx-auto">
+              Enter your website and we will analyze your online presence — SEO score, listing consistency, review health, and missed opportunities. Free, instant, no commitment.
+            </p>
+            <div className="max-w-xl mx-auto" id="prospecting-widget">
+              <Script
+                src="https://services.leadconnectorhq.com/prospecting/client/widget-embed.js"
+                data-widget-id="69e10ea0f9888528cbd6f1bb"
+                strategy="lazyOnload"
+              />
+            </div>
+          </div>
+        </section>
+
         <section className="relative overflow-hidden border-b border-glass-border bg-[#091529] py-28">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(212,175,55,0.18),transparent_35%),radial-gradient(circle_at_85%_90%,rgba(212,175,55,0.18),transparent_40%)]" />
           <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/60 to-transparent" />
@@ -645,26 +664,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
-        <section className="section-cream py-20">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <p className="mb-3 text-sm uppercase tracking-[0.24em] text-[#D4AF37]">Free Instant Analysis</p>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0B1D3A] mb-4">
-              Get Your Free SEO &amp; Marketing Report In Seconds
-            </h2>
-            <p className="text-[#4A5568] text-lg mb-10 max-w-2xl mx-auto">
-              Enter your website and we will analyze your online presence — SEO score, listing consistency, review health, and missed opportunities. Free, instant, no commitment.
-            </p>
-            <div className="max-w-xl mx-auto" id="prospecting-widget">
-              <Script
-                src="https://services.leadconnectorhq.com/prospecting/client/widget-embed.js"
-                data-widget-id="69e10ea0f9888528cbd6f1bb"
-                strategy="lazyOnload"
-              />
-            </div>
-          </div>
-        </section>
-        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
 
         <section className="section-cream py-24">
           <div className="mx-auto max-w-[1400px] px-8">
