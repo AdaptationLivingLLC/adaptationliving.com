@@ -161,6 +161,14 @@ const showcaseCards = [
     href: "/services",
   },
   {
+    kicker: "Always Visible",
+    title: "SEO & 70+ Directory Listings",
+    description:
+      "Your business listed consistently on Google, Yelp, Facebook, Apple Maps, Bing, and 65+ more directories. Consistent info everywhere means higher rankings.",
+    value: "Automated listing management included",
+    href: "/services",
+  },
+  {
     kicker: "In Person",
     title: "Live Demo in Phoenix",
     description:
@@ -636,7 +644,7 @@ export default function HomePage() {
         </section>
 
         <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
-        <section className="section-cream py-28">
+        <section style={{ background: "linear-gradient(170deg, #FEFCF8 0%, #F8F1E4 40%, #FDF6EC 70%, #FEFCF8 100%)" }} className="py-28">
           <div className="mx-auto max-w-[1400px] px-8">
             <div className="mb-16 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-3xl">
@@ -651,7 +659,7 @@ export default function HomePage() {
                 View pricing and implementation paths <ArrowRight className="h-4 w-4" />
               </a>
             </div>
-            <div className="grid gap-8 lg:grid-cols-3">
+            <div className="grid gap-8 sm:grid-cols-2">
               {showcaseCards.map((card) => (
                 <a key={card.title} href={card.href} className="bg-white rounded-[28px] border border-[#0B1D3A]/10 p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg hover:border-[#D4AF37]/40">
                   <p className="mb-3 text-sm uppercase tracking-[0.2em] text-[#D4AF37]">{card.kicker}</p>
