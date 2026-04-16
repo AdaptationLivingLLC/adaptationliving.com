@@ -73,14 +73,41 @@
   .skip-nav:focus { top: 16px; }
 }
 
-/* Force GHL chat widget to bottom-right */
+/* ───────────────────────────────────────────────────────────── */
+/* LOCK: GHL chat widget pinned to bottom-right, all viewports.  */
+/* The GHL loader injects several container variants — we cover  */
+/* every one and override inline styles with !important.         */
+/* ───────────────────────────────────────────────────────────── */
+
 #chat-widget-container,
+#chat-widget,
 [id^="chat-widget"],
-iframe[src*="leadconnectorhq"][src*="chat-widget"] {
+[class^="chat-widget"],
+[class*=" chat-widget"],
+chat-widget,
+chat-widget *,
+iframe[src*="leadconnectorhq"][src*="chat-widget"],
+iframe[src*="widgets.leadconnectorhq"][src*="chat"],
+div[data-widget-id="69db6e04d0d6ea75797b53f6"] {
+  position: fixed !important;
   top: auto !important;
   left: auto !important;
   bottom: 20px !important;
   right: 20px !important;
+  z-index: 2147483000 !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+
+/* Mobile safe-area adjustments so the bubble doesn't sit under home-indicator */
+@supports (padding: env(safe-area-inset-bottom)) {
+  #chat-widget-container,
+  #chat-widget,
+  [id^="chat-widget"],
+  iframe[src*="leadconnectorhq"][src*="chat-widget"] {
+    bottom: calc(20px + env(safe-area-inset-bottom)) !important;
+    right: calc(16px + env(safe-area-inset-right)) !important;
+  }
 }
 
 /* Prose overrides for legal page — readable on cream */
