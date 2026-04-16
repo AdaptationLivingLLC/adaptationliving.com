@@ -4,8 +4,8 @@
   "description": "Veteran-owned AI automation studio. Production-ready AI agents, automated workflows, websites, and apps.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0a0a",
-  "theme_color": "#e74c3c",
+  "background_color": "#0B1D3A",
+  "theme_color": "#D4AF37",
   "icons": [
     {
       "src": "/images/adaptation-seal-icon.svg",
