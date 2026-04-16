@@ -56,3 +56,13 @@
     top: 16px;
   }
 }
+
+/* Force GHL chat widget to bottom-right */
+#chat-widget-container,
+[id^="chat-widget"],
+iframe[src*="leadconnectorhq"][src*="chat-widget"] {
+  top: auto !important;
+  left: auto !important;
+  bottom: 20px !important;
+  right: 20px !important;
+}
