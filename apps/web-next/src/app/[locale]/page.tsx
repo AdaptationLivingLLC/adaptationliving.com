@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Script from "next/script";
 import {
   ArrowRight,
   BrainCircuit,
@@ -654,36 +655,12 @@ export default function HomePage() {
             <p className="text-[#4A5568] text-lg mb-10 max-w-2xl mx-auto">
               Enter your website and we will analyze your online presence — SEO score, listing consistency, review health, and missed opportunities. Free, instant, no commitment.
             </p>
-            <div className="max-w-xl mx-auto bg-white rounded-xl shadow-lg p-8">
-              <p className="text-[#0B1D3A] font-display text-lg font-bold mb-6">Enter your details to get started</p>
-              <form className="space-y-4 text-left">
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-semibold text-[#0B1D3A] mb-1">First Name *</label>
-                    <input type="text" required className="w-full border border-[#0B1D3A]/20 rounded-lg px-4 py-3 text-[#0B1D3A] focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/50" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-[#0B1D3A] mb-1">Last Name *</label>
-                    <input type="text" required className="w-full border border-[#0B1D3A]/20 rounded-lg px-4 py-3 text-[#0B1D3A] focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/50" />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-[#0B1D3A] mb-1">Phone *</label>
-                  <input type="tel" required className="w-full border border-[#0B1D3A]/20 rounded-lg px-4 py-3 text-[#0B1D3A] focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/50" />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-[#0B1D3A] mb-1">Email *</label>
-                  <input type="email" required className="w-full border border-[#0B1D3A]/20 rounded-lg px-4 py-3 text-[#0B1D3A] focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/50" />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-[#0B1D3A] mb-1">Website URL *</label>
-                  <input type="url" required placeholder="https://yourbusiness.com" className="w-full border border-[#0B1D3A]/20 rounded-lg px-4 py-3 text-[#0B1D3A] placeholder:text-[#0B1D3A]/40 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/50" />
-                </div>
-                <button type="submit" className="w-full bg-[#D4AF37] text-[#0B1D3A] px-8 py-4 rounded-lg text-sm font-bold uppercase tracking-[0.22em] hover:bg-[#D4AF37]/90 transition-colors">
-                  Get My Free Report
-                </button>
-              </form>
-              <p className="text-[#718096] text-xs mt-4">We will never spam you. Your data is private.</p>
+            <div className="max-w-xl mx-auto" id="prospecting-widget">
+              <Script
+                src="https://services.leadconnectorhq.com/prospecting/client/widget-embed.js"
+                data-widget-id="69e10ea0f9888528cbd6f1bb"
+                strategy="lazyOnload"
+              />
             </div>
           </div>
         </section>
