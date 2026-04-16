@@ -21,10 +21,10 @@ export const metadata: Metadata = {
 
 export default function LegalPage() {
   return (
-    <main id="main-content" className="navbar-offset">
+    <main id="main-content" className="navbar-offset section-cream">
       <BreadcrumbSchema items={[{ name: "Legal", path: "/legal" }]} />
-      <article className="max-w-[800px] mx-auto px-8 pt-16 pb-24 prose prose-invert prose-sm">
-        <h1 className="font-display text-4xl font-bold mb-8 text-white">
+      <article className="max-w-[800px] mx-auto px-8 pt-16 pb-24 prose prose-sm">
+        <h1 className="font-display text-4xl font-bold mb-8 text-[#0B1D3A]">
           Privacy Policy &amp; Legal Notice
         </h1>
 
@@ -32,7 +32,7 @@ export default function LegalPage() {
           Last updated: April 2026
         </p>
 
-        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-white">
+        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-[#0B1D3A]">
           1. Information We Collect
         </h2>
         <p className="text-text-muted leading-relaxed">
@@ -43,7 +43,7 @@ export default function LegalPage() {
           and Google Tag Manager.
         </p>
 
-        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-white">
+        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-[#0B1D3A]">
           2. How We Use Your Information
         </h2>
         <p className="text-text-muted leading-relaxed">
@@ -54,7 +54,7 @@ export default function LegalPage() {
           tools, payment processors, email delivery services).
         </p>
 
-        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-white">
+        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-[#0B1D3A]">
           3. Third-Party Services
         </h2>
         <p className="text-text-muted leading-relaxed">
@@ -63,32 +63,32 @@ export default function LegalPage() {
         </p>
         <ul className="text-text-muted leading-relaxed mt-4 space-y-2 list-disc list-inside">
           <li>
-            <strong className="text-white">Adaptation Living CRM Platform</strong> — Client
+            <strong className="text-[#0B1D3A]">Adaptation Living CRM Platform</strong> — Client
             communications, form submissions, and appointment scheduling.
           </li>
           <li>
-            <strong className="text-white">Google Tag Manager &amp; Google Analytics</strong> — Website
+            <strong className="text-[#0B1D3A]">Google Tag Manager &amp; Google Analytics</strong> — Website
             analytics, traffic analysis, and conversion tracking.
           </li>
           <li>
-            <strong className="text-white">Meta (Facebook) Pixel</strong> — Conversion tracking and
+            <strong className="text-[#0B1D3A]">Meta (Facebook) Pixel</strong> — Conversion tracking and
             advertising audience optimization.
           </li>
           <li>
-            <strong className="text-white">Microsoft Clarity</strong> — Session
+            <strong className="text-[#0B1D3A]">Microsoft Clarity</strong> — Session
             recording, heatmaps, and user behavior analytics.
           </li>
           <li>
-            <strong className="text-white">Stripe</strong> — Secure payment
+            <strong className="text-[#0B1D3A]">Stripe</strong> — Secure payment
             processing for invoices and service agreements.
           </li>
           <li>
-            <strong className="text-white">Vercel</strong> — Website hosting and
+            <strong className="text-[#0B1D3A]">Vercel</strong> — Website hosting and
             content delivery.
           </li>
         </ul>
 
-        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-white">
+        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-[#0B1D3A]">
           4. Cookies &amp; Tracking Technologies
         </h2>
         <p className="text-text-muted leading-relaxed">
@@ -98,26 +98,26 @@ export default function LegalPage() {
         </p>
         <ul className="text-text-muted leading-relaxed mt-4 space-y-2 list-disc list-inside">
           <li>
-            <strong className="text-white">Session cookies</strong> — Keep you
+            <strong className="text-[#0B1D3A]">Session cookies</strong> — Keep you
             signed in to your account and maintain secure sessions.
           </li>
           <li>
-            <strong className="text-white">Analytics cookies</strong> — Google
+            <strong className="text-[#0B1D3A]">Analytics cookies</strong> — Google
             Analytics 4, loaded via Google Tag Manager, to measure traffic and
             page performance.
           </li>
           <li>
-            <strong className="text-white">Meta Pixel</strong> — Ad
+            <strong className="text-[#0B1D3A]">Meta Pixel</strong> — Ad
             measurement, conversion tracking, and audience building for
             Facebook and Instagram campaigns.
           </li>
           <li>
-            <strong className="text-white">Microsoft Clarity</strong> —
+            <strong className="text-[#0B1D3A]">Microsoft Clarity</strong> —
             Session recording and heatmaps to understand how visitors use the
             site.
           </li>
           <li>
-            <strong className="text-white">Chat widget</strong> — Stores
+            <strong className="text-[#0B1D3A]">Chat widget</strong> — Stores
             visitor conversation history so support agents can see prior
             messages.
           </li>
@@ -135,7 +135,7 @@ export default function LegalPage() {
           .
         </p>
 
-        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-white">
+        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-[#0B1D3A]">
           5. Data Retention
         </h2>
         <p className="text-text-muted leading-relaxed">
@@ -145,7 +145,7 @@ export default function LegalPage() {
           contacting us at info@adaptationliving.com.
         </p>
 
-        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-white">
+        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-[#0B1D3A]">
           6. Contact
         </h2>
         <p className="text-text-muted leading-relaxed">
@@ -165,7 +165,7 @@ export default function LegalPage() {
 
         <hr className="border-glass-border my-12" />
 
-        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-white">
+        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-[#0B1D3A]">
           Terms of Service
         </h2>
         <p className="text-text-muted leading-relaxed">
@@ -177,7 +177,7 @@ export default function LegalPage() {
           writing before any work begins.
         </p>
 
-        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-white">
+        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-[#0B1D3A]">
           Subscriptions &amp; Billing
         </h3>
         <p className="text-text-muted leading-relaxed">
@@ -190,7 +190,7 @@ export default function LegalPage() {
           constitutes acceptance of the new price.
         </p>
 
-        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-white">
+        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-[#0B1D3A]">
           Cancellation
         </h3>
         <p className="text-text-muted leading-relaxed">
@@ -205,7 +205,7 @@ export default function LegalPage() {
           We do not issue prorated refunds for partial months.
         </p>
 
-        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-white">
+        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-[#0B1D3A]">
           Refunds
         </h3>
         <p className="text-text-muted leading-relaxed">
@@ -218,7 +218,7 @@ export default function LegalPage() {
           the months already used, charged at the equivalent monthly rate.
         </p>
 
-        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-white">
+        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-[#0B1D3A]">
           Chargebacks
         </h3>
         <p className="text-text-muted leading-relaxed">
@@ -234,7 +234,7 @@ export default function LegalPage() {
           fraudulent may result in account termination and loss of access.
         </p>
 
-        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-white">
+        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-[#0B1D3A]">
           Acceptable Use
         </h3>
         <p className="text-text-muted leading-relaxed">
@@ -245,7 +245,7 @@ export default function LegalPage() {
           contacts.
         </p>
 
-        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-white">
+        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-[#0B1D3A]">
           Limitation of Liability
         </h3>
         <p className="text-text-muted leading-relaxed">
@@ -256,7 +256,7 @@ export default function LegalPage() {
           12 months preceding the claim.
         </p>
 
-        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-white">
+        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-[#0B1D3A]">
           Jurisdiction
         </h3>
         <p className="text-text-muted leading-relaxed">

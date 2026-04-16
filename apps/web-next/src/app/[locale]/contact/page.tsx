@@ -27,9 +27,9 @@ export default function ContactPage() {
   return (
     <main id="main-content" className="navbar-offset">
       <BreadcrumbSchema items={[{ name: "Contact", path: "/contact" }]} />
-      <section className="max-w-[1200px] mx-auto px-8 pt-16 pb-24">
+      <section className="section-cream max-w-[1200px] mx-auto px-8 pt-16 pb-24">
         <div className="text-center mb-16">
-          <h1 className="font-display text-4xl sm:text-5xl font-bold mb-4">
+          <h1 className="font-display text-4xl sm:text-5xl font-bold mb-4 text-[#0B1D3A]">
             Contact Us
           </h1>
           <p className="text-text-muted text-lg max-w-2xl mx-auto">
@@ -44,7 +44,7 @@ export default function ContactPage() {
             <div className="flex items-start gap-4">
               <Phone className="text-accent w-6 h-6 mt-1 shrink-0" />
               <div>
-                <h2 className="font-display text-xl font-bold mb-1">Phone</h2>
+                <h2 className="font-display text-xl font-bold mb-1 text-[#0B1D3A]">Phone</h2>
                 <a
                   href="tel:6232191237"
                   className="text-lg hover:text-accent transition-all"
@@ -57,7 +57,7 @@ export default function ContactPage() {
             <div className="flex items-start gap-4">
               <Mail className="text-accent w-6 h-6 mt-1 shrink-0" />
               <div>
-                <h2 className="font-display text-xl font-bold mb-1">Email</h2>
+                <h2 className="font-display text-xl font-bold mb-1 text-[#0B1D3A]">Email</h2>
                 <a
                   href="mailto:info@adaptationliving.com"
                   className="text-lg hover:text-accent transition-all"
@@ -70,7 +70,7 @@ export default function ContactPage() {
             <div className="flex items-start gap-4">
               <MapPin className="text-accent w-6 h-6 mt-1 shrink-0" />
               <div>
-                <h2 className="font-display text-xl font-bold mb-1">Office</h2>
+                <h2 className="font-display text-xl font-bold mb-1 text-[#0B1D3A]">Office</h2>
                 <p className="text-text-muted">
                   3030 N Central Ave Suite 507
                   <br />
@@ -84,7 +84,7 @@ export default function ContactPage() {
             <div className="flex items-start gap-4">
               <Clock className="text-accent w-6 h-6 mt-1 shrink-0" />
               <div>
-                <h2 className="font-display text-xl font-bold mb-1">Hours</h2>
+                <h2 className="font-display text-xl font-bold mb-1 text-[#0B1D3A]">Hours</h2>
                 <p className="text-text-muted">
                   Monday – Friday, 8:00 AM – 6:00 PM MST
                   <br />
@@ -95,7 +95,7 @@ export default function ContactPage() {
 
             <div className="glass rounded-lg p-6 mt-8">
               <p className="text-sm text-text-muted">
-                <strong className="text-white">Government Clients:</strong>{" "}
+                <strong className="text-[#0B1D3A]">Government Clients:</strong>{" "}
                 Adaptation Living LLC is SAM.gov registered. CAGE: 95WK4 |
                 UEI: J3XGTRT7DYU5 | NAICS: 541511, 541512
               </p>
@@ -104,7 +104,7 @@ export default function ContactPage() {
 
           {/* Calendar booking */}
           <div>
-            <h2 className="font-display text-2xl font-bold mb-4">
+            <h2 className="font-display text-2xl font-bold mb-4 text-[#0B1D3A]">
               Book a Discovery Call
             </h2>
             <p className="text-text-muted mb-6">
@@ -136,7 +136,7 @@ export default function ContactPage() {
       <section className="max-w-[1200px] mx-auto px-8 pb-24">
         <div className="relative aspect-[16/9] overflow-hidden rounded-2xl">
           <Image
-            src="/images/al-hq-daytime.png"
+            src="/images/al-hq-daytime.webp"
             alt="Adaptation Living LLC headquarters — Bank of America Tower, 3030 N Central Ave Suite 507, Phoenix AZ"
             fill
             className="object-cover"

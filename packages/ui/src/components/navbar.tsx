@@ -13,7 +13,7 @@ export function NavBar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-[5%] py-6 bg-gradient-to-b from-black/80 to-transparent backdrop-blur-sm">
+    <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-[5%] py-6 bg-gradient-to-b from-[#0B1D3A]/80 to-transparent backdrop-blur-sm">
       <div className="font-display text-lg font-bold text-white tracking-wide">
         ADAPTATION LIVING
         <span className="text-text-muted text-xs ml-2 font-display tracking-widest">
@@ -51,7 +51,7 @@ export function NavBar() {
 
       {/* Mobile drawer */}
       {open && (
-        <div className="fixed inset-0 top-0 z-40 bg-black/95 backdrop-blur-md flex flex-col items-center justify-center gap-8 md:hidden">
+        <div className="fixed inset-0 top-0 z-40 bg-[#0B1D3A]/95 backdrop-blur-md flex flex-col items-center justify-center gap-8 md:hidden">
           <button
             onClick={() => setOpen(false)}
             className="absolute top-6 right-[5%] text-white p-2"

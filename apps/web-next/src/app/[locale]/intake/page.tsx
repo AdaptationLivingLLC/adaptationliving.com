@@ -39,8 +39,8 @@ export default async function IntakePage({
     <main id="main-content" className="navbar-offset">
       <BreadcrumbSchema items={[{ name: "Start Your Project", path: "/intake" }]} />
       {/* Hero */}
-      <section className="max-w-[900px] mx-auto px-8 pt-16 pb-8 text-center">
-        <h1 className="font-display text-4xl sm:text-5xl font-bold mb-4">
+      <section className="section-cream max-w-[900px] mx-auto px-8 pt-16 pb-8 text-center">
+        <h1 className="font-display text-4xl sm:text-5xl font-bold mb-4 text-[#0B1D3A]">
           Start Your Project
         </h1>
         <p className="text-text-muted text-lg max-w-2xl mx-auto mb-2">
@@ -51,7 +51,7 @@ export default async function IntakePage({
 
       {/* Plan acknowledgment banner */}
       {planLabel && (
-        <section className="max-w-[700px] mx-auto px-8 pb-6">
+        <section className="section-cream max-w-[700px] mx-auto px-8 pb-6">
           <div className="rounded-lg border border-accent/30 bg-accent/10 p-6 text-center">
             <p className="text-base sm:text-lg leading-relaxed">
               You&apos;re booking a call for the{" "}
@@ -64,7 +64,7 @@ export default async function IntakePage({
       )}
 
       {/* Form */}
-      <section className="max-w-[700px] mx-auto px-8 pb-16">
+      <section className="section-cream max-w-[700px] mx-auto px-8 pb-16">
         {formId ? (
           <div className="glass rounded-lg p-6">
             <GhlEmbed formId={formId} height="700px" />
@@ -96,7 +96,7 @@ export default async function IntakePage({
       </section>
 
       {/* Fallback contact */}
-      <section className="max-w-[700px] mx-auto px-8 pb-24 text-center">
+      <section className="section-cream max-w-[700px] mx-auto px-8 pb-24 text-center">
         <p className="text-text-muted text-sm mb-4">
           Prefer to talk? Call or email us directly.
         </p>

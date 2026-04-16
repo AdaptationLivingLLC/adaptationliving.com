@@ -157,7 +157,7 @@ export default async function LocaleLayout({
           </a>
 
           {/* Site-wide Navigation */}
-          <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-[5%] py-4 sm:py-6 bg-gradient-to-b from-black/80 to-transparent backdrop-blur-sm">
+          <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-[5%] py-4 sm:py-6 bg-gradient-to-b from-[#0B1D3A]/80 to-transparent backdrop-blur-sm">
             <a href="/" className="font-display text-base sm:text-lg font-bold text-white tracking-wide">
               ADAPTATION LIVING
               <span className="text-text-muted text-xs ml-2 font-display tracking-widest">
@@ -196,6 +196,14 @@ export default async function LocaleLayout({
                 Contact
               </a>
               <a
+                href="https://app.adaptationliving.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[10px] sm:text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all"
+              >
+                Sign In
+              </a>
+              <a
                 href="/intake"
                 className="text-[10px] sm:text-sm uppercase tracking-widest border border-white px-3 sm:px-5 py-1.5 sm:py-2 rounded hover:bg-white hover:text-bg-dark transition-all"
               >
@@ -207,7 +215,7 @@ export default async function LocaleLayout({
           {children}
 
           {/* Site-wide Footer */}
-          <footer className="bg-black py-16 px-8 text-center border-t border-glass-border">
+          <footer className="bg-[#0B1D3A] py-16 px-8 text-center border-t border-glass-border">
             <div className="flex justify-center gap-6 mb-8">
               <a
                 href="https://www.linkedin.com/company/adaptation-living"

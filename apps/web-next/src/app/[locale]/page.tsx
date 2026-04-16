@@ -522,7 +522,7 @@ export default function HomePage() {
           <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-stretch gap-8 px-8 lg:grid-cols-[0.95fr_1.05fr]">
             <div className="relative min-h-[320px] overflow-hidden rounded-[28px] border border-white/10">
               <Image
-                src="/images/al-hq-daytime.png"
+                src="/images/al-hq-daytime.webp"
                 alt="Adaptation Living LLC headquarters — Bank of America Tower, Uptown Phoenix"
                 fill
                 className="object-cover"
