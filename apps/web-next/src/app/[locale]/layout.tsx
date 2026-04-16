@@ -10,6 +10,7 @@ import { Clarity } from "@al/analytics/clarity";
 import { GoogleTagManager } from "@al/analytics/gtm";
 import { MetaPixel } from "@al/analytics/meta-pixel";
 import { IntlProvider, locales } from "@al/i18n";
+import { NavBar } from "@al/ui/components/navbar";
 import "@al/ui/globals.css";
 
 const cinzel = Cinzel({
@@ -157,60 +158,7 @@ export default async function LocaleLayout({
           </a>
 
           {/* Site-wide Navigation */}
-          <nav aria-label="Main navigation" className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-[5%] py-4 sm:py-6 bg-gradient-to-b from-[#0B1D3A]/80 to-transparent backdrop-blur-sm">
-            <a href="/" className="font-display text-base sm:text-lg font-bold text-white tracking-wide">
-              ADAPTATION LIVING
-              <span className="text-text-muted text-xs ml-2 font-display tracking-widest">
-                LLC
-              </span>
-            </a>
-            <div className="flex gap-3 sm:gap-6 lg:gap-8 items-center">
-              <a
-                href="/"
-                className="text-[10px] sm:text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all"
-              >
-                Home
-              </a>
-              <a
-                href="/services"
-                className="text-[10px] sm:text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all"
-              >
-                Services
-              </a>
-              <a
-                href="/showcase"
-                className="text-[10px] sm:text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all"
-              >
-                Showcase
-              </a>
-              <a
-                href="/ai"
-                className="text-[10px] sm:text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all"
-              >
-                AI
-              </a>
-              <a
-                href="/contact"
-                className="text-[10px] sm:text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all"
-              >
-                Contact
-              </a>
-              <a
-                href="https://app.adaptationliving.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[10px] sm:text-sm uppercase tracking-widest opacity-80 hover:opacity-100 hover:text-accent transition-all"
-              >
-                Sign In
-              </a>
-              <a
-                href="/intake"
-                className="text-[10px] sm:text-sm uppercase tracking-widest border border-white px-3 sm:px-5 py-1.5 sm:py-2 rounded hover:bg-white hover:text-bg-dark transition-all"
-              >
-                Start Project
-              </a>
-            </div>
-          </nav>
+          <NavBar />
 
           {children}
 

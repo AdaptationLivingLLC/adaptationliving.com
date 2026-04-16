@@ -11,7 +11,6 @@ const navLinks = [
 ];
 
 export function NavBar() {
-  const [open, setOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
