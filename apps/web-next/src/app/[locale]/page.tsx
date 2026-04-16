@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     absolute: "AI Automation & Web Dev Phoenix AZ | Adaptation Living LLC",
   },
   description:
-    "Veteran-owned AI automation studio in Phoenix, AZ. Web development, CRM setup, AI agents & workflow automation for small businesses.",
+    "Veteran-owned AI automation studio in Phoenix, AZ. CRM, AI agents, workflow automation, and custom web development for small businesses. Adaptation Living LLC.",
   keywords: [
     "AI automation services Phoenix AZ",
     "veteran owned web development Phoenix",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI Automation & Web Dev Phoenix AZ | Adaptation Living LLC",
     description:
-      "Veteran-owned AI automation studio in Phoenix, AZ. Web development, CRM setup, AI agents & workflow automation for small businesses.",
+      "Veteran-owned AI automation studio in Phoenix, AZ. CRM, AI agents, workflow automation, and custom web development for small businesses. Adaptation Living LLC.",
     url: "https://adaptationliving.com",
     images: [
       {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "AI Automation & Web Dev Phoenix AZ | Adaptation Living LLC",
     description:
-      "Veteran-owned AI automation studio in Phoenix, AZ. Web development, CRM setup, AI agents & workflow automation for small businesses.",
+      "Veteran-owned AI automation studio in Phoenix, AZ. CRM, AI agents, workflow automation, and custom web development for small businesses. Adaptation Living LLC.",
     images: ["https://adaptationliving.com/images/banner.jpg"],
   },
   alternates: {
@@ -230,7 +230,7 @@ export default function HomePage() {
             },
             telephone: "+1-623-219-1237",
             email: "info@adaptationliving.com",
-            priceRange: "$297 - $5,997",
+            priceRange: "$194.90 - $5,997",
           }),
         }}
       />
@@ -354,14 +354,10 @@ export default function HomePage() {
                 <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">SAM.gov Registered</span>
               </div>
               <h1 className="max-w-4xl font-display text-5xl font-bold leading-[0.92] sm:text-7xl xl:text-[5.7rem]">
-                We Build the Systems
-                <br />
-                That Run Your Business
+                AI Automation &amp; Business Operating Systems — Phoenix, AZ
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-relaxed text-text-muted sm:text-xl">
-                Adaptation Living is an AI automation and web development studio in Uptown Phoenix.
-                We build custom websites, business operating systems, CRM automation, and revenue intelligence engineered to produce measurable growth.
-                This site is a live showcase of what we sell.
+                Veteran-owned studio. We build the CRM, website, AI agents, and workflows that run your business on one platform.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a

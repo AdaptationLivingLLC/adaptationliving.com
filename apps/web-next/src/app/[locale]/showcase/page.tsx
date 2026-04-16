@@ -16,11 +16,12 @@ import {
   pageOg,
   pageTwitter,
 } from "../../../lib/seo";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ThreeDemo, PerfDemo } from "../../../components/showcase/client-demos";
 
 const title = "Live Technology Showcase";
 const description =
-  "See the technology running live. 3D graphics, high-performance animations, AI integrations, and custom web architecture — all built by Adaptation Living LLC.";
+  "See the technology running live. 3D graphics, AI integrations, and custom web architecture — all built by Adaptation Living LLC in Phoenix, AZ. Live demos, real systems.";
 
 export const metadata: Metadata = {
   title,
@@ -57,6 +58,7 @@ function PriceTag({
 export default function ShowcasePage() {
   return (
     <main id="main-content" className="navbar-offset">
+      <Breadcrumbs items={[{ name: "Showcase" }]} />
       <BreadcrumbSchema items={[{ name: "Showcase", path: "/showcase" }]} />
 
       {/* ═══════════════════════════════════════════ */}
@@ -195,6 +197,9 @@ export default function ShowcasePage() {
             your Growth plan.
           </p>
         </div>
+        <p className="mt-4">
+          <a href="/ai" className="text-gold hover:text-gold/80 underline">See all AI systems &rarr;</a>
+        </p>
       </section>
 
       {/* ═══════════════════════════════════════════ */}
@@ -240,6 +245,9 @@ export default function ShowcasePage() {
             ours="Included in Growth plan — $597/mo"
           />
         </div>
+        <p className="mt-4">
+          <a href="/ai" className="text-gold hover:text-gold/80 underline">See all AI systems &rarr;</a>
+        </p>
       </section>
 
       {/* ═══════════════════════════════════════════ */}
@@ -262,7 +270,7 @@ export default function ShowcasePage() {
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
           {[
-            { label: "Framework", value: "Next.js 14" },
+            { label: "Framework", value: "Next.js 16" },
             { label: "Language", value: "TypeScript" },
             { label: "Styling", value: "Tailwind CSS" },
             { label: "Animation", value: "Framer Motion" },

@@ -157,7 +157,7 @@ export default async function LocaleLayout({
           </a>
 
           {/* Site-wide Navigation */}
-          <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-[5%] py-4 sm:py-6 bg-gradient-to-b from-[#0B1D3A]/80 to-transparent backdrop-blur-sm">
+          <nav aria-label="Main navigation" className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-[5%] py-4 sm:py-6 bg-gradient-to-b from-[#0B1D3A]/80 to-transparent backdrop-blur-sm">
             <a href="/" className="font-display text-base sm:text-lg font-bold text-white tracking-wide">
               ADAPTATION LIVING
               <span className="text-text-muted text-xs ml-2 font-display tracking-widest">
@@ -222,6 +222,7 @@ export default async function LocaleLayout({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text-muted hover:text-accent transition-all"
+                aria-label="Follow Adaptation Living LLC on LinkedIn"
               >
                 <Linkedin className="w-6 h-6" />
               </a>

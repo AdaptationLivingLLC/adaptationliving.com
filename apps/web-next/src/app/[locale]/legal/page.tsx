@@ -5,6 +5,7 @@ import {
   pageOg,
   pageTwitter,
 } from "../../../lib/seo";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 
 const title = "Privacy Policy & Legal Notice — Adaptation Living LLC";
 const description =
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
 export default function LegalPage() {
   return (
     <main id="main-content" className="navbar-offset section-cream">
+      <Breadcrumbs items={[{ name: "Legal" }]} />
       <BreadcrumbSchema items={[{ name: "Legal", path: "/legal" }]} />
       <article className="max-w-[800px] mx-auto px-8 pt-16 pb-24 prose prose-sm">
         <h1 className="font-display text-4xl font-bold mb-8 text-[#0B1D3A]">

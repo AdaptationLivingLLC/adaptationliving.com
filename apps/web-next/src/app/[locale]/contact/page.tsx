@@ -8,10 +8,11 @@ import {
   pageOg,
   pageTwitter,
 } from "../../../lib/seo";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 
 const title = "Contact Us";
 const description =
-  "Contact Adaptation Living LLC. Call 623-219-1237 or book a free discovery call. Veteran-owned AI studio, Phoenix AZ.";
+  "Contact Adaptation Living LLC in Phoenix, AZ. Call 623-219-1237, email us, or book a free discovery call. AI automation, CRM, and web development for small businesses.";
 
 export const metadata: Metadata = {
   title,
@@ -26,6 +27,47 @@ export default function ContactPage() {
 
   return (
     <main id="main-content" className="navbar-offset">
+      <Breadcrumbs items={[{ name: "Contact" }]} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Adaptation Living LLC",
+            "alternateName": "Adaptation OS",
+            "url": "https://adaptationliving.com",
+            "telephone": "+1-623-219-1237",
+            "email": "admin@adaptationliving.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "3030 N Central Ave Suite 507",
+              "addressLocality": "Phoenix",
+              "addressRegion": "AZ",
+              "postalCode": "85012",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 33.4842,
+              "longitude": -112.074
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+              "opens": "09:00",
+              "closes": "17:00"
+            },
+            "priceRange": "$194.90-$997.90/mo",
+            "image": "https://adaptationliving.com/images/al-hq-daytime.webp",
+            "founder": {
+              "@type": "Person",
+              "name": "Brandon Bible",
+              "jobTitle": "CEO"
+            }
+          }),
+        }}
+      />
       <BreadcrumbSchema items={[{ name: "Contact", path: "/contact" }]} />
       <section className="section-cream max-w-[1200px] mx-auto px-8 pt-16 pb-24">
         <div className="text-center mb-16">
@@ -113,7 +155,7 @@ export default function ContactPage() {
             </p>
             {calendarId ? (
               <div className="glass rounded-lg p-4">
-                <GhlEmbed calendarId={calendarId} height="500px" />
+                <GhlEmbed calendarId={calendarId} height="500px" title="Book a discovery call with Adaptation Living" />
               </div>
             ) : (
               <div className="glass rounded-lg p-10 text-center">
@@ -166,6 +208,19 @@ export default function ContactPage() {
         <p className="text-center text-sm text-text-muted mt-3">
           Follow us on LinkedIn
         </p>
+      </section>
+
+      {/* Not ready to call? */}
+      <section className="max-w-[1200px] mx-auto px-8 pb-24">
+        <h2 className="font-display text-2xl font-bold mb-4 text-center">Not ready to call?</h2>
+        <p className="text-text-muted text-center text-base mb-6">
+          Explore what we build before reaching out.
+        </p>
+        <div className="flex justify-center gap-6 flex-wrap">
+          <a href="/services" className="text-accent hover:text-accent/80 underline text-sm font-semibold uppercase tracking-widest">Pricing &amp; Plans</a>
+          <a href="/ai" className="text-accent hover:text-accent/80 underline text-sm font-semibold uppercase tracking-widest">AI Systems</a>
+          <a href="/showcase" className="text-accent hover:text-accent/80 underline text-sm font-semibold uppercase tracking-widest">Live Showcase</a>
+        </div>
       </section>
     </main>
   );

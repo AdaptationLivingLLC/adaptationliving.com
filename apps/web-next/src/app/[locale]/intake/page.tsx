@@ -7,10 +7,11 @@ import {
   pageOg,
   pageTwitter,
 } from "../../../lib/seo";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 
 const title = "Start Your Project";
 const description =
-  "Tell us about your project. AI automation, web development, CRM setup & more. Veteran-owned studio, Phoenix AZ. Free discovery call.";
+  "Start your project with Adaptation Living LLC. AI automation, CRM setup, web development, and workflow automation for small businesses in Phoenix, AZ. Free discovery call.";
 
 export const metadata: Metadata = {
   title,
@@ -37,6 +38,7 @@ export default async function IntakePage({
 
   return (
     <main id="main-content" className="navbar-offset">
+      <Breadcrumbs items={[{ name: "Start Your Project" }]} />
       <BreadcrumbSchema items={[{ name: "Start Your Project", path: "/intake" }]} />
       {/* Hero */}
       <section className="section-cream max-w-[900px] mx-auto px-8 pt-16 pb-8 text-center">
@@ -67,7 +69,7 @@ export default async function IntakePage({
       <section className="section-cream max-w-[700px] mx-auto px-8 pb-16">
         {formId ? (
           <div className="glass rounded-lg p-6">
-            <GhlEmbed formId={formId} height="700px" />
+            <GhlEmbed formId={formId} height="700px" title="Start your project with Adaptation Living" />
           </div>
         ) : (
           <div className="glass rounded-lg p-10 text-center">

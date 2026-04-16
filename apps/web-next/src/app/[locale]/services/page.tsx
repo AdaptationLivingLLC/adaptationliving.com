@@ -15,6 +15,7 @@ import {
   pageOg,
   pageTwitter,
 } from "../../../lib/seo";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 
 const title = "Adaptation OS — Pricing & Plans";
 const description =
@@ -157,6 +158,7 @@ const managedPlans: ManagedPlan[] = [
 export default function ServicesPage() {
   return (
     <main id="main-content" className="navbar-offset">
+      <Breadcrumbs items={[{ name: "Pricing & Plans" }]} />
       <BreadcrumbSchema items={[{ name: "Pricing", path: "/services" }]} />
 
       <script
@@ -189,7 +191,7 @@ export default function ServicesPage() {
         <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold max-w-4xl leading-tight mb-6">
           The Operating System
           <br />
-          <span className="text-accent">For Your Business.</span>
+          <span className="text-accent">For Your Business — Plans &amp; Pricing</span>
         </h1>
         <p className="text-text-muted text-lg max-w-3xl leading-relaxed mb-4">
           CRM. AI agents. Automation. Funnels. Calendars. Pipelines. Reviews. Campaigns.
@@ -448,9 +450,9 @@ export default function ServicesPage() {
           <table className="w-full text-left">
             <thead>
               <tr className="border-b border-glass-border">
-                <th className="py-3 pr-6 text-sm uppercase tracking-widest text-white/60 font-semibold">Tool</th>
-                <th className="py-3 pr-6 text-sm uppercase tracking-widest text-white/40 font-semibold">Typical Monthly Cost</th>
-                <th className="py-3 text-sm uppercase tracking-widest text-accent font-semibold">In Adaptation OS</th>
+                <th scope="col" className="py-3 pr-6 text-sm uppercase tracking-widest text-white/60 font-semibold">Tool</th>
+                <th scope="col" className="py-3 pr-6 text-sm uppercase tracking-widest text-white/40 font-semibold">Typical Monthly Cost</th>
+                <th scope="col" className="py-3 text-sm uppercase tracking-widest text-accent font-semibold">In Adaptation OS</th>
               </tr>
             </thead>
             <tbody>

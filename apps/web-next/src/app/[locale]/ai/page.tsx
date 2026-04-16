@@ -22,10 +22,11 @@ import {
   pageOg,
   pageTwitter,
 } from "../../../lib/seo";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 
 const title = "AI-Powered Business Systems — Adaptation Living LLC";
 const description =
-  "AI phone answering, chat agents, automated follow-up, review management, and content generation for your business. One monthly price, everything included. Adaptation Living LLC, Phoenix AZ.";
+  "AI phone answering, chat agents, automated follow-up, and review management for your business. One price, everything included. Adaptation Living, Phoenix AZ.";
 
 export const metadata: Metadata = {
   title,
@@ -38,6 +39,7 @@ export const metadata: Metadata = {
 export default function AIPage() {
   return (
     <main id="main-content" className="navbar-offset">
+      <Breadcrumbs items={[{ name: "AI Systems" }]} />
       <BreadcrumbSchema items={[{ name: "AI Systems", path: "/ai" }]} />
 
       <script
@@ -83,10 +85,11 @@ export default function AIPage() {
           </h1>
           <p className="text-text-muted text-lg sm:text-xl max-w-3xl leading-relaxed mb-6">
             Every business is trying to figure out how to use AI right now. Most are
-            overwhelmed by the options and underwhelmed by the results. We cut through
-            all of that. We build AI systems that answer your phone, respond to your
-            customers, follow up on leads, manage your reviews, create your content,
-            and run your operations — and we manage it all for you.
+            overwhelmed by the options and underwhelmed by the results. From our Phoenix
+            headquarters, we cut through all of that. We build AI systems that answer
+            your phone, respond to your customers, follow up on leads, manage your
+            reviews, create your content, and run your operations — and we manage it
+            all for you.
           </p>
           <p className="text-text-muted text-base max-w-3xl leading-relaxed mb-10">
             This is full-scale AI implementation that makes real sense for real businesses.
