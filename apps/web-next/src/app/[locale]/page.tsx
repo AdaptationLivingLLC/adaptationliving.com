@@ -61,45 +61,45 @@ export const metadata: Metadata = {
 
 const painPoints = [
   {
-    title: "Missed Calls",
+    title: "Missed Calls Cost You Customers",
     pain: "When you miss a call, someone else gets the sale.",
     answer:
-      "Missed-call text-back fires immediately, recovers momentum, and keeps the lead from leaving your orbit.",
+      "AI phone answering and missed-call text-back fire immediately, recover momentum, and keep the lead from leaving your orbit.",
     href: "/services#self-serve",
   },
   {
-    title: "Slow Follow-Up",
+    title: "Slow Follow-Up Kills Deals",
     pain: "Your leads are hottest in the first five minutes.",
     answer:
-      "AI-assisted SMS, email, and chat workflows respond in seconds instead of hours.",
+      "An automated follow-up system using AI-assisted SMS, email, and chat workflows responds in seconds instead of hours.",
     href: "/services#self-serve",
   },
   {
-    title: "Disconnected Software",
+    title: "Disconnected Software Wastes Money",
     pain: "Eight tools. Eight logins. Eight bills. Zero coordination.",
     answer:
-      "A unified business operating system replaces the stack with one cleaner environment.",
+      "An all-in-one CRM and business operating system replaces the entire stack with one cleaner environment.",
     href: "/services#done-for-you",
   },
   {
-    title: "Weak Website",
+    title: "Your Website Isn't Converting",
     pain: "If it looks like a template, buyers treat you like a commodity.",
     answer:
-      "Custom web architecture elevates trust, speed, and conversion before the sales process even begins.",
+      "A conversion-optimized website with custom architecture elevates trust, speed, and results before the sales process even begins.",
     href: "/services#self-serve",
   },
   {
-    title: "Poor Conversion",
+    title: "Traffic Without Conversion Is Wasted",
     pain: "Traffic without conversion is just another expense.",
     answer:
-      "Conversion-engineered pages, CTA hierarchy, and cleaner user flow turn attention into action.",
+      "Conversion engineering — optimized pages, CTA hierarchy, and cleaner user flow — turns attention into action.",
     href: "/services#self-serve",
   },
   {
-    title: "Invisible Online",
+    title: "Nobody Can Find You Online",
     pain: "If Google does not show you, customers find someone else.",
     answer:
-      "High-intent SEO and AI visibility systems make you harder to ignore in search and answer engines.",
+      "Local SEO, consistent online listings, and AI visibility systems make you harder to ignore in search and answer engines.",
     href: "/services#seo",
   },
 ];
@@ -148,7 +148,7 @@ const showcaseCards = [
     title: "24/7 AI Phone & Chat",
     description:
       "Your AI receptionist answers calls, captures leads, and books appointments around the clock. Your chat agent handles every website visitor, DM, and text instantly.",
-    value: "Included in Growth plan — $597/mo",
+    value: "Included in every plan — starting at $194.90/mo with setup",
     href: "/ai",
   },
   {
@@ -156,7 +156,7 @@ const showcaseCards = [
     title: "Replace 8 Tools With 1",
     description:
       "CRM, email, SMS, chat, calendar, reviews, pipeline, reporting — all in one platform. Stop paying for eight disconnected subscriptions.",
-    value: "From $297/mo · No setup fee",
+    value: "From $349.90/mo self-serve · Or $194.90/mo with setup",
     href: "/services",
   },
   {
@@ -172,23 +172,23 @@ const showcaseCards = [
 const faqs = [
   {
     q: "Can I see a live demo before I commit?",
-    a: "Yes. Phoenix-area business owners can visit our Uptown Phoenix office for a hands-on walkthrough. Remote clients get a live screen-share demonstration. You see the actual system, not a slide deck.",
+    a: "Yes. Phoenix-area business owners can visit our Uptown Phoenix office for a hands-on walkthrough of the full business operating system — CRM, AI agents, and automation running live. Remote clients get a screen-share demonstration of the same platform.",
   },
   {
     q: "How fast can you build my system?",
-    a: "Most builds launch in two to six weeks depending on scope. We move fast because the work is structured and built in-house rather than scattered across subcontractors.",
+    a: "Most AI automation and CRM builds launch in two to six weeks depending on scope. We move fast because the work is structured and built in-house in Phoenix rather than scattered across subcontractors.",
   },
   {
     q: "What makes you different from a typical agency?",
-    a: "We do not stop at a website. We build the website, the CRM, the automation, the follow-up, the reporting, and the conversion system that ties it all together.",
+    a: "We do not stop at a website. We build the conversion-optimized website, the CRM, the AI automation, the follow-up workflows, the reporting, and the business operating system that ties it all together — one platform replacing eight disconnected tools.",
   },
   {
     q: "Do I need to understand AI to work with you?",
-    a: "No. You do not need to understand the technology. You need a partner who can identify where AI actually saves time, improves response, and generates revenue in your business.",
+    a: "No. You do not need to understand AI automation to benefit from it. You need a partner who can identify where AI agents, automated workflows, and a unified CRM actually save time, improve response, and generate revenue in your business.",
   },
   {
     q: "How do I know this will produce real results?",
-    a: "Every system is tied to measurable outcomes: response speed, booked appointments, captured leads, review volume, pipeline visibility, and recoverable revenue.",
+    a: "Every system is tied to measurable outcomes: AI response speed, booked appointments, captured leads, review volume, CRM pipeline visibility, and recoverable revenue. Our business operating system tracks it all in one place.",
   },
 ];
 
@@ -357,7 +357,7 @@ export default function HomePage() {
                 AI Automation &amp; Business Operating Systems — Phoenix, AZ
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-relaxed text-text-muted sm:text-xl">
-                Veteran-owned studio. We build the CRM, website, AI agents, and workflows that run your business on one platform.
+                Adaptation Living LLC is a veteran-owned AI automation studio in Uptown Phoenix. We replace your disconnected software with one integrated business operating system — CRM, AI agents, automated workflows, reputation management, and a conversion-optimized website — all on one platform.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
@@ -645,20 +645,64 @@ export default function HomePage() {
         </section>
 
         <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
+        <section className="section-cream py-20">
+          <div className="max-w-4xl mx-auto px-6 text-center">
+            <p className="mb-3 text-sm uppercase tracking-[0.24em] text-[#D4AF37]">Free Instant Analysis</p>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0B1D3A] mb-4">
+              Get Your Free SEO &amp; Marketing Report In Seconds
+            </h2>
+            <p className="text-[#4A5568] text-lg mb-10 max-w-2xl mx-auto">
+              Enter your website and we will analyze your online presence — SEO score, listing consistency, review health, and missed opportunities. Free, instant, no commitment.
+            </p>
+            <div className="max-w-xl mx-auto bg-white rounded-xl shadow-lg p-8">
+              <p className="text-[#0B1D3A] font-display text-lg font-bold mb-6">Enter your details to get started</p>
+              <form className="space-y-4 text-left">
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-semibold text-[#0B1D3A] mb-1">First Name *</label>
+                    <input type="text" required className="w-full border border-[#0B1D3A]/20 rounded-lg px-4 py-3 text-[#0B1D3A] focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/50" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-[#0B1D3A] mb-1">Last Name *</label>
+                    <input type="text" required className="w-full border border-[#0B1D3A]/20 rounded-lg px-4 py-3 text-[#0B1D3A] focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/50" />
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-[#0B1D3A] mb-1">Phone *</label>
+                  <input type="tel" required className="w-full border border-[#0B1D3A]/20 rounded-lg px-4 py-3 text-[#0B1D3A] focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/50" />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-[#0B1D3A] mb-1">Email *</label>
+                  <input type="email" required className="w-full border border-[#0B1D3A]/20 rounded-lg px-4 py-3 text-[#0B1D3A] focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/50" />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-[#0B1D3A] mb-1">Website URL *</label>
+                  <input type="url" required placeholder="https://yourbusiness.com" className="w-full border border-[#0B1D3A]/20 rounded-lg px-4 py-3 text-[#0B1D3A] placeholder:text-[#0B1D3A]/40 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/50" />
+                </div>
+                <button type="submit" className="w-full bg-[#D4AF37] text-[#0B1D3A] px-8 py-4 rounded-lg text-sm font-bold uppercase tracking-[0.22em] hover:bg-[#D4AF37]/90 transition-colors">
+                  Get My Free Report
+                </button>
+              </form>
+              <p className="text-[#718096] text-xs mt-4">We will never spam you. Your data is private.</p>
+            </div>
+          </div>
+        </section>
+        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
+
         <section className="section-cream py-24">
           <div className="mx-auto max-w-[1400px] px-8">
             <div className="mb-12 max-w-3xl">
               <p className="mb-3 text-sm uppercase tracking-[0.24em] text-accent">Adaptation OS</p>
-              <h2 className="font-display text-4xl font-bold text-[#0B1D3A] sm:text-5xl">Instant access. No setup fee. Cancel anytime.</h2>
+              <h2 className="font-display text-4xl font-bold text-[#0B1D3A] sm:text-5xl">Instant access. Cancel anytime.</h2>
               <p className="mt-4 text-lg leading-relaxed text-text-muted">
-                Buy a plan, log in the same day, and run your entire business on one platform. CRM, AI agents, automation, funnels, calendars, reviews, campaigns — all included. Or go done-for-you and we build it all for you.
+                Go self-serve and log in the same day, or let us build everything for you with a setup package. CRM, AI agents, automation, funnels, calendars, reviews, campaigns — all included on every plan.
               </p>
             </div>
             <div className="grid gap-6 lg:grid-cols-3">
               {[
-                ["Starter", "$297/mo", "or $2,970/yr — save $594", "Up to 3 users · CRM, calendars, forms, basic automations, email support, $10 credits/mo."],
-                ["Growth", "$597/mo", "or $5,970/yr — save $1,194", "Up to 10 users · AI agents, funnels, pipelines, integrations, live onboarding, $25 credits/mo."],
-                ["Scale", "$1,197/mo", "or $11,970/yr — save $2,394", "Up to 50 users · Everything unlocked, branded mobile app, priority phone support, $100 credits/mo."],
+                ["Starter", "$349.90/mo", "Self-serve (DIY) · Or $194.90/mo with setup", "Up to 3 users · CRM, calendars, forms, basic automations, email support, $50 credits/mo (DIY) or $100 credits/mo (Setup)."],
+                ["Growth", "$597.90/mo", "Self-serve (DIY) · Or $394.90/mo with setup", "Up to 5 users · AI agents, funnels, pipelines, integrations, live onboarding, $50 credits/mo (DIY) or $100 credits/mo (Setup)."],
+                ["Scale", "$997.90/mo", "Self-serve (DIY) · Or $694.90/mo with setup", "Up to 10 users · Everything unlocked, branded mobile app, priority phone support, $50 credits/mo (DIY) or $100 credits/mo (Setup)."],
               ].map(([title, price, tag, copy], index) => (
                 <div key={title} className={`rounded-[28px] border p-8 ${index === 1 ? "border-accent bg-accent/8 ring-1 ring-accent/40" : "border-[#0B1D3A]/10 bg-white/80"}`}>
                   <p className="text-sm uppercase tracking-[0.2em] text-accent">{title}</p>
@@ -761,9 +805,8 @@ export default function HomePage() {
             <h2 className="font-display text-4xl font-bold mb-4">
               You Have Seen What We Build. Now Let Us Build It For You.
             </h2>
-            <p className="max-w-xl mx-auto text-text-muted text-lg mb-8">
-              Custom websites, business operating systems, AI automation, live demos, and a real office in Phoenix.
-              If the goal is growth, clarity, and faster customer response, the next move is simple.
+            <p className="max-w-2xl mx-auto text-text-muted text-lg mb-8">
+              Adaptation OS replaces 8+ subscriptions with a single platform. AI agents, CRM, automated workflows, and more — starting at $194.90/mo with setup or $349.90/mo self-serve.
             </p>
             <div className="flex justify-center gap-8 mb-8 flex-wrap">
               <a href="tel:6232191237" className="flex items-center gap-2 text-lg font-semibold hover:text-accent transition-all">
