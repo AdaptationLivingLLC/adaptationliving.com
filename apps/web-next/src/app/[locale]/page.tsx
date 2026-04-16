@@ -240,6 +240,34 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
+            "@type": "VideoObject",
+            name: "Adaptation Living — Founder's Walkthrough",
+            description:
+              "A live tour of Adaptation OS: custom websites, CRM, AI phone and chat agents, and automation for Phoenix business owners.",
+            thumbnailUrl: [
+              "https://i.ytimg.com/vi/FPYBckToFO0/maxresdefault.jpg",
+              "https://i.ytimg.com/vi/FPYBckToFO0/hqdefault.jpg",
+            ],
+            uploadDate: "2026-04-15",
+            contentUrl: "https://youtu.be/FPYBckToFO0",
+            embedUrl: "https://www.youtube-nocookie.com/embed/FPYBckToFO0",
+            publisher: {
+              "@type": "Organization",
+              name: "Adaptation Living LLC",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://adaptationliving.com/images/adaptation-seal-icon.svg",
+              },
+            },
+          }),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
             "@type": "FAQPage",
             mainEntity: faqs.map((item) => ({
               "@type": "Question",
@@ -395,6 +423,100 @@ export default function HomePage() {
             </div>
           </div>
         </header>
+
+        <section className="relative overflow-hidden border-b border-glass-border bg-[#050505] py-28">
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(212,175,55,0.18),transparent_35%),radial-gradient(circle_at_85%_90%,rgba(231,76,60,0.18),transparent_40%)]" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/60 to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
+
+          <div className="relative mx-auto max-w-[1400px] px-8">
+            <div className="mb-14 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+              <div>
+                <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-accent/40 bg-accent/10 px-4 py-2 text-[11px] uppercase tracking-[0.28em] text-accent">
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-70" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+                  </span>
+                  Founder&rsquo;s Walkthrough
+                </div>
+                <h2 className="font-display text-5xl font-bold leading-[0.95] sm:text-6xl xl:text-7xl">
+                  See the system
+                  <br />
+                  <span className="bg-gradient-to-r from-accent via-white to-accent bg-clip-text text-transparent">
+                    in motion.
+                  </span>
+                </h2>
+              </div>
+              <p className="max-w-xl text-lg leading-relaxed text-text-muted">
+                A live tour of the website, CRM, AI phone and chat agents, and the automation layer we build for operators
+                who are done duct-taping eight tools together. No slides. Real systems, running now.
+              </p>
+            </div>
+
+            <div className="group relative">
+              <div
+                aria-hidden="true"
+                className="absolute -inset-1 rounded-[34px] bg-[conic-gradient(from_120deg_at_50%_50%,rgba(212,175,55,0.55),rgba(231,76,60,0.45),rgba(212,175,55,0.55))] opacity-60 blur-xl transition-opacity duration-500 group-hover:opacity-90"
+              />
+              <div
+                aria-hidden="true"
+                className="absolute -inset-px rounded-[30px] bg-gradient-to-br from-accent/70 via-white/20 to-accent/40"
+              />
+              <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-black shadow-[0_40px_120px_-20px_rgba(212,175,55,0.35)]">
+                <div className="pointer-events-none absolute left-6 top-6 z-10 flex items-center gap-2 rounded-full border border-white/15 bg-black/60 px-3 py-1.5 text-[10px] uppercase tracking-[0.28em] text-white/85 backdrop-blur">
+                  <span className="h-1.5 w-1.5 rounded-full bg-red-500" /> Adaptation OS · Live Demo
+                </div>
+                <div className="pointer-events-none absolute right-6 top-6 z-10 rounded-full border border-white/15 bg-black/60 px-3 py-1.5 text-[10px] uppercase tracking-[0.28em] text-white/75 backdrop-blur">
+                  4K · Phoenix, AZ
+                </div>
+                <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+                  <iframe
+                    src="https://www.youtube-nocookie.com/embed/FPYBckToFO0?rel=0&modestbranding=1&playsinline=1"
+                    title="Adaptation Living — Founder's Walkthrough"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                    className="absolute inset-0 h-full w-full"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                ["01", "The Website", "Custom architecture — not a template."],
+                ["02", "The CRM", "Every lead, pipeline, and touchpoint unified."],
+                ["03", "AI Agents", "Phone and chat answering 24/7."],
+                ["04", "Automation", "Follow-up, booking, reviews — on autopilot."],
+              ].map(([step, title, copy]) => (
+                <div key={step} className="glass rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                  <p className="font-display text-2xl font-bold text-accent">{step}</p>
+                  <p className="mt-2 font-display text-lg font-bold text-white">{title}</p>
+                  <p className="mt-1 text-sm leading-relaxed text-text-muted">{copy}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 border-2 border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent"
+              >
+                Book A Live Demo <ArrowRight className="h-4 w-4" />
+              </a>
+              <a
+                href="/services#self-serve"
+                className="inline-flex items-center justify-center gap-2 border-2 border-white/70 px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-white hover:text-bg-dark"
+              >
+                Start Self-Serve
+              </a>
+              <p className="text-sm uppercase tracking-[0.2em] text-white/60 sm:ml-2">
+                Or call <a href="tel:6232191237" className="text-accent">623-219-1237</a>
+              </p>
+            </div>
+          </div>
+        </section>
 
         <section className="border-b border-glass-border bg-gradient-to-r from-accent/10 via-black to-black/95 py-18">
           <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-stretch gap-8 px-8 lg:grid-cols-[0.95fr_1.05fr]">
