@@ -37,6 +37,13 @@ export const metadata: Metadata = {
   twitter: pageTwitter(title, description),
 };
 
+/* ── Stripe Checkout Links ── */
+const STRIPE = {
+  starterMonthly: "https://buy.stripe.com/9B6fZhfK41e97a5de69MY0f",
+  growthMonthly: "https://buy.stripe.com/28EaEX41m3mh661fme9MY0g",
+  scaleMonthly: "https://buy.stripe.com/cNicN5gO84qlfGBgqi9MY0i",
+};
+
 /* ── Self-Serve DIY Plans ── */
 type DIYPlan = {
   name: string;
@@ -45,6 +52,7 @@ type DIYPlan = {
   credits: string;
   support: string;
   highlighted?: boolean;
+  stripeLink: string;
 };
 
 const diyPlans: DIYPlan[] = [
@@ -54,6 +62,7 @@ const diyPlans: DIYPlan[] = [
     users: "3 users",
     credits: "$50 credits/mo",
     support: "Standard support",
+    stripeLink: STRIPE.starterMonthly,
   },
   {
     name: "Growth",
@@ -62,6 +71,7 @@ const diyPlans: DIYPlan[] = [
     credits: "$50 credits/mo",
     support: "Priority support",
     highlighted: true,
+    stripeLink: STRIPE.growthMonthly,
   },
   {
     name: "Scale",
@@ -69,6 +79,7 @@ const diyPlans: DIYPlan[] = [
     users: "10 users",
     credits: "$50 credits/mo",
     support: "Dedicated support",
+    stripeLink: STRIPE.scaleMonthly,
   },
 ];
 
@@ -254,7 +265,9 @@ export default function ServicesPage() {
                 </ul>
 
                 <a
-                  href="#self-serve"
+                  href={plan.stripeLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block text-center bg-[#D4AF37] text-[#0B1D3A] px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] rounded-lg hover:bg-[#D4AF37]/90 transition-all"
                 >
                   Get Started
