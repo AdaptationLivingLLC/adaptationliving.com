@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   alternates: pageAlternates("/showcase"),
   openGraph: pageOg(title, description, "/showcase"),
   twitter: pageTwitter(title, description),
+  robots: { index: false, follow: true },
 };
 
 function PriceTag({
@@ -64,14 +65,14 @@ export default function ShowcasePage() {
       {/* ═══════════════════════════════════════════ */}
       {/* HERO                                       */}
       {/* ═══════════════════════════════════════════ */}
-      <section className="max-w-[1400px] mx-auto px-8 pt-20 pb-12">
-        <p className="text-sm uppercase tracking-[0.24em] text-accent mb-3">Live Technology Showcase</p>
-        <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold max-w-4xl leading-tight mb-6">
+      <section className="max-w-[1400px] mx-auto px-8 pt-12 pb-8">
+        <p className="text-xs uppercase tracking-[0.24em] text-accent mb-3">Live Technology Showcase</p>
+        <h1 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold max-w-4xl leading-tight mb-4">
           Everything You See Here
           <br />
           <span className="text-accent">Is Running Right Now.</span>
         </h1>
-        <p className="text-text-muted text-lg max-w-3xl leading-relaxed mb-4">
+        <p className="text-text-muted text-base max-w-3xl leading-relaxed mb-4">
           This is not a portfolio of screenshots. Every demo on this page is live code
           executing in your browser. The 3D scene below is real. The particle system is
           real. The AI chat in the corner is real. This is what we build. Scroll through,
@@ -86,15 +87,16 @@ export default function ShowcasePage() {
       {/* ═══════════════════════════════════════════ */}
       {/* 3D INTERACTIVE                             */}
       {/* ═══════════════════════════════════════════ */}
-      <section className="max-w-[1400px] mx-auto px-8 py-12">
+      <section className="section-cream py-12 sm:py-16">
+        <div className="max-w-[1400px] mx-auto px-8">
         <div className="flex items-center gap-3 mb-2">
           <Box className="text-accent w-7 h-7" />
           <p className="text-sm uppercase tracking-[0.24em] text-accent">Interactive 3D Graphics</p>
         </div>
-        <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
+        <h2 className="font-display text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
           Three.js &amp; React Three Fiber
         </h2>
-        <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-6">
+        <p className="text-text-muted text-sm leading-relaxed max-w-3xl mb-4">
           The scene below is a live 3D environment running in your browser. Drag to
           rotate. Hover the sphere to distort it. This is the same technology used by
           Nike, Apple, and Tesla for their product pages. Interactive 3D creates an
@@ -115,20 +117,22 @@ export default function ShowcasePage() {
             with interactive 3D features like this. We build it as part of your system.
           </p>
         </div>
+        </div>
       </section>
 
       {/* ═══════════════════════════════════════════ */}
       {/* PERFORMANCE CANVAS                         */}
       {/* ═══════════════════════════════════════════ */}
-      <section className="max-w-[1400px] mx-auto px-8 py-12 border-t border-glass-border">
+      <section className="section-cream py-12 sm:py-16 border-t border-glass-border">
+        <div className="max-w-[1400px] mx-auto px-8">
         <div className="flex items-center gap-3 mb-2">
           <Gauge className="text-accent w-7 h-7" />
           <p className="text-sm uppercase tracking-[0.24em] text-accent">High-Performance Animation</p>
         </div>
-        <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
+        <h2 className="font-display text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
           Real-Time Canvas Rendering
         </h2>
-        <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-6">
+        <p className="text-text-muted text-sm leading-relaxed max-w-3xl mb-4">
           This particle system is rendering hundreds of animated elements at 60 frames
           per second. Move your mouse or finger across it to spawn more. The FPS counter
           and particle count are live — this is real performance data, not a video. This
@@ -150,34 +154,36 @@ export default function ShowcasePage() {
             looks like.
           </p>
         </div>
+        </div>
       </section>
 
       {/* ═══════════════════════════════════════════ */}
       {/* AI CHAT — LIVE                             */}
       {/* ═══════════════════════════════════════════ */}
-      <section className="max-w-[1400px] mx-auto px-8 py-12 border-t border-glass-border">
+      <section className="section-cream py-12 sm:py-16 border-t border-glass-border">
+        <div className="max-w-[1400px] mx-auto px-8">
         <div className="flex items-center gap-3 mb-2">
           <MessageSquare className="text-accent w-7 h-7" />
           <p className="text-sm uppercase tracking-[0.24em] text-accent">Running Right Now</p>
         </div>
-        <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
+        <h2 className="font-display text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
           AI Chat Agent
         </h2>
-        <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-6">
+        <p className="text-text-muted text-sm leading-relaxed max-w-3xl mb-4">
           See the chat bubble in the bottom corner of this page? That&apos;s not a
           demo — it&apos;s our live AI chat agent. Click it. Ask it anything about
           our services, our pricing, or how the system works. It will respond instantly
           with an accurate, intelligent answer. This is exactly what your customers
           will experience on your website.
         </p>
-        <div className="glass rounded-2xl p-8 max-w-2xl">
+        <div className="glass rounded-2xl p-6 max-w-2xl">
           <div className="space-y-4">
             <div className="flex items-start gap-3">
               <div className="rounded-full bg-accent/20 p-2 shrink-0">
                 <Bot className="w-4 h-4 text-accent" />
               </div>
               <div className="rounded-2xl rounded-tl-none bg-white/[0.06] p-4">
-                <p className="text-white/85 text-sm">Hi! I&apos;m the Adaptation Living AI assistant. I can answer questions about our services, pricing, and how we can help your business. What would you like to know?</p>
+                <p className="text-[#0B1D3A]/85 text-sm">Hi! I&apos;m the Adaptation Living AI assistant. I can answer questions about our services, pricing, and how we can help your business. What would you like to know?</p>
               </div>
             </div>
             <p className="text-white/30 text-xs text-center">
@@ -200,26 +206,28 @@ export default function ShowcasePage() {
         <p className="mt-4">
           <a href="/ai" className="text-gold hover:text-gold/80 underline">See all AI systems &rarr;</a>
         </p>
+        </div>
       </section>
 
       {/* ═══════════════════════════════════════════ */}
       {/* AI VOICE RECEPTIONIST                      */}
       {/* ═══════════════════════════════════════════ */}
-      <section className="max-w-[1400px] mx-auto px-8 py-12 border-t border-glass-border">
+      <section className="section-cream py-12 sm:py-16 border-t border-glass-border">
+        <div className="max-w-[1400px] mx-auto px-8">
         <div className="flex items-center gap-3 mb-2">
           <Mic className="text-accent w-7 h-7" />
           <p className="text-sm uppercase tracking-[0.24em] text-accent">24/7 Phone Coverage</p>
         </div>
-        <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
+        <h2 className="font-display text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
           AI Voice Receptionist
         </h2>
-        <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-6">
+        <p className="text-text-muted text-sm leading-relaxed max-w-3xl mb-4">
           Call our business line right now — 623-219-1237. If we don&apos;t pick up,
           the AI will. It answers in our brand voice, handles your question, captures
           your info, and can book you on our calendar. This is the same system we
           install for every managed client. Your customers will never hit voicemail again.
         </p>
-        <div className="glass rounded-2xl p-8 max-w-2xl">
+        <div className="glass rounded-2xl p-6 max-w-2xl">
           <p className="text-[11px] uppercase tracking-[0.22em] text-accent mb-4">What Happens When Someone Calls</p>
           <div className="space-y-3">
             {[
@@ -233,7 +241,7 @@ export default function ShowcasePage() {
             ].map((step, i) => (
               <div key={i} className="flex items-start gap-3">
                 <span className="text-accent font-bold text-sm shrink-0 w-5">{i + 1}.</span>
-                <p className="text-white/85 text-sm">{step}</p>
+                <p className="text-[#0B1D3A]/85 text-sm">{step}</p>
               </div>
             ))}
           </div>
@@ -248,20 +256,22 @@ export default function ShowcasePage() {
         <p className="mt-4">
           <a href="/ai" className="text-gold hover:text-gold/80 underline">See all AI systems &rarr;</a>
         </p>
+        </div>
       </section>
 
       {/* ═══════════════════════════════════════════ */}
       {/* CUSTOM WEB ARCHITECTURE                    */}
       {/* ═══════════════════════════════════════════ */}
-      <section className="max-w-[1400px] mx-auto px-8 py-12 border-t border-glass-border">
+      <section className="section-cream py-12 sm:py-16 border-t border-glass-border">
+        <div className="max-w-[1400px] mx-auto px-8">
         <div className="flex items-center gap-3 mb-2">
           <Code className="text-accent w-7 h-7" />
           <p className="text-sm uppercase tracking-[0.24em] text-accent">This Site Is the Demo</p>
         </div>
-        <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
+        <h2 className="font-display text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
           Custom Web Architecture
         </h2>
-        <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-6">
+        <p className="text-text-muted text-sm leading-relaxed max-w-3xl mb-4">
           The website you are reading right now is built with Next.js, TypeScript,
           Tailwind CSS, and Framer Motion. It is server-rendered for speed, optimized
           for search engines, accessible, responsive on every device, and it scores
@@ -295,20 +305,22 @@ export default function ShowcasePage() {
             ours="From $297/mo self-serve · no setup fee"
           />
         </div>
+        </div>
       </section>
 
       {/* ═══════════════════════════════════════════ */}
       {/* CONTENT & REVIEW AI                        */}
       {/* ═══════════════════════════════════════════ */}
-      <section className="max-w-[1400px] mx-auto px-8 py-12 border-t border-glass-border">
+      <section className="section-cream py-12 sm:py-16 border-t border-glass-border">
+        <div className="max-w-[1400px] mx-auto px-8">
         <div className="flex items-center gap-3 mb-2">
           <Sparkles className="text-accent w-7 h-7" />
           <p className="text-sm uppercase tracking-[0.24em] text-accent">Content That Creates Itself</p>
         </div>
-        <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
+        <h2 className="font-display text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
           AI Content &amp; Review Management
         </h2>
-        <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-6">
+        <p className="text-text-muted text-sm leading-relaxed max-w-3xl mb-4">
           Blog posts, social captions, email campaigns, ad copy — generated in your
           brand voice in seconds. Every review on Google and Facebook gets a professional,
           personalized response automatically. A freelance writer charges $200+ per blog
@@ -323,42 +335,43 @@ export default function ShowcasePage() {
           ].map((item) => (
             <div key={item.label} className="glass rounded-xl p-4 text-center">
               <p className="text-[10px] uppercase tracking-widest text-accent mb-1">{item.label}</p>
-              <p className="font-display text-xl font-bold text-accent">{item.value}</p>
+              <p className="font-display text-lg font-bold text-accent">{item.value}</p>
               <p className="text-text-muted text-xs mt-1">{item.unit}</p>
             </div>
           ))}
+        </div>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════ */}
       {/* CTA                                        */}
       {/* ═══════════════════════════════════════════ */}
-      <section className="py-24 text-center bg-gradient-to-br from-accent/10 to-bg-dark/90 border-t border-glass-border">
+      <section className="py-12 sm:py-16 text-center bg-gradient-to-br from-accent/10 to-bg-dark/90 border-t border-glass-border">
         <div className="max-w-[1200px] mx-auto px-8">
-          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
+          <h2 className="font-display text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
             You Just Experienced the Product.
           </h2>
-          <p className="max-w-xl mx-auto text-text-muted text-lg mb-4">
+          <p className="max-w-xl mx-auto text-text-muted text-base mb-3">
             The 3D scene. The particle system. The AI chat. The voice receptionist.
             The architecture powering this page. This is what we build for your business.
             Not a pitch. Not a mockup. The real thing.
           </p>
-          <p className="max-w-xl mx-auto text-white/50 text-sm mb-8">
+          <p className="max-w-xl mx-auto text-white/50 text-sm mb-6">
             From $297/mo self-serve · No setup fee · Done-for-you from $1,497/mo + $1,997 setup.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <a href="/services#self-serve" className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-accent bg-accent text-white hover:bg-transparent hover:text-accent transition-all inline-block">
+            <a href="/services#self-serve" className="px-6 py-3 text-xs uppercase tracking-widest font-semibold border-2 border-accent bg-accent text-white hover:bg-transparent hover:text-accent transition-all inline-block">
               Buy Self-Serve
             </a>
-            <a href="/services" className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-white/70 bg-transparent text-white hover:bg-white hover:text-bg-dark transition-all inline-block">
+            <a href="/services" className="px-6 py-3 text-xs uppercase tracking-widest font-semibold border-2 border-white/70 bg-transparent text-white hover:bg-white hover:text-bg-dark transition-all inline-block">
               See All Plans
             </a>
           </div>
-          <div className="flex justify-center gap-8 mt-8 flex-wrap">
-            <a href="tel:6232191237" className="flex items-center gap-2 text-lg font-semibold hover:text-accent transition-all">
+          <div className="flex justify-center gap-6 mt-6 flex-wrap">
+            <a href="tel:6232191237" className="flex items-center gap-2 text-sm font-semibold hover:text-accent transition-all">
               <Phone className="text-accent w-5 h-5" /> 623-219-1237
             </a>
-            <a href="mailto:info@adaptationliving.com" className="flex items-center gap-2 text-lg font-semibold hover:text-accent transition-all">
+            <a href="mailto:info@adaptationliving.com" className="flex items-center gap-2 text-sm font-semibold hover:text-accent transition-all">
               <Mail className="text-accent w-5 h-5" /> info@adaptationliving.com
             </a>
           </div>

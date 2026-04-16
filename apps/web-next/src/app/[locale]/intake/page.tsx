@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, Phone } from "lucide-react";
+import { ArrowRight, CheckCircle2, Mail, Phone } from "lucide-react";
 import { GhlEmbed } from "../../../components/ghl-embed";
 import {
   BreadcrumbSchema,
@@ -9,9 +9,9 @@ import {
 } from "../../../lib/seo";
 import { Breadcrumbs } from "../../../components/breadcrumbs";
 
-const title = "Start Your Project";
+const title = "Start Your Adaptation OS Setup — Phoenix, AZ";
 const description =
-  "Start your project with Adaptation Living LLC. AI automation, CRM setup, web development, and workflow automation for small businesses in Phoenix, AZ. Free discovery call.";
+  "Book your Adaptation OS setup call with Adaptation Living LLC. AI phone receptionist, AI chat agent, CRM, workflow automation, and website — deployed by a veteran-owned team in Phoenix, AZ in 2–3 weeks.";
 
 export const metadata: Metadata = {
   title,
@@ -22,9 +22,13 @@ export const metadata: Metadata = {
 };
 
 const PLAN_LABELS: Record<string, string> = {
-  "managed-starter": "Managed Starter ($1,497/mo + $1,997 setup)",
-  "managed-growth": "Managed Growth ($2,997/mo + $3,997 setup)",
-  "managed-scale": "Managed Scale ($5,997/mo + $7,997 setup)",
+  "starter-setup": "Starter Setup ($1,500 + $194.90/mo · up to 3 users)",
+  "growth-setup": "Growth Setup ($2,500 + $394.90/mo · up to 5 users)",
+  "scale-setup": "Scale Setup ($5,000 + $694.90/mo · up to 10 users)",
+  "self-serve": "Self-Serve (from $349.90/mo · instant access · no setup fee)",
+  "starter-diy": "Starter DIY ($349.90/mo · up to 3 users)",
+  "growth-diy": "Growth DIY ($597.90/mo · up to 5 users)",
+  "scale-diy": "Scale DIY ($997.90/mo · up to 10 users)",
 };
 
 export default async function IntakePage({
@@ -40,83 +44,136 @@ export default async function IntakePage({
     <main id="main-content" className="navbar-offset">
       <Breadcrumbs items={[{ name: "Start Your Project" }]} />
       <BreadcrumbSchema items={[{ name: "Start Your Project", path: "/intake" }]} />
-      {/* Hero */}
-      <section className="section-cream max-w-[900px] mx-auto px-8 pt-16 pb-8 text-center">
-        <h1 className="font-display text-4xl sm:text-5xl font-bold mb-4 text-[#0B1D3A]">
-          Start Your Project
-        </h1>
-        <p className="text-text-muted text-lg max-w-2xl mx-auto mb-2">
-          Tell us what you are building. We respond within hours — not days.
-          No sales funnels, no intake gates. Just a conversation.
-        </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            name: "Start Your Adaptation OS Setup",
+            description,
+            url: "https://adaptationliving.com/intake",
+            provider: {
+              "@type": "Organization",
+              name: "Adaptation Living LLC",
+              telephone: "+1-623-219-1237",
+              email: "info@adaptationliving.com",
+            },
+          }),
+        }}
+      />
+
+      {/* HERO */}
+      <section className="section-cream">
+        <div className="max-w-[900px] mx-auto px-6 sm:px-8 pt-10 pb-6 text-center">
+          <p className="eyebrow">Intake · Adaptation OS Setup</p>
+          <h1 className="mt-3 h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B1D3A]">
+            Start Your Adaptation OS Setup.
+          </h1>
+          <p className="mt-4 text-base text-[#4A5568] max-w-2xl mx-auto leading-relaxed sm:text-lg">
+            Tell us about your business and we'll respond within hours — not
+            days. A senior team member handles every intake personally. No
+            chatbots. No sales funnels. Just a real conversation about what
+            you're building.
+          </p>
+          <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#0B1D3A]/70">
+            <span className="flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-accent" /> Hours-not-days response
+            </span>
+            <span className="flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-accent" /> Veteran-owned · Phoenix, AZ
+            </span>
+            <span className="flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-accent" /> 2–3 week launch
+            </span>
+          </div>
+        </div>
       </section>
 
-      {/* Plan acknowledgment banner */}
       {planLabel && (
-        <section className="section-cream max-w-[700px] mx-auto px-8 pb-6">
-          <div className="rounded-lg border border-accent/30 bg-accent/10 p-6 text-center">
-            <p className="text-base sm:text-lg leading-relaxed">
-              You&apos;re booking a call for the{" "}
-              <strong className="text-accent">{planLabel}</strong> plan.
-              Tell us about your business and we&apos;ll prepare a tailored
-              walk-through.
-            </p>
+        <section className="section-cream">
+          <div className="max-w-[700px] mx-auto px-6 sm:px-8 pb-6">
+            <div className="rounded-[18px] border-2 border-accent/40 bg-accent/10 p-6 text-center">
+              <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-accent mb-2">
+                Selected Plan
+              </p>
+              <p className="text-base sm:text-lg leading-relaxed text-[#0B1D3A]">
+                You're booking for{" "}
+                <strong className="text-[#0B1D3A]">{planLabel}</strong>. Tell us
+                about your business and we'll prepare a tailored walk-through.
+              </p>
+            </div>
           </div>
         </section>
       )}
 
-      {/* Form */}
-      <section className="section-cream max-w-[700px] mx-auto px-8 pb-16">
-        {formId ? (
-          <div className="glass rounded-lg p-6">
-            <GhlEmbed formId={formId} height="700px" title="Start your project with Adaptation Living" />
-          </div>
-        ) : (
-          <div className="glass rounded-lg p-10 text-center">
-            <p className="text-text-muted mb-6">
-              Our intake form is being configured. In the meantime, reach out
-              directly:
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-6">
+      {/* FORM */}
+      <section className="section-cream">
+        <div className="max-w-[700px] mx-auto px-6 sm:px-8 pb-12">
+          {formId ? (
+            <div className="rounded-[20px] border border-[#0B1D3A]/10 bg-white shadow-lift p-5 sm:p-6">
+              <GhlEmbed
+                formId={formId}
+                height="700px"
+                title="Start your project with Adaptation Living"
+              />
+            </div>
+          ) : (
+            <div className="rounded-[20px] border border-[#0B1D3A]/10 bg-white shadow-soft p-8 sm:p-10 text-center">
+              <p className="text-[#4A5568] mb-6 leading-relaxed">
+                Our intake form is being configured in GHL. Reach out directly and
+                we'll start your setup the same day:
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center gap-6">
+                <a
+                  href="tel:6232191237"
+                  className="flex items-center justify-center gap-2 text-lg font-semibold text-[#0B1D3A] hover:text-accent transition-all"
+                >
+                  <Phone className="text-accent w-5 h-5" />
+                  623-219-1237
+                </a>
+                <a
+                  href="mailto:info@adaptationliving.com"
+                  className="flex items-center justify-center gap-2 text-lg font-semibold text-[#0B1D3A] hover:text-accent transition-all"
+                >
+                  <Mail className="text-accent w-5 h-5" />
+                  info@adaptationliving.com
+                </a>
+              </div>
               <a
-                href="tel:6232191237"
-                className="flex items-center justify-center gap-2 text-lg font-semibold hover:text-accent transition-all"
+                href="/services"
+                className="mt-8 inline-flex items-center gap-2 rounded-sm border-2 border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold hover:bg-transparent hover:text-accent transition-all"
               >
-                <Phone className="text-accent w-5 h-5" />
-                623-219-1237
-              </a>
-              <a
-                href="mailto:info@adaptationliving.com"
-                className="flex items-center justify-center gap-2 text-lg font-semibold hover:text-accent transition-all"
-              >
-                <Mail className="text-accent w-5 h-5" />
-                info@adaptationliving.com
+                See Plans &amp; Pricing <ArrowRight className="w-4 h-4" />
               </a>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </section>
 
-      {/* Fallback contact */}
-      <section className="section-cream max-w-[700px] mx-auto px-8 pb-24 text-center">
-        <p className="text-text-muted text-sm mb-4">
-          Prefer to talk? Call or email us directly.
-        </p>
-        <div className="flex justify-center gap-8 flex-wrap">
-          <a
-            href="tel:6232191237"
-            className="flex items-center gap-2 font-semibold hover:text-accent transition-all"
-          >
-            <Phone className="text-accent w-4 h-4" />
-            623-219-1237
-          </a>
-          <a
-            href="mailto:info@adaptationliving.com"
-            className="flex items-center gap-2 font-semibold hover:text-accent transition-all"
-          >
-            <Mail className="text-accent w-4 h-4" />
-            info@adaptationliving.com
-          </a>
+      {/* FALLBACK */}
+      <section className="section-cream border-t border-[#0B1D3A]/10 py-16 text-center">
+        <div className="max-w-[700px] mx-auto px-6 sm:px-8">
+          <p className="text-sm text-[#4A5568] mb-4">
+            Prefer to talk? Call or email us directly.
+          </p>
+          <div className="flex justify-center gap-8 flex-wrap">
+            <a
+              href="tel:6232191237"
+              className="flex items-center gap-2 font-semibold text-[#0B1D3A] hover:text-accent transition-all"
+            >
+              <Phone className="text-accent w-4 h-4" />
+              623-219-1237
+            </a>
+            <a
+              href="mailto:info@adaptationliving.com"
+              className="flex items-center gap-2 font-semibold text-[#0B1D3A] hover:text-accent transition-all"
+            >
+              <Mail className="text-accent w-4 h-4" />
+              info@adaptationliving.com
+            </a>
+          </div>
         </div>
       </section>
     </main>

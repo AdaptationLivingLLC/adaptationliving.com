@@ -1,25 +1,39 @@
-/* ─── Brand Design Tokens ────────────────────────────────────────────────── */
-/* Sourced from legacy adaptationliving.com CSS variables — canonical source */
+/* ─── Adaptation OS Brand Design Tokens ─────────────────────────────────── */
+/* Navy + Gold + Cream. Text defaults to navy on cream. Inside .section-dark */
+/* the token values re-cascade to light variants so utility classes          */
+/* (text-text-muted, bg-glass, etc.) automatically adapt to the context.     */
 
 @theme {
-  /* Colors */
+  /* Core palette */
   --color-bg-dark:        #0B1D3A;
   --color-bg-cream:       #FEFCF8;
-  --color-bg-card:        rgba(11, 29, 58, 0.85);
-  --color-bg-card-strong: rgba(11, 29, 58, 0.95);
+  --color-navy:           #0B1D3A;
+  --color-navy-deep:      #071428;
+  --color-cream:          #FEFCF8;
+  --color-cream-warm:     #FDF6EC;
+  --color-cream-gold:     #FAF0E0;
+
+  /* Card / surface tokens (cream defaults) */
+  --color-bg-card:        rgba(253, 246, 236, 0.85);
+  --color-bg-card-strong: rgba(253, 246, 236, 0.95);
   --color-bg-card-cream:  rgba(253, 246, 236, 0.95);
-  --color-glass-border:   rgba(212, 175, 55, 0.15);
+  --color-glass-border:   rgba(11, 29, 58, 0.10);
 
-  --color-primary:        #ffffff;
+  /* Accent */
+  --color-primary:        #0B1D3A;
   --color-accent:         #D4AF37;
-  --color-accent-glow:    rgba(212, 175, 55, 0.2);
+  --color-accent-soft:    #E8C96A;
+  --color-accent-deep:    #B8952A;
+  --color-accent-glow:    rgba(212, 175, 55, 0.30);
   --color-gold:           #D4AF37;
-  --color-gold-glow:      rgba(212, 175, 55, 0.4);
+  --color-gold-glow:      rgba(212, 175, 55, 0.45);
 
-  --color-text-main:      #ffffff;
-  --color-text-muted:     #B8C4D4;
-  --color-text-dim:       #8899AA;
+  /* Text — cream-context defaults (navy family) */
+  --color-text-main:      #0B1D3A;
+  --color-text-muted:     #4A5568;
+  --color-text-dim:       #718096;
 
+  /* Text — named cream tokens (kept for pages that reference them directly) */
   --color-cream-text-main:  #0B1D3A;
   --color-cream-text-muted: #4A5568;
   --color-cream-text-dim:   #718096;
@@ -30,30 +44,38 @@
 
   /* Transitions */
   --transition-default: all 0.3s ease;
+  --transition-bounce:  cubic-bezier(0.34, 1.56, 0.64, 1);
 
   /* Spacing */
-  --navbar-height: 80px;
+  --navbar-height: 72px;
 
   /* Glass morphism */
-  --glass-blur: blur(12px);
+  --glass-blur: blur(14px);
   --glass-blur-light: blur(8px);
+
+  /* Shadows */
+  --shadow-soft:   0 4px 20px rgba(11, 29, 58, 0.08);
+  --shadow-lift:   0 12px 40px rgba(11, 29, 58, 0.12);
+  --shadow-gold:   0 8px 32px rgba(212, 175, 55, 0.25);
 }
 
 /* ─── Utility Classes ─────────────────────────────────────────────────────── */
 
 @layer utilities {
-  .font-display    { font-family: var(--font-display); }
+  .font-display    { font-family: var(--font-display); letter-spacing: 0.01em; }
   .font-body       { font-family: var(--font-body); }
 
   .glass {
     background: var(--color-bg-card);
     backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
     border: 1px solid var(--color-glass-border);
   }
 
   .glass-strong {
     background: var(--color-bg-card-strong);
     backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
     border: 1px solid var(--color-glass-border);
   }
 
@@ -61,31 +83,74 @@
   .text-accent  { color: var(--color-accent); }
   .text-muted   { color: var(--color-text-muted); }
   .text-dim     { color: var(--color-text-dim); }
+  .text-navy    { color: var(--color-navy); }
 
-  .glow-gold {
-    box-shadow: 0 0 20px var(--color-gold-glow);
-  }
-
-  .glow-accent {
-    box-shadow: 0 0 20px var(--color-accent-glow);
-  }
+  .glow-gold   { box-shadow: 0 0 20px var(--color-gold-glow); }
+  .glow-accent { box-shadow: 0 0 20px var(--color-accent-glow); }
 
   .navbar-offset {
     padding-top: var(--navbar-height);
   }
 
   .section-cream {
+    --color-text-main:  #0B1D3A;
+    --color-text-muted: #4A5568;
+    --color-text-dim:   #718096;
+    --color-bg-card:        rgba(255, 255, 255, 0.75);
+    --color-bg-card-strong: rgba(255, 255, 255, 0.92);
+    --color-glass-border:   rgba(11, 29, 58, 0.10);
     background: linear-gradient(165deg, #FEFCF8 0%, #FDF6EC 35%, #FAF0E0 70%, #FEFCF8 100%);
-    color: var(--color-cream-text-main);
+    color: #0B1D3A;
   }
 
   .section-dark {
-    background-color: var(--color-bg-dark);
-    color: var(--color-text-main);
+    --color-text-main:  #ffffff;
+    --color-text-muted: #B8C4D4;
+    --color-text-dim:   #8899AA;
+    --color-bg-card:        rgba(255, 255, 255, 0.05);
+    --color-bg-card-strong: rgba(255, 255, 255, 0.10);
+    --color-glass-border:   rgba(212, 175, 55, 0.18);
+    background-color: #0B1D3A;
+    color: #ffffff;
+  }
+
+  .section-dark-radial {
+    --color-text-main:  #ffffff;
+    --color-text-muted: #B8C4D4;
+    --color-text-dim:   #8899AA;
+    --color-bg-card:        rgba(255, 255, 255, 0.05);
+    --color-bg-card-strong: rgba(255, 255, 255, 0.10);
+    --color-glass-border:   rgba(212, 175, 55, 0.18);
+    background:
+      radial-gradient(circle at 15% 10%, rgba(212,175,55,0.18), transparent 40%),
+      radial-gradient(circle at 85% 90%, rgba(212,175,55,0.22), transparent 45%),
+      linear-gradient(180deg, #0B1D3A 0%, #071428 100%);
+    color: #ffffff;
   }
 
   .divider-gold {
     height: 2px;
     background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  }
+
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-lift { box-shadow: var(--shadow-lift); }
+  .shadow-gold { box-shadow: var(--shadow-gold); }
+
+  /* Display heading utilities — Cinzel + refined tracking */
+  .h-display {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: 0.005em;
+    line-height: 1.08;
+  }
+
+  .eyebrow {
+    font-family: var(--font-body);
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-accent);
   }
 }

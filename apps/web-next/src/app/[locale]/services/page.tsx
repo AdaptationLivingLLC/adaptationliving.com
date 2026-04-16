@@ -11,6 +11,7 @@ import {
   PenTool,
   Phone,
   Search,
+  ShieldCheck,
   Smartphone,
   Sparkles,
   Star,
@@ -25,26 +26,29 @@ import {
 } from "../../../lib/seo";
 import { Breadcrumbs } from "../../../components/breadcrumbs";
 
-const title = "Adaptation OS — Pricing & Plans";
+const title =
+  "Adaptation OS Pricing — AI Automation, CRM & Website Plans | Phoenix, AZ";
 const description =
-  "Adaptation OS: the all-in-one operating system for your business. Self-serve from $349.90/mo. Done-for-you setup from $1,500. Veteran-owned, Phoenix AZ.";
+  "Adaptation OS pricing for Phoenix small businesses. Done-For-You setup from $1,500 + $194.90/mo, or Self-Serve from $349.90/mo. AI phone receptionist, AI chat agent, CRM, workflows, website, reviews, 70+ listings — all included on every plan. Veteran-owned.";
 
 export const metadata: Metadata = {
   title,
   description,
+  keywords: [
+    "Adaptation OS pricing",
+    "AI automation pricing Phoenix",
+    "business CRM pricing Phoenix",
+    "GoHighLevel pricing alternative",
+    "AI phone receptionist cost",
+    "small business software Phoenix",
+    "veteran-owned CRM platform",
+    "done-for-you CRM setup",
+  ],
   alternates: pageAlternates("/services"),
   openGraph: pageOg(title, description, "/services"),
   twitter: pageTwitter(title, description),
 };
 
-/* ── Stripe Checkout Links ── */
-const STRIPE = {
-  starterMonthly: "https://buy.stripe.com/9B6fZhfK41e97a5de69MY0f",
-  growthMonthly: "https://buy.stripe.com/28EaEX41m3mh661fme9MY0g",
-  scaleMonthly: "https://buy.stripe.com/cNicN5gO84qlfGBgqi9MY0i",
-};
-
-/* ── Self-Serve DIY Plans ── */
 type DIYPlan = {
   name: string;
   price: string;
@@ -52,38 +56,40 @@ type DIYPlan = {
   credits: string;
   support: string;
   highlighted?: boolean;
-  stripeLink: string;
+  description: string;
 };
 
 const diyPlans: DIYPlan[] = [
   {
-    name: "Starter",
+    name: "Starter DIY",
     price: "$349.90",
-    users: "3 users",
-    credits: "$50 credits included",
-    support: "Standard support",
-    stripeLink: STRIPE.starterMonthly,
+    users: "Up to 3 users",
+    credits: "$50 one-time credits at signup",
+    support: "Standard email support",
+    description:
+      "Full platform access for solo operators and early teams. CRM, calendars, forms, basic automation, and a website builder — ready the day you sign up.",
   },
   {
-    name: "Growth",
+    name: "Growth DIY",
     price: "$597.90",
-    users: "5 users",
-    credits: "$50 credits included",
+    users: "Up to 5 users",
+    credits: "$50 one-time credits at signup",
     support: "Priority support",
     highlighted: true,
-    stripeLink: STRIPE.growthMonthly,
+    description:
+      "Everything in Starter plus AI Voice + Chat agents, industry-specific workflows, pipeline automation, and custom reporting. The sweet spot for 90% of businesses.",
   },
   {
-    name: "Scale",
+    name: "Scale DIY",
     price: "$997.90",
-    users: "10 users",
-    credits: "$50 credits included",
-    support: "Dedicated support",
-    stripeLink: STRIPE.scaleMonthly,
+    users: "Up to 10 users",
+    credits: "$50 one-time credits at signup",
+    support: "Dedicated support contact",
+    description:
+      "Everything in Growth plus multi-location configuration, advanced workflow architecture, custom API integrations, and team training access.",
   },
 ];
 
-/* ── Done-For-You Setup Plans ── */
 type SetupPlan = {
   name: string;
   setupFee: string;
@@ -100,63 +106,90 @@ const setupPlans: SetupPlan[] = [
     name: "Starter Setup",
     setupFee: "$1,500",
     monthly: "$194.90",
-    users: "3 users",
-    credits: "$100 credits included",
+    users: "Up to 3 users",
+    credits: "$100 one-time credits at signup",
     support: "Standard support",
     includes: [
-      "Contact import",
-      "Domain linking",
-      "API keys",
-      "Social media linking",
-      "Basic snapshot deployment",
+      "Contact database import",
+      "Custom domain linking + DNS",
+      "All API key integrations",
+      "Social media account linking",
+      "Starter snapshot deployment (CRM pipeline, calendar, follow-up, review automation, Content AI)",
     ],
   },
   {
     name: "Growth Setup",
     setupFee: "$2,500",
     monthly: "$394.90",
-    users: "5 users",
-    credits: "$100 credits included",
+    users: "Up to 5 users",
+    credits: "$100 one-time credits at signup",
     support: "Priority support",
     highlighted: true,
     includes: [
-      "Everything in Starter",
-      "Industry-specific workflows",
-      "AI agent tuning",
+      "Everything in Starter Setup",
+      "Industry-specific workflow configurations",
+      "AI Voice + Chat agent training on your knowledge base",
       "Custom reporting dashboard",
+      "Funnel + landing page templates loaded",
     ],
   },
   {
     name: "Scale Setup",
     setupFee: "$5,000",
     monthly: "$694.90",
-    users: "10 users",
-    credits: "$100 credits included",
-    support: "Dedicated support",
+    users: "Up to 10 users",
+    credits: "$100 one-time credits at signup",
+    support: "Dedicated contact",
     includes: [
-      "Everything in Growth",
-      "Multi-location config",
-      "Custom API integrations",
-      "Team training",
-      "Advanced workflow architecture",
+      "Everything in Growth Setup",
+      "Multi-location configuration",
+      "Custom API integrations (your stack)",
+      "Team training sessions (up to 3 hours)",
+      "Advanced workflow architecture (conditional branching, multi-step sequences)",
     ],
   },
 ];
 
-/* ── What Every Plan Includes ── */
 const includedFeatures = [
-  { icon: BarChart3, label: "CRM & Pipeline", desc: "Your command center for every lead and deal" },
-  { icon: Phone, label: "AI Phone Receptionist", desc: "Answer every call, even at 2 AM" },
-  { icon: MessageSquare, label: "AI Chat Agent", desc: "Respond in seconds on every channel" },
-  { icon: PenTool, label: "Content AI (Powered by Claude)", desc: "Show up on Google without writing a word" },
-  { icon: Mail, label: "Email & SMS Marketing", desc: "Reach your audience instantly" },
-  { icon: Calendar, label: "Calendar Booking", desc: "Leads book themselves" },
-  { icon: Globe, label: "Website & Funnel Builder", desc: "Your online presence, built in" },
-  { icon: Workflow, label: "Workflow Automation", desc: "Your follow-up runs while you sleep" },
-  { icon: Star, label: "Reputation Management", desc: "5-star reviews on autopilot" },
-  { icon: BarChart3, label: "Ad Manager", desc: "Launch ads without leaving your dashboard" },
-  { icon: CreditCard, label: "Invoicing & Payments", desc: "Get paid faster" },
-  { icon: Smartphone, label: "Branded Mobile App", desc: "Run everything from your phone" },
+  { icon: BarChart3, label: "CRM & Sales Pipeline", desc: "Smart lists, custom fields, visual drag-and-drop pipeline" },
+  { icon: Phone, label: "AI Phone Receptionist", desc: "24/7 call answering, booking, and lead capture" },
+  { icon: MessageSquare, label: "AI Chat Agent", desc: "Web, SMS, Instagram DM, Facebook Messenger, WhatsApp" },
+  { icon: PenTool, label: "Content AI", desc: "Blog posts, ads, emails, social captions in your brand voice" },
+  { icon: Mail, label: "Email + SMS Marketing", desc: "Campaigns, sequences, two-way conversations, reporting" },
+  { icon: Calendar, label: "Calendar + Booking", desc: "Multi-calendar, round-robin, reminders, no-show rescue" },
+  { icon: Globe, label: "Website + Funnel Builder", desc: "Drag-and-drop pages, forms, quizzes, payment links" },
+  { icon: Workflow, label: "Workflow Automation", desc: "Visual if/then builder, triggers, multi-step sequences" },
+  { icon: Star, label: "Reputation Management", desc: "Review requests, AI responses, monitoring, alerts" },
+  { icon: Search, label: "SEO + 70+ Listings", desc: "Google, Yelp, Apple Maps, Bing, Facebook, 65+ more" },
+  { icon: CreditCard, label: "Invoicing + Payments", desc: "Stripe checkout, subscriptions, payment links" },
+  { icon: Smartphone, label: "Branded Mobile App", desc: "iOS + Android, full CRM, AI reply approval on mobile" },
+];
+
+const faqs = [
+  {
+    q: "What's the difference between Done-For-You and Self-Serve?",
+    a: "Self-Serve means you sign up, log in the same day, and configure the platform yourself. Done-For-You means we build, configure, train, and deploy the entire system for you — contact import, domain linking, AI agent training, workflow setup, and team onboarding. Same platform either way. Same feature set. The difference is who does the build.",
+  },
+  {
+    q: "Are the credits monthly or one-time?",
+    a: "One-time credits at signup. The amount ($50 DIY or $100 Setup) is added to your wallet on day one and covers typical first-month SMS, email, and AI usage. After that, usage is billed at transparent wholesale pass-through rates — no markup.",
+  },
+  {
+    q: "What's actually included for that monthly price?",
+    a: "Every single feature on the platform: CRM, AI Voice Agent, AI Chat Agent, workflow automation, email and SMS marketing, review management, calendar booking, website and funnel builder, 70+ directory listings, social media scheduler, Facebook ad manager, invoicing and payments, branded mobile app, and reporting. Tiers differentiate on user count, setup depth, and support level — not feature access.",
+  },
+  {
+    q: "Can I upgrade or downgrade later?",
+    a: "Yes. Plan changes are instant and prorated. No long-term contracts on Self-Serve. Done-For-You plans include the setup work up-front; the monthly fee is month-to-month after launch.",
+  },
+  {
+    q: "Do I need to understand technology to run the platform?",
+    a: "No. The platform is designed for business owners, not engineers. Done-For-You plans include training on the dashboard, workflows, and AI agent controls. Self-Serve plans come with step-by-step onboarding inside the app and our full knowledge base.",
+  },
+  {
+    q: "How fast can I get started?",
+    a: "Self-Serve activates within minutes — instant access the day you sign up. Done-For-You setups launch in two to three weeks, including contact import, configuration, AI training, and team onboarding.",
+  },
 ];
 
 export default function ServicesPage() {
@@ -170,177 +203,145 @@ export default function ServicesPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Service",
+            "@type": "Product",
             name: "Adaptation OS",
-            description: "The operating system for your business. CRM, AI, automation, websites, pipelines — all in one platform.",
-            provider: {
-              "@type": "Organization",
-              name: "Adaptation Living LLC",
-              url: "https://adaptationliving.com",
-              telephone: "+1-623-219-1237",
-              email: "info@adaptationliving.com",
+            description:
+              "All-in-one business operating system: CRM, AI phone receptionist, AI chat agent, workflow automation, review management, email + SMS marketing, funnels, calendars, payments, and 70+ directory listings.",
+            brand: {
+              "@type": "Brand",
+              name: "Adaptation OS",
             },
-            offers: [
-              { "@type": "Offer", name: "Starter DIY", price: "349.90", priceCurrency: "USD" },
-              { "@type": "Offer", name: "Growth DIY", price: "597.90", priceCurrency: "USD" },
-              { "@type": "Offer", name: "Scale DIY", price: "997.90", priceCurrency: "USD" },
-              { "@type": "Offer", name: "Starter Setup", price: "194.90", priceCurrency: "USD" },
-              { "@type": "Offer", name: "Growth Setup", price: "394.90", priceCurrency: "USD" },
-              { "@type": "Offer", name: "Scale Setup", price: "694.90", priceCurrency: "USD" },
-            ],
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: "194.90",
+              highPrice: "997.90",
+              offerCount: 6,
+              offers: [
+                { "@type": "Offer", name: "Starter Setup", price: "194.90", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+                { "@type": "Offer", name: "Growth Setup", price: "394.90", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+                { "@type": "Offer", name: "Scale Setup", price: "694.90", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+                { "@type": "Offer", name: "Starter DIY", price: "349.90", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+                { "@type": "Offer", name: "Growth DIY", price: "597.90", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+                { "@type": "Offer", name: "Scale DIY", price: "997.90", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+              ],
+            },
           }),
         }}
       />
 
-      {/* ── HERO ── */}
-      <section className="section-cream max-w-[1400px] mx-auto px-8 pt-8 pb-8">
-        <p className="text-sm uppercase tracking-[0.24em] text-accent mb-3">Adaptation OS</p>
-        <h1 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold max-w-3xl leading-tight mb-4">
-          The Operating System
-          <span className="text-accent"> — Plans &amp; Pricing</span>
-        </h1>
-        <p className="text-text-muted text-base max-w-2xl leading-relaxed mb-4">
-          CRM. AI agents. Automation. Funnels. Calendars. Pipelines. Reviews. Campaigns.
-          Reporting. All in one platform. Pick self-serve if you want to run it yourself,
-          or done-for-you if you want us to build and manage everything.
-        </p>
-        <div className="flex gap-4 flex-wrap">
-          <a href="#self-serve" className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold uppercase tracking-widest border-2 border-accent bg-accent text-white hover:bg-transparent hover:text-accent transition-all">
-            Self-Serve Plans <ArrowRight className="w-4 h-4" />
-          </a>
-          <a href="#done-for-you" className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold uppercase tracking-widest border-2 border-white/70 text-white hover:bg-white hover:text-bg-dark transition-all">
-            Done-For-You Plans <ArrowRight className="w-4 h-4" />
-          </a>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          }),
+        }}
+      />
+
+      {/* ═══════════ HERO ═══════════ */}
+      <section className="section-cream">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 pt-10 pb-12">
+          <p className="eyebrow">Adaptation OS · Pricing &amp; Plans</p>
+          <h1 className="mt-3 h-display font-bold text-[#0B1D3A] text-3xl sm:text-4xl lg:text-5xl max-w-4xl leading-[1.08]">
+            AI Automation, CRM &amp; Website Plans{" "}
+            <span className="text-accent">for Phoenix Businesses.</span>
+          </h1>
+          <p className="mt-5 text-base leading-relaxed text-[#4A5568] max-w-3xl sm:text-lg">
+            Done-For-You setup from <strong className="text-[#0B1D3A]">$1,500 + $194.90/month</strong>,
+            or Self-Serve from <strong className="text-[#0B1D3A]">$349.90/month</strong>. Every plan
+            unlocks the full Adaptation OS platform — AI phone receptionist,
+            AI chat agent, CRM, workflow automation, email and SMS marketing,
+            reviews, website, 70+ directory listings, and a branded mobile app.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <a
+              href="#done-for-you"
+              className="inline-flex items-center gap-2 px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] border-2 border-accent bg-accent text-navy shadow-gold hover:bg-transparent hover:text-accent transition-all rounded-sm"
+            >
+              Done-For-You Plans <ArrowRight className="w-4 h-4" />
+            </a>
+            <a
+              href="#self-serve"
+              className="inline-flex items-center gap-2 px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] border-2 border-[#0B1D3A]/80 text-[#0B1D3A] hover:bg-[#0B1D3A] hover:text-white transition-all rounded-sm"
+            >
+              Self-Serve Plans <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
         </div>
       </section>
 
-      {/* ── SECTION 1: YOU RUN THE PLATFORM (DIY) ── */}
-      <section id="self-serve" className="section-cream py-20">
-        <div className="max-w-[1400px] mx-auto px-8">
-          <div className="flex items-center gap-3 mb-2">
-            <Zap className="text-[#D4AF37] w-7 h-7" />
-            <p className="text-sm uppercase tracking-[0.24em] text-[#D4AF37]">Self-Serve · Instant Access</p>
-          </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#0B1D3A] mb-4">
-            You Run The Platform
-          </h2>
-          <p className="text-[#0B1D3A]/70 text-lg leading-relaxed max-w-3xl mb-10">
-            Buy now, log in the same day. No setup fee. Cancel anytime. Every plan includes
-            the full Adaptation OS platform — the tiers only change user limits, credit
-            allowances, and support level.
-          </p>
-
-          <div className="grid gap-6 lg:grid-cols-3">
-            {diyPlans.map((plan) => (
-              <div
-                key={plan.name}
-                className={`bg-white/80 rounded-[28px] p-8 flex flex-col ${
-                  plan.highlighted
-                    ? "border-2 border-[#D4AF37] ring-1 ring-[#D4AF37]/40"
-                    : "border border-[#D4AF37]/15"
-                }`}
-              >
-                {plan.highlighted && (
-                  <p className="text-[10px] uppercase tracking-[0.28em] text-[#D4AF37] font-bold mb-3">
-                    Most Popular
-                  </p>
-                )}
-                <h3 className="font-display text-2xl font-bold text-[#0B1D3A]">{plan.name}</h3>
-
-                <div className="my-5">
-                  <p className="font-display text-5xl font-bold text-[#0B1D3A]">
-                    {plan.price}
-                    <span className="text-lg text-[#0B1D3A]/50 font-normal">/mo</span>
-                  </p>
-                </div>
-
-                <ul className="space-y-2 mb-6 flex-1">
-                  {[plan.users, plan.credits, plan.support].map((f) => (
-                    <li key={f} className="flex items-start gap-2 text-sm text-[#0B1D3A]/70">
-                      <CheckCircle2 className="text-[#D4AF37] w-4 h-4 mt-0.5 shrink-0" />
-                      <span>{f}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <a
-                  href={plan.stripeLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-center bg-[#D4AF37] text-[#0B1D3A] px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] rounded-lg hover:bg-[#D4AF37]/90 transition-all"
-                >
-                  Get Started
-                </a>
-              </div>
-            ))}
+      {/* ═══════════ DONE-FOR-YOU ═══════════ */}
+      <section id="done-for-you" className="section-dark-radial py-20 sm:py-24">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8">
+          <div className="max-w-3xl">
+            <div className="flex items-center gap-3 mb-3">
+              <Sparkles className="text-accent w-6 h-6" />
+              <p className="eyebrow">Done-For-You · Setup Included</p>
+            </div>
+            <h2 className="h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+              We Build, Configure &amp; Launch It for You.
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-white/80 max-w-3xl sm:text-lg">
+              A veteran-owned team handles every piece of the setup — contact
+              import, domain linking, AI agent training, workflow
+              configuration, and team onboarding. Book a call, we onboard you,
+              you go live in two to three weeks.
+            </p>
           </div>
 
-          <p className="text-[#0B1D3A]/40 text-xs text-center mt-8">
-            Additional users: $50/mo each. Secure checkout via Stripe. Instant account provisioning.
-          </p>
-        </div>
-      </section>
-
-      {/* ── SECTION 2: WE BUILD AND RUN IT FOR YOU (Setup DFY) ── */}
-      <section id="done-for-you" className="bg-[#0B1D3A] py-20">
-        <div className="max-w-[1400px] mx-auto px-8">
-          <div className="flex items-center gap-3 mb-2">
-            <Sparkles className="text-[#D4AF37] w-7 h-7" />
-            <p className="text-sm uppercase tracking-[0.24em] text-[#D4AF37]">Done-For-You · Setup Included</p>
-          </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
-            We Build And Run It For You
-          </h2>
-          <p className="text-white/60 text-lg leading-relaxed max-w-3xl mb-10">
-            You get a veteran-owned team that builds your funnels, writes your campaigns,
-            configures your automations, and gets you live. Book a call, we onboard you,
-            you go live in 2–3 weeks.
-          </p>
-
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {setupPlans.map((plan) => (
               <div
                 key={plan.name}
-                className={`glass rounded-[28px] p-8 flex flex-col ${
+                className={`relative rounded-[22px] p-7 flex flex-col transition-all hover:-translate-y-1 ${
                   plan.highlighted
-                    ? "border-2 border-[#D4AF37] ring-1 ring-[#D4AF37]/40"
-                    : ""
+                    ? "border-2 border-accent bg-white/[0.06] ring-2 ring-accent/30 shadow-gold"
+                    : "border border-white/15 bg-white/[0.04]"
                 }`}
               >
                 {plan.highlighted && (
-                  <p className="text-[10px] uppercase tracking-[0.28em] text-[#D4AF37] font-bold mb-3">
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent px-3 py-1 text-[9px] font-bold uppercase tracking-[0.28em] text-navy">
                     Most Popular
-                  </p>
+                  </span>
                 )}
-                <h3 className="font-display text-2xl font-bold text-white">{plan.name}</h3>
+                <h3 className="font-display text-xl font-bold text-white">
+                  {plan.name}
+                </h3>
 
-                <div className="my-5">
+                <div className="my-5 border-b border-white/10 pb-5">
                   <p className="font-display text-4xl font-bold text-white">
                     {plan.setupFee}
-                    <span className="text-lg text-white/50 font-normal"> setup</span>
+                    <span className="text-sm font-normal text-white/50"> setup</span>
                   </p>
-                  <p className="text-white/60 text-sm mt-2">
-                    + <span className="text-white font-semibold">{plan.monthly}/mo</span> after setup
+                  <p className="mt-2 text-sm text-white/70">
+                    + <span className="text-white font-semibold">{plan.monthly}</span>/mo after launch
                   </p>
                 </div>
 
-                <ul className="space-y-2 mb-4">
+                <ul className="space-y-2 mb-5">
                   {[plan.users, plan.credits, plan.support].map((f) => (
-                    <li key={f} className="flex items-start gap-2 text-sm text-white/70">
-                      <CheckCircle2 className="text-[#D4AF37] w-4 h-4 mt-0.5 shrink-0" />
+                    <li key={f} className="flex items-start gap-2 text-sm text-white/80">
+                      <CheckCircle2 className="text-accent w-4 h-4 mt-0.5 shrink-0" />
                       <span>{f}</span>
                     </li>
                   ))}
                 </ul>
 
-                <div className="mb-6 flex-1">
-                  <p className="text-[10px] uppercase tracking-[0.22em] text-[#D4AF37] font-bold mb-2">
+                <div className="flex-1">
+                  <p className="text-[10px] uppercase tracking-[0.26em] text-accent font-bold mb-2">
                     Setup Includes
                   </p>
-                  <ul className="space-y-1.5">
+                  <ul className="space-y-1.5 mb-6">
                     {plan.includes.map((item) => (
-                      <li key={item} className="flex items-start gap-2 text-sm text-white/60">
-                        <CheckCircle2 className="text-[#D4AF37]/60 w-3.5 h-3.5 mt-0.5 shrink-0" />
+                      <li key={item} className="flex items-start gap-2 text-sm text-white/70">
+                        <CheckCircle2 className="text-accent/70 w-3.5 h-3.5 mt-0.5 shrink-0" />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -349,7 +350,11 @@ export default function ServicesPage() {
 
                 <a
                   href="/intake"
-                  className="block text-center bg-[#D4AF37] text-[#0B1D3A] px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] rounded-lg hover:bg-[#D4AF37]/90 transition-all"
+                  className={`block text-center px-6 py-3.5 text-xs font-bold uppercase tracking-[0.22em] rounded-sm transition-all ${
+                    plan.highlighted
+                      ? "border-2 border-accent bg-accent text-navy shadow-gold hover:bg-transparent hover:text-accent"
+                      : "border-2 border-white/70 text-white hover:bg-white hover:text-navy"
+                  }`}
                 >
                   Book Setup Call
                 </a>
@@ -357,198 +362,355 @@ export default function ServicesPage() {
             ))}
           </div>
 
-          <p className="text-white/30 text-xs text-center mt-8">
-            Book a call → we onboard you → go live in 2–3 weeks.
+          <p className="mt-10 text-center text-sm text-white/60">
+            Book a call → we onboard you → launch in 2–3 weeks. Month-to-month
+            after setup. No long-term contracts.
           </p>
         </div>
       </section>
 
-      {/* ── SECTION 3: WHAT EVERY PLAN INCLUDES ── */}
-      <section className="section-cream py-20">
-        <div className="max-w-[1400px] mx-auto px-8">
-          <div className="flex items-center gap-3 mb-2">
-            <Sparkles className="text-[#D4AF37] w-7 h-7" />
-            <p className="text-sm uppercase tracking-[0.24em] text-[#D4AF37]">Included With Every Plan</p>
+      {/* ═══════════ SELF-SERVE ═══════════ */}
+      <section id="self-serve" className="section-cream py-20 sm:py-24">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8">
+          <div className="max-w-3xl">
+            <div className="flex items-center gap-3 mb-3">
+              <Zap className="text-accent w-6 h-6" />
+              <p className="eyebrow">Self-Serve · Instant Access</p>
+            </div>
+            <h2 className="h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B1D3A]">
+              You Run the Platform. Log In the Same Day.
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-[#4A5568] max-w-3xl sm:text-lg">
+              Buy now, access the dashboard in minutes. No setup fee, no
+              long-term contract, cancel anytime. Every plan includes the full
+              Adaptation OS platform.
+            </p>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#0B1D3A] mb-10">
-            What Every Plan Includes
-          </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            {diyPlans.map((plan) => (
+              <div
+                key={plan.name}
+                className={`relative rounded-[22px] p-7 flex flex-col shadow-soft transition-all hover:-translate-y-1 hover:shadow-lift ${
+                  plan.highlighted
+                    ? "border-2 border-accent bg-white ring-2 ring-accent/30"
+                    : "border border-[#0B1D3A]/10 bg-white"
+                }`}
+              >
+                {plan.highlighted && (
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent px-3 py-1 text-[9px] font-bold uppercase tracking-[0.28em] text-navy">
+                    Most Popular
+                  </span>
+                )}
+                <h3 className="font-display text-xl font-bold text-[#0B1D3A]">
+                  {plan.name}
+                </h3>
+
+                <div className="my-4 border-b border-[#0B1D3A]/10 pb-4">
+                  <p className="font-display text-4xl font-bold text-[#0B1D3A]">
+                    {plan.price}
+                    <span className="text-sm font-normal text-[#0B1D3A]/50">/mo</span>
+                  </p>
+                  <p className="mt-2 text-xs text-[#0B1D3A]/60">
+                    No setup fee · Instant access
+                  </p>
+                </div>
+
+                <ul className="space-y-2 mb-5 flex-1">
+                  {[plan.users, plan.credits, plan.support].map((f) => (
+                    <li key={f} className="flex items-start gap-2 text-sm text-[#4A5568]">
+                      <CheckCircle2 className="text-accent w-4 h-4 mt-0.5 shrink-0" />
+                      <span>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <p className="text-sm leading-relaxed text-[#4A5568] mb-6">
+                  {plan.description}
+                </p>
+
+                <a
+                  href="/intake?plan=self-serve"
+                  className={`block text-center px-6 py-3.5 text-xs font-bold uppercase tracking-[0.22em] rounded-sm transition-all ${
+                    plan.highlighted
+                      ? "border-2 border-accent bg-accent text-navy shadow-gold hover:bg-transparent hover:text-accent"
+                      : "border-2 border-[#0B1D3A]/80 text-[#0B1D3A] hover:bg-[#0B1D3A] hover:text-white"
+                  }`}
+                >
+                  Start {plan.name.split(" ")[0]}
+                </a>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-10 text-center text-sm text-[#4A5568]">
+            Additional users: $50/mo each. Secure signup. Instant provisioning
+            through our team — you'll be live within 24 hours of intake.
+          </p>
+        </div>
+      </section>
+
+      {/* ═══════════ WHAT EVERY PLAN INCLUDES ═══════════ */}
+      <section className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8">
+          <div className="max-w-3xl mb-12">
+            <div className="flex items-center gap-3 mb-3">
+              <ShieldCheck className="text-accent w-6 h-6" />
+              <p className="eyebrow">Included With Every Plan</p>
+            </div>
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+              Every Tier. Every Feature. No Upsells.
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-[#4A5568] max-w-3xl">
+              Tiers differentiate on user count, setup depth, and support
+              level — not feature access. Every plan unlocks the entire
+              Adaptation OS platform.
+            </p>
+          </div>
+
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {includedFeatures.map((feat) => (
-              <div key={feat.label} className="bg-white/80 border border-[#D4AF37]/15 rounded-[28px] p-6 flex flex-col">
-                <feat.icon className="text-[#D4AF37] w-7 h-7 mb-3" />
-                <h3 className="font-display text-lg font-bold text-[#0B1D3A] mb-1">{feat.label}</h3>
-                <p className="text-[#0B1D3A]/60 text-sm">{feat.desc}</p>
+              <div
+                key={feat.label}
+                className="rounded-[20px] border border-[#0B1D3A]/10 bg-white p-6 shadow-soft transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-lift"
+              >
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#0B1D3A] text-accent mb-4 shadow-[inset_0_0_0_1px_rgba(212,175,55,0.3)]">
+                  <feat.icon className="w-5 h-5" />
+                </div>
+                <h3 className="font-display text-lg font-bold text-[#0B1D3A]">
+                  {feat.label}
+                </h3>
+                <p className="mt-1.5 text-sm text-[#4A5568] leading-relaxed">
+                  {feat.desc}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── SECTION 4: HOW CREDITS WORK ── */}
-      <section className="max-w-[1400px] mx-auto px-8 py-16 border-t border-glass-border">
-        <h2 className="font-display text-3xl font-bold mb-3">How Credits Work</h2>
-        <p className="text-text-muted text-base mb-4 max-w-3xl">
-          Credits cover AI calls, SMS, email campaigns, content generation, and review
-          responses. Usage-based billing kicks in after your included credits are used.
-          Transparent — you see every charge in your dashboard.
-        </p>
-        <p className="text-text-muted text-sm max-w-3xl mb-8">
-          Self-serve plans include $50/mo in credits. Done-for-you plans include $100/mo.
-          Additional credits available at wholesale cost with no markup.
-        </p>
-        <div className="grid sm:grid-cols-3 gap-6">
-          <div className="glass rounded-2xl p-6">
-            <p className="text-[11px] uppercase tracking-[0.22em] text-accent mb-2">SMS</p>
-            <p className="font-display text-xl font-bold mb-1">~$0.0158 per segment</p>
-            <p className="text-text-muted text-sm">
-              US/Canada outbound. $50 of credits = roughly 3,000+ texts.
+      {/* ═══════════ HOW CREDITS WORK ═══════════ */}
+      <section className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8">
+          <div className="max-w-3xl mb-10">
+            <p className="eyebrow">Usage &amp; Credits</p>
+            <h2 className="mt-3 h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+              Transparent, Pass-Through Usage Pricing.
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-[#4A5568] max-w-3xl">
+              Credits cover AI calls, SMS, email, content generation, and
+              review responses. Every plan includes a <strong className="text-[#0B1D3A]">one-time credit bundle at signup</strong>{" "}
+              ($50 DIY, $100 Setup). After credits are used, usage is billed at
+              wholesale pass-through rates — no markup, no hidden fees. You see
+              every charge in your dashboard.
             </p>
           </div>
-          <div className="glass rounded-2xl p-6">
-            <p className="text-[11px] uppercase tracking-[0.22em] text-accent mb-2">Email</p>
-            <p className="font-display text-xl font-bold mb-1">~$0.000675 per send</p>
-            <p className="text-text-muted text-sm">
-              $50 of credits = 74,000+ emails. Unless you are blasting, email is effectively free.
-            </p>
-          </div>
-          <div className="glass rounded-2xl p-6">
-            <p className="text-[11px] uppercase tracking-[0.22em] text-accent mb-2">AI</p>
-            <p className="font-display text-xl font-bold mb-1">From $0.09 / 1K words</p>
-            <p className="text-text-muted text-sm">
-              Conversation AI, Content AI, Reviews AI, Voice AI — billed at provider token rates.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ── SECTION 5: REFERRAL PROGRAM ── */}
-      <section className="max-w-[1400px] mx-auto px-8 pb-16">
-        <div className="border-2 border-[#D4AF37]/30 bg-[#D4AF37]/5 rounded-[28px] p-8 flex flex-col sm:flex-row items-center gap-6">
-          <div className="flex-1">
-            <p className="text-[10px] uppercase tracking-[0.28em] text-[#D4AF37] font-bold mb-2">Referral Program</p>
-            <h3 className="font-display text-2xl font-bold mb-2">
-              Refer a business. Get 1 month free + $100 in credits when they sign up.
-            </h3>
-            <p className="text-text-muted text-sm">
-              Share your referral link from your dashboard. When they activate, you both win.
-            </p>
-          </div>
-          <a
-            href="/contact"
-            className="shrink-0 bg-[#D4AF37] text-[#0B1D3A] px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] rounded-lg hover:bg-[#D4AF37]/90 transition-all"
-          >
-            Learn More
-          </a>
-        </div>
-      </section>
-
-      {/* ── PRICE COMPARISON ── */}
-      <section className="max-w-[1400px] mx-auto px-8 py-16 border-t border-glass-border">
-        <div className="flex items-center gap-3 mb-2">
-          <Search className="text-accent w-7 h-7" />
-          <p className="text-sm uppercase tracking-[0.24em] text-accent">What This Replaces</p>
-        </div>
-        <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-          Replace 8+ Subscriptions With One
-        </h2>
-        <p className="text-text-muted text-base mb-8 max-w-3xl">
-          Most businesses pay for a dozen disconnected tools. Adaptation OS consolidates
-          them into one platform — one login, one bill, one source of truth.
-        </p>
-        <div className="overflow-x-auto">
-          <table className="w-full text-left">
-            <thead>
-              <tr className="border-b border-glass-border">
-                <th scope="col" className="py-3 pr-6 text-sm uppercase tracking-widest text-white/60 font-semibold">Tool</th>
-                <th scope="col" className="py-3 pr-6 text-sm uppercase tracking-widest text-white/40 font-semibold">Typical Monthly Cost</th>
-                <th scope="col" className="py-3 text-sm uppercase tracking-widest text-accent font-semibold">In Adaptation OS</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                { tool: "HubSpot CRM", typical: "$450–$1,200/mo", us: "Included" },
-                { tool: "ActiveCampaign / Mailchimp", typical: "$99–$300/mo", us: "Included" },
-                { tool: "Calendly", typical: "$16/user/mo", us: "Included" },
-                { tool: "Twilio SMS", typical: "pay per message", us: "Included (at cost)" },
-                { tool: "ClickFunnels / Leadpages", typical: "$97–$297/mo", us: "Included" },
-                { tool: "Podium / BirdEye (reviews)", typical: "$289–$499/mo", us: "Included" },
-                { tool: "Intercom / Drift chat", typical: "$74–$500/mo", us: "Included" },
-                { tool: "Zapier Pro", typical: "$49–$99/mo", us: "Included" },
-                { tool: "Kajabi / Teachable (courses)", typical: "$99–$399/mo", us: "Included" },
-                { tool: "WordPress hosting + maintenance", typical: "$50–$200/mo", us: "Included" },
-              ].map((row) => (
-                <tr key={row.tool} className="border-b border-white/5">
-                  <td className="py-4 pr-6 text-white/90 text-sm font-semibold">{row.tool}</td>
-                  <td className="py-4 pr-6 text-white/40 text-sm">{row.typical}</td>
-                  <td className="py-4 text-accent font-semibold text-sm">{row.us}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      {/* ── SEO INCLUDED ── */}
-      <section id="seo" className="max-w-[1400px] mx-auto px-8 py-16 border-t border-glass-border">
-        <div className="flex items-center gap-3 mb-2">
-          <Search className="text-accent w-7 h-7" />
-          <p className="text-sm uppercase tracking-[0.24em] text-accent">SEO & Visibility</p>
-        </div>
-        <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-          Every Website Build Includes Real SEO
-        </h2>
-        <p className="text-text-muted text-base mb-8 max-w-3xl">
-          Most agencies charge $2,000–$5,000/month for what we build in from day one.
-          This is not an add-on.
-        </p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {[
-            "Technical SEO audit + remediation",
-            "Schema.org structured data",
-            "Google Business Profile optimization",
-            "Google Search Console + sitemap",
-            "Bing Webmaster Tools",
-            "Google Analytics 4 (events, conversions)",
-            "Google Tag Manager",
-            "Meta Pixel + Conversion API",
-            "Microsoft Clarity (heatmaps)",
-            "Open Graph + Twitter Cards",
-            "XML sitemap (auto-generated)",
-            "Image optimization + lazy loading",
-            "Page speed optimization",
-            "Local SEO + NAP consistency",
-            "AI overview optimization (Google, Perplexity)",
-            "Keyword + competitor gap analysis",
-            "Internal linking architecture",
-            "Mobile-first responsive design",
-            "SSL/HTTPS verification",
-            "Accessibility foundations (ARIA, contrast)",
-          ].map((item) => (
-            <div key={item} className="flex items-start gap-2 text-sm">
-              <CheckCircle2 className="text-accent w-4 h-4 mt-0.5 shrink-0" />
-              <span className="text-text-muted">{item}</span>
+          <div className="grid gap-5 sm:grid-cols-3">
+            <div className="rounded-[20px] border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+              <p className="text-[10px] uppercase tracking-[0.26em] text-accent font-bold mb-2">SMS</p>
+              <p className="font-display text-xl font-bold text-[#0B1D3A]">~$0.0158 / segment</p>
+              <p className="mt-2 text-sm text-[#4A5568]">
+                US/Canada outbound. $50 in credits ≈ 3,000+ texts.
+              </p>
             </div>
-          ))}
+            <div className="rounded-[20px] border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+              <p className="text-[10px] uppercase tracking-[0.26em] text-accent font-bold mb-2">Email</p>
+              <p className="font-display text-xl font-bold text-[#0B1D3A]">~$0.000675 / send</p>
+              <p className="mt-2 text-sm text-[#4A5568]">
+                $50 in credits ≈ 74,000+ emails. Near-zero cost in practice.
+              </p>
+            </div>
+            <div className="rounded-[20px] border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+              <p className="text-[10px] uppercase tracking-[0.26em] text-accent font-bold mb-2">AI</p>
+              <p className="font-display text-xl font-bold text-[#0B1D3A]">from $0.09 / 1K words</p>
+              <p className="mt-2 text-sm text-[#4A5568]">
+                Conversation AI, Content AI, Review AI, Voice AI — billed at
+                provider token rates.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* ── CTA ── */}
-      <section className="py-24 text-center bg-gradient-to-br from-accent/10 to-bg-dark/90 border-t border-glass-border">
-        <div className="max-w-[1200px] mx-auto px-8">
-          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-            Ready To Run Your Business On One System?
-          </h2>
-          <p className="text-text-muted text-lg max-w-xl mx-auto mb-8">
-            Pick a self-serve plan and get instant access, or book a call for done-for-you setup.
-          </p>
-          <div className="flex justify-center gap-4 flex-wrap">
-            <a href="#self-serve" className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-accent bg-accent text-white hover:bg-transparent hover:text-accent transition-all inline-block">
-              Self-Serve Plans
+      {/* ═══════════ WHAT THIS REPLACES ═══════════ */}
+      <section className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8">
+          <div className="max-w-3xl mb-10">
+            <div className="flex items-center gap-3 mb-3">
+              <Search className="text-accent w-6 h-6" />
+              <p className="eyebrow">What Adaptation OS Replaces</p>
+            </div>
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+              Replace 10+ Subscriptions With One Platform.
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-[#4A5568] max-w-3xl">
+              Most businesses spend $1,500–$4,000/month across a dozen
+              disconnected tools. Adaptation OS consolidates the entire stack —
+              one login, one bill, one source of truth.
+            </p>
+          </div>
+          <div className="overflow-x-auto rounded-[20px] border border-[#0B1D3A]/10 bg-white shadow-soft">
+            <table className="w-full text-left">
+              <thead>
+                <tr className="border-b border-[#0B1D3A]/10 bg-[#0B1D3A]/[0.02]">
+                  <th scope="col" className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/70 font-bold">Tool Replaced</th>
+                  <th scope="col" className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/50 font-bold">Typical Monthly Cost</th>
+                  <th scope="col" className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-accent font-bold">In Adaptation OS</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { tool: "HubSpot / Salesforce CRM", typical: "$450–$1,200/mo", us: "Included" },
+                  { tool: "ActiveCampaign / Mailchimp", typical: "$99–$300/mo", us: "Included" },
+                  { tool: "Calendly / Acuity", typical: "$16/user/mo", us: "Included" },
+                  { tool: "Twilio / OpenPhone", typical: "pay-per-message", us: "Included at cost" },
+                  { tool: "ClickFunnels / Leadpages", typical: "$97–$297/mo", us: "Included" },
+                  { tool: "Podium / BirdEye (reviews)", typical: "$289–$499/mo", us: "Included" },
+                  { tool: "Intercom / Drift chat", typical: "$74–$500/mo", us: "Included" },
+                  { tool: "Zapier Pro", typical: "$49–$99/mo", us: "Included" },
+                  { tool: "Kajabi / Teachable (courses)", typical: "$99–$399/mo", us: "Included" },
+                  { tool: "WordPress hosting + maintenance", typical: "$50–$200/mo", us: "Included" },
+                  { tool: "Hootsuite / Buffer (social)", typical: "$99–$249/mo", us: "Included" },
+                  { tool: "Meta Ads Manager", typical: "standalone tool", us: "Included" },
+                ].map((row) => (
+                  <tr key={row.tool} className="border-b border-[#0B1D3A]/5 last:border-0">
+                    <td className="py-3 px-5 text-[#0B1D3A] text-sm font-semibold">{row.tool}</td>
+                    <td className="py-3 px-5 text-[#4A5568] text-sm">{row.typical}</td>
+                    <td className="py-3 px-5 text-accent font-bold text-sm">{row.us}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ SEO INCLUDED ═══════════ */}
+      <section id="seo" className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8">
+          <div className="max-w-3xl mb-10">
+            <div className="flex items-center gap-3 mb-3">
+              <Search className="text-accent w-6 h-6" />
+              <p className="eyebrow">SEO &amp; Visibility</p>
+            </div>
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+              Enterprise-Grade SEO — Built In, Not Billed Separately.
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-[#4A5568] max-w-3xl">
+              Most agencies charge $2,000–$5,000/month for what we build in
+              from day one. On every plan. Every site. This is not an add-on.
+            </p>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {[
+              "Technical SEO audit + remediation",
+              "Schema.org structured data",
+              "Google Business Profile optimization",
+              "Google Search Console + sitemap",
+              "Bing Webmaster Tools",
+              "Google Analytics 4",
+              "Google Tag Manager",
+              "Meta Pixel + Conversion API",
+              "Microsoft Clarity heatmaps",
+              "Open Graph + Twitter Cards",
+              "XML sitemap (auto-generated)",
+              "Image optimization + lazy loading",
+              "Core Web Vitals tuning",
+              "Local SEO + NAP consistency",
+              "AI overview optimization (ChatGPT / Perplexity)",
+              "Keyword + competitor gap analysis",
+              "Internal linking architecture",
+              "Mobile-first responsive design",
+              "SSL / HTTPS verification",
+              "WCAG accessibility foundations",
+            ].map((item) => (
+              <div
+                key={item}
+                className="flex items-start gap-2 rounded-xl border border-[#0B1D3A]/10 bg-white px-4 py-3 shadow-soft"
+              >
+                <CheckCircle2 className="text-accent w-4 h-4 mt-0.5 shrink-0" />
+                <span className="text-sm text-[#4A5568]">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ REFERRAL ═══════════ */}
+      <section className="section-cream border-t border-[#0B1D3A]/10 py-16">
+        <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
+          <div className="rounded-[22px] border-2 border-accent/40 bg-accent/10 p-7 sm:p-9 flex flex-col sm:flex-row items-center gap-6">
+            <div className="flex-1">
+              <p className="text-[10px] uppercase tracking-[0.28em] text-accent font-bold mb-2">
+                Referral Program
+              </p>
+              <h3 className="h-display text-xl sm:text-2xl font-bold text-[#0B1D3A]">
+                Refer a business. Get 1 month free + $100 credits on activation.
+              </h3>
+              <p className="mt-2 text-sm text-[#4A5568]">
+                Your referral link lives in your dashboard. When they sign up
+                and activate, you both win.
+              </p>
+            </div>
+            <a
+              href="/contact"
+              className="shrink-0 bg-accent text-navy px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] rounded-sm shadow-gold hover:bg-[#E8C96A] transition-all"
+            >
+              Learn More
             </a>
-            <a href="/intake" className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-white/70 bg-transparent text-white hover:bg-white hover:text-bg-dark transition-all inline-block">
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ FAQ ═══════════ */}
+      <section className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+        <div className="max-w-[900px] mx-auto px-6 sm:px-8">
+          <div className="text-center mb-10">
+            <p className="eyebrow">Pricing Questions</p>
+            <h2 className="mt-3 h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+              Common Questions About Plans &amp; Pricing.
+            </h2>
+          </div>
+          <div>
+            {faqs.map((item) => (
+              <details key={item.q} className="group border-b border-[#0B1D3A]/10 py-2">
+                <summary className="flex cursor-pointer select-none items-center justify-between py-4 text-base font-semibold text-[#0B1D3A] sm:text-lg">
+                  <span className="pr-6">{item.q}</span>
+                  <span className="shrink-0 text-2xl text-accent transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="pb-5 pr-8 text-sm leading-relaxed text-[#4A5568] sm:text-base">
+                  {item.a}
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ CTA ═══════════ */}
+      <section className="section-dark-radial py-20 sm:py-24 text-center">
+        <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
+          <p className="eyebrow">Ready to Launch</p>
+          <h2 className="mt-3 h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+            Ready to Run Your Business on One System?
+          </h2>
+          <p className="max-w-2xl mx-auto mt-5 text-base sm:text-lg text-white/80 leading-relaxed">
+            Book a setup call and be live in two to three weeks, or start
+            self-serve today. Same platform. Same features. Same Phoenix team
+            supporting you.
+          </p>
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
+            <a
+              href="/intake"
+              className="px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] border-2 border-accent bg-accent text-navy shadow-gold hover:bg-transparent hover:text-accent transition-all rounded-sm"
+            >
               Book A Setup Call
+            </a>
+            <a
+              href="/contact"
+              className="px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] border-2 border-white/70 bg-transparent text-white hover:bg-white hover:text-navy transition-all rounded-sm"
+            >
+              See A Live Demo
             </a>
           </div>
         </div>

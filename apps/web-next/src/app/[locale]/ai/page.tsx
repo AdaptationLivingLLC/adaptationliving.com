@@ -4,7 +4,6 @@ import {
   CheckCircle2,
   Clock,
   CreditCard,
-  DollarSign,
   Mail,
   MessageSquare,
   Mic,
@@ -24,17 +23,51 @@ import {
 } from "../../../lib/seo";
 import { Breadcrumbs } from "../../../components/breadcrumbs";
 
-const title = "AI-Powered Business Systems — Adaptation Living LLC";
+const title =
+  "AI Phone Receptionist, Chat Agents & Workflow Automation — Phoenix, AZ";
 const description =
-  "AI phone answering, chat agents, automated follow-up, and review management for your business. One price, everything included. Adaptation Living, Phoenix AZ.";
+  "AI-powered business automation from Adaptation Living LLC in Phoenix, AZ. 24/7 AI phone receptionist, AI chat agent (web + SMS + Instagram + Facebook + WhatsApp), automated follow-up workflows, review management, and Content AI. Included in every Adaptation OS plan.";
 
 export const metadata: Metadata = {
   title,
   description,
+  keywords: [
+    "AI phone receptionist Phoenix AZ",
+    "AI chat agent for business",
+    "AI answering service Phoenix",
+    "automated follow-up system",
+    "AI review management",
+    "AI content generation business",
+    "workflow automation Phoenix",
+    "small business AI platform",
+  ],
   alternates: pageAlternates("/ai"),
   openGraph: pageOg(title, description, "/ai"),
   twitter: pageTwitter(title, description),
 };
+
+const faqs = [
+  {
+    q: "How is the AI phone receptionist different from a regular answering service?",
+    a: "A human answering service costs $200–$500/month with limited hours and still needs to transfer calls, take messages, and coordinate with your calendar. Our AI Voice Agent answers 24/7/365, captures name, phone, email, books directly on your calendar, handles multiple simultaneous callers, and costs around $0.48 per 3-minute call. No menus, no transfers, no voicemail black holes.",
+  },
+  {
+    q: "Do I need a new phone number?",
+    a: "You can keep your existing number or we issue a dedicated business line. Either way, calls, SMS, and voicemails flow through one unified inbox — your personal cell stays out of it.",
+  },
+  {
+    q: "What channels does the AI chat agent cover?",
+    a: "Your website, SMS/text, Instagram DM, Facebook Messenger, Google Business Profile messages, and WhatsApp (optional add-on). One AI, trained once, responds everywhere — either autopilot or suggestive (drafts replies for human approval).",
+  },
+  {
+    q: "What's included in every tier?",
+    a: "The AI Voice Agent, AI Chat Agent, AI Review Responder, Content AI, Funnel AI, and Workflow AI are included in every Adaptation OS plan — Starter, Growth, and Scale. Tiers differentiate on user count, setup depth, and support level, not feature access.",
+  },
+  {
+    q: "How fast can the AI get trained on my business?",
+    a: "Done-For-You setups include full AI training on your business knowledge base, booking rules, and brand voice — usually two to three weeks end-to-end. Self-Serve gives you the training interface and documentation so you can configure it in an afternoon.",
+  },
+];
 
 export default function AIPage() {
   return (
@@ -48,208 +81,198 @@ export default function AIPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            name: "AI-Powered Business Systems",
+            name: "AI Business Automation — Phone, Chat, Follow-Up, Reviews, Content",
             description:
-              "Complete AI business automation: 24/7 phone answering, chat agents, automated follow-up, review management, content generation, and workflow automation.",
+              "24/7 AI phone receptionist, AI chat agent on every channel, automated follow-up workflows, AI review management, and Content AI — included in every Adaptation OS plan.",
             provider: {
               "@type": "Organization",
               name: "Adaptation Living LLC",
               url: "https://adaptationliving.com",
+              telephone: "+1-623-219-1237",
             },
-            areaServed: "US",
+            areaServed: [
+              { "@type": "City", name: "Phoenix" },
+              { "@type": "State", name: "Arizona" },
+              { "@type": "Country", name: "US" },
+            ],
             serviceType: "AI Business Automation",
             offers: {
               "@type": "AggregateOffer",
-              lowPrice: "297",
-              highPrice: "5997",
+              lowPrice: "194.90",
+              highPrice: "997.90",
               priceCurrency: "USD",
             },
           }),
         }}
       />
 
-      {/* ═══════════════════════════════════════════ */}
-      {/* HERO                                       */}
-      {/* ═══════════════════════════════════════════ */}
-      <section className="relative overflow-hidden border-b border-glass-border">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.15),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(212,175,55,0.12),transparent_35%)]" />
-        <div className="relative max-w-[1400px] mx-auto px-8 pt-20 pb-16">
-          <div className="mb-6 flex flex-wrap gap-3 text-[11px] uppercase tracking-[0.28em] text-accent">
-            <span className="rounded-full border border-accent/40 bg-accent/10 px-4 py-2">Built &amp; Managed by Adaptation Living</span>
-            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">Phoenix AZ</span>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          }),
+        }}
+      />
+
+      {/* ═══════════ HERO ═══════════ */}
+      <section className="section-dark-radial py-20 sm:py-24">
+        <div className="relative max-w-[1400px] mx-auto px-6 sm:px-8">
+          <div className="mb-5 flex flex-wrap gap-2 text-[10px] font-semibold uppercase tracking-[0.28em] text-accent">
+            <span className="rounded-full border border-accent/50 bg-accent/10 px-3 py-1.5">
+              Built &amp; Managed by Adaptation Living
+            </span>
+            <span className="rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-white/80">
+              Phoenix, AZ
+            </span>
           </div>
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold max-w-4xl leading-tight mb-6">
-            AI That Actually Works
-            <br />
-            <span className="text-accent">For Your Business.</span>
+          <h1 className="h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-[1.08]">
+            AI Phone Receptionist, Chat Agents &amp;{" "}
+            <span className="bg-gradient-to-r from-accent via-[#E8C96A] to-accent bg-clip-text text-transparent">
+              Workflow Automation
+            </span>{" "}
+            for Phoenix Businesses.
           </h1>
-          <p className="text-text-muted text-lg sm:text-xl max-w-3xl leading-relaxed mb-6">
-            Every business is trying to figure out how to use AI right now. Most are
-            overwhelmed by the options and underwhelmed by the results. From our Phoenix
-            headquarters, we cut through all of that. We build AI systems that answer
-            your phone, respond to your customers, follow up on leads, manage your
-            reviews, create your content, and run your operations — and we manage it
-            all for you.
-          </p>
-          <p className="text-text-muted text-base max-w-3xl leading-relaxed mb-10">
-            This is full-scale AI implementation that makes real sense for real businesses.
-            Not a chatbot that says &ldquo;I don&apos;t understand.&rdquo; Not a tool you have to
-            figure out yourself. A complete system, built by us, managed by us, that saves
-            you money from day one.
+          <p className="mt-5 text-white/80 text-base sm:text-lg max-w-3xl leading-relaxed">
+            Every Adaptation OS plan ships with a full AI workforce. A 24/7 AI
+            Voice Agent answers your phone. An AI Chat Agent replies on your
+            website, Instagram, Facebook, WhatsApp, and text. AI automations
+            follow up until the lead books. AI responds to every Google review.
+            Content AI writes your blogs, captions, and emails. All included.
+            No extra seats. No overage panic.
           </p>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+          <div className="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { label: "Response Time", value: "< 5 sec", detail: "Your customers get an answer before they think about calling someone else" },
-              { label: "Availability", value: "24/7/365", detail: "Nights, weekends, holidays — your AI never takes a day off" },
-              { label: "Avg Call Cost", value: "~$0.48", detail: "A 3-minute AI-answered call costs less than a cup of coffee" },
-              { label: "Lead Capture", value: "100%", detail: "Every single caller's info goes straight to your dashboard" },
+              { label: "Response Time", value: "< 5 sec", detail: "Your customers get an answer before they think about calling someone else." },
+              { label: "Availability", value: "24 / 7 / 365", detail: "Nights, weekends, holidays — your AI never takes a day off." },
+              { label: "Typical Call Cost", value: "~$0.48", detail: "A 3-minute AI-answered call costs less than a coffee." },
+              { label: "Lead Capture", value: "100%", detail: "Every caller's info lands directly in your CRM pipeline." },
             ].map((stat) => (
-              <div key={stat.label} className="glass rounded-2xl p-5">
-                <p className="text-[11px] uppercase tracking-[0.22em] text-accent mb-2">{stat.label}</p>
-                <p className="font-display text-3xl font-bold">{stat.value}</p>
-                <p className="text-sm text-text-muted mt-2">{stat.detail}</p>
+              <div key={stat.label} className="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
+                <p className="text-[10px] uppercase tracking-[0.24em] text-accent font-bold mb-1">
+                  {stat.label}
+                </p>
+                <p className="font-display text-2xl font-bold text-white">{stat.value}</p>
+                <p className="text-sm text-white/70 mt-2">{stat.detail}</p>
               </div>
             ))}
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href="/intake" className="inline-flex items-center justify-center gap-2 border-2 border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent">
-              Get Started <ArrowRight className="h-4 w-4" />
+          <div className="mt-8 flex flex-col sm:flex-row gap-3">
+            <a
+              href="/intake"
+              className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold hover:bg-transparent hover:text-accent transition-all"
+            >
+              Book A Setup Call <ArrowRight className="w-4 h-4" />
             </a>
-            <a href="/contact" className="inline-flex items-center justify-center gap-2 border-2 border-white/70 px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-white hover:text-bg-dark">
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-white/70 bg-transparent px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-white hover:bg-white hover:text-navy transition-all"
+            >
               See A Live Demo
             </a>
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════ */}
-      {/* MULTI-BUSINESS DEAL                        */}
-      {/* ═══════════════════════════════════════════ */}
-      <section className="border-b border-accent/30 bg-gradient-to-r from-accent/15 via-accent/5 to-accent/15 py-10">
-        <div className="max-w-[1200px] mx-auto px-8 text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-accent bg-accent/10 px-5 py-2 text-sm uppercase tracking-widest text-accent font-semibold mb-4">
-            <DollarSign className="w-4 h-4" /> Multi-Business Deal
-          </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-            Own Two Businesses? Run Both for $350/mo Each.
-          </h2>
-          <p className="text-text-muted text-lg max-w-2xl mx-auto mb-6">
-            Sign up both companies and get our fully managed system — AI phone answering,
-            chat agents, CRM, automation, SEO, everything — for
-            each business at <strong className="text-white">$350/month per business</strong> instead
-            of the standard Growth rate. Same quality. Same service.
-          </p>
-          <div className="flex justify-center gap-6 flex-wrap text-sm mb-6">
-            <span className="flex items-center gap-2 text-white/80">
-              <CheckCircle2 className="w-4 h-4 text-accent" /> Full managed tier for both
-            </span>
-            <span className="flex items-center gap-2 text-white/80">
-              <CheckCircle2 className="w-4 h-4 text-accent" /> $300/mo total savings
-            </span>
-            <span className="flex items-center gap-2 text-white/80">
-              <CheckCircle2 className="w-4 h-4 text-accent" /> Separate systems, one relationship
-            </span>
-          </div>
-          <a href="/intake?deal=multi-business" className="inline-flex items-center gap-2 border-2 border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent">
-            Claim the Multi-Business Rate <ArrowRight className="h-4 w-4" />
-          </a>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════ */}
-      {/* THE 2 AM SCENARIO                          */}
-      {/* ═══════════════════════════════════════════ */}
-      <section className="border-b border-glass-border bg-gradient-to-r from-accent/8 via-[#0B1D3A] to-[#0B1D3A]/95 py-20">
-        <div className="max-w-[1200px] mx-auto px-8">
-          <div className="mb-10">
-            <p className="text-sm uppercase tracking-[0.24em] text-accent mb-3">See The Difference</p>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold">
-              It&apos;s 2:47 AM. Someone Just Called Your Business.
+      {/* ═══════════ 2AM SCENARIO ═══════════ */}
+      <section className="section-cream py-20 sm:py-24">
+        <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
+          <div className="mb-12 max-w-3xl">
+            <p className="eyebrow">See The Difference</p>
+            <h2 className="mt-3 h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+              It's 2:47 AM. Someone Just Called Your Business.
             </h2>
           </div>
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <h3 className="font-display text-xl font-bold text-white/50 mb-6 uppercase tracking-wider">Without Us</h3>
-              <div className="space-y-4">
+          <div className="grid lg:grid-cols-2 gap-6">
+            <div className="rounded-[22px] border border-red-500/20 bg-white p-7 shadow-soft">
+              <h3 className="font-display text-sm font-bold text-red-500/80 uppercase tracking-[0.22em] mb-4">
+                Without AI
+              </h3>
+              <div className="space-y-3">
                 {[
                   "Phone rings. Goes to voicemail.",
-                  "Caller hangs up — nobody leaves messages anymore.",
+                  "Caller hangs up — nobody leaves voicemail anymore.",
                   "They Google your competitor instead.",
                   "Your competitor answers. Books the job.",
                   "You wake up. Check your phone. Nothing.",
                   "You never knew they called.",
                 ].map((step, i) => (
-                  <div key={i} className="flex items-start gap-3 text-white/50">
-                    <span className="text-red-500/80 mt-1 shrink-0">✕</span>
-                    <p>{step}</p>
+                  <div key={i} className="flex items-start gap-3 text-[#4A5568]">
+                    <span className="text-red-500 font-bold shrink-0">✕</span>
+                    <p className="text-sm leading-relaxed">{step}</p>
                   </div>
                 ))}
-                <div className="mt-6 rounded-xl border border-red-500/20 bg-red-500/5 p-5">
-                  <p className="text-red-400 font-semibold">Lost lead. Lost revenue. You never even knew.</p>
-                </div>
+              </div>
+              <div className="mt-6 rounded-xl border border-red-500/20 bg-red-500/5 p-4">
+                <p className="text-red-600 font-semibold text-sm">
+                  Lost lead. Lost revenue. You never even knew.
+                </p>
               </div>
             </div>
-            <div>
-              <h3 className="font-display text-xl font-bold text-accent mb-6 uppercase tracking-wider">With Adaptation Living</h3>
-              <div className="space-y-4">
+            <div className="rounded-[22px] border-2 border-accent/40 bg-white p-7 shadow-lift ring-1 ring-accent/20">
+              <h3 className="font-display text-sm font-bold text-accent uppercase tracking-[0.22em] mb-4">
+                With Adaptation OS
+              </h3>
+              <div className="space-y-3">
                 {[
                   "Phone rings. Your AI receptionist answers in your brand voice.",
-                  "\"Thanks for calling! How can I help you tonight?\"",
-                  "Caller asks about pricing — AI answers accurately from your business info.",
-                  "AI captures their name, phone number, and email.",
+                  "\"Thanks for calling — how can I help you tonight?\"",
+                  "Caller asks about pricing — AI answers accurately from your knowledge base.",
+                  "AI captures name, phone, and email.",
                   "AI books them on your calendar for tomorrow morning.",
-                  "Their info lands in your customer dashboard instantly.",
+                  "Lead lands in your dashboard instantly.",
                   "You get a text: \"New lead — John, 602-555-1234, booked 9 AM.\"",
-                  "The caller gets a confirmation email with appointment details.",
-                  "7:00 AM — You review the new lead over coffee.",
-                  "9:00 AM — You walk into a booked appointment you didn't lift a finger for.",
+                  "Caller gets a confirmation email with appointment details.",
+                  "7:00 AM — you review the new lead over coffee.",
+                  "9:00 AM — you walk into a booked appointment you didn't lift a finger for.",
                 ].map((step, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <span className="text-accent mt-1 shrink-0">✓</span>
-                    <p className="text-white/90">{step}</p>
+                    <CheckCircle2 className="text-accent w-4 h-4 mt-0.5 shrink-0" />
+                    <p className="text-sm leading-relaxed text-[#0B1D3A]">{step}</p>
                   </div>
                 ))}
-                <div className="mt-6 rounded-xl border border-accent/30 bg-accent/5 p-5">
-                  <p className="text-accent font-semibold">Lead captured. Appointment booked. Revenue secured. All while you slept.</p>
-                </div>
+              </div>
+              <div className="mt-6 rounded-xl border border-accent/30 bg-accent/10 p-4">
+                <p className="text-accent font-semibold text-sm">
+                  Lead captured. Appointment booked. Revenue secured. All while you slept.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════ */}
-      {/* AI PHONE RECEPTIONIST                      */}
-      {/* ═══════════════════════════════════════════ */}
-      <section id="phone" className="py-20 border-b border-glass-border">
-        <div className="max-w-[1200px] mx-auto px-8">
-          <div className="flex items-center gap-3 mb-2">
-            <Mic className="text-accent w-8 h-8" />
-            <p className="text-sm uppercase tracking-[0.24em] text-accent">Your 24/7 Front Desk</p>
+      {/* ═══════════ AI PHONE ═══════════ */}
+      <section id="phone" className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+        <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
+          <div className="max-w-3xl mb-8">
+            <div className="flex items-center gap-3 mb-3">
+              <Mic className="text-accent w-7 h-7" />
+              <p className="eyebrow">Your 24/7 Front Desk</p>
+            </div>
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+              AI Phone Receptionist — Answers Every Call, Captures Every Lead.
+            </h2>
+            <p className="mt-4 text-[#4A5568] text-base leading-relaxed">
+              A conversational AI answers your business phone in your brand
+              voice — not a voicemail, not a phone menu. It greets callers,
+              answers questions from your knowledge base, captures contact
+              details, and books appointments directly on your calendar.
+              Multiple simultaneous callers. No bad days. Included in every
+              plan.
+            </p>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-6">AI Phone Receptionist</h2>
-          <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-4">
-            A conversational AI answers your business phone — not a voicemail, not a
-            &ldquo;press 1 for sales&rdquo; menu. It greets callers by your business name,
-            answers questions using your company information, captures contact details, and
-            books appointments on your calendar. All automatically.
-          </p>
-          <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-4">
-            It handles multiple callers at the same time. It never has a bad day. And
-            it costs about 48 cents per 3-minute call to operate. Traditional answering
-            services charge $200–$500/mo with limited hours. AI agencies charge $10,000+ just
-            for the setup. We include it.
-          </p>
-          <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-8">
-            We also set you up with a dedicated business phone number — no more using your
-            personal cell. Put the number on your website, your signs, your cards, your
-            social media. Calls, texts, and voicemails all flow through one system.
-          </p>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="font-display text-lg font-bold mb-4">What It Does</h3>
+              <h3 className="font-display text-lg font-bold text-[#0B1D3A] mb-4">What It Does</h3>
               <ul className="space-y-3">
                 {[
                   "Answers inbound calls 24/7/365 with natural conversation",
@@ -261,83 +284,41 @@ export default function AIPage() {
                   "Sends you a text and email summary after every call",
                   "Sends callers a confirmation email with appointment details",
                   "Handles multiple simultaneous callers",
-                  "Transfers to you when a caller asks for a person",
+                  "Transfers to a human when a caller asks for a person",
                   "Outbound calling available on higher tiers",
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-text-muted text-sm">
-                    <span className="text-accent mt-0.5 shrink-0">✓</span>{item}
+                  <li key={item} className="flex items-start gap-2 text-[#4A5568] text-sm leading-relaxed">
+                    <CheckCircle2 className="text-accent w-4 h-4 mt-0.5 shrink-0" />
+                    {item}
                   </li>
                 ))}
               </ul>
             </div>
             <div className="space-y-4">
-              <div className="rounded-2xl border border-accent/20 bg-accent/5 p-6">
-                <p className="text-[11px] uppercase tracking-[0.22em] text-accent mb-2">Included In</p>
-                <p className="text-white font-semibold text-lg">Growth plan ($597/mo) and above</p>
-                <p className="text-text-muted text-sm mt-2">No extra charge. No per-call fees. Included in your plan.</p>
+              <div className="rounded-2xl border border-accent/30 bg-accent/10 p-6">
+                <p className="text-[10px] uppercase tracking-[0.26em] text-accent font-bold mb-2">
+                  Included In Every Plan
+                </p>
+                <p className="text-[#0B1D3A] font-semibold text-base">
+                  Starter · Growth · Scale — Setup or DIY
+                </p>
+                <p className="mt-2 text-sm text-[#4A5568]">
+                  Zero per-call fees from us. Standard carrier minutes only
+                  (fractions of a penny, billed at cost).
+                </p>
               </div>
-              <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
-                <p className="text-[11px] uppercase tracking-[0.22em] text-white/50 mb-2">What Others Charge</p>
-                <p className="text-text-muted text-sm">Human answering services: $200–$500/mo (limited hours)</p>
-                <p className="text-text-muted text-sm">AI agencies: $10,000+ setup + $500/mo ongoing</p>
-                <p className="text-accent text-sm font-semibold mt-2">We include it starting in Growth ($597/mo). Zero setup fee on self-serve.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════ */}
-      {/* AI CHAT AGENT                              */}
-      {/* ═══════════════════════════════════════════ */}
-      <section id="chat" className="py-20 border-b border-glass-border bg-[#0B1D3A]/40">
-        <div className="max-w-[1200px] mx-auto px-8">
-          <div className="flex items-center gap-3 mb-2">
-            <MessageSquare className="text-accent w-8 h-8" />
-            <p className="text-sm uppercase tracking-[0.24em] text-accent">Instant Response, Every Channel</p>
-          </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-6">AI Chat Agent</h2>
-          <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-4">
-            See the chat bubble in the corner of this website? That&apos;s our AI running
-            right now. Type a question and it responds instantly with a real, accurate answer —
-            not a canned reply. We install the exact same system on your website, your Facebook
-            page, your Instagram, your Google Business listing, and your text messages.
-          </p>
-          <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-8">
-            When a customer reaches out on any of those channels, at any hour, they get a
-            real response in seconds. The AI knows your business, answers their questions,
-            and captures their information. One system covers every channel your customers use.
-          </p>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="font-display text-lg font-bold mb-4">What It Does</h3>
-              <ul className="space-y-3">
-                {[
-                  "Website chat widget — instant responses to every visitor",
-                  "Facebook Messenger — answers DMs automatically",
-                  "Instagram — handles DM conversations for you",
-                  "Google Business Profile — responds to customer messages",
-                  "SMS / text — two-way AI conversations",
-                  "Answers from your business knowledge base",
-                  "Books appointments directly within the conversation",
-                  "Captures contact info and adds to your customer pipeline",
-                  "Hands off to you when someone asks for a person",
-                  "Multi-language support",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-text-muted text-sm">
-                    <span className="text-accent mt-0.5 shrink-0">✓</span>{item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="space-y-4">
-              <div className="rounded-2xl border border-accent/20 bg-accent/5 p-6">
-                <p className="text-[11px] uppercase tracking-[0.22em] text-accent mb-2">Included In</p>
-                <p className="text-white font-semibold text-lg">Growth plan ($597/mo) and above</p>
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
-                <p className="text-white/80 text-sm">
-                  <strong>Try it right now.</strong> Click the chat bubble on this page. Ask it anything. That&apos;s exactly what your customers will experience on your site.
+              <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+                <p className="text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/60 font-bold mb-2">
+                  What Others Charge
+                </p>
+                <p className="text-sm text-[#4A5568]">
+                  Human answering services: $200–$500/mo (limited hours).
+                </p>
+                <p className="text-sm text-[#4A5568]">
+                  AI agencies: $10,000+ setup + $500/mo.
+                </p>
+                <p className="text-accent text-sm font-semibold mt-2">
+                  We include it in every tier, starting at $194.90/mo with setup or $349.90/mo self-serve.
                 </p>
               </div>
             </div>
@@ -345,351 +326,489 @@ export default function AIPage() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════ */}
-      {/* AUTOMATED FOLLOW-UP                        */}
-      {/* ═══════════════════════════════════════════ */}
-      <section id="follow-up" className="py-20 border-b border-glass-border">
-        <div className="max-w-[1200px] mx-auto px-8">
-          <div className="flex items-center gap-3 mb-2">
-            <Workflow className="text-accent w-8 h-8" />
-            <p className="text-sm uppercase tracking-[0.24em] text-accent">Your Business Runs Itself</p>
+      {/* ═══════════ AI CHAT ═══════════ */}
+      <section id="chat" className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+        <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
+          <div className="max-w-3xl mb-8">
+            <div className="flex items-center gap-3 mb-3">
+              <MessageSquare className="text-accent w-7 h-7" />
+              <p className="eyebrow">Instant Response, Every Channel</p>
+            </div>
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+              AI Chat Agent — Answers Web, SMS, Instagram, Facebook &amp; WhatsApp.
+            </h2>
+            <p className="mt-4 text-[#4A5568] text-base leading-relaxed">
+              See the chat bubble in the corner of this site? That's our AI
+              running live. We install the same system on your website, your
+              Facebook page, Instagram DMs, Google Business Profile messages,
+              SMS, and WhatsApp. One AI. Every channel. Instant responses in
+              your brand voice.
+            </p>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-6">Automated Follow-Up &amp; Workflows</h2>
-          <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-4">
-            When a new lead comes in — from a call, a chat, a form, a text — what happens
-            next? For most businesses: nothing. The lead sits. Nobody follows up. The customer
-            moves on.
-          </p>
-          <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-8">
-            With our system, the moment a lead enters your pipeline, the AI takes action
-            automatically. Welcome text. Confirmation email. Follow-up reminder. Pipeline
-            routing. And if they don&apos;t respond, the AI follows up again until they book
-            or tell it to stop. You set the rules once. The system runs 24/7.
-          </p>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="font-display text-lg font-bold text-[#0B1D3A] mb-4">What It Does</h3>
+              <ul className="space-y-3">
+                {[
+                  "Website chat widget — instant replies to every visitor",
+                  "Facebook Messenger — handles DMs automatically",
+                  "Instagram — replies to DM conversations",
+                  "Google Business Profile — responds to customer messages",
+                  "SMS / text — two-way AI conversations",
+                  "WhatsApp — optional add-on",
+                  "Answers from your business knowledge base",
+                  "Books appointments inside the conversation",
+                  "Captures contact info and adds to the CRM",
+                  "Hands off to a human when someone asks",
+                  "Autopilot or suggestive (human-approval) mode",
+                  "Multi-language support",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-[#4A5568] text-sm leading-relaxed">
+                    <CheckCircle2 className="text-accent w-4 h-4 mt-0.5 shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="space-y-4">
+              <div className="rounded-2xl border border-accent/30 bg-accent/10 p-6">
+                <p className="text-[10px] uppercase tracking-[0.26em] text-accent font-bold mb-2">
+                  Included In Every Plan
+                </p>
+                <p className="text-[#0B1D3A] font-semibold text-base">
+                  Starter · Growth · Scale
+                </p>
+              </div>
+              <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+                <p className="text-sm text-[#4A5568]">
+                  <strong className="text-[#0B1D3A]">Try it right now.</strong>{" "}
+                  Click the chat bubble on this page. Ask it anything. That's
+                  exactly what your customers will experience on your site.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ AUTOMATED FOLLOW-UP ═══════════ */}
+      <section id="follow-up" className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+        <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
+          <div className="max-w-3xl mb-8">
+            <div className="flex items-center gap-3 mb-3">
+              <Workflow className="text-accent w-7 h-7" />
+              <p className="eyebrow">Your Business Runs Itself</p>
+            </div>
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+              Automated Follow-Up &amp; Workflow Engine.
+            </h2>
+            <p className="mt-4 text-[#4A5568] text-base leading-relaxed">
+              The moment a lead enters your pipeline — call, chat, form, or
+              text — the AI takes action. Welcome text. Confirmation email.
+              Reminder. Pipeline routing. If they don't respond, it follows up
+              again until they book or tell it to stop. You set the rules
+              once. The system runs 24/7.
+            </p>
+          </div>
           <div className="grid md:grid-cols-2 gap-8">
             <ul className="space-y-3">
               {[
-                "Automatic welcome text and email for every new lead",
-                "Smart routing — sends leads to the right pipeline stage",
-                "Multi-step follow-up sequences (text, email, voicemail drop)",
-                "Missed call text-back — instant text when you can't answer",
-                "Appointment reminders to cut no-shows",
-                "Re-engagement campaigns for leads that went cold",
+                "Automatic welcome text + email for every new lead",
+                "Smart routing to the right pipeline stage",
+                "Multi-step sequences (SMS, email, voicemail drops)",
+                "Missed-call text-back — instant text when you can't answer",
+                "Appointment reminders cut no-shows by 40%+",
+                "Re-engagement campaigns for cold leads",
                 "AI decides next action based on customer behavior",
                 "Auto-translates messages for non-English speakers",
-                "Summarizes long conversations into quick action items",
-                "Describe what you want in plain English — AI builds the workflow for you (free)",
+                "Summarizes long conversations into action items",
+                "Describe what you want in plain English — Workflow AI builds it",
               ].map((item) => (
-                <li key={item} className="flex items-start gap-2 text-text-muted text-sm">
-                  <span className="text-accent mt-0.5 shrink-0">✓</span>{item}
+                <li key={item} className="flex items-start gap-2 text-[#4A5568] text-sm leading-relaxed">
+                  <CheckCircle2 className="text-accent w-4 h-4 mt-0.5 shrink-0" />
+                  {item}
                 </li>
               ))}
             </ul>
             <div className="space-y-4">
-              <div className="rounded-2xl border border-accent/20 bg-accent/5 p-6">
-                <p className="text-[11px] uppercase tracking-[0.22em] text-accent mb-2">Included In</p>
-                <p className="text-white font-semibold">Basic automation: Starter ($297/mo)</p>
-                <p className="text-white font-semibold">Advanced AI workflows: Growth plan ($597/mo)</p>
+              <div className="rounded-2xl border border-accent/30 bg-accent/10 p-6">
+                <p className="text-[10px] uppercase tracking-[0.26em] text-accent font-bold mb-2">
+                  Included In Every Plan
+                </p>
+                <p className="text-[#0B1D3A] font-semibold text-sm">
+                  Visual workflow builder + all standard triggers and actions.
+                </p>
+                <p className="text-[#0B1D3A] font-semibold text-sm mt-2">
+                  Premium AI actions (conditional branching, AI-driven routing): $0.01 per execution.
+                </p>
               </div>
-              <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
-                <p className="text-text-muted text-sm">Individual AI workflow actions cost one penny each ($0.01). The visual workflow builder is free — describe what you want and the AI creates it.</p>
-                <p className="text-accent text-sm font-semibold mt-2">100 automated follow-ups a day = $1.00. Your entire follow-up engine for the price of a dollar.</p>
+              <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+                <p className="text-sm text-[#4A5568]">
+                  100 automated follow-ups a day at $0.01 each = $1.00/day.
+                  Your entire follow-up engine for the price of a coffee a month.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════ */}
-      {/* REVIEW MANAGEMENT                          */}
-      {/* ═══════════════════════════════════════════ */}
-      <section id="reviews" className="py-20 border-b border-glass-border bg-[#0B1D3A]/40">
-        <div className="max-w-[1200px] mx-auto px-8">
-          <div className="flex items-center gap-3 mb-2">
-            <Star className="text-accent w-8 h-8" />
-            <p className="text-sm uppercase tracking-[0.24em] text-accent">Reputation on Autopilot</p>
+      {/* ═══════════ REVIEW MANAGEMENT ═══════════ */}
+      <section id="reviews" className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+        <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
+          <div className="max-w-3xl mb-8">
+            <div className="flex items-center gap-3 mb-3">
+              <Star className="text-accent w-7 h-7" />
+              <p className="eyebrow">Reputation on Autopilot</p>
+            </div>
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+              AI Review Management — Every Google &amp; Facebook Review, Answered.
+            </h2>
+            <p className="mt-4 text-[#4A5568] text-base leading-relaxed">
+              Your online reviews are the first thing potential customers
+              check. Unanswered reviews signal a business that doesn't care.
+              Our AI monitors every review on Google and Facebook. When a new
+              review comes in, it writes a professional, personalized response
+              in your brand voice — 5 stars or 1 star. And it sends review
+              requests to your happiest customers at the right moment.
+            </p>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-6">AI Review Management</h2>
-          <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-4">
-            Your online reviews are the first thing potential customers check. A business
-            with unanswered reviews looks like a business that doesn&apos;t care. Our AI monitors
-            every review on Google, Facebook, and other platforms. When a new review comes in,
-            it writes a professional, personalized response in your brand voice — 5 stars or 1 star.
-          </p>
-          <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-8">
-            It also sends review requests to your happiest customers at exactly the right
-            moment, turning satisfied clients into public advocates. All for one cent per review.
-          </p>
-          <div className="grid sm:grid-cols-3 gap-6">
-            <div className="glass rounded-2xl p-6">
-              <p className="font-display text-2xl font-bold text-accent mb-2">$0.01</p>
-              <p className="text-sm text-text-muted">Per AI-generated review response. 100 reviews/month = $1.</p>
+          <div className="grid sm:grid-cols-3 gap-5">
+            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+              <p className="font-display text-3xl font-bold text-accent">$0.01</p>
+              <p className="mt-2 text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/60 font-bold">
+                Per AI response
+              </p>
+              <p className="mt-2 text-sm text-[#4A5568]">
+                100 reviews a month costs a dollar.
+              </p>
             </div>
-            <div className="glass rounded-2xl p-6">
-              <p className="font-display text-2xl font-bold text-accent mb-2">Auto-Request</p>
-              <p className="text-sm text-text-muted">Sends review requests at the right moment after service.</p>
+            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+              <p className="font-display text-xl font-bold text-accent">Auto-Request</p>
+              <p className="mt-2 text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/60 font-bold">
+                Review campaigns
+              </p>
+              <p className="mt-2 text-sm text-[#4A5568]">
+                Sends review requests to happy customers at exactly the right moment post-service.
+              </p>
             </div>
-            <div className="glass rounded-2xl p-6">
-              <p className="font-display text-2xl font-bold text-accent mb-2">Instant Alerts</p>
-              <p className="text-sm text-text-muted">Negative review? You&apos;re notified on your phone immediately.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════ */}
-      {/* CONTENT CREATION                           */}
-      {/* ═══════════════════════════════════════════ */}
-      <section id="content" className="py-20 border-b border-glass-border">
-        <div className="max-w-[1200px] mx-auto px-8">
-          <div className="flex items-center gap-3 mb-2">
-            <Sparkles className="text-accent w-8 h-8" />
-            <p className="text-sm uppercase tracking-[0.24em] text-accent">Content That Writes Itself</p>
-          </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-6">AI Content Creation</h2>
-          <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-8">
-            Blog posts, social media captions, email campaigns, text message copy, ad text,
-            website content — generated in your brand voice in seconds. Need a custom image
-            for a social post? Six cents. Need 1,000 words of website copy? Nine cents. Need a
-            new landing page? Free — describe what you want and the AI builds it. A freelance
-            writer charges $200+ for what the AI creates in seconds.
-          </p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="glass rounded-2xl p-6 text-center">
-              <p className="font-display text-xl font-bold text-accent">$0.063</p>
-              <p className="text-sm text-text-muted mt-1">Per AI image</p>
-            </div>
-            <div className="glass rounded-2xl p-6 text-center">
-              <p className="font-display text-xl font-bold text-accent">$0.09</p>
-              <p className="text-sm text-text-muted mt-1">Per 1,000 words</p>
-            </div>
-            <div className="glass rounded-2xl p-6 text-center">
-              <p className="font-display text-xl font-bold text-accent">FREE</p>
-              <p className="text-sm text-text-muted mt-1">Landing page builder</p>
-            </div>
-            <div className="glass rounded-2xl p-6 text-center">
-              <p className="font-display text-xl font-bold text-accent">1,000/day</p>
-              <p className="text-sm text-text-muted mt-1">AI page-building prompts</p>
+            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+              <p className="font-display text-xl font-bold text-accent">Instant Alerts</p>
+              <p className="mt-2 text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/60 font-bold">
+                Negative review flags
+              </p>
+              <p className="mt-2 text-sm text-[#4A5568]">
+                Negative review? You're notified on your phone immediately so you can step in.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════ */}
-      {/* CUSTOM AI AGENTS                           */}
-      {/* ═══════════════════════════════════════════ */}
-      <section id="agents" className="py-20 border-b border-glass-border bg-[#0B1D3A]/40">
-        <div className="max-w-[1200px] mx-auto px-8">
-          <div className="flex items-center gap-3 mb-2">
-            <Users className="text-accent w-8 h-8" />
-            <p className="text-sm uppercase tracking-[0.24em] text-accent">AI Employees Built for You</p>
+      {/* ═══════════ CONTENT AI ═══════════ */}
+      <section id="content" className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+        <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
+          <div className="max-w-3xl mb-8">
+            <div className="flex items-center gap-3 mb-3">
+              <Sparkles className="text-accent w-7 h-7" />
+              <p className="eyebrow">Content That Writes Itself</p>
+            </div>
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+              Content AI — Blogs, Social, Ads, Emails, Landing Pages.
+            </h2>
+            <p className="mt-4 text-[#4A5568] text-base leading-relaxed">
+              Blog posts, social captions, email campaigns, SMS copy, ad text,
+              website pages — generated in your brand voice in seconds. Need a
+              custom image for a social post? Six cents. Need 1,000 words of
+              website copy? Nine cents. Need a new landing page? Free —
+              describe what you want and the AI builds it.
+            </p>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-6">Custom AI Agents</h2>
-          <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-4">
-            For businesses that need more than a receptionist and a chat agent — we build
-            custom AI employees tailored to specific jobs in your company. One handles intake.
-            Another qualifies leads. Another manages scheduling. Another runs customer support.
-            Each one is trained on your processes, your rules, and your knowledge base.
-          </p>
-          <p className="text-text-muted text-lg leading-relaxed max-w-3xl mb-8">
-            These agents can also generate videos, images, and speech on demand. Promotional
-            video clips, product images, voiceovers — created by AI for a fraction of what
-            a production company would charge.
-          </p>
-          <div className="grid sm:grid-cols-3 gap-6">
-            <div className="glass rounded-2xl p-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              { value: "$0.09", unit: "per 1,000 words", label: "Copy" },
+              { value: "$0.063", unit: "per AI image", label: "Images" },
+              { value: "FREE", unit: "AI page builder", label: "Landing Pages" },
+              { value: "1,000/day", unit: "AI prompts", label: "Daily Allowance" },
+            ].map((item) => (
+              <div key={item.label} className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 text-center shadow-soft">
+                <p className="text-[10px] uppercase tracking-[0.26em] text-accent font-bold mb-2">
+                  {item.label}
+                </p>
+                <p className="font-display text-2xl font-bold text-[#0B1D3A]">{item.value}</p>
+                <p className="mt-1 text-sm text-[#4A5568]">{item.unit}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ CUSTOM AI AGENTS ═══════════ */}
+      <section id="agents" className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+        <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
+          <div className="max-w-3xl mb-8">
+            <div className="flex items-center gap-3 mb-3">
+              <Users className="text-accent w-7 h-7" />
+              <p className="eyebrow">AI Employees Built for You</p>
+            </div>
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+              Custom AI Agents for Specialized Roles.
+            </h2>
+            <p className="mt-4 text-[#4A5568] text-base leading-relaxed">
+              For operators who need more than a receptionist and a chat
+              agent, we build custom AI employees trained on your specific
+              processes: lead qualification, intake, scheduling, customer
+              support, and more. These agents can also generate promotional
+              videos, product images, and voice overs — a fraction of what a
+              production company charges.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-3 gap-5">
+            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
               <p className="font-display text-lg font-bold text-accent mb-2">Video</p>
-              <p className="text-sm text-text-muted">$0.15–$0.40 per second of AI-generated video</p>
+              <p className="text-sm text-[#4A5568]">
+                $0.15–$0.40 per second of AI-generated video
+              </p>
             </div>
-            <div className="glass rounded-2xl p-6">
+            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
               <p className="font-display text-lg font-bold text-accent mb-2">Images</p>
-              <p className="text-sm text-text-muted">$0.04–$0.12 per AI-generated image (multiple quality levels)</p>
+              <p className="text-sm text-[#4A5568]">
+                $0.04–$0.12 per AI-generated image (multiple quality tiers)
+              </p>
             </div>
-            <div className="glass rounded-2xl p-6">
-              <p className="font-display text-lg font-bold text-accent mb-2">Web Search</p>
-              <p className="text-sm text-text-muted">$0.01 per search — agents can research in real time</p>
+            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+              <p className="font-display text-lg font-bold text-accent mb-2">Real-Time Research</p>
+              <p className="text-sm text-[#4A5568]">
+                $0.01 per web search — agents research in real time
+              </p>
             </div>
           </div>
-          <div className="mt-8 rounded-2xl border border-accent/20 bg-accent/5 p-6 inline-block">
-            <p className="text-[11px] uppercase tracking-[0.22em] text-accent mb-2">Included In</p>
-            <p className="text-white font-semibold">Managed Scale ($5,997/mo + $7,997 setup)</p>
+          <div className="mt-7 rounded-2xl border border-accent/30 bg-accent/10 p-6 inline-block">
+            <p className="text-[10px] uppercase tracking-[0.26em] text-accent font-bold mb-2">
+              Custom Build Engagement
+            </p>
+            <p className="text-[#0B1D3A] font-semibold text-sm">
+              Scale Setup ($5,000 + $694.90/mo) or a custom scoped engagement.
+              Book a call and we'll map your workflows.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════ */}
-      {/* HOW BILLING WORKS                          */}
-      {/* ═══════════════════════════════════════════ */}
-      <section className="py-20 border-b border-glass-border">
-        <div className="max-w-[1000px] mx-auto px-8">
-          <div className="flex items-center gap-3 mb-2">
-            <CreditCard className="text-accent w-8 h-8" />
-            <p className="text-sm uppercase tracking-[0.24em] text-accent">No Surprises</p>
-          </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-6">
-            How Billing Works
-          </h2>
-          <div className="space-y-6 text-text-muted text-lg leading-relaxed">
-            <p>
-              <strong className="text-white">One monthly price. Everything included.</strong> Your
-              managed plan covers all AI features — phone receptionist, chat agent, automated
-              follow-up, review management, content generation, workflow automation — all of it.
-              You pay one flat rate. No usage meters. No &ldquo;you went over your limit&rdquo;
-              emails. No surprise invoices.
-            </p>
-            <p>
-              The only additional cost is <strong className="text-white">standard phone carrier charges</strong> —
-              the same per-minute fee every phone system in the country charges for making and
-              receiving calls. This is a few cents per minute and is standard across the industry.
-              It&apos;s not our fee — it&apos;s the phone network&apos;s fee, passed through at cost.
-            </p>
-            <p>
-              We keep a card on file for your monthly subscription. Your subscription renews
-              on the same date each month. If you need to change your plan, upgrade, or add
-              services, you contact us directly and we handle it. No self-serve confusion.
-              No accidentally clicking the wrong button.
-            </p>
-          </div>
-          <div className="mt-8 grid sm:grid-cols-3 gap-6">
-            <div className="glass rounded-2xl p-6 text-center">
-              <p className="font-display text-lg font-bold text-white mb-2">Monthly Fee</p>
-              <p className="text-sm text-text-muted">Flat rate. All AI features included. No usage limits for normal business use.</p>
+      {/* ═══════════ HOW BILLING WORKS ═══════════ */}
+      <section className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+        <div className="max-w-[1000px] mx-auto px-6 sm:px-8">
+          <div className="mb-8">
+            <div className="flex items-center gap-3 mb-3">
+              <CreditCard className="text-accent w-6 h-6" />
+              <p className="eyebrow">No Surprises</p>
             </div>
-            <div className="glass rounded-2xl p-6 text-center">
-              <p className="font-display text-lg font-bold text-white mb-2">Phone Carrier</p>
-              <p className="text-sm text-text-muted">Standard per-minute phone charges passed through at cost. A few cents per minute.</p>
-            </div>
-            <div className="glass rounded-2xl p-6 text-center">
-              <p className="font-display text-lg font-bold text-white mb-2">No Surprises</p>
-              <p className="text-sm text-text-muted">No overage fees. No hidden charges. One relationship. One bill.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════ */}
-      {/* COST COMPARISON                            */}
-      {/* ═══════════════════════════════════════════ */}
-      <section className="py-20 border-b border-glass-border bg-gradient-to-br from-accent/8 to-[#0B1D3A]">
-        <div className="max-w-[1200px] mx-auto px-8">
-          <div className="mb-12">
-            <p className="text-sm uppercase tracking-[0.24em] text-accent mb-3">The Real Numbers</p>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-              What You&apos;d Pay Anywhere Else vs. What You Pay Us
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+              How Billing Works.
             </h2>
           </div>
-          <div className="overflow-x-auto">
+          <div className="space-y-4 text-[#4A5568] text-sm leading-relaxed">
+            <p>
+              <strong className="text-[#0B1D3A]">One monthly price. Everything included.</strong>{" "}
+              Your plan covers every AI feature — phone receptionist, chat
+              agent, automated follow-up, review management, content
+              generation, workflow automation — all of it. You pay one flat
+              rate. No surprise invoices.
+            </p>
+            <p>
+              The only additional cost is standard phone carrier charges — a
+              fraction of a penny per minute for making and receiving calls,
+              passed through at cost. It's not our fee. It's the phone
+              network's fee.
+            </p>
+            <p>
+              We keep a card on file for your monthly subscription. Plan
+              changes are handled by our team — no self-serve confusion, no
+              accidentally clicking the wrong upgrade button.
+            </p>
+          </div>
+          <div className="mt-8 grid sm:grid-cols-3 gap-5">
+            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 text-center shadow-soft">
+              <p className="font-display text-base font-bold text-[#0B1D3A] mb-2">
+                Monthly Fee
+              </p>
+              <p className="text-sm text-[#4A5568]">
+                Flat rate. All AI features. No usage cap for normal business use.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 text-center shadow-soft">
+              <p className="font-display text-base font-bold text-[#0B1D3A] mb-2">
+                Phone Carrier
+              </p>
+              <p className="text-sm text-[#4A5568]">
+                Per-minute charges passed through at cost. Fractions of a cent.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 text-center shadow-soft">
+              <p className="font-display text-base font-bold text-[#0B1D3A] mb-2">
+                No Surprises
+              </p>
+              <p className="text-sm text-[#4A5568]">
+                No overages. No hidden fees. One relationship. One bill.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ COST COMPARISON ═══════════ */}
+      <section className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+        <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
+          <div className="max-w-3xl mb-10">
+            <p className="eyebrow">The Real Numbers</p>
+            <h2 className="mt-3 h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+              DIY vs. Agency vs. Adaptation Living.
+            </h2>
+          </div>
+          <div className="overflow-x-auto rounded-[20px] border border-[#0B1D3A]/10 bg-white shadow-soft">
             <table className="w-full text-left">
               <thead>
-                <tr className="border-b border-glass-border">
-                  <th className="py-4 pr-6 text-sm uppercase tracking-widest text-white/60 font-semibold">Feature</th>
-                  <th className="py-4 pr-6 text-sm uppercase tracking-widest text-white/40 font-semibold">DIY / Traditional</th>
-                  <th className="py-4 pr-6 text-sm uppercase tracking-widest text-white/40 font-semibold">Agency</th>
-                  <th className="py-4 text-sm uppercase tracking-widest text-accent font-semibold">Adaptation Living</th>
+                <tr className="border-b border-[#0B1D3A]/10 bg-[#0B1D3A]/[0.02]">
+                  <th className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/70 font-bold">Feature</th>
+                  <th className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/50 font-bold">DIY / Traditional</th>
+                  <th className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/50 font-bold">Agency</th>
+                  <th className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-accent font-bold">Adaptation OS</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { f: "24/7 AI Phone Answering", t: "$200–$500/mo (humans, limited hours)", a: "$10,000+ setup + $500/mo", u: "Included in Growth ($597/mo)" },
-                  { f: "AI Chat (website + social)", t: "$300–$1,000/mo (humans, business hours)", a: "$3,000–$8,000 setup", u: "Included in Growth ($597/mo)" },
-                  { f: "CRM + Automation", t: "$150–$500/mo (software only)", a: "$5,000–$15,000 setup", u: "Included in every plan" },
+                  { f: "24/7 AI Phone Receptionist", t: "$200–$500/mo (humans, limited hours)", a: "$10,000+ setup + $500/mo", u: "Included — every tier" },
+                  { f: "AI Chat (web + social)", t: "$300–$1,000/mo (humans, biz hours)", a: "$3,000–$8,000 setup", u: "Included — every tier" },
+                  { f: "CRM + Automation", t: "$150–$500/mo (software only)", a: "$5,000–$15,000 setup", u: "Included" },
                   { f: "Review Management", t: "$100–$300/mo", a: "$2,000+ setup", u: "$0.01/review (included)" },
-                  { f: "Content Generation", t: "$500–$2,000/mo (freelancer)", a: "$3,000–$5,000/mo (retainer)", u: "$0.09/1K words" },
-                  { f: "Workflow Automation", t: "Manual (your time)", a: "$5,000–$20,000 setup", u: "$0.01/action + FREE builder" },
-                  { f: "Custom Website", t: "$3,000–$10,000 (template)", a: "$10,000–$20,000", u: "Included in every plan" },
+                  { f: "Content Generation", t: "$500–$2,000/mo (freelancer)", a: "$3,000–$5,000/mo (retainer)", u: "$0.09 / 1K words" },
+                  { f: "Workflow Automation", t: "Manual (your time)", a: "$5,000–$20,000 setup", u: "$0.01/action + free builder" },
+                  { f: "Custom Website", t: "$3,000–$10,000 (template)", a: "$10,000–$20,000", u: "Included" },
                   { f: "SEO Optimization", t: "$2,000–$5,000/mo", a: "$2,000–$5,000/mo", u: "Included every tier" },
                 ].map((row) => (
-                  <tr key={row.f} className="border-b border-white/5">
-                    <td className="py-5 pr-6 font-semibold text-white/90 text-sm">{row.f}</td>
-                    <td className="py-5 pr-6 text-white/40 text-sm">{row.t}</td>
-                    <td className="py-5 pr-6 text-white/40 text-sm">{row.a}</td>
-                    <td className="py-5 text-accent font-semibold text-sm">{row.u}</td>
+                  <tr key={row.f} className="border-b border-[#0B1D3A]/5 last:border-0">
+                    <td className="py-3 px-5 text-[#0B1D3A] text-sm font-semibold">{row.f}</td>
+                    <td className="py-3 px-5 text-[#4A5568] text-sm">{row.t}</td>
+                    <td className="py-3 px-5 text-[#4A5568] text-sm">{row.a}</td>
+                    <td className="py-3 px-5 text-accent font-semibold text-sm">{row.u}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-white/40 text-sm mt-6">
-            Add it up. The same stack agencies sell for $30,000–$50,000+ in setup and $3,000–$8,000/mo
-            in management — we deliver from $297/mo self-serve, or done-for-you from $1,497/mo + $1,997 setup.
+          <p className="text-[#4A5568] text-sm mt-6 max-w-3xl">
+            Add it up. The same stack agencies sell for $30,000–$50,000 in
+            setup and $3,000–$8,000/mo ongoing — we deliver from{" "}
+            <strong className="text-[#0B1D3A]">$349.90/mo self-serve</strong> or{" "}
+            <strong className="text-[#0B1D3A]">$194.90/mo with setup ($1,500)</strong>.
             Same features. Better technology. A fraction of the cost.
           </p>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════ */}
-      {/* DEDICATED BUSINESS NUMBER                  */}
-      {/* ═══════════════════════════════════════════ */}
-      <section className="py-20 border-b border-glass-border">
-        <div className="max-w-[1200px] mx-auto px-8 text-center">
-          <Phone className="text-accent w-12 h-12 mx-auto mb-6" />
-          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-6">
+      {/* ═══════════ DEDICATED NUMBER ═══════════ */}
+      <section className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+        <div className="max-w-[1200px] mx-auto px-6 sm:px-8 text-center">
+          <Phone className="text-accent w-10 h-10 mx-auto mb-5" />
+          <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
             One Business Number. Everything Connected.
           </h2>
-          <p className="text-text-muted text-lg max-w-2xl mx-auto mb-8">
-            We set you up with a dedicated business phone number. Put it on your website,
-            signs, business cards, social media. When someone calls, your AI answers. When
-            they text, your AI responds. When they book, it hits your calendar. One number.
-            One system. No more personal cell for business. No more separate apps.
+          <p className="mt-4 text-[#4A5568] text-base max-w-2xl mx-auto leading-relaxed">
+            We set you up with a dedicated business phone number. Put it on
+            your website, signs, business cards, and social. When someone
+            calls, AI answers. When they text, AI responds. When they book, it
+            hits your calendar. One number. One system.
           </p>
-          <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto mb-10">
-            <div className="glass rounded-2xl p-6">
+          <div className="mt-10 grid sm:grid-cols-3 gap-5 max-w-3xl mx-auto">
+            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
               <Shield className="text-accent w-8 h-8 mx-auto mb-3" />
-              <p className="font-display font-bold mb-1">Your Number</p>
-              <p className="text-text-muted text-sm">Dedicated line, separate from personal</p>
+              <p className="font-display font-bold text-[#0B1D3A]">Your Number</p>
+              <p className="mt-2 text-sm text-[#4A5568]">
+                Dedicated line, separate from personal.
+              </p>
             </div>
-            <div className="glass rounded-2xl p-6">
+            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
               <Clock className="text-accent w-8 h-8 mx-auto mb-3" />
-              <p className="font-display font-bold mb-1">Always On</p>
-              <p className="text-text-muted text-sm">AI answers 24/7/365</p>
+              <p className="font-display font-bold text-[#0B1D3A]">Always On</p>
+              <p className="mt-2 text-sm text-[#4A5568]">
+                AI answers 24/7/365.
+              </p>
             </div>
-            <div className="glass rounded-2xl p-6">
+            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
               <PieChart className="text-accent w-8 h-8 mx-auto mb-3" />
-              <p className="font-display font-bold mb-1">Full Tracking</p>
-              <p className="text-text-muted text-sm">Every interaction in your dashboard</p>
+              <p className="font-display font-bold text-[#0B1D3A]">Full Tracking</p>
+              <p className="mt-2 text-sm text-[#4A5568]">
+                Every interaction in your dashboard.
+              </p>
             </div>
           </div>
-          <p className="text-text-muted text-sm max-w-xl mx-auto">
-            We can integrate any app you can think of into this system. If it has an API,
-            it connects. If it works with Zapier, it connects. Your business runs on one
-            platform, not fifteen.
+          <p className="mt-8 text-[#4A5568] text-sm max-w-xl mx-auto">
+            Any app with an API or Zapier integration connects. Your business
+            runs on one platform, not fifteen.
           </p>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════ */}
-      {/* CTA                                        */}
-      {/* ═══════════════════════════════════════════ */}
-      <section className="py-24 text-center bg-gradient-to-br from-accent/10 to-bg-dark/90">
-        <div className="max-w-[1200px] mx-auto px-8">
-          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-            Everything on This Page Is Running Right Now.
+      {/* ═══════════ FAQ ═══════════ */}
+      <section className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+        <div className="max-w-[900px] mx-auto px-6 sm:px-8">
+          <div className="text-center mb-10">
+            <p className="eyebrow">AI Questions</p>
+            <h2 className="mt-3 h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+              Common Questions About AI Systems.
+            </h2>
+          </div>
+          <div>
+            {faqs.map((item) => (
+              <details key={item.q} className="group border-b border-[#0B1D3A]/10 py-2">
+                <summary className="flex cursor-pointer select-none items-center justify-between py-4 text-base font-semibold text-[#0B1D3A] sm:text-lg">
+                  <span className="pr-6">{item.q}</span>
+                  <span className="shrink-0 text-2xl text-accent transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="pb-5 pr-8 text-sm leading-relaxed text-[#4A5568] sm:text-base">
+                  {item.a}
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ CTA ═══════════ */}
+      <section className="section-dark-radial py-20 sm:py-24 text-center">
+        <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
+          <p className="eyebrow">Everything on This Page Is Running Now</p>
+          <h2 className="mt-3 h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+            Ready to Put AI to Work for Your Business?
           </h2>
-          <p className="max-w-xl mx-auto text-text-muted text-lg mb-4">
-            The chat bubble on this site is our AI. The form that captures your info feeds
-            our pipeline. This isn&apos;t a concept. This is the product. And it&apos;s what
-            we build for your business.
+          <p className="max-w-xl mx-auto mt-5 text-base text-white/80 leading-relaxed">
+            The chat bubble on this site is our AI. The form above captures
+            your info into our pipeline. This isn't a concept — it's the
+            product. And it's what we deploy for your business.
           </p>
-          <p className="max-w-xl mx-auto text-white/60 text-sm mb-4">
-            Self-serve plans start at $297/mo with no setup fee. Done-for-you plans start at $1,497/mo + $1,997 setup. AI receptionist, chat
-            agent, CRM, automation, SEO, and a custom website — all included.
+          <p className="max-w-xl mx-auto mt-3 text-sm text-white/60">
+            Self-serve plans from $349.90/mo. Done-for-you setups from $1,500
+            + $194.90/mo. Every tier includes the full AI suite.
           </p>
-          <p className="max-w-xl mx-auto text-accent text-sm font-semibold mb-8">
-            Two businesses? $350/mo each. Same everything.
-          </p>
-          <div className="flex justify-center gap-4 flex-wrap">
-            <a href="/services#self-serve" className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-accent bg-accent text-white hover:bg-transparent hover:text-accent transition-all inline-block">
-              Buy Self-Serve
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <a
+              href="/services"
+              className="px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] border-2 border-accent bg-accent text-navy shadow-gold hover:bg-transparent hover:text-accent transition-all rounded-sm"
+            >
+              See Plans &amp; Pricing
             </a>
-            <a href="/contact" className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-white/70 bg-transparent text-white hover:bg-white hover:text-bg-dark transition-all inline-block">
+            <a
+              href="/contact"
+              className="px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] border-2 border-white/70 bg-transparent text-white hover:bg-white hover:text-navy transition-all rounded-sm"
+            >
               Book A Demo
             </a>
           </div>
-          <div className="flex justify-center gap-8 mt-8 flex-wrap">
-            <a href="tel:6232191237" className="flex items-center gap-2 text-lg font-semibold hover:text-accent transition-all">
+          <div className="flex justify-center gap-6 mt-10 flex-wrap">
+            <a href="tel:6232191237" className="flex items-center gap-2 text-sm font-semibold text-white hover:text-accent">
               <Phone className="text-accent w-5 h-5" /> 623-219-1237
             </a>
-            <a href="mailto:info@adaptationliving.com" className="flex items-center gap-2 text-lg font-semibold hover:text-accent transition-all">
+            <a href="mailto:info@adaptationliving.com" className="flex items-center gap-2 text-sm font-semibold text-white hover:text-accent">
               <Mail className="text-accent w-5 h-5" /> info@adaptationliving.com
             </a>
           </div>

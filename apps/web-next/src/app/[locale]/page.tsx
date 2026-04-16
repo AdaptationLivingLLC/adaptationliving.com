@@ -2,51 +2,71 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import {
   ArrowRight,
+  BarChart3,
   BrainCircuit,
   Building2,
-  CalendarClock,
+  Calendar,
+  CalendarCheck,
+  CheckCircle2,
   Code,
+  CreditCard,
+  FileText,
+  Globe,
+  Layers,
+  LineChart,
   Mail,
   MapPinned,
-  MonitorSmartphone,
+  MessageSquare,
+  Mic,
   Phone,
   Search,
+  ShieldCheck,
+  Smartphone,
+  Star,
+  TrendingUp,
   Workflow,
+  Zap,
 } from "lucide-react";
 
+const title =
+  "Adaptation OS — AI Automation, CRM & Business Operating System for Phoenix, AZ";
+const description =
+  "Veteran-owned AI automation platform in Phoenix, AZ. Adaptation OS replaces 12+ business tools with one system: AI phone receptionist, AI chat agent, CRM, workflow automation, review management, email + SMS marketing, funnels, calendars, and 70+ directory listings. From $194.90/mo.";
+
 export const metadata: Metadata = {
-  title: {
-    absolute: "AI Automation & Web Dev Phoenix AZ | Adaptation Living LLC",
-  },
-  description:
-    "Veteran-owned AI automation studio in Phoenix, AZ. CRM, AI agents, workflow automation, and custom web development for small businesses. Adaptation Living LLC.",
+  title: { absolute: title },
+  description,
   keywords: [
-    "AI automation services Phoenix AZ",
-    "veteran owned web development Phoenix",
-    "CRM setup and automation",
-    "custom web development Phoenix",
-    "AI agents",
-    "workflow automation",
-    "veteran-owned",
-    "VOSB",
+    "AI automation Phoenix AZ",
+    "business operating system Phoenix",
+    "CRM automation Phoenix",
+    "AI phone receptionist",
+    "AI chat agent for business",
+    "workflow automation software",
+    "veteran-owned AI agency Phoenix",
+    "all-in-one business software",
+    "GoHighLevel alternative",
+    "small business CRM Phoenix",
+    "review management automation",
+    "local SEO Phoenix AZ",
+    "VOSB web development",
+    "Adaptation OS",
     "Adaptation Living LLC",
   ],
   openGraph: {
-    title: "AI Automation & Web Dev Phoenix AZ | Adaptation Living LLC",
-    description:
-      "Veteran-owned AI automation studio in Phoenix, AZ. CRM, AI agents, workflow automation, and custom web development for small businesses. Adaptation Living LLC.",
+    title,
+    description,
     url: "https://adaptationliving.com",
     images: [
       {
         url: "https://adaptationliving.com/images/banner.jpg",
-        alt: "Adaptation Living LLC — AI Automation and Web Development Studio in Phoenix AZ",
+        alt: "Adaptation OS — AI Automation and Business Operating System for Phoenix, AZ",
       },
     ],
   },
   twitter: {
-    title: "AI Automation & Web Dev Phoenix AZ | Adaptation Living LLC",
-    description:
-      "Veteran-owned AI automation studio in Phoenix, AZ. CRM, AI agents, workflow automation, and custom web development for small businesses. Adaptation Living LLC.",
+    title,
+    description,
     images: ["https://adaptationliving.com/images/banner.jpg"],
   },
   alternates: {
@@ -59,144 +79,230 @@ export const metadata: Metadata = {
   },
 };
 
+const featurePillars = [
+  {
+    icon: BrainCircuit,
+    title: "AI Employee Suite",
+    tagline: "Phone, chat, reviews, content — staffed by AI",
+    items: [
+      "AI Voice Agent answers every call 24/7",
+      "AI Chat Agent on web, SMS, IG, FB, WhatsApp",
+      "AI Review Responder for Google + Facebook",
+      "Content AI for blogs, ads, emails, social",
+      "Workflow AI builds automations from plain English",
+    ],
+  },
+  {
+    icon: BarChart3,
+    title: "CRM & Sales Pipeline",
+    tagline: "One command center for every lead and deal",
+    items: [
+      "Contact database with smart lists + tags",
+      "Visual drag-and-drop pipeline stages",
+      "Complete communication history per contact",
+      "Custom fields and segmentation",
+      "Deal tracking, forecasting, and revenue reports",
+    ],
+  },
+  {
+    icon: MessageSquare,
+    title: "Unified Communication",
+    tagline: "Every channel. One inbox.",
+    items: [
+      "Two-way SMS, MMS, and email",
+      "Dedicated business phone number (LC Phone)",
+      "Voicemail, call recording, transcription",
+      "Facebook Messenger, Instagram DM, WhatsApp",
+      "Live web chat with AI fallback",
+    ],
+  },
+  {
+    icon: Workflow,
+    title: "Workflow Automation",
+    tagline: "Your follow-up runs while you sleep",
+    items: [
+      "Visual if/then builder — no code",
+      "Missed-call text-back in under 60 seconds",
+      "Multi-step nurture sequences (SMS + email)",
+      "Appointment reminders and no-show rescue",
+      "Re-engagement campaigns for cold leads",
+    ],
+  },
+  {
+    icon: Calendar,
+    title: "Calendars & Booking",
+    tagline: "Leads book themselves",
+    items: [
+      "Multiple calendars per user or service",
+      "Round-robin team scheduling",
+      "Embeddable booking widgets",
+      "Automatic SMS + email reminders",
+      "AI handles rescheduling and cancellations",
+    ],
+  },
+  {
+    icon: Globe,
+    title: "Websites, Funnels & Pages",
+    tagline: "Publish a page in minutes, not weeks",
+    items: [
+      "Drag-and-drop website and funnel builder",
+      "Landing pages, forms, surveys, quizzes",
+      "Payment links and checkout pages",
+      "Membership sites and online courses",
+      "Blog publishing with Content AI",
+    ],
+  },
+  {
+    icon: Star,
+    title: "Reputation Management",
+    tagline: "5-star reviews on autopilot",
+    items: [
+      "Review request campaigns (SMS + email)",
+      "AI responds to every Google review",
+      "Negative review alerts before they publish",
+      "Review monitoring dashboard",
+      "Public review widget for your website",
+    ],
+  },
+  {
+    icon: MapPinned,
+    title: "Online Listings (70+ Sites)",
+    tagline: "Found on every map Google checks",
+    items: [
+      "Sync business info to 70+ directories",
+      "Google, Yelp, Facebook, Apple Maps, Bing",
+      "NAP consistency (name/address/phone)",
+      "Real-time updates across all platforms",
+      "Local SEO signal boost",
+    ],
+  },
+  {
+    icon: CreditCard,
+    title: "Payments & Invoicing",
+    tagline: "Get paid without leaving the dashboard",
+    items: [
+      "Stripe-powered invoices and checkout",
+      "Subscription billing and recurring charges",
+      "One-click payment links via SMS or email",
+      "Automatic payment reminders",
+      "Revenue reporting and reconciliation",
+    ],
+  },
+  {
+    icon: TrendingUp,
+    title: "Social Media & Ads",
+    tagline: "Post, schedule, and advertise in one place",
+    items: [
+      "Multi-platform social scheduler",
+      "Content AI generates posts + graphics",
+      "Facebook + Instagram ad manager built in",
+      "Campaign reporting without third-party tools",
+      "Consistent brand voice everywhere",
+    ],
+  },
+  {
+    icon: Smartphone,
+    title: "Branded Mobile App",
+    tagline: "Run your entire business from your phone",
+    items: [
+      "iOS + Android app with your logo",
+      "Full CRM, calendar, pipeline on mobile",
+      "Approve AI replies before they send",
+      "Push notifications for every new lead",
+      "In-app two-way messaging",
+    ],
+  },
+  {
+    icon: LineChart,
+    title: "Reporting & Analytics",
+    tagline: "The numbers that actually matter",
+    items: [
+      "Lead source, conversion, and pipeline dashboards",
+      "AI usage metrics — calls, replies, bookings",
+      "Campaign performance (SMS, email, ads)",
+      "Appointment and no-show tracking",
+      "Revenue and MRR reporting",
+    ],
+  },
+];
+
 const painPoints = [
   {
+    icon: Phone,
     title: "Missed Calls Cost You Customers",
     pain: "When you miss a call, someone else gets the sale.",
     answer:
-      "AI phone answering and missed-call text-back fire immediately, recover momentum, and keep the lead from leaving your orbit.",
-    href: "/services#self-serve",
+      "AI phone answering and missed-call text-back fire the instant the phone rings. Every caller is captured, qualified, and booked — even at 2 AM on a Sunday.",
   },
   {
+    icon: Zap,
     title: "Slow Follow-Up Kills Deals",
     pain: "Your leads are hottest in the first five minutes.",
     answer:
-      "An automated follow-up system using AI-assisted SMS, email, and chat workflows responds in seconds instead of hours.",
-    href: "/services#self-serve",
+      "Automated follow-up workflows respond in seconds — SMS, email, and chat all firing in sequence until the lead books or opts out.",
   },
   {
+    icon: Layers,
     title: "Disconnected Software Wastes Money",
     pain: "Eight tools. Eight logins. Eight bills. Zero coordination.",
     answer:
-      "An all-in-one CRM and business operating system replaces the entire stack with one cleaner environment.",
-    href: "/services#done-for-you",
+      "Adaptation OS replaces the entire stack — CRM, email, SMS, calendar, reviews, chat, pipeline, reporting — with one login and one bill.",
   },
   {
+    icon: Code,
     title: "Your Website Isn't Converting",
     pain: "If it looks like a template, buyers treat you like a commodity.",
     answer:
-      "A conversion-optimized website with custom architecture elevates trust, speed, and results before the sales process even begins.",
-    href: "/services#self-serve",
+      "A conversion-optimized custom website with a built-in AI chat agent, booking flow, and pipeline integration — not a page that just sits there.",
   },
   {
-    title: "Traffic Without Conversion Is Wasted",
-    pain: "Traffic without conversion is just another expense.",
-    answer:
-      "Conversion engineering — optimized pages, CTA hierarchy, and cleaner user flow — turns attention into action.",
-    href: "/services#self-serve",
-  },
-  {
-    title: "Nobody Can Find You Online",
-    pain: "If Google does not show you, customers find someone else.",
-    answer:
-      "Local SEO, consistent online listings, and AI visibility systems make you harder to ignore in search and answer engines.",
-    href: "/services#seo",
-  },
-];
-
-const worlds = [
-  {
-    title: "Business Operating Systems",
-    description:
-      "CRM infrastructure, missed-call text-back, booking, reminders, pipeline control, and one operating layer for growth.",
-    href: "/services#done-for-you",
-    icon: Workflow,
-  },
-  {
-    title: "AI Automation",
-    description:
-      "AI-assisted intake, qualification, follow-up, routing, and customer engagement systems that work around the clock.",
-    href: "/services#self-serve",
-    icon: BrainCircuit,
-  },
-  {
-    title: "Custom Web Architecture",
-    description:
-      "Custom websites, landing pages, and digital experiences engineered to convert and outperform template competitors.",
-    href: "/services#self-serve",
-    icon: Code,
-  },
-  {
-    title: "Revenue Tools",
-    description:
-      "Elegant calculators and diagnostic instruments that quantify lost time, wasted spend, and recoverable revenue.",
-    href: "/services#done-for-you",
-    icon: MonitorSmartphone,
-  },
-  {
-    title: "Search & Visibility",
-    description:
-      "Local SEO, AI overview positioning, technical architecture, and authority systems built to keep you discoverable.",
-    href: "/services#seo",
     icon: Search,
-  },
-];
-
-const showcaseCards = [
-  {
-    kicker: "AI That Works",
-    title: "24/7 AI Phone & Chat",
-    description:
-      "Your AI receptionist answers calls, captures leads, and books appointments around the clock. Your chat agent handles every website visitor, DM, and text instantly.",
-    value: "Included in every plan — starting at $194.90/mo with setup",
-    href: "/ai",
+    title: "Nobody Can Find You Online",
+    pain: "If Google doesn't show you, customers find someone else.",
+    answer:
+      "Local SEO, Google Business Profile optimization, consistent listings across 70+ directories, and AI-overview content that surfaces in ChatGPT and Perplexity.",
   },
   {
-    kicker: "One System",
-    title: "Replace 8 Tools With 1",
-    description:
-      "CRM, email, SMS, chat, calendar, reviews, pipeline, reporting — all in one platform. Stop paying for eight disconnected subscriptions.",
-    value: "From $349.90/mo self-serve · Or $194.90/mo with setup",
-    href: "/services",
-  },
-  {
-    kicker: "Always Visible",
-    title: "SEO & 70+ Directory Listings",
-    description:
-      "Your business listed consistently on Google, Yelp, Facebook, Apple Maps, Bing, and 65+ more directories. Consistent info everywhere means higher rankings.",
-    value: "Automated listing management included",
-    href: "/services",
-  },
-  {
-    kicker: "In Person",
-    title: "Live Demo in Phoenix",
-    description:
-      "See the entire system running live at our Uptown Phoenix office. No slide decks. No Zoom. Real systems demonstrated in person.",
-    value: "3030 N Central Ave Suite 507",
-    href: "/contact",
+    icon: Star,
+    title: "Your Reputation Is On Autopilot — Just Not How You Want",
+    pain: "One unanswered 1-star review tanks next month's leads.",
+    answer:
+      "AI monitors Google and Facebook 24/7, drafts a professional response to every review, and alerts you before a negative review publishes.",
   },
 ];
 
 const faqs = [
   {
+    q: "What is Adaptation OS?",
+    a: "Adaptation OS is an all-in-one business operating system for small and mid-sized businesses in Phoenix and across the US. It combines a CRM, AI phone receptionist, AI chat agent, workflow automation, review management, email and SMS marketing, a website and funnel builder, calendar booking, payments, social media scheduling, and 70+ directory listings into one platform. One login. One bill. Built on GoHighLevel, white-labeled and deployed by Adaptation Living LLC.",
+  },
+  {
     q: "Can I see a live demo before I commit?",
-    a: "Yes. Phoenix-area business owners can visit our Uptown Phoenix office for a hands-on walkthrough of the full business operating system — CRM, AI agents, and automation running live. Remote clients get a screen-share demonstration of the same platform.",
+    a: "Yes. Phoenix-area business owners can visit our Uptown Phoenix office at 3030 N Central Ave, Suite 507 — the Bank of America Tower — for a hands-on walkthrough of Adaptation OS running live. Remote clients get a screen-share demonstration of the exact same platform.",
   },
   {
-    q: "How fast can you build my system?",
-    a: "Most AI automation and CRM builds launch in two to six weeks depending on scope. We move fast because the work is structured and built in-house in Phoenix rather than scattered across subcontractors.",
+    q: "How fast can you deploy Adaptation OS for my business?",
+    a: "Self-serve plans activate the same day you sign up — instant access, no wait. Done-for-you setups launch in two to three weeks, including contact import, domain linking, workflow configuration, AI agent training, and team onboarding.",
   },
   {
-    q: "What makes you different from a typical agency?",
-    a: "We do not stop at a website. We build the conversion-optimized website, the CRM, the AI automation, the follow-up workflows, the reporting, and the business operating system that ties it all together — one platform replacing eight disconnected tools.",
+    q: "Do I keep my existing phone number, email, and website?",
+    a: "Yes. We port your existing phone number into the platform (or issue a new dedicated business line), connect your sending domain for email, and either integrate with your current website or rebuild it on the platform as part of setup.",
   },
   {
-    q: "Do I need to understand AI to work with you?",
-    a: "No. You do not need to understand AI automation to benefit from it. You need a partner who can identify where AI agents, automated workflows, and a unified CRM actually save time, improve response, and generate revenue in your business.",
+    q: "Is Adaptation OS HIPAA compliant?",
+    a: "HIPAA compliance is available as a $297/month add-on for medical, dental, behavioral health, and other healthcare clients. Once enabled, PHI handling is compliant end-to-end.",
   },
   {
-    q: "How do I know this will produce real results?",
-    a: "Every system is tied to measurable outcomes: AI response speed, booked appointments, captured leads, review volume, CRM pipeline visibility, and recoverable revenue. Our business operating system tracks it all in one place.",
+    q: "What makes Adaptation Living different from a typical marketing agency?",
+    a: "Agencies sell you services. We sell you an operating system — CRM, AI agents, automation, website, and reporting in one platform — then deploy, configure, and support it. You own the outcome, not just a pile of deliverables.",
+  },
+  {
+    q: "How does pricing work — are there any hidden fees?",
+    a: "Every tier includes the full platform. You pay a monthly subscription plus standard usage costs for SMS, email, AI, and phone traffic, all billed transparently at wholesale pass-through rates. Credits included at signup absorb typical first-month usage. No hidden fees, no surprise invoices.",
+  },
+  {
+    q: "Do you serve government contracts?",
+    a: "Yes. Adaptation Living LLC is a Veteran-Owned Small Business (VOSB) registered on SAM.gov. CAGE: 95WK4 — UEI: J3XGTRT7DYU5 — NAICS: 541511, 541512. We support custom computer programming and computer systems design contracts for federal, state, and local agencies.",
   },
 ];
 
@@ -209,13 +315,13 @@ export default function HomePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
+            "@id": "https://adaptationliving.com/#localbusiness",
             name: "Adaptation Living LLC",
-            alternateName: "Adaptation Living",
+            alternateName: ["Adaptation OS", "Adaptation Living"],
             url: "https://adaptationliving.com",
             logo: "https://adaptationliving.com/images/adaptation-seal-icon.svg",
             image: "https://adaptationliving.com/images/banner.jpg",
-            description:
-              "Veteran-owned AI automation studio in Phoenix, AZ. Custom web development, CRM setup, AI agents, workflow automation, and app development for small businesses.",
+            description,
             foundingDate: "2021",
             founder: {
               "@type": "Person",
@@ -231,14 +337,59 @@ export default function HomePage() {
               postalCode: "85012",
               addressCountry: "US",
             },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 33.4842,
-              longitude: -112.074,
-            },
+            geo: { "@type": "GeoCoordinates", latitude: 33.4842, longitude: -112.074 },
             telephone: "+1-623-219-1237",
             email: "info@adaptationliving.com",
-            priceRange: "$194.90 - $5,997",
+            priceRange: "$194.90 - $997.90",
+            areaServed: [
+              { "@type": "City", name: "Phoenix" },
+              { "@type": "City", name: "Scottsdale" },
+              { "@type": "City", name: "Tempe" },
+              { "@type": "City", name: "Mesa" },
+              { "@type": "City", name: "Glendale" },
+              { "@type": "City", name: "Chandler" },
+              { "@type": "State", name: "Arizona" },
+              { "@type": "Country", name: "United States" },
+            ],
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "Adaptation OS Plans",
+              itemListElement: [
+                { "@type": "Offer", name: "Starter Setup", price: "194.90", priceCurrency: "USD" },
+                { "@type": "Offer", name: "Growth Setup", price: "394.90", priceCurrency: "USD" },
+                { "@type": "Offer", name: "Scale Setup", price: "694.90", priceCurrency: "USD" },
+                { "@type": "Offer", name: "Starter DIY", price: "349.90", priceCurrency: "USD" },
+                { "@type": "Offer", name: "Growth DIY", price: "597.90", priceCurrency: "USD" },
+                { "@type": "Offer", name: "Scale DIY", price: "997.90", priceCurrency: "USD" },
+              ],
+            },
+          }),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "Adaptation OS",
+            applicationCategory: "BusinessApplication",
+            operatingSystem: "Web, iOS, Android",
+            offers: {
+              "@type": "AggregateOffer",
+              lowPrice: "194.90",
+              highPrice: "997.90",
+              priceCurrency: "USD",
+              offerCount: 6,
+            },
+            description:
+              "All-in-one business operating system: CRM, AI phone receptionist, AI chat agent, workflow automation, review management, email and SMS marketing, funnels, calendars, payments, social scheduling, and 70+ directory listings.",
+            publisher: {
+              "@type": "Organization",
+              name: "Adaptation Living LLC",
+              url: "https://adaptationliving.com",
+            },
           }),
         }}
       />
@@ -249,9 +400,9 @@ export default function HomePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "VideoObject",
-            name: "Adaptation Living — Founder's Walkthrough",
+            name: "Adaptation OS — Founder's Walkthrough",
             description:
-              "A live tour of Adaptation OS: custom websites, CRM, AI phone and chat agents, and automation for Phoenix business owners.",
+              "A live tour of Adaptation OS: custom websites, CRM, AI phone and chat agents, and the automation layer for Phoenix business owners.",
             thumbnailUrl: [
               "https://i.ytimg.com/vi/FPYBckToFO0/maxresdefault.jpg",
               "https://i.ytimg.com/vi/FPYBckToFO0/hqdefault.jpg",
@@ -280,10 +431,7 @@ export default function HomePage() {
             mainEntity: faqs.map((item) => ({
               "@type": "Question",
               name: item.q,
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: item.a,
-              },
+              acceptedAnswer: { "@type": "Answer", text: item.a },
             })),
           }),
         }}
@@ -294,35 +442,21 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "WebSite",
-            name: "Adaptation Living LLC",
-            alternateName: "Adaptation Living",
-            url: "https://adaptationliving.com",
-            inLanguage: ["en", "es"],
-            potentialAction: {
-              "@type": "ReadAction",
-              target: "https://adaptationliving.com/services",
-            },
-          }),
-        }}
-      />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
             "@type": "Organization",
+            "@id": "https://adaptationliving.com/#organization",
             name: "Adaptation Living LLC",
             legalName: "Adaptation Living LLC",
             url: "https://adaptationliving.com",
             logo: "https://adaptationliving.com/images/adaptation-seal-icon.svg",
+            sameAs: [
+              "https://www.linkedin.com/company/adaptation-living",
+              "https://www.linkedin.com/in/brandon-bible-7b78b2393",
+            ],
             foundingDate: "2021",
             founder: {
               "@type": "Person",
               name: "Brandon Bible",
               jobTitle: "Founder & CEO",
-              url: "https://www.linkedin.com/in/brandon-bible-7b78b2393",
             },
             contactPoint: [
               {
@@ -334,12 +468,20 @@ export default function HomePage() {
                 areaServed: "US",
               },
             ],
+            identifier: [
+              { "@type": "PropertyValue", name: "CAGE Code", value: "95WK4" },
+              { "@type": "PropertyValue", name: "UEI", value: "J3XGTRT7DYU5" },
+              { "@type": "PropertyValue", name: "NAICS", value: "541511, 541512" },
+            ],
           }),
         }}
       />
 
       <main id="main-content">
-        <header className="relative overflow-hidden border-b border-glass-border">
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        {/* HERO — intro left, SEO tool right (side-by-side on desktop)       */}
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        <header className="section-dark-radial relative overflow-hidden">
           <video
             autoPlay
             muted
@@ -348,188 +490,524 @@ export default function HomePage() {
             preload="metadata"
             poster="/images/banner.jpg"
             aria-hidden="true"
-            className="absolute inset-0 h-full w-full object-cover opacity-20"
+            className="absolute inset-0 h-full w-full object-cover opacity-[0.12]"
           >
             <source src="/assets/video/hero-bg.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(212,175,55,0.18),transparent_24%),radial-gradient(circle_at_bottom_right,rgba(212,175,55,0.2),transparent_22%),linear-gradient(180deg,rgba(11,29,58,0.62),rgba(11,29,58,0.96))]" />
-          <div className="relative mx-auto grid max-w-[1400px] grid-cols-1 gap-10 px-8 pb-16 pt-28 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
-            <div>
-              <div className="mb-4 flex flex-wrap items-center gap-2 text-[10px] uppercase tracking-[0.28em] text-accent">
-                <span className="rounded-full border border-accent/40 bg-accent/10 px-3 py-1.5">Veteran-Owned</span>
-                <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5">Phoenix AZ</span>
-                <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5">Since 2021</span>
-              </div>
-              <h1 className="max-w-3xl font-display text-3xl font-bold leading-[1.05] sm:text-4xl xl:text-5xl">
-                AI Automation &amp; Business Operating Systems — Phoenix, AZ
-              </h1>
-              <p className="mt-4 max-w-2xl text-base leading-relaxed text-text-muted">
-                Veteran-owned AI automation studio in Uptown Phoenix. We replace your disconnected software with one integrated platform — CRM, AI agents, automated workflows, reputation management, and a conversion-optimized website.
-              </p>
-              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href="/services#self-serve"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-accent bg-accent px-6 py-3 text-xs font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent"
-                >
-                  Buy Self-Serve <ArrowRight className="h-3 w-3" />
-                </a>
-                <a
-                  href="/contact"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-white/70 bg-transparent px-6 py-3 text-xs font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-white/10"
-                >
-                  See A Live Demo
-                </a>
-              </div>
-              <p className="mt-4 text-xs uppercase tracking-[0.2em] text-white/50">
-                Phoenix-area business owners: book an in-person demo at our Uptown office.
-              </p>
-            </div>
 
-            <div className="rounded-[24px] border border-white/10 bg-white/[0.06] backdrop-blur-sm p-6">
-              <p className="mb-2 text-[10px] uppercase tracking-[0.28em] text-[#D4AF37]">Free Instant Analysis</p>
-              <p className="font-display text-lg font-bold text-white mb-2">Get Your Free SEO &amp; Marketing Report</p>
-              <p className="text-sm text-text-muted mb-4">
-                Enter your website — we analyze your SEO score, listing consistency, and missed opportunities. Free, instant.
-              </p>
-              <iframe
-                src="https://services.leadconnectorhq.com/prospecting/widget/69e10ea0f9888528cbd6f1bb"
-                style={{ border: "none", width: "100%", height: "450px", borderRadius: "12px" }}
-                title="Get your free SEO and marketing report"
-                loading="lazy"
-                allow="clipboard-write"
-              />
+          <div className="relative mx-auto max-w-[1400px] px-6 pb-14 pt-24 sm:px-8 lg:pb-20 lg:pt-28">
+            <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-[0.95fr_1.05fr]">
+              {/* INTRO — left on desktop, stacks second on mobile so the SEO tool appears first */}
+              <div className="order-2 lg:order-1">
+                <div className="mb-5 flex flex-wrap items-center gap-2">
+                  <span className="rounded-full border border-accent/50 bg-accent/10 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-accent">
+                    Veteran-Owned · VOSB
+                  </span>
+                  <span className="rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-white/80">
+                    Phoenix, AZ
+                  </span>
+                  <span className="rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-white/80">
+                    Since 2021
+                  </span>
+                </div>
+                <h1 className="h-display font-bold text-white text-[1.75rem] sm:text-4xl xl:text-[2.75rem]">
+                  AI Automation, CRM &amp; a Complete{" "}
+                  <span className="bg-gradient-to-r from-accent via-[#E8C96A] to-accent bg-clip-text text-transparent">
+                    Business Operating System
+                  </span>{" "}
+                  for Phoenix, AZ.
+                </h1>
+                <p className="mt-5 max-w-xl text-[0.95rem] leading-relaxed text-white/80 sm:text-base">
+                  Adaptation OS replaces 12+ disconnected business tools with one
+                  white-labeled platform. AI phone receptionist, AI chat agent,
+                  CRM, workflow automation, review management, email + SMS
+                  marketing, funnels, calendars, payments, and 70+ directory
+                  listings — all in one login. Deployed and supported by a
+                  veteran-owned team in Uptown Phoenix.
+                </p>
+
+                <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                  <a
+                    href="#plans"
+                    className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
+                  >
+                    See Plans &amp; Pricing <ArrowRight className="h-3.5 w-3.5" />
+                  </a>
+                  <a
+                    href="/contact"
+                    className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-white/70 bg-transparent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-white transition-all hover:bg-white hover:text-navy"
+                  >
+                    Book A Live Demo
+                  </a>
+                </div>
+
+                <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-[11px] uppercase tracking-[0.22em] text-white/60">
+                  <a href="tel:6232191237" className="flex items-center gap-2 hover:text-accent">
+                    <Phone className="h-3.5 w-3.5 text-accent" /> 623-219-1237
+                  </a>
+                  <span>·</span>
+                  <span>3030 N Central Ave, Suite 507</span>
+                </div>
+              </div>
+
+              {/* SEO PROSPECTING TOOL — side-by-side with intro on desktop */}
+              <div className="order-1 lg:order-2">
+                <div className="relative">
+                  <div
+                    aria-hidden="true"
+                    className="pointer-events-none absolute -inset-[2px] rounded-[28px] bg-[conic-gradient(from_120deg_at_50%_50%,rgba(212,175,55,0.7),rgba(212,175,55,0.35),rgba(212,175,55,0.7))] opacity-60 blur-md"
+                  />
+                  <div className="relative rounded-[24px] border border-accent/50 bg-white shadow-[0_30px_80px_-20px_rgba(212,175,55,0.55)]">
+                    <div className="flex items-center gap-2 border-b border-[#0B1D3A]/10 px-6 py-3">
+                      <span className="flex h-2 w-2 rounded-full bg-emerald-500" />
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[#0B1D3A]/70">
+                        Free Instant Analysis · No Credit Card
+                      </p>
+                    </div>
+                    <div className="px-6 pt-5">
+                      <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-accent">
+                        SEO &amp; Marketing Grader
+                      </p>
+                      <h2 className="mt-1 font-display text-xl font-bold text-[#0B1D3A] sm:text-2xl">
+                        Grade Your Website in 60 Seconds.
+                      </h2>
+                      <p className="mt-2 text-sm leading-relaxed text-[#4A5568]">
+                        Enter your URL. We run a full audit — SEO score, listing
+                        consistency across 70+ directories, page speed, and
+                        missed revenue signals. Report delivered instantly.
+                      </p>
+                    </div>
+                    <iframe
+                      src="https://services.leadconnectorhq.com/prospecting/widget/69e10ea0f9888528cbd6f1bb"
+                      style={{
+                        border: "none",
+                        width: "100%",
+                        height: "470px",
+                        background: "transparent",
+                      }}
+                      title="Free SEO and marketing report for your business"
+                      loading="eager"
+                      allow="clipboard-write"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
+          <div className="h-px w-full bg-gradient-to-r from-transparent via-accent/60 to-transparent" />
         </header>
 
-        <section className="relative overflow-hidden border-b border-glass-border bg-[#091529] py-28">
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(212,175,55,0.18),transparent_35%),radial-gradient(circle_at_85%_90%,rgba(212,175,55,0.18),transparent_40%)]" />
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/60 to-transparent" />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
-
-          <div className="relative mx-auto max-w-[1400px] px-8">
-            <div className="mb-14 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
-              <div>
-                <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-accent/40 bg-accent/10 px-4 py-2 text-[11px] uppercase tracking-[0.28em] text-accent">
-                  <span className="relative flex h-2 w-2">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-70" />
-                    <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
-                  </span>
-                  Founder&rsquo;s Walkthrough
-                </div>
-                <h2 className="font-display text-5xl font-bold leading-[0.95] sm:text-6xl xl:text-7xl">
-                  See the system
-                  <br />
-                  <span className="bg-gradient-to-r from-accent via-white to-accent bg-clip-text text-transparent">
-                    in motion.
-                  </span>
-                </h2>
-              </div>
-              <p className="max-w-xl text-lg leading-relaxed text-text-muted">
-                A live tour of the website, CRM, AI phone and chat agents, and the automation layer we build for operators
-                who are done duct-taping eight tools together. No slides. Real systems, running now.
-              </p>
-            </div>
-
-            <div className="group relative">
-              <div
-                aria-hidden="true"
-                className="absolute -inset-1 rounded-[34px] bg-[conic-gradient(from_120deg_at_50%_50%,rgba(212,175,55,0.55),rgba(212,175,55,0.45),rgba(212,175,55,0.55))] opacity-60 blur-xl transition-opacity duration-500 group-hover:opacity-90"
-              />
-              <div
-                aria-hidden="true"
-                className="absolute -inset-px rounded-[30px] bg-gradient-to-br from-accent/70 via-white/20 to-accent/40"
-              />
-              <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-[#0B1D3A] shadow-[0_40px_120px_-20px_rgba(212,175,55,0.35)]">
-                <div className="pointer-events-none absolute left-6 top-6 z-10 flex items-center gap-2 rounded-full border border-white/15 bg-[#0B1D3A]/60 px-3 py-1.5 text-[10px] uppercase tracking-[0.28em] text-white/85 backdrop-blur">
-                  <span className="h-1.5 w-1.5 rounded-full bg-red-500" /> Adaptation OS · Live Demo
-                </div>
-                <div className="pointer-events-none absolute right-6 top-6 z-10 rounded-full border border-white/15 bg-[#0B1D3A]/60 px-3 py-1.5 text-[10px] uppercase tracking-[0.28em] text-white/75 backdrop-blur">
-                  4K · Phoenix, AZ
-                </div>
-                <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
-                  <iframe
-                    src="https://www.youtube-nocookie.com/embed/FPYBckToFO0?rel=0&modestbranding=1&playsinline=1"
-                    title="Adaptation Living — Founder's Walkthrough"
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                    className="absolute inset-0 h-full w-full"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {[
-                ["01", "The Website", "Custom architecture — not a template."],
-                ["02", "The CRM", "Every lead, pipeline, and touchpoint unified."],
-                ["03", "AI Agents", "Phone and chat answering 24/7."],
-                ["04", "Automation", "Follow-up, booking, reviews — on autopilot."],
-              ].map(([step, title, copy]) => (
-                <div key={step} className="glass rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-                  <p className="font-display text-2xl font-bold text-accent">{step}</p>
-                  <p className="mt-2 font-display text-lg font-bold text-white">{title}</p>
-                  <p className="mt-1 text-sm leading-relaxed text-text-muted">{copy}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <a
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2 border-2 border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent"
-              >
-                Book A Live Demo <ArrowRight className="h-4 w-4" />
-              </a>
-              <a
-                href="/services#self-serve"
-                className="inline-flex items-center justify-center gap-2 border-2 border-white/70 px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-white hover:text-bg-dark"
-              >
-                Start Self-Serve
-              </a>
-              <p className="text-sm uppercase tracking-[0.2em] text-white/60 sm:ml-2">
-                Or call <a href="tel:6232191237" className="text-accent">623-219-1237</a>
-              </p>
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        {/* TRUST BAR                                                          */}
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        <section className="section-cream py-8">
+          <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-[10px] font-semibold uppercase tracking-[0.26em] text-[#0B1D3A]/60 sm:text-[11px]">
+              <span className="flex items-center gap-2">
+                <ShieldCheck className="h-4 w-4 text-accent" /> Veteran-Owned (VOSB)
+              </span>
+              <span className="hidden sm:inline text-accent">·</span>
+              <span>SAM.gov Registered · CAGE 95WK4</span>
+              <span className="hidden sm:inline text-accent">·</span>
+              <span>NAICS 541511 · 541512</span>
+              <span className="hidden sm:inline text-accent">·</span>
+              <span>Headquartered in Uptown Phoenix</span>
+              <span className="hidden sm:inline text-accent">·</span>
+              <span>Since 2021</span>
             </div>
           </div>
         </section>
 
-        <section className="border-b border-glass-border bg-gradient-to-r from-accent/10 via-[#0B1D3A] to-[#0B1D3A]/95 py-18">
-          <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-stretch gap-8 px-8 lg:grid-cols-[0.95fr_1.05fr]">
-            <div className="relative min-h-[320px] overflow-hidden rounded-[28px] border border-white/10">
-              <Image
-                src="/images/al-hq-daytime.webp"
-                alt="Adaptation Living LLC headquarters — Bank of America Tower, Uptown Phoenix"
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0B1D3A] via-[#0B1D3A]/30 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="text-[11px] uppercase tracking-[0.24em] text-accent">Uptown Phoenix</p>
-                <p className="mt-2 font-display text-3xl font-bold">Real Office. Real Team. Real Results.</p>
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D4AF37]/40 to-transparent" />
+
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        {/* THE SOFTWARE — Adaptation OS centerpiece                           */}
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        <section id="platform" className="section-cream py-20 sm:py-24">
+          <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="eyebrow">The Platform</p>
+              <h2 className="mt-3 h-display text-3xl font-bold text-[#0B1D3A] sm:text-4xl lg:text-5xl">
+                Adaptation OS — The Operating System for Your Entire Business.
+              </h2>
+              <p className="mt-5 text-base leading-relaxed text-[#4A5568] sm:text-lg">
+                One platform. One login. One bill. Every feature a modern
+                business needs to capture leads, convert customers, automate
+                follow-up, and measure revenue — deployed by a veteran-owned
+                team that builds, trains, and supports the system for you.
+              </p>
+            </div>
+
+            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              {featurePillars.map((pillar) => (
+                <article
+                  key={pillar.title}
+                  className="group relative overflow-hidden rounded-[22px] border border-[#0B1D3A]/10 bg-white p-7 shadow-soft transition-all hover:-translate-y-1 hover:border-accent/50 hover:shadow-lift"
+                >
+                  <div
+                    aria-hidden="true"
+                    className="pointer-events-none absolute -right-6 -top-6 h-24 w-24 rounded-full bg-accent/10 blur-2xl transition-opacity group-hover:opacity-80"
+                  />
+                  <div className="relative flex items-start justify-between">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#0B1D3A] text-accent shadow-[inset_0_0_0_1px_rgba(212,175,55,0.3)]">
+                      <pillar.icon className="h-5 w-5" />
+                    </div>
+                    <span className="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.22em] text-emerald-700">
+                      Included
+                    </span>
+                  </div>
+                  <h3 className="relative mt-5 h-display text-xl font-bold text-[#0B1D3A]">
+                    {pillar.title}
+                  </h3>
+                  <p className="relative mt-1 text-sm font-semibold text-accent">
+                    {pillar.tagline}
+                  </p>
+                  <ul className="relative mt-4 space-y-2">
+                    {pillar.items.map((item) => (
+                      <li
+                        key={item}
+                        className="flex items-start gap-2 text-sm leading-relaxed text-[#4A5568]"
+                      >
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+
+            <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+              <a
+                href="#plans"
+                className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
+              >
+                See Plans &amp; Pricing <ArrowRight className="h-4 w-4" />
+              </a>
+              <a
+                href="/services"
+                className="inline-flex items-center justify-center gap-2 border-b border-dotted border-[#0B1D3A]/50 pb-1 text-xs font-bold uppercase tracking-[0.22em] text-[#0B1D3A]/80 hover:border-accent hover:text-accent"
+              >
+                Full Feature Comparison
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D4AF37]/40 to-transparent" />
+
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        {/* AI EMPLOYEES — deep dive with founder video                        */}
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        <section className="section-cream py-20 sm:py-24">
+          <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
+            <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+              <div>
+                <p className="eyebrow">AI Employees, Built-In</p>
+                <h2 className="mt-3 h-display text-3xl font-bold text-[#0B1D3A] sm:text-4xl lg:text-5xl">
+                  Six AI Agents. Zero Extra Cost.
+                </h2>
+                <p className="mt-5 text-base leading-relaxed text-[#4A5568] sm:text-lg">
+                  Adaptation OS ships with a full AI workforce. They answer your
+                  phone, reply to every chat, respond to reviews, write your
+                  content, and build your workflows. They work at 2 AM, on
+                  Christmas, during your Sunday family dinner. No overtime. No
+                  sick days. No recruiter fees.
+                </p>
+
+                <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                  {[
+                    {
+                      icon: Mic,
+                      name: "AI Voice Agent",
+                      role: "24/7 Receptionist",
+                      copy: "Answers calls, captures leads, books appointments. Natural conversation, your brand voice.",
+                    },
+                    {
+                      icon: MessageSquare,
+                      name: "AI Chat Agent",
+                      role: "Web, SMS, DMs",
+                      copy: "Instant replies on your site, Instagram, Facebook, WhatsApp, and text. Autopilot or human-approved.",
+                    },
+                    {
+                      icon: Star,
+                      name: "AI Review Responder",
+                      role: "Reputation Guardian",
+                      copy: "Responds to every Google and Facebook review in seconds — 5 stars or 1 star — in your brand voice.",
+                    },
+                    {
+                      icon: FileText,
+                      name: "Content AI",
+                      role: "Writer on Demand",
+                      copy: "Blog posts, social captions, ad copy, emails — drafted in seconds in your brand voice.",
+                    },
+                    {
+                      icon: Globe,
+                      name: "Funnel & Website AI",
+                      role: "Page Builder",
+                      copy: "Describe what you want in plain English. AI drafts landing pages, forms, and full funnels.",
+                    },
+                    {
+                      icon: Workflow,
+                      name: "Workflow AI",
+                      role: "Automation Architect",
+                      copy: "Explain a business rule in plain English. AI builds the multi-step automation for you.",
+                    },
+                  ].map((agent) => (
+                    <div
+                      key={agent.name}
+                      className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-5 transition-all hover:border-accent/40 hover:shadow-soft"
+                    >
+                      <div className="flex items-center gap-3">
+                        <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent/15 text-accent">
+                          <agent.icon className="h-4 w-4" />
+                        </div>
+                        <div>
+                          <p className="font-display text-sm font-bold text-[#0B1D3A]">
+                            {agent.name}
+                          </p>
+                          <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-accent">
+                            {agent.role}
+                          </p>
+                        </div>
+                      </div>
+                      <p className="mt-3 text-sm leading-relaxed text-[#4A5568]">
+                        {agent.copy}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="relative lg:sticky lg:top-24">
+                <div
+                  aria-hidden="true"
+                  className="pointer-events-none absolute -inset-2 rounded-[28px] bg-[conic-gradient(from_120deg_at_50%_50%,rgba(212,175,55,0.5),rgba(212,175,55,0.2),rgba(212,175,55,0.5))] opacity-40 blur-lg"
+                />
+                <div className="relative overflow-hidden rounded-[24px] border border-[#0B1D3A]/10 bg-[#0B1D3A] shadow-lift">
+                  <div className="pointer-events-none absolute left-4 top-4 z-10 flex items-center gap-2 rounded-full border border-white/15 bg-[#0B1D3A]/70 px-3 py-1.5 text-[9px] font-bold uppercase tracking-[0.28em] text-white/85 backdrop-blur">
+                    <span className="h-1.5 w-1.5 rounded-full bg-red-500" />
+                    Adaptation OS · Live
+                  </div>
+                  <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+                    <iframe
+                      src="https://www.youtube-nocookie.com/embed/FPYBckToFO0?rel=0&modestbranding=1&playsinline=1"
+                      title="Adaptation OS — Founder's Walkthrough"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                      className="absolute inset-0 h-full w-full"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-accent">
+                      Founder's Walkthrough
+                    </p>
+                    <p className="mt-1 text-sm text-white/80">
+                      A live tour of the website, CRM, AI phone and chat agents,
+                      and the automation layer we build for operators.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="glass-strong rounded-[28px] p-8 lg:p-10">
-              <div className="mb-6 flex flex-wrap gap-3 text-[11px] uppercase tracking-[0.22em] text-white/70">
-                <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2"><Building2 className="h-4 w-4 text-accent" /> 3030 N Central Ave Suite 507</span>
-                <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2"><CalendarClock className="h-4 w-4 text-accent" /> In-Person Demos Available</span>
-              </div>
-              <h2 className="font-display text-4xl font-bold leading-tight">A headquartered team, built for serious operators.</h2>
-              <p className="mt-5 max-w-3xl text-lg leading-relaxed text-text-muted">
-                Adaptation Living is a veteran-owned technology company headquartered on the
-                5th floor of the Bank of America Tower in Uptown Phoenix. Our clients partner
-                with an established firm — a permanent office, a full team, and the operational
-                infrastructure to deliver every system we design. Phoenix-area leaders are
-                welcome to meet in our office, see the platform running live, and review the
-                engagement plan in person.
+          </div>
+        </section>
+
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D4AF37]/40 to-transparent" />
+
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        {/* PAIN POINTS                                                        */}
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        <section className="section-cream py-20 sm:py-24">
+          <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="eyebrow">The Problems You Already Know</p>
+              <h2 className="mt-3 h-display text-3xl font-bold text-[#0B1D3A] sm:text-4xl">
+                What Business Owners Lose Every Day Without an Operating System.
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-[#4A5568]">
+                Missed calls. Dead leads. Duct-taped software. Invisible in
+                search. Reviews piling up unanswered. Each one quietly costs you
+                revenue. Adaptation OS closes every gap on this list.
               </p>
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a href="/contact" className="inline-flex items-center justify-center gap-2 border-2 border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent">
+            </div>
+            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              {painPoints.map((item) => (
+                <article
+                  key={item.title}
+                  className="flex flex-col rounded-[22px] border border-[#0B1D3A]/10 bg-white p-7 shadow-soft transition-all hover:-translate-y-1 hover:border-accent/50 hover:shadow-lift"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent/15 text-accent">
+                      <item.icon className="h-5 w-5" />
+                    </div>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.26em] text-accent">
+                      {item.title}
+                    </p>
+                  </div>
+                  <h3 className="mt-4 h-display text-lg font-bold text-[#0B1D3A]">
+                    {item.pain}
+                  </h3>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-[#4A5568]">
+                    {item.answer}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        {/* WHAT IT REPLACES                                                   */}
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        <section className="section-dark py-20 sm:py-24">
+          <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
+            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+              <div>
+                <p className="eyebrow">One System. Eight+ Tools Gone.</p>
+                <h2 className="mt-3 h-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+                  Cancel the subscriptions. Keep the capability.
+                </h2>
+                <p className="mt-5 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
+                  Most small businesses we meet are paying $1,500–$4,000/month
+                  across a dozen disconnected tools. Adaptation OS consolidates
+                  the entire stack — CRM, email, SMS, chat, calendar, reviews,
+                  funnels, pipeline, reporting — into one platform, with AI
+                  agents bolted onto every workflow.
+                </p>
+                <div className="mt-8 grid gap-3 sm:grid-cols-2">
+                  {[
+                    "HubSpot / Salesforce",
+                    "ActiveCampaign / Mailchimp",
+                    "Calendly / Acuity",
+                    "Twilio / OpenPhone",
+                    "ClickFunnels / Leadpages",
+                    "Podium / BirdEye",
+                    "Intercom / Drift",
+                    "Zapier Pro",
+                    "Kajabi / Teachable",
+                    "Hootsuite / Buffer",
+                    "Meta Ads Manager",
+                    "Wix / Squarespace",
+                  ].map((tool) => (
+                    <div
+                      key={tool}
+                      className="flex items-center gap-2 rounded-lg border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-white/75"
+                    >
+                      <span className="text-red-400">✕</span>
+                      <span className="line-through decoration-white/30">{tool}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="rounded-[24px] border border-accent/30 bg-accent/10 p-8 sm:p-10">
+                <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-accent">
+                  Replaced by
+                </p>
+                <h3 className="mt-2 font-display text-3xl font-bold text-white sm:text-4xl">
+                  Adaptation OS
+                </h3>
+                <p className="mt-3 text-sm text-white/80">
+                  One login. One monthly bill. Every feature above, plus an AI
+                  workforce, plus white-glove onboarding from a Phoenix-based
+                  team. Starting at{" "}
+                  <strong className="text-accent">$194.90/month</strong> with
+                  setup, or{" "}
+                  <strong className="text-accent">$349.90/month</strong>{" "}
+                  self-serve.
+                </p>
+                <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                  {[
+                    "CRM + Pipeline",
+                    "AI Phone + Chat",
+                    "Email + SMS Marketing",
+                    "Workflow Automation",
+                    "Website + Funnels",
+                    "Calendar Booking",
+                    "Review Management",
+                    "Ad Manager",
+                    "Social Scheduler",
+                    "Invoicing + Payments",
+                    "70+ Listings",
+                    "Branded Mobile App",
+                  ].map((feat) => (
+                    <div key={feat} className="flex items-center gap-2 text-sm text-white">
+                      <CheckCircle2 className="h-4 w-4 shrink-0 text-accent" />
+                      {feat}
+                    </div>
+                  ))}
+                </div>
+                <a
+                  href="#plans"
+                  className="mt-7 inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
+                >
+                  See Plans &amp; Pricing <ArrowRight className="h-4 w-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        {/* PHOENIX OFFICE                                                     */}
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        <section className="section-cream py-20 sm:py-24">
+          <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-stretch gap-10 px-6 sm:px-8 lg:grid-cols-[0.95fr_1.05fr]">
+            <div className="relative min-h-[340px] overflow-hidden rounded-[24px] border border-[#0B1D3A]/10 shadow-lift">
+              <Image
+                src="/images/al-hq-daytime.webp"
+                alt="Adaptation Living LLC headquarters — Bank of America Tower, Uptown Phoenix AZ"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 600px"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B1D3A] via-[#0B1D3A]/40 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-accent">
+                  Uptown Phoenix
+                </p>
+                <p className="mt-1 font-display text-2xl font-bold">
+                  Bank of America Tower · 5th Floor
+                </p>
+              </div>
+            </div>
+            <div className="rounded-[24px] border border-[#0B1D3A]/10 bg-white p-8 shadow-soft sm:p-10">
+              <div className="mb-5 flex flex-wrap gap-2 text-[10px] font-semibold uppercase tracking-[0.24em] text-[#0B1D3A]/70">
+                <span className="inline-flex items-center gap-2 rounded-full border border-[#0B1D3A]/10 bg-[#0B1D3A]/[0.03] px-3 py-1.5">
+                  <Building2 className="h-3.5 w-3.5 text-accent" />
+                  3030 N Central Ave · Suite 507
+                </span>
+                <span className="inline-flex items-center gap-2 rounded-full border border-[#0B1D3A]/10 bg-[#0B1D3A]/[0.03] px-3 py-1.5">
+                  <CalendarCheck className="h-3.5 w-3.5 text-accent" />
+                  In-Person Demos Available
+                </span>
+              </div>
+              <h2 className="h-display text-3xl font-bold text-[#0B1D3A] sm:text-4xl">
+                A headquartered team. Not a reseller.
+              </h2>
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#4A5568]">
+                Adaptation Living is a veteran-owned technology company
+                headquartered on the fifth floor of the Bank of America Tower in
+                Uptown Phoenix. Clients partner with a real firm — a permanent
+                office, a full team, and the operational discipline to deploy
+                and support every system we sell. Phoenix-area leaders are
+                welcome to meet in our office, see Adaptation OS running live,
+                and review the engagement plan in person.
+              </p>
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                <a
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
+                >
                   Book A Demo <ArrowRight className="h-4 w-4" />
                 </a>
-                <a href="tel:6232191237" className="inline-flex items-center justify-center gap-2 border-2 border-white/70 px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-white hover:text-bg-dark">
+                <a
+                  href="tel:6232191237"
+                  className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-[#0B1D3A]/80 bg-transparent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-[#0B1D3A] transition-all hover:bg-[#0B1D3A] hover:text-white"
+                >
                   Call 623-219-1237
                 </a>
               </div>
@@ -537,239 +1015,287 @@ export default function HomePage() {
           </div>
         </section>
 
-        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
-        <section className="section-cream mx-auto px-8 py-24">
-          <div className="mx-auto max-w-[1400px]">
-            <div className="mb-12 max-w-3xl">
-              <p className="mb-3 text-sm uppercase tracking-[0.24em] text-accent">You Already Know What Is Broken</p>
-              <h2 className="font-display text-4xl font-bold text-[#0B1D3A] sm:text-5xl">The problems costing business owners money are not mysterious.</h2>
-              <p className="mt-4 text-lg leading-relaxed text-text-muted">
-                Missed calls, slow follow-up, disconnected software, weak websites, invisible search presence, and no clear operating layer.
-                We build the systems that close those gaps.
-              </p>
-            </div>
-            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-              {painPoints.map((item) => (
-                <a key={item.title} href={item.href} className="rounded-[26px] bg-white/80 border border-[#D4AF37]/15 p-8 transition-all hover:-translate-y-1 hover:border-accent">
-                  <p className="mb-3 text-sm uppercase tracking-[0.2em] text-accent">{item.title}</p>
-                  <h3 className="font-display text-2xl font-bold text-[#0B1D3A]">{item.pain}</h3>
-                  <p className="mt-4 text-base leading-relaxed text-text-muted">{item.answer}</p>
-                  <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-[#0B1D3A]/85">
-                    Explore the Fix <ArrowRight className="h-4 w-4 text-accent" />
-                  </span>
-                </a>
-              ))}
-            </div>
-          </div>
-        </section>
-        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D4AF37]/40 to-transparent" />
 
-        <section id="services" className="section-cream py-28">
-          <div className="mx-auto max-w-[1400px] px-8">
-            <div className="mb-16 max-w-3xl">
-              <p className="mb-3 text-sm uppercase tracking-[0.24em] text-[#D4AF37]">Five Integrated Worlds</p>
-              <h2 className="font-display text-4xl font-bold text-[#0B1D3A] sm:text-5xl">Your business needs more than a website.</h2>
-              <p className="mt-4 text-lg leading-relaxed text-[#4A5568]">
-                Adaptation Living is built around five connected systems: operating control, AI automation, custom web architecture,
-                revenue instruments, and search visibility. Each branch solves a different problem. Together they build leverage.
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        {/* PRICING TEASER                                                     */}
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        <section id="plans" className="section-cream py-20 sm:py-24">
+          <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="eyebrow">Pricing</p>
+              <h2 className="mt-3 h-display text-3xl font-bold text-[#0B1D3A] sm:text-4xl lg:text-5xl">
+                One Platform. Two Paths. Six Plans.
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-[#4A5568]">
+                Done-For-You: we build, configure, train, and support the
+                entire system. Self-Serve: same platform, you drive. Every
+                tier unlocks the full Adaptation OS platform — tiers
+                differentiate on user count, setup depth, and support level.
               </p>
             </div>
-            <div className="grid gap-8 lg:grid-cols-2">
-              {worlds.map((world, index) => (
-                <a
-                  key={world.title}
-                  href={world.href}
-                  className={`group rounded-[30px] border p-10 transition-all hover:-translate-y-1 hover:shadow-lg ${
-                    index === 0 || index === 3
-                      ? "border-[#D4AF37]/30 bg-white shadow-sm"
-                      : "border-[#0B1D3A]/10 bg-white/80"
+
+            <div className="mt-12 grid gap-6 lg:grid-cols-3">
+              {[
+                {
+                  name: "Starter",
+                  setup: "$1,500",
+                  dfy: "$194.90",
+                  diy: "$349.90",
+                  users: "3 users",
+                  highlight: false,
+                  copy: "CRM, calendars, forms, basic automation, email support. For solo operators and early teams ready to stop duct-taping their stack.",
+                },
+                {
+                  name: "Growth",
+                  setup: "$2,500",
+                  dfy: "$394.90",
+                  diy: "$597.90",
+                  users: "5 users",
+                  highlight: true,
+                  copy: "Everything in Starter plus AI Voice + Chat agents, industry workflows, priority support, custom reporting. The sweet spot for 90% of businesses.",
+                },
+                {
+                  name: "Scale",
+                  setup: "$5,000",
+                  dfy: "$694.90",
+                  diy: "$997.90",
+                  users: "10 users",
+                  highlight: false,
+                  copy: "Everything in Growth plus multi-location config, custom API integrations, team training, dedicated support contact. For multi-location operators.",
+                },
+              ].map((plan) => (
+                <div
+                  key={plan.name}
+                  className={`relative flex flex-col rounded-[24px] p-7 shadow-soft transition-all hover:-translate-y-1 hover:shadow-lift ${
+                    plan.highlight
+                      ? "border-2 border-accent bg-white ring-2 ring-accent/30"
+                      : "border border-[#0B1D3A]/10 bg-white"
                   }`}
                 >
-                  <world.icon className="mb-5 h-10 w-10 text-[#D4AF37]" />
-                  <h3 className="font-display text-3xl font-bold text-[#0B1D3A] transition-all group-hover:text-[#D4AF37]">{world.title}</h3>
-                  <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#4A5568]">{world.description}</p>
-                  <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-[#0B1D3A]/70">
-                    Enter This World <ArrowRight className="h-4 w-4 text-[#D4AF37]" />
-                  </span>
-                </a>
+                  {plan.highlight && (
+                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent px-3 py-1 text-[9px] font-bold uppercase tracking-[0.28em] text-navy">
+                      Most Popular
+                    </span>
+                  )}
+                  <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-accent">
+                    {plan.name} · {plan.users}
+                  </p>
+                  <div className="mt-4 border-b border-[#0B1D3A]/10 pb-4">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#0B1D3A]/60">
+                      Done-For-You
+                    </p>
+                    <p className="mt-1 font-display text-3xl font-bold text-[#0B1D3A]">
+                      {plan.setup}
+                      <span className="text-sm font-normal text-[#0B1D3A]/60"> setup</span>
+                    </p>
+                    <p className="text-sm text-[#0B1D3A]/70">
+                      + <span className="font-semibold text-[#0B1D3A]">{plan.dfy}</span>/mo
+                    </p>
+                  </div>
+                  <div className="pt-4">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#0B1D3A]/60">
+                      Self-Serve
+                    </p>
+                    <p className="mt-1 font-display text-2xl font-bold text-[#0B1D3A]">
+                      {plan.diy}
+                      <span className="text-sm font-normal text-[#0B1D3A]/60">/mo</span>
+                    </p>
+                    <p className="text-sm text-[#0B1D3A]/70">
+                      No setup fee · Instant access
+                    </p>
+                  </div>
+                  <p className="mt-5 flex-1 text-sm leading-relaxed text-[#4A5568]">
+                    {plan.copy}
+                  </p>
+                  <a
+                    href="/services"
+                    className={`mt-6 inline-flex items-center justify-center gap-2 rounded-sm border-2 px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] transition-all ${
+                      plan.highlight
+                        ? "border-accent bg-accent text-navy shadow-gold hover:bg-transparent hover:text-accent"
+                        : "border-[#0B1D3A]/80 bg-transparent text-[#0B1D3A] hover:bg-[#0B1D3A] hover:text-white"
+                    }`}
+                  >
+                    View {plan.name} Details <ArrowRight className="h-4 w-4" />
+                  </a>
+                </div>
               ))}
             </div>
-          </div>
-        </section>
 
-        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
-        <section style={{ background: "linear-gradient(170deg, #FEFCF8 0%, #F8F1E4 40%, #FDF6EC 70%, #FEFCF8 100%)" }} className="py-28">
-          <div className="mx-auto max-w-[1400px] px-8">
-            <div className="mb-16 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-              <div className="max-w-3xl">
-                <p className="mb-3 text-sm uppercase tracking-[0.24em] text-[#D4AF37]">This Site Is A Live Showcase</p>
-                <h2 className="font-display text-3xl font-bold text-[#0B1D3A] sm:text-4xl">Demonstrate. Diagnose. Convert.</h2>
-                <p className="mt-4 text-base leading-relaxed text-[#4A5568]">
-                  Business owners do not need gimmicks. They need clean tools, live systems, and proof that the company they hire
-                  understands expensive problems in practical terms.
-                </p>
-              </div>
-              <a href="/services" className="inline-flex items-center gap-2 border-b border-dotted border-[#D4AF37] pb-1 text-sm font-semibold uppercase tracking-[0.18em] text-[#D4AF37]">
-                View pricing and implementation paths <ArrowRight className="h-4 w-4" />
+            <p className="mt-10 text-center text-sm text-[#4A5568]">
+              All plans include the full platform — AI agents, CRM, automation,
+              website, reviews, listings, and reporting. Additional users:
+              $50/mo each. One-time credits included at signup to cover typical
+              first-month SMS, email, and AI usage.
+            </p>
+
+            <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+              <a
+                href="/services"
+                className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
+              >
+                Full Pricing &amp; Feature Comparison <ArrowRight className="h-4 w-4" />
+              </a>
+              <a
+                href="/intake"
+                className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-[#0B1D3A]/80 px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-[#0B1D3A] transition-all hover:bg-[#0B1D3A] hover:text-white"
+              >
+                Book A Setup Call
               </a>
             </div>
-            <div className="grid gap-8 sm:grid-cols-2">
-              {showcaseCards.map((card) => (
-                <a key={card.title} href={card.href} className="bg-white rounded-[28px] border border-[#0B1D3A]/10 p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg hover:border-[#D4AF37]/40">
-                  <p className="mb-3 text-sm uppercase tracking-[0.2em] text-[#D4AF37]">{card.kicker}</p>
-                  <h3 className="font-display text-xl font-bold text-[#0B1D3A]">{card.title}</h3>
-                  <p className="mt-4 text-sm leading-relaxed text-[#4A5568]">{card.description}</p>
-                  <div className="mt-6 rounded-2xl border border-[#0B1D3A]/10 bg-[#0B1D3A] p-5">
-                    <p className="text-[11px] uppercase tracking-[0.2em] text-white/60">Preview Output</p>
-                    <p className="mt-3 text-base text-white/90">{card.value}</p>
-                  </div>
-                </a>
-              ))}
-            </div>
           </div>
         </section>
 
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D4AF37]/40 to-transparent" />
 
-        <section className="section-cream py-24">
-          <div className="mx-auto max-w-[1400px] px-8">
-            <div className="mb-12 max-w-3xl">
-              <p className="mb-3 text-sm uppercase tracking-[0.24em] text-accent">Adaptation OS</p>
-              <h2 className="font-display text-4xl font-bold text-[#0B1D3A] sm:text-5xl">Instant access. Cancel anytime.</h2>
-              <p className="mt-4 text-lg leading-relaxed text-text-muted">
-                Go self-serve and log in the same day, or let us build everything for you with a setup package. CRM, AI agents, automation, funnels, calendars, reviews, campaigns — all included on every plan.
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        {/* PROCESS                                                            */}
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        <section className="section-cream py-20 sm:py-24">
+          <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="eyebrow">How We Work</p>
+              <h2 className="mt-3 h-display text-3xl font-bold text-[#0B1D3A] sm:text-4xl">
+                From First Call to Live System in Two to Three Weeks.
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-[#4A5568]">
+                A clear, phased process with direct access to the people doing
+                the work. No account managers. No ticket queues.
               </p>
             </div>
-            <div className="grid gap-6 lg:grid-cols-3">
+            <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {[
-                ["Starter", "$349.90/mo", "Self-serve (DIY) · Or $194.90/mo with setup", "Up to 3 users · CRM, calendars, forms, basic automations, email support, $50 credits included (DIY) or $100 credits included (Setup)."],
-                ["Growth", "$597.90/mo", "Self-serve (DIY) · Or $394.90/mo with setup", "Up to 5 users · AI agents, funnels, pipelines, integrations, live onboarding, $50 credits included (DIY) or $100 credits included (Setup)."],
-                ["Scale", "$997.90/mo", "Self-serve (DIY) · Or $694.90/mo with setup", "Up to 10 users · Everything unlocked, branded mobile app, priority phone support, $50 credits included (DIY) or $100 credits included (Setup)."],
-              ].map(([title, price, tag, copy], index) => (
-                <div key={title} className={`rounded-[28px] border p-8 ${index === 1 ? "border-accent bg-accent/8 ring-1 ring-accent/40" : "border-[#0B1D3A]/10 bg-white/80"}`}>
-                  <p className="text-sm uppercase tracking-[0.2em] text-accent">{title}</p>
-                  <p className="mt-5 font-display text-4xl font-bold text-[#0B1D3A]">{price}</p>
-                  <p className="mt-2 text-sm text-[#0B1D3A]/70">{tag}</p>
-                  <p className="mt-5 text-base leading-relaxed text-text-muted">{copy}</p>
-                </div>
-              ))}
-            </div>
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <a href="/services#self-serve" className="inline-flex items-center justify-center gap-2 border-2 border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent">
-                Buy Self-Serve <ArrowRight className="h-4 w-4" />
-              </a>
-              <a href="/services#done-for-you" className="inline-flex items-center justify-center gap-2 border-2 border-[#0B1D3A]/70 px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-[#0B1D3A] transition-all hover:bg-[#0B1D3A] hover:text-white">
-                See Done-For-You
-              </a>
-            </div>
-          </div>
-        </section>
-        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
-
-        <section className="section-cream py-16 text-center">
-          <div className="max-w-[1200px] mx-auto px-8">
-            <p className="font-display text-xs uppercase tracking-[3px] text-[#D4AF37] mb-6">
-              Experience Across Industries That Demand Precision
-            </p>
-            <div className="flex justify-center flex-wrap gap-6 mb-8">
-              <span className="font-display text-sm text-[#0B1D3A]/70 tracking-wide">Semiconductor Manufacturing</span>
-              <span className="text-[#D4AF37]">&bull;</span>
-              <span className="font-display text-sm text-[#0B1D3A]/70 tracking-wide">Data Center Engineering</span>
-              <span className="text-[#D4AF37]">&bull;</span>
-              <span className="font-display text-sm text-[#0B1D3A]/70 tracking-wide">Energy &amp; Remote Systems</span>
-              <span className="text-[#D4AF37]">&bull;</span>
-              <span className="font-display text-sm text-[#0B1D3A]/70 tracking-wide">Financial Technology</span>
-              <span className="text-[#D4AF37]">&bull;</span>
-              <span className="font-display text-sm text-[#0B1D3A]/70 tracking-wide">Higher Education Infrastructure</span>
-            </div>
-            <p className="max-w-3xl mx-auto text-[#4A5568] text-sm leading-relaxed">
-              Our team brings discipline from <strong className="text-[#0B1D3A]">Intel</strong>, <strong className="text-[#0B1D3A]">Apple</strong>, <strong className="text-[#0B1D3A]">Arizona State University</strong>, <strong className="text-[#0B1D3A]">ConocoPhillips</strong>, <strong className="text-[#0B1D3A]">JPMorgan Chase</strong>, and <strong className="text-[#0B1D3A]">Wells Fargo</strong> — combined with five years building AI-powered systems for businesses since 2021.
-            </p>
-          </div>
-        </section>
-
-        <section id="process" className="section-cream py-24">
-          <div className="max-w-[1200px] mx-auto px-8">
-            <h2 className="font-display text-4xl font-bold text-center text-[#0B1D3A] mb-4">How We Work</h2>
-            <p className="text-center max-w-2xl mx-auto text-text-muted text-lg mb-12">
-              From first conversation to live system — a clear, phased process with direct access to the people doing the work.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              {[
-                ["01", "Reach Out", "Call, email, or submit the intake form. A real team member responds within hours."],
-                ["02", "Map Your Needs", "We identify what is broken, what it costs, and what the system needs to do."],
-                ["03", "Build & Deploy", "Your system is built, tested, and launched with clear visibility at every stage."],
-                ["04", "Support & Scale", "After launch, we optimize, maintain, and expand as your business grows."],
-              ].map(([step, title, copy]) => (
-                <div key={step} className="text-center p-8">
-                  <span className="font-display text-5xl text-accent font-bold block mb-4">{step}</span>
-                  <h3 className="font-display text-xl font-bold text-[#0B1D3A] mb-3">{title}</h3>
-                  <p className="text-text-muted text-base">{copy}</p>
+                ["01", "Reach Out", "Call, email, or submit intake. A senior team member responds within hours."],
+                ["02", "Map Your Needs", "We identify what's broken, what it's costing you, and what the system must do."],
+                ["03", "Build & Deploy", "Your CRM, AI agents, workflows, and website — configured, tested, launched."],
+                ["04", "Support & Scale", "Post-launch we tune, maintain, and expand as your business grows."],
+              ].map(([step, heading, copy]) => (
+                <div key={step} className="rounded-[22px] border border-[#0B1D3A]/10 bg-white p-7 text-center shadow-soft">
+                  <p className="font-display text-4xl font-bold text-accent">{step}</p>
+                  <h3 className="mt-3 font-display text-lg font-bold text-[#0B1D3A]">
+                    {heading}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-[#4A5568]">{copy}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
-        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
 
-        <section id="faq" className="section-cream py-24">
-          <div className="max-w-[1200px] mx-auto px-8">
-            <h2 className="font-display text-4xl font-bold text-center text-[#0B1D3A] mb-4">Common Questions</h2>
-            <p className="text-center max-w-2xl mx-auto text-text-muted text-lg mb-12">
-              Honest answers about demos, build speed, AI, and what it looks like to work with a serious operating partner.
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        {/* INDUSTRY EXPERIENCE                                                */}
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        <section className="section-cream border-t border-[#0B1D3A]/10 py-14 text-center">
+          <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
+            <p className="eyebrow">Experience Across Industries That Demand Precision</p>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 font-display text-sm text-[#0B1D3A]/75">
+              <span>Semiconductor Manufacturing</span>
+              <span className="text-accent">·</span>
+              <span>Data Center Engineering</span>
+              <span className="text-accent">·</span>
+              <span>Energy &amp; Remote Systems</span>
+              <span className="text-accent">·</span>
+              <span>Financial Technology</span>
+              <span className="text-accent">·</span>
+              <span>Higher Education Infrastructure</span>
+            </div>
+            <p className="mx-auto mt-6 max-w-3xl text-sm leading-relaxed text-[#4A5568]">
+              Our team brings discipline from{" "}
+              <strong className="text-[#0B1D3A]">Intel</strong>,{" "}
+              <strong className="text-[#0B1D3A]">Apple</strong>,{" "}
+              <strong className="text-[#0B1D3A]">Arizona State University</strong>,{" "}
+              <strong className="text-[#0B1D3A]">ConocoPhillips</strong>,{" "}
+              <strong className="text-[#0B1D3A]">JPMorgan Chase</strong>, and{" "}
+              <strong className="text-[#0B1D3A]">Wells Fargo</strong> — combined
+              with five years building AI-powered business operating systems for
+              small and mid-sized companies since 2021.
             </p>
+          </div>
+        </section>
 
-            <div className="max-w-3xl mx-auto">
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D4AF37]/40 to-transparent" />
+
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        {/* FAQ                                                                */}
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        <section id="faq" className="section-cream py-20 sm:py-24">
+          <div className="mx-auto max-w-[900px] px-6 sm:px-8">
+            <div className="text-center">
+              <p className="eyebrow">Common Questions</p>
+              <h2 className="mt-3 h-display text-3xl font-bold text-[#0B1D3A] sm:text-4xl">
+                Everything You'd Ask on a Discovery Call.
+              </h2>
+            </div>
+            <div className="mt-10">
               {faqs.map((item) => (
-                <details key={item.q} className="border-b border-[#0B1D3A]/10 group">
-                  <summary className="flex justify-between items-center cursor-pointer py-6 text-lg font-semibold text-[#0B1D3A] select-none">
-                    {item.q}
-                    <span className="text-accent text-2xl ml-4 group-open:hidden">+</span>
-                    <span className="text-accent text-2xl ml-4 hidden group-open:inline">−</span>
+                <details key={item.q} className="group border-b border-[#0B1D3A]/10 py-2">
+                  <summary className="flex cursor-pointer select-none items-center justify-between py-4 text-base font-semibold text-[#0B1D3A] sm:text-lg">
+                    <span className="pr-6">{item.q}</span>
+                    <span className="shrink-0 text-2xl text-accent transition-transform group-open:rotate-45">+</span>
                   </summary>
-                  <p className="text-text-muted leading-relaxed pb-6">{item.a}</p>
+                  <p className="pb-5 pr-8 text-sm leading-relaxed text-[#4A5568] sm:text-base">
+                    {item.a}
+                  </p>
                 </details>
               ))}
             </div>
-            <p className="mt-10 text-center text-sm uppercase tracking-[0.2em] text-[#0B1D3A]/65">
+            <p className="mt-8 text-center text-sm text-[#0B1D3A]/70">
               Still have questions? Call us directly at{" "}
-              <a href="tel:6232191237" className="text-accent">
+              <a href="tel:6232191237" className="font-semibold text-accent hover:underline">
                 623-219-1237
               </a>
             </p>
           </div>
         </section>
-        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
 
-        <section className="py-24 text-center bg-gradient-to-br from-accent/10 to-bg-dark/90 border-t border-glass-border">
-          <div className="max-w-[1200px] mx-auto px-8">
-            <h2 className="font-display text-4xl font-bold mb-4">
-              You Have Seen What We Build. Now Let Us Build It For You.
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        {/* FINAL CTA                                                          */}
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        <section className="section-dark-radial py-20 text-center sm:py-24">
+          <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
+            <p className="eyebrow">Ready When You Are</p>
+            <h2 className="mt-3 h-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+              Your Business, Running on One System.
             </h2>
-            <p className="max-w-2xl mx-auto text-text-muted text-lg mb-8">
-              Adaptation OS replaces 8+ subscriptions with a single platform. AI agents, CRM, automated workflows, and more — starting at $194.90/mo with setup or $349.90/mo self-serve.
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg">
+              Adaptation OS replaces 12+ subscriptions with a single platform —
+              AI phone, AI chat, CRM, workflows, website, reviews, listings,
+              and more — starting at $194.90/mo with setup or $349.90/mo
+              self-serve. Deployed and supported by a veteran-owned team in
+              Phoenix.
             </p>
-            <div className="flex justify-center gap-8 mb-8 flex-wrap">
-              <a href="tel:6232191237" className="flex items-center gap-2 text-lg font-semibold hover:text-accent transition-all">
-                <Phone className="text-accent w-5 h-5" />
-                623-219-1237
+            <div className="mt-10 flex flex-wrap justify-center gap-6 text-sm">
+              <a href="tel:6232191237" className="flex items-center gap-2 font-semibold text-white hover:text-accent">
+                <Phone className="h-4 w-4 text-accent" /> 623-219-1237
               </a>
-              <a href="mailto:info@adaptationliving.com" className="flex items-center gap-2 text-lg font-semibold hover:text-accent transition-all">
-                <Mail className="text-accent w-5 h-5" />
-                info@adaptationliving.com
+              <a href="mailto:info@adaptationliving.com" className="flex items-center gap-2 font-semibold text-white hover:text-accent">
+                <Mail className="h-4 w-4 text-accent" /> info@adaptationliving.com
               </a>
-              <span className="flex items-center gap-2 text-lg font-semibold text-white/85">
-                <MapPinned className="text-accent w-5 h-5" />
-                3030 N Central Ave Suite 507, Phoenix, AZ 85012
+              <span className="flex items-center gap-2 font-semibold text-white/85">
+                <MapPinned className="h-4 w-4 text-accent" />
+                3030 N Central Ave · Suite 507 · Phoenix, AZ 85012
               </span>
             </div>
-            <div className="flex justify-center gap-4 flex-wrap">
-              <a href="/services#self-serve" className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-accent bg-accent text-white hover:bg-transparent hover:text-accent transition-all inline-block">
-                Buy Self-Serve
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
+              <a
+                href="/services"
+                className="rounded-sm border-2 border-accent bg-accent px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
+              >
+                See Plans &amp; Pricing
               </a>
-              <a href="/contact" className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-white/70 bg-transparent text-white hover:bg-white hover:text-bg-dark transition-all inline-block">
-                Book A Demo
+              <a
+                href="/contact"
+                className="rounded-sm border-2 border-white/70 bg-transparent px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-white transition-all hover:bg-white hover:text-navy"
+              >
+                Book A Live Demo
               </a>
+            </div>
+            <div className="mt-10 flex flex-wrap justify-center gap-4 text-[10px] font-semibold uppercase tracking-[0.24em] text-white/50">
+              <span>Veteran-Owned · VOSB</span>
+              <span>·</span>
+              <span>SAM.gov Registered · CAGE 95WK4</span>
+              <span>·</span>
+              <span>NAICS 541511 · 541512</span>
             </div>
           </div>
         </section>

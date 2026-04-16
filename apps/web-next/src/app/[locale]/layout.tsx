@@ -163,58 +163,87 @@ export default async function LocaleLayout({
           {children}
 
           {/* Site-wide Footer */}
-          <footer className="bg-[#0B1D3A] py-16 px-8 text-center border-t border-glass-border">
-            <div className="flex justify-center gap-6 mb-8">
-              <a
-                href="https://www.linkedin.com/company/adaptation-living"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-text-muted hover:text-accent transition-all"
-                aria-label="Follow Adaptation Living LLC on LinkedIn"
-              >
-                <Linkedin className="w-6 h-6" />
-              </a>
-            </div>
+          <footer className="section-dark border-t border-[#D4AF37]/20 py-16 px-6 sm:px-8">
+            <div className="mx-auto max-w-[1400px]">
+              <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr] lg:items-start">
+                <div>
+                  <p className="font-display text-lg font-bold text-white tracking-[0.04em]">
+                    ADAPTATION LIVING{" "}
+                    <span className="text-[#D4AF37] text-xs tracking-[0.28em]">LLC</span>
+                  </p>
+                  <p className="mt-3 text-sm leading-relaxed text-white/70 max-w-md">
+                    Adaptation OS — AI automation, CRM, and a complete business
+                    operating system for Phoenix, AZ. Veteran-owned, SAM.gov
+                    registered, headquartered in Uptown Phoenix since 2021.
+                  </p>
+                  <div className="mt-5 text-xs uppercase tracking-[0.22em] text-white/60">
+                    3030 N Central Ave · Suite 507 · Phoenix, AZ 85012
+                  </div>
+                  <div className="mt-4 flex gap-4">
+                    <a
+                      href="https://www.linkedin.com/company/adaptation-living"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white/60 hover:text-[#D4AF37] transition-colors"
+                      aria-label="Follow Adaptation Living LLC on LinkedIn"
+                    >
+                      <Linkedin className="w-5 h-5" />
+                    </a>
+                  </div>
+                </div>
 
-            <div className="mx-auto max-w-3xl py-8 border-t border-white/5 text-white/40 text-xs tracking-wider leading-relaxed">
-              <div className="uppercase font-semibold text-white/60 mb-2">
-                Adaptation Living LLC &bull; Government Services Division
-              </div>
-              <span>SAM.gov Registered</span> &bull;{" "}
-              <span>CAGE: 95WK4</span> &bull;{" "}
-              <span>UEI: J3XGTRT7DYU5</span> &bull;{" "}
-              <span>
-                NAICS: 541511 &bull; 541512 (Custom Computer Programming &bull;
-                Computer Systems Design)
-              </span>
-              <div className="mt-4 flex justify-center gap-4 flex-wrap">
-                <a
-                  href="/legal"
-                  className="inline-block px-3 py-1 border-2 border-accent rounded font-bold tracking-wider text-white hover:bg-white/10 transition-all"
-                >
-                  Privacy Policy / Legal Notice
-                </a>
-                <a
-                  href="/ls-2025.html"
-                  className="inline-block px-3 py-1 border-2 border-accent rounded font-bold tracking-wider text-white hover:bg-white/10 transition-all"
-                >
-                  LS-2025 Veteran Lifeline
-                </a>
-              </div>
-            </div>
+                <div>
+                  <p className="text-[10px] uppercase tracking-[0.26em] text-[#D4AF37] font-bold mb-4">
+                    Platform
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li><a href="/" className="text-white/75 hover:text-[#D4AF37]">Home</a></li>
+                    <li><a href="/#platform" className="text-white/75 hover:text-[#D4AF37]">Adaptation OS Features</a></li>
+                    <li><a href="/services" className="text-white/75 hover:text-[#D4AF37]">Pricing &amp; Plans</a></li>
+                    <li><a href="/ai" className="text-white/75 hover:text-[#D4AF37]">AI Phone &amp; Chat Agents</a></li>
+                    <li><a href="/contact" className="text-white/75 hover:text-[#D4AF37]">Contact</a></li>
+                    <li><a href="/intake" className="text-white/75 hover:text-[#D4AF37]">Book Setup Call</a></li>
+                    <li><a href="https://app.adaptationliving.com" className="text-white/75 hover:text-[#D4AF37]">Client Portal Login</a></li>
+                  </ul>
+                </div>
 
-            <div className="text-neutral-600 text-sm mt-8">
-              &copy; 2021–2026 Adaptation Living LLC. All rights reserved.
-              <br />
-              3030 N Central Ave Suite 507, Phoenix, AZ 85012
-              <br />
-              <a
-                href="mailto:info@adaptationliving.com"
-                className="text-text-muted hover:text-accent"
-              >
-                info@adaptationliving.com
-              </a>{" "}
-              | 623-219-1237
+                <div>
+                  <p className="text-[10px] uppercase tracking-[0.26em] text-[#D4AF37] font-bold mb-4">
+                    Company
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li>
+                      <a href="tel:6232191237" className="text-white/75 hover:text-[#D4AF37]">
+                        623-219-1237
+                      </a>
+                    </li>
+                    <li>
+                      <a href="mailto:info@adaptationliving.com" className="text-white/75 hover:text-[#D4AF37]">
+                        info@adaptationliving.com
+                      </a>
+                    </li>
+                    <li><a href="/legal" className="text-white/75 hover:text-[#D4AF37]">Privacy &amp; Terms</a></li>
+                    <li><a href="/ls-2025.html" className="text-white/75 hover:text-[#D4AF37]">LS-2025 Veteran Lifeline</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-12 border-t border-white/10 pt-8">
+                <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[10px] font-semibold uppercase tracking-[0.26em] text-white/55">
+                  <span>Veteran-Owned Small Business (VOSB)</span>
+                  <span className="text-[#D4AF37]">·</span>
+                  <span>SAM.gov Registered</span>
+                  <span className="text-[#D4AF37]">·</span>
+                  <span>CAGE 95WK4</span>
+                  <span className="text-[#D4AF37]">·</span>
+                  <span>UEI J3XGTRT7DYU5</span>
+                  <span className="text-[#D4AF37]">·</span>
+                  <span>NAICS 541511 · 541512</span>
+                </div>
+                <div className="mt-6 text-center text-xs text-white/45">
+                  &copy; 2021–2026 Adaptation Living LLC · All rights reserved.
+                </div>
+              </div>
             </div>
           </footer>
         </IntlProvider>

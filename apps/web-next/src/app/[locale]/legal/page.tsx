@@ -25,8 +25,8 @@ export default function LegalPage() {
     <main id="main-content" className="navbar-offset section-cream">
       <Breadcrumbs items={[{ name: "Legal" }]} />
       <BreadcrumbSchema items={[{ name: "Legal", path: "/legal" }]} />
-      <article className="max-w-[800px] mx-auto px-8 pt-16 pb-24 prose prose-sm">
-        <h1 className="font-display text-4xl font-bold mb-8 text-[#0B1D3A]">
+      <article className="max-w-[800px] mx-auto px-8 pt-12 pb-16 prose prose-sm">
+        <h1 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 text-[#0B1D3A]">
           Privacy Policy &amp; Legal Notice
         </h1>
 
@@ -34,7 +34,7 @@ export default function LegalPage() {
           Last updated: April 2026
         </p>
 
-        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-[#0B1D3A]">
+        <h2 className="font-display text-xl sm:text-2xl font-bold mt-10 mb-3 text-[#0B1D3A]">
           1. Information We Collect
         </h2>
         <p className="text-text-muted leading-relaxed">
@@ -45,7 +45,7 @@ export default function LegalPage() {
           and Google Tag Manager.
         </p>
 
-        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-[#0B1D3A]">
+        <h2 className="font-display text-xl sm:text-2xl font-bold mt-10 mb-3 text-[#0B1D3A]">
           2. How We Use Your Information
         </h2>
         <p className="text-text-muted leading-relaxed">
@@ -56,7 +56,7 @@ export default function LegalPage() {
           tools, payment processors, email delivery services).
         </p>
 
-        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-[#0B1D3A]">
+        <h2 className="font-display text-xl sm:text-2xl font-bold mt-10 mb-3 text-[#0B1D3A]">
           3. Third-Party Services
         </h2>
         <p className="text-text-muted leading-relaxed">
@@ -90,7 +90,7 @@ export default function LegalPage() {
           </li>
         </ul>
 
-        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-[#0B1D3A]">
+        <h2 className="font-display text-xl sm:text-2xl font-bold mt-10 mb-3 text-[#0B1D3A]">
           4. Cookies &amp; Tracking Technologies
         </h2>
         <p className="text-text-muted leading-relaxed">
@@ -137,7 +137,7 @@ export default function LegalPage() {
           .
         </p>
 
-        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-[#0B1D3A]">
+        <h2 className="font-display text-xl sm:text-2xl font-bold mt-10 mb-3 text-[#0B1D3A]">
           5. Data Retention
         </h2>
         <p className="text-text-muted leading-relaxed">
@@ -147,7 +147,7 @@ export default function LegalPage() {
           contacting us at info@adaptationliving.com.
         </p>
 
-        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-[#0B1D3A]">
+        <h2 className="font-display text-xl sm:text-2xl font-bold mt-10 mb-3 text-[#0B1D3A]">
           6. Contact
         </h2>
         <p className="text-text-muted leading-relaxed">
@@ -167,7 +167,7 @@ export default function LegalPage() {
 
         <hr className="border-glass-border my-12" />
 
-        <h2 className="font-display text-2xl font-bold mt-12 mb-4 text-[#0B1D3A]">
+        <h2 className="font-display text-xl sm:text-2xl font-bold mt-10 mb-3 text-[#0B1D3A]">
           Terms of Service
         </h2>
         <p className="text-text-muted leading-relaxed">
@@ -179,7 +179,7 @@ export default function LegalPage() {
           writing before any work begins.
         </p>
 
-        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-[#0B1D3A]">
+        <h3 className="font-display text-lg sm:text-xl font-bold mt-8 mb-3 text-[#0B1D3A]">
           Subscriptions &amp; Billing
         </h3>
         <p className="text-text-muted leading-relaxed">
@@ -192,7 +192,7 @@ export default function LegalPage() {
           constitutes acceptance of the new price.
         </p>
 
-        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-[#0B1D3A]">
+        <h3 className="font-display text-lg sm:text-xl font-bold mt-8 mb-3 text-[#0B1D3A]">
           Cancellation
         </h3>
         <p className="text-text-muted leading-relaxed">
@@ -207,7 +207,7 @@ export default function LegalPage() {
           We do not issue prorated refunds for partial months.
         </p>
 
-        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-[#0B1D3A]">
+        <h3 className="font-display text-lg sm:text-xl font-bold mt-8 mb-3 text-[#0B1D3A]">
           Refunds
         </h3>
         <p className="text-text-muted leading-relaxed">
@@ -220,7 +220,7 @@ export default function LegalPage() {
           the months already used, charged at the equivalent monthly rate.
         </p>
 
-        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-[#0B1D3A]">
+        <h3 className="font-display text-lg sm:text-xl font-bold mt-8 mb-3 text-[#0B1D3A]">
           Chargebacks
         </h3>
         <p className="text-text-muted leading-relaxed">
@@ -236,7 +236,7 @@ export default function LegalPage() {
           fraudulent may result in account termination and loss of access.
         </p>
 
-        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-[#0B1D3A]">
+        <h3 className="font-display text-lg sm:text-xl font-bold mt-8 mb-3 text-[#0B1D3A]">
           Acceptable Use
         </h3>
         <p className="text-text-muted leading-relaxed">
@@ -247,7 +247,7 @@ export default function LegalPage() {
           contacts.
         </p>
 
-        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-[#0B1D3A]">
+        <h3 className="font-display text-lg sm:text-xl font-bold mt-8 mb-3 text-[#0B1D3A]">
           Limitation of Liability
         </h3>
         <p className="text-text-muted leading-relaxed">
@@ -258,7 +258,7 @@ export default function LegalPage() {
           12 months preceding the claim.
         </p>
 
-        <h3 className="font-display text-xl font-bold mt-10 mb-3 text-[#0B1D3A]">
+        <h3 className="font-display text-lg sm:text-xl font-bold mt-8 mb-3 text-[#0B1D3A]">
           Jurisdiction
         </h3>
         <p className="text-text-muted leading-relaxed">
