@@ -354,99 +354,54 @@ export default function HomePage() {
             <source src="/assets/video/hero-bg.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(212,175,55,0.18),transparent_24%),radial-gradient(circle_at_bottom_right,rgba(212,175,55,0.2),transparent_22%),linear-gradient(180deg,rgba(11,29,58,0.62),rgba(11,29,58,0.96))]" />
-          <div className="relative mx-auto grid min-h-screen max-w-[1400px] grid-cols-1 gap-10 px-8 pb-20 pt-36 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+          <div className="relative mx-auto grid max-w-[1400px] grid-cols-1 gap-10 px-8 pb-16 pt-28 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
             <div>
-              <div className="mb-6 flex flex-wrap items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-accent">
-                <span className="rounded-full border border-accent/40 bg-accent/10 px-4 py-2">Veteran-Owned</span>
-                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">Phoenix AZ</span>
-                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">Since 2021</span>
-                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">SAM.gov Registered</span>
+              <div className="mb-4 flex flex-wrap items-center gap-2 text-[10px] uppercase tracking-[0.28em] text-accent">
+                <span className="rounded-full border border-accent/40 bg-accent/10 px-3 py-1.5">Veteran-Owned</span>
+                <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5">Phoenix AZ</span>
+                <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5">Since 2021</span>
               </div>
-              <h1 className="max-w-4xl font-display text-3xl font-bold leading-[0.95] sm:text-5xl xl:text-6xl">
+              <h1 className="max-w-3xl font-display text-2xl font-bold leading-[1] sm:text-3xl xl:text-4xl">
                 AI Automation &amp; Business Operating Systems — Phoenix, AZ
               </h1>
-              <p className="mt-6 max-w-3xl text-lg leading-relaxed text-text-muted sm:text-xl">
-                Adaptation Living LLC is a veteran-owned AI automation studio in Uptown Phoenix. We replace your disconnected software with one integrated business operating system — CRM, AI agents, automated workflows, reputation management, and a conversion-optimized website — all on one platform.
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-text-muted">
+                Veteran-owned AI automation studio in Uptown Phoenix. We replace your disconnected software with one integrated platform — CRM, AI agents, automated workflows, reputation management, and a conversion-optimized website.
               </p>
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="/services#self-serve"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-accent bg-accent px-6 py-3 text-xs font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-transparent hover:text-accent"
                 >
-                  Buy Self-Serve <ArrowRight className="h-4 w-4" />
+                  Buy Self-Serve <ArrowRight className="h-3 w-3" />
                 </a>
                 <a
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-white/70 bg-transparent px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-white hover:text-bg-dark"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-white/70 bg-transparent px-6 py-3 text-xs font-semibold uppercase tracking-[0.22em] text-white transition-all hover:bg-white/10"
                 >
                   See A Live Demo
                 </a>
               </div>
-              <p className="mt-8 text-sm uppercase tracking-[0.2em] text-white/65">
+              <p className="mt-4 text-xs uppercase tracking-[0.2em] text-white/50">
                 Phoenix-area business owners: book an in-person demo at our Uptown office.
               </p>
             </div>
 
-            <div className="glass-strong rounded-[32px] border border-white/10 p-6 shadow-2xl">
-              <div className="mb-5 flex items-center justify-between border-b border-white/10 pb-4">
-                <div>
-                  <p className="font-display text-xl font-bold">Adaptation Command View</p>
-                  <p className="text-sm text-text-muted">Lead flow, automation, visibility, and recovery in one operating layer.</p>
-                </div>
-                <Image
-                  src="/images/adaptation-seal-icon.svg"
-                  alt="Adaptation Living seal"
-                  width={52}
-                  height={52}
-                  className="h-12 w-12"
+            <div className="rounded-[24px] border border-white/10 bg-white/[0.06] backdrop-blur-sm p-6">
+              <p className="mb-2 text-[10px] uppercase tracking-[0.28em] text-[#D4AF37]">Free Instant Analysis</p>
+              <p className="font-display text-lg font-bold text-white mb-2">Get Your Free SEO &amp; Marketing Report</p>
+              <p className="text-sm text-text-muted mb-4">
+                Enter your website — we analyze your SEO score, listing consistency, and missed opportunities. Free, instant.
+              </p>
+              <div id="prospecting-widget">
+                <Script
+                  src="https://services.leadconnectorhq.com/prospecting/client/widget-embed.js"
+                  data-widget-id="69e10ea0f9888528cbd6f1bb"
+                  strategy="lazyOnload"
                 />
-              </div>
-              <div className="grid gap-4 sm:grid-cols-2">
-                {[
-                  ["Lead Response", "5 sec", "AI + text-back live"],
-                  ["Pipeline Visibility", "100%", "Every opportunity tracked"],
-                  ["Review Capture", "+42%", "Automated request timing"],
-                  ["Software Spend", "-$380/mo", "Consolidated systems"],
-                ].map(([label, value, detail]) => (
-                  <div key={label} className="rounded-2xl border border-white/8 bg-white/[0.03] p-5">
-                    <p className="mb-2 text-[11px] uppercase tracking-[0.22em] text-accent">{label}</p>
-                    <p className="font-display text-4xl font-bold">{value}</p>
-                    <p className="mt-2 text-sm text-text-muted">{detail}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-4 rounded-2xl border border-white/8 bg-[#0B1D3A]/25 p-5">
-                <p className="mb-3 text-[11px] uppercase tracking-[0.22em] text-accent">System Layers</p>
-                <div className="flex flex-wrap gap-3 text-sm text-white/85">
-                  {["Website", "CRM", "AI Follow-Up", "Booking", "Reporting", "Review Automation"].map((item) => (
-                    <span key={item} className="rounded-full border border-white/12 bg-white/[0.04] px-3 py-2">
-                      {item}
-                    </span>
-                  ))}
-                </div>
               </div>
             </div>
           </div>
         </header>
-
-        <section className="section-cream py-16 border-b border-glass-border">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <p className="mb-3 text-sm uppercase tracking-[0.24em] text-[#D4AF37]">Free Instant Analysis</p>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0B1D3A] mb-4">
-              Get Your Free SEO &amp; Marketing Report In Seconds
-            </h2>
-            <p className="text-[#4A5568] text-lg mb-8 max-w-2xl mx-auto">
-              Enter your website and we will analyze your online presence — SEO score, listing consistency, review health, and missed opportunities. Free, instant, no commitment.
-            </p>
-            <div className="max-w-xl mx-auto" id="prospecting-widget">
-              <Script
-                src="https://services.leadconnectorhq.com/prospecting/client/widget-embed.js"
-                data-widget-id="69e10ea0f9888528cbd6f1bb"
-                strategy="lazyOnload"
-              />
-            </div>
-          </div>
-        </section>
 
         <section className="relative overflow-hidden border-b border-glass-border bg-[#091529] py-28">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(212,175,55,0.18),transparent_35%),radial-gradient(circle_at_85%_90%,rgba(212,175,55,0.18),transparent_40%)]" />
