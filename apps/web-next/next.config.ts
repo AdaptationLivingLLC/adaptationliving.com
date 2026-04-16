@@ -7,8 +7,7 @@ const nextConfig: NextConfig = {
   // Multi-zone: this app owns the root path
   // Child zones are handled via root vercel.json rewrites
 
-  transpilePackages: ["@al/ui", "@al/analytics", "@al/i18n", "three", "@react-three/fiber", "@react-three/drei"],
-  serverExternalPackages: ["three", "@react-three/fiber", "@react-three/drei"],
+  transpilePackages: ["@al/ui", "@al/analytics", "@al/i18n"],
 
   images: {
     formats: ["image/avif", "image/webp"],
