@@ -16,7 +16,7 @@ import {
   pageOg,
   pageTwitter,
 } from "../../../lib/seo";
-import { Breadcrumbs } from "@/components/breadcrumbs";
+import { Breadcrumbs } from "../../../components/breadcrumbs";
 import { ThreeDemo, PerfDemo } from "../../../components/showcase/client-demos";
 
 const title = "Live Technology Showcase";

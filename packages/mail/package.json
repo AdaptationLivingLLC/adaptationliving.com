@@ -1,9 +1,13 @@
 {
   "name": "@al/mail",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
+  "sideEffects": false,
   "exports": {
     ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "resend": "^4.0.0"
   },
   "devDependencies": {
     "@al/config-tsconfig": "workspace:*",

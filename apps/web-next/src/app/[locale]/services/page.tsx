@@ -23,7 +23,7 @@ import {
   pageOg,
   pageTwitter,
 } from "../../../lib/seo";
-import { Breadcrumbs } from "@/components/breadcrumbs";
+import { Breadcrumbs } from "../../../components/breadcrumbs";
 
 const title = "Adaptation OS — Pricing & Plans";
 const description =

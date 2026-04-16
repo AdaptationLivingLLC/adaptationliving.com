@@ -22,7 +22,7 @@ import {
   pageOg,
   pageTwitter,
 } from "../../../lib/seo";
-import { Breadcrumbs } from "@/components/breadcrumbs";
+import { Breadcrumbs } from "../../../components/breadcrumbs";
 
 const title = "AI-Powered Business Systems — Adaptation Living LLC";
 const description =

@@ -1,0 +1,5 @@
+{
+  "extends": "@al/config-tsconfig/base",
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
