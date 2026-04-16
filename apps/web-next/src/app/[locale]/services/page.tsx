@@ -193,14 +193,13 @@ export default function ServicesPage() {
       />
 
       {/* ── HERO ── */}
-      <section className="max-w-[1400px] mx-auto px-8 pt-20 pb-12">
+      <section className="section-cream max-w-[1400px] mx-auto px-8 pt-8 pb-8">
         <p className="text-sm uppercase tracking-[0.24em] text-accent mb-3">Adaptation OS</p>
-        <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold max-w-4xl leading-tight mb-6">
+        <h1 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold max-w-3xl leading-tight mb-4">
           The Operating System
-          <br />
-          <span className="text-accent">For Your Business — Plans &amp; Pricing</span>
+          <span className="text-accent"> — Plans &amp; Pricing</span>
         </h1>
-        <p className="text-text-muted text-lg max-w-3xl leading-relaxed mb-4">
+        <p className="text-text-muted text-base max-w-2xl leading-relaxed mb-4">
           CRM. AI agents. Automation. Funnels. Calendars. Pipelines. Reviews. Campaigns.
           Reporting. All in one platform. Pick self-serve if you want to run it yourself,
           or done-for-you if you want us to build and manage everything.

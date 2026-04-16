@@ -40,7 +40,7 @@ export function NavBar() {
         </a>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex gap-6 lg:gap-8 items-center">
+        <div className="hidden sm:flex gap-6 lg:gap-8 items-center">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -67,7 +67,7 @@ export function NavBar() {
 
         {/* Mobile hamburger button */}
         <button
-          className="md:hidden text-white/80 hover:text-[#D4AF37] transition-colors"
+          className="sm:hidden text-white/80 hover:text-[#D4AF37] transition-colors"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={mobileMenuOpen}
@@ -81,7 +81,7 @@ export function NavBar() {
 
       {/* Mobile menu overlay */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 top-[65px] z-40 bg-[#0B1D3A]/98 backdrop-blur-md md:hidden border-t border-[#D4AF37]/20">
+        <div className="fixed inset-0 top-[65px] z-40 bg-[#0B1D3A]/98 backdrop-blur-md sm:hidden border-t border-[#D4AF37]/20">
           <nav className="flex flex-col items-center gap-8 pt-16 font-display text-base tracking-wider uppercase" aria-label="Mobile navigation">
             <a href="/" onClick={() => setMobileMenuOpen(false)} className="text-white/80 hover:text-[#D4AF37] transition-colors">Home</a>
             <a href="/services" onClick={() => setMobileMenuOpen(false)} className="text-white/80 hover:text-[#D4AF37] transition-colors">Services</a>
