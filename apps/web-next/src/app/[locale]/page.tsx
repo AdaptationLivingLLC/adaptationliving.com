@@ -354,7 +354,7 @@ export default function HomePage() {
                 <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">Since 2021</span>
                 <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">SAM.gov Registered</span>
               </div>
-              <h1 className="max-w-4xl font-display text-5xl font-bold leading-[0.92] sm:text-7xl xl:text-[5.7rem]">
+              <h1 className="max-w-4xl font-display text-3xl font-bold leading-[0.95] sm:text-5xl xl:text-6xl">
                 AI Automation &amp; Business Operating Systems — Phoenix, AZ
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-relaxed text-text-muted sm:text-xl">
@@ -602,32 +602,32 @@ export default function HomePage() {
         </section>
         <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
 
-        <section id="services" className="border-y border-glass-border bg-white/[0.02] py-24">
+        <section id="services" className="section-cream py-28">
           <div className="mx-auto max-w-[1400px] px-8">
-            <div className="mb-12 max-w-3xl">
-              <p className="mb-3 text-sm uppercase tracking-[0.24em] text-accent">Five Integrated Worlds</p>
-              <h2 className="font-display text-4xl font-bold sm:text-5xl">Your business needs more than a website.</h2>
-              <p className="mt-4 text-lg leading-relaxed text-text-muted">
+            <div className="mb-16 max-w-3xl">
+              <p className="mb-3 text-sm uppercase tracking-[0.24em] text-[#D4AF37]">Five Integrated Worlds</p>
+              <h2 className="font-display text-4xl font-bold text-[#0B1D3A] sm:text-5xl">Your business needs more than a website.</h2>
+              <p className="mt-4 text-lg leading-relaxed text-[#4A5568]">
                 Adaptation Living is built around five connected systems: operating control, AI automation, custom web architecture,
                 revenue instruments, and search visibility. Each branch solves a different problem. Together they build leverage.
               </p>
             </div>
-            <div className="grid gap-6 lg:grid-cols-2">
+            <div className="grid gap-8 lg:grid-cols-2">
               {worlds.map((world, index) => (
                 <a
                   key={world.title}
                   href={world.href}
-                  className={`group rounded-[30px] border p-8 transition-all hover:-translate-y-1 ${
+                  className={`group rounded-[30px] border p-10 transition-all hover:-translate-y-1 hover:shadow-lg ${
                     index === 0 || index === 3
-                      ? "border-accent/35 bg-gradient-to-br from-accent/12 via-[#0B1D3A] to-[#0B1D3A]"
-                      : "border-white/10 bg-[#0B1D3A]/40"
+                      ? "border-[#D4AF37]/30 bg-white shadow-sm"
+                      : "border-[#0B1D3A]/10 bg-white/80"
                   }`}
                 >
-                  <world.icon className="mb-5 h-10 w-10 text-accent" />
-                  <h3 className="font-display text-3xl font-bold transition-all group-hover:text-accent">{world.title}</h3>
-                  <p className="mt-4 max-w-2xl text-base leading-relaxed text-text-muted">{world.description}</p>
-                  <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-white/85">
-                    Enter This World <ArrowRight className="h-4 w-4 text-accent" />
+                  <world.icon className="mb-5 h-10 w-10 text-[#D4AF37]" />
+                  <h3 className="font-display text-3xl font-bold text-[#0B1D3A] transition-all group-hover:text-[#D4AF37]">{world.title}</h3>
+                  <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#4A5568]">{world.description}</p>
+                  <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-[#0B1D3A]/70">
+                    Enter This World <ArrowRight className="h-4 w-4 text-[#D4AF37]" />
                   </span>
                 </a>
               ))}
@@ -635,32 +635,35 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-[1400px] px-8 py-24">
-          <div className="mb-12 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-            <div className="max-w-3xl">
-              <p className="mb-3 text-sm uppercase tracking-[0.24em] text-accent">This Site Is A Live Showcase</p>
-              <h2 className="font-display text-4xl font-bold sm:text-5xl">Demonstrate. Diagnose. Convert.</h2>
-              <p className="mt-4 text-lg leading-relaxed text-text-muted">
-                Business owners do not need gimmicks. They need clean tools, live systems, and proof that the company they hire
-                understands expensive problems in practical terms.
-              </p>
-            </div>
-            <a href="/services" className="inline-flex items-center gap-2 border-b border-dotted border-accent pb-1 text-sm font-semibold uppercase tracking-[0.18em] text-accent">
-              View pricing and implementation paths <ArrowRight className="h-4 w-4" />
-            </a>
-          </div>
-          <div className="grid gap-6 lg:grid-cols-3">
-            {showcaseCards.map((card) => (
-              <a key={card.title} href={card.href} className="glass rounded-[28px] p-8 transition-all hover:-translate-y-1 hover:border-accent">
-                <p className="mb-3 text-sm uppercase tracking-[0.2em] text-accent">{card.kicker}</p>
-                <h3 className="font-display text-2xl font-bold">{card.title}</h3>
-                <p className="mt-4 text-base leading-relaxed text-text-muted">{card.description}</p>
-                <div className="mt-6 rounded-2xl border border-white/10 bg-[#0B1D3A]/35 p-5">
-                  <p className="text-[11px] uppercase tracking-[0.2em] text-white/60">Preview Output</p>
-                  <p className="mt-3 text-lg text-white/88">{card.value}</p>
-                </div>
+        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
+        <section className="section-cream py-28">
+          <div className="mx-auto max-w-[1400px] px-8">
+            <div className="mb-16 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+              <div className="max-w-3xl">
+                <p className="mb-3 text-sm uppercase tracking-[0.24em] text-[#D4AF37]">This Site Is A Live Showcase</p>
+                <h2 className="font-display text-3xl font-bold text-[#0B1D3A] sm:text-4xl">Demonstrate. Diagnose. Convert.</h2>
+                <p className="mt-4 text-base leading-relaxed text-[#4A5568]">
+                  Business owners do not need gimmicks. They need clean tools, live systems, and proof that the company they hire
+                  understands expensive problems in practical terms.
+                </p>
+              </div>
+              <a href="/services" className="inline-flex items-center gap-2 border-b border-dotted border-[#D4AF37] pb-1 text-sm font-semibold uppercase tracking-[0.18em] text-[#D4AF37]">
+                View pricing and implementation paths <ArrowRight className="h-4 w-4" />
               </a>
-            ))}
+            </div>
+            <div className="grid gap-8 lg:grid-cols-3">
+              {showcaseCards.map((card) => (
+                <a key={card.title} href={card.href} className="bg-white rounded-[28px] border border-[#0B1D3A]/10 p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg hover:border-[#D4AF37]/40">
+                  <p className="mb-3 text-sm uppercase tracking-[0.2em] text-[#D4AF37]">{card.kicker}</p>
+                  <h3 className="font-display text-xl font-bold text-[#0B1D3A]">{card.title}</h3>
+                  <p className="mt-4 text-sm leading-relaxed text-[#4A5568]">{card.description}</p>
+                  <div className="mt-6 rounded-2xl border border-[#0B1D3A]/10 bg-[#0B1D3A] p-5">
+                    <p className="text-[11px] uppercase tracking-[0.2em] text-white/60">Preview Output</p>
+                    <p className="mt-3 text-base text-white/90">{card.value}</p>
+                  </div>
+                </a>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -700,24 +703,24 @@ export default function HomePage() {
         </section>
         <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
 
-        <section className="py-16 text-center border-t border-b border-glass-border">
+        <section className="section-cream py-16 text-center">
           <div className="max-w-[1200px] mx-auto px-8">
-            <p className="font-display text-sm uppercase tracking-[3px] text-accent mb-6">
+            <p className="font-display text-xs uppercase tracking-[3px] text-[#D4AF37] mb-6">
               Experience Across Industries That Demand Precision
             </p>
             <div className="flex justify-center flex-wrap gap-6 mb-8">
-              <span className="font-display text-base opacity-85 tracking-wide">Semiconductor Manufacturing</span>
-              <span>&bull;</span>
-              <span className="font-display text-base opacity-85 tracking-wide">Data Center Engineering</span>
-              <span>&bull;</span>
-              <span className="font-display text-base opacity-85 tracking-wide">Energy &amp; Remote Systems</span>
-              <span>&bull;</span>
-              <span className="font-display text-base opacity-85 tracking-wide">Financial Technology</span>
-              <span>&bull;</span>
-              <span className="font-display text-base opacity-85 tracking-wide">Higher Education Infrastructure</span>
+              <span className="font-display text-sm text-[#0B1D3A]/70 tracking-wide">Semiconductor Manufacturing</span>
+              <span className="text-[#D4AF37]">&bull;</span>
+              <span className="font-display text-sm text-[#0B1D3A]/70 tracking-wide">Data Center Engineering</span>
+              <span className="text-[#D4AF37]">&bull;</span>
+              <span className="font-display text-sm text-[#0B1D3A]/70 tracking-wide">Energy &amp; Remote Systems</span>
+              <span className="text-[#D4AF37]">&bull;</span>
+              <span className="font-display text-sm text-[#0B1D3A]/70 tracking-wide">Financial Technology</span>
+              <span className="text-[#D4AF37]">&bull;</span>
+              <span className="font-display text-sm text-[#0B1D3A]/70 tracking-wide">Higher Education Infrastructure</span>
             </div>
-            <p className="max-w-3xl mx-auto text-text-muted text-base leading-relaxed">
-              Our team brings discipline from <strong className="text-white">Intel</strong>, <strong className="text-white">Apple</strong>, <strong className="text-white">Arizona State University</strong>, <strong className="text-white">ConocoPhillips</strong>, <strong className="text-white">JPMorgan Chase</strong>, and <strong className="text-white">Wells Fargo</strong> — combined with five years building AI-powered systems for businesses since 2021.
+            <p className="max-w-3xl mx-auto text-[#4A5568] text-sm leading-relaxed">
+              Our team brings discipline from <strong className="text-[#0B1D3A]">Intel</strong>, <strong className="text-[#0B1D3A]">Apple</strong>, <strong className="text-[#0B1D3A]">Arizona State University</strong>, <strong className="text-[#0B1D3A]">ConocoPhillips</strong>, <strong className="text-[#0B1D3A]">JPMorgan Chase</strong>, and <strong className="text-[#0B1D3A]">Wells Fargo</strong> — combined with five years building AI-powered systems for businesses since 2021.
             </p>
           </div>
         </section>

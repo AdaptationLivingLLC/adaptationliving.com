@@ -4,7 +4,7 @@
 @theme {
   /* Colors */
   --color-bg-dark:        #0B1D3A;
-  --color-bg-cream:       #FDF6EC;
+  --color-bg-cream:       #FEFCF8;
   --color-bg-card:        rgba(11, 29, 58, 0.85);
   --color-bg-card-strong: rgba(11, 29, 58, 0.95);
   --color-bg-card-cream:  rgba(253, 246, 236, 0.95);
@@ -75,7 +75,7 @@
   }
 
   .section-cream {
-    background-color: var(--color-bg-cream);
+    background: linear-gradient(165deg, #FEFCF8 0%, #FDF6EC 35%, #FAF0E0 70%, #FEFCF8 100%);
     color: var(--color-cream-text-main);
   }
 
