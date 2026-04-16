@@ -239,12 +239,18 @@ export default async function LocaleLayout({
                 NAICS: 541511 &bull; 541512 (Custom Computer Programming &bull;
                 Computer Systems Design)
               </span>
-              <div className="mt-4">
+              <div className="mt-4 flex justify-center gap-4 flex-wrap">
                 <a
                   href="/legal"
                   className="inline-block px-3 py-1 border-2 border-accent rounded font-bold tracking-wider text-white hover:bg-white/10 transition-all"
                 >
                   Privacy Policy / Legal Notice
+                </a>
+                <a
+                  href="/ls-2025.html"
+                  className="inline-block px-3 py-1 border-2 border-accent rounded font-bold tracking-wider text-white hover:bg-white/10 transition-all"
+                >
+                  LS-2025 Veteran Lifeline
                 </a>
               </div>
             </div>
