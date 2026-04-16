@@ -641,9 +641,9 @@ export default function HomePage() {
             </div>
             <div className="grid gap-6 lg:grid-cols-3">
               {[
-                ["Starter", "$349.90/mo", "Self-serve (DIY) · Or $194.90/mo with setup", "Up to 3 users · CRM, calendars, forms, basic automations, email support, $50 credits/mo (DIY) or $100 credits/mo (Setup)."],
-                ["Growth", "$597.90/mo", "Self-serve (DIY) · Or $394.90/mo with setup", "Up to 5 users · AI agents, funnels, pipelines, integrations, live onboarding, $50 credits/mo (DIY) or $100 credits/mo (Setup)."],
-                ["Scale", "$997.90/mo", "Self-serve (DIY) · Or $694.90/mo with setup", "Up to 10 users · Everything unlocked, branded mobile app, priority phone support, $50 credits/mo (DIY) or $100 credits/mo (Setup)."],
+                ["Starter", "$349.90/mo", "Self-serve (DIY) · Or $194.90/mo with setup", "Up to 3 users · CRM, calendars, forms, basic automations, email support, $50 credits included (DIY) or $100 credits included (Setup)."],
+                ["Growth", "$597.90/mo", "Self-serve (DIY) · Or $394.90/mo with setup", "Up to 5 users · AI agents, funnels, pipelines, integrations, live onboarding, $50 credits included (DIY) or $100 credits included (Setup)."],
+                ["Scale", "$997.90/mo", "Self-serve (DIY) · Or $694.90/mo with setup", "Up to 10 users · Everything unlocked, branded mobile app, priority phone support, $50 credits included (DIY) or $100 credits included (Setup)."],
               ].map(([title, price, tag, copy], index) => (
                 <div key={title} className={`rounded-[28px] border p-8 ${index === 1 ? "border-accent bg-accent/8 ring-1 ring-accent/40" : "border-[#0B1D3A]/10 bg-white/80"}`}>
                   <p className="text-sm uppercase tracking-[0.2em] text-accent">{title}</p>
