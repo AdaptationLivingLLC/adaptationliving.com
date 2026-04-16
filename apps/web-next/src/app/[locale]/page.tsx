@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Script from "next/script";
 import {
   ArrowRight,
   BrainCircuit,
@@ -361,7 +360,7 @@ export default function HomePage() {
                 <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5">Phoenix AZ</span>
                 <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5">Since 2021</span>
               </div>
-              <h1 className="max-w-3xl font-display text-2xl font-bold leading-[1] sm:text-3xl xl:text-4xl">
+              <h1 className="max-w-3xl font-display text-3xl font-bold leading-[1.05] sm:text-4xl xl:text-5xl">
                 AI Automation &amp; Business Operating Systems — Phoenix, AZ
               </h1>
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-text-muted">
@@ -392,13 +391,13 @@ export default function HomePage() {
               <p className="text-sm text-text-muted mb-4">
                 Enter your website — we analyze your SEO score, listing consistency, and missed opportunities. Free, instant.
               </p>
-              <div id="prospecting-widget">
-                <Script
-                  src="https://services.leadconnectorhq.com/prospecting/client/widget-embed.js"
-                  data-widget-id="69e10ea0f9888528cbd6f1bb"
-                  strategy="lazyOnload"
-                />
-              </div>
+              <iframe
+                src="https://services.leadconnectorhq.com/prospecting/widget/69e10ea0f9888528cbd6f1bb"
+                style={{ border: "none", width: "100%", height: "450px", borderRadius: "12px" }}
+                title="Get your free SEO and marketing report"
+                loading="lazy"
+                allow="clipboard-write"
+              />
             </div>
           </div>
         </header>
