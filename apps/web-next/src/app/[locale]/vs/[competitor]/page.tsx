@@ -98,14 +98,14 @@ export default async function VersusPage({ params }: Props) {
           <p className="eyebrow">Head-to-Head Comparison</p>
           <h1 className="mt-3 h-display font-bold tracking-tight text-white text-[1.9rem] leading-[1.05] sm:text-[2.4rem] lg:text-[3rem] max-w-4xl">
             Adaptation OS{" "}
-            <span className="bg-gradient-to-r from-accent via-[#E8C96A] to-accent bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent via-[#FB923C] to-accent bg-clip-text text-transparent">
               vs {c.name}
             </span>
           </h1>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#B8C4D4] sm:text-lg">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#A8A29E] sm:text-lg">
             {c.tagline.split("—")[1]?.trim() || c.tagline}
           </p>
-          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[#8899AA]">
+          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[#78716C]">
             {c.positioningLine}
           </p>
 
@@ -131,25 +131,25 @@ export default async function VersusPage({ params }: Props) {
         <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <p className="eyebrow">At A Glance</p>
-            <h2 className="mt-3 h-display text-2xl font-bold text-[#0B1D3A] sm:text-3xl lg:text-[2.25rem]">
+            <h2 className="mt-3 h-display text-2xl font-bold text-[#1C1917] sm:text-3xl lg:text-[2.25rem]">
               Feature-by-feature, side by side.
             </h2>
-            <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-[#4A5568]">
+            <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-[#57534E]">
               Pulled from each platform's public pricing and feature pages. We
               kept it fair — where {c.name} is stronger, we say so in the next
               section.
             </p>
           </div>
 
-          <div className="mt-10 overflow-hidden rounded-[20px] border border-[#0B1D3A]/10 bg-white shadow-soft">
-            <div className="grid grid-cols-[1.2fr_1fr_1fr] items-center gap-3 border-b border-[#0B1D3A]/10 bg-[#0B1D3A] px-4 py-4 text-white sm:px-6">
-              <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#B8C4D4]">
+          <div className="mt-10 overflow-hidden rounded-[20px] border border-[#1C1917]/10 bg-white shadow-soft">
+            <div className="grid grid-cols-[1.2fr_1fr_1fr] items-center gap-3 border-b border-[#1C1917]/10 bg-[#1C1917] px-4 py-4 text-white sm:px-6">
+              <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#A8A29E]">
                 Feature
               </p>
               <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-accent">
                 Adaptation OS
               </p>
-              <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#B8C4D4]">
+              <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#A8A29E]">
                 {c.name}
               </p>
             </div>
@@ -157,23 +157,23 @@ export default async function VersusPage({ params }: Props) {
             {comparisonRows.map((row, i) => (
               <div
                 key={row.feature}
-                className={`grid grid-cols-[1.2fr_1fr_1fr] items-center gap-3 border-b border-[#0B1D3A]/5 px-4 py-3 sm:px-6 ${
-                  i % 2 === 0 ? "bg-white" : "bg-[#0B1D3A]/[0.015]"
+                className={`grid grid-cols-[1.2fr_1fr_1fr] items-center gap-3 border-b border-[#1C1917]/5 px-4 py-3 sm:px-6 ${
+                  i % 2 === 0 ? "bg-white" : "bg-[#1C1917]/[0.015]"
                 }`}
               >
-                <p className="text-sm font-semibold text-[#0B1D3A]">
+                <p className="text-sm font-semibold text-[#1C1917]">
                   {row.feature}
                 </p>
-                <p className="flex items-start gap-2 text-sm text-[#0B1D3A]">
+                <p className="flex items-start gap-2 text-sm text-[#1C1917]">
                   <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                   <span>{row.ours}</span>
                 </p>
-                <p className="text-sm text-[#4A5568]">{row.theirs}</p>
+                <p className="text-sm text-[#57534E]">{row.theirs}</p>
               </div>
             ))}
           </div>
 
-          <p className="mt-6 text-center text-xs uppercase tracking-[0.24em] text-[#0B1D3A]/50">
+          <p className="mt-6 text-center text-xs uppercase tracking-[0.24em] text-[#1C1917]/50">
             Pricing and features above pulled from public sources as of 2026.
           </p>
         </div>
@@ -201,7 +201,7 @@ export default async function VersusPage({ params }: Props) {
                 <p className="font-display text-2xl font-bold text-accent">
                   0{i + 1}
                 </p>
-                <p className="mt-3 text-sm leading-relaxed text-[#B8C4D4]">
+                <p className="mt-3 text-sm leading-relaxed text-[#A8A29E]">
                   {bullet}
                 </p>
               </div>
@@ -215,13 +215,13 @@ export default async function VersusPage({ params }: Props) {
         <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
           <div className="max-w-3xl">
             <div className="mb-3 flex items-center gap-3">
-              <MinusCircle className="h-6 w-6 text-[#0B1D3A]/50" />
+              <MinusCircle className="h-6 w-6 text-[#1C1917]/50" />
               <p className="eyebrow">Where {c.name} May Be Stronger</p>
             </div>
-            <h2 className="h-display text-2xl font-bold text-[#0B1D3A] sm:text-3xl lg:text-[2.25rem]">
+            <h2 className="h-display text-2xl font-bold text-[#1C1917] sm:text-3xl lg:text-[2.25rem]">
               We'll tell you when {c.name} is the better pick.
             </h2>
-            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[#4A5568]">
+            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[#57534E]">
               Honest comparison beats hype. If any of these matter more to your
               business than everything above, {c.name} may be the right tool for
               you.
@@ -232,9 +232,9 @@ export default async function VersusPage({ params }: Props) {
             {c.theirEdge.map((bullet) => (
               <div
                 key={bullet}
-                className="rounded-[18px] border border-[#0B1D3A]/10 bg-white p-5 shadow-soft"
+                className="rounded-[18px] border border-[#1C1917]/10 bg-white p-5 shadow-soft"
               >
-                <p className="text-sm leading-relaxed text-[#4A5568]">
+                <p className="text-sm leading-relaxed text-[#57534E]">
                   {bullet}
                 </p>
               </div>
@@ -250,7 +250,7 @@ export default async function VersusPage({ params }: Props) {
           <h2 className="mt-3 h-display text-2xl font-bold text-white sm:text-3xl lg:text-[2.25rem]">
             Leave {c.name}. Keep your data. Go live in days.
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-[#B8C4D4]">
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-[#A8A29E]">
             Our Phoenix team handles the {c.name} export, data mapping, and cutover.
             Most migrations complete in under a week with zero downtime.
           </p>
@@ -270,7 +270,7 @@ export default async function VersusPage({ params }: Props) {
           </div>
 
           <div className="mt-12 border-t border-white/10 pt-8">
-            <p className="text-[10px] uppercase tracking-[0.26em] text-[#8899AA]">
+            <p className="text-[10px] uppercase tracking-[0.26em] text-[#78716C]">
               More Comparisons
             </p>
             <div className="mt-4 flex flex-wrap justify-center gap-2">
@@ -280,7 +280,7 @@ export default async function VersusPage({ params }: Props) {
                   <Link
                     key={other.slug}
                     href={`/vs/${other.slug}`}
-                    className="rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-xs text-[#B8C4D4] transition-colors hover:border-accent hover:text-accent"
+                    className="rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-xs text-[#A8A29E] transition-colors hover:border-accent hover:text-accent"
                   >
                     vs {other.name}
                   </Link>

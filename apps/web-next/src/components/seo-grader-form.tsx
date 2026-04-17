@@ -77,10 +77,10 @@ export function SeoGraderForm() {
         <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100">
           <CheckCircle2 className="h-7 w-7 text-emerald-600" />
         </div>
-        <h3 className="font-display text-xl font-bold text-[#0B1D3A]">
+        <h3 className="font-display text-xl font-bold text-[#1C1917]">
           Report on the way.
         </h3>
-        <p className="mt-2 text-sm text-[#4A5568]">
+        <p className="mt-2 text-sm text-[#57534E]">
           We're running your audit now. Your full SEO &amp; marketing report
           will hit your inbox within a few minutes. Check spam just in case.
         </p>
@@ -89,7 +89,7 @@ export function SeoGraderForm() {
   }
 
   const inputCls =
-    "w-full rounded-lg border border-[#0B1D3A]/15 bg-white px-3.5 py-2.5 text-sm text-[#0B1D3A] placeholder:text-[#0B1D3A]/40 focus:border-[#D4AF37] focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/30 transition-all";
+    "w-full rounded-lg border border-[#1C1917]/15 bg-white px-3.5 py-2.5 text-sm text-[#1C1917] placeholder:text-[#1C1917]/40 focus:border-[#EA580C] focus:outline-none focus:ring-2 focus:ring-[#EA580C]/30 transition-all";
 
   return (
     <form onSubmit={handleSubmit} className="px-6 pb-6 pt-4 space-y-3" noValidate>
@@ -110,12 +110,12 @@ export function SeoGraderForm() {
       <div>
         <label
           htmlFor="website"
-          className="mb-1 block text-[10px] font-bold uppercase tracking-[0.22em] text-[#0B1D3A]/70"
+          className="mb-1 block text-[10px] font-bold uppercase tracking-[0.22em] text-[#1C1917]/70"
         >
           Your Website URL
         </label>
         <div className="relative">
-          <Globe className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#0B1D3A]/40" />
+          <Globe className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#1C1917]/40" />
           <input
             type="text"
             id="website"
@@ -133,7 +133,7 @@ export function SeoGraderForm() {
         <div>
           <label
             htmlFor="firstName"
-            className="mb-1 block text-[10px] font-bold uppercase tracking-[0.22em] text-[#0B1D3A]/70"
+            className="mb-1 block text-[10px] font-bold uppercase tracking-[0.22em] text-[#1C1917]/70"
           >
             First Name
           </label>
@@ -151,7 +151,7 @@ export function SeoGraderForm() {
         <div>
           <label
             htmlFor="lastName"
-            className="mb-1 block text-[10px] font-bold uppercase tracking-[0.22em] text-[#0B1D3A]/70"
+            className="mb-1 block text-[10px] font-bold uppercase tracking-[0.22em] text-[#1C1917]/70"
           >
             Last Name
           </label>
@@ -170,7 +170,7 @@ export function SeoGraderForm() {
       <div>
         <label
           htmlFor="email"
-          className="mb-1 block text-[10px] font-bold uppercase tracking-[0.22em] text-[#0B1D3A]/70"
+          className="mb-1 block text-[10px] font-bold uppercase tracking-[0.22em] text-[#1C1917]/70"
         >
           Email
         </label>
@@ -189,9 +189,9 @@ export function SeoGraderForm() {
       <div>
         <label
           htmlFor="phone"
-          className="mb-1 block text-[10px] font-bold uppercase tracking-[0.22em] text-[#0B1D3A]/70"
+          className="mb-1 block text-[10px] font-bold uppercase tracking-[0.22em] text-[#1C1917]/70"
         >
-          Phone <span className="font-normal normal-case tracking-normal text-[#0B1D3A]/50">(optional)</span>
+          Phone <span className="font-normal normal-case tracking-normal text-[#1C1917]/50">(optional)</span>
         </label>
         <input
           type="tel"
@@ -207,7 +207,7 @@ export function SeoGraderForm() {
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-sm border-2 border-[#D4AF37] bg-[#D4AF37] px-6 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-[#0B1D3A] shadow-[0_8px_24px_rgba(212,175,55,0.35)] transition-all hover:bg-[#E8C96A] disabled:cursor-not-allowed disabled:opacity-70"
+        className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-sm border-2 border-[#EA580C] bg-[#EA580C] px-6 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-[#1C1917] shadow-[0_8px_24px_rgba(234,88,12,0.35)] transition-all hover:bg-[#FB923C] disabled:cursor-not-allowed disabled:opacity-70"
       >
         {status === "submitting" ? "Running audit..." : "Run My Free Audit"}
         {status !== "submitting" && <ArrowRight className="h-4 w-4" />}
@@ -222,7 +222,7 @@ export function SeoGraderForm() {
         </p>
       )}
 
-      <p className="text-center text-[10px] text-[#0B1D3A]/50">
+      <p className="text-center text-[10px] text-[#1C1917]/50">
         We never share your info. Unsubscribe anytime.
       </p>
     </form>

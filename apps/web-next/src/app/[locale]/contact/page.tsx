@@ -76,10 +76,10 @@ export default function ContactPage() {
       <section className="section-cream">
         <div className="max-w-[1200px] mx-auto px-6 sm:px-8 pt-10 pb-12 text-center">
           <p className="eyebrow">Talk to a Real Team</p>
-          <h1 className="mt-3 h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B1D3A]">
+          <h1 className="mt-3 h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917]">
             Contact Adaptation Living — Uptown Phoenix, AZ.
           </h1>
-          <p className="mt-4 text-base sm:text-lg text-[#4A5568] max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-4 text-base sm:text-lg text-[#57534E] max-w-2xl mx-auto leading-relaxed">
             A senior team member responds personally — typically within hours.
             No chatbots. No intake funnels. No ticket queues. We start with a
             real conversation about what you're building.
@@ -108,16 +108,16 @@ export default function ContactPage() {
               ].map((item) => (
                 <div
                   key={item.label}
-                  className="flex items-start gap-4 rounded-[20px] border border-[#0B1D3A]/10 bg-white p-6 shadow-soft"
+                  className="flex items-start gap-4 rounded-[20px] border border-[#1C1917]/10 bg-white p-6 shadow-soft"
                 >
                   <item.icon className="text-accent w-6 h-6 mt-1 shrink-0" />
                   <div>
-                    <h2 className="font-display text-lg font-bold text-[#0B1D3A]">
+                    <h2 className="font-display text-lg font-bold text-[#1C1917]">
                       {item.label}
                     </h2>
                     <a
                       href={item.href}
-                      className="text-lg text-[#0B1D3A] hover:text-accent transition-all"
+                      className="text-lg text-[#1C1917] hover:text-accent transition-all"
                     >
                       {item.value}
                     </a>
@@ -125,13 +125,13 @@ export default function ContactPage() {
                 </div>
               ))}
 
-              <div className="flex items-start gap-4 rounded-[20px] border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+              <div className="flex items-start gap-4 rounded-[20px] border border-[#1C1917]/10 bg-white p-6 shadow-soft">
                 <MapPin className="text-accent w-6 h-6 mt-1 shrink-0" />
                 <div>
-                  <h2 className="font-display text-lg font-bold text-[#0B1D3A]">
+                  <h2 className="font-display text-lg font-bold text-[#1C1917]">
                     Office
                   </h2>
-                  <p className="text-[#4A5568]">
+                  <p className="text-[#57534E]">
                     3030 N Central Ave · Suite 507
                     <br />
                     Phoenix, AZ 85012
@@ -141,13 +141,13 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 rounded-[20px] border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+              <div className="flex items-start gap-4 rounded-[20px] border border-[#1C1917]/10 bg-white p-6 shadow-soft">
                 <Clock className="text-accent w-6 h-6 mt-1 shrink-0" />
                 <div>
-                  <h2 className="font-display text-lg font-bold text-[#0B1D3A]">
+                  <h2 className="font-display text-lg font-bold text-[#1C1917]">
                     Hours
                   </h2>
-                  <p className="text-[#4A5568]">
+                  <p className="text-[#57534E]">
                     Monday–Friday · 8:00 AM – 6:00 PM MST
                     <br />
                     Emergency support available for active clients.
@@ -158,10 +158,10 @@ export default function ContactPage() {
               <div className="flex items-start gap-4 rounded-[20px] border border-accent/30 bg-accent/10 p-6">
                 <ShieldCheck className="text-accent w-6 h-6 mt-1 shrink-0" />
                 <div>
-                  <h2 className="font-display text-lg font-bold text-[#0B1D3A]">
+                  <h2 className="font-display text-lg font-bold text-[#1C1917]">
                     Government Clients
                   </h2>
-                  <p className="text-sm text-[#4A5568]">
+                  <p className="text-sm text-[#57534E]">
                     Adaptation Living LLC is SAM.gov registered.
                     <br />
                     CAGE 95WK4 · UEI J3XGTRT7DYU5
@@ -177,15 +177,15 @@ export default function ContactPage() {
                 <CalendarCheck className="text-accent w-6 h-6" />
                 <p className="eyebrow">Book a Call</p>
               </div>
-              <h2 className="h-display text-2xl sm:text-3xl font-bold text-[#0B1D3A]">
+              <h2 className="h-display text-2xl sm:text-3xl font-bold text-[#1C1917]">
                 Book a Discovery Call
               </h2>
-              <p className="mt-3 text-[#4A5568]">
+              <p className="mt-3 text-[#57534E]">
                 Pick a time that works. 30 minutes. No obligation. No sales
                 pressure — just a working conversation about your business.
               </p>
               {calendarId ? (
-                <div className="mt-5 rounded-[20px] border border-[#0B1D3A]/10 bg-white shadow-lift p-4">
+                <div className="mt-5 rounded-[20px] border border-[#1C1917]/10 bg-white shadow-lift p-4">
                   <GhlEmbed
                     calendarId={calendarId}
                     height="520px"
@@ -193,8 +193,8 @@ export default function ContactPage() {
                   />
                 </div>
               ) : (
-                <div className="mt-5 rounded-[20px] border border-[#0B1D3A]/10 bg-white shadow-soft p-8 text-center">
-                  <p className="text-[#4A5568] mb-4">
+                <div className="mt-5 rounded-[20px] border border-[#1C1917]/10 bg-white shadow-soft p-8 text-center">
+                  <p className="text-[#57534E] mb-4">
                     Calendar booking is being configured in GHL. Call or email
                     us directly and we'll schedule the same day.
                   </p>
@@ -213,9 +213,9 @@ export default function ContactPage() {
       </section>
 
       {/* OFFICE PHOTO */}
-      <section className="section-cream border-t border-[#0B1D3A]/10 pb-16 pt-16">
+      <section className="section-cream border-t border-[#1C1917]/10 pb-16 pt-16">
         <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
-          <div className="relative aspect-[16/9] overflow-hidden rounded-[24px] border border-[#0B1D3A]/10 shadow-lift">
+          <div className="relative aspect-[16/9] overflow-hidden rounded-[24px] border border-[#1C1917]/10 shadow-lift">
             <Image
               src="/images/al-hq-daytime.webp"
               alt="Adaptation Living LLC headquarters — Bank of America Tower, 3030 N Central Ave Suite 507, Phoenix AZ"
@@ -225,7 +225,7 @@ export default function ContactPage() {
               priority
             />
           </div>
-          <p className="mt-4 text-center text-sm text-[#4A5568]">
+          <p className="mt-4 text-center text-sm text-[#57534E]">
             3030 N Central Ave · Suite 507 · Phoenix, AZ 85012 · Bank of
             America Tower
           </p>
@@ -244,19 +244,19 @@ export default function ContactPage() {
               className="w-full h-auto"
             />
           </a>
-          <p className="mt-3 text-center text-sm text-[#4A5568]">
+          <p className="mt-3 text-center text-sm text-[#57534E]">
             Follow us on LinkedIn
           </p>
         </div>
       </section>
 
       {/* NOT READY */}
-      <section className="section-cream border-t border-[#0B1D3A]/10 py-16">
+      <section className="section-cream border-t border-[#1C1917]/10 py-16">
         <div className="max-w-[1200px] mx-auto px-6 sm:px-8 text-center">
-          <h2 className="h-display text-2xl sm:text-3xl font-bold text-[#0B1D3A]">
+          <h2 className="h-display text-2xl sm:text-3xl font-bold text-[#1C1917]">
             Not ready to call?
           </h2>
-          <p className="mt-3 text-[#4A5568] max-w-xl mx-auto">
+          <p className="mt-3 text-[#57534E] max-w-xl mx-auto">
             Explore Adaptation OS features, plans, and the AI workforce before
             reaching out.
           </p>
@@ -264,11 +264,11 @@ export default function ContactPage() {
             <a href="/services" className="text-accent hover:underline">
               Pricing &amp; Plans
             </a>
-            <span className="text-[#0B1D3A]/30">·</span>
+            <span className="text-[#1C1917]/30">·</span>
             <a href="/ai" className="text-accent hover:underline">
               AI Agents
             </a>
-            <span className="text-[#0B1D3A]/30">·</span>
+            <span className="text-[#1C1917]/30">·</span>
             <a href="/#platform" className="text-accent hover:underline">
               Platform Features
             </a>

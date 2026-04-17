@@ -134,12 +134,12 @@ export default function AIPage() {
           </div>
           <h1 className="h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-[1.08]">
             AI Phone Receptionist, Chat Agents &amp;{" "}
-            <span className="bg-gradient-to-r from-accent via-[#E8C96A] to-accent bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent via-[#FB923C] to-accent bg-clip-text text-transparent">
               Workflow Automation
             </span>{" "}
             for Phoenix Businesses.
           </h1>
-          <p className="mt-5 text-[#B8C4D4] text-base sm:text-lg max-w-3xl leading-relaxed">
+          <p className="mt-5 text-[#A8A29E] text-base sm:text-lg max-w-3xl leading-relaxed">
             Every Adaptation OS plan ships with a full AI workforce. A 24/7 AI
             Voice Agent answers your phone. An AI Chat Agent replies on your
             website, Instagram, Facebook, WhatsApp, and text. AI automations
@@ -160,7 +160,7 @@ export default function AIPage() {
                   {stat.label}
                 </p>
                 <p className="font-display text-2xl font-bold text-white">{stat.value}</p>
-                <p className="text-sm text-[#B8C4D4] mt-2">{stat.detail}</p>
+                <p className="text-sm text-[#A8A29E] mt-2">{stat.detail}</p>
               </div>
             ))}
           </div>
@@ -187,7 +187,7 @@ export default function AIPage() {
         <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
           <div className="mb-12 max-w-3xl">
             <p className="eyebrow">See The Difference</p>
-            <h2 className="mt-3 h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+            <h2 className="mt-3 h-display text-3xl sm:text-4xl font-bold text-[#1C1917]">
               It's 2:47 AM. Someone Just Called Your Business.
             </h2>
           </div>
@@ -205,7 +205,7 @@ export default function AIPage() {
                   "You wake up. Check your phone. Nothing.",
                   "You never knew they called.",
                 ].map((step, i) => (
-                  <div key={i} className="flex items-start gap-3 text-[#4A5568]">
+                  <div key={i} className="flex items-start gap-3 text-[#57534E]">
                     <span className="text-red-500 font-bold shrink-0">✕</span>
                     <p className="text-sm leading-relaxed">{step}</p>
                   </div>
@@ -236,7 +236,7 @@ export default function AIPage() {
                 ].map((step, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <CheckCircle2 className="text-accent w-4 h-4 mt-0.5 shrink-0" />
-                    <p className="text-sm leading-relaxed text-[#0B1D3A]">{step}</p>
+                    <p className="text-sm leading-relaxed text-[#1C1917]">{step}</p>
                   </div>
                 ))}
               </div>
@@ -251,17 +251,17 @@ export default function AIPage() {
       </section>
 
       {/* ═══════════ AI PHONE ═══════════ */}
-      <section id="phone" className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+      <section id="phone" className="section-cream border-t border-[#1C1917]/10 py-20 sm:py-24">
         <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
           <div className="max-w-3xl mb-8">
             <div className="flex items-center gap-3 mb-3">
               <Mic className="text-accent w-7 h-7" />
               <p className="eyebrow">Your 24/7 Front Desk</p>
             </div>
-            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#1C1917]">
               AI Phone Receptionist — Answers Every Call, Captures Every Lead.
             </h2>
-            <p className="mt-4 text-[#4A5568] text-base leading-relaxed">
+            <p className="mt-4 text-[#57534E] text-base leading-relaxed">
               A conversational AI answers your business phone in your brand
               voice — not a voicemail, not a phone menu. It greets callers,
               answers questions from your knowledge base, captures contact
@@ -272,7 +272,7 @@ export default function AIPage() {
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="font-display text-lg font-bold text-[#0B1D3A] mb-4">What It Does</h3>
+              <h3 className="font-display text-lg font-bold text-[#1C1917] mb-4">What It Does</h3>
               <ul className="space-y-3">
                 {[
                   "Answers inbound calls 24/7/365 with natural conversation",
@@ -287,7 +287,7 @@ export default function AIPage() {
                   "Transfers to a human when a caller asks for a person",
                   "Outbound calling available on higher tiers",
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-[#4A5568] text-sm leading-relaxed">
+                  <li key={item} className="flex items-start gap-2 text-[#57534E] text-sm leading-relaxed">
                     <CheckCircle2 className="text-accent w-4 h-4 mt-0.5 shrink-0" />
                     {item}
                   </li>
@@ -299,22 +299,22 @@ export default function AIPage() {
                 <p className="text-[10px] uppercase tracking-[0.26em] text-accent font-bold mb-2">
                   Included In Every Plan
                 </p>
-                <p className="text-[#0B1D3A] font-semibold text-base">
+                <p className="text-[#1C1917] font-semibold text-base">
                   Starter · Growth · Scale — Setup or DIY
                 </p>
-                <p className="mt-2 text-sm text-[#4A5568]">
+                <p className="mt-2 text-sm text-[#57534E]">
                   Zero per-call fees from us. Standard carrier minutes only
                   (fractions of a penny, billed at cost).
                 </p>
               </div>
-              <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
-                <p className="text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/60 font-bold mb-2">
+              <div className="rounded-2xl border border-[#1C1917]/10 bg-white p-6 shadow-soft">
+                <p className="text-[10px] uppercase tracking-[0.26em] text-[#1C1917]/60 font-bold mb-2">
                   What Others Charge
                 </p>
-                <p className="text-sm text-[#4A5568]">
+                <p className="text-sm text-[#57534E]">
                   Human answering services: $200–$500/mo (limited hours).
                 </p>
-                <p className="text-sm text-[#4A5568]">
+                <p className="text-sm text-[#57534E]">
                   AI agencies: $10,000+ setup + $500/mo.
                 </p>
                 <p className="text-accent text-sm font-semibold mt-2">
@@ -327,17 +327,17 @@ export default function AIPage() {
       </section>
 
       {/* ═══════════ AI CHAT ═══════════ */}
-      <section id="chat" className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+      <section id="chat" className="section-cream border-t border-[#1C1917]/10 py-20 sm:py-24">
         <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
           <div className="max-w-3xl mb-8">
             <div className="flex items-center gap-3 mb-3">
               <MessageSquare className="text-accent w-7 h-7" />
               <p className="eyebrow">Instant Response, Every Channel</p>
             </div>
-            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#1C1917]">
               AI Chat Agent — Answers Web, SMS, Instagram, Facebook &amp; WhatsApp.
             </h2>
-            <p className="mt-4 text-[#4A5568] text-base leading-relaxed">
+            <p className="mt-4 text-[#57534E] text-base leading-relaxed">
               See the chat bubble in the corner of this site? That's our AI
               running live. We install the same system on your website, your
               Facebook page, Instagram DMs, Google Business Profile messages,
@@ -347,7 +347,7 @@ export default function AIPage() {
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="font-display text-lg font-bold text-[#0B1D3A] mb-4">What It Does</h3>
+              <h3 className="font-display text-lg font-bold text-[#1C1917] mb-4">What It Does</h3>
               <ul className="space-y-3">
                 {[
                   "Website chat widget — instant replies to every visitor",
@@ -363,7 +363,7 @@ export default function AIPage() {
                   "Autopilot or suggestive (human-approval) mode",
                   "Multi-language support",
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-[#4A5568] text-sm leading-relaxed">
+                  <li key={item} className="flex items-start gap-2 text-[#57534E] text-sm leading-relaxed">
                     <CheckCircle2 className="text-accent w-4 h-4 mt-0.5 shrink-0" />
                     {item}
                   </li>
@@ -375,13 +375,13 @@ export default function AIPage() {
                 <p className="text-[10px] uppercase tracking-[0.26em] text-accent font-bold mb-2">
                   Included In Every Plan
                 </p>
-                <p className="text-[#0B1D3A] font-semibold text-base">
+                <p className="text-[#1C1917] font-semibold text-base">
                   Starter · Growth · Scale
                 </p>
               </div>
-              <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
-                <p className="text-sm text-[#4A5568]">
-                  <strong className="text-[#0B1D3A]">Try it right now.</strong>{" "}
+              <div className="rounded-2xl border border-[#1C1917]/10 bg-white p-6 shadow-soft">
+                <p className="text-sm text-[#57534E]">
+                  <strong className="text-[#1C1917]">Try it right now.</strong>{" "}
                   Click the chat bubble on this page. Ask it anything. That's
                   exactly what your customers will experience on your site.
                 </p>
@@ -392,17 +392,17 @@ export default function AIPage() {
       </section>
 
       {/* ═══════════ AUTOMATED FOLLOW-UP ═══════════ */}
-      <section id="follow-up" className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+      <section id="follow-up" className="section-cream border-t border-[#1C1917]/10 py-20 sm:py-24">
         <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
           <div className="max-w-3xl mb-8">
             <div className="flex items-center gap-3 mb-3">
               <Workflow className="text-accent w-7 h-7" />
               <p className="eyebrow">Your Business Runs Itself</p>
             </div>
-            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#1C1917]">
               Automated Follow-Up &amp; Workflow Engine.
             </h2>
-            <p className="mt-4 text-[#4A5568] text-base leading-relaxed">
+            <p className="mt-4 text-[#57534E] text-base leading-relaxed">
               The moment a lead enters your pipeline — call, chat, form, or
               text — the AI takes action. Welcome text. Confirmation email.
               Reminder. Pipeline routing. If they don't respond, it follows up
@@ -424,7 +424,7 @@ export default function AIPage() {
                 "Summarizes long conversations into action items",
                 "Describe what you want in plain English — Workflow AI builds it",
               ].map((item) => (
-                <li key={item} className="flex items-start gap-2 text-[#4A5568] text-sm leading-relaxed">
+                <li key={item} className="flex items-start gap-2 text-[#57534E] text-sm leading-relaxed">
                   <CheckCircle2 className="text-accent w-4 h-4 mt-0.5 shrink-0" />
                   {item}
                 </li>
@@ -435,15 +435,15 @@ export default function AIPage() {
                 <p className="text-[10px] uppercase tracking-[0.26em] text-accent font-bold mb-2">
                   Included In Every Plan
                 </p>
-                <p className="text-[#0B1D3A] font-semibold text-sm">
+                <p className="text-[#1C1917] font-semibold text-sm">
                   Visual workflow builder + all standard triggers and actions.
                 </p>
-                <p className="text-[#0B1D3A] font-semibold text-sm mt-2">
+                <p className="text-[#1C1917] font-semibold text-sm mt-2">
                   Premium AI actions (conditional branching, AI-driven routing): $0.01 per execution.
                 </p>
               </div>
-              <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
-                <p className="text-sm text-[#4A5568]">
+              <div className="rounded-2xl border border-[#1C1917]/10 bg-white p-6 shadow-soft">
+                <p className="text-sm text-[#57534E]">
                   100 automated follow-ups a day at $0.01 each = $1.00/day.
                   Your entire follow-up engine for the price of a coffee a month.
                 </p>
@@ -454,17 +454,17 @@ export default function AIPage() {
       </section>
 
       {/* ═══════════ REVIEW MANAGEMENT ═══════════ */}
-      <section id="reviews" className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+      <section id="reviews" className="section-cream border-t border-[#1C1917]/10 py-20 sm:py-24">
         <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
           <div className="max-w-3xl mb-8">
             <div className="flex items-center gap-3 mb-3">
               <Star className="text-accent w-7 h-7" />
               <p className="eyebrow">Reputation on Autopilot</p>
             </div>
-            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#1C1917]">
               AI Review Management — Every Google &amp; Facebook Review, Answered.
             </h2>
-            <p className="mt-4 text-[#4A5568] text-base leading-relaxed">
+            <p className="mt-4 text-[#57534E] text-base leading-relaxed">
               Your online reviews are the first thing potential customers
               check. Unanswered reviews signal a business that doesn't care.
               Our AI monitors every review on Google and Facebook. When a new
@@ -474,30 +474,30 @@ export default function AIPage() {
             </p>
           </div>
           <div className="grid sm:grid-cols-3 gap-5">
-            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+            <div className="rounded-2xl border border-[#1C1917]/10 bg-white p-6 shadow-soft">
               <p className="font-display text-3xl font-bold text-accent">$0.01</p>
-              <p className="mt-2 text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/60 font-bold">
+              <p className="mt-2 text-[10px] uppercase tracking-[0.26em] text-[#1C1917]/60 font-bold">
                 Per AI response
               </p>
-              <p className="mt-2 text-sm text-[#4A5568]">
+              <p className="mt-2 text-sm text-[#57534E]">
                 100 reviews a month costs a dollar.
               </p>
             </div>
-            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+            <div className="rounded-2xl border border-[#1C1917]/10 bg-white p-6 shadow-soft">
               <p className="font-display text-xl font-bold text-accent">Auto-Request</p>
-              <p className="mt-2 text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/60 font-bold">
+              <p className="mt-2 text-[10px] uppercase tracking-[0.26em] text-[#1C1917]/60 font-bold">
                 Review campaigns
               </p>
-              <p className="mt-2 text-sm text-[#4A5568]">
+              <p className="mt-2 text-sm text-[#57534E]">
                 Sends review requests to happy customers at exactly the right moment post-service.
               </p>
             </div>
-            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+            <div className="rounded-2xl border border-[#1C1917]/10 bg-white p-6 shadow-soft">
               <p className="font-display text-xl font-bold text-accent">Instant Alerts</p>
-              <p className="mt-2 text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/60 font-bold">
+              <p className="mt-2 text-[10px] uppercase tracking-[0.26em] text-[#1C1917]/60 font-bold">
                 Negative review flags
               </p>
-              <p className="mt-2 text-sm text-[#4A5568]">
+              <p className="mt-2 text-sm text-[#57534E]">
                 Negative review? You're notified on your phone immediately so you can step in.
               </p>
             </div>
@@ -506,17 +506,17 @@ export default function AIPage() {
       </section>
 
       {/* ═══════════ CONTENT AI ═══════════ */}
-      <section id="content" className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+      <section id="content" className="section-cream border-t border-[#1C1917]/10 py-20 sm:py-24">
         <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
           <div className="max-w-3xl mb-8">
             <div className="flex items-center gap-3 mb-3">
               <Sparkles className="text-accent w-7 h-7" />
               <p className="eyebrow">Content That Writes Itself</p>
             </div>
-            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#1C1917]">
               Content AI — Blogs, Social, Ads, Emails, Landing Pages.
             </h2>
-            <p className="mt-4 text-[#4A5568] text-base leading-relaxed">
+            <p className="mt-4 text-[#57534E] text-base leading-relaxed">
               Blog posts, social captions, email campaigns, SMS copy, ad text,
               website pages — generated in your brand voice in seconds. Need a
               custom image for a social post? Six cents. Need 1,000 words of
@@ -531,12 +531,12 @@ export default function AIPage() {
               { value: "FREE", unit: "AI page builder", label: "Landing Pages" },
               { value: "1,000/day", unit: "AI prompts", label: "Daily Allowance" },
             ].map((item) => (
-              <div key={item.label} className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 text-center shadow-soft">
+              <div key={item.label} className="rounded-2xl border border-[#1C1917]/10 bg-white p-6 text-center shadow-soft">
                 <p className="text-[10px] uppercase tracking-[0.26em] text-accent font-bold mb-2">
                   {item.label}
                 </p>
-                <p className="font-display text-2xl font-bold text-[#0B1D3A]">{item.value}</p>
-                <p className="mt-1 text-sm text-[#4A5568]">{item.unit}</p>
+                <p className="font-display text-2xl font-bold text-[#1C1917]">{item.value}</p>
+                <p className="mt-1 text-sm text-[#57534E]">{item.unit}</p>
               </div>
             ))}
           </div>
@@ -544,17 +544,17 @@ export default function AIPage() {
       </section>
 
       {/* ═══════════ CUSTOM AI AGENTS ═══════════ */}
-      <section id="agents" className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+      <section id="agents" className="section-cream border-t border-[#1C1917]/10 py-20 sm:py-24">
         <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
           <div className="max-w-3xl mb-8">
             <div className="flex items-center gap-3 mb-3">
               <Users className="text-accent w-7 h-7" />
               <p className="eyebrow">AI Employees Built for You</p>
             </div>
-            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#1C1917]">
               Custom AI Agents for Specialized Roles.
             </h2>
-            <p className="mt-4 text-[#4A5568] text-base leading-relaxed">
+            <p className="mt-4 text-[#57534E] text-base leading-relaxed">
               For operators who need more than a receptionist and a chat
               agent, we build custom AI employees trained on your specific
               processes: lead qualification, intake, scheduling, customer
@@ -564,21 +564,21 @@ export default function AIPage() {
             </p>
           </div>
           <div className="grid sm:grid-cols-3 gap-5">
-            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+            <div className="rounded-2xl border border-[#1C1917]/10 bg-white p-6 shadow-soft">
               <p className="font-display text-lg font-bold text-accent mb-2">Video</p>
-              <p className="text-sm text-[#4A5568]">
+              <p className="text-sm text-[#57534E]">
                 $0.15–$0.40 per second of AI-generated video
               </p>
             </div>
-            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+            <div className="rounded-2xl border border-[#1C1917]/10 bg-white p-6 shadow-soft">
               <p className="font-display text-lg font-bold text-accent mb-2">Images</p>
-              <p className="text-sm text-[#4A5568]">
+              <p className="text-sm text-[#57534E]">
                 $0.04–$0.12 per AI-generated image (multiple quality tiers)
               </p>
             </div>
-            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+            <div className="rounded-2xl border border-[#1C1917]/10 bg-white p-6 shadow-soft">
               <p className="font-display text-lg font-bold text-accent mb-2">Real-Time Research</p>
-              <p className="text-sm text-[#4A5568]">
+              <p className="text-sm text-[#57534E]">
                 $0.01 per web search — agents research in real time
               </p>
             </div>
@@ -587,7 +587,7 @@ export default function AIPage() {
             <p className="text-[10px] uppercase tracking-[0.26em] text-accent font-bold mb-2">
               Custom Build Engagement
             </p>
-            <p className="text-[#0B1D3A] font-semibold text-sm">
+            <p className="text-[#1C1917] font-semibold text-sm">
               Scale Setup ($5,000 + $694.90/mo) or a custom scoped engagement.
               Book a call and we'll map your workflows.
             </p>
@@ -596,20 +596,20 @@ export default function AIPage() {
       </section>
 
       {/* ═══════════ HOW BILLING WORKS ═══════════ */}
-      <section className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+      <section className="section-cream border-t border-[#1C1917]/10 py-20 sm:py-24">
         <div className="max-w-[1000px] mx-auto px-6 sm:px-8">
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-3">
               <CreditCard className="text-accent w-6 h-6" />
               <p className="eyebrow">No Surprises</p>
             </div>
-            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#1C1917]">
               How Billing Works.
             </h2>
           </div>
-          <div className="space-y-4 text-[#4A5568] text-sm leading-relaxed">
+          <div className="space-y-4 text-[#57534E] text-sm leading-relaxed">
             <p>
-              <strong className="text-[#0B1D3A]">One monthly price. Everything included.</strong>{" "}
+              <strong className="text-[#1C1917]">One monthly price. Everything included.</strong>{" "}
               Your plan covers every AI feature — phone receptionist, chat
               agent, automated follow-up, review management, content
               generation, workflow automation — all of it. You pay one flat
@@ -628,27 +628,27 @@ export default function AIPage() {
             </p>
           </div>
           <div className="mt-8 grid sm:grid-cols-3 gap-5">
-            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 text-center shadow-soft">
-              <p className="font-display text-base font-bold text-[#0B1D3A] mb-2">
+            <div className="rounded-2xl border border-[#1C1917]/10 bg-white p-6 text-center shadow-soft">
+              <p className="font-display text-base font-bold text-[#1C1917] mb-2">
                 Monthly Fee
               </p>
-              <p className="text-sm text-[#4A5568]">
+              <p className="text-sm text-[#57534E]">
                 Flat rate. All AI features. No usage cap for normal business use.
               </p>
             </div>
-            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 text-center shadow-soft">
-              <p className="font-display text-base font-bold text-[#0B1D3A] mb-2">
+            <div className="rounded-2xl border border-[#1C1917]/10 bg-white p-6 text-center shadow-soft">
+              <p className="font-display text-base font-bold text-[#1C1917] mb-2">
                 Phone Carrier
               </p>
-              <p className="text-sm text-[#4A5568]">
+              <p className="text-sm text-[#57534E]">
                 Per-minute charges passed through at cost. Fractions of a cent.
               </p>
             </div>
-            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 text-center shadow-soft">
-              <p className="font-display text-base font-bold text-[#0B1D3A] mb-2">
+            <div className="rounded-2xl border border-[#1C1917]/10 bg-white p-6 text-center shadow-soft">
+              <p className="font-display text-base font-bold text-[#1C1917] mb-2">
                 No Surprises
               </p>
-              <p className="text-sm text-[#4A5568]">
+              <p className="text-sm text-[#57534E]">
                 No overages. No hidden fees. One relationship. One bill.
               </p>
             </div>
@@ -657,21 +657,21 @@ export default function AIPage() {
       </section>
 
       {/* ═══════════ COST COMPARISON ═══════════ */}
-      <section className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+      <section className="section-cream border-t border-[#1C1917]/10 py-20 sm:py-24">
         <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
           <div className="max-w-3xl mb-10">
             <p className="eyebrow">The Real Numbers</p>
-            <h2 className="mt-3 h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+            <h2 className="mt-3 h-display text-3xl sm:text-4xl font-bold text-[#1C1917]">
               DIY vs. Agency vs. Adaptation Living.
             </h2>
           </div>
-          <div className="overflow-x-auto rounded-[20px] border border-[#0B1D3A]/10 bg-white shadow-soft">
+          <div className="overflow-x-auto rounded-[20px] border border-[#1C1917]/10 bg-white shadow-soft">
             <table className="w-full text-left">
               <thead>
-                <tr className="border-b border-[#0B1D3A]/10 bg-[#0B1D3A]/[0.02]">
-                  <th className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/70 font-bold">Feature</th>
-                  <th className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/50 font-bold">DIY / Traditional</th>
-                  <th className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/50 font-bold">Agency</th>
+                <tr className="border-b border-[#1C1917]/10 bg-[#1C1917]/[0.02]">
+                  <th className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-[#1C1917]/70 font-bold">Feature</th>
+                  <th className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-[#1C1917]/50 font-bold">DIY / Traditional</th>
+                  <th className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-[#1C1917]/50 font-bold">Agency</th>
                   <th className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-accent font-bold">Adaptation OS</th>
                 </tr>
               </thead>
@@ -686,63 +686,63 @@ export default function AIPage() {
                   { f: "Custom Website", t: "$3,000–$10,000 (template)", a: "$10,000–$20,000", u: "Included" },
                   { f: "SEO Optimization", t: "$2,000–$5,000/mo", a: "$2,000–$5,000/mo", u: "Included every tier" },
                 ].map((row) => (
-                  <tr key={row.f} className="border-b border-[#0B1D3A]/5 last:border-0">
-                    <td className="py-3 px-5 text-[#0B1D3A] text-sm font-semibold">{row.f}</td>
-                    <td className="py-3 px-5 text-[#4A5568] text-sm">{row.t}</td>
-                    <td className="py-3 px-5 text-[#4A5568] text-sm">{row.a}</td>
+                  <tr key={row.f} className="border-b border-[#1C1917]/5 last:border-0">
+                    <td className="py-3 px-5 text-[#1C1917] text-sm font-semibold">{row.f}</td>
+                    <td className="py-3 px-5 text-[#57534E] text-sm">{row.t}</td>
+                    <td className="py-3 px-5 text-[#57534E] text-sm">{row.a}</td>
                     <td className="py-3 px-5 text-accent font-semibold text-sm">{row.u}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-[#4A5568] text-sm mt-6 max-w-3xl">
+          <p className="text-[#57534E] text-sm mt-6 max-w-3xl">
             Add it up. The same stack agencies sell for $30,000–$50,000 in
             setup and $3,000–$8,000/mo ongoing — we deliver from{" "}
-            <strong className="text-[#0B1D3A]">$349.90/mo self-serve</strong> or{" "}
-            <strong className="text-[#0B1D3A]">$194.90/mo with setup ($1,500)</strong>.
+            <strong className="text-[#1C1917]">$349.90/mo self-serve</strong> or{" "}
+            <strong className="text-[#1C1917]">$194.90/mo with setup ($1,500)</strong>.
             Same features. Better technology. A fraction of the cost.
           </p>
         </div>
       </section>
 
       {/* ═══════════ DEDICATED NUMBER ═══════════ */}
-      <section className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+      <section className="section-cream border-t border-[#1C1917]/10 py-20 sm:py-24">
         <div className="max-w-[1200px] mx-auto px-6 sm:px-8 text-center">
           <Phone className="text-accent w-10 h-10 mx-auto mb-5" />
-          <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+          <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#1C1917]">
             One Business Number. Everything Connected.
           </h2>
-          <p className="mt-4 text-[#4A5568] text-base max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-4 text-[#57534E] text-base max-w-2xl mx-auto leading-relaxed">
             We set you up with a dedicated business phone number. Put it on
             your website, signs, business cards, and social. When someone
             calls, AI answers. When they text, AI responds. When they book, it
             hits your calendar. One number. One system.
           </p>
           <div className="mt-10 grid sm:grid-cols-3 gap-5 max-w-3xl mx-auto">
-            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+            <div className="rounded-2xl border border-[#1C1917]/10 bg-white p-6 shadow-soft">
               <Shield className="text-accent w-8 h-8 mx-auto mb-3" />
-              <p className="font-display font-bold text-[#0B1D3A]">Your Number</p>
-              <p className="mt-2 text-sm text-[#4A5568]">
+              <p className="font-display font-bold text-[#1C1917]">Your Number</p>
+              <p className="mt-2 text-sm text-[#57534E]">
                 Dedicated line, separate from personal.
               </p>
             </div>
-            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+            <div className="rounded-2xl border border-[#1C1917]/10 bg-white p-6 shadow-soft">
               <Clock className="text-accent w-8 h-8 mx-auto mb-3" />
-              <p className="font-display font-bold text-[#0B1D3A]">Always On</p>
-              <p className="mt-2 text-sm text-[#4A5568]">
+              <p className="font-display font-bold text-[#1C1917]">Always On</p>
+              <p className="mt-2 text-sm text-[#57534E]">
                 AI answers 24/7/365.
               </p>
             </div>
-            <div className="rounded-2xl border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+            <div className="rounded-2xl border border-[#1C1917]/10 bg-white p-6 shadow-soft">
               <PieChart className="text-accent w-8 h-8 mx-auto mb-3" />
-              <p className="font-display font-bold text-[#0B1D3A]">Full Tracking</p>
-              <p className="mt-2 text-sm text-[#4A5568]">
+              <p className="font-display font-bold text-[#1C1917]">Full Tracking</p>
+              <p className="mt-2 text-sm text-[#57534E]">
                 Every interaction in your dashboard.
               </p>
             </div>
           </div>
-          <p className="mt-8 text-[#4A5568] text-sm max-w-xl mx-auto">
+          <p className="mt-8 text-[#57534E] text-sm max-w-xl mx-auto">
             Any app with an API or Zapier integration connects. Your business
             runs on one platform, not fifteen.
           </p>
@@ -750,22 +750,22 @@ export default function AIPage() {
       </section>
 
       {/* ═══════════ FAQ ═══════════ */}
-      <section className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+      <section className="section-cream border-t border-[#1C1917]/10 py-20 sm:py-24">
         <div className="max-w-[900px] mx-auto px-6 sm:px-8">
           <div className="text-center mb-10">
             <p className="eyebrow">AI Questions</p>
-            <h2 className="mt-3 h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+            <h2 className="mt-3 h-display text-3xl sm:text-4xl font-bold text-[#1C1917]">
               Common Questions About AI Systems.
             </h2>
           </div>
           <div>
             {faqs.map((item) => (
-              <details key={item.q} className="group border-b border-[#0B1D3A]/10 py-2">
-                <summary className="flex cursor-pointer select-none items-center justify-between py-4 text-base font-semibold text-[#0B1D3A] sm:text-lg">
+              <details key={item.q} className="group border-b border-[#1C1917]/10 py-2">
+                <summary className="flex cursor-pointer select-none items-center justify-between py-4 text-base font-semibold text-[#1C1917] sm:text-lg">
                   <span className="pr-6">{item.q}</span>
                   <span className="shrink-0 text-2xl text-accent transition-transform group-open:rotate-45">+</span>
                 </summary>
-                <p className="pb-5 pr-8 text-sm leading-relaxed text-[#4A5568] sm:text-base">
+                <p className="pb-5 pr-8 text-sm leading-relaxed text-[#57534E] sm:text-base">
                   {item.a}
                 </p>
               </details>
@@ -781,12 +781,12 @@ export default function AIPage() {
           <h2 className="mt-3 h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
             Ready to Put AI to Work for Your Business?
           </h2>
-          <p className="max-w-xl mx-auto mt-5 text-base text-[#B8C4D4] leading-relaxed">
+          <p className="max-w-xl mx-auto mt-5 text-base text-[#A8A29E] leading-relaxed">
             The chat bubble on this site is our AI. The form above captures
             your info into our pipeline. This isn't a concept — it's the
             product. And it's what we deploy for your business.
           </p>
-          <p className="max-w-xl mx-auto mt-3 text-sm text-[#8899AA]">
+          <p className="max-w-xl mx-auto mt-3 text-sm text-[#78716C]">
             Self-serve plans from $349.90/mo. Done-for-you setups from $1,500
             + $194.90/mo. Every tier includes the full AI suite.
           </p>

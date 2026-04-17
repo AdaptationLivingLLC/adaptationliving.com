@@ -249,12 +249,12 @@ export default function ServicesPage() {
       <section className="section-cream">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 pt-10 pb-12">
           <p className="eyebrow">Adaptation OS · Pricing &amp; Plans</p>
-          <h1 className="mt-3 h-display font-bold tracking-tight text-[#0B1D3A] text-[1.9rem] leading-[1.05] sm:text-[2.4rem] lg:text-[3rem] max-w-3xl">
+          <h1 className="mt-3 h-display font-bold tracking-tight text-[#1C1917] text-[1.9rem] leading-[1.05] sm:text-[2.4rem] lg:text-[3rem] max-w-3xl">
             Pricing Built <span className="text-accent">for Phoenix Businesses.</span>
           </h1>
-          <p className="mt-4 text-base leading-relaxed text-[#4A5568] max-w-2xl">
-            Done-For-You from <strong className="text-[#0B1D3A]">$1,500 + $194.90/mo</strong>, or
-            Self-Serve from <strong className="text-[#0B1D3A]">$349.90/mo</strong>. Every plan
+          <p className="mt-4 text-base leading-relaxed text-[#57534E] max-w-2xl">
+            Done-For-You from <strong className="text-[#1C1917]">$1,500 + $194.90/mo</strong>, or
+            Self-Serve from <strong className="text-[#1C1917]">$349.90/mo</strong>. Every plan
             unlocks the full Adaptation OS platform — AI agents, CRM, workflows,
             marketing, website, 70+ listings, and a branded mobile app.
           </p>
@@ -267,7 +267,7 @@ export default function ServicesPage() {
             </a>
             <a
               href="#self-serve"
-              className="inline-flex items-center gap-2 px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] border-2 border-[#0B1D3A]/80 text-[#0B1D3A] hover:bg-[#0B1D3A] hover:text-white transition-all rounded-sm"
+              className="inline-flex items-center gap-2 px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] border-2 border-[#1C1917]/80 text-[#1C1917] hover:bg-[#1C1917] hover:text-white transition-all rounded-sm"
             >
               Self-Serve Plans <ArrowRight className="w-4 h-4" />
             </a>
@@ -286,7 +286,7 @@ export default function ServicesPage() {
             <h2 className="h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
               We Build, Configure &amp; Launch It for You.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-[#B8C4D4] max-w-3xl sm:text-lg">
+            <p className="mt-4 text-base leading-relaxed text-[#A8A29E] max-w-3xl sm:text-lg">
               A veteran-owned team handles every piece of the setup — contact
               import, domain linking, AI agent training, workflow
               configuration, and team onboarding. Book a call, we onboard you,
@@ -316,16 +316,16 @@ export default function ServicesPage() {
                 <div className="my-5 border-b border-white/10 pb-5">
                   <p className="font-display text-4xl font-bold text-white">
                     {plan.setupFee}
-                    <span className="text-sm font-normal text-[#8899AA]"> setup</span>
+                    <span className="text-sm font-normal text-[#78716C]"> setup</span>
                   </p>
-                  <p className="mt-2 text-sm text-[#B8C4D4]">
+                  <p className="mt-2 text-sm text-[#A8A29E]">
                     + <span className="text-white font-semibold">{plan.monthly}</span>/mo after launch
                   </p>
                 </div>
 
                 <ul className="space-y-2 mb-5">
                   {[plan.users, plan.credits, plan.support].map((f) => (
-                    <li key={f} className="flex items-start gap-2 text-sm text-[#B8C4D4]">
+                    <li key={f} className="flex items-start gap-2 text-sm text-[#A8A29E]">
                       <CheckCircle2 className="text-accent w-4 h-4 mt-0.5 shrink-0" />
                       <span>{f}</span>
                     </li>
@@ -338,7 +338,7 @@ export default function ServicesPage() {
                   </p>
                   <ul className="space-y-1.5 mb-6">
                     {plan.includes.map((item) => (
-                      <li key={item} className="flex items-start gap-2 text-sm text-[#B8C4D4]">
+                      <li key={item} className="flex items-start gap-2 text-sm text-[#A8A29E]">
                         <CheckCircle2 className="text-accent/70 w-3.5 h-3.5 mt-0.5 shrink-0" />
                         <span>{item}</span>
                       </li>
@@ -360,7 +360,7 @@ export default function ServicesPage() {
             ))}
           </div>
 
-          <p className="mt-10 text-center text-sm text-[#8899AA]">
+          <p className="mt-10 text-center text-sm text-[#78716C]">
             Book a call → we onboard you → launch in 2–3 weeks. Month-to-month
             after setup. No long-term contracts.
           </p>
@@ -375,10 +375,10 @@ export default function ServicesPage() {
               <Zap className="text-accent w-6 h-6" />
               <p className="eyebrow">Self-Serve · Instant Access</p>
             </div>
-            <h2 className="h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B1D3A]">
+            <h2 className="h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917]">
               You Run the Platform. Log In the Same Day.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-[#4A5568] max-w-3xl sm:text-lg">
+            <p className="mt-4 text-base leading-relaxed text-[#57534E] max-w-3xl sm:text-lg">
               Buy now, access the dashboard in minutes. No setup fee, no
               long-term contract, cancel anytime. Every plan includes the full
               Adaptation OS platform.
@@ -392,7 +392,7 @@ export default function ServicesPage() {
                 className={`relative rounded-[22px] p-7 flex flex-col shadow-soft transition-all hover:-translate-y-1 hover:shadow-lift ${
                   plan.highlighted
                     ? "border-2 border-accent bg-white ring-2 ring-accent/30"
-                    : "border border-[#0B1D3A]/10 bg-white"
+                    : "border border-[#1C1917]/10 bg-white"
                 }`}
               >
                 {plan.highlighted && (
@@ -400,30 +400,30 @@ export default function ServicesPage() {
                     Most Popular
                   </span>
                 )}
-                <h3 className="font-display text-xl font-bold text-[#0B1D3A]">
+                <h3 className="font-display text-xl font-bold text-[#1C1917]">
                   {plan.name}
                 </h3>
 
-                <div className="my-4 border-b border-[#0B1D3A]/10 pb-4">
-                  <p className="font-display text-4xl font-bold text-[#0B1D3A]">
+                <div className="my-4 border-b border-[#1C1917]/10 pb-4">
+                  <p className="font-display text-4xl font-bold text-[#1C1917]">
                     {plan.price}
-                    <span className="text-sm font-normal text-[#0B1D3A]/50">/mo</span>
+                    <span className="text-sm font-normal text-[#1C1917]/50">/mo</span>
                   </p>
-                  <p className="mt-2 text-xs text-[#0B1D3A]/60">
+                  <p className="mt-2 text-xs text-[#1C1917]/60">
                     No setup fee · Instant access
                   </p>
                 </div>
 
                 <ul className="space-y-2 mb-5 flex-1">
                   {[plan.users, plan.credits, plan.support].map((f) => (
-                    <li key={f} className="flex items-start gap-2 text-sm text-[#4A5568]">
+                    <li key={f} className="flex items-start gap-2 text-sm text-[#57534E]">
                       <CheckCircle2 className="text-accent w-4 h-4 mt-0.5 shrink-0" />
                       <span>{f}</span>
                     </li>
                   ))}
                 </ul>
 
-                <p className="text-sm leading-relaxed text-[#4A5568] mb-6">
+                <p className="text-sm leading-relaxed text-[#57534E] mb-6">
                   {plan.description}
                 </p>
 
@@ -432,7 +432,7 @@ export default function ServicesPage() {
                   className={`block text-center px-6 py-3.5 text-xs font-bold uppercase tracking-[0.22em] rounded-sm transition-all ${
                     plan.highlighted
                       ? "border-2 border-accent bg-accent text-navy shadow-gold hover:bg-transparent hover:text-accent"
-                      : "border-2 border-[#0B1D3A]/80 text-[#0B1D3A] hover:bg-[#0B1D3A] hover:text-white"
+                      : "border-2 border-[#1C1917]/80 text-[#1C1917] hover:bg-[#1C1917] hover:text-white"
                   }`}
                 >
                   Start {plan.name.split(" ")[0]}
@@ -441,7 +441,7 @@ export default function ServicesPage() {
             ))}
           </div>
 
-          <p className="mt-10 text-center text-sm text-[#4A5568]">
+          <p className="mt-10 text-center text-sm text-[#57534E]">
             Additional users: $50/mo each. Secure signup. Instant provisioning
             through our team — you'll be live within 24 hours of intake.
           </p>
@@ -449,17 +449,17 @@ export default function ServicesPage() {
       </section>
 
       {/* ═══════════ WHAT EVERY PLAN INCLUDES ═══════════ */}
-      <section className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+      <section className="section-cream border-t border-[#1C1917]/10 py-20 sm:py-24">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8">
           <div className="max-w-3xl mb-12">
             <div className="flex items-center gap-3 mb-3">
               <ShieldCheck className="text-accent w-6 h-6" />
               <p className="eyebrow">Included With Every Plan</p>
             </div>
-            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#1C1917]">
               Every Tier. Every Feature. No Upsells.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-[#4A5568] max-w-3xl">
+            <p className="mt-4 text-base leading-relaxed text-[#57534E] max-w-3xl">
               Tiers differentiate on user count, setup depth, and support
               level — not feature access. Every plan unlocks the entire
               Adaptation OS platform.
@@ -470,15 +470,15 @@ export default function ServicesPage() {
             {includedFeatures.map((feat) => (
               <div
                 key={feat.label}
-                className="rounded-[20px] border border-[#0B1D3A]/10 bg-white p-6 shadow-soft transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-lift"
+                className="rounded-[20px] border border-[#1C1917]/10 bg-white p-6 shadow-soft transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-lift"
               >
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#0B1D3A] text-accent mb-4 shadow-[inset_0_0_0_1px_rgba(212,175,55,0.3)]">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#1C1917] text-accent mb-4 shadow-[inset_0_0_0_1px_rgba(234,88,12,0.3)]">
                   <feat.icon className="w-5 h-5" />
                 </div>
-                <h3 className="font-display text-lg font-bold text-[#0B1D3A]">
+                <h3 className="font-display text-lg font-bold text-[#1C1917]">
                   {feat.label}
                 </h3>
-                <p className="mt-1.5 text-sm text-[#4A5568] leading-relaxed">
+                <p className="mt-1.5 text-sm text-[#57534E] leading-relaxed">
                   {feat.desc}
                 </p>
               </div>
@@ -488,40 +488,40 @@ export default function ServicesPage() {
       </section>
 
       {/* ═══════════ HOW CREDITS WORK ═══════════ */}
-      <section className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+      <section className="section-cream border-t border-[#1C1917]/10 py-20 sm:py-24">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8">
           <div className="max-w-3xl mb-10">
             <p className="eyebrow">Usage &amp; Credits</p>
-            <h2 className="mt-3 h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+            <h2 className="mt-3 h-display text-3xl sm:text-4xl font-bold text-[#1C1917]">
               Transparent, Pass-Through Usage Pricing.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-[#4A5568] max-w-3xl">
+            <p className="mt-4 text-base leading-relaxed text-[#57534E] max-w-3xl">
               Credits cover AI calls, SMS, email, content generation, and
-              review responses. Every plan includes a <strong className="text-[#0B1D3A]">one-time credit bundle at signup</strong>{" "}
+              review responses. Every plan includes a <strong className="text-[#1C1917]">one-time credit bundle at signup</strong>{" "}
               ($50 DIY, $100 Setup). After credits are used, usage is billed at
               wholesale pass-through rates — no markup, no hidden fees. You see
               every charge in your dashboard.
             </p>
           </div>
           <div className="grid gap-5 sm:grid-cols-3">
-            <div className="rounded-[20px] border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+            <div className="rounded-[20px] border border-[#1C1917]/10 bg-white p-6 shadow-soft">
               <p className="text-[10px] uppercase tracking-[0.26em] text-accent font-bold mb-2">SMS</p>
-              <p className="font-display text-xl font-bold text-[#0B1D3A]">~$0.0158 / segment</p>
-              <p className="mt-2 text-sm text-[#4A5568]">
+              <p className="font-display text-xl font-bold text-[#1C1917]">~$0.0158 / segment</p>
+              <p className="mt-2 text-sm text-[#57534E]">
                 US/Canada outbound. $50 in credits ≈ 3,000+ texts.
               </p>
             </div>
-            <div className="rounded-[20px] border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+            <div className="rounded-[20px] border border-[#1C1917]/10 bg-white p-6 shadow-soft">
               <p className="text-[10px] uppercase tracking-[0.26em] text-accent font-bold mb-2">Email</p>
-              <p className="font-display text-xl font-bold text-[#0B1D3A]">~$0.000675 / send</p>
-              <p className="mt-2 text-sm text-[#4A5568]">
+              <p className="font-display text-xl font-bold text-[#1C1917]">~$0.000675 / send</p>
+              <p className="mt-2 text-sm text-[#57534E]">
                 $50 in credits ≈ 74,000+ emails. Near-zero cost in practice.
               </p>
             </div>
-            <div className="rounded-[20px] border border-[#0B1D3A]/10 bg-white p-6 shadow-soft">
+            <div className="rounded-[20px] border border-[#1C1917]/10 bg-white p-6 shadow-soft">
               <p className="text-[10px] uppercase tracking-[0.26em] text-accent font-bold mb-2">AI</p>
-              <p className="font-display text-xl font-bold text-[#0B1D3A]">from $0.09 / 1K words</p>
-              <p className="mt-2 text-sm text-[#4A5568]">
+              <p className="font-display text-xl font-bold text-[#1C1917]">from $0.09 / 1K words</p>
+              <p className="mt-2 text-sm text-[#57534E]">
                 Conversation AI, Content AI, Review AI, Voice AI — billed at
                 provider token rates.
               </p>
@@ -530,71 +530,144 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ═══════════ WHAT THIS REPLACES ═══════════ */}
-      <section className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+      {/* ═══════════ WHAT THIS REPLACES — navy branded table with totals ═══════════ */}
+      <section className="section-dark border-t border-[#EA580C]/20 py-16 sm:py-20">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8">
           <div className="max-w-3xl mb-10">
             <div className="flex items-center gap-3 mb-3">
               <Search className="text-accent w-6 h-6" />
               <p className="eyebrow">What Adaptation OS Replaces</p>
             </div>
-            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+            <h2 className="h-display font-bold text-white">
               Replace 10+ Subscriptions With One Platform.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-[#4A5568] max-w-3xl">
-              Most businesses spend $1,500–$4,000/month across a dozen
-              disconnected tools. Adaptation OS consolidates the entire stack —
-              one login, one bill, one source of truth.
+            <p className="mt-4 text-base leading-relaxed text-[#A8A29E] max-w-3xl">
+              Here's what a typical Phoenix small business pays for ten tools
+              that don't talk to each other — and what the exact same capability
+              costs on one platform. Real list prices, 2026.
             </p>
           </div>
-          <div className="overflow-x-auto rounded-[20px] border border-[#0B1D3A]/10 bg-white shadow-soft">
+
+          <div className="overflow-x-auto rounded-[20px] border border-white/10 bg-white/[0.03] shadow-gold">
             <table className="w-full text-left">
               <thead>
-                <tr className="border-b border-[#0B1D3A]/10 bg-[#0B1D3A]/[0.02]">
-                  <th scope="col" className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/70 font-bold">Tool Replaced</th>
-                  <th scope="col" className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-[#0B1D3A]/50 font-bold">Typical Monthly Cost</th>
-                  <th scope="col" className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-accent font-bold">In Adaptation OS</th>
+                <tr className="border-b border-white/10 bg-white/[0.04]">
+                  <th scope="col" className="font-display py-4 px-5 text-[11px] uppercase tracking-[0.26em] text-[#A8A29E] font-bold">Tool Replaced</th>
+                  <th scope="col" className="font-display py-4 px-5 text-[11px] uppercase tracking-[0.26em] text-[#B91C1C] font-bold">Typical Monthly Cost</th>
+                  <th scope="col" className="font-display py-4 px-5 text-[11px] uppercase tracking-[0.26em] text-accent font-bold text-right">In Adaptation OS</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { tool: "HubSpot / Salesforce CRM", typical: "$450–$1,200/mo", us: "Included" },
-                  { tool: "ActiveCampaign / Mailchimp", typical: "$99–$300/mo", us: "Included" },
-                  { tool: "Calendly / Acuity", typical: "$16/user/mo", us: "Included" },
-                  { tool: "Twilio / OpenPhone", typical: "pay-per-message", us: "Included at cost" },
-                  { tool: "ClickFunnels / Leadpages", typical: "$97–$297/mo", us: "Included" },
-                  { tool: "Podium / BirdEye (reviews)", typical: "$289–$499/mo", us: "Included" },
-                  { tool: "Intercom / Drift chat", typical: "$74–$500/mo", us: "Included" },
-                  { tool: "Zapier Pro", typical: "$49–$99/mo", us: "Included" },
-                  { tool: "Kajabi / Teachable (courses)", typical: "$99–$399/mo", us: "Included" },
-                  { tool: "WordPress hosting + maintenance", typical: "$50–$200/mo", us: "Included" },
-                  { tool: "Hootsuite / Buffer (social)", typical: "$99–$249/mo", us: "Included" },
-                  { tool: "Meta Ads Manager", typical: "standalone tool", us: "Included" },
+                  { tool: "HubSpot / Salesforce CRM",            typical: "$450–$1,200/mo",    us: "Included" },
+                  { tool: "ActiveCampaign / Mailchimp",          typical: "$99–$300/mo",       us: "Included" },
+                  { tool: "Calendly / Acuity",                   typical: "$16/user/mo",       us: "Included" },
+                  { tool: "Twilio / OpenPhone",                  typical: "pay-per-message",   us: "Included at cost" },
+                  { tool: "ClickFunnels / Leadpages",            typical: "$97–$297/mo",       us: "Included" },
+                  { tool: "Podium / BirdEye (reviews)",          typical: "$289–$499/mo",      us: "Included" },
+                  { tool: "Intercom / Drift chat",               typical: "$74–$500/mo",       us: "Included" },
+                  { tool: "Zapier Pro",                          typical: "$49–$99/mo",        us: "Included" },
+                  { tool: "Kajabi / Teachable (courses)",        typical: "$99–$399/mo",       us: "Included" },
+                  { tool: "WordPress hosting + maintenance",     typical: "$50–$200/mo",       us: "Included" },
+                  { tool: "Hootsuite / Buffer (social)",         typical: "$99–$249/mo",       us: "Included" },
+                  { tool: "Meta Ads Manager",                    typical: "standalone tool",   us: "Included" },
                 ].map((row) => (
-                  <tr key={row.tool} className="border-b border-[#0B1D3A]/5 last:border-0">
-                    <td className="py-3 px-5 text-[#0B1D3A] text-sm font-semibold">{row.tool}</td>
-                    <td className="py-3 px-5 text-[#4A5568] text-sm">{row.typical}</td>
-                    <td className="py-3 px-5 text-accent font-bold text-sm">{row.us}</td>
+                  <tr key={row.tool} className="border-b border-white/5 last:border-0 transition-colors hover:bg-white/[0.02]">
+                    <td className="py-3 px-5 text-white text-sm font-semibold">{row.tool}</td>
+                    <td className="py-3 px-5 text-[#A8A29E] text-sm font-mono line-through decoration-white/25">{row.typical}</td>
+                    <td className="py-3 px-5 text-right">
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-bold text-accent">
+                        <CheckCircle2 className="h-3.5 w-3.5" />
+                        {row.us}
+                      </span>
+                    </td>
                   </tr>
                 ))}
+
+                {/* TOTAL ROW */}
+                <tr className="border-t-2 border-accent/40 bg-accent/[0.06]">
+                  <td className="py-5 px-5 font-display font-bold uppercase tracking-[0.2em] text-[10px] text-[#B91C1C]">
+                    Stack Total / Year
+                  </td>
+                  <td className="py-5 px-5">
+                    <span className="font-display font-bold text-2xl sm:text-3xl text-white line-through decoration-[#B91C1C]/80 decoration-[3px]">
+                      $1,322–$3,759
+                    </span>
+                    <span className="ml-2 text-xs text-[#78716C] font-mono">/mo</span>
+                    <span className="block text-[11px] text-[#78716C] font-mono mt-1">
+                      $15,864–$45,108/year
+                    </span>
+                  </td>
+                  <td className="py-5 px-5 text-right">
+                    <span className="block font-display font-bold text-2xl sm:text-3xl text-accent">
+                      $349.90
+                    </span>
+                    <span className="block text-[11px] text-[#78716C] font-mono mt-1">
+                      /mo · all-in
+                    </span>
+                  </td>
+                </tr>
+
+                {/* SAVINGS ROW */}
+                <tr className="bg-accent/[0.08]">
+                  <td className="py-5 px-5 font-display font-bold uppercase tracking-[0.26em] text-[11px] text-accent">
+                    You Save
+                  </td>
+                  <td className="py-5 px-5" colSpan={2}>
+                    <div className="flex flex-wrap items-baseline gap-3">
+                      <span className="font-display font-bold text-2xl sm:text-3xl text-white">
+                        $972–$3,409
+                      </span>
+                      <span className="text-sm text-[#A8A29E]">per month</span>
+                      <span className="text-accent">·</span>
+                      <span className="font-display font-bold text-xl sm:text-2xl text-accent">
+                        $11,664–$40,908
+                      </span>
+                      <span className="text-sm text-[#A8A29E]">per year</span>
+                    </div>
+                    <p className="mt-2 text-[11px] text-[#78716C]">
+                      Based on Starter DIY. Growth ($597.90) and Scale ($997.90) tiers still undercut the stack.
+                    </p>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
+
+          <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+            <a
+              href="#self-serve"
+              className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
+            >
+              Start Saving Today <ArrowRight className="h-4 w-4" />
+            </a>
+            <a
+              href="/demo"
+              className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-white/70 px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-white transition-all hover:bg-white hover:text-navy"
+            >
+              See A Live Demo
+            </a>
+          </div>
+
+          <p className="mt-5 text-center text-[10px] uppercase tracking-[0.26em] text-[#78716C]">
+            Prices reflect published list pricing at each vendor as of 2026.
+            Twilio / Meta Ads excluded from totals (usage-priced).
+          </p>
         </div>
       </section>
 
       {/* ═══════════ SEO INCLUDED ═══════════ */}
-      <section id="seo" className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+      <section id="seo" className="section-cream border-t border-[#1C1917]/10 py-20 sm:py-24">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8">
           <div className="max-w-3xl mb-10">
             <div className="flex items-center gap-3 mb-3">
               <Search className="text-accent w-6 h-6" />
               <p className="eyebrow">SEO &amp; Visibility</p>
             </div>
-            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+            <h2 className="h-display text-3xl sm:text-4xl font-bold text-[#1C1917]">
               Enterprise-Grade SEO — Built In, Not Billed Separately.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-[#4A5568] max-w-3xl">
+            <p className="mt-4 text-base leading-relaxed text-[#57534E] max-w-3xl">
               Most agencies charge $2,000–$5,000/month for what we build in
               from day one. On every plan. Every site. This is not an add-on.
             </p>
@@ -624,10 +697,10 @@ export default function ServicesPage() {
             ].map((item) => (
               <div
                 key={item}
-                className="flex items-start gap-2 rounded-xl border border-[#0B1D3A]/10 bg-white px-4 py-3 shadow-soft"
+                className="flex items-start gap-2 rounded-xl border border-[#1C1917]/10 bg-white px-4 py-3 shadow-soft"
               >
                 <CheckCircle2 className="text-accent w-4 h-4 mt-0.5 shrink-0" />
-                <span className="text-sm text-[#4A5568]">{item}</span>
+                <span className="text-sm text-[#57534E]">{item}</span>
               </div>
             ))}
           </div>
@@ -635,24 +708,24 @@ export default function ServicesPage() {
       </section>
 
       {/* ═══════════ REFERRAL ═══════════ */}
-      <section className="section-cream border-t border-[#0B1D3A]/10 py-16">
+      <section className="section-cream border-t border-[#1C1917]/10 py-16">
         <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
           <div className="rounded-[22px] border-2 border-accent/40 bg-accent/10 p-7 sm:p-9 flex flex-col sm:flex-row items-center gap-6">
             <div className="flex-1">
               <p className="text-[10px] uppercase tracking-[0.28em] text-accent font-bold mb-2">
                 Referral Program
               </p>
-              <h3 className="h-display text-xl sm:text-2xl font-bold text-[#0B1D3A]">
+              <h3 className="h-display text-xl sm:text-2xl font-bold text-[#1C1917]">
                 Refer a business. Get 1 month free + $100 credits on activation.
               </h3>
-              <p className="mt-2 text-sm text-[#4A5568]">
+              <p className="mt-2 text-sm text-[#57534E]">
                 Your referral link lives in your dashboard. When they sign up
                 and activate, you both win.
               </p>
             </div>
             <a
               href="/contact"
-              className="shrink-0 bg-accent text-navy px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] rounded-sm shadow-gold hover:bg-[#E8C96A] transition-all"
+              className="shrink-0 bg-accent text-navy px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] rounded-sm shadow-gold hover:bg-[#FB923C] transition-all"
             >
               Learn More
             </a>
@@ -661,22 +734,22 @@ export default function ServicesPage() {
       </section>
 
       {/* ═══════════ FAQ ═══════════ */}
-      <section className="section-cream border-t border-[#0B1D3A]/10 py-20 sm:py-24">
+      <section className="section-cream border-t border-[#1C1917]/10 py-20 sm:py-24">
         <div className="max-w-[900px] mx-auto px-6 sm:px-8">
           <div className="text-center mb-10">
             <p className="eyebrow">Pricing Questions</p>
-            <h2 className="mt-3 h-display text-3xl sm:text-4xl font-bold text-[#0B1D3A]">
+            <h2 className="mt-3 h-display text-3xl sm:text-4xl font-bold text-[#1C1917]">
               Common Questions About Plans &amp; Pricing.
             </h2>
           </div>
           <div>
             {faqs.map((item) => (
-              <details key={item.q} className="group border-b border-[#0B1D3A]/10 py-2">
-                <summary className="flex cursor-pointer select-none items-center justify-between py-4 text-base font-semibold text-[#0B1D3A] sm:text-lg">
+              <details key={item.q} className="group border-b border-[#1C1917]/10 py-2">
+                <summary className="flex cursor-pointer select-none items-center justify-between py-4 text-base font-semibold text-[#1C1917] sm:text-lg">
                   <span className="pr-6">{item.q}</span>
                   <span className="shrink-0 text-2xl text-accent transition-transform group-open:rotate-45">+</span>
                 </summary>
-                <p className="pb-5 pr-8 text-sm leading-relaxed text-[#4A5568] sm:text-base">
+                <p className="pb-5 pr-8 text-sm leading-relaxed text-[#57534E] sm:text-base">
                   {item.a}
                 </p>
               </details>
@@ -692,7 +765,7 @@ export default function ServicesPage() {
           <h2 className="mt-3 h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
             Ready to Run Your Business on One System?
           </h2>
-          <p className="max-w-2xl mx-auto mt-5 text-base sm:text-lg text-[#B8C4D4] leading-relaxed">
+          <p className="max-w-2xl mx-auto mt-5 text-base sm:text-lg text-[#A8A29E] leading-relaxed">
             Book a setup call and be live in two to three weeks, or start
             self-serve today. Same platform. Same features. Same Phoenix team
             supporting you.
