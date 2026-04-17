@@ -513,12 +513,12 @@ export default function HomePage() {
                 </div>
                 <h1 className="h-display font-bold tracking-tight text-white text-[1.9rem] leading-[1.05] sm:text-[2.4rem] xl:text-[3rem]">
                   The{" "}
-                  <span className="bg-gradient-to-r from-accent via-[#FB923C] to-accent bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-accent via-[#3B82F6] to-accent bg-clip-text text-transparent">
                     Business Operating System
                   </span>{" "}
                   for Phoenix.
                 </h1>
-                <p className="mt-4 max-w-xl text-[0.95rem] leading-relaxed text-[#A8A29E] sm:text-base">
+                <p className="mt-4 max-w-xl text-[0.95rem] leading-relaxed text-[#94A3B8] sm:text-base">
                   AI phone receptionist, AI chat agent, CRM, workflows, email +
                   SMS marketing, funnels, calendars, payments, and 70+ directory
                   listings — replacing 12+ disconnected tools with one login.
@@ -540,7 +540,7 @@ export default function HomePage() {
                   </a>
                 </div>
 
-                <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-[11px] uppercase tracking-[0.22em] text-[#78716C]">
+                <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-[11px] uppercase tracking-[0.22em] text-[#64748B]">
                   <a href="tel:6232191237" className="flex items-center gap-2 hover:text-accent">
                     <Phone className="h-3.5 w-3.5 text-accent" /> 623-219-1237
                   </a>
@@ -554,12 +554,12 @@ export default function HomePage() {
                 <div className="relative">
                   <div
                     aria-hidden="true"
-                    className="pointer-events-none absolute -inset-[2px] rounded-[28px] bg-[conic-gradient(from_120deg_at_50%_50%,rgba(234,88,12,0.7),rgba(234,88,12,0.35),rgba(234,88,12,0.7))] opacity-60 blur-md"
+                    className="pointer-events-none absolute -inset-[2px] rounded-[28px] bg-[conic-gradient(from_120deg_at_50%_50%,rgba(37,99,235,0.7),rgba(37,99,235,0.35),rgba(37,99,235,0.7))] opacity-60 blur-md"
                   />
-                  <div className="relative rounded-[24px] border border-accent/50 bg-white shadow-[0_30px_80px_-20px_rgba(234,88,12,0.55)]">
-                    <div className="flex items-center gap-2 border-b border-[#1C1917]/10 px-6 py-3">
+                  <div className="relative rounded-[24px] border border-accent/50 bg-white shadow-[0_30px_80px_-20px_rgba(37,99,235,0.55)]">
+                    <div className="flex items-center gap-2 border-b border-[#0F172A]/10 px-6 py-3">
                       <span className="flex h-2 w-2 rounded-full bg-emerald-500" />
-                      <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[#1C1917]/70">
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[#0F172A]/70">
                         Free Instant Analysis · No Credit Card
                       </p>
                     </div>
@@ -567,10 +567,10 @@ export default function HomePage() {
                       <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-accent">
                         SEO &amp; Marketing Grader
                       </p>
-                      <h2 className="mt-1 font-display text-xl font-bold text-[#1C1917] sm:text-2xl">
+                      <h2 className="mt-1 font-display text-xl font-bold text-[#0F172A] sm:text-2xl">
                         Grade Your Website in 60 Seconds.
                       </h2>
-                      <p className="mt-2 text-sm leading-relaxed text-[#57534E]">
+                      <p className="mt-2 text-sm leading-relaxed text-[#475569]">
                         Enter your URL. We run a full audit — SEO score, listing
                         consistency across 70+ directories, page speed, and
                         missed revenue signals. Report delivered to your inbox.
@@ -591,7 +591,7 @@ export default function HomePage() {
         {/* ═════════════════════════════════════════════════════════════════ */}
         <section className="section-cream py-8">
           <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-[10px] font-semibold uppercase tracking-[0.26em] text-[#1C1917]/60 sm:text-[11px]">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-[10px] font-semibold uppercase tracking-[0.26em] text-[#0F172A]/60 sm:text-[11px]">
               <span className="flex items-center gap-2">
                 <ShieldCheck className="h-4 w-4 text-accent" /> Veteran-Owned (VOSB)
               </span>
@@ -610,9 +610,9 @@ export default function HomePage() {
         {/* ═════════════════════════════════════════════════════════════════ */}
         {/* AWARDS STRIP — G2 + Capterra (platform recognition)                */}
         {/* ═════════════════════════════════════════════════════════════════ */}
-        <section className="section-cream border-t border-[#1C1917]/10 py-10 sm:py-12">
+        <section className="section-cream border-t border-[#0F172A]/10 py-10 sm:py-12">
           <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
-            <p className="text-center text-[10px] font-bold uppercase tracking-[0.28em] text-[#1C1917]/60 sm:text-[11px]">
+            <p className="text-center text-[10px] font-bold uppercase tracking-[0.28em] text-[#0F172A]/60 sm:text-[11px]">
               Platform Awarded by G2 &amp; Capterra — Winter / 2026
             </p>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:gap-8">
@@ -640,7 +640,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#EA580C]/40 to-transparent" />
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#2563EB]/40 to-transparent" />
 
         {/* ═════════════════════════════════════════════════════════════════ */}
         {/* THE SOFTWARE — Adaptation OS centerpiece                           */}
@@ -649,10 +649,10 @@ export default function HomePage() {
           <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
             <div className="mx-auto max-w-3xl text-center">
               <p className="eyebrow">The Platform</p>
-              <h2 className="mt-3 h-display text-3xl font-bold text-[#1C1917] sm:text-4xl lg:text-5xl">
+              <h2 className="mt-3 h-display text-3xl font-bold text-[#0F172A] sm:text-4xl lg:text-5xl">
                 Adaptation OS — The Operating System for Your Entire Business.
               </h2>
-              <p className="mt-5 text-base leading-relaxed text-[#57534E] sm:text-lg">
+              <p className="mt-5 text-base leading-relaxed text-[#475569] sm:text-lg">
                 One platform. One login. One bill. Every feature a modern
                 business needs to capture leads, convert customers, automate
                 follow-up, and measure revenue — deployed by a veteran-owned
@@ -664,21 +664,21 @@ export default function HomePage() {
               {featurePillars.map((pillar) => (
                 <article
                   key={pillar.title}
-                  className="group relative overflow-hidden rounded-[22px] border border-[#1C1917]/10 bg-white p-7 shadow-soft transition-all hover:-translate-y-1 hover:border-accent/50 hover:shadow-lift"
+                  className="group relative overflow-hidden rounded-[22px] border border-[#0F172A]/10 bg-white p-7 shadow-soft transition-all hover:-translate-y-1 hover:border-accent/50 hover:shadow-lift"
                 >
                   <div
                     aria-hidden="true"
                     className="pointer-events-none absolute -right-6 -top-6 h-24 w-24 rounded-full bg-accent/10 blur-2xl transition-opacity group-hover:opacity-80"
                   />
                   <div className="relative flex items-start justify-between">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#1C1917] text-accent shadow-[inset_0_0_0_1px_rgba(234,88,12,0.3)]">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#0F172A] text-accent shadow-[inset_0_0_0_1px_rgba(37,99,235,0.3)]">
                       <pillar.icon className="h-5 w-5" />
                     </div>
                     <span className="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.22em] text-emerald-700">
                       Included
                     </span>
                   </div>
-                  <h3 className="relative mt-5 h-display text-xl font-bold text-[#1C1917]">
+                  <h3 className="relative mt-5 h-display text-xl font-bold text-[#0F172A]">
                     {pillar.title}
                   </h3>
                   <p className="relative mt-1 text-sm font-semibold text-accent">
@@ -688,7 +688,7 @@ export default function HomePage() {
                     {pillar.items.map((item) => (
                       <li
                         key={item}
-                        className="flex items-start gap-2 text-sm leading-relaxed text-[#57534E]"
+                        className="flex items-start gap-2 text-sm leading-relaxed text-[#475569]"
                       >
                         <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                         <span>{item}</span>
@@ -708,7 +708,7 @@ export default function HomePage() {
               </a>
               <a
                 href="/services"
-                className="inline-flex items-center justify-center gap-2 border-b border-dotted border-[#1C1917]/50 pb-1 text-xs font-bold uppercase tracking-[0.22em] text-[#1C1917]/80 hover:border-accent hover:text-accent"
+                className="inline-flex items-center justify-center gap-2 border-b border-dotted border-[#0F172A]/50 pb-1 text-xs font-bold uppercase tracking-[0.22em] text-[#0F172A]/80 hover:border-accent hover:text-accent"
               >
                 Full Feature Comparison
               </a>
@@ -716,7 +716,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#EA580C]/40 to-transparent" />
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#2563EB]/40 to-transparent" />
 
         {/* ═════════════════════════════════════════════════════════════════ */}
         {/* AI EMPLOYEES — deep dive with founder video                        */}
@@ -726,10 +726,10 @@ export default function HomePage() {
             <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
               <div>
                 <p className="eyebrow">AI Employees, Built-In</p>
-                <h2 className="mt-3 h-display text-3xl font-bold text-[#1C1917] sm:text-4xl lg:text-5xl">
+                <h2 className="mt-3 h-display text-3xl font-bold text-[#0F172A] sm:text-4xl lg:text-5xl">
                   Six AI Agents. Zero Extra Cost.
                 </h2>
-                <p className="mt-5 text-base leading-relaxed text-[#57534E] sm:text-lg">
+                <p className="mt-5 text-base leading-relaxed text-[#475569] sm:text-lg">
                   Adaptation OS ships with a full AI workforce. They answer your
                   phone, reply to every chat, respond to reviews, write your
                   content, and build your workflows. They work at 2 AM, on
@@ -778,14 +778,14 @@ export default function HomePage() {
                   ].map((agent) => (
                     <div
                       key={agent.name}
-                      className="rounded-2xl border border-[#1C1917]/10 bg-white p-5 transition-all hover:border-accent/40 hover:shadow-soft"
+                      className="rounded-2xl border border-[#0F172A]/10 bg-white p-5 transition-all hover:border-accent/40 hover:shadow-soft"
                     >
                       <div className="flex items-center gap-3">
                         <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent/15 text-accent">
                           <agent.icon className="h-4 w-4" />
                         </div>
                         <div>
-                          <p className="font-display text-sm font-bold text-[#1C1917]">
+                          <p className="font-display text-sm font-bold text-[#0F172A]">
                             {agent.name}
                           </p>
                           <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-accent">
@@ -793,7 +793,7 @@ export default function HomePage() {
                           </p>
                         </div>
                       </div>
-                      <p className="mt-3 text-sm leading-relaxed text-[#57534E]">
+                      <p className="mt-3 text-sm leading-relaxed text-[#475569]">
                         {agent.copy}
                       </p>
                     </div>
@@ -804,10 +804,10 @@ export default function HomePage() {
               <div className="relative lg:sticky lg:top-24">
                 <div
                   aria-hidden="true"
-                  className="pointer-events-none absolute -inset-2 rounded-[28px] bg-[conic-gradient(from_120deg_at_50%_50%,rgba(234,88,12,0.5),rgba(234,88,12,0.2),rgba(234,88,12,0.5))] opacity-40 blur-lg"
+                  className="pointer-events-none absolute -inset-2 rounded-[28px] bg-[conic-gradient(from_120deg_at_50%_50%,rgba(37,99,235,0.5),rgba(37,99,235,0.2),rgba(37,99,235,0.5))] opacity-40 blur-lg"
                 />
-                <div className="relative overflow-hidden rounded-[24px] border border-[#1C1917]/10 bg-[#1C1917] shadow-lift">
-                  <div className="pointer-events-none absolute left-4 top-4 z-10 flex items-center gap-2 rounded-full border border-white/15 bg-[#1C1917]/70 px-3 py-1.5 text-[9px] font-bold uppercase tracking-[0.28em] text-white backdrop-blur">
+                <div className="relative overflow-hidden rounded-[24px] border border-[#0F172A]/10 bg-[#0F172A] shadow-lift">
+                  <div className="pointer-events-none absolute left-4 top-4 z-10 flex items-center gap-2 rounded-full border border-white/15 bg-[#0F172A]/70 px-3 py-1.5 text-[9px] font-bold uppercase tracking-[0.28em] text-white backdrop-blur">
                     <span className="h-1.5 w-1.5 rounded-full bg-red-500" />
                     Adaptation OS · Live
                   </div>
@@ -826,7 +826,7 @@ export default function HomePage() {
                     <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-accent">
                       Founder's Walkthrough
                     </p>
-                    <p className="mt-1 text-sm text-[#A8A29E]">
+                    <p className="mt-1 text-sm text-[#94A3B8]">
                       A live tour of the website, CRM, AI phone and chat agents,
                       and the automation layer we build for operators.
                     </p>
@@ -837,7 +837,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#EA580C]/40 to-transparent" />
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#2563EB]/40 to-transparent" />
 
         {/* ═════════════════════════════════════════════════════════════════ */}
         {/* PAIN POINTS                                                        */}
@@ -846,10 +846,10 @@ export default function HomePage() {
           <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
             <div className="mx-auto max-w-3xl text-center">
               <p className="eyebrow">The Problems You Already Know</p>
-              <h2 className="mt-3 h-display text-3xl font-bold text-[#1C1917] sm:text-4xl">
+              <h2 className="mt-3 h-display text-3xl font-bold text-[#0F172A] sm:text-4xl">
                 What Business Owners Lose Every Day Without an Operating System.
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-[#57534E]">
+              <p className="mt-4 text-base leading-relaxed text-[#475569]">
                 Missed calls. Dead leads. Duct-taped software. Invisible in
                 search. Reviews piling up unanswered. Each one quietly costs you
                 revenue. Adaptation OS closes every gap on this list.
@@ -859,7 +859,7 @@ export default function HomePage() {
               {painPoints.map((item) => (
                 <article
                   key={item.title}
-                  className="flex flex-col rounded-[22px] border border-[#1C1917]/10 bg-white p-7 shadow-soft transition-all hover:-translate-y-1 hover:border-accent/50 hover:shadow-lift"
+                  className="flex flex-col rounded-[22px] border border-[#0F172A]/10 bg-white p-7 shadow-soft transition-all hover:-translate-y-1 hover:border-accent/50 hover:shadow-lift"
                 >
                   <div className="flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent/15 text-accent">
@@ -869,10 +869,10 @@ export default function HomePage() {
                       {item.title}
                     </p>
                   </div>
-                  <h3 className="mt-4 h-display text-lg font-bold text-[#1C1917]">
+                  <h3 className="mt-4 h-display text-lg font-bold text-[#0F172A]">
                     {item.pain}
                   </h3>
-                  <p className="mt-3 flex-1 text-sm leading-relaxed text-[#57534E]">
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-[#475569]">
                     {item.answer}
                   </p>
                 </article>
@@ -891,7 +891,7 @@ export default function HomePage() {
               <h2 className="mt-3 h-display text-2xl font-bold text-white sm:text-3xl lg:text-[2.25rem]">
                 Cancel the subscriptions. <span className="text-accent">Keep every capability.</span>
               </h2>
-              <p className="mt-4 max-w-2xl text-[0.95rem] leading-relaxed text-[#A8A29E]">
+              <p className="mt-4 max-w-2xl text-[0.95rem] leading-relaxed text-[#94A3B8]">
                 Here's what a typical Phoenix small business pays for twelve
                 tools that don't talk to each other — and what the exact same
                 capability costs on one platform that actually does.
@@ -905,7 +905,7 @@ export default function HomePage() {
                   <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-[#B91C1C]">
                     What You're Paying Now
                   </p>
-                  <p className="text-[10px] uppercase tracking-[0.22em] text-[#78716C]">
+                  <p className="text-[10px] uppercase tracking-[0.22em] text-[#64748B]">
                     List prices, 2026
                   </p>
                 </div>
@@ -929,13 +929,13 @@ export default function HomePage() {
                       key={tool}
                       className="flex items-center justify-between py-2.5"
                     >
-                      <span className="flex items-center gap-2.5 text-[#A8A29E]">
+                      <span className="flex items-center gap-2.5 text-[#94A3B8]">
                         <span className="text-[#B91C1C]">✕</span>
                         <span className="line-through decoration-white/25">
                           {tool}
                         </span>
                       </span>
-                      <span className="font-mono text-sm text-[#78716C]">
+                      <span className="font-mono text-sm text-[#64748B]">
                         ${price}/mo
                       </span>
                     </li>
@@ -948,7 +948,7 @@ export default function HomePage() {
                       <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-[#B91C1C]">
                         Stack Total
                       </p>
-                      <p className="mt-1 text-xs text-[#78716C]">
+                      <p className="mt-1 text-xs text-[#64748B]">
                         And none of them talk to each other.
                       </p>
                     </div>
@@ -956,7 +956,7 @@ export default function HomePage() {
                       <p className="font-display text-3xl font-bold text-white line-through decoration-[#B91C1C]/80 decoration-[3px] sm:text-4xl">
                         $1,080
                       </p>
-                      <p className="text-xs text-[#78716C]">/month · $12,960/yr</p>
+                      <p className="text-xs text-[#64748B]">/month · $12,960/yr</p>
                     </div>
                   </div>
                 </div>
@@ -977,10 +977,10 @@ export default function HomePage() {
                   <p className="font-display text-5xl font-bold text-accent sm:text-6xl">
                     $349<span className="text-3xl">.90</span>
                   </p>
-                  <p className="pb-2 text-sm text-[#A8A29E]">
+                  <p className="pb-2 text-sm text-[#94A3B8]">
                     /month
                     <br />
-                    <span className="text-xs text-[#78716C]">$4,198.80/yr</span>
+                    <span className="text-xs text-[#64748B]">$4,198.80/yr</span>
                   </p>
                 </div>
 
@@ -991,19 +991,19 @@ export default function HomePage() {
                   </p>
                   <p className="mt-2 font-display text-4xl font-bold text-white sm:text-5xl">
                     $730<span className="text-2xl text-accent">.10</span>
-                    <span className="text-base font-normal text-[#A8A29E]">
+                    <span className="text-base font-normal text-[#94A3B8]">
                       /mo
                     </span>
                   </p>
                   <p className="mt-1 text-sm font-semibold text-accent">
                     $8,761.20 per year
                   </p>
-                  <p className="mt-2 text-xs text-[#A8A29E]">
+                  <p className="mt-2 text-xs text-[#94A3B8]">
                     Based on Starter DIY. Growth and Scale tiers save even more.
                   </p>
                 </div>
 
-                <p className="relative mt-5 text-sm leading-relaxed text-[#A8A29E]">
+                <p className="relative mt-5 text-sm leading-relaxed text-[#94A3B8]">
                   Plus you get everything your old stack <em>couldn't</em> do:
                   AI phone receptionist, AI chat agent on every channel,
                   workflow automation with if/then branching, and a branded
@@ -1019,7 +1019,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <p className="mt-8 text-center text-xs uppercase tracking-[0.26em] text-[#78716C]">
+            <p className="mt-8 text-center text-xs uppercase tracking-[0.26em] text-[#64748B]">
               Prices above pulled from public list pricing as of 2026. Your actual savings may be higher.
             </p>
           </div>
@@ -1035,7 +1035,7 @@ export default function HomePage() {
               <h2 className="mt-3 h-display text-2xl font-bold text-white sm:text-3xl lg:text-[2.25rem]">
                 Fifteen features. One login. <span className="text-accent">One price.</span>
               </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-[0.95rem] leading-relaxed text-[#A8A29E]">
+              <p className="mx-auto mt-4 max-w-2xl text-[0.95rem] leading-relaxed text-[#94A3B8]">
                 Here's what other businesses pay for each piece — and what you'd
                 normally stitch together to replicate it. Adaptation OS includes
                 all of it.
@@ -1045,13 +1045,13 @@ export default function HomePage() {
             <div className="mt-10 overflow-hidden rounded-[20px] border border-white/10 bg-white/[0.03]">
               {/* Header row */}
               <div className="grid grid-cols-[1.4fr_1.5fr_0.9fr_0.8fr] items-center gap-3 border-b border-white/10 bg-white/[0.04] px-4 py-3 sm:px-6">
-                <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#78716C]">
+                <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#64748B]">
                   Feature
                 </p>
-                <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#78716C]">
+                <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#64748B]">
                   Replaces
                 </p>
-                <p className="text-right text-[10px] font-bold uppercase tracking-[0.22em] text-[#78716C] sm:text-left">
+                <p className="text-right text-[10px] font-bold uppercase tracking-[0.22em] text-[#64748B] sm:text-left">
                   Other Tools
                 </p>
                 <p className="text-right text-[10px] font-bold uppercase tracking-[0.22em] text-accent">
@@ -1082,10 +1082,10 @@ export default function HomePage() {
                   className="grid grid-cols-[1.4fr_1.5fr_0.9fr_0.8fr] items-center gap-3 border-b border-white/5 px-4 py-3 transition-colors hover:bg-white/[0.02] sm:px-6"
                 >
                   <p className="text-sm font-semibold text-white">{row.feature}</p>
-                  <p className="text-xs leading-relaxed text-[#78716C] line-through decoration-[#B91C1C]/50">
+                  <p className="text-xs leading-relaxed text-[#64748B] line-through decoration-[#B91C1C]/50">
                     {row.replaces}
                   </p>
-                  <p className="text-right font-mono text-xs text-[#78716C] sm:text-left">
+                  <p className="text-right font-mono text-xs text-[#64748B] sm:text-left">
                     {row.price}
                   </p>
                   <div className="flex justify-end">
@@ -1099,7 +1099,7 @@ export default function HomePage() {
                 <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-accent">
                   Overall Price
                 </p>
-                <p className="text-xs text-[#A8A29E]">
+                <p className="text-xs text-[#94A3B8]">
                   If you bought each piece separately
                 </p>
                 <p className="text-right font-display text-xl font-bold text-white line-through decoration-[#B91C1C]/80 sm:text-left">
@@ -1133,7 +1133,7 @@ export default function HomePage() {
         {/* ═════════════════════════════════════════════════════════════════ */}
         <section className="section-cream py-20 sm:py-24">
           <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-stretch gap-10 px-6 sm:px-8 lg:grid-cols-[0.95fr_1.05fr]">
-            <div className="relative min-h-[340px] overflow-hidden rounded-[24px] border border-[#1C1917]/10 shadow-lift">
+            <div className="relative min-h-[340px] overflow-hidden rounded-[24px] border border-[#0F172A]/10 shadow-lift">
               <Image
                 src="/images/al-hq-daytime.webp"
                 alt="Adaptation Living LLC headquarters — Bank of America Tower, Uptown Phoenix AZ"
@@ -1141,7 +1141,7 @@ export default function HomePage() {
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 600px"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1C1917] via-[#1C1917]/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/40 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-accent">
                   Uptown Phoenix
@@ -1151,21 +1151,21 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="rounded-[24px] border border-[#1C1917]/10 bg-white p-8 shadow-soft sm:p-10">
-              <div className="mb-5 flex flex-wrap gap-2 text-[10px] font-semibold uppercase tracking-[0.24em] text-[#1C1917]/70">
-                <span className="inline-flex items-center gap-2 rounded-full border border-[#1C1917]/10 bg-[#1C1917]/[0.03] px-3 py-1.5">
+            <div className="rounded-[24px] border border-[#0F172A]/10 bg-white p-8 shadow-soft sm:p-10">
+              <div className="mb-5 flex flex-wrap gap-2 text-[10px] font-semibold uppercase tracking-[0.24em] text-[#0F172A]/70">
+                <span className="inline-flex items-center gap-2 rounded-full border border-[#0F172A]/10 bg-[#0F172A]/[0.03] px-3 py-1.5">
                   <Building2 className="h-3.5 w-3.5 text-accent" />
                   3030 N Central Ave · Suite 507
                 </span>
-                <span className="inline-flex items-center gap-2 rounded-full border border-[#1C1917]/10 bg-[#1C1917]/[0.03] px-3 py-1.5">
+                <span className="inline-flex items-center gap-2 rounded-full border border-[#0F172A]/10 bg-[#0F172A]/[0.03] px-3 py-1.5">
                   <CalendarCheck className="h-3.5 w-3.5 text-accent" />
                   In-Person Demos Available
                 </span>
               </div>
-              <h2 className="h-display text-3xl font-bold text-[#1C1917] sm:text-4xl">
+              <h2 className="h-display text-3xl font-bold text-[#0F172A] sm:text-4xl">
                 A headquartered team. Not a reseller.
               </h2>
-              <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#57534E]">
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#475569]">
                 Adaptation Living is a veteran-owned technology company
                 headquartered on the fifth floor of the Bank of America Tower in
                 Uptown Phoenix. Clients partner with a real firm — a permanent
@@ -1183,7 +1183,7 @@ export default function HomePage() {
                 </a>
                 <a
                   href="tel:6232191237"
-                  className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-[#1C1917]/80 bg-transparent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-[#1C1917] transition-all hover:bg-[#1C1917] hover:text-white"
+                  className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-[#0F172A]/80 bg-transparent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-[#0F172A] transition-all hover:bg-[#0F172A] hover:text-white"
                 >
                   Call 623-219-1237
                 </a>
@@ -1192,7 +1192,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#EA580C]/40 to-transparent" />
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#2563EB]/40 to-transparent" />
 
         {/* ═════════════════════════════════════════════════════════════════ */}
         {/* PRICING TEASER                                                     */}
@@ -1201,10 +1201,10 @@ export default function HomePage() {
           <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
             <div className="mx-auto max-w-3xl text-center">
               <p className="eyebrow">Pricing</p>
-              <h2 className="mt-3 h-display text-3xl font-bold text-[#1C1917] sm:text-4xl lg:text-5xl">
+              <h2 className="mt-3 h-display text-3xl font-bold text-[#0F172A] sm:text-4xl lg:text-5xl">
                 One Platform. Two Paths. Six Plans.
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-[#57534E]">
+              <p className="mt-4 text-base leading-relaxed text-[#475569]">
                 Done-For-You: we build, configure, train, and support the
                 entire system. Self-Serve: same platform, you drive. Every
                 tier unlocks the full Adaptation OS platform — tiers
@@ -1247,7 +1247,7 @@ export default function HomePage() {
                   className={`relative flex flex-col rounded-[24px] p-7 shadow-soft transition-all hover:-translate-y-1 hover:shadow-lift ${
                     plan.highlight
                       ? "border-2 border-accent bg-white ring-2 ring-accent/30"
-                      : "border border-[#1C1917]/10 bg-white"
+                      : "border border-[#0F172A]/10 bg-white"
                   }`}
                 >
                   {plan.highlight && (
@@ -1258,31 +1258,31 @@ export default function HomePage() {
                   <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-accent">
                     {plan.name} · {plan.users}
                   </p>
-                  <div className="mt-4 border-b border-[#1C1917]/10 pb-4">
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#1C1917]/60">
+                  <div className="mt-4 border-b border-[#0F172A]/10 pb-4">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#0F172A]/60">
                       Done-For-You
                     </p>
-                    <p className="mt-1 font-display text-3xl font-bold text-[#1C1917]">
+                    <p className="mt-1 font-display text-3xl font-bold text-[#0F172A]">
                       {plan.setup}
-                      <span className="text-sm font-normal text-[#1C1917]/60"> setup</span>
+                      <span className="text-sm font-normal text-[#0F172A]/60"> setup</span>
                     </p>
-                    <p className="text-sm text-[#1C1917]/70">
-                      + <span className="font-semibold text-[#1C1917]">{plan.dfy}</span>/mo
+                    <p className="text-sm text-[#0F172A]/70">
+                      + <span className="font-semibold text-[#0F172A]">{plan.dfy}</span>/mo
                     </p>
                   </div>
                   <div className="pt-4">
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#1C1917]/60">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#0F172A]/60">
                       Self-Serve
                     </p>
-                    <p className="mt-1 font-display text-2xl font-bold text-[#1C1917]">
+                    <p className="mt-1 font-display text-2xl font-bold text-[#0F172A]">
                       {plan.diy}
-                      <span className="text-sm font-normal text-[#1C1917]/60">/mo</span>
+                      <span className="text-sm font-normal text-[#0F172A]/60">/mo</span>
                     </p>
-                    <p className="text-sm text-[#1C1917]/70">
+                    <p className="text-sm text-[#0F172A]/70">
                       No setup fee · Instant access
                     </p>
                   </div>
-                  <p className="mt-5 flex-1 text-sm leading-relaxed text-[#57534E]">
+                  <p className="mt-5 flex-1 text-sm leading-relaxed text-[#475569]">
                     {plan.copy}
                   </p>
                   <a
@@ -1290,7 +1290,7 @@ export default function HomePage() {
                     className={`mt-6 inline-flex items-center justify-center gap-2 rounded-sm border-2 px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] transition-all ${
                       plan.highlight
                         ? "border-accent bg-accent text-navy shadow-gold hover:bg-transparent hover:text-accent"
-                        : "border-[#1C1917]/80 bg-transparent text-[#1C1917] hover:bg-[#1C1917] hover:text-white"
+                        : "border-[#0F172A]/80 bg-transparent text-[#0F172A] hover:bg-[#0F172A] hover:text-white"
                     }`}
                   >
                     View {plan.name} Details <ArrowRight className="h-4 w-4" />
@@ -1299,7 +1299,7 @@ export default function HomePage() {
               ))}
             </div>
 
-            <p className="mt-10 text-center text-sm text-[#57534E]">
+            <p className="mt-10 text-center text-sm text-[#475569]">
               All plans include the full platform — AI agents, CRM, automation,
               website, reviews, listings, and reporting. Additional users:
               $50/mo each. One-time credits included at signup to cover typical
@@ -1315,7 +1315,7 @@ export default function HomePage() {
               </a>
               <a
                 href="/intake"
-                className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-[#1C1917]/80 px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-[#1C1917] transition-all hover:bg-[#1C1917] hover:text-white"
+                className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-[#0F172A]/80 px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-[#0F172A] transition-all hover:bg-[#0F172A] hover:text-white"
               >
                 Book A Setup Call
               </a>
@@ -1323,7 +1323,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#EA580C]/40 to-transparent" />
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#2563EB]/40 to-transparent" />
 
         {/* ═════════════════════════════════════════════════════════════════ */}
         {/* PROCESS                                                            */}
@@ -1332,10 +1332,10 @@ export default function HomePage() {
           <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
             <div className="mx-auto max-w-3xl text-center">
               <p className="eyebrow">How We Work</p>
-              <h2 className="mt-3 h-display text-3xl font-bold text-[#1C1917] sm:text-4xl">
+              <h2 className="mt-3 h-display text-3xl font-bold text-[#0F172A] sm:text-4xl">
                 From First Call to Live System in Two to Three Weeks.
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-[#57534E]">
+              <p className="mt-4 text-base leading-relaxed text-[#475569]">
                 A clear, phased process with direct access to the people doing
                 the work. No account managers. No ticket queues.
               </p>
@@ -1347,12 +1347,12 @@ export default function HomePage() {
                 ["03", "Build & Deploy", "Your CRM, AI agents, workflows, and website — configured, tested, launched."],
                 ["04", "Support & Scale", "Post-launch we tune, maintain, and expand as your business grows."],
               ].map(([step, heading, copy]) => (
-                <div key={step} className="rounded-[22px] border border-[#1C1917]/10 bg-white p-7 text-center shadow-soft">
+                <div key={step} className="rounded-[22px] border border-[#0F172A]/10 bg-white p-7 text-center shadow-soft">
                   <p className="font-display text-4xl font-bold text-accent">{step}</p>
-                  <h3 className="mt-3 font-display text-lg font-bold text-[#1C1917]">
+                  <h3 className="mt-3 font-display text-lg font-bold text-[#0F172A]">
                     {heading}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-[#57534E]">{copy}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-[#475569]">{copy}</p>
                 </div>
               ))}
             </div>
@@ -1362,10 +1362,10 @@ export default function HomePage() {
         {/* ═════════════════════════════════════════════════════════════════ */}
         {/* INDUSTRY EXPERIENCE                                                */}
         {/* ═════════════════════════════════════════════════════════════════ */}
-        <section className="section-cream border-t border-[#1C1917]/10 py-14 text-center">
+        <section className="section-cream border-t border-[#0F172A]/10 py-14 text-center">
           <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
             <p className="eyebrow">Experience Across Industries That Demand Precision</p>
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 font-display text-sm text-[#1C1917]/75">
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 font-display text-sm text-[#0F172A]/75">
               <span>Semiconductor Manufacturing</span>
               <span className="text-accent">·</span>
               <span>Data Center Engineering</span>
@@ -1376,21 +1376,21 @@ export default function HomePage() {
               <span className="text-accent">·</span>
               <span>Higher Education Infrastructure</span>
             </div>
-            <p className="mx-auto mt-6 max-w-3xl text-sm leading-relaxed text-[#57534E]">
+            <p className="mx-auto mt-6 max-w-3xl text-sm leading-relaxed text-[#475569]">
               Our team brings discipline from{" "}
-              <strong className="text-[#1C1917]">Intel</strong>,{" "}
-              <strong className="text-[#1C1917]">Apple</strong>,{" "}
-              <strong className="text-[#1C1917]">Arizona State University</strong>,{" "}
-              <strong className="text-[#1C1917]">ConocoPhillips</strong>,{" "}
-              <strong className="text-[#1C1917]">JPMorgan Chase</strong>, and{" "}
-              <strong className="text-[#1C1917]">Wells Fargo</strong> — combined
+              <strong className="text-[#0F172A]">Intel</strong>,{" "}
+              <strong className="text-[#0F172A]">Apple</strong>,{" "}
+              <strong className="text-[#0F172A]">Arizona State University</strong>,{" "}
+              <strong className="text-[#0F172A]">ConocoPhillips</strong>,{" "}
+              <strong className="text-[#0F172A]">JPMorgan Chase</strong>, and{" "}
+              <strong className="text-[#0F172A]">Wells Fargo</strong> — combined
               with five years building AI-powered business operating systems for
               small and mid-sized companies since 2021.
             </p>
           </div>
         </section>
 
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#EA580C]/40 to-transparent" />
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#2563EB]/40 to-transparent" />
 
         {/* ═════════════════════════════════════════════════════════════════ */}
         {/* FAQ                                                                */}
@@ -1399,24 +1399,24 @@ export default function HomePage() {
           <div className="mx-auto max-w-[900px] px-6 sm:px-8">
             <div className="text-center">
               <p className="eyebrow">Common Questions</p>
-              <h2 className="mt-3 h-display text-3xl font-bold text-[#1C1917] sm:text-4xl">
+              <h2 className="mt-3 h-display text-3xl font-bold text-[#0F172A] sm:text-4xl">
                 Everything You'd Ask on a Discovery Call.
               </h2>
             </div>
             <div className="mt-10">
               {faqs.map((item) => (
-                <details key={item.q} className="group border-b border-[#1C1917]/10 py-2">
-                  <summary className="flex cursor-pointer select-none items-center justify-between py-4 text-base font-semibold text-[#1C1917] sm:text-lg">
+                <details key={item.q} className="group border-b border-[#0F172A]/10 py-2">
+                  <summary className="flex cursor-pointer select-none items-center justify-between py-4 text-base font-semibold text-[#0F172A] sm:text-lg">
                     <span className="pr-6">{item.q}</span>
                     <span className="shrink-0 text-2xl text-accent transition-transform group-open:rotate-45">+</span>
                   </summary>
-                  <p className="pb-5 pr-8 text-sm leading-relaxed text-[#57534E] sm:text-base">
+                  <p className="pb-5 pr-8 text-sm leading-relaxed text-[#475569] sm:text-base">
                     {item.a}
                   </p>
                 </details>
               ))}
             </div>
-            <p className="mt-8 text-center text-sm text-[#1C1917]/70">
+            <p className="mt-8 text-center text-sm text-[#0F172A]/70">
               Still have questions? Call us directly at{" "}
               <a href="tel:6232191237" className="font-semibold text-accent hover:underline">
                 623-219-1237
@@ -1428,16 +1428,16 @@ export default function HomePage() {
         {/* ═════════════════════════════════════════════════════════════════ */}
         {/* INTEGRATIONS MARQUEE — scrolling partner/integration logos        */}
         {/* ═════════════════════════════════════════════════════════════════ */}
-        <section className="section-cream border-t border-[#1C1917]/10 py-14 sm:py-16">
+        <section className="section-cream border-t border-[#0F172A]/10 py-14 sm:py-16">
           <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
             <div className="text-center">
-              <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-[#1C1917]/60 sm:text-[11px]">
+              <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-[#0F172A]/60 sm:text-[11px]">
                 Native Integrations · 200+ Partners
               </p>
-              <h2 className="mt-3 h-display text-xl font-bold text-[#1C1917] sm:text-2xl lg:text-[1.75rem]">
+              <h2 className="mt-3 h-display text-xl font-bold text-[#0F172A] sm:text-2xl lg:text-[1.75rem]">
                 The tools you already use — connected in one login.
               </h2>
-              <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-[#57534E]">
+              <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-[#475569]">
                 Adaptation OS plugs into Stripe, Google, Meta, QuickBooks, Shopify,
                 Zoom, Slack, and 200+ more — no Zapier required.
               </p>
@@ -1499,7 +1499,7 @@ export default function HomePage() {
             <h2 className="mt-3 h-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
               Your Business, Running on One System.
             </h2>
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-[#A8A29E] sm:text-lg">
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-[#94A3B8] sm:text-lg">
               Adaptation OS replaces 12+ subscriptions with a single platform —
               AI phone, AI chat, CRM, workflows, website, reviews, listings,
               and more — starting at $194.90/mo with setup or $349.90/mo
@@ -1532,7 +1532,7 @@ export default function HomePage() {
                 Book A Live Demo
               </a>
             </div>
-            <div className="mt-10 flex flex-wrap justify-center gap-4 text-[10px] font-semibold uppercase tracking-[0.24em] text-[#78716C]">
+            <div className="mt-10 flex flex-wrap justify-center gap-4 text-[10px] font-semibold uppercase tracking-[0.24em] text-[#64748B]">
               <span>Veteran-Owned · VOSB</span>
               <span>·</span>
               <span>SAM.gov Registered · CAGE 95WK4</span>

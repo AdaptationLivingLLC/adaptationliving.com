@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Script from "next/script";
-import { Cinzel, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Linkedin } from "lucide-react";
 import { hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -14,16 +14,9 @@ import { NavBar } from "@al/ui/components/navbar";
 import { competitors } from "../../data/competitors";
 import "@al/ui/globals.css";
 
-const cinzel = Cinzel({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  variable: "--font-display",
-  display: "swap",
-});
-
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["300", "400", "600", "700"],
+  weight: ["300", "400", "500", "600", "700", "800"],
   variable: "--font-body",
   display: "swap",
 });
@@ -126,7 +119,7 @@ export default async function LocaleLayout({
   const clarityId = process.env.NEXT_PUBLIC_CLARITY_ID;
 
   return (
-    <html lang={locale} className={`${cinzel.variable} ${inter.variable}`}>
+    <html lang={locale} className={inter.variable}>
       <head>
         {/* Preconnect hints for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -164,20 +157,20 @@ export default async function LocaleLayout({
           {children}
 
           {/* Site-wide Footer */}
-          <footer className="section-dark border-t border-[#EA580C]/20 py-16 px-6 sm:px-8">
+          <footer className="section-dark border-t border-[#2563EB]/20 py-16 px-6 sm:px-8">
             <div className="mx-auto max-w-[1400px]">
               <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:items-start">
                 <div>
                   <p className="font-display text-2xl font-bold text-white tracking-[0.04em]">
                     ADAPTATION LIVING{" "}
-                    <span className="text-[#EA580C] text-sm tracking-[0.28em]">LLC</span>
+                    <span className="text-[#2563EB] text-sm tracking-[0.28em]">LLC</span>
                   </p>
-                  <p className="mt-3 text-sm leading-relaxed text-[#A8A29E] max-w-md">
+                  <p className="mt-3 text-sm leading-relaxed text-[#94A3B8] max-w-md">
                     Adaptation OS — AI automation, CRM, and a complete business
                     operating system for Phoenix, AZ. Veteran-owned, SAM.gov
                     registered, headquartered in Uptown Phoenix since 2021.
                   </p>
-                  <div className="mt-5 text-xs uppercase tracking-[0.22em] text-[#78716C]">
+                  <div className="mt-5 text-xs uppercase tracking-[0.22em] text-[#64748B]">
                     3030 N Central Ave · Suite 507 · Phoenix, AZ 85012
                   </div>
                   <div className="mt-4 flex gap-4">
@@ -185,7 +178,7 @@ export default async function LocaleLayout({
                       href="https://www.linkedin.com/company/adaptation-living"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#78716C] hover:text-[#EA580C] transition-colors"
+                      className="text-[#64748B] hover:text-[#2563EB] transition-colors"
                       aria-label="Follow Adaptation Living LLC on LinkedIn"
                     >
                       <Linkedin className="w-5 h-5" />
@@ -194,23 +187,23 @@ export default async function LocaleLayout({
                 </div>
 
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.26em] text-[#EA580C] font-bold mb-4">
+                  <p className="text-[10px] uppercase tracking-[0.26em] text-[#2563EB] font-bold mb-4">
                     Platform
                   </p>
                   <ul className="space-y-2 text-sm">
-                    <li><a href="/" className="text-[#A8A29E] hover:text-[#EA580C]">Home</a></li>
-                    <li><a href="/#platform" className="text-[#A8A29E] hover:text-[#EA580C]">Adaptation OS Features</a></li>
-                    <li><a href="/services" className="text-[#A8A29E] hover:text-[#EA580C]">Pricing &amp; Plans</a></li>
-                    <li><a href="/ai" className="text-[#A8A29E] hover:text-[#EA580C]">AI Phone &amp; Chat Agents</a></li>
-                    <li><a href="/vs" className="text-[#A8A29E] hover:text-[#EA580C]">Compare Platforms</a></li>
-                    <li><a href="/contact" className="text-[#A8A29E] hover:text-[#EA580C]">Contact</a></li>
-                    <li><a href="/intake" className="text-[#A8A29E] hover:text-[#EA580C]">Book Setup Call</a></li>
-                    <li><a href="https://app.adaptationliving.com" className="text-[#A8A29E] hover:text-[#EA580C]">Client Portal Login</a></li>
+                    <li><a href="/" className="text-[#94A3B8] hover:text-[#2563EB]">Home</a></li>
+                    <li><a href="/#platform" className="text-[#94A3B8] hover:text-[#2563EB]">Adaptation OS Features</a></li>
+                    <li><a href="/services" className="text-[#94A3B8] hover:text-[#2563EB]">Pricing &amp; Plans</a></li>
+                    <li><a href="/ai" className="text-[#94A3B8] hover:text-[#2563EB]">AI Phone &amp; Chat Agents</a></li>
+                    <li><a href="/vs" className="text-[#94A3B8] hover:text-[#2563EB]">Compare Platforms</a></li>
+                    <li><a href="/contact" className="text-[#94A3B8] hover:text-[#2563EB]">Contact</a></li>
+                    <li><a href="/intake" className="text-[#94A3B8] hover:text-[#2563EB]">Book Setup Call</a></li>
+                    <li><a href="https://app.adaptationliving.com" className="text-[#94A3B8] hover:text-[#2563EB]">Client Portal Login</a></li>
                   </ul>
                 </div>
 
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.26em] text-[#EA580C] font-bold mb-4">
+                  <p className="text-[10px] uppercase tracking-[0.26em] text-[#2563EB] font-bold mb-4">
                     Adaptation OS Vs
                   </p>
                   <ul className="space-y-2 text-sm">
@@ -218,7 +211,7 @@ export default async function LocaleLayout({
                       <li key={c.slug}>
                         <a
                           href={`/vs/${c.slug}`}
-                          className="text-[#A8A29E] hover:text-[#EA580C]"
+                          className="text-[#94A3B8] hover:text-[#2563EB]"
                         >
                           Adaptation OS Vs {c.name}
                         </a>
@@ -228,39 +221,39 @@ export default async function LocaleLayout({
                 </div>
 
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.26em] text-[#EA580C] font-bold mb-4">
+                  <p className="text-[10px] uppercase tracking-[0.26em] text-[#2563EB] font-bold mb-4">
                     Company
                   </p>
                   <ul className="space-y-2 text-sm">
                     <li>
-                      <a href="tel:6232191237" className="text-[#A8A29E] hover:text-[#EA580C]">
+                      <a href="tel:6232191237" className="text-[#94A3B8] hover:text-[#2563EB]">
                         623-219-1237
                       </a>
                     </li>
                     <li>
-                      <a href="mailto:info@adaptationliving.com" className="text-[#A8A29E] hover:text-[#EA580C]">
+                      <a href="mailto:info@adaptationliving.com" className="text-[#94A3B8] hover:text-[#2563EB]">
                         info@adaptationliving.com
                       </a>
                     </li>
-                    <li><a href="/legal" className="text-[#A8A29E] hover:text-[#EA580C]">Privacy &amp; Terms</a></li>
-                    <li><a href="/ls-2025.html" className="text-[#A8A29E] hover:text-[#EA580C]">LS-2025 Veteran Lifeline</a></li>
+                    <li><a href="/legal" className="text-[#94A3B8] hover:text-[#2563EB]">Privacy &amp; Terms</a></li>
+                    <li><a href="/ls-2025.html" className="text-[#94A3B8] hover:text-[#2563EB]">LS-2025 Veteran Lifeline</a></li>
                   </ul>
                 </div>
               </div>
 
               <div className="mt-12 border-t border-white/10 pt-8">
-                <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[10px] font-semibold uppercase tracking-[0.26em] text-[#78716C]">
+                <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[10px] font-semibold uppercase tracking-[0.26em] text-[#64748B]">
                   <span>Veteran-Owned Small Business (VOSB)</span>
-                  <span className="text-[#EA580C]">·</span>
+                  <span className="text-[#2563EB]">·</span>
                   <span>SAM.gov Registered</span>
-                  <span className="text-[#EA580C]">·</span>
+                  <span className="text-[#2563EB]">·</span>
                   <span>CAGE 95WK4</span>
-                  <span className="text-[#EA580C]">·</span>
+                  <span className="text-[#2563EB]">·</span>
                   <span>UEI J3XGTRT7DYU5</span>
-                  <span className="text-[#EA580C]">·</span>
+                  <span className="text-[#2563EB]">·</span>
                   <span>NAICS 541511 · 541512</span>
                 </div>
-                <div className="mt-6 text-center text-xs text-[#78716C]">
+                <div className="mt-6 text-center text-xs text-[#64748B]">
                   &copy; 2021–2026 Adaptation Living LLC · All rights reserved.
                 </div>
               </div>

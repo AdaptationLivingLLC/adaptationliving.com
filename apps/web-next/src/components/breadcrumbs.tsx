@@ -13,7 +13,7 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
         <li>
           <Link
             href="/"
-            className="text-[#EA580C] hover:text-[#C2410C] transition-colors"
+            className="text-[#2563EB] hover:text-[#1D4ED8] transition-colors"
             aria-label="Home"
           >
             <Home className="w-4 h-4" />
@@ -25,7 +25,7 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
             {item.path && i < items.length - 1 ? (
               <Link
                 href={item.path}
-                className="opacity-70 hover:text-[#EA580C] hover:opacity-100 transition-all"
+                className="opacity-70 hover:text-[#2563EB] hover:opacity-100 transition-all"
               >
                 {item.name}
               </Link>

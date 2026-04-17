@@ -68,16 +68,16 @@ export default async function IntakePage({
       <section className="section-cream">
         <div className="max-w-[900px] mx-auto px-6 sm:px-8 pt-10 pb-6 text-center">
           <p className="eyebrow">Intake · Adaptation OS Setup</p>
-          <h1 className="mt-3 h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917]">
+          <h1 className="mt-3 h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F172A]">
             Start Your Adaptation OS Setup.
           </h1>
-          <p className="mt-4 text-base text-[#57534E] max-w-2xl mx-auto leading-relaxed sm:text-lg">
+          <p className="mt-4 text-base text-[#475569] max-w-2xl mx-auto leading-relaxed sm:text-lg">
             Tell us about your business and we'll respond within hours — not
             days. A senior team member handles every intake personally. No
             chatbots. No sales funnels. Just a real conversation about what
             you're building.
           </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#1C1917]/70">
+          <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#0F172A]/70">
             <span className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-accent" /> Hours-not-days response
             </span>
@@ -98,9 +98,9 @@ export default async function IntakePage({
               <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-accent mb-2">
                 Selected Plan
               </p>
-              <p className="text-base sm:text-lg leading-relaxed text-[#1C1917]">
+              <p className="text-base sm:text-lg leading-relaxed text-[#0F172A]">
                 You're booking for{" "}
-                <strong className="text-[#1C1917]">{planLabel}</strong>. Tell us
+                <strong className="text-[#0F172A]">{planLabel}</strong>. Tell us
                 about your business and we'll prepare a tailored walk-through.
               </p>
             </div>
@@ -112,7 +112,7 @@ export default async function IntakePage({
       <section className="section-cream">
         <div className="max-w-[700px] mx-auto px-6 sm:px-8 pb-12">
           {formId ? (
-            <div className="rounded-[20px] border border-[#1C1917]/10 bg-white shadow-lift p-5 sm:p-6">
+            <div className="rounded-[20px] border border-[#0F172A]/10 bg-white shadow-lift p-5 sm:p-6">
               <GhlEmbed
                 formId={formId}
                 height="700px"
@@ -120,22 +120,22 @@ export default async function IntakePage({
               />
             </div>
           ) : (
-            <div className="rounded-[20px] border border-[#1C1917]/10 bg-white shadow-soft p-8 sm:p-10 text-center">
-              <p className="text-[#57534E] mb-6 leading-relaxed">
+            <div className="rounded-[20px] border border-[#0F172A]/10 bg-white shadow-soft p-8 sm:p-10 text-center">
+              <p className="text-[#475569] mb-6 leading-relaxed">
                 Our intake form is being configured in GHL. Reach out directly and
                 we'll start your setup the same day:
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-6">
                 <a
                   href="tel:6232191237"
-                  className="flex items-center justify-center gap-2 text-lg font-semibold text-[#1C1917] hover:text-accent transition-all"
+                  className="flex items-center justify-center gap-2 text-lg font-semibold text-[#0F172A] hover:text-accent transition-all"
                 >
                   <Phone className="text-accent w-5 h-5" />
                   623-219-1237
                 </a>
                 <a
                   href="mailto:info@adaptationliving.com"
-                  className="flex items-center justify-center gap-2 text-lg font-semibold text-[#1C1917] hover:text-accent transition-all"
+                  className="flex items-center justify-center gap-2 text-lg font-semibold text-[#0F172A] hover:text-accent transition-all"
                 >
                   <Mail className="text-accent w-5 h-5" />
                   info@adaptationliving.com
@@ -153,22 +153,22 @@ export default async function IntakePage({
       </section>
 
       {/* FALLBACK */}
-      <section className="section-cream border-t border-[#1C1917]/10 py-16 text-center">
+      <section className="section-cream border-t border-[#0F172A]/10 py-16 text-center">
         <div className="max-w-[700px] mx-auto px-6 sm:px-8">
-          <p className="text-sm text-[#57534E] mb-4">
+          <p className="text-sm text-[#475569] mb-4">
             Prefer to talk? Call or email us directly.
           </p>
           <div className="flex justify-center gap-8 flex-wrap">
             <a
               href="tel:6232191237"
-              className="flex items-center gap-2 font-semibold text-[#1C1917] hover:text-accent transition-all"
+              className="flex items-center gap-2 font-semibold text-[#0F172A] hover:text-accent transition-all"
             >
               <Phone className="text-accent w-4 h-4" />
               623-219-1237
             </a>
             <a
               href="mailto:info@adaptationliving.com"
-              className="flex items-center gap-2 font-semibold text-[#1C1917] hover:text-accent transition-all"
+              className="flex items-center gap-2 font-semibold text-[#0F172A] hover:text-accent transition-all"
             >
               <Mail className="text-accent w-4 h-4" />
               info@adaptationliving.com

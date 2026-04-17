@@ -16,7 +16,7 @@
   }
 
   body {
-    background: linear-gradient(165deg, #FAF7F2 0%, #F5F0E8 35%, #EDE5D8 70%, #FAF7F2 100%);
+    background: linear-gradient(165deg, #FFFFFF 0%, #F8FAFC 35%, #F1F5F9 70%, #FFFFFF 100%);
     background-attachment: fixed;
     color: var(--color-text-main);
     font-family: var(--font-body);
@@ -138,8 +138,8 @@ div[data-widget-id="69db6e04d0d6ea75797b53f6"] {
 }
 
 /* Prose overrides for legal page — readable on cream */
-.prose h1, .prose h2, .prose h3, .prose h4 { color: #1C1917; }
-.prose p, .prose li { color: #57534E; }
+.prose h1, .prose h2, .prose h3, .prose h4 { color: #0F172A; }
+.prose p, .prose li { color: #475569; }
 .prose a { color: var(--color-accent); }
 
 /* Horizontally scrolling logo marquee (integrations/partners) */

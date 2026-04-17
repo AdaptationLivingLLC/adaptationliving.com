@@ -33,12 +33,12 @@ export default function VsIndex() {
           <p className="eyebrow">Adaptation OS Vs</p>
           <h1 className="mt-3 h-display font-bold tracking-tight text-white text-[1.9rem] leading-[1.05] sm:text-[2.4rem] lg:text-[3rem] max-w-4xl">
             How Adaptation OS{" "}
-            <span className="bg-gradient-to-r from-accent via-[#FB923C] to-accent bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent via-[#3B82F6] to-accent bg-clip-text text-transparent">
               stacks up
             </span>{" "}
             against every major platform.
           </h1>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#A8A29E] sm:text-lg">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#94A3B8] sm:text-lg">
             Eleven head-to-head comparisons — real list prices, feature-by-feature
             tables, and honest callouts where the other tool is the better pick.
             No marketing hype.
@@ -53,23 +53,23 @@ export default function VsIndex() {
               <Link
                 key={c.slug}
                 href={`/vs/${c.slug}`}
-                className="group flex flex-col justify-between rounded-[20px] border border-[#1C1917]/10 bg-white p-6 shadow-soft transition-all hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-lift"
+                className="group flex flex-col justify-between rounded-[20px] border border-[#0F172A]/10 bg-white p-6 shadow-soft transition-all hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-lift"
               >
                 <div>
                   <p className="text-[10px] font-bold uppercase tracking-[0.26em] text-accent">
                     vs
                   </p>
-                  <h2 className="mt-2 font-display text-xl font-bold text-[#1C1917]">
+                  <h2 className="mt-2 font-display text-xl font-bold text-[#0F172A]">
                     {c.name}
                   </h2>
-                  <p className="mt-2 text-xs font-mono text-[#1C1917]/60">
+                  <p className="mt-2 text-xs font-mono text-[#0F172A]/60">
                     {c.priceMonthly}
                   </p>
-                  <p className="mt-4 text-sm leading-relaxed text-[#57534E]">
+                  <p className="mt-4 text-sm leading-relaxed text-[#475569]">
                     {c.positioningLine}
                   </p>
                 </div>
-                <p className="mt-6 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] text-[#1C1917] transition-colors group-hover:text-accent">
+                <p className="mt-6 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] text-[#0F172A] transition-colors group-hover:text-accent">
                   Read the full comparison{" "}
                   <ArrowRight className="h-3.5 w-3.5" />
                 </p>

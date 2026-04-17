@@ -93,11 +93,11 @@ function Particles() {
 
 export function ThreeDemo() {
   return (
-    <div className="w-full h-[500px] rounded-2xl overflow-hidden border border-white/10 bg-[#1C1917]/80">
+    <div className="w-full h-[500px] rounded-2xl overflow-hidden border border-white/10 bg-[#0F172A]/80">
       <Canvas camera={{ position: [0, 0, 8], fov: 50 }}>
         <ambientLight intensity={0.3} />
         <pointLight position={[10, 10, 10]} intensity={1} color="#d4af37" />
-        <pointLight position={[-10, -5, -10]} intensity={0.5} color="#EA580C" />
+        <pointLight position={[-10, -5, -10]} intensity={0.5} color="#2563EB" />
         <spotLight position={[0, 10, 0]} angle={0.3} penumbra={1} intensity={0.5} />
         <AnimatedSphere />
         <FloatingRings />
