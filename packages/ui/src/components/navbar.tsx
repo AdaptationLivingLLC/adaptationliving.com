@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 const navLinks = [
   { href: "/#platform", label: "Platform" },
   { href: "/services", label: "Pricing" },
+  { href: "/demo", label: "Demo" },
   { href: "/vs", label: "Compare" },
   { href: "/ai", label: "AI Agents" },
   { href: "/contact", label: "Contact" },
@@ -106,6 +107,7 @@ export function NavBar() {
             <a href="/" onClick={() => setMobileMenuOpen(false)} className="text-[#0F172A] font-semibold hover:text-[#1D4ED8] transition-colors">Home</a>
             <a href="/#platform" onClick={() => setMobileMenuOpen(false)} className="text-[#0F172A] font-semibold hover:text-[#1D4ED8] transition-colors">Platform</a>
             <a href="/services" onClick={() => setMobileMenuOpen(false)} className="text-[#0F172A] font-semibold hover:text-[#1D4ED8] transition-colors">Pricing</a>
+            <a href="/demo" onClick={() => setMobileMenuOpen(false)} className="text-[#0F172A] font-semibold hover:text-[#1D4ED8] transition-colors">Demo</a>
             <a href="/vs" onClick={() => setMobileMenuOpen(false)} className="text-[#0F172A] font-semibold hover:text-[#1D4ED8] transition-colors">Compare</a>
             <a href="/ai" onClick={() => setMobileMenuOpen(false)} className="text-[#0F172A] font-semibold hover:text-[#1D4ED8] transition-colors">AI Agents</a>
             <a href="/contact" onClick={() => setMobileMenuOpen(false)} className="text-[#0F172A] font-semibold hover:text-[#1D4ED8] transition-colors">Contact</a>
