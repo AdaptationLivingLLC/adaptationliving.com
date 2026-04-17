@@ -114,3 +114,21 @@ div[data-widget-id="69db6e04d0d6ea75797b53f6"] {
 .prose h1, .prose h2, .prose h3, .prose h4 { color: #0B1D3A; }
 .prose p, .prose li { color: #4A5568; }
 .prose a { color: var(--color-accent); }
+
+/* Horizontally scrolling logo marquee (integrations/partners) */
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.logo-marquee {
+  animation: marquee-scroll 50s linear infinite;
+}
+
+.logo-marquee:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-marquee { animation: none; }
+}

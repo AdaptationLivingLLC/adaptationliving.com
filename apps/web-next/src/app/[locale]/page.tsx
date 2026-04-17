@@ -607,6 +607,39 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        {/* AWARDS STRIP — G2 + Capterra (platform recognition)                */}
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        <section className="section-cream border-t border-[#0B1D3A]/10 py-10 sm:py-12">
+          <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
+            <p className="text-center text-[10px] font-bold uppercase tracking-[0.28em] text-[#0B1D3A]/60 sm:text-[11px]">
+              Platform Awarded by G2 &amp; Capterra — Winter / 2026
+            </p>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:gap-8">
+              {[
+                { src: "/images/awards/g2-top-100-best-software.webp",        alt: "G2 Top 100 Best Software Products 2026" },
+                { src: "/images/awards/g2-top-50-agentic-ai.webp",            alt: "G2 Top 50 Agentic AI Products 2026" },
+                { src: "/images/awards/g2-top-50-marketing-advertising.webp", alt: "G2 Top 50 Marketing + Digital Advertising Products 2026" },
+                { src: "/images/awards/g2-top-50-sales.webp",                 alt: "G2 Top 50 Sales Products 2026" },
+                { src: "/images/awards/g2-top-50-content-mgmt.webp",          alt: "G2 Top 50 Content Management Products 2026" },
+                { src: "/images/awards/g2-easiest-admin.png",                 alt: "G2 Easiest Admin Mid-Market Winter 2026" },
+                { src: "/images/awards/g2-easiest-to-do-business.png",        alt: "G2 Easiest To Do Business With Mid-Market Winter 2026" },
+                { src: "/images/awards/g2-users-most-likely-recommend.png",   alt: "G2 Users Most Likely To Recommend Mid-Market Winter 2026" },
+                { src: "/images/awards/capterra-shortlist-2025.webp",         alt: "Capterra Shortlist 2025" },
+              ].map((b) => (
+                /* eslint-disable-next-line @next/next/no-img-element */
+                <img
+                  key={b.src}
+                  src={b.src}
+                  alt={b.alt}
+                  loading="lazy"
+                  className="h-20 w-auto object-contain transition-transform duration-200 hover:-translate-y-0.5 sm:h-24 lg:h-28"
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+
         <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D4AF37]/40 to-transparent" />
 
         {/* ═════════════════════════════════════════════════════════════════ */}
@@ -1389,6 +1422,71 @@ export default function HomePage() {
                 623-219-1237
               </a>
             </p>
+          </div>
+        </section>
+
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        {/* INTEGRATIONS MARQUEE — scrolling partner/integration logos        */}
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        <section className="section-cream border-t border-[#0B1D3A]/10 py-14 sm:py-16">
+          <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
+            <div className="text-center">
+              <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-[#0B1D3A]/60 sm:text-[11px]">
+                Native Integrations · 200+ Partners
+              </p>
+              <h2 className="mt-3 h-display text-xl font-bold text-[#0B1D3A] sm:text-2xl lg:text-[1.75rem]">
+                The tools you already use — connected in one login.
+              </h2>
+              <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-[#4A5568]">
+                Adaptation OS plugs into Stripe, Google, Meta, QuickBooks, Shopify,
+                Zoom, Slack, and 200+ more — no Zapier required.
+              </p>
+            </div>
+
+            {/* Scrolling marquee — duplicated track for seamless loop */}
+            <div className="relative mt-10 overflow-hidden [mask-image:linear-gradient(to_right,transparent,#000_8%,#000_92%,transparent)]">
+              <div className="logo-marquee flex w-max items-center gap-12 sm:gap-16">
+                {Array.from({ length: 2 }).flatMap((_, copy) =>
+                  [
+                    "67ab96a506eacd2a0b72e015",
+                    "6708273f16989c97e93c88f4",
+                    "67ab96a5eeb737f0f46d445b",
+                    "67abd58650fb000ed8851f30",
+                    "67af641f237ce2563df82508",
+                    "67ab96a572d42b2bbdab113b",
+                    "67ab96a579284bbe3b6a77ac",
+                    "67ab96a579284bdb1a6a77ab",
+                    "67ab96a5ee6da9493235043e",
+                    "67ab96a5ee6da9500a35043d",
+                    "67ab96a506eacd595072e016",
+                    "67ab96a534b29afa9dca6433",
+                    "67ab96a537d82f92fceb7e3d",
+                    "67ab96a54325e150f16636dc",
+                    "67ab96a534b29a2b24ca6434",
+                    "67ab96a579284b08c36a77ad",
+                    "67ab96a5ee6da9160435043f",
+                    "67ab96a534b29a1b3eca6435",
+                    "67ab96a5f3bda8b1b50e5c3e",
+                  ].map((id) => {
+                    const src =
+                      id === "6708273f16989c97e93c88f4"
+                        ? `https://images.leadconnectorhq.com/image/f_webp/q_80/r_400/u_https://assets.cdn.filesafe.space/knES3eSWYIsc5YSZ3YLl/media/${id}.png`
+                        : `https://images.leadconnectorhq.com/image/f_webp/q_80/r_400/u_https://storage.googleapis.com/msgsndr/knES3eSWYIsc5YSZ3YLl/media/${id}.png`;
+                    return (
+                      /* eslint-disable-next-line @next/next/no-img-element */
+                      <img
+                        key={`${copy}-${id}`}
+                        src={src}
+                        alt="Integration partner"
+                        aria-hidden={copy === 1 ? true : undefined}
+                        loading="lazy"
+                        className="h-10 w-auto shrink-0 object-contain opacity-80 grayscale transition-all duration-200 hover:opacity-100 hover:grayscale-0 sm:h-12"
+                      />
+                    );
+                  })
+                )}
+              </div>
+            </div>
           </div>
         </section>
 
