@@ -29,12 +29,12 @@ export function NavBar() {
           : "bg-[#FEFCF8] border-[#D4AF37]/30"
       }`}
     >
-      <div className="max-w-[1400px] mx-auto flex justify-between items-center px-5 lg:px-10 py-3.5">
-        <a href="/" className="flex items-center gap-3">
-          <span className="font-display text-[15px] font-bold text-[#0B1D3A] tracking-[0.06em]">
+      <div className="max-w-[1400px] mx-auto flex justify-between items-center px-5 lg:px-10 py-4">
+        <a href="/" className="flex items-baseline gap-2.5">
+          <span className="font-display text-[20px] sm:text-[22px] lg:text-[26px] font-bold text-[#0B1D3A] tracking-[0.04em] leading-none">
             ADAPTATION LIVING
           </span>
-          <span className="text-[9px] text-[#B8952A] font-display tracking-[0.3em] uppercase font-bold">
+          <span className="text-[11px] sm:text-[12px] lg:text-[13px] text-[#B8952A] font-display tracking-[0.3em] uppercase font-bold leading-none">
             LLC
           </span>
         </a>

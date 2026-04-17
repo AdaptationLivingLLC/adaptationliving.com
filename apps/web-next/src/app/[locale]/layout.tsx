@@ -168,9 +168,9 @@ export default async function LocaleLayout({
             <div className="mx-auto max-w-[1400px]">
               <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:items-start">
                 <div>
-                  <p className="font-display text-lg font-bold text-white tracking-[0.04em]">
+                  <p className="font-display text-2xl font-bold text-white tracking-[0.04em]">
                     ADAPTATION LIVING{" "}
-                    <span className="text-[#D4AF37] text-xs tracking-[0.28em]">LLC</span>
+                    <span className="text-[#D4AF37] text-sm tracking-[0.28em]">LLC</span>
                   </p>
                   <p className="mt-3 text-sm leading-relaxed text-[#B8C4D4] max-w-md">
                     Adaptation OS — AI automation, CRM, and a complete business
