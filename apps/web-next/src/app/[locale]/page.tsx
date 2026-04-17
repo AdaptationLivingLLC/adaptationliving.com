@@ -511,20 +511,18 @@ export default function HomePage() {
                     Since 2021
                   </span>
                 </div>
-                <h1 className="h-display font-bold text-white text-[1.75rem] sm:text-4xl xl:text-[2.75rem]">
-                  AI Automation, CRM &amp; a Complete{" "}
+                <h1 className="h-display font-bold tracking-tight text-white text-[1.9rem] leading-[1.05] sm:text-[2.4rem] xl:text-[3rem]">
+                  The{" "}
                   <span className="bg-gradient-to-r from-accent via-[#E8C96A] to-accent bg-clip-text text-transparent">
                     Business Operating System
                   </span>{" "}
-                  for Phoenix, AZ.
+                  for Phoenix.
                 </h1>
-                <p className="mt-5 max-w-xl text-[0.95rem] leading-relaxed text-[#B8C4D4] sm:text-base">
-                  Adaptation OS replaces 12+ disconnected business tools with one
-                  white-labeled platform. AI phone receptionist, AI chat agent,
-                  CRM, workflow automation, review management, email + SMS
-                  marketing, funnels, calendars, payments, and 70+ directory
-                  listings — all in one login. Deployed and supported by a
-                  veteran-owned team in Uptown Phoenix.
+                <p className="mt-4 max-w-xl text-[0.95rem] leading-relaxed text-[#B8C4D4] sm:text-base">
+                  AI phone receptionist, AI chat agent, CRM, workflows, email +
+                  SMS marketing, funnels, calendars, payments, and 70+ directory
+                  listings — replacing 12+ disconnected tools with one login.
+                  Deployed by a veteran-owned team in Uptown Phoenix.
                 </p>
 
                 <div className="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -853,90 +851,246 @@ export default function HomePage() {
         {/* ═════════════════════════════════════════════════════════════════ */}
         {/* WHAT IT REPLACES                                                   */}
         {/* ═════════════════════════════════════════════════════════════════ */}
-        <section className="section-dark py-20 sm:py-24">
+        <section className="section-dark py-16 sm:py-20">
           <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
-            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-              <div>
-                <p className="eyebrow">One System. Eight+ Tools Gone.</p>
-                <h2 className="mt-3 h-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-                  Cancel the subscriptions. Keep the capability.
-                </h2>
-                <p className="mt-5 max-w-xl text-base leading-relaxed text-[#B8C4D4] sm:text-lg">
-                  Most small businesses we meet are paying $1,500–$4,000/month
-                  across a dozen disconnected tools. Adaptation OS consolidates
-                  the entire stack — CRM, email, SMS, chat, calendar, reviews,
-                  funnels, pipeline, reporting — into one platform, with AI
-                  agents bolted onto every workflow.
-                </p>
-                <div className="mt-8 grid gap-3 sm:grid-cols-2">
+            <div className="max-w-3xl">
+              <p className="eyebrow">The Real Cost of a Duct-Taped Stack</p>
+              <h2 className="mt-3 h-display text-2xl font-bold text-white sm:text-3xl lg:text-[2.25rem]">
+                Cancel the subscriptions. <span className="text-accent">Keep every capability.</span>
+              </h2>
+              <p className="mt-4 max-w-2xl text-[0.95rem] leading-relaxed text-[#B8C4D4]">
+                Here's what a typical Phoenix small business pays for twelve
+                tools that don't talk to each other — and what the exact same
+                capability costs on one platform that actually does.
+              </p>
+            </div>
+
+            <div className="mt-10 grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-stretch">
+              {/* LEFT: Current duct-taped stack with real prices */}
+              <div className="rounded-[20px] border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+                <div className="flex items-center justify-between gap-4 border-b border-white/10 pb-4">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-[#ff6b6b]">
+                    What You're Paying Now
+                  </p>
+                  <p className="text-[10px] uppercase tracking-[0.22em] text-[#8899AA]">
+                    List prices, 2026
+                  </p>
+                </div>
+
+                <ul className="mt-5 divide-y divide-white/5 text-sm">
                   {[
-                    "HubSpot / Salesforce",
-                    "ActiveCampaign / Mailchimp",
-                    "Calendly / Acuity",
-                    "Twilio / OpenPhone",
-                    "ClickFunnels / Leadpages",
-                    "Podium / BirdEye",
-                    "Intercom / Drift",
-                    "Zapier Pro",
-                    "Kajabi / Teachable",
-                    "Hootsuite / Buffer",
-                    "Meta Ads Manager",
-                    "Wix / Squarespace",
-                  ].map((tool) => (
-                    <div
+                    { tool: "HubSpot CRM Starter", price: 20 },
+                    { tool: "Mailchimp Standard", price: 50 },
+                    { tool: "Calendly Teams", price: 16 },
+                    { tool: "OpenPhone / Twilio", price: 75 },
+                    { tool: "ClickFunnels Basic", price: 127 },
+                    { tool: "Podium Core (reviews)", price: 289 },
+                    { tool: "Intercom Essential (chat)", price: 74 },
+                    { tool: "Zapier Professional", price: 50 },
+                    { tool: "Hootsuite Professional", price: 99 },
+                    { tool: "Wix Business Elite", price: 32 },
+                    { tool: "Yext Listings", price: 99 },
+                    { tool: "Kajabi Basic (courses)", price: 149 },
+                  ].map(({ tool, price }) => (
+                    <li
                       key={tool}
-                      className="flex items-center gap-2 rounded-lg border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-[#B8C4D4]"
+                      className="flex items-center justify-between py-2.5"
                     >
-                      <span className="text-red-400">✕</span>
-                      <span className="line-through decoration-white/30">{tool}</span>
-                    </div>
+                      <span className="flex items-center gap-2.5 text-[#B8C4D4]">
+                        <span className="text-[#ff6b6b]">✕</span>
+                        <span className="line-through decoration-white/25">
+                          {tool}
+                        </span>
+                      </span>
+                      <span className="font-mono text-sm text-[#8899AA]">
+                        ${price}/mo
+                      </span>
+                    </li>
                   ))}
+                </ul>
+
+                <div className="mt-5 border-t border-white/15 pt-5">
+                  <div className="flex items-end justify-between">
+                    <div>
+                      <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-[#ff6b6b]">
+                        Stack Total
+                      </p>
+                      <p className="mt-1 text-xs text-[#8899AA]">
+                        And none of them talk to each other.
+                      </p>
+                    </div>
+                    <div className="text-right">
+                      <p className="font-display text-3xl font-bold text-white line-through decoration-[#ff6b6b]/80 decoration-[3px] sm:text-4xl">
+                        $1,080
+                      </p>
+                      <p className="text-xs text-[#8899AA]">/month · $12,960/yr</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="rounded-[24px] border border-accent/30 bg-accent/10 p-8 sm:p-10">
-                <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-accent">
-                  Replaced by
+
+              {/* RIGHT: Adaptation OS replacement with SAVINGS callout */}
+              <div className="relative overflow-hidden rounded-[20px] border-2 border-accent bg-gradient-to-br from-accent/15 via-accent/5 to-transparent p-6 shadow-gold sm:p-8">
+                <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full bg-accent/20 blur-3xl" />
+
+                <p className="relative text-[10px] font-bold uppercase tracking-[0.28em] text-accent">
+                  Replaced By One Platform
                 </p>
-                <h3 className="mt-2 font-display text-3xl font-bold text-white sm:text-4xl">
-                  Adaptation OS
+                <h3 className="relative mt-2 font-display text-2xl font-bold text-white sm:text-3xl">
+                  Adaptation OS · Starter DIY
                 </h3>
-                <p className="mt-3 text-sm text-[#B8C4D4]">
-                  One login. One monthly bill. Every feature above, plus an AI
-                  workforce, plus white-glove onboarding from a Phoenix-based
-                  team. Starting at{" "}
-                  <strong className="text-accent">$194.90/month</strong> with
-                  setup, or{" "}
-                  <strong className="text-accent">$349.90/month</strong>{" "}
-                  self-serve.
-                </p>
-                <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                  {[
-                    "CRM + Pipeline",
-                    "AI Phone + Chat",
-                    "Email + SMS Marketing",
-                    "Workflow Automation",
-                    "Website + Funnels",
-                    "Calendar Booking",
-                    "Review Management",
-                    "Ad Manager",
-                    "Social Scheduler",
-                    "Invoicing + Payments",
-                    "70+ Listings",
-                    "Branded Mobile App",
-                  ].map((feat) => (
-                    <div key={feat} className="flex items-center gap-2 text-sm text-white">
-                      <CheckCircle2 className="h-4 w-4 shrink-0 text-accent" />
-                      {feat}
-                    </div>
-                  ))}
+
+                <div className="relative mt-5 flex items-end gap-3">
+                  <p className="font-display text-5xl font-bold text-accent sm:text-6xl">
+                    $349<span className="text-3xl">.90</span>
+                  </p>
+                  <p className="pb-2 text-sm text-[#B8C4D4]">
+                    /month
+                    <br />
+                    <span className="text-xs text-[#8899AA]">$4,198.80/yr</span>
+                  </p>
                 </div>
+
+                {/* SAVINGS — the hero number */}
+                <div className="relative mt-6 rounded-xl border border-accent/40 bg-navy/60 p-5 text-center">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.32em] text-accent">
+                    You Save
+                  </p>
+                  <p className="mt-2 font-display text-4xl font-bold text-white sm:text-5xl">
+                    $730<span className="text-2xl text-accent">.10</span>
+                    <span className="text-base font-normal text-[#B8C4D4]">
+                      /mo
+                    </span>
+                  </p>
+                  <p className="mt-1 text-sm font-semibold text-accent">
+                    $8,761.20 per year
+                  </p>
+                  <p className="mt-2 text-xs text-[#B8C4D4]">
+                    Based on Starter DIY. Growth and Scale tiers save even more.
+                  </p>
+                </div>
+
+                <p className="relative mt-5 text-sm leading-relaxed text-[#B8C4D4]">
+                  Plus you get everything your old stack <em>couldn't</em> do:
+                  AI phone receptionist, AI chat agent on every channel,
+                  workflow automation with if/then branching, and a branded
+                  mobile app — on one login, one bill, one team supporting you.
+                </p>
+
                 <a
                   href="#plans"
-                  className="mt-7 inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
+                  className="relative mt-6 inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
                 >
-                  See Plans &amp; Pricing <ArrowRight className="h-4 w-4" />
+                  See All Plans &amp; Savings <ArrowRight className="h-4 w-4" />
                 </a>
               </div>
+            </div>
+
+            <p className="mt-8 text-center text-xs uppercase tracking-[0.26em] text-[#8899AA]">
+              Prices above pulled from public list pricing as of 2026. Your actual savings may be higher.
+            </p>
+          </div>
+        </section>
+
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        {/* WHAT'S INCLUDED COMPARISON TABLE (GHL-style, 4-col)                */}
+        {/* ═════════════════════════════════════════════════════════════════ */}
+        <section className="section-dark py-16 sm:py-20">
+          <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="eyebrow">What's Included With Adaptation OS</p>
+              <h2 className="mt-3 h-display text-2xl font-bold text-white sm:text-3xl lg:text-[2.25rem]">
+                Fifteen features. One login. <span className="text-accent">One price.</span>
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-[0.95rem] leading-relaxed text-[#B8C4D4]">
+                Here's what other businesses pay for each piece — and what you'd
+                normally stitch together to replicate it. Adaptation OS includes
+                all of it.
+              </p>
+            </div>
+
+            <div className="mt-10 overflow-hidden rounded-[20px] border border-white/10 bg-white/[0.03]">
+              {/* Header row */}
+              <div className="grid grid-cols-[1.4fr_1.5fr_0.9fr_0.8fr] items-center gap-3 border-b border-white/10 bg-white/[0.04] px-4 py-3 sm:px-6">
+                <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#8899AA]">
+                  Feature
+                </p>
+                <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#8899AA]">
+                  Replaces
+                </p>
+                <p className="text-right text-[10px] font-bold uppercase tracking-[0.22em] text-[#8899AA] sm:text-left">
+                  Other Tools
+                </p>
+                <p className="text-right text-[10px] font-bold uppercase tracking-[0.22em] text-accent">
+                  Adaptation OS
+                </p>
+              </div>
+
+              {/* Rows */}
+              {[
+                { feature: "CRM & Pipeline Management", replaces: "HubSpot · Salesforce · Pipedrive", price: "$20–$1,600/mo" },
+                { feature: "Unlimited Sales Funnels", replaces: "ClickFunnels · Leadpages · Unbounce", price: "$97–$297/mo" },
+                { feature: "Website Builder", replaces: "Wix · Squarespace · WordPress Hosting", price: "$27–$49/mo" },
+                { feature: "Surveys & Forms", replaces: "Typeform · JotForm · SurveyMonkey", price: "$29–$99/mo" },
+                { feature: "Email Marketing", replaces: "Mailchimp · ActiveCampaign · Klaviyo", price: "$50–$200/mo" },
+                { feature: "2-Way SMS Marketing", replaces: "Twilio · OpenPhone · Textedly", price: "$75–$149/mo" },
+                { feature: "Booking & Appointments", replaces: "Calendly · Acuity · Cal.com", price: "$16–$39/mo" },
+                { feature: "Workflow Automation", replaces: "Zapier · Make · n8n", price: "$50–$200/mo" },
+                { feature: "Courses & Memberships", replaces: "Kajabi · Teachable · Thinkific", price: "$149–$399/mo" },
+                { feature: "Call Tracking", replaces: "CallRail · WhatConverts", price: "$45–$145/mo" },
+                { feature: "Reputation Management", replaces: "Podium · BirdEye · Grade.us", price: "$289–$399/mo" },
+                { feature: "Tracking & Analytics", replaces: "Databox · Whatagraph", price: "$49–$249/mo" },
+                { feature: "Communities", replaces: "Circle · Mighty Networks · Skool", price: "$89–$199/mo" },
+                { feature: "Document Signing", replaces: "DocuSign · PandaDoc · HelloSign", price: "$25–$75/mo" },
+                { feature: "White-Labeled Mobile App", replaces: "Unique to HighLevel / AO", price: "$2,500+ dev cost" },
+              ].map((row) => (
+                <div
+                  key={row.feature}
+                  className="grid grid-cols-[1.4fr_1.5fr_0.9fr_0.8fr] items-center gap-3 border-b border-white/5 px-4 py-3 transition-colors hover:bg-white/[0.02] sm:px-6"
+                >
+                  <p className="text-sm font-semibold text-white">{row.feature}</p>
+                  <p className="text-xs leading-relaxed text-[#8899AA] line-through decoration-[#ff6b6b]/50">
+                    {row.replaces}
+                  </p>
+                  <p className="text-right font-mono text-xs text-[#8899AA] sm:text-left">
+                    {row.price}
+                  </p>
+                  <div className="flex justify-end">
+                    <CheckCircle2 className="h-5 w-5 text-accent" />
+                  </div>
+                </div>
+              ))}
+
+              {/* Overall price anchor row (GHL's key move) */}
+              <div className="grid grid-cols-[1.4fr_1.5fr_0.9fr_0.8fr] items-center gap-3 bg-accent/10 px-4 py-5 sm:px-6">
+                <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-accent">
+                  Overall Price
+                </p>
+                <p className="text-xs text-[#B8C4D4]">
+                  If you bought each piece separately
+                </p>
+                <p className="text-right font-display text-xl font-bold text-white line-through decoration-[#ff6b6b]/80 sm:text-left">
+                  $1,080+/mo
+                </p>
+                <p className="text-right font-display text-2xl font-bold text-accent sm:text-3xl">
+                  $349.90
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+              <a
+                href="#plans"
+                className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
+              >
+                Start Today · Live in Minutes <ArrowRight className="h-4 w-4" />
+              </a>
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-white/70 px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-white transition-all hover:bg-white hover:text-navy"
+              >
+                Book A Live Demo
+              </a>
             </div>
           </div>
         </section>

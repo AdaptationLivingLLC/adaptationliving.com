@@ -249,16 +249,14 @@ export default function ServicesPage() {
       <section className="section-cream">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 pt-10 pb-12">
           <p className="eyebrow">Adaptation OS · Pricing &amp; Plans</p>
-          <h1 className="mt-3 h-display font-bold text-[#0B1D3A] text-3xl sm:text-4xl lg:text-5xl max-w-4xl leading-[1.08]">
-            AI Automation, CRM &amp; Website Plans{" "}
-            <span className="text-accent">for Phoenix Businesses.</span>
+          <h1 className="mt-3 h-display font-bold tracking-tight text-[#0B1D3A] text-[1.9rem] leading-[1.05] sm:text-[2.4rem] lg:text-[3rem] max-w-3xl">
+            Pricing Built <span className="text-accent">for Phoenix Businesses.</span>
           </h1>
-          <p className="mt-5 text-base leading-relaxed text-[#4A5568] max-w-3xl sm:text-lg">
-            Done-For-You setup from <strong className="text-[#0B1D3A]">$1,500 + $194.90/month</strong>,
-            or Self-Serve from <strong className="text-[#0B1D3A]">$349.90/month</strong>. Every plan
-            unlocks the full Adaptation OS platform — AI phone receptionist,
-            AI chat agent, CRM, workflow automation, email and SMS marketing,
-            reviews, website, 70+ directory listings, and a branded mobile app.
+          <p className="mt-4 text-base leading-relaxed text-[#4A5568] max-w-2xl">
+            Done-For-You from <strong className="text-[#0B1D3A]">$1,500 + $194.90/mo</strong>, or
+            Self-Serve from <strong className="text-[#0B1D3A]">$349.90/mo</strong>. Every plan
+            unlocks the full Adaptation OS platform — AI agents, CRM, workflows,
+            marketing, website, 70+ listings, and a branded mobile app.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <a
