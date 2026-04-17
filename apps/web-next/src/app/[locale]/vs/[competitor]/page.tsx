@@ -21,7 +21,10 @@ type Props = {
 };
 
 export async function generateStaticParams() {
-  return competitors.map((c) => ({ competitor: c.slug }));
+  const locales = ["en", "es"] as const;
+  return locales.flatMap((locale) =>
+    competitors.map((c) => ({ locale, competitor: c.slug }))
+  );
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -100,7 +103,7 @@ export default async function VersusPage({ params }: Props) {
             </span>
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#B8C4D4] sm:text-lg">
-            {c.tagline.replace(`Adaptation OS vs ${c.name} — `, "")}
+            {c.tagline.split("—")[1]?.trim() || c.tagline}
           </p>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[#8899AA]">
             {c.positioningLine}
