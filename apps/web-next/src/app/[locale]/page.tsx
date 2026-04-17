@@ -27,7 +27,7 @@ import {
   Workflow,
   Zap,
 } from "lucide-react";
-import { SeoGraderForm } from "../../components/seo-grader-form";
+import { GhlProspectingWidget } from "../../components/ghl-prospecting-widget";
 
 const title =
   "Adaptation OS — AI Automation, CRM & Business Operating System for Phoenix, AZ";
@@ -578,7 +578,7 @@ export default function HomePage() {
                         missed revenue signals. Report delivered to your inbox.
                       </p>
                     </div>
-                    <SeoGraderForm />
+                    <GhlProspectingWidget widgetId="69e17fc6f9888528cbddf43c" />
                   </div>
                 </div>
               </div>
