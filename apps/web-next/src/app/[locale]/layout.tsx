@@ -11,6 +11,7 @@ import { GoogleTagManager } from "@al/analytics/gtm";
 import { MetaPixel } from "@al/analytics/meta-pixel";
 import { IntlProvider, locales } from "@al/i18n";
 import { NavBar } from "@al/ui/components/navbar";
+import { competitors } from "../../data/competitors";
 import "@al/ui/globals.css";
 
 const cinzel = Cinzel({
@@ -165,7 +166,7 @@ export default async function LocaleLayout({
           {/* Site-wide Footer */}
           <footer className="section-dark border-t border-[#D4AF37]/20 py-16 px-6 sm:px-8">
             <div className="mx-auto max-w-[1400px]">
-              <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr] lg:items-start">
+              <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:items-start">
                 <div>
                   <p className="font-display text-lg font-bold text-white tracking-[0.04em]">
                     ADAPTATION LIVING{" "}
@@ -201,9 +202,28 @@ export default async function LocaleLayout({
                     <li><a href="/#platform" className="text-[#B8C4D4] hover:text-[#D4AF37]">Adaptation OS Features</a></li>
                     <li><a href="/services" className="text-[#B8C4D4] hover:text-[#D4AF37]">Pricing &amp; Plans</a></li>
                     <li><a href="/ai" className="text-[#B8C4D4] hover:text-[#D4AF37]">AI Phone &amp; Chat Agents</a></li>
+                    <li><a href="/vs" className="text-[#B8C4D4] hover:text-[#D4AF37]">Compare Platforms</a></li>
                     <li><a href="/contact" className="text-[#B8C4D4] hover:text-[#D4AF37]">Contact</a></li>
                     <li><a href="/intake" className="text-[#B8C4D4] hover:text-[#D4AF37]">Book Setup Call</a></li>
                     <li><a href="https://app.adaptationliving.com" className="text-[#B8C4D4] hover:text-[#D4AF37]">Client Portal Login</a></li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p className="text-[10px] uppercase tracking-[0.26em] text-[#D4AF37] font-bold mb-4">
+                    Adaptation OS Vs
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    {competitors.map((c) => (
+                      <li key={c.slug}>
+                        <a
+                          href={`/vs/${c.slug}`}
+                          className="text-[#B8C4D4] hover:text-[#D4AF37]"
+                        >
+                          Adaptation OS Vs {c.name}
+                        </a>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
