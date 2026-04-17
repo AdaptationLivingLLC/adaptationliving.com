@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { href: "/#platform", label: "Platform" },
+  { href: "/features", label: "Features" },
   { href: "/services", label: "Pricing" },
   { href: "/demo", label: "Demo" },
   { href: "/vs", label: "Compare" },
@@ -105,7 +105,7 @@ export function NavBar() {
         <div className="fixed inset-0 top-[58px] z-40 bg-[#FFFFFF] md:hidden border-t border-[#2563EB]/40">
           <nav className="flex flex-col items-center gap-7 pt-14 font-display text-base tracking-[0.18em] uppercase" aria-label="Mobile navigation">
             <a href="/" onClick={() => setMobileMenuOpen(false)} className="text-[#0F172A] font-semibold hover:text-[#1D4ED8] transition-colors">Home</a>
-            <a href="/#platform" onClick={() => setMobileMenuOpen(false)} className="text-[#0F172A] font-semibold hover:text-[#1D4ED8] transition-colors">Platform</a>
+            <a href="/features" onClick={() => setMobileMenuOpen(false)} className="text-[#0F172A] font-semibold hover:text-[#1D4ED8] transition-colors">Features</a>
             <a href="/services" onClick={() => setMobileMenuOpen(false)} className="text-[#0F172A] font-semibold hover:text-[#1D4ED8] transition-colors">Pricing</a>
             <a href="/demo" onClick={() => setMobileMenuOpen(false)} className="text-[#0F172A] font-semibold hover:text-[#1D4ED8] transition-colors">Demo</a>
             <a href="/vs" onClick={() => setMobileMenuOpen(false)} className="text-[#0F172A] font-semibold hover:text-[#1D4ED8] transition-colors">Compare</a>

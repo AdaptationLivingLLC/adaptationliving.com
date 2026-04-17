@@ -192,8 +192,9 @@ export default async function LocaleLayout({
                   </p>
                   <ul className="space-y-2 text-sm">
                     <li><a href="/" className="text-[#94A3B8] hover:text-[#2563EB]">Home</a></li>
-                    <li><a href="/#platform" className="text-[#94A3B8] hover:text-[#2563EB]">Adaptation OS Features</a></li>
+                    <li><a href="/features" className="text-[#94A3B8] hover:text-[#2563EB]">All Features</a></li>
                     <li><a href="/services" className="text-[#94A3B8] hover:text-[#2563EB]">Pricing &amp; Plans</a></li>
+                    <li><a href="/demo" className="text-[#94A3B8] hover:text-[#2563EB]">Book A Live Demo</a></li>
                     <li><a href="/ai" className="text-[#94A3B8] hover:text-[#2563EB]">AI Phone &amp; Chat Agents</a></li>
                     <li><a href="/vs" className="text-[#94A3B8] hover:text-[#2563EB]">Compare Platforms</a></li>
                     <li><a href="/contact" className="text-[#94A3B8] hover:text-[#2563EB]">Contact</a></li>
