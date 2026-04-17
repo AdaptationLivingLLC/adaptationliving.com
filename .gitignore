@@ -21,6 +21,10 @@ out
 .env.*.local
 !.env.example
 
+# Visible env reference (kept local — never commit real secrets)
+env/adaptationliving.env.txt
+env/*.secret.txt
+
 # OS
 .DS_Store
 Thumbs.db
