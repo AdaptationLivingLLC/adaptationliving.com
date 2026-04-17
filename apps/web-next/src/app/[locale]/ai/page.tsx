@@ -128,7 +128,7 @@ export default function AIPage() {
             <span className="rounded-full border border-accent/50 bg-accent/10 px-3 py-1.5">
               Built &amp; Managed by Adaptation Living
             </span>
-            <span className="rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-white/80">
+            <span className="rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-white">
               Phoenix, AZ
             </span>
           </div>
@@ -139,7 +139,7 @@ export default function AIPage() {
             </span>{" "}
             for Phoenix Businesses.
           </h1>
-          <p className="mt-5 text-white/80 text-base sm:text-lg max-w-3xl leading-relaxed">
+          <p className="mt-5 text-[#B8C4D4] text-base sm:text-lg max-w-3xl leading-relaxed">
             Every Adaptation OS plan ships with a full AI workforce. A 24/7 AI
             Voice Agent answers your phone. An AI Chat Agent replies on your
             website, Instagram, Facebook, WhatsApp, and text. AI automations
@@ -160,7 +160,7 @@ export default function AIPage() {
                   {stat.label}
                 </p>
                 <p className="font-display text-2xl font-bold text-white">{stat.value}</p>
-                <p className="text-sm text-white/70 mt-2">{stat.detail}</p>
+                <p className="text-sm text-[#B8C4D4] mt-2">{stat.detail}</p>
               </div>
             ))}
           </div>
@@ -786,7 +786,7 @@ export default function AIPage() {
             your info into our pipeline. This isn't a concept — it's the
             product. And it's what we deploy for your business.
           </p>
-          <p className="max-w-xl mx-auto mt-3 text-sm text-white/60">
+          <p className="max-w-xl mx-auto mt-3 text-sm text-[#8899AA]">
             Self-serve plans from $349.90/mo. Done-for-you setups from $1,500
             + $194.90/mo. Every tier includes the full AI suite.
           </p>

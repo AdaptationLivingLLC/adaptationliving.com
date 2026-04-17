@@ -171,12 +171,12 @@ export default async function LocaleLayout({
                     ADAPTATION LIVING{" "}
                     <span className="text-[#D4AF37] text-xs tracking-[0.28em]">LLC</span>
                   </p>
-                  <p className="mt-3 text-sm leading-relaxed text-white/70 max-w-md">
+                  <p className="mt-3 text-sm leading-relaxed text-[#B8C4D4] max-w-md">
                     Adaptation OS — AI automation, CRM, and a complete business
                     operating system for Phoenix, AZ. Veteran-owned, SAM.gov
                     registered, headquartered in Uptown Phoenix since 2021.
                   </p>
-                  <div className="mt-5 text-xs uppercase tracking-[0.22em] text-white/60">
+                  <div className="mt-5 text-xs uppercase tracking-[0.22em] text-[#8899AA]">
                     3030 N Central Ave · Suite 507 · Phoenix, AZ 85012
                   </div>
                   <div className="mt-4 flex gap-4">
@@ -184,7 +184,7 @@ export default async function LocaleLayout({
                       href="https://www.linkedin.com/company/adaptation-living"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-white/60 hover:text-[#D4AF37] transition-colors"
+                      className="text-[#8899AA] hover:text-[#D4AF37] transition-colors"
                       aria-label="Follow Adaptation Living LLC on LinkedIn"
                     >
                       <Linkedin className="w-5 h-5" />
@@ -197,13 +197,13 @@ export default async function LocaleLayout({
                     Platform
                   </p>
                   <ul className="space-y-2 text-sm">
-                    <li><a href="/" className="text-white/75 hover:text-[#D4AF37]">Home</a></li>
-                    <li><a href="/#platform" className="text-white/75 hover:text-[#D4AF37]">Adaptation OS Features</a></li>
-                    <li><a href="/services" className="text-white/75 hover:text-[#D4AF37]">Pricing &amp; Plans</a></li>
-                    <li><a href="/ai" className="text-white/75 hover:text-[#D4AF37]">AI Phone &amp; Chat Agents</a></li>
-                    <li><a href="/contact" className="text-white/75 hover:text-[#D4AF37]">Contact</a></li>
-                    <li><a href="/intake" className="text-white/75 hover:text-[#D4AF37]">Book Setup Call</a></li>
-                    <li><a href="https://app.adaptationliving.com" className="text-white/75 hover:text-[#D4AF37]">Client Portal Login</a></li>
+                    <li><a href="/" className="text-[#B8C4D4] hover:text-[#D4AF37]">Home</a></li>
+                    <li><a href="/#platform" className="text-[#B8C4D4] hover:text-[#D4AF37]">Adaptation OS Features</a></li>
+                    <li><a href="/services" className="text-[#B8C4D4] hover:text-[#D4AF37]">Pricing &amp; Plans</a></li>
+                    <li><a href="/ai" className="text-[#B8C4D4] hover:text-[#D4AF37]">AI Phone &amp; Chat Agents</a></li>
+                    <li><a href="/contact" className="text-[#B8C4D4] hover:text-[#D4AF37]">Contact</a></li>
+                    <li><a href="/intake" className="text-[#B8C4D4] hover:text-[#D4AF37]">Book Setup Call</a></li>
+                    <li><a href="https://app.adaptationliving.com" className="text-[#B8C4D4] hover:text-[#D4AF37]">Client Portal Login</a></li>
                   </ul>
                 </div>
 
@@ -213,23 +213,23 @@ export default async function LocaleLayout({
                   </p>
                   <ul className="space-y-2 text-sm">
                     <li>
-                      <a href="tel:6232191237" className="text-white/75 hover:text-[#D4AF37]">
+                      <a href="tel:6232191237" className="text-[#B8C4D4] hover:text-[#D4AF37]">
                         623-219-1237
                       </a>
                     </li>
                     <li>
-                      <a href="mailto:info@adaptationliving.com" className="text-white/75 hover:text-[#D4AF37]">
+                      <a href="mailto:info@adaptationliving.com" className="text-[#B8C4D4] hover:text-[#D4AF37]">
                         info@adaptationliving.com
                       </a>
                     </li>
-                    <li><a href="/legal" className="text-white/75 hover:text-[#D4AF37]">Privacy &amp; Terms</a></li>
-                    <li><a href="/ls-2025.html" className="text-white/75 hover:text-[#D4AF37]">LS-2025 Veteran Lifeline</a></li>
+                    <li><a href="/legal" className="text-[#B8C4D4] hover:text-[#D4AF37]">Privacy &amp; Terms</a></li>
+                    <li><a href="/ls-2025.html" className="text-[#B8C4D4] hover:text-[#D4AF37]">LS-2025 Veteran Lifeline</a></li>
                   </ul>
                 </div>
               </div>
 
               <div className="mt-12 border-t border-white/10 pt-8">
-                <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[10px] font-semibold uppercase tracking-[0.26em] text-white/55">
+                <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[10px] font-semibold uppercase tracking-[0.26em] text-[#8899AA]">
                   <span>Veteran-Owned Small Business (VOSB)</span>
                   <span className="text-[#D4AF37]">·</span>
                   <span>SAM.gov Registered</span>
@@ -240,7 +240,7 @@ export default async function LocaleLayout({
                   <span className="text-[#D4AF37]">·</span>
                   <span>NAICS 541511 · 541512</span>
                 </div>
-                <div className="mt-6 text-center text-xs text-white/45">
+                <div className="mt-6 text-center text-xs text-[#8899AA]">
                   &copy; 2021–2026 Adaptation Living LLC · All rights reserved.
                 </div>
               </div>

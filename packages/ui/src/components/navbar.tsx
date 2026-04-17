@@ -45,7 +45,7 @@ export function NavBar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-[11px] uppercase tracking-[0.22em] text-white/75 hover:text-[#D4AF37] transition-colors duration-200"
+              className="text-[11px] uppercase tracking-[0.22em] text-white/90 hover:text-[#D4AF37] transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -67,7 +67,7 @@ export function NavBar() {
 
         {/* Mobile hamburger button */}
         <button
-          className="sm:hidden text-white/85 hover:text-[#D4AF37] transition-colors"
+          className="sm:hidden text-white hover:text-[#D4AF37] transition-colors"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={mobileMenuOpen}
@@ -81,11 +81,11 @@ export function NavBar() {
       {mobileMenuOpen && (
         <div className="fixed inset-0 top-[58px] z-40 bg-[#0B1D3A]/98 backdrop-blur-md sm:hidden border-t border-[#D4AF37]/20">
           <nav className="flex flex-col items-center gap-7 pt-14 font-display text-base tracking-[0.18em] uppercase" aria-label="Mobile navigation">
-            <a href="/" onClick={() => setMobileMenuOpen(false)} className="text-white/85 hover:text-[#D4AF37] transition-colors">Home</a>
-            <a href="/#platform" onClick={() => setMobileMenuOpen(false)} className="text-white/85 hover:text-[#D4AF37] transition-colors">Platform</a>
-            <a href="/services" onClick={() => setMobileMenuOpen(false)} className="text-white/85 hover:text-[#D4AF37] transition-colors">Pricing</a>
-            <a href="/ai" onClick={() => setMobileMenuOpen(false)} className="text-white/85 hover:text-[#D4AF37] transition-colors">AI Agents</a>
-            <a href="/contact" onClick={() => setMobileMenuOpen(false)} className="text-white/85 hover:text-[#D4AF37] transition-colors">Contact</a>
+            <a href="/" onClick={() => setMobileMenuOpen(false)} className="text-white hover:text-[#D4AF37] transition-colors">Home</a>
+            <a href="/#platform" onClick={() => setMobileMenuOpen(false)} className="text-white hover:text-[#D4AF37] transition-colors">Platform</a>
+            <a href="/services" onClick={() => setMobileMenuOpen(false)} className="text-white hover:text-[#D4AF37] transition-colors">Pricing</a>
+            <a href="/ai" onClick={() => setMobileMenuOpen(false)} className="text-white hover:text-[#D4AF37] transition-colors">AI Agents</a>
+            <a href="/contact" onClick={() => setMobileMenuOpen(false)} className="text-white hover:text-[#D4AF37] transition-colors">Contact</a>
             <div className="w-16 h-px bg-[#D4AF37]/30" />
             <a href="https://app.adaptationliving.com" className="text-[#D4AF37]/85 hover:text-[#D4AF37] transition-colors">Sign In</a>
             <a href="/intake" onClick={() => setMobileMenuOpen(false)} className="bg-[#D4AF37] text-[#0B1D3A] px-8 py-3 rounded-sm font-bold hover:bg-[#E8C96A] transition-all shadow-[0_0_14px_rgba(212,175,55,0.35)]">

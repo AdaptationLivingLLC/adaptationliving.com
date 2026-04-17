@@ -288,7 +288,7 @@ export default function ServicesPage() {
             <h2 className="h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
               We Build, Configure &amp; Launch It for You.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-white/80 max-w-3xl sm:text-lg">
+            <p className="mt-4 text-base leading-relaxed text-[#B8C4D4] max-w-3xl sm:text-lg">
               A veteran-owned team handles every piece of the setup — contact
               import, domain linking, AI agent training, workflow
               configuration, and team onboarding. Book a call, we onboard you,
@@ -318,16 +318,16 @@ export default function ServicesPage() {
                 <div className="my-5 border-b border-white/10 pb-5">
                   <p className="font-display text-4xl font-bold text-white">
                     {plan.setupFee}
-                    <span className="text-sm font-normal text-white/50"> setup</span>
+                    <span className="text-sm font-normal text-[#8899AA]"> setup</span>
                   </p>
-                  <p className="mt-2 text-sm text-white/70">
+                  <p className="mt-2 text-sm text-[#B8C4D4]">
                     + <span className="text-white font-semibold">{plan.monthly}</span>/mo after launch
                   </p>
                 </div>
 
                 <ul className="space-y-2 mb-5">
                   {[plan.users, plan.credits, plan.support].map((f) => (
-                    <li key={f} className="flex items-start gap-2 text-sm text-white/80">
+                    <li key={f} className="flex items-start gap-2 text-sm text-[#B8C4D4]">
                       <CheckCircle2 className="text-accent w-4 h-4 mt-0.5 shrink-0" />
                       <span>{f}</span>
                     </li>
@@ -340,7 +340,7 @@ export default function ServicesPage() {
                   </p>
                   <ul className="space-y-1.5 mb-6">
                     {plan.includes.map((item) => (
-                      <li key={item} className="flex items-start gap-2 text-sm text-white/70">
+                      <li key={item} className="flex items-start gap-2 text-sm text-[#B8C4D4]">
                         <CheckCircle2 className="text-accent/70 w-3.5 h-3.5 mt-0.5 shrink-0" />
                         <span>{item}</span>
                       </li>
@@ -362,7 +362,7 @@ export default function ServicesPage() {
             ))}
           </div>
 
-          <p className="mt-10 text-center text-sm text-white/60">
+          <p className="mt-10 text-center text-sm text-[#8899AA]">
             Book a call → we onboard you → launch in 2–3 weeks. Month-to-month
             after setup. No long-term contracts.
           </p>

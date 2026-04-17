@@ -504,10 +504,10 @@ export default function HomePage() {
                   <span className="rounded-full border border-accent/50 bg-accent/10 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-accent">
                     Veteran-Owned · VOSB
                   </span>
-                  <span className="rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-white/80">
+                  <span className="rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-white">
                     Phoenix, AZ
                   </span>
-                  <span className="rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-white/80">
+                  <span className="rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-white">
                     Since 2021
                   </span>
                 </div>
@@ -518,7 +518,7 @@ export default function HomePage() {
                   </span>{" "}
                   for Phoenix, AZ.
                 </h1>
-                <p className="mt-5 max-w-xl text-[0.95rem] leading-relaxed text-white/80 sm:text-base">
+                <p className="mt-5 max-w-xl text-[0.95rem] leading-relaxed text-[#B8C4D4] sm:text-base">
                   Adaptation OS replaces 12+ disconnected business tools with one
                   white-labeled platform. AI phone receptionist, AI chat agent,
                   CRM, workflow automation, review management, email + SMS
@@ -542,7 +542,7 @@ export default function HomePage() {
                   </a>
                 </div>
 
-                <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-[11px] uppercase tracking-[0.22em] text-white/60">
+                <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-[11px] uppercase tracking-[0.22em] text-[#8899AA]">
                   <a href="tel:6232191237" className="flex items-center gap-2 hover:text-accent">
                     <Phone className="h-3.5 w-3.5 text-accent" /> 623-219-1237
                   </a>
@@ -861,7 +861,7 @@ export default function HomePage() {
                 <h2 className="mt-3 h-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
                   Cancel the subscriptions. Keep the capability.
                 </h2>
-                <p className="mt-5 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
+                <p className="mt-5 max-w-xl text-base leading-relaxed text-[#B8C4D4] sm:text-lg">
                   Most small businesses we meet are paying $1,500–$4,000/month
                   across a dozen disconnected tools. Adaptation OS consolidates
                   the entire stack — CRM, email, SMS, chat, calendar, reviews,
@@ -885,7 +885,7 @@ export default function HomePage() {
                   ].map((tool) => (
                     <div
                       key={tool}
-                      className="flex items-center gap-2 rounded-lg border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-white/75"
+                      className="flex items-center gap-2 rounded-lg border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-[#B8C4D4]"
                     >
                       <span className="text-red-400">✕</span>
                       <span className="line-through decoration-white/30">{tool}</span>
@@ -1280,7 +1280,7 @@ export default function HomePage() {
                 Book A Live Demo
               </a>
             </div>
-            <div className="mt-10 flex flex-wrap justify-center gap-4 text-[10px] font-semibold uppercase tracking-[0.24em] text-white/50">
+            <div className="mt-10 flex flex-wrap justify-center gap-4 text-[10px] font-semibold uppercase tracking-[0.24em] text-[#8899AA]">
               <span>Veteran-Owned · VOSB</span>
               <span>·</span>
               <span>SAM.gov Registered · CAGE 95WK4</span>

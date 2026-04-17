@@ -44,8 +44,8 @@ function PriceTag({
   return (
     <div className="inline-flex items-center gap-4 rounded-xl border border-accent/30 bg-accent/5 px-5 py-3">
       <div>
-        <p className="text-[10px] uppercase tracking-widest text-white/40">{label}</p>
-        <p className="text-white/40 text-sm line-through">{theirs}</p>
+        <p className="text-[10px] uppercase tracking-widest text-[#8899AA]">{label}</p>
+        <p className="text-[#8899AA] text-sm line-through">{theirs}</p>
       </div>
       <div className="h-8 w-px bg-white/10" />
       <div>
@@ -78,7 +78,7 @@ export default function ShowcasePage() {
           real. The AI chat in the corner is real. This is what we build. Scroll through,
           interact with everything, and see what your business could look like.
         </p>
-        <p className="text-white/40 text-sm max-w-2xl">
+        <p className="text-[#8899AA] text-sm max-w-2xl">
           Every feature has a price tag showing what agencies charge compared to what we
           charge. The difference will make you angry you didn&apos;t find us sooner.
         </p>
@@ -186,7 +186,7 @@ export default function ShowcasePage() {
                 <p className="text-[#0B1D3A]/85 text-sm">Hi! I&apos;m the Adaptation Living AI assistant. I can answer questions about our services, pricing, and how we can help your business. What would you like to know?</p>
               </div>
             </div>
-            <p className="text-white/30 text-xs text-center">
+            <p className="text-[#8899AA] text-xs text-center">
               This is a preview. Click the live chat bubble in the corner to talk to the real AI.
             </p>
           </div>
@@ -356,7 +356,7 @@ export default function ShowcasePage() {
             The architecture powering this page. This is what we build for your business.
             Not a pitch. Not a mockup. The real thing.
           </p>
-          <p className="max-w-xl mx-auto text-white/50 text-sm mb-6">
+          <p className="max-w-xl mx-auto text-[#8899AA] text-sm mb-6">
             From $297/mo self-serve · No setup fee · Done-for-you from $1,497/mo + $1,997 setup.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">

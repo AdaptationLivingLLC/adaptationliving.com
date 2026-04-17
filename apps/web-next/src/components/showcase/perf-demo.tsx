@@ -171,7 +171,7 @@ export function PerfDemo() {
           <p className="font-display text-lg font-bold text-white">{particleCount}</p>
         </div>
       </div>
-      <p className="absolute bottom-4 left-4 text-white/40 text-xs">
+      <p className="absolute bottom-4 left-4 text-[#8899AA] text-xs">
         Move your mouse or finger to create particles
       </p>
     </div>
