@@ -27,6 +27,7 @@ import {
   Workflow,
   Zap,
 } from "lucide-react";
+import { SeoGraderForm } from "../../components/seo-grader-form";
 
 const title =
   "Adaptation OS — AI Automation, CRM & Business Operating System for Phoenix, AZ";
@@ -574,21 +575,10 @@ export default function HomePage() {
                       <p className="mt-2 text-sm leading-relaxed text-[#4A5568]">
                         Enter your URL. We run a full audit — SEO score, listing
                         consistency across 70+ directories, page speed, and
-                        missed revenue signals. Report delivered instantly.
+                        missed revenue signals. Report delivered to your inbox.
                       </p>
                     </div>
-                    <iframe
-                      src="https://services.leadconnectorhq.com/prospecting/widget/69e10ea0f9888528cbd6f1bb"
-                      style={{
-                        border: "none",
-                        width: "100%",
-                        height: "470px",
-                        background: "transparent",
-                      }}
-                      title="Free SEO and marketing report for your business"
-                      loading="eager"
-                      allow="clipboard-write"
-                    />
+                    <SeoGraderForm />
                   </div>
                 </div>
               </div>
