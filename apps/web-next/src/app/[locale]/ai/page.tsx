@@ -781,7 +781,7 @@ export default function AIPage() {
           <h2 className="mt-3 h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
             Ready to Put AI to Work for Your Business?
           </h2>
-          <p className="max-w-xl mx-auto mt-5 text-base text-white/80 leading-relaxed">
+          <p className="max-w-xl mx-auto mt-5 text-base text-[#B8C4D4] leading-relaxed">
             The chat bubble on this site is our AI. The form above captures
             your info into our pipeline. This isn't a concept — it's the
             product. And it's what we deploy for your business.

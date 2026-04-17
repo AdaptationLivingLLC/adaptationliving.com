@@ -776,7 +776,7 @@ export default function HomePage() {
                   className="pointer-events-none absolute -inset-2 rounded-[28px] bg-[conic-gradient(from_120deg_at_50%_50%,rgba(212,175,55,0.5),rgba(212,175,55,0.2),rgba(212,175,55,0.5))] opacity-40 blur-lg"
                 />
                 <div className="relative overflow-hidden rounded-[24px] border border-[#0B1D3A]/10 bg-[#0B1D3A] shadow-lift">
-                  <div className="pointer-events-none absolute left-4 top-4 z-10 flex items-center gap-2 rounded-full border border-white/15 bg-[#0B1D3A]/70 px-3 py-1.5 text-[9px] font-bold uppercase tracking-[0.28em] text-white/85 backdrop-blur">
+                  <div className="pointer-events-none absolute left-4 top-4 z-10 flex items-center gap-2 rounded-full border border-white/15 bg-[#0B1D3A]/70 px-3 py-1.5 text-[9px] font-bold uppercase tracking-[0.28em] text-white backdrop-blur">
                     <span className="h-1.5 w-1.5 rounded-full bg-red-500" />
                     Adaptation OS · Live
                   </div>
@@ -795,7 +795,7 @@ export default function HomePage() {
                     <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-accent">
                       Founder's Walkthrough
                     </p>
-                    <p className="mt-1 text-sm text-white/80">
+                    <p className="mt-1 text-sm text-[#B8C4D4]">
                       A live tour of the website, CRM, AI phone and chat agents,
                       and the automation layer we build for operators.
                     </p>
@@ -900,7 +900,7 @@ export default function HomePage() {
                 <h3 className="mt-2 font-display text-3xl font-bold text-white sm:text-4xl">
                   Adaptation OS
                 </h3>
-                <p className="mt-3 text-sm text-white/80">
+                <p className="mt-3 text-sm text-[#B8C4D4]">
                   One login. One monthly bill. Every feature above, plus an AI
                   workforce, plus white-glove onboarding from a Phoenix-based
                   team. Starting at{" "}
@@ -1247,7 +1247,7 @@ export default function HomePage() {
             <h2 className="mt-3 h-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
               Your Business, Running on One System.
             </h2>
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg">
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-[#B8C4D4] sm:text-lg">
               Adaptation OS replaces 12+ subscriptions with a single platform —
               AI phone, AI chat, CRM, workflows, website, reviews, listings,
               and more — starting at $194.90/mo with setup or $349.90/mo
@@ -1261,7 +1261,7 @@ export default function HomePage() {
               <a href="mailto:info@adaptationliving.com" className="flex items-center gap-2 font-semibold text-white hover:text-accent">
                 <Mail className="h-4 w-4 text-accent" /> info@adaptationliving.com
               </a>
-              <span className="flex items-center gap-2 font-semibold text-white/85">
+              <span className="flex items-center gap-2 font-semibold text-white">
                 <MapPinned className="h-4 w-4 text-accent" />
                 3030 N Central Ave · Suite 507 · Phoenix, AZ 85012
               </span>

@@ -694,7 +694,7 @@ export default function ServicesPage() {
           <h2 className="mt-3 h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
             Ready to Run Your Business on One System?
           </h2>
-          <p className="max-w-2xl mx-auto mt-5 text-base sm:text-lg text-white/80 leading-relaxed">
+          <p className="max-w-2xl mx-auto mt-5 text-base sm:text-lg text-[#B8C4D4] leading-relaxed">
             Book a setup call and be live in two to three weeks, or start
             self-serve today. Same platform. Same features. Same Phoenix team
             supporting you.
