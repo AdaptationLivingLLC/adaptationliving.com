@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PHONE_RE = /^[+\d][\d\s\-().]{6,20}$/;
@@ -261,7 +261,7 @@ export function DemoForm() {
         className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-sm border-2 border-[#2563EB] bg-[#2563EB] px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.22em] text-white shadow-[0_8px_24px_rgba(37,99,235,0.35)] transition-all hover:bg-[#1D4ED8] disabled:cursor-not-allowed disabled:opacity-70"
       >
         {status === "submitting" ? "Sending your request…" : "Book My Demo"}
-        {status !== "submitting" && <ArrowRight className="h-4 w-4" />}
+
       </button>
 
       {(status === "invalid" || status === "error") && errorMsg && (

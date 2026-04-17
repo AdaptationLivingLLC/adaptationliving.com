@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import {
-  ArrowRight,
-  BarChart3,
+    BarChart3,
   BrainCircuit,
   Building2,
   Calendar,
@@ -530,7 +529,7 @@ export default function HomePage() {
                     href="#plans"
                     className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
                   >
-                    See Plans &amp; Pricing <ArrowRight className="h-3.5 w-3.5" />
+                    See Plans &amp; Pricing
                   </a>
                   <a
                     href="/contact"
@@ -704,7 +703,7 @@ export default function HomePage() {
                 href="#plans"
                 className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
               >
-                See Plans &amp; Pricing <ArrowRight className="h-4 w-4" />
+                See Plans &amp; Pricing
               </a>
               <a
                 href="/services"
@@ -1014,7 +1013,7 @@ export default function HomePage() {
                   href="#plans"
                   className="relative mt-6 inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
                 >
-                  See All Plans &amp; Savings <ArrowRight className="h-4 w-4" />
+                  See All Plans &amp; Savings
                 </a>
               </div>
             </div>
@@ -1116,7 +1115,7 @@ export default function HomePage() {
                 href="#plans"
                 className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
               >
-                Start Today · Live in Minutes <ArrowRight className="h-4 w-4" />
+                Start Today · Live in Minutes
               </a>
               <a
                 href="/contact"
@@ -1179,7 +1178,7 @@ export default function HomePage() {
                   href="/contact"
                   className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
                 >
-                  Book A Demo <ArrowRight className="h-4 w-4" />
+                  Book A Demo
                 </a>
                 <a
                   href="tel:6232191237"
@@ -1293,7 +1292,7 @@ export default function HomePage() {
                         : "border-[#0F172A]/80 bg-transparent text-[#0F172A] hover:bg-[#0F172A] hover:text-white"
                     }`}
                   >
-                    View {plan.name} Details <ArrowRight className="h-4 w-4" />
+                    View {plan.name} Details
                   </a>
                 </div>
               ))}
@@ -1311,7 +1310,7 @@ export default function HomePage() {
                 href="/services"
                 className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
               >
-                Full Pricing &amp; Feature Comparison <ArrowRight className="h-4 w-4" />
+                Full Pricing &amp; Feature Comparison
               </a>
               <a
                 href="/intake"

@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
-  ArrowRight,
-  BarChart3,
+    BarChart3,
   Bot,
   Calendar,
   CheckCircle2,
@@ -307,7 +306,7 @@ export default function FeaturesPage() {
               href="/demo"
               className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-white shadow-[0_0_14px_rgba(37,99,235,0.35)] transition-all hover:bg-[#1D4ED8]"
             >
-              See It Live <ArrowRight className="h-3.5 w-3.5" />
+              See It Live
             </a>
             <a
               href="/services"
@@ -496,7 +495,7 @@ export default function FeaturesPage() {
               href="/demo"
               className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-white shadow-[0_0_14px_rgba(37,99,235,0.35)] transition-all hover:bg-[#1D4ED8]"
             >
-              Book Live Demo <ArrowRight className="h-4 w-4" />
+              Book Live Demo
             </Link>
             <Link
               href="/services"

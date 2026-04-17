@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ArrowRight, CheckCircle2, Mail, Phone } from "lucide-react";
+import { CheckCircle2, Mail, Phone } from "lucide-react";
 import { GhlEmbed } from "../../../components/ghl-embed";
 import {
   BreadcrumbSchema,
@@ -145,7 +145,7 @@ export default async function IntakePage({
                 href="/services"
                 className="mt-8 inline-flex items-center gap-2 rounded-sm border-2 border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold hover:bg-transparent hover:text-accent transition-all"
               >
-                See Plans &amp; Pricing <ArrowRight className="w-4 h-4" />
+                See Plans &amp; Pricing
               </a>
             </div>
           )}

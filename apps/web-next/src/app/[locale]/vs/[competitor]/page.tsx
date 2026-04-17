@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import {
-  ArrowRight,
-  CheckCircle2,
+    CheckCircle2,
   MinusCircle,
   Sparkles,
 } from "lucide-react";
@@ -114,7 +113,7 @@ export default async function VersusPage({ params }: Props) {
               href="/services"
               className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
             >
-              See Plans &amp; Pricing <ArrowRight className="h-3.5 w-3.5" />
+              See Plans &amp; Pricing
             </a>
             <a
               href="/contact"
@@ -259,7 +258,7 @@ export default async function VersusPage({ params }: Props) {
               href="/intake"
               className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
             >
-              Start Migration <ArrowRight className="h-3.5 w-3.5" />
+              Start Migration
             </a>
             <a
               href="/contact"

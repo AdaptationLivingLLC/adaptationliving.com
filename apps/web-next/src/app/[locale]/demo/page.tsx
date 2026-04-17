@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ArrowRight, CheckCircle2, Play, Clock, ShieldCheck } from "lucide-react";
+import { CheckCircle2, Play, Clock, ShieldCheck } from "lucide-react";
 import {
   BreadcrumbSchema,
   pageAlternates,
@@ -363,7 +363,7 @@ export default function DemoPage() {
               href="#top"
               className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-white shadow-[0_0_14px_rgba(37,99,235,0.35)] transition-all hover:bg-[#1D4ED8]"
             >
-              Book My Demo <ArrowRight className="h-4 w-4" />
+              Book My Demo
             </a>
             <a
               href="/services"

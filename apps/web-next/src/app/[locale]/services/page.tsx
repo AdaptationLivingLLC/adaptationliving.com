@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import {
-  ArrowRight,
-  BarChart3,
+    BarChart3,
   Calendar,
   CheckCircle2,
   CreditCard,
@@ -263,13 +262,13 @@ export default function ServicesPage() {
               href="#done-for-you"
               className="inline-flex items-center gap-2 px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] border-2 border-accent bg-accent text-navy shadow-gold hover:bg-transparent hover:text-accent transition-all rounded-sm"
             >
-              Done-For-You Plans <ArrowRight className="w-4 h-4" />
+              Done-For-You Plans
             </a>
             <a
               href="#self-serve"
               className="inline-flex items-center gap-2 px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] border-2 border-[#0F172A]/80 text-[#0F172A] hover:bg-[#0F172A] hover:text-white transition-all rounded-sm"
             >
-              Self-Serve Plans <ArrowRight className="w-4 h-4" />
+              Self-Serve Plans
             </a>
           </div>
         </div>
@@ -639,7 +638,7 @@ export default function ServicesPage() {
               href="#self-serve"
               className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold transition-all hover:bg-transparent hover:text-accent"
             >
-              Start Saving Today <ArrowRight className="h-4 w-4" />
+              Start Saving Today
             </a>
             <a
               href="/demo"

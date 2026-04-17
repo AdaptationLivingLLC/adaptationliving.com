@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import {
-  ArrowRight,
-  CheckCircle2,
+    CheckCircle2,
   Clock,
   CreditCard,
   Mail,
@@ -170,7 +169,7 @@ export default function AIPage() {
               href="/intake"
               className="inline-flex items-center justify-center gap-2 rounded-sm border-2 border-accent bg-accent px-7 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-navy shadow-gold hover:bg-transparent hover:text-accent transition-all"
             >
-              Book A Setup Call <ArrowRight className="w-4 h-4" />
+              Book A Setup Call
             </a>
             <a
               href="/contact"

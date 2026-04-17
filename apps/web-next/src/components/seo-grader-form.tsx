@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight, CheckCircle2, Globe } from "lucide-react";
+import { CheckCircle2, Globe } from "lucide-react";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const URL_RE = /^(https?:\/\/)?[\w.-]+\.[a-z]{2,}(\/.*)?$/i;
@@ -210,7 +210,7 @@ export function SeoGraderForm() {
         className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-sm border-2 border-[#2563EB] bg-[#2563EB] px-6 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-[#0F172A] shadow-[0_8px_24px_rgba(37,99,235,0.35)] transition-all hover:bg-[#3B82F6] disabled:cursor-not-allowed disabled:opacity-70"
       >
         {status === "submitting" ? "Running audit..." : "Run My Free Audit"}
-        {status !== "submitting" && <ArrowRight className="h-4 w-4" />}
+
       </button>
 
       {(status === "invalid" || status === "error") && errorMsg && (
