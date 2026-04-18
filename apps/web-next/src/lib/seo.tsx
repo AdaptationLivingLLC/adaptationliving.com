@@ -53,10 +53,10 @@ export function pageOg(title: string, description: string, path: string) {
     url: `${baseUrl}${path}`,
     images: [
       {
-        url: `${baseUrl}/images/banner.jpg`,
+        url: `${baseUrl}/images/og-share-2026.png`,
         width: 1200,
         height: 630,
-        alt: "Adaptation Living LLC — AI Automation and Web Development Studio in Phoenix AZ",
+        alt: "Adaptation Living — Award-Winning AI Automation & CRM Platform (G2 Top 50, Capterra Shortlist 2026)",
       },
     ],
   };
@@ -67,6 +67,6 @@ export function pageTwitter(title: string, description: string) {
     card: "summary_large_image" as const,
     title,
     description,
-    images: [`${baseUrl}/images/banner.jpg`],
+    images: [`${baseUrl}/images/og-share-2026.png`],
   };
 }

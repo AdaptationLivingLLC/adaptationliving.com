@@ -52,16 +52,16 @@ export const metadata: Metadata = {
     alternateLocale: "es_US",
     images: [
       {
-        url: `${baseUrl}/images/banner.jpg`,
+        url: `${baseUrl}/images/og-share-2026.png`,
         width: 1200,
         height: 630,
-        alt: "Adaptation Living LLC — AI Automation and Web Development Studio in Phoenix AZ",
+        alt: "Adaptation Living — Award-Winning AI Automation & CRM Platform (G2 Top 50, Capterra Shortlist 2026)",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    images: [`${baseUrl}/images/banner.jpg`],
+    images: [`${baseUrl}/images/og-share-2026.png`],
   },
   robots: {
     index: true,
