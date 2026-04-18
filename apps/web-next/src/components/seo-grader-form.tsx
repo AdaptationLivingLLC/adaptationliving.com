@@ -144,7 +144,7 @@ export function SeoGraderForm() {
             required
             maxLength={60}
             autoComplete="given-name"
-            placeholder="Brandon"
+            placeholder="First name"
             className={inputCls}
           />
         </div>
@@ -161,7 +161,7 @@ export function SeoGraderForm() {
             name="lastName"
             maxLength={60}
             autoComplete="family-name"
-            placeholder="Bible"
+            placeholder="Last name"
             className={inputCls}
           />
         </div>
@@ -199,7 +199,7 @@ export function SeoGraderForm() {
           name="phone"
           maxLength={32}
           autoComplete="tel"
-          placeholder="623-219-1237"
+          placeholder="(555) 123-4567"
           className={inputCls}
         />
       </div>

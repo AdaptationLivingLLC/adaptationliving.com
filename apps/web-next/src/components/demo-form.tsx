@@ -191,7 +191,7 @@ export function DemoForm() {
           required
           maxLength={32}
           autoComplete="tel"
-          placeholder="623-219-1237"
+          placeholder="(555) 123-4567"
           className={inputCls}
         />
       </div>
