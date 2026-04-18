@@ -65,8 +65,16 @@ export default function ContactPage() {
             image: "https://adaptationliving.com/images/al-hq-daytime.webp",
             founder: {
               "@type": "Person",
+              givenName: "Brandon",
+              familyName: "Bible",
               name: "Brandon Bible",
               jobTitle: "Founder & CEO",
+              telephone: "+1-623-219-1237",
+              email: "info@adaptationliving.com",
+              worksFor: {
+                "@type": "Organization",
+                name: "Adaptation Living LLC",
+              },
             },
           }),
         }}

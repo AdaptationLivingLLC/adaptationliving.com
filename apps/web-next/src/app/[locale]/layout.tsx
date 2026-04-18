@@ -42,7 +42,12 @@ export const metadata: Metadata = {
     "VOSB",
     "Adaptation Living",
   ],
-  authors: [{ name: "Brandon Bible", url: baseUrl }],
+  authors: [
+    {
+      name: "Adaptation Living LLC",
+      url: baseUrl,
+    },
+  ],
   creator: "Adaptation Living LLC",
   publisher: "Adaptation Living LLC",
   openGraph: {
