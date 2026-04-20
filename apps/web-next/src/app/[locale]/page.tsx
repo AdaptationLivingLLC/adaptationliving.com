@@ -56,10 +56,10 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
-    url: "https://adaptationliving.com",
+    url: "https://www.adaptationliving.com",
     images: [
       {
-        url: "https://adaptationliving.com/images/banner.jpg",
+        url: "https://www.adaptationliving.com/images/banner.jpg",
         alt: "Adaptation OS — AI Automation and Business Operating System for Phoenix, AZ",
       },
     ],
@@ -67,14 +67,14 @@ export const metadata: Metadata = {
   twitter: {
     title,
     description,
-    images: ["https://adaptationliving.com/images/banner.jpg"],
+    images: ["https://www.adaptationliving.com/images/banner.jpg"],
   },
   alternates: {
-    canonical: "https://adaptationliving.com",
+    canonical: "https://www.adaptationliving.com",
     languages: {
-      en: "https://adaptationliving.com",
-      es: "https://adaptationliving.com/es",
-      "x-default": "https://adaptationliving.com",
+      en: "https://www.adaptationliving.com",
+      es: "https://www.adaptationliving.com/es",
+      "x-default": "https://www.adaptationliving.com",
     },
   },
 };
@@ -315,12 +315,12 @@ export default function HomePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "@id": "https://adaptationliving.com/#localbusiness",
+            "@id": "https://www.adaptationliving.com/#localbusiness",
             name: "Adaptation Living LLC",
             alternateName: ["Adaptation OS", "Adaptation Living"],
-            url: "https://adaptationliving.com",
-            logo: "https://adaptationliving.com/images/adaptation-seal-icon.svg",
-            image: "https://adaptationliving.com/images/banner.jpg",
+            url: "https://www.adaptationliving.com",
+            logo: "https://www.adaptationliving.com/images/adaptation-seal-icon.svg",
+            image: "https://www.adaptationliving.com/images/banner.jpg",
             description,
             foundingDate: "2021",
             founder: {
@@ -388,7 +388,7 @@ export default function HomePage() {
             publisher: {
               "@type": "Organization",
               name: "Adaptation Living LLC",
-              url: "https://adaptationliving.com",
+              url: "https://www.adaptationliving.com",
             },
           }),
         }}
@@ -415,7 +415,7 @@ export default function HomePage() {
               name: "Adaptation Living LLC",
               logo: {
                 "@type": "ImageObject",
-                url: "https://adaptationliving.com/images/adaptation-seal-icon.svg",
+                url: "https://www.adaptationliving.com/images/adaptation-seal-icon.svg",
               },
             },
           }),
@@ -443,11 +443,11 @@ export default function HomePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "@id": "https://adaptationliving.com/#organization",
+            "@id": "https://www.adaptationliving.com/#organization",
             name: "Adaptation Living LLC",
             legalName: "Adaptation Living LLC",
-            url: "https://adaptationliving.com",
-            logo: "https://adaptationliving.com/images/adaptation-seal-icon.svg",
+            url: "https://www.adaptationliving.com",
+            logo: "https://www.adaptationliving.com/images/adaptation-seal-icon.svg",
             sameAs: [
               "https://www.linkedin.com/company/adaptation-living",
               "https://www.linkedin.com/in/brandon-bible-7b78b2393",

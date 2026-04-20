@@ -86,7 +86,7 @@ export default function AIPage() {
             provider: {
               "@type": "Organization",
               name: "Adaptation Living LLC",
-              url: "https://adaptationliving.com",
+              url: "https://www.adaptationliving.com",
               telephone: "+1-623-219-1237",
             },
             areaServed: [

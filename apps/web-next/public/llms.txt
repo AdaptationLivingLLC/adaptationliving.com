@@ -1,0 +1,37 @@
+# Adaptation Living LLC
+
+> Veteran-owned AI automation studio in Phoenix, AZ. Custom web development, GoHighLevel CRM setup, AI agents, workflow automation, and app development for small businesses.
+
+## About
+
+Adaptation Living LLC is a veteran-owned digital solutions company specializing in AI integration, custom website development, CRM automation, and digital marketing. Founded in 2021 by Brandon Bible, we build every site from scratch delivering tailored systems that drive real results. Our platform, Adaptation OS, connects lead generation, AI-powered call handling, social media automation, and 1,800+ business tools into one dashboard. We serve law firms, beauty brands, and businesses across industries with bilingual web development, SMS-enabled CRM, SEO, PPC, and full-scale digital transformation.
+
+## Services
+
+- AI Automation & Agents
+- Custom Web Development
+- CRM Setup & Automation (Adaptation OS / GoHighLevel)
+- SEO & Digital Marketing
+- Workflow Automation
+- iOS & Android App Development
+- Branding & Design
+- Revenue Intelligence Tools
+
+## Contact
+
+- Website: https://www.adaptationliving.com
+- Email: info@adaptationliving.com
+- Phone: 623-219-1237
+- Address: 3030 N Central Ave Suite 507, Phoenix, AZ 85012
+
+## Links
+
+- [Home](https://www.adaptationliving.com/)
+- [Services](https://www.adaptationliving.com/services)
+- [AI Features](https://www.adaptationliving.com/ai)
+- [All Features](https://www.adaptationliving.com/features)
+- [Live Demo](https://www.adaptationliving.com/demo)
+- [Contact](https://www.adaptationliving.com/contact)
+- [Get Started](https://www.adaptationliving.com/intake)
+- [Showcase](https://www.adaptationliving.com/showcase)
+- [Comparisons](https://www.adaptationliving.com/vs)

@@ -14,9 +14,23 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "adaptationliving.com",
+        hostname: "www.adaptationliving.com",
       },
     ],
+  },
+
+  async redirects() {
+    return [
+      { source: "/index.html", destination: "/", permanent: true },
+      { source: "/contact.html", destination: "/contact", permanent: true },
+      { source: "/intake.html", destination: "/intake", permanent: true },
+      { source: "/services.html", destination: "/services", permanent: true },
+      { source: "/packages.html", destination: "/services", permanent: true },
+      { source: "/bthg.html", destination: "/", permanent: true },
+      { source: "/lifesaver.html", destination: "/ls-2025.html", permanent: true },
+      { source: "/ls-2025-legal.html", destination: "/legal", permanent: true },
+      { source: "/ls2025-legal-privacy.html", destination: "/legal", permanent: true },
+    ];
   },
 
   async headers() {

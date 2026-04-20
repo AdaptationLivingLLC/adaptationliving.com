@@ -1,6 +1,6 @@
 // Shared SEO utilities for consistent structured data across pages
 
-const baseUrl = "https://adaptationliving.com";
+const baseUrl = "https://www.adaptationliving.com";
 
 export function BreadcrumbSchema({
   items,

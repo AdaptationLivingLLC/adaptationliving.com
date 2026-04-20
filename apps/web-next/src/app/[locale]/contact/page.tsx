@@ -39,7 +39,7 @@ export default function ContactPage() {
             "@type": "LocalBusiness",
             name: "Adaptation Living LLC",
             alternateName: "Adaptation OS",
-            url: "https://adaptationliving.com",
+            url: "https://www.adaptationliving.com",
             telephone: "+1-623-219-1237",
             email: "info@adaptationliving.com",
             address: {
@@ -62,7 +62,7 @@ export default function ContactPage() {
               closes: "18:00",
             },
             priceRange: "$194.90 - $997.90",
-            image: "https://adaptationliving.com/images/al-hq-daytime.webp",
+            image: "https://www.adaptationliving.com/images/al-hq-daytime.webp",
             founder: {
               "@type": "Person",
               givenName: "Brandon",

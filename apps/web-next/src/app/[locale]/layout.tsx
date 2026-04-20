@@ -21,7 +21,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const baseUrl = "https://adaptationliving.com";
+const baseUrl = "https://www.adaptationliving.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),

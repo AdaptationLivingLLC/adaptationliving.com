@@ -9,7 +9,7 @@ const PHONE_RE = /^[+\d][\d\s\-().]{6,20}$/;
 const URL_RE = /^(https?:\/\/)?[\w.-]+\.[a-z]{2,}(\/.*)?$/i;
 
 const ALLOWED_ORIGINS = new Set([
-  "https://adaptationliving.com",
+  "https://www.adaptationliving.com",
   "https://www.adaptationliving.com",
 ]);
 

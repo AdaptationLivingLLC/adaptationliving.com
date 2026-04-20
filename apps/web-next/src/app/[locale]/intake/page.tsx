@@ -53,7 +53,7 @@ export default async function IntakePage({
             "@type": "ContactPage",
             name: "Start Your Adaptation OS Setup",
             description,
-            url: "https://adaptationliving.com/intake",
+            url: "https://www.adaptationliving.com/intake",
             provider: {
               "@type": "Organization",
               name: "Adaptation Living LLC",
