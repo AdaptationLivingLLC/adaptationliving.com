@@ -9,6 +9,7 @@ import { Clarity } from "@al/analytics/clarity";
 // GA4 is loaded via GTM container — do not add GoogleAnalytics here
 import { GoogleTagManager } from "@al/analytics/gtm";
 import { MetaPixel } from "@al/analytics/meta-pixel";
+import { Analytics } from "@vercel/analytics/next";
 import { IntlProvider, locales } from "@al/i18n";
 import { NavBar } from "@al/ui/components/navbar";
 import { competitors } from "../../data/competitors";
@@ -266,6 +267,8 @@ export default async function LocaleLayout({
             </div>
           </footer>
         </IntlProvider>
+
+        <Analytics />
 
         {/* GHL Chat Widget — floats in bottom corner, loads after page is interactive */}
         <Script
