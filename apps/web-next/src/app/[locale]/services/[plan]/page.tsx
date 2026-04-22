@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? `${p.setupFee} setup + ${p.priceMonthly}/mo`
     : `${p.priceMonthly}/mo`;
 
-  const title = `${p.name} — ${priceLabel} | the Adaptation Living platform Pricing | Phoenix, AZ`;
+  const title = `${p.name} — ${priceLabel} | Adaptation Living Platform Pricing | Phoenix, AZ`;
   const description = `${p.description} ${p.users}. ${p.credits}. ${p.support}.`;
 
   return {
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     keywords: [
       `${p.name}`,
-      `the Adaptation Living platform ${p.tier}`,
+      `the Adaptation Living Platform ${p.tier}`,
       `${p.tier} CRM plan Phoenix`,
       `${p.kind === "setup" ? "done-for-you CRM setup" : "self-serve CRM"}`,
       "AI automation Phoenix",

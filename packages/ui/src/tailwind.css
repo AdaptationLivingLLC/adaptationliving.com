@@ -53,10 +53,11 @@
   --glass-blur: blur(14px);
   --glass-blur-light: blur(8px);
 
-  /* Shadows */
-  --shadow-soft:   0 4px 20px rgba(15, 23, 42, 0.08);
-  --shadow-lift:   0 12px 40px rgba(15, 23, 42, 0.12);
+  /* Shadows — blue-tinted for depth + contrast on white backgrounds */
+  --shadow-soft:   0 8px 24px rgba(37, 99, 235, 0.14), 0 2px 6px rgba(37, 99, 235, 0.08);
+  --shadow-lift:   0 18px 44px rgba(37, 99, 235, 0.22), 0 4px 10px rgba(37, 99, 235, 0.10);
   --shadow-gold:   0 8px 32px rgba(37, 99, 235, 0.25);
+  --shadow-card-hover: 0 24px 56px rgba(37, 99, 235, 0.26), 0 4px 12px rgba(37, 99, 235, 0.12);
 }
 
 /* ─── Utility Classes ─────────────────────────────────────────────────────── */

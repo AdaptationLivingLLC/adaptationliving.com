@@ -392,42 +392,59 @@ export default function HomePage() {
               "radial-gradient(ellipse 900px 500px at 50% 0%, rgba(37,99,235,0.28) 0%, transparent 70%), radial-gradient(ellipse 600px 500px at 100% 100%, rgba(37,99,235,0.18) 0%, transparent 70%)",
           }}
         />
-        <div className="relative mx-auto max-w-[1200px] px-6 sm:px-8 pt-20 pb-24 lg:pt-28 lg:pb-32">
-          <div className="text-center">
-            <span className="inline-block text-[10px] font-bold tracking-[0.32em] uppercase text-[#93C5FD] bg-[#2563EB]/15 border border-[#2563EB]/40 rounded-full px-4 py-1.5 mb-7">
-              Veteran-Owned · Phoenix, AZ · Since 2021
-            </span>
-            <h1
-              id="hero-heading"
-              className="font-display text-[clamp(34px,6vw,64px)] font-extrabold leading-[1.03] tracking-[-0.025em] max-w-[980px] mx-auto"
-            >
-              Adaptation living is what{" "}
-              <span className="text-[#60A5FA]">successful businesses</span> do.
-            </h1>
-            <p className="mt-6 text-[16px] lg:text-[18px] text-white/80 leading-relaxed max-w-[760px] mx-auto">
-              Since 2021, we&apos;ve built the AI systems, websites, and
-              automated platforms that keep small businesses, law firms, and
-              mitigation specialists competitive in a world that rewards speed.
-            </p>
-            <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
-              <a
-                href="/demo"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-[10px] bg-[#2563EB] text-white text-[13px] font-bold uppercase tracking-[0.14em] shadow-[0_8px_28px_rgba(37,99,235,0.45)] hover:bg-[#1D4ED8] hover:-translate-y-0.5 transition-all duration-200"
+        <div className="relative mx-auto max-w-[1280px] px-6 sm:px-8 pt-16 pb-20 lg:pt-24 lg:pb-28">
+          <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-14 items-center">
+            <div>
+              <span className="inline-block text-[10px] font-bold tracking-[0.32em] uppercase text-[#93C5FD] bg-[#2563EB]/15 border border-[#2563EB]/40 rounded-full px-4 py-1.5 mb-7">
+                Veteran-Owned · Phoenix, AZ · Since 2021
+              </span>
+              <h1
+                id="hero-heading"
+                className="font-display text-[clamp(32px,5.2vw,58px)] font-extrabold leading-[1.04] tracking-[-0.025em]"
               >
-                Book a Demo →
-              </a>
-              <a
-                href="/pricing"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-[10px] border-2 border-[#93C5FD]/40 text-[#93C5FD] text-[13px] font-bold uppercase tracking-[0.14em] hover:bg-[#2563EB]/15 hover:border-[#2563EB] hover:text-white transition-all duration-200"
-              >
-                See Pricing
-              </a>
-              <a
-                href="#seo-audit"
-                className="inline-flex items-center gap-2 px-6 py-4 rounded-[10px] text-white/70 text-[12px] font-bold uppercase tracking-[0.18em] hover:text-white transition-colors"
-              >
-                or — Run a Free SEO Audit ↓
-              </a>
+                Adaptation living is what{" "}
+                <span className="text-[#60A5FA]">successful businesses</span>{" "}
+                do.
+              </h1>
+              <p className="mt-6 text-[16px] lg:text-[18px] text-white/80 leading-relaxed max-w-[560px]">
+                Since 2021, we&apos;ve built the AI systems, websites, and
+                automated platforms that keep small businesses, law firms,
+                and mitigation specialists competitive in a world that
+                rewards speed.
+              </p>
+              <div className="mt-8 flex flex-wrap items-center gap-3">
+                <a
+                  href="/demo"
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-[10px] bg-[#2563EB] text-white text-[13px] font-bold uppercase tracking-[0.14em] shadow-[0_8px_28px_rgba(37,99,235,0.45)] hover:bg-[#1D4ED8] hover:-translate-y-0.5 transition-all duration-200"
+                >
+                  Book a Demo →
+                </a>
+                <a
+                  href="/pricing"
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-[10px] border-2 border-[#93C5FD]/40 text-[#93C5FD] text-[13px] font-bold uppercase tracking-[0.14em] hover:bg-[#2563EB]/15 hover:border-[#2563EB] hover:text-white transition-all duration-200"
+                >
+                  See Pricing
+                </a>
+              </div>
+            </div>
+
+            {/* SEO Audit tool — right side of hero, unchanged form handler */}
+            <div className="lg:pl-4">
+              <div className="bg-white rounded-[20px] p-6 lg:p-8 shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
+                <div className="mb-5">
+                  <span className="inline-block text-[10px] font-bold tracking-[0.32em] uppercase text-[#2563EB] mb-2">
+                    Free SEO Audit
+                  </span>
+                  <h2 className="font-display text-[20px] lg:text-[22px] font-extrabold text-[#0B1D3A] leading-tight tracking-[-0.01em]">
+                    See where your business actually stands.
+                  </h2>
+                  <p className="mt-2 text-[13px] text-[#475569] leading-relaxed">
+                    We analyze 50+ signals and show you what&apos;s helping,
+                    hurting, and getting missed. No pitch. Just the data.
+                  </p>
+                </div>
+                <SeoGraderForm />
+              </div>
             </div>
           </div>
         </div>
@@ -561,7 +578,7 @@ export default function HomePage() {
       {/* ========================= PROBLEMS ========================= */}
       <section
         aria-labelledby="problems-heading"
-        className="bg-gradient-to-b from-white to-[#F8FAFC] py-20 lg:py-28 border-t border-[#0B1D3A]/5"
+        className="bg-white py-20 lg:py-28 border-t border-[#0B1D3A]/5"
       >
         <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
           <div className="text-center mb-14">
@@ -581,7 +598,7 @@ export default function HomePage() {
               return (
                 <article
                   key={p.title}
-                  className="group relative bg-white border border-[#0B1D3A]/8 rounded-[18px] p-7 lg:p-8 shadow-[0_2px_8px_rgba(11,29,58,0.04)] hover:shadow-[0_16px_40px_rgba(11,29,58,0.08)] hover:-translate-y-1 transition-all duration-300"
+                  className="group relative bg-white border border-[#2563EB]/15 rounded-[18px] p-7 lg:p-8 shadow-[0_10px_28px_rgba(37,99,235,0.14),0_2px_6px_rgba(37,99,235,0.08)] hover:shadow-[0_24px_56px_rgba(37,99,235,0.22),0_4px_10px_rgba(37,99,235,0.10)] hover:-translate-y-1 hover:border-[#2563EB]/40 transition-all duration-300"
                 >
                   <div className="w-12 h-12 rounded-[10px] bg-[#2563EB] text-white flex items-center justify-center mb-5 shadow-[0_6px_18px_rgba(37,99,235,0.3)]">
                     <Icon className="w-6 h-6" />
@@ -599,37 +616,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ========================= SEO AUDIT TOOL ========================= */}
-      <section
-        id="seo-audit"
-        aria-labelledby="seo-audit-heading"
-        className="bg-white py-20 lg:py-24 border-t border-[#0B1D3A]/5"
-      >
-        <div className="mx-auto max-w-[860px] px-6 sm:px-8 text-center mb-10">
-          <span className="inline-block text-[10px] font-bold tracking-[0.32em] uppercase text-[#2563EB] mb-4">
-            Free SEO Audit
-          </span>
-          <h2
-            id="seo-audit-heading"
-            className="font-display text-[clamp(24px,3.5vw,38px)] font-extrabold text-[#0B1D3A] leading-[1.1] tracking-[-0.02em]"
-          >
-            Want to see where your business <span className="text-[#2563EB]">actually stands?</span>
-          </h2>
-          <p className="mt-5 text-[15px] lg:text-[16px] text-[#475569] leading-relaxed max-w-[640px] mx-auto">
-            Run a free SEO audit of your website. We analyze over 50 signals
-            and show you exactly what&apos;s helping you, hurting you, and
-            getting missed. No sales pitch. Just the data.
-          </p>
-        </div>
-        <div className="mx-auto max-w-[760px] px-6 sm:px-8">
-          <SeoGraderForm />
-        </div>
-      </section>
-
       {/* ========================= TESTIMONIALS ========================= */}
       <section
         aria-labelledby="testimonials-heading"
-        className="bg-[#F8FAFC] py-20 lg:py-28 border-t border-[#0B1D3A]/5"
+        className="bg-white py-20 lg:py-28 border-t border-[#0B1D3A]/5"
       >
         <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
           <div className="text-center mb-12">
@@ -649,7 +639,7 @@ export default function HomePage() {
                 key={t.name}
                 itemScope
                 itemType="https://schema.org/Review"
-                className="bg-white border border-[#0B1D3A]/8 rounded-[20px] p-8 lg:p-10 shadow-[0_8px_24px_rgba(11,29,58,0.06)]"
+                className="bg-white border border-[#2563EB]/15 rounded-[20px] p-8 lg:p-10 shadow-[0_16px_44px_rgba(37,99,235,0.18),0_4px_10px_rgba(37,99,235,0.08)]"
               >
                 <div className="flex items-center gap-1 mb-5" aria-label="5 out of 5 stars">
                   {[...Array(5)].map((_, i) => (
@@ -715,7 +705,7 @@ export default function HomePage() {
               return (
                 <article
                   key={s.title}
-                  className="group relative bg-white border border-[#0B1D3A]/10 rounded-[16px] p-7 hover:border-[#2563EB] hover:shadow-[0_12px_32px_rgba(11,29,58,0.08)] transition-all duration-300"
+                  className="group relative bg-white border border-[#2563EB]/15 rounded-[16px] p-7 shadow-[0_8px_24px_rgba(37,99,235,0.12),0_2px_6px_rgba(37,99,235,0.06)] hover:shadow-[0_20px_48px_rgba(37,99,235,0.2),0_4px_10px_rgba(37,99,235,0.10)] hover:-translate-y-1 hover:border-[#2563EB]/50 transition-all duration-300"
                 >
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-11 h-11 rounded-[10px] bg-[#2563EB]/10 text-[#2563EB] flex items-center justify-center">

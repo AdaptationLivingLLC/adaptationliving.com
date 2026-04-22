@@ -25,7 +25,7 @@ import { Breadcrumbs } from "../../../components/breadcrumbs";
 const title =
   "AI Phone Receptionist, Chat Agents & Workflow Automation — Phoenix, AZ";
 const description =
-  "AI-powered business automation from Adaptation Living LLC in Phoenix, AZ. 24/7 AI phone receptionist, AI chat agent (web + SMS + Instagram + Facebook + WhatsApp), automated follow-up workflows, review management, and Content AI. Included in every the Adaptation Living platform plan.";
+  "AI-powered business automation from Adaptation Living LLC in Phoenix, AZ. 24/7 AI phone receptionist, AI chat agent (web + SMS + Instagram + Facebook + WhatsApp), automated follow-up workflows, review management, and Content AI. Included in every the Adaptation Living Platform plan.";
 
 export const metadata: Metadata = {
   title,
@@ -60,7 +60,7 @@ const faqs = [
   },
   {
     q: "What's included in every tier?",
-    a: "The AI Voice Agent, AI Chat Agent, AI Review Responder, Content AI, Funnel AI, and Workflow AI are included in every the Adaptation Living platform plan — Starter, Growth, and Scale. Tiers differentiate on user count, setup depth, and support level, not feature access.",
+    a: "The AI Voice Agent, AI Chat Agent, AI Review Responder, Content AI, Funnel AI, and Workflow AI are included in every the Adaptation Living Platform plan — Starter, Growth, and Scale. Tiers differentiate on user count, setup depth, and support level, not feature access.",
   },
   {
     q: "How fast can the AI get trained on my business?",
@@ -82,7 +82,7 @@ export default function AIPage() {
             "@type": "Service",
             name: "AI Business Automation — Phone, Chat, Follow-Up, Reviews, Content",
             description:
-              "24/7 AI phone receptionist, AI chat agent on every channel, automated follow-up workflows, AI review management, and Content AI — included in every the Adaptation Living platform plan.",
+              "24/7 AI phone receptionist, AI chat agent on every channel, automated follow-up workflows, AI review management, and Content AI — included in every the Adaptation Living Platform plan.",
             provider: {
               "@type": "Organization",
               name: "Adaptation Living LLC",
@@ -139,7 +139,7 @@ export default function AIPage() {
             for Phoenix Businesses.
           </h1>
           <p className="mt-5 text-[#94A3B8] text-base sm:text-lg max-w-3xl leading-relaxed">
-            Every the Adaptation Living platform plan ships with a full AI workforce. A 24/7 AI
+            Every Adaptation Living Platform plan ships with a full AI workforce. A 24/7 AI
             Voice Agent answers your phone. An AI Chat Agent replies on your
             website, Instagram, Facebook, WhatsApp, and text. AI automations
             follow up until the lead books. AI responds to every Google review.
@@ -218,7 +218,7 @@ export default function AIPage() {
             </div>
             <div className="rounded-[22px] border-2 border-accent/40 bg-white p-7 shadow-lift ring-1 ring-accent/20">
               <h3 className="font-display text-sm font-bold text-accent uppercase tracking-[0.22em] mb-4">
-                With the Adaptation Living platform
+                With the Adaptation Living Platform
               </h3>
               <div className="space-y-3">
                 {[
@@ -671,7 +671,7 @@ export default function AIPage() {
                   <th className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-[#0F172A]/70 font-bold">Feature</th>
                   <th className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-[#0F172A]/50 font-bold">DIY / Traditional</th>
                   <th className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-[#0F172A]/50 font-bold">Agency</th>
-                  <th className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-accent font-bold">the Adaptation Living platform</th>
+                  <th className="py-4 px-5 text-[10px] uppercase tracking-[0.26em] text-accent font-bold">the Adaptation Living Platform</th>
                 </tr>
               </thead>
               <tbody>

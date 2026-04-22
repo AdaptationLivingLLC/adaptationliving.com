@@ -9,9 +9,9 @@ import {
 } from "../../../lib/seo";
 import { Breadcrumbs } from "../../../components/breadcrumbs";
 
-const title = "the Adaptation Living platform vs the Competition — Honest Comparisons";
+const title = "the Adaptation Living Platform vs the Competition — Honest Comparisons";
 const description =
-  "the Adaptation Living platform compared side-by-side with HubSpot, Salesforce, ActiveCampaign, ClickFunnels, Kartra, Klaviyo, Keap, Zoho, Vendasta, SharpSpring, and Linktree. Real prices, honest concessions.";
+  "the Adaptation Living Platform compared side-by-side with HubSpot, Salesforce, ActiveCampaign, ClickFunnels, Kartra, Klaviyo, Keap, Zoho, Vendasta, SharpSpring, and Linktree. Real prices, honest concessions.";
 
 export const metadata: Metadata = {
   title,
@@ -29,9 +29,9 @@ export default function VsIndex() {
 
       <section className="section-dark-radial">
         <div className="mx-auto max-w-[1400px] px-6 pt-16 pb-12 sm:px-8 lg:pt-20 lg:pb-16">
-          <p className="eyebrow">the Adaptation Living platform Vs</p>
+          <p className="eyebrow">the Adaptation Living Platform Vs</p>
           <h1 className="mt-3 h-display font-bold tracking-tight text-white text-[1.9rem] leading-[1.05] sm:text-[2.4rem] lg:text-[3rem] max-w-4xl">
-            How the Adaptation Living platform{" "}
+            How the Adaptation Living Platform{" "}
             <span className="bg-gradient-to-r from-accent via-[#3B82F6] to-accent bg-clip-text text-transparent">
               stacks up
             </span>{" "}

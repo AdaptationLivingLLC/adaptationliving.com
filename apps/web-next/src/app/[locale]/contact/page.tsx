@@ -38,7 +38,7 @@ export default function ContactPage() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: "Adaptation Living LLC",
-            alternateName: "the Adaptation Living platform",
+            alternateName: "the Adaptation Living Platform",
             url: "https://www.adaptationliving.com",
             telephone: "+1-623-219-1237",
             email: "info@adaptationliving.com",
@@ -265,7 +265,7 @@ export default function ContactPage() {
             Not ready to call?
           </h2>
           <p className="mt-3 text-[#475569] max-w-xl mx-auto">
-            Explore the Adaptation Living platform features, plans, and the AI workforce before
+            Explore the Adaptation Living Platform features, plans, and the AI workforce before
             reaching out.
           </p>
           <div className="mt-6 flex justify-center gap-5 flex-wrap text-xs font-bold uppercase tracking-[0.22em]">

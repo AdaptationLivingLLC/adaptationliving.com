@@ -220,7 +220,7 @@ export default async function LocaleLayout({
                     <span className="text-[#2563EB] text-sm tracking-[0.28em]">LLC</span>
                   </p>
                   <p className="mt-3 text-sm leading-relaxed text-[#94A3B8] max-w-md">
-                    the Adaptation Living platform — AI automation, CRM, and a complete business
+                    the Adaptation Living Platform — AI automation, CRM, and a complete business
                     operating system for Phoenix, AZ. Veteran-owned, SAM.gov
                     registered, headquartered in Uptown Phoenix since 2021.
                   </p>
@@ -259,7 +259,7 @@ export default async function LocaleLayout({
 
                 <div>
                   <p className="text-[10px] uppercase tracking-[0.26em] text-[#2563EB] font-bold mb-4">
-                    the Adaptation Living platform Vs
+                    the Adaptation Living Platform Vs
                   </p>
                   <ul className="space-y-2 text-sm">
                     {competitors.map((c) => (
@@ -268,7 +268,7 @@ export default async function LocaleLayout({
                           href={`/vs/${c.slug}`}
                           className="text-[#94A3B8] hover:text-[#2563EB]"
                         >
-                          the Adaptation Living platform Vs {c.name}
+                          the Adaptation Living Platform Vs {c.name}
                         </a>
                       </li>
                     ))}

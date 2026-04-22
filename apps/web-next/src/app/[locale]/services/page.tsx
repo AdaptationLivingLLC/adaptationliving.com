@@ -26,15 +26,15 @@ import {
 import { Breadcrumbs } from "../../../components/breadcrumbs";
 
 const title =
-  "the Adaptation Living platform Pricing — AI Automation, CRM & Website Plans | Phoenix, AZ";
+  "Adaptation Living Platform Pricing — AI Automation, CRM & Website Plans | Phoenix, AZ";
 const description =
-  "the Adaptation Living platform pricing for Phoenix small businesses. Done-For-You setup from $1,500 + $194.90/mo, or Self-Serve from $349.90/mo. AI phone receptionist, AI chat agent, CRM, workflows, website, reviews, 70+ listings — all included on every plan. Veteran-owned.";
+  "the Adaptation Living Platform pricing for Phoenix small businesses. Done-For-You setup from $1,500 + $194.90/mo, or Self-Serve from $349.90/mo. AI phone receptionist, AI chat agent, CRM, workflows, website, reviews, 70+ listings — all included on every plan. Veteran-owned.";
 
 export const metadata: Metadata = {
   title,
   description,
   keywords: [
-    "the Adaptation Living platform pricing",
+    "the Adaptation Living Platform pricing",
     "AI automation pricing Phoenix",
     "business CRM pricing Phoenix",
     "GoHighLevel pricing alternative",
@@ -203,12 +203,12 @@ export default function ServicesPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Product",
-            name: "the Adaptation Living platform",
+            name: "the Adaptation Living Platform",
             description:
               "All-in-one business operating system: CRM, AI phone receptionist, AI chat agent, workflow automation, review management, email + SMS marketing, funnels, calendars, payments, and 70+ directory listings.",
             brand: {
               "@type": "Brand",
-              name: "the Adaptation Living platform",
+              name: "the Adaptation Living Platform",
             },
             offers: {
               "@type": "AggregateOffer",
@@ -247,14 +247,14 @@ export default function ServicesPage() {
       {/* ═══════════ HERO ═══════════ */}
       <section className="section-cream">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 pt-10 pb-12">
-          <p className="eyebrow">the Adaptation Living platform · Pricing &amp; Plans</p>
+          <p className="eyebrow">the Adaptation Living Platform · Pricing &amp; Plans</p>
           <h1 className="mt-3 h-display font-bold tracking-tight text-[#0F172A] text-[1.9rem] leading-[1.05] sm:text-[2.4rem] lg:text-[3rem] max-w-3xl">
             Pricing Built <span className="text-accent">for Phoenix Businesses.</span>
           </h1>
           <p className="mt-4 text-base leading-relaxed text-[#475569] max-w-2xl">
             Done-For-You from <strong className="text-[#0F172A]">$1,500 + $194.90/mo</strong>, or
             Self-Serve from <strong className="text-[#0F172A]">$349.90/mo</strong>. Every plan
-            unlocks the full the Adaptation Living platform platform — AI agents, CRM, workflows,
+            unlocks the full the Adaptation Living Platform — AI agents, CRM, workflows,
             marketing, website, 70+ listings, and a branded mobile app.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
@@ -380,7 +380,7 @@ export default function ServicesPage() {
             <p className="mt-4 text-base leading-relaxed text-[#475569] max-w-3xl sm:text-lg">
               Buy now, access the dashboard in minutes. No setup fee, no
               long-term contract, cancel anytime. Every plan includes the full
-              the Adaptation Living platform platform.
+              the Adaptation Living Platform.
             </p>
           </div>
 
@@ -461,7 +461,7 @@ export default function ServicesPage() {
             <p className="mt-4 text-base leading-relaxed text-[#475569] max-w-3xl">
               Tiers differentiate on user count, setup depth, and support
               level — not feature access. Every plan unlocks the entire
-              the Adaptation Living platform platform.
+              the Adaptation Living Platform.
             </p>
           </div>
 
@@ -535,7 +535,7 @@ export default function ServicesPage() {
           <div className="max-w-3xl mb-10">
             <div className="flex items-center gap-3 mb-3">
               <Search className="text-accent w-6 h-6" />
-              <p className="eyebrow">What the Adaptation Living platform Replaces</p>
+              <p className="eyebrow">What Adaptation Living Platform Replaces</p>
             </div>
             <h2 className="h-display font-bold text-white">
               Replace 10+ Subscriptions With One Platform.
@@ -553,7 +553,7 @@ export default function ServicesPage() {
                 <tr className="border-b border-white/10 bg-white/[0.04]">
                   <th scope="col" className="font-display py-4 px-5 text-[11px] uppercase tracking-[0.26em] text-[#94A3B8] font-bold">Tool Replaced</th>
                   <th scope="col" className="font-display py-4 px-5 text-[11px] uppercase tracking-[0.26em] text-[#B91C1C] font-bold">Typical Monthly Cost</th>
-                  <th scope="col" className="font-display py-4 px-5 text-[11px] uppercase tracking-[0.26em] text-accent font-bold text-right">In the Adaptation Living platform</th>
+                  <th scope="col" className="font-display py-4 px-5 text-[11px] uppercase tracking-[0.26em] text-accent font-bold text-right">In the Adaptation Living Platform</th>
                 </tr>
               </thead>
               <tbody>

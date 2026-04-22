@@ -16,7 +16,7 @@ export const competitors: Competitor[] = [
     positioningLine:
       "Email-first marketing automation known for deep sequence logic and deliverability.",
     tagline:
-      "the Adaptation Living platform vs ActiveCampaign — One platform for every channel, not just email.",
+      "the Adaptation Living Platform vs ActiveCampaign — One platform for every channel, not just email.",
     ourEdge: [
       "Unlimited contacts — you never get punished for growing your list",
       "Two-way SMS, WhatsApp, Instagram DMs — not just email",
@@ -36,7 +36,7 @@ export const competitors: Competitor[] = [
     positioningLine:
       "Enterprise-grade CRM and marketing suite famous for polish, reporting, and seat-based pricing.",
     tagline:
-      "the Adaptation Living platform vs HubSpot — Enterprise power without the enterprise invoice.",
+      "the Adaptation Living Platform vs HubSpot — Enterprise power without the enterprise invoice.",
     ourEdge: [
       "Flat $349.90/mo vs HubSpot's $800+/mo for comparable features",
       "Unlimited users — no per-seat bill every time you hire",
@@ -56,7 +56,7 @@ export const competitors: Competitor[] = [
     positioningLine:
       "The original funnel builder, known for high-converting sales pages and a loyal info-product following.",
     tagline:
-      "the Adaptation Living platform vs ClickFunnels — A business platform, not just a funnel page.",
+      "the Adaptation Living Platform vs ClickFunnels — A business platform, not just a funnel page.",
     ourEdge: [
       "Full CRM and pipelines — funnels that actually close deals",
       "Two-way SMS, email, and DMs from one inbox",
@@ -75,7 +75,7 @@ export const competitors: Competitor[] = [
     priceMonthly: "$299–$599/mo",
     positioningLine:
       "Legacy small-business CRM known for pioneering 'Infusionsoft' email automation, now dated and per-seat priced.",
-    tagline: "the Adaptation Living platform vs Keap — Modern AI built in, not bolted on.",
+    tagline: "the Adaptation Living Platform vs Keap — Modern AI built in, not bolted on.",
     ourEdge: [
       "Starts at $349.90/mo with unlimited users and contacts",
       "Native 2-way SMS, calls, and conversation inbox included",
@@ -94,7 +94,7 @@ export const competitors: Competitor[] = [
     priceMonthly: "$0–$24/mo",
     positioningLine:
       "The bio-link tool creators use to list URLs under an Instagram profile.",
-    tagline: "the Adaptation Living platform vs Linktree — A business, not just a bio link.",
+    tagline: "the Adaptation Living Platform vs Linktree — A business, not just a bio link.",
     ourEdge: [
       "Capture leads into a real CRM, not a click counter",
       "Full custom domains, CSS, and brand control",
@@ -114,7 +114,7 @@ export const competitors: Competitor[] = [
     positioningLine:
       "All-in-one marketing suite for coaches and course creators with built-in funnels, video hosting, and memberships.",
     tagline:
-      "the Adaptation Living platform vs Kartra — Grow past the contact cap without switching tools.",
+      "the Adaptation Living Platform vs Kartra — Grow past the contact cap without switching tools.",
     ourEdge: [
       "No contact or lead caps on any plan",
       "Real two-way SMS plus Instagram, WhatsApp, and Messenger",
@@ -134,7 +134,7 @@ export const competitors: Competitor[] = [
     positioningLine:
       "A reseller marketplace that bundles third-party tools for agencies to resell to local businesses.",
     tagline:
-      "the Adaptation Living platform vs Vendasta — One native platform, not a reseller bundle.",
+      "the Adaptation Living Platform vs Vendasta — One native platform, not a reseller bundle.",
     ourEdge: [
       "Flat monthly fee with unlimited sub-accounts",
       "Native features, not rebilled third-party vendors",
@@ -154,7 +154,7 @@ export const competitors: Competitor[] = [
     positioningLine:
       "Constant Contact's mid-market marketing automation suite priced by contact volume.",
     tagline:
-      "the Adaptation Living platform vs SharpSpring — Unlimited contacts, not contact-tiered billing.",
+      "the Adaptation Living Platform vs SharpSpring — Unlimited contacts, not contact-tiered billing.",
     ourEdge: [
       "$349.90/mo unlimited vs SharpSpring's contact-tiered bills",
       "2-way SMS and call tracking included, not add-ons",
@@ -174,7 +174,7 @@ export const competitors: Competitor[] = [
     positioningLine:
       "The ecommerce email and SMS engine best known for Shopify-native segmentation and revenue attribution.",
     tagline:
-      "the Adaptation Living platform vs Klaviyo — Stop duct-taping tools around your email list.",
+      "the Adaptation Living Platform vs Klaviyo — Stop duct-taping tools around your email list.",
     ourEdge: [
       "CRM, pipelines, and calendars — not just broadcast email",
       "Landing pages, funnels, and forms without Unbounce or Typeform",
@@ -194,7 +194,7 @@ export const competitors: Competitor[] = [
     positioningLine:
       "A sprawling SMB software suite covering CRM, email, books, and 40+ separate apps.",
     tagline:
-      "the Adaptation Living platform vs Zoho — One platform, not 40 apps to wire together.",
+      "the Adaptation Living Platform vs Zoho — One platform, not 40 apps to wire together.",
     ourEdge: [
       "Marketing, sales, and fulfillment in one login",
       "Unlimited users at a flat rate, not per-seat",
@@ -214,7 +214,7 @@ export const competitors: Competitor[] = [
     positioningLine:
       "The enterprise CRM standard, known for unlimited customization and a massive consulting ecosystem.",
     tagline:
-      "the Adaptation Living platform vs Salesforce — Enterprise capability without the consulting bill.",
+      "the Adaptation Living Platform vs Salesforce — Enterprise capability without the consulting bill.",
     ourEdge: [
       "$349.90/mo flat vs $500/user/mo plus six-figure rollouts",
       "New hires productive in under an hour, not a quarter",

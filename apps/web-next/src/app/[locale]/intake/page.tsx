@@ -9,9 +9,9 @@ import {
 } from "../../../lib/seo";
 import { Breadcrumbs } from "../../../components/breadcrumbs";
 
-const title = "Start Your the Adaptation Living platform Setup — Phoenix, AZ";
+const title = "Start Your Adaptation Living Platform Setup — Phoenix, AZ";
 const description =
-  "Book your the Adaptation Living platform setup call with Adaptation Living LLC. AI phone receptionist, AI chat agent, CRM, workflow automation, and website — deployed by a veteran-owned team in Phoenix, AZ in 2–3 weeks.";
+  "Book your the Adaptation Living Platform setup call with Adaptation Living LLC. AI phone receptionist, AI chat agent, CRM, workflow automation, and website — deployed by a veteran-owned team in Phoenix, AZ in 2–3 weeks.";
 
 export const metadata: Metadata = {
   title,
@@ -51,7 +51,7 @@ export default async function IntakePage({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ContactPage",
-            name: "Start Your the Adaptation Living platform Setup",
+            name: "Start Your Adaptation Living Platform Setup",
             description,
             url: "https://www.adaptationliving.com/intake",
             provider: {
@@ -67,9 +67,9 @@ export default async function IntakePage({
       {/* HERO */}
       <section className="section-cream">
         <div className="max-w-[900px] mx-auto px-6 sm:px-8 pt-10 pb-6 text-center">
-          <p className="eyebrow">Intake · the Adaptation Living platform Setup</p>
+          <p className="eyebrow">Intake · Adaptation Living Platform Setup</p>
           <h1 className="mt-3 h-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F172A]">
-            Start Your the Adaptation Living platform Setup.
+            Start Your Adaptation Living Platform Setup.
           </h1>
           <p className="mt-4 text-base text-[#475569] max-w-2xl mx-auto leading-relaxed sm:text-lg">
             Tell us about your business and we'll respond within hours — not
