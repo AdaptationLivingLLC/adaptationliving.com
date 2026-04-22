@@ -29,15 +29,15 @@ import {
 import { Breadcrumbs } from "../../../components/breadcrumbs";
 
 const title =
-  "Every Adaptation OS Feature — AI, CRM, Automation | Phoenix, AZ";
+  "Every the Adaptation Living platform Feature — AI, CRM, Automation | Phoenix, AZ";
 const description =
-  "The complete Adaptation OS feature list. AI phone receptionist, AI chat agent, CRM with pipelines, workflow automation, email + SMS marketing, 70+ directory listings, reputation management, website builder, calendar booking, invoicing, branded mobile app. Every tier includes everything.";
+  "The complete the Adaptation Living platform feature list. AI phone receptionist, AI chat agent, CRM with pipelines, workflow automation, email + SMS marketing, 70+ directory listings, reputation management, website builder, calendar booking, invoicing, branded mobile app. Every tier includes everything.";
 
 export const metadata: Metadata = {
   title,
   description,
   keywords: [
-    "Adaptation OS features",
+    "the Adaptation Living platform features",
     "all-in-one business platform features",
     "AI phone receptionist",
     "AI chat agent",
@@ -297,7 +297,7 @@ export default function FeaturesPage() {
           </h1>
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#94A3B8] sm:text-lg">
             This page is long on purpose. It's the full feature inventory for
-            Adaptation OS — every tool we replace, every capability we include,
+            the Adaptation Living platform — every tool we replace, every capability we include,
             every AI employee you hire on day one. Every tier unlocks all of
             this. Tiers differ on user count, setup depth, and support level.
           </p>

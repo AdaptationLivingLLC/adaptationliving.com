@@ -3,14 +3,9 @@ import {
   Rocket,
   TrendingUp,
   Crown,
-  Code,
-  Cpu,
-  Search,
-  Palette,
-  Target,
-  Shield,
+  CheckCircle2,
+  Sparkles,
   Phone,
-  Mail,
 } from "lucide-react";
 import {
   BreadcrumbSchema,
@@ -19,9 +14,9 @@ import {
   pageTwitter,
 } from "../../../lib/seo";
 
-const title = "Pricing — Master Service Packages";
+const title = "Pricing — Self-Serve & Done-For-You Plans";
 const description =
-  "Three comprehensive service tiers from $15,000 to $200,000+. Custom web design, CRM automation, SEO, branding, paid media, and adversarial intelligence — unified under one roof.";
+  "Transparent pricing for the Adaptation Living platform. Self-Serve plans from $497/mo and Done-For-You plans from $1,497/mo. Every tier includes a custom SEO website, AI agents, CRM, automated follow-up, and review management. Veteran-owned, Phoenix AZ.";
 
 export const metadata: Metadata = {
   title,
@@ -31,331 +26,348 @@ export const metadata: Metadata = {
   twitter: pageTwitter(title, description),
 };
 
-interface MasterTier {
-  icon: typeof Rocket;
+type Tier = {
   name: string;
-  subtitle: string;
-  target: string;
-  setup: string;
+  users: string;
   monthly: string;
-  includes: { category: string; detail: string }[];
+  setup: string;
   highlighted?: boolean;
-}
+};
 
-const masterTiers: MasterTier[] = [
+const selfServeTiers: Tier[] = [
+  { name: "Launch", users: "3 users", monthly: "$497", setup: "$1,500" },
   {
-    icon: Rocket,
-    name: "Market Entry & Infrastructure Protocol",
-    subtitle: "Tier 1",
-    target:
-      "Established local businesses seeking a massive digital overhaul, brand modernization, and foundational automated growth systems.",
-    setup: "$15,000 – $25,000",
-    monthly: "$3,500 – $5,000 /mo",
-    includes: [
-      {
-        category: "Web Design",
-        detail:
-          "10–15 page bespoke, non-template website. Lightning-fast, mobile-first, SEO foundation built in.",
-      },
-      {
-        category: "Brand Refresh",
-        detail:
-          "Professional logo, color palettes, typography, and core digital asset updates.",
-      },
-      {
-        category: "Adaptation OS",
-        detail:
-          "GoHighLevel CRM (Growth Automation tier) — unified inbox, missed-call text-back, chat widget, review automation.",
-      },
-      {
-        category: "SEO",
-        detail:
-          "Local Authority campaign — GBP dominance in specific high-value Phoenix neighborhoods.",
-      },
-      {
-        category: "Social Media",
-        detail:
-          "Profile optimization, grid aesthetic planning, and 8 custom posts per month.",
-      },
-    ],
-  },
-  {
-    icon: TrendingUp,
-    name: "Accelerated Growth & Intelligence Protocol",
-    subtitle: "Tier 2",
-    target:
-      "Mid-market companies, multi-location practices, and aggressive regional competitors actively seeking to steal significant market share.",
-    setup: "$45,000 – $70,000",
-    monthly: "$8,500 – $15,000 /mo",
+    name: "Growth",
+    users: "5 users",
+    monthly: "$997",
+    setup: "$2,500",
     highlighted: true,
-    includes: [
-      {
-        category: "Web Design",
-        detail:
-          "20–40 page custom design with advanced UX/UI wireframing, content silos, and deep CRM API integrations.",
-      },
-      {
-        category: "Branding",
-        detail:
-          "Full brand guidelines, voice architecture, and multi-channel marketing asset creation.",
-      },
-      {
-        category: "Adaptation OS",
-        detail:
-          "AI Omnichannel tier — conversational AI booking bots, complex conditional pipelines, dedicated IP email.",
-      },
-      {
-        category: "SEO",
-        detail:
-          "Regional Dominance campaign — high-intent transactional keywords, aggressive backlink acquisition, continuous technical audits.",
-      },
-      {
-        category: "Google Ads",
-        detail:
-          "Paid media management for monthly ad budgets up to $20,000 — maximum lead volume, strict CPA control.",
-      },
-      {
-        category: "Social Media",
-        detail:
-          "15 custom posts per month, basic short-form video editing, active community management.",
-      },
-      {
-        category: "Intelligence",
-        detail:
-          "Bi-annual adversarial audit of your top 3 competitors — vulnerabilities identified, action plan delivered.",
-      },
-    ],
   },
   {
-    icon: Crown,
-    name: "Enterprise Domination & Adversarial Protocol",
-    subtitle: "Tier 3",
-    target:
-      "Market leaders, multi-state operators, massive e-commerce platforms, and high-revenue B2B firms requiring total digital supremacy.",
-    setup: "$100,000 – $200,000+",
-    monthly: "$25,000 – $50,000+ /mo",
-    includes: [
-      {
-        category: "Web Design",
-        detail:
-          "50+ page bespoke enterprise platform. Headless CMS, custom web applications, military-grade compliance (HIPAA/SOC2).",
-      },
-      {
-        category: "Brand Identity",
-        detail:
-          "Total ground-up corporate rebrand — market positioning strategy and ongoing creative direction.",
-      },
-      {
-        category: "Adaptation OS",
-        detail:
-          "Enterprise-wide GoHighLevel across multiple sub-accounts and locations, fully white-labeled as your proprietary system.",
-      },
-      {
-        category: "SEO & AI",
-        detail:
-          "National SEO campaigns plus AI-agent optimization — engineering generative models to recommend you over all competitors.",
-      },
-      {
-        category: "Paid Media",
-        detail:
-          "Omnichannel management (Google, Meta, LinkedIn) for ad budgets exceeding $50,000/mo — Performance Max, offline conversion tracking.",
-      },
-      {
-        category: "Content & PR",
-        detail:
-          "Daily content publishing, high-end video production, and executive thought-leadership across all major platforms.",
-      },
-      {
-        category: "Adversarial Intel",
-        detail:
-          "Monthly tactical briefings — competitor tracking, price monitoring, LLM narrative analysis, and continuous red-teaming exercises.",
-      },
-    ],
+    name: "Scale",
+    users: "Up to 10 users",
+    monthly: "$1,997",
+    setup: "$5,000",
   },
 ];
 
-export default function PricingPage() {
-  return (
-    <main id="main-content" className="navbar-offset">
-      <BreadcrumbSchema items={[{ name: "Pricing", path: "/pricing" }]} />
+const doneForYouTiers: Tier[] = [
+  {
+    name: "Launch DFY",
+    users: "3 users",
+    monthly: "$1,497",
+    setup: "$2,500",
+  },
+  {
+    name: "Growth DFY",
+    users: "5 users",
+    monthly: "$2,497",
+    setup: "$3,500",
+    highlighted: true,
+  },
+  {
+    name: "Scale DFY",
+    users: "Up to 10 users",
+    monthly: "$4,497",
+    setup: "$7,500",
+  },
+];
 
-      {/* Page Header */}
-      <section className="max-w-[1200px] mx-auto px-8 pt-16 pb-8 text-center">
-        <h1 className="font-display text-4xl sm:text-5xl font-bold mb-4">
-          Master Service Packages
-        </h1>
-        <p className="text-text-muted text-lg max-w-3xl mx-auto">
-          Enterprise clients do not want to manage multiple vendors. These
-          packages unify custom web design, CRM automation, SEO, branding, paid
-          media, and adversarial intelligence into a single, flawlessly
-          synchronized system. One team. One invoice. Total digital dominance.
-        </p>
+const includedAtEveryTier = [
+  "Custom website, fully SEO-optimized per full industry standards",
+  "Custom AI voice agents and AI chat agents configured for your business",
+  "Custom AI employees that handle specific workflows (intake, follow-up, social media, reviews)",
+  "Social media setup and integration across Facebook, Instagram, LinkedIn, Google Business Profile, and Yelp",
+  "Full Customer Relationship Management (CRM)",
+  "Automated follow-up workflows (Short Message Service, email, phone)",
+  "Review and reputation management",
+  "Appointment booking and calendar integration",
+  "Payment processing and invoicing",
+  "Email and SMS marketing",
+  "Full configuration and ongoing support",
+  "Everything deployed in your brand",
+];
+
+function TierCard({ tier, flavor }: { tier: Tier; flavor: "self" | "dfy" }) {
+  return (
+    <article
+      className={`relative rounded-[20px] p-8 transition-all duration-300 ${
+        tier.highlighted
+          ? "border-2 border-[#2563EB] bg-gradient-to-b from-[#2563EB]/[0.04] to-white shadow-[0_16px_40px_rgba(37,99,235,0.12)]"
+          : "border-2 border-[#0B1D3A]/10 bg-white hover:border-[#2563EB]/40 hover:shadow-[0_8px_24px_rgba(11,29,58,0.08)]"
+      }`}
+    >
+      {tier.highlighted && (
+        <div className="absolute -top-3 left-8 text-[10px] font-bold uppercase tracking-[0.22em] text-white bg-[#2563EB] rounded-full px-3 py-1">
+          Most Popular
+        </div>
+      )}
+      <div className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#2563EB] mb-2">
+        {flavor === "self" ? "Self-Serve" : "Done-For-You"}
+      </div>
+      <h3 className="font-display text-[24px] font-extrabold text-[#0B1D3A] tracking-[-0.01em]">
+        {tier.name}
+      </h3>
+      <div className="mt-1 text-[13px] text-[#64748B]">{tier.users}</div>
+      <div className="mt-6 flex items-baseline gap-1">
+        <span className="font-display text-[42px] font-extrabold text-[#0B1D3A] leading-none tracking-[-0.02em]">
+          {tier.monthly}
+        </span>
+        <span className="text-[14px] font-semibold text-[#64748B]">/mo</span>
+      </div>
+      <div className="mt-3 text-[13px] text-[#64748B]">
+        One-time setup: <strong className="text-[#0B1D3A]">{tier.setup}</strong>
+      </div>
+      <a
+        href="/demo"
+        className={`mt-7 w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-[10px] text-[12px] font-bold uppercase tracking-[0.14em] transition-all duration-200 ${
+          tier.highlighted
+            ? "bg-[#2563EB] text-white shadow-[0_8px_24px_rgba(37,99,235,0.35)] hover:bg-[#1D4ED8]"
+            : "border-2 border-[#0B1D3A]/15 text-[#0B1D3A] hover:border-[#2563EB] hover:text-[#2563EB]"
+        }`}
+      >
+        Book a Demo →
+      </a>
+    </article>
+  );
+}
+
+export default function PricingPage() {
+  const breadcrumbs = [
+    { name: "Home", path: "/" },
+    { name: "Pricing", path: "/pricing" },
+  ];
+
+  return (
+    <main id="main-content" className="relative">
+      <BreadcrumbSchema items={breadcrumbs} />
+
+      {/* Hero */}
+      <section className="relative overflow-hidden bg-[#0B1D3A] text-white">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 opacity-70"
+          style={{
+            background:
+              "radial-gradient(ellipse 900px 500px at 50% 0%, rgba(37,99,235,0.28) 0%, transparent 70%)",
+          }}
+        />
+        <div className="relative mx-auto max-w-[1100px] px-6 sm:px-8 pt-20 pb-16 lg:pt-24 lg:pb-20 text-center">
+          <span className="inline-block text-[10px] font-bold tracking-[0.32em] uppercase text-[#93C5FD] bg-[#2563EB]/15 border border-[#2563EB]/40 rounded-full px-4 py-1.5 mb-6">
+            Pricing
+          </span>
+          <h1 className="font-display text-[clamp(32px,5vw,52px)] font-extrabold leading-[1.05] tracking-[-0.025em] max-w-[900px] mx-auto">
+            Choose your engagement.
+          </h1>
+          <p className="mt-6 text-[16px] lg:text-[18px] text-white/80 leading-relaxed max-w-[740px] mx-auto">
+            Every tier runs on our proprietary software — deployed in your
+            brand, supported by a veteran-owned team in Uptown Phoenix.
+          </p>
+        </div>
       </section>
 
-      {/* Three Tiers */}
-      <section className="max-w-[1400px] mx-auto px-8 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {masterTiers.map((tier) => (
-            <div
-              key={tier.name}
-              className={`glass rounded-lg p-10 flex flex-col transition-all hover:-translate-y-1 ${
-                tier.highlighted ? "border-accent border-2 glow-accent" : ""
-              }`}
+      {/* Self-Serve Tiers */}
+      <section
+        aria-labelledby="self-serve-heading"
+        className="bg-white py-20 lg:py-24"
+      >
+        <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block text-[10px] font-bold tracking-[0.32em] uppercase text-[#2563EB] mb-3">
+              Self-Serve
+            </span>
+            <h2
+              id="self-serve-heading"
+              className="font-display text-[clamp(24px,3.5vw,38px)] font-extrabold text-[#0B1D3A] leading-[1.1] tracking-[-0.02em]"
             >
-              <div className="flex items-center gap-3 mb-2">
-                <tier.icon className="text-accent w-8 h-8" />
-                <span className="text-accent text-xs uppercase tracking-[3px] font-display">
-                  {tier.subtitle}
-                </span>
-              </div>
-              <h2 className="font-display text-2xl font-bold mb-3">
-                {tier.name}
-              </h2>
-              <p className="text-text-muted text-sm mb-6 leading-relaxed">
-                {tier.target}
+              You run it. <span className="text-[#2563EB]">We support you.</span>
+            </h2>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {selfServeTiers.map((t) => (
+              <TierCard key={t.name} tier={t} flavor="self" />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Done-For-You Tiers */}
+      <section
+        aria-labelledby="dfy-heading"
+        className="bg-[#F8FAFC] py-20 lg:py-24 border-t border-[#0B1D3A]/5"
+      >
+        <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block text-[10px] font-bold tracking-[0.32em] uppercase text-[#2563EB] mb-3">
+              Done-For-You
+            </span>
+            <h2
+              id="dfy-heading"
+              className="font-display text-[clamp(24px,3.5vw,38px)] font-extrabold text-[#0B1D3A] leading-[1.1] tracking-[-0.02em]"
+            >
+              We run it. <span className="text-[#2563EB]">You focus on clients.</span>
+            </h2>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {doneForYouTiers.map((t) => (
+              <TierCard key={t.name} tier={t} flavor="dfy" />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Users + Setup Fee Policy */}
+      <section className="bg-white py-16 border-t border-[#0B1D3A]/5">
+        <div className="mx-auto max-w-[960px] px-6 sm:px-8">
+          <div className="grid gap-5 md:grid-cols-2">
+            <div className="rounded-[16px] border border-[#0B1D3A]/10 p-7 bg-white">
+              <h3 className="font-display text-[18px] font-extrabold text-[#0B1D3A] mb-3">
+                Additional users beyond the tier cap
+              </h3>
+              <p className="text-[14.5px] leading-[1.7] text-[#475569]">
+                <strong className="text-[#0B1D3A]">
+                  $75/user/month
+                </strong>{" "}
+                for every user added above your tier&apos;s user cap. Example:
+                Growth includes 5 users. A 6th user adds $75/mo. A 7th user
+                adds another $75/mo. The $75 rate applies equally to Self-Serve
+                and Done-For-You tiers.
               </p>
+            </div>
+            <div className="rounded-[16px] border border-[#0B1D3A]/10 p-7 bg-white">
+              <h3 className="font-display text-[18px] font-extrabold text-[#0B1D3A] mb-3">
+                Setup fees
+              </h3>
+              <p className="text-[14.5px] leading-[1.7] text-[#475569]">
+                Setup fees cover the real work: custom website, AI agent
+                configuration, CRM setup, calendar and payment integration,
+                social media connection, workflows, and team training. Pay in
+                full upfront, bundle into the first 3 months of service, or{" "}
+                <strong className="text-[#0B1D3A]">
+                  prepay 12 months and setup is waived entirely.
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <div className="mb-6 p-4 rounded bg-white/[0.03] border border-glass-border">
-                <div className="mb-2">
-                  <span className="text-xs uppercase tracking-wider text-text-muted">
-                    Initial Investment
-                  </span>
-                  <span className="block text-2xl font-bold text-accent">
-                    {tier.setup}
-                  </span>
+      {/* Founding Customer Offer */}
+      <section className="bg-white py-12">
+        <div className="mx-auto max-w-[960px] px-6 sm:px-8">
+          <div className="rounded-[20px] border-2 border-[#F59E0B] bg-gradient-to-br from-[#FEF3C7] to-white p-8 lg:p-10 text-center shadow-[0_8px_24px_rgba(245,158,11,0.12)]">
+            <div className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] text-[#92400E] mb-4">
+              <Sparkles className="w-4 h-4" /> Founding Customer Offer
+            </div>
+            <h3 className="font-display text-[22px] lg:text-[28px] font-extrabold text-[#0B1D3A] leading-tight tracking-[-0.01em] max-w-[720px] mx-auto">
+              First 10 Phoenix law firms and mitigation specialists get a
+              12-month price lock — setup fees waived.
+            </h3>
+            <div className="mt-6 grid gap-4 md:grid-cols-2 max-w-[720px] mx-auto">
+              <div className="rounded-[12px] border border-[#0B1D3A]/10 bg-white p-5 text-left">
+                <div className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#92400E] mb-1">
+                  Growth Self-Serve
                 </div>
-                <div>
-                  <span className="text-xs uppercase tracking-wider text-text-muted">
-                    Monthly Retainer
-                  </span>
-                  <span className="block text-2xl font-bold text-accent">
-                    {tier.monthly}
-                  </span>
+                <div className="font-display text-[24px] font-extrabold text-[#0B1D3A]">
+                  $497/mo
+                </div>
+                <div className="text-[12px] text-[#64748B]">
+                  Locked for 12 months · Normally $997/mo
                 </div>
               </div>
-
-              <div className="flex-1 space-y-4 mb-8">
-                {tier.includes.map((item) => (
-                  <div key={item.category}>
-                    <span className="text-xs uppercase tracking-wider text-accent font-semibold">
-                      {item.category}
-                    </span>
-                    <p className="text-text-muted text-sm leading-relaxed">
-                      {item.detail}
-                    </p>
-                  </div>
-                ))}
+              <div className="rounded-[12px] border border-[#0B1D3A]/10 bg-white p-5 text-left">
+                <div className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#92400E] mb-1">
+                  Growth Done-For-You
+                </div>
+                <div className="font-display text-[24px] font-extrabold text-[#0B1D3A]">
+                  $1,497/mo
+                </div>
+                <div className="text-[12px] text-[#64748B]">
+                  Locked for 12 months · Normally $2,497/mo
+                </div>
               </div>
-
+            </div>
+            <p className="mt-6 text-[13px] text-[#713F12]">
+              Featured as a Founding Partner (optional). Limited slots.
+            </p>
+            <div className="mt-6">
               <a
-                href={`/intake?package=${encodeURIComponent(tier.name)}`}
-                className="block text-center text-sm uppercase tracking-widest font-semibold border-2 border-accent bg-accent text-white px-6 py-4 rounded hover:bg-transparent hover:text-accent transition-all"
+                href="/demo?offer=founding"
+                className="inline-flex items-center gap-2 px-8 py-3.5 rounded-[10px] bg-[#0B1D3A] text-white text-[12px] font-bold uppercase tracking-[0.14em] hover:bg-[#1D4ED8] transition-all duration-200"
               >
-                Request Proposal
+                Claim a Founding Slot →
               </a>
             </div>
-          ))}
+          </div>
         </div>
       </section>
 
-      {/* Individual Services */}
-      <section className="max-w-[1200px] mx-auto px-8 py-16 border-t border-glass-border">
-        <h2 className="font-display text-3xl font-bold text-center mb-4">
-          Individual Service Pages
-        </h2>
-        <p className="text-text-muted text-center text-base max-w-2xl mx-auto mb-10">
-          Need a specific service rather than a full package? Each capability is
-          available independently with its own detailed pricing.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            {
-              icon: Code,
-              name: "Custom Web Design",
-              range: "$5,000 – $150,000+",
-              href: "/services/web-design",
-            },
-            {
-              icon: Cpu,
-              name: "Business Automation (CRM)",
-              range: "$97 – $697 /mo",
-              href: "/services/automation",
-            },
-            {
-              icon: Search,
-              name: "SEO Services",
-              range: "$1,500 – $15,000+ /mo",
-              href: "/services/seo",
-            },
-            {
-              icon: Palette,
-              name: "Branding & Social Media",
-              range: "$1,500 – $50,000+",
-              href: "/services/branding",
-            },
-            {
-              icon: Target,
-              name: "Google Ads Management",
-              range: "$1,000 – $15,000+ /mo",
-              href: "/services/advertising",
-            },
-            {
-              icon: Shield,
-              name: "Market Intelligence",
-              range: "$3,500 – $50,000+",
-              href: "/services/intelligence",
-            },
-          ].map((svc) => (
-            <a
-              key={svc.name}
-              href={svc.href}
-              className="flex items-start gap-4 p-6 rounded-lg bg-white/[0.02] border border-glass-border hover:border-accent hover:-translate-y-0.5 transition-all group"
+      {/* What's Included at Every Tier */}
+      <section
+        aria-labelledby="included-heading"
+        className="bg-[#F8FAFC] py-20 lg:py-24 border-t border-[#0B1D3A]/5"
+      >
+        <div className="mx-auto max-w-[960px] px-6 sm:px-8">
+          <div className="text-center mb-10">
+            <span className="inline-block text-[10px] font-bold tracking-[0.32em] uppercase text-[#2563EB] mb-3">
+              Every Tier · Every Engagement
+            </span>
+            <h2
+              id="included-heading"
+              className="font-display text-[clamp(24px,3.5vw,36px)] font-extrabold text-[#0B1D3A] leading-[1.1] tracking-[-0.02em]"
             >
-              <svc.icon className="text-accent w-6 h-6 mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="font-display text-lg font-bold group-hover:text-accent transition-all">
-                  {svc.name}
-                </h3>
-                <p className="text-text-muted text-sm">{svc.range}</p>
+              What you get at every tier
+            </h2>
+          </div>
+          <div className="grid gap-3 md:grid-cols-2">
+            {includedAtEveryTier.map((item) => (
+              <div
+                key={item}
+                className="flex items-start gap-3 bg-white border border-[#0B1D3A]/8 rounded-[12px] p-4"
+              >
+                <CheckCircle2 className="flex-shrink-0 w-5 h-5 text-[#2563EB] mt-0.5" />
+                <p className="text-[14px] leading-[1.6] text-[#334155]">
+                  {item}
+                </p>
               </div>
-            </a>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-24 text-center bg-gradient-to-br from-accent/10 to-bg-dark/90 border-t border-glass-border">
-        <div className="max-w-[1200px] mx-auto px-8">
-          <h2 className="font-display text-3xl font-bold mb-4">
-            Ready to Build Something That Dominates?
+      {/* Final CTA */}
+      <section className="relative overflow-hidden bg-[#0B1D3A] text-white py-20 lg:py-24">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 opacity-70"
+          style={{
+            background:
+              "radial-gradient(ellipse 800px 400px at 50% 50%, rgba(37,99,235,0.28) 0%, transparent 70%)",
+          }}
+        />
+        <div className="relative mx-auto max-w-[800px] px-6 sm:px-8 text-center">
+          <h2 className="font-display text-[clamp(26px,4vw,42px)] font-extrabold leading-[1.08] tracking-[-0.02em]">
+            Not sure which tier fits?
           </h2>
-          <p className="text-text-muted text-lg max-w-xl mx-auto mb-8">
-            Tell us what you are trying to accomplish. We will map your goals to
-            the right package and deliver a clear proposal — no pressure, no
-            pitch decks.
+          <p className="mt-5 text-[15px] lg:text-[16px] text-white/75 leading-relaxed max-w-[620px] mx-auto">
+            A 30-minute demo is the fastest way. We&apos;ll map your business
+            to the right tier, answer every question, and quote setup and
+            onboarding on the call.
           </p>
-          <div className="flex justify-center gap-8 mb-8 flex-wrap">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <a
-              href="tel:6232191237"
-              className="flex items-center gap-2 text-lg font-semibold hover:text-accent transition-all"
+              href="/demo"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-[10px] bg-[#2563EB] text-white text-[13px] font-bold uppercase tracking-[0.14em] shadow-[0_8px_24px_rgba(37,99,235,0.4)] hover:bg-[#1D4ED8] hover:-translate-y-0.5 transition-all duration-200"
             >
-              <Phone className="text-accent w-5 h-5" />
-              623-219-1237
+              Book a Demo →
             </a>
             <a
-              href="mailto:info@adaptationliving.com"
-              className="flex items-center gap-2 text-lg font-semibold hover:text-accent transition-all"
+              href="tel:+16232191237"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-[10px] border-2 border-[#93C5FD]/40 text-[#93C5FD] text-[13px] font-bold uppercase tracking-[0.14em] hover:bg-[#2563EB]/15 hover:border-[#2563EB] hover:text-white transition-all duration-200"
             >
-              <Mail className="text-accent w-5 h-5" />
-              info@adaptationliving.com
+              <Phone className="w-4 h-4" /> 623-219-1237
             </a>
           </div>
-          <a
-            href="/intake"
-            className="px-8 py-4 text-base uppercase tracking-widest font-semibold border-2 border-accent bg-accent text-white hover:bg-transparent hover:text-accent transition-all inline-block"
-          >
-            Request Your Proposal
-          </a>
         </div>
       </section>
     </main>

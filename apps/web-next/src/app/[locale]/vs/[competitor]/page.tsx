@@ -31,14 +31,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const c = getCompetitor(competitor);
   if (!c) return {};
 
-  const title = `Adaptation OS vs ${c.name} — Phoenix Small Business Platform`;
-  const description = `${c.tagline} Real price comparison, feature-by-feature breakdown, and honest concessions. Adaptation OS: $349.90/mo flat, unlimited users, AI phone + chat included.`;
+  const title = `the Adaptation Living platform vs ${c.name} — Phoenix Small Business Platform`;
+  const description = `${c.tagline} Real price comparison, feature-by-feature breakdown, and honest concessions. the Adaptation Living platform: $349.90/mo flat, unlimited users, AI phone + chat included.`;
 
   return {
     title,
     description,
     keywords: [
-      `Adaptation OS vs ${c.name}`,
+      `the Adaptation Living platform vs ${c.name}`,
       `${c.name} alternative`,
       `${c.name} vs CRM`,
       `${c.name} pricing`,
@@ -96,7 +96,7 @@ export default async function VersusPage({ params }: Props) {
         <div className="mx-auto max-w-[1400px] px-6 pt-16 pb-12 sm:px-8 lg:pt-20 lg:pb-16">
           <p className="eyebrow">Head-to-Head Comparison</p>
           <h1 className="mt-3 h-display font-bold tracking-tight text-white text-[1.9rem] leading-[1.05] sm:text-[2.4rem] lg:text-[3rem] max-w-4xl">
-            Adaptation OS{" "}
+            the Adaptation Living platform{" "}
             <span className="bg-gradient-to-r from-accent via-[#3B82F6] to-accent bg-clip-text text-transparent">
               vs {c.name}
             </span>
@@ -146,7 +146,7 @@ export default async function VersusPage({ params }: Props) {
                 Feature
               </p>
               <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-accent">
-                Adaptation OS
+                the Adaptation Living platform
               </p>
               <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#94A3B8]">
                 {c.name}
@@ -184,7 +184,7 @@ export default async function VersusPage({ params }: Props) {
           <div className="max-w-3xl">
             <div className="mb-3 flex items-center gap-3">
               <Sparkles className="h-6 w-6 text-accent" />
-              <p className="eyebrow">Why Adaptation OS Wins</p>
+              <p className="eyebrow">Why the Adaptation Living platform Wins</p>
             </div>
             <h2 className="h-display text-2xl font-bold text-white sm:text-3xl lg:text-[2.25rem]">
               Five reasons Phoenix businesses pick us over {c.name}.

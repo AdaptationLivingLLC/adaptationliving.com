@@ -14,7 +14,7 @@ import {
   pageTwitter,
 } from "../../../../lib/seo";
 
-const title = "Business Automation & CRM — Adaptation OS";
+const title = "Business Automation & CRM — the Adaptation Living platform";
 const description =
   "White-label GoHighLevel CRM, AI chatbots, automated follow-up, review generation, and pipeline management. Replace 8 tools with one system. From $97/mo.";
 
@@ -95,7 +95,7 @@ export default function AutomationPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            name: "Business Automation & CRM — Adaptation OS",
+            name: "Business Automation & CRM — the Adaptation Living platform",
             description,
             provider: {
               "@type": "Organization",
@@ -119,7 +119,7 @@ export default function AutomationPage() {
         <div className="flex items-center gap-3 mb-4">
           <Cpu className="text-accent w-8 h-8" />
           <span className="text-accent text-sm uppercase tracking-[3px] font-display">
-            Adaptation OS
+            the Adaptation Living platform
           </span>
         </div>
         <h1 className="font-display text-4xl sm:text-5xl font-bold mb-6 leading-tight">
@@ -131,7 +131,7 @@ export default function AutomationPage() {
           You are paying for Calendly, Mailchimp, a CRM, a review tool, and a
           funnel builder — separately. We replace all of that with one system,
           automate your follow-up so leads never die, and you deal with one
-          invoice and one person. Adaptation OS is your entire business
+          invoice and one person. the Adaptation Living platform is your entire business
           automation backbone — CRM, communications, scheduling, reputation,
           and AI — unified under one roof.
         </p>
@@ -169,7 +169,7 @@ export default function AutomationPage() {
             disconnected tools that do not talk to each other.
           </p>
           <p className="text-accent font-display text-xl font-bold">
-            Adaptation OS replaces all of them. One platform. One login. One
+            the Adaptation Living platform replaces all of them. One platform. One login. One
             bill.
           </p>
         </div>
@@ -235,7 +235,7 @@ export default function AutomationPage() {
           How We Install It
         </h2>
         <p className="text-text-muted text-base mb-8 max-w-3xl">
-          We do not hand you a login and wish you luck. Every Adaptation OS
+          We do not hand you a login and wish you luck. Every the Adaptation Living platform
           deployment is fully configured, tested, and tailored to your business
           before you touch it.
         </p>
@@ -290,7 +290,7 @@ export default function AutomationPage() {
       {/* Pricing */}
       <section className="max-w-[1200px] mx-auto px-8 py-16 border-t border-glass-border">
         <h2 className="font-display text-3xl font-bold mb-2">
-          Adaptation OS Pricing
+          the Adaptation Living platform Pricing
         </h2>
         <p className="text-text-muted text-base max-w-3xl mb-10">
           One platform. No per-automation charges. No nickel-and-dime add-ons.
@@ -327,7 +327,7 @@ export default function AutomationPage() {
                 ))}
               </ul>
               <a
-                href={`/intake?service=${encodeURIComponent(`Adaptation OS — ${tier.name}`)}`}
+                href={`/intake?service=${encodeURIComponent(`the Adaptation Living platform — ${tier.name}`)}`}
                 className="block text-center text-sm uppercase tracking-widest font-semibold border-2 border-accent bg-accent text-white px-6 py-3 rounded hover:bg-transparent hover:text-accent transition-all"
               >
                 Get Started
@@ -344,7 +344,7 @@ export default function AutomationPage() {
             Stop Paying for 8 Tools That Do Not Talk to Each Other
           </h2>
           <p className="text-text-muted text-lg max-w-xl mx-auto mb-8">
-            Book a free demo. We will show you exactly how Adaptation OS
+            Book a free demo. We will show you exactly how the Adaptation Living platform
             replaces your current stack and automates the follow-up that is
             costing you deals.
           </p>

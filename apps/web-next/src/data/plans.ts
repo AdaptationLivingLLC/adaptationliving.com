@@ -43,7 +43,7 @@ export const plans: Plan[] = [
       "Anyone who wants to go live TODAY, not in 3 weeks",
     ],
     includes: [
-      "Full Adaptation OS platform — every feature, every tier",
+      "Full the Adaptation Living platform platform — every feature, every tier",
       "CRM with smart lists, custom fields, visual pipeline",
       "Calendar + booking pages with reminders",
       "Email + 2-way SMS + web chat",
@@ -126,7 +126,7 @@ export const plans: Plan[] = [
       "Multi-location businesses that need per-location pipelines",
       "Teams of 6–10 with complex role-based permissions",
       "Ops leaders running 10+ workflows simultaneously",
-      "Businesses ready to connect Adaptation OS to their existing stack",
+      "Businesses ready to connect the Adaptation Living platform to their existing stack",
     ],
     includes: [
       "Everything in Growth DIY",

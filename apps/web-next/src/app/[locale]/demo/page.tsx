@@ -10,9 +10,9 @@ import { Breadcrumbs } from "../../../components/breadcrumbs";
 import { DemoForm } from "../../../components/demo-form";
 
 const title =
-  "See Adaptation OS in Action — Live 30-Minute Demo | Phoenix, AZ";
+  "See the Adaptation Living platform in Action — Live 30-Minute Demo | Phoenix, AZ";
 const description =
-  "Book a 30-minute live walkthrough of Adaptation OS. See the AI phone receptionist answer calls, the AI chat agent respond across channels, the pipeline close deals, and the workflow builder automate your day. No credit card, no obligation.";
+  "Book a 30-minute live walkthrough of the Adaptation Living platform. See the AI phone receptionist answer calls, the AI chat agent respond across channels, the pipeline close deals, and the workflow builder automate your day. No credit card, no obligation.";
 
 export const metadata: Metadata = {
   title,
@@ -118,14 +118,14 @@ export default function DemoPage() {
               </div>
 
               <h1 className="h-display font-bold tracking-tight text-white">
-                See Adaptation OS <span className="bg-gradient-to-r from-accent via-[#3B82F6] to-accent bg-clip-text text-transparent">Run Your Business</span> in 30 Minutes.
+                See the Adaptation Living platform <span className="bg-gradient-to-r from-accent via-[#3B82F6] to-accent bg-clip-text text-transparent">Run Your Business</span> in 30 Minutes.
               </h1>
 
               <p className="mt-5 max-w-xl text-base leading-relaxed text-[#94A3B8] sm:text-lg">
                 Book a live walkthrough. We'll show your business running on the
                 platform — AI phone answering real calls, AI chat replying on
                 SMS, a pipeline closing deals, and workflows automating the
-                busywork. If Adaptation OS isn't the right fit, we'll say so.
+                busywork. If the Adaptation Living platform isn't the right fit, we'll say so.
               </p>
 
               <ul className="mt-7 space-y-3">
@@ -210,7 +210,7 @@ export default function DemoPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={s.src}
-                    alt={`${s.label} — Adaptation OS live preview`}
+                    alt={`${s.label} — the Adaptation Living platform live preview`}
                     loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
                   />

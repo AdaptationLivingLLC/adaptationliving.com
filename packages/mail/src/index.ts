@@ -12,7 +12,7 @@ function getResend(): Resend {
 
 const FROM =
   process.env.MAIL_FROM ??
-  "Adaptation OS <onboarding@adaptationliving.com>";
+  "the Adaptation Living platform <onboarding@adaptationliving.com>";
 
 export interface WelcomeEmailInput {
   to: string;
@@ -24,7 +24,7 @@ export interface WelcomeEmailInput {
 
 export async function sendWelcomeEmail(input: WelcomeEmailInput) {
   const phone = input.supportPhone ?? "623-219-1237";
-  const subject = `Welcome to Adaptation OS — your ${input.tier} account is live`;
+  const subject = `Welcome to the Adaptation Living platform — your ${input.tier} account is live`;
 
   const html = `<!doctype html>
 <html>
@@ -33,13 +33,13 @@ export async function sendWelcomeEmail(input: WelcomeEmailInput) {
   <tr><td align="center">
     <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;background:#0F2847;border:1px solid #162D50;border-radius:16px;overflow:hidden;">
       <tr><td style="padding:32px 32px 8px 32px;">
-        <div style="font-size:11px;letter-spacing:3px;color:#D4AF37;text-transform:uppercase;margin-bottom:16px;">Adaptation OS</div>
+        <div style="font-size:11px;letter-spacing:3px;color:#D4AF37;text-transform:uppercase;margin-bottom:16px;">the Adaptation Living platform</div>
         <h1 style="font-family:Georgia,serif;font-size:32px;font-weight:700;color:#ffffff;margin:0 0 16px 0;line-height:1.15;">Welcome, ${escapeHtml(input.firstName)}.</h1>
         <p style="color:#B8C4D4;font-size:16px;line-height:1.6;margin:0 0 12px 0;">Your <strong style="color:#ffffff;">${escapeHtml(input.tier)}</strong> account is provisioned and ready. CRM, AI agents, automation, funnels, calendars, reviews — all online, all yours.</p>
         <p style="color:#B8C4D4;font-size:16px;line-height:1.6;margin:0 0 24px 0;">Click below to log in. Your username is the email address you used at checkout; a temporary password was sent in a separate message.</p>
       </td></tr>
       <tr><td align="center" style="padding:0 32px 24px 32px;">
-        <a href="${escapeHtml(input.portalUrl)}" style="display:inline-block;background:#D4AF37;color:#0B1D3A;font-weight:700;font-size:14px;letter-spacing:3px;text-transform:uppercase;padding:18px 36px;border-radius:4px;text-decoration:none;">Log In To Adaptation OS &rarr;</a>
+        <a href="${escapeHtml(input.portalUrl)}" style="display:inline-block;background:#D4AF37;color:#0B1D3A;font-weight:700;font-size:14px;letter-spacing:3px;text-transform:uppercase;padding:18px 36px;border-radius:4px;text-decoration:none;">Log In To the Adaptation Living platform &rarr;</a>
       </td></tr>
       <tr><td style="padding:8px 32px 24px 32px;border-top:1px solid #162D50;">
         <h2 style="font-family:Georgia,serif;font-size:18px;color:#ffffff;margin:24px 0 12px 0;">Your first 15 minutes</h2>
