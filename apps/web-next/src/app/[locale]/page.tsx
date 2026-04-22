@@ -466,7 +466,34 @@ export default function HomePage() {
           >
             Adaptation Living is a <span className="text-[#2563EB]">verb.</span>
           </h2>
-          <div className="mt-7 space-y-6 text-[16px] lg:text-[17px] leading-[1.75] text-[#334155]">
+          <div className="mt-7 text-[16px] lg:text-[17px] leading-[1.75] text-[#334155] [&>p:not(:first-of-type)]:mt-6 [&>ul]:mt-6 [&>ul+p]:mt-6">
+            <figure
+              itemScope
+              itemType="https://schema.org/ImageObject"
+              className="float-none md:float-right md:ml-7 md:mb-3 mb-6 w-full md:w-[360px] lg:w-[420px]"
+            >
+              <div className="relative aspect-[4/3] overflow-hidden rounded-[16px] border border-[#2563EB]/15 shadow-[0_18px_44px_rgba(37,99,235,0.22),0_4px_10px_rgba(37,99,235,0.10)]">
+                <Image
+                  src="/images/al-hq-daytime.webp"
+                  alt="Adaptation Living LLC headquarters in Phoenix AZ — the company monument sign and main entrance of Suite 507 at 3030 North Central Avenue, inside the Bank of America Tower."
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 420px"
+                  loading="lazy"
+                  itemProp="contentUrl"
+                />
+              </div>
+              <meta itemProp="name" content="Adaptation Living LLC — Phoenix Headquarters" />
+              <meta
+                itemProp="description"
+                content="Front entrance of Adaptation Living LLC at 3030 N Central Ave, Suite 507, Phoenix, AZ 85012 — Bank of America Tower, Midtown Phoenix."
+              />
+              <figcaption className="mt-2.5 text-center text-[11px] text-[#777B7E] leading-[1.5]">
+                3030 N Central Ave · Suite 507 · Phoenix, AZ 85012
+                <br />
+                Bank of America Tower · Midtown Phoenix
+              </figcaption>
+            </figure>
             <p>
               It&apos;s what successful businesses do every single day — they
               adapt to new tools, new customer expectations, new competitors,
@@ -976,52 +1003,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ========================= HEADQUARTERS PHOTO (BOTTOM) ========================= */}
-      <section
-        aria-labelledby="hq-photo-heading"
-        className="bg-white py-16 lg:py-20 border-t border-[#E2E8F0]"
-      >
-        <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
-          <h2 id="hq-photo-heading" className="sr-only">
-            Adaptation Living LLC Headquarters — 3030 N Central Ave, Suite
-            507, Phoenix AZ
-          </h2>
-          <figure
-            itemScope
-            itemType="https://schema.org/ImageObject"
-            className="relative"
-          >
-            <div className="relative aspect-[16/9] overflow-hidden rounded-[24px] border border-[#2563EB]/15 shadow-[0_18px_44px_rgba(37,99,235,0.22),0_4px_10px_rgba(37,99,235,0.10)]">
-              <Image
-                src="/images/al-hq-daytime.webp"
-                alt="Adaptation Living LLC headquarters in Phoenix AZ — the company monument sign and main entrance of Suite 507 at 3030 North Central Avenue, inside the Bank of America Tower."
-                fill
-                className="object-cover"
-                sizes="(max-width: 1200px) 100vw, 1200px"
-                loading="lazy"
-                itemProp="contentUrl"
-              />
-            </div>
-            <meta itemProp="name" content="Adaptation Living LLC — Phoenix Headquarters" />
-            <meta
-              itemProp="description"
-              content="Front entrance of Adaptation Living LLC at 3030 N Central Ave, Suite 507, Phoenix, AZ 85012 — Bank of America Tower, Midtown Phoenix."
-            />
-            <meta itemProp="width" content="1200" />
-            <meta itemProp="height" content="675" />
-            <figcaption className="mt-6 text-center">
-              <p className="text-[14px] font-bold text-black tracking-[-0.005em]">
-                Adaptation Living LLC · 3030 N Central Ave, Suite 507 ·
-                Phoenix, AZ 85012
-              </p>
-              <p className="mt-1.5 text-[12px] text-[#777B7E]">
-                Bank of America Tower · Midtown Phoenix · Visitors by
-                appointment
-              </p>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
     </main>
   );
 }
