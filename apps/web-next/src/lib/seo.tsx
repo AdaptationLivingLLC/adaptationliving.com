@@ -48,6 +48,9 @@ export function pageAlternates(path: string) {
 
 export function pageOg(title: string, description: string, path: string) {
   return {
+    type: "website" as const,
+    siteName: "Adaptation Living LLC",
+    locale: "en_US",
     title,
     description,
     url: `${baseUrl}${path}`,
