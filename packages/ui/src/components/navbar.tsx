@@ -52,6 +52,13 @@ export function NavBar() {
               {link.label}
             </a>
           ))}
+          <a
+            href="/ls-2025.html"
+            className="text-[11px] lg:text-[12px] uppercase tracking-[0.22em] bg-[#0B1D3A] text-white font-bold px-3 py-1.5 rounded-sm border border-[#2563EB]/60 hover:bg-[#1D4ED8] hover:border-[#1D4ED8] transition-all duration-200 shadow-[0_0_12px_rgba(37,99,235,0.25)]"
+            aria-label="LS-2025 Veteran Lifeline"
+          >
+            LS-2025
+          </a>
           <span className="w-px h-5 bg-[#0F172A]/20" />
           <a
             href="https://app.adaptationliving.com"
@@ -91,6 +98,12 @@ export function NavBar() {
             </a>
           ))}
           <a
+            href="/ls-2025.html"
+            className="text-[10px] uppercase tracking-[0.22em] bg-[#0B1D3A] text-white px-2.5 py-1 rounded-sm font-bold border border-[#2563EB]/60"
+          >
+            LS-2025
+          </a>
+          <a
             href="/intake"
             className="text-[10px] uppercase tracking-[0.22em] bg-[#2563EB] text-[#0F172A] px-3 py-1 rounded-sm font-bold"
           >
@@ -111,6 +124,9 @@ export function NavBar() {
             <a href="/vs" onClick={() => setMobileMenuOpen(false)} className="text-[#0F172A] font-semibold hover:text-[#1D4ED8] transition-colors">Compare</a>
             <a href="/ai" onClick={() => setMobileMenuOpen(false)} className="text-[#0F172A] font-semibold hover:text-[#1D4ED8] transition-colors">AI Agents</a>
             <a href="/contact" onClick={() => setMobileMenuOpen(false)} className="text-[#0F172A] font-semibold hover:text-[#1D4ED8] transition-colors">Contact</a>
+            <a href="/ls-2025.html" onClick={() => setMobileMenuOpen(false)} className="bg-[#0B1D3A] text-white font-bold px-6 py-2.5 rounded-sm border border-[#2563EB]/60 hover:bg-[#1D4ED8] hover:border-[#1D4ED8] transition-all shadow-[0_0_12px_rgba(37,99,235,0.25)]">
+              LS-2025 Lifeline
+            </a>
             <div className="w-16 h-px bg-[#2563EB]/40" />
             <a href="https://app.adaptationliving.com" className="text-[#1D4ED8] font-semibold hover:text-[#0F172A] transition-colors">Sign In</a>
             <a href="/intake" onClick={() => setMobileMenuOpen(false)} className="bg-[#2563EB] text-[#0F172A] px-8 py-3 rounded-sm font-bold hover:bg-[#3B82F6] transition-all shadow-[0_0_14px_rgba(37,99,235,0.35)]">

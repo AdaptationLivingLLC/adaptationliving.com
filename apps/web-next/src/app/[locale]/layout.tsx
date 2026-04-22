@@ -162,6 +162,54 @@ export default async function LocaleLayout({
 
           {children}
 
+          {/* Site-wide LS-2025 Veteran Lifeline Mission CTA */}
+          <section
+            aria-label="LS-2025 Veteran Lifeline — Flagship Mission"
+            className="relative bg-[#0B1D3A] border-t border-[#2563EB]/25 overflow-hidden"
+          >
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 opacity-60"
+              style={{
+                background:
+                  "radial-gradient(ellipse 800px 400px at 50% 0%, rgba(37,99,235,0.25) 0%, transparent 70%), radial-gradient(ellipse 600px 400px at 90% 100%, rgba(37,99,235,0.15) 0%, transparent 70%)",
+              }}
+            />
+            <div className="relative mx-auto max-w-[1200px] px-6 sm:px-8 py-14 lg:py-20">
+              <div className="text-center">
+                <span className="inline-block text-[10px] font-bold tracking-[0.32em] uppercase text-[#93C5FD] bg-[#2563EB]/15 border border-[#2563EB]/40 rounded-full px-4 py-1.5 mb-6">
+                  Our Flagship Mission
+                </span>
+                <h2 className="font-display text-[clamp(26px,4vw,42px)] font-extrabold text-white leading-[1.1] tracking-[-0.02em] max-w-[900px] mx-auto">
+                  <span className="text-[#60A5FA]">LS-2025</span> Veteran Lifeline — A National Mission to End Veteran Suicide
+                </h2>
+                <p className="mt-5 text-[15px] lg:text-base text-white/75 leading-relaxed max-w-[720px] mx-auto">
+                  A dedicated lifeline device and national support network built specifically
+                  for veterans, by veterans. Every contribution moves this system from
+                  finished prototype toward full deployment — and toward the service
+                  members it was built to reach.
+                </p>
+                <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+                  <a
+                    href="/ls-2025.html#support"
+                    className="inline-flex items-center gap-2 px-7 py-3.5 rounded-[10px] bg-[#2563EB] text-white text-[12px] lg:text-[13px] font-bold uppercase tracking-[0.14em] shadow-[0_8px_24px_rgba(37,99,235,0.4)] hover:bg-[#1D4ED8] hover:-translate-y-0.5 transition-all duration-200"
+                  >
+                    Contribute Now →
+                  </a>
+                  <a
+                    href="/ls-2025.html"
+                    className="inline-flex items-center gap-2 px-7 py-3.5 rounded-[10px] border-2 border-[#93C5FD]/40 text-[#93C5FD] text-[12px] lg:text-[13px] font-bold uppercase tracking-[0.14em] hover:bg-[#2563EB]/15 hover:border-[#2563EB] hover:text-white transition-all duration-200"
+                  >
+                    Learn The Mission
+                  </a>
+                </div>
+                <p className="mt-7 text-[10px] tracking-[0.26em] uppercase text-white/45 font-semibold">
+                  100% Mission-Aligned · Built by Adaptation Living LLC · Veteran-Owned
+                </p>
+              </div>
+            </div>
+          </section>
+
           {/* Site-wide Footer */}
           <footer className="section-dark border-t border-[#2563EB]/20 py-16 px-6 sm:px-8">
             <div className="mx-auto max-w-[1400px]">
