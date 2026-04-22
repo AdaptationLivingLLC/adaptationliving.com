@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Script from "next/script";
 import {
   BrainCircuit,
@@ -24,7 +25,7 @@ import { SeoGraderForm } from "../../components/seo-grader-form";
 const title =
   "Adaptation Living LLC — AI, Automation & Web Development for Small Business | Phoenix AZ";
 const description =
-  "Adaptation living is what successful businesses do. Veteran-owned AI automation studio in Phoenix, AZ. We build AI voice and chat agents, websites, CRM, review automation, and follow-up workflows for law firms, mitigation specialists, and small businesses. Since 2021.";
+  "Adaptation Living is what successful businesses do. Veteran-owned AI automation studio in Phoenix, AZ. We build AI voice and chat agents, websites, CRM, review automation, and follow-up workflows for law firms, mitigation specialists, and small businesses. Since 2021.";
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -402,7 +403,7 @@ export default function HomePage() {
                 id="hero-heading"
                 className="font-display text-[clamp(32px,5.2vw,58px)] font-extrabold leading-[1.04] tracking-[-0.025em]"
               >
-                Adaptation living is what{" "}
+                Adaptation Living is what{" "}
                 <span className="text-[#60A5FA]">successful businesses</span>{" "}
                 do.
               </h1>
@@ -927,6 +928,53 @@ export default function HomePage() {
               See Full Pricing Details →
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* ========================= VISIT US IN PHOENIX ========================= */}
+      <section
+        aria-labelledby="visit-heading"
+        className="bg-white py-20 lg:py-24 border-t border-[#0B1D3A]/5"
+      >
+        <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
+          <div className="text-center mb-10">
+            <span className="inline-block text-[10px] font-bold tracking-[0.32em] uppercase text-[#2563EB] mb-3">
+              Based In Phoenix
+            </span>
+            <h2
+              id="visit-heading"
+              className="font-display text-[clamp(26px,4vw,40px)] font-extrabold text-[#0B1D3A] leading-[1.1] tracking-[-0.02em]"
+            >
+              Veteran-Owned.{" "}
+              <span className="text-[#2563EB]">Real office. Real people.</span>
+            </h2>
+            <p className="mt-5 text-[15px] lg:text-[16px] text-[#475569] leading-relaxed max-w-[720px] mx-auto">
+              We operate out of Suite 507 in the Bank of America Tower at 3030
+              North Central Avenue in Midtown Phoenix. Come meet us in
+              person — every client engagement starts with a handshake when it
+              can.
+            </p>
+          </div>
+          <figure className="relative aspect-[16/9] overflow-hidden rounded-[24px] border border-[#2563EB]/15 shadow-[0_18px_44px_rgba(37,99,235,0.22),0_4px_10px_rgba(37,99,235,0.10)]">
+            <Image
+              src="/images/al-hq-daytime.webp"
+              alt="Adaptation Living LLC headquarters — Bank of America Tower, 3030 N Central Ave Suite 507, Phoenix AZ. The Adaptation Living LLC monument sign is visible at the building entrance."
+              fill
+              className="object-cover"
+              sizes="(max-width: 1200px) 100vw, 1200px"
+              priority
+            />
+          </figure>
+          <figcaption className="mt-5 text-center">
+            <p className="text-[14px] font-semibold text-[#0B1D3A]">
+              Adaptation Living LLC · 3030 N Central Ave · Suite 507 · Phoenix,
+              AZ 85012
+            </p>
+            <p className="mt-1 text-[13px] text-[#64748B]">
+              Bank of America Tower · Midtown Phoenix · Visitors by
+              appointment — just call or book a demo
+            </p>
+          </figcaption>
         </div>
       </section>
 
