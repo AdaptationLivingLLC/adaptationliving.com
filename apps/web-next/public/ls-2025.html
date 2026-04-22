@@ -10,56 +10,220 @@
   <link rel="icon" type="image/png" href="/images/favicon-gold-a.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     *,*::before,*::after{box-sizing:border-box}
     html,body{margin:0;padding:0}
-    body{background:#4a0404;color:#f3e2c2;font-family:'Inter',sans-serif;line-height:1.7;padding-top:90px}
-    h1,h2,h3,h4{font-family:'Cinzel',serif;color:#f8e7c7;line-height:1.25}
-    h1{font-size:2.2rem;margin:0 0 1rem}
-    h2{font-size:2.2rem;margin:0 0 1rem}
-    h3{font-size:1.5rem;margin:2rem 0 1rem;color:#f3e2c2}
-    a{color:#f3e2c2}
+    body{
+      background:#FFFFFF;
+      color:#0B1D3A;
+      font-family:'Inter',-apple-system,'Segoe UI',sans-serif;
+      line-height:1.7;
+      padding-top:90px;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    h1,h2,h3,h4{
+      font-family:'Inter',sans-serif;
+      color:#0B1D3A;
+      line-height:1.2;
+      letter-spacing:-0.01em;
+      font-weight:700;
+    }
+    h1{font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 1rem;font-weight:800;letter-spacing:-0.8px}
+    h2{font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 1rem;font-weight:800;letter-spacing:-0.8px}
+    h3{font-size:1.45rem;margin:2rem 0 1rem;color:#0B1D3A;font-weight:700}
+    a{color:#2563EB;text-decoration:none;transition:color .2s}
+    a:hover{color:#1D4ED8}
+    p{color:#334155}
     .container{max-width:1100px;margin:0 auto;padding:2rem 1.25rem}
-    .navbar{position:fixed;top:0;left:0;width:100%;padding:1.2rem 5%;display:flex;justify-content:space-between;align-items:center;background:rgba(0,0,0,.9);z-index:1000;backdrop-filter:blur(5px);border-bottom:1px solid rgba(255,255,255,.1)}
-    .brand{font-family:'Cinzel',serif;font-size:1.1rem;font-weight:700;color:#fff;text-decoration:none}
-    .brand span{color:#ccc;font-size:.75rem;margin-left:.5rem;letter-spacing:.1em}
+
+    .navbar{
+      position:fixed;top:0;left:0;width:100%;
+      padding:1rem 5%;
+      display:flex;justify-content:space-between;align-items:center;
+      background:rgba(11,29,58,0.97);
+      z-index:1000;
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid rgba(37,99,235,0.25);
+      box-shadow:0 4px 16px rgba(11,29,58,0.12);
+    }
+    .brand{
+      font-family:'Inter',sans-serif;
+      font-size:1.05rem;font-weight:800;
+      color:#FFFFFF;text-decoration:none;
+      letter-spacing:0.4px;
+    }
+    .brand span{
+      color:#93C5FD;font-size:.72rem;
+      margin-left:.5rem;letter-spacing:.15em;font-weight:600;
+    }
     .nav-links{display:flex;gap:1.5rem;flex-wrap:wrap;align-items:center}
-    .nav-links a{font-size:.8rem;text-transform:uppercase;letter-spacing:1px;opacity:.85;color:#fff;text-decoration:none}
-    .nav-links a:hover{opacity:1;color:#e74c3c}
-    .btn-nav{border:1px solid #fff;padding:.45rem 1rem;border-radius:4px}
-    .btn-nav:hover{background:#fff;color:#000}
-    @media (max-width:768px){.navbar{flex-direction:column;gap:.75rem;padding:.8rem}.nav-links{gap:.75rem;justify-content:center}}
-    .ls2025-banner-strip{background:rgba(0,0,0,.85);color:#f8f4ec;text-align:center;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;padding:.5rem .75rem}
-    .box{background:#0f0202;border:1px solid rgba(255,100,100,.15);padding:2.5rem;border-radius:4px;margin-bottom:2rem}
-    .box p,.box li{color:#f3e2c2}
+    .nav-links a{
+      font-size:.78rem;text-transform:uppercase;letter-spacing:1px;
+      color:rgba(255,255,255,0.82);text-decoration:none;
+      font-weight:600;transition:color .2s;
+    }
+    .nav-links a:hover{color:#FFFFFF}
+    .btn-nav{
+      border:1px solid #2563EB;background:#2563EB;
+      padding:.55rem 1.1rem;border-radius:8px;
+      color:#FFFFFF !important;
+      box-shadow:0 4px 12px rgba(37,99,235,0.35);
+      transition:all .2s;
+    }
+    .btn-nav:hover{background:#1D4ED8;border-color:#1D4ED8}
+    @media (max-width:768px){
+      .navbar{flex-direction:column;gap:.75rem;padding:.8rem}
+      .nav-links{gap:.75rem;justify-content:center}
+    }
+
+    .ls2025-banner-strip{
+      background:#0B1D3A;color:#FFFFFF;
+      text-align:center;font-size:.78rem;letter-spacing:.14em;
+      text-transform:uppercase;padding:.6rem .75rem;
+      font-weight:600;
+    }
+
+    header{padding:1rem 0 2rem}
+    header h2{color:#0B1D3A}
+    header p{
+      font-size:1.1rem;color:#334155;
+      max-width:780px;margin-top:1rem;line-height:1.65;
+    }
+
+    .box{
+      background:#FFFFFF;
+      border:1px solid rgba(11,29,58,0.08);
+      padding:2.5rem;
+      border-radius:16px;
+      margin-bottom:2rem;
+      box-shadow:0 8px 24px rgba(11,29,58,0.06);
+    }
+    .box p,.box li{color:#334155}
+    .box h3{color:#0B1D3A}
+
     ul{padding-left:1.4rem}
     li{margin-bottom:.4rem}
-    hr{border:none;border-top:1px solid rgba(243,226,194,.25);margin:2.5rem 0}
-    .video-wrapper{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;margin:1.5rem 0 2rem;border-radius:6px;box-shadow:0 0 40px rgba(0,0,0,.6)}
+
+    hr{
+      border:none;
+      border-top:1px solid rgba(11,29,58,0.08);
+      margin:2.5rem 0;
+    }
+
+    .video-wrapper{
+      position:relative;padding-bottom:56.25%;height:0;overflow:hidden;
+      max-width:100%;margin:1.5rem 0 2rem;
+      border-radius:12px;
+      box-shadow:0 16px 40px rgba(11,29,58,0.15);
+    }
     .video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-    .image.featured img{width:100%;height:auto;display:block;border-radius:6px;margin:1rem 0}
-    .ls2025-highlight{font-weight:600;color:#f8e7c7}
-    .ls2025-callout{background:rgba(45,32,24,.95);border-radius:6px;padding:1.5rem;border:1px solid rgba(255,232,200,.2);margin:1.5rem 0}
+
+    .image.featured img{
+      width:100%;height:auto;display:block;
+      border-radius:12px;margin:1rem 0;
+      box-shadow:0 12px 32px rgba(11,29,58,0.1);
+    }
+
+    .ls2025-highlight{font-weight:600;color:#0B1D3A}
+
+    .ls2025-callout{
+      background:linear-gradient(135deg,#FEFCF8 0%,#FDF6EC 100%);
+      border-radius:12px;
+      padding:1.5rem 1.75rem;
+      border:1px solid rgba(37,99,235,0.2);
+      border-left:4px solid #2563EB;
+      margin:1.5rem 0;
+      color:#0B1D3A;
+    }
+    .ls2025-callout strong{color:#0B1D3A}
+
     .devices-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0}
-    .devices-row img{width:100%;height:auto;border-radius:6px;box-shadow:0 0 35px rgba(0,0,0,.7)}
+    .devices-row img{
+      width:100%;height:auto;border-radius:12px;
+      box-shadow:0 12px 32px rgba(11,29,58,0.1);
+    }
     @media (max-width:720px){.devices-row{grid-template-columns:1fr}}
+
     .center-heading{text-align:center}
+
     .ls2025-stripe-wrapper{display:flex;justify-content:center;margin:2rem 0 3rem}
-    .ls2025-contribution-note{text-align:center;margin-top:.5rem;font-size:1.05rem;color:#f3e2c2}
-    .ls2025-float-contribute{float:right;margin:0 0 16px 24px;display:inline-block;background:rgba(74,4,4,.85);border:1px solid rgba(200,160,80,.4);color:#f3e2c2;padding:14px 22px;border-radius:6px;font-size:.82rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;text-align:center;line-height:1.5}
-    .ls2025-float-contribute:hover{background:rgba(100,10,10,.95);color:#f8e7c7}
-    @media (max-width:480px){.ls2025-float-contribute{float:none;display:block;margin:0 auto 16px;max-width:180px}}
-    .ls2025-floating-cta{position:fixed;bottom:2rem;right:2rem;z-index:999;background:rgba(15,2,2,.92);color:#f3e2c2;border:1px solid rgba(200,160,80,.45);padding:.6rem 1.2rem;border-radius:4px;font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;box-shadow:0 2px 12px rgba(0,0,0,.5)}
-    .ls2025-floating-cta:hover{background:rgba(74,4,4,.95);color:#fff}
-    @media (max-width:480px){.ls2025-floating-cta{bottom:1rem;right:1rem;font-size:.75rem;padding:.5rem 1rem}}
-    .gov-credentials-bar{background:rgba(11,22,40,.95);border-top:1px solid rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.1);padding:10px 5%;margin-top:2rem;text-align:center;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;color:#f4f6fb}
-    footer#footer{background:#0b1628;color:#f4f6fb;padding:2rem 1rem;text-align:center;margin-top:3rem}
-    footer#footer a{color:#f4f6fb;text-decoration:none;opacity:.85}
-    footer#footer a:hover{opacity:1}
+    .ls2025-contribution-note{
+      text-align:center;margin-top:.5rem;
+      font-size:1.05rem;color:#334155;
+    }
+    .ls2025-contribution-note strong{color:#0B1D3A}
+
+    .ls2025-float-contribute{
+      float:right;margin:0 0 16px 24px;display:inline-block;
+      background:#2563EB;
+      border:1px solid #2563EB;
+      color:#FFFFFF;
+      padding:14px 22px;border-radius:10px;
+      font-size:.82rem;font-weight:700;letter-spacing:1.5px;
+      text-transform:uppercase;text-decoration:none;text-align:center;
+      line-height:1.5;
+      box-shadow:0 8px 20px rgba(37,99,235,0.35);
+      transition:all .25s;
+    }
+    .ls2025-float-contribute:hover{
+      background:#1D4ED8;border-color:#1D4ED8;color:#FFFFFF;
+      transform:translateY(-2px);
+      box-shadow:0 12px 24px rgba(37,99,235,0.45);
+    }
+    @media (max-width:480px){
+      .ls2025-float-contribute{float:none;display:block;margin:0 auto 16px;max-width:200px}
+    }
+
+    .ls2025-floating-cta{
+      position:fixed;bottom:2rem;right:2rem;z-index:999;
+      background:#2563EB;color:#FFFFFF;
+      border:1px solid #2563EB;
+      padding:.75rem 1.4rem;border-radius:10px;
+      font-size:.82rem;font-weight:700;letter-spacing:.1em;
+      text-transform:uppercase;text-decoration:none;
+      box-shadow:0 8px 20px rgba(37,99,235,0.4);
+      transition:all .25s;
+    }
+    .ls2025-floating-cta:hover{
+      background:#1D4ED8;color:#FFFFFF;
+      transform:translateY(-2px);
+    }
+    @media (max-width:480px){
+      .ls2025-floating-cta{bottom:1rem;right:1rem;font-size:.75rem;padding:.6rem 1rem}
+    }
+
+    .gov-credentials-bar{
+      background:#0B1D3A;color:rgba(255,255,255,0.85);
+      border-top:1px solid rgba(37,99,235,0.25);
+      border-bottom:1px solid rgba(37,99,235,0.25);
+      padding:14px 5%;margin-top:2rem;text-align:center;
+      display:flex;flex-wrap:wrap;gap:10px;justify-content:center;
+      font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;
+      font-weight:600;
+    }
+
+    footer#footer{
+      background:#071226;color:rgba(255,255,255,0.75);
+      padding:2.5rem 1rem;text-align:center;margin-top:3rem;
+      border-top:1px solid rgba(37,99,235,0.2);
+    }
+    footer#footer a{color:#93C5FD;text-decoration:none;opacity:.9;transition:opacity .2s}
+    footer#footer a:hover{opacity:1;color:#FFFFFF}
     footer ul{list-style:none;padding:0;margin:.5rem 0}
     footer ul.copyright li{display:inline-block;margin:0 .5rem;font-size:.85rem}
-    .ip-notice{font-size:.9rem;opacity:.9;margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,232,200,.15)}
+
+    .ip-notice{
+      font-size:.92rem;margin-top:2rem;
+      padding:1.75rem 2rem;
+      background:#FFFFFF;
+      border-radius:12px;
+      border:1px solid rgba(11,29,58,0.1);
+      border-left:4px solid #0B1D3A;
+      color:#475569;
+    }
+    .ip-notice h3{margin-top:0;color:#0B1D3A;font-size:1.1rem}
   </style>
 </head>
 <body>
@@ -230,13 +394,13 @@
         <p>The software architecture for LS-2025 is <strong>nearly complete</strong>, and the system is currently undergoing the final stages of testing and security hardening. We are now looking for active partnerships that can add resources and finality to this mission&mdash;taking it from a finished prototype to a national deployment.</p>
         <p>If you want to help move this forward, you can:</p>
         <ul>
-          <li><strong>Contribute directly:</strong> use the secure Stripe contribution button below. Each unit represents a <strong>$100 contribution</strong>, and you can contribute up to <strong>1000 units</strong> in a single transaction.</li>
+          <li><strong>Contribute directly:</strong> use the secure Stripe button below. Contributions are made in <strong>$100 increments</strong> and can range from <strong>$100 up to $100,000</strong> per transaction. Every dollar accelerates deployment and shortens the distance between this system and the veterans it was built to reach.</li>
           <li><strong>Share the mission:</strong> send this page and the LS-2025 video to veterans, families, clinicians, and anyone in a position to invest, donate, or open doors.</li>
           <li><strong>Explore partnership:</strong> if you work with the VA, a medical system, a veteran-serving nonprofit, or a tech company that can help, reach out.</li>
         </ul>
         <p class="ls2025-contribution-note">
-          Each unit = <strong>$100</strong> in support of LS-2025.<br />
-          Up to <strong>1000 units</strong> can be contributed per transaction.
+          Contributions are made in <strong>$100 increments</strong>.<br />
+          Any amount from <strong>$100 to $100,000</strong> can be given in a single transaction.
         </p>
         <div class="ls2025-stripe-wrapper">
           <script async src="https://js.stripe.com/v3/buy-button.js"></script>
