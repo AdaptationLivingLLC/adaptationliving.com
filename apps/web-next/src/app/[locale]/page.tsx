@@ -47,6 +47,9 @@ export const metadata: Metadata = {
     "automated follow-up workflows",
   ],
   openGraph: {
+    type: "website",
+    siteName: "Adaptation Living LLC",
+    locale: "en_US",
     title,
     description,
     url: "https://www.adaptationliving.com",
