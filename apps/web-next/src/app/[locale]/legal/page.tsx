@@ -271,7 +271,7 @@ export default function LegalPage() {
 
         <p className="text-text-dim text-xs">
           &copy; 2021–2026 Adaptation Living LLC. All rights reserved. Phoenix,
-          AZ. Veteran-Owned Small Business (VOSB). SAM.gov registered. CAGE:
+          AZ. Veteran-Owned Small Business (VOSB — pending SBA approval). SAM.gov registered. CAGE:
           95WK4 | UEI: J3XGTRT7DYU5
         </p>
       </article>

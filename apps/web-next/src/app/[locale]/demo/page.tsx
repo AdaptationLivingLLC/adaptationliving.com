@@ -144,7 +144,7 @@ export default function DemoPage() {
 
               <div className="mt-8 flex flex-wrap items-center gap-4 text-[11px] uppercase tracking-[0.24em] text-[#94A3B8]">
                 <span className="inline-flex items-center gap-2">
-                  <ShieldCheck className="h-4 w-4 text-accent" /> Veteran-Owned · VOSB
+                  <ShieldCheck className="h-4 w-4 text-accent" /> Veteran-Owned · VOSB Pending
                 </span>
                 <span>·</span>
                 <span>Phoenix, AZ</span>

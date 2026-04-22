@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     template: "%s | Adaptation Living LLC",
   },
   description:
-    "Veteran-owned AI automation studio in Phoenix, AZ. Custom web development, CRM setup, AI agents, workflow automation, and app development for small businesses. VOSB certified.",
+    "Veteran-owned AI automation studio in Phoenix, AZ. Custom web development, CRM setup, AI agents, workflow automation, and app development for small businesses. VOSB certification pending SBA approval.",
   keywords: [
     "AI automation Phoenix AZ",
     "web development Phoenix",
@@ -298,7 +298,7 @@ export default async function LocaleLayout({
 
               <div className="mt-12 border-t border-white/10 pt-8">
                 <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[10px] font-semibold uppercase tracking-[0.26em] text-[#64748B]">
-                  <span>Veteran-Owned Small Business (VOSB)</span>
+                  <span>Veteran-Owned · VOSB Pending SBA Approval</span>
                   <span className="text-[#2563EB]">·</span>
                   <span>SAM.gov Registered</span>
                   <span className="text-[#2563EB]">·</span>
