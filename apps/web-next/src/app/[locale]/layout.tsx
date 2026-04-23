@@ -24,90 +24,11 @@ const inter = Inter({
 
 const baseUrl = "https://www.adaptationliving.com";
 
-// Static metadata that never depends on locale. Locale-dependent pieces
-// (canonical + hreflang alternates) are emitted from generateMetadata
-// below so /es/* pages get correct self-referencing canonicals instead
-// of inheriting the English root.
-export const metadata: Metadata = {
-  metadataBase: new URL(baseUrl),
-  title: {
-    default:
-      "AI Automation & Web Development Phoenix AZ | Veteran-Owned | Adaptation Living LLC",
-    template: "%s | Adaptation Living LLC",
-  },
-  description:
-    "Veteran-owned AI automation studio in Phoenix, AZ. Custom web development, CRM setup, AI agents, workflow automation, and app development for small businesses. VOSB certification pending SBA approval.",
-  keywords: [
-    "AI automation Phoenix AZ",
-    "web development Phoenix",
-    "CRM setup and automation",
-    "AI agents",
-    "workflow automation",
-    "veteran-owned web development",
-    "VOSB",
-    "Adaptation Living",
-  ],
-  authors: [
-    {
-      name: "Adaptation Living LLC",
-      url: baseUrl,
-    },
-  ],
-  creator: "Adaptation Living LLC",
-  publisher: "Adaptation Living LLC",
-  openGraph: {
-    type: "website",
-    siteName: "Adaptation Living LLC",
-    locale: "en_US",
-    alternateLocale: "es_US",
-    images: [
-      {
-        url: `${baseUrl}/images/og-share-2026.png`,
-        width: 1200,
-        height: 630,
-        alt: "Adaptation Living — Award-Winning AI Automation & CRM Platform (G2 Top 50, Capterra Shortlist 2026)",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    images: [`${baseUrl}/images/og-share-2026.png`],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/images/favicon-gold-a.png",
-  },
-  manifest: "/manifest.json",
-  verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? undefined,
-    other: {
-      ...(process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
-        ? {
-            "msvalidate.01":
-              process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION,
-          }
-        : {}),
-    },
-  },
-  category: "technology",
-};
-
-// Locale-aware canonical + hreflang. Runs per-request with the locale
-// param so /es inherits canonical https://www.adaptationliving.com/es
-// (not the English root). Individual page.tsx files still override with
-// pageAlternates() for non-home URLs — this generateMetadata only
-// governs pages that do not set their own alternates block.
+// Single metadata source — Next.js forbids exporting both a static
+// `metadata` object and a `generateMetadata` function from the same
+// segment. Locale-aware canonical is computed from params.locale so
+// /es/* pages get a self-referencing canonical instead of inheriting
+// the English root.
 export async function generateMetadata({
   params,
 }: {
@@ -115,7 +36,75 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const canonical = locale === "es" ? `${baseUrl}/es` : baseUrl;
+  const ogLocale = locale === "es" ? "es_US" : "en_US";
+  const altLocale = locale === "es" ? "en_US" : "es_US";
   return {
+    metadataBase: new URL(baseUrl),
+    title: {
+      default: "Adaptation Living LLC — AI Automation Phoenix AZ",
+      template: "%s | Adaptation Living",
+    },
+    description:
+      "Veteran-founded AI automation studio in Phoenix, AZ. AI voice and chat agents, custom websites, CRM, review automation, and workflow automation for small businesses, law firms, and mitigation specialists.",
+    keywords: [
+      "AI automation Phoenix AZ",
+      "AI voice agent",
+      "AI chat agent",
+      "CRM automation Phoenix",
+      "small business AI",
+      "law firm intake automation",
+      "mitigation specialist software",
+      "Adaptation Living LLC",
+    ],
+    authors: [{ name: "Adaptation Living LLC", url: baseUrl }],
+    creator: "Adaptation Living LLC",
+    publisher: "Adaptation Living LLC",
+    openGraph: {
+      type: "website",
+      siteName: "Adaptation Living LLC",
+      locale: ogLocale,
+      alternateLocale: altLocale,
+      images: [
+        {
+          url: `${baseUrl}/images/og-share-2026.png`,
+          width: 1200,
+          height: 630,
+          alt: "Adaptation Living LLC — AI, Automation & Web Development for Small Business",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      images: [`${baseUrl}/images/og-share-2026.png`],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    icons: {
+      icon: "/favicon.ico",
+      apple: "/images/favicon-gold-a.png",
+    },
+    manifest: "/manifest.json",
+    verification: {
+      google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? undefined,
+      other: {
+        ...(process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
+          ? {
+              "msvalidate.01":
+                process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION,
+            }
+          : {}),
+      },
+    },
+    category: "technology",
     alternates: {
       canonical,
       languages: {

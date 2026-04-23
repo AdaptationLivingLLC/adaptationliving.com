@@ -14,7 +14,7 @@ import {
   pageTwitter,
 } from "../../../lib/seo";
 
-const title = "Pricing — Self-Serve & Done-For-You Plans";
+const title = "Pricing — Plans & Setup";
 const description =
   "Transparent pricing for the Adaptation Living Platform. Self-Serve plans from $497/mo and Done-For-You plans from $1,497/mo. Every tier includes a custom SEO website, AI agents, CRM, automated follow-up, and review management. Veteran-owned, Phoenix AZ.";
 

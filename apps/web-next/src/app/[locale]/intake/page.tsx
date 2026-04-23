@@ -9,9 +9,9 @@ import {
 } from "../../../lib/seo";
 import { Breadcrumbs } from "../../../components/breadcrumbs";
 
-const title = "Start Your Adaptation Living Platform Setup — Phoenix, AZ";
+const title = "Book Your Setup Call";
 const description =
-  "Book your the Adaptation Living Platform setup call with Adaptation Living LLC. AI phone receptionist, AI chat agent, CRM, workflow automation, and website — deployed by a veteran-owned team in Phoenix, AZ in 2–3 weeks.";
+  "Book your setup call with Adaptation Living LLC. AI phone agents, AI chat agents, CRM, workflow automation, and a custom website — deployed by a veteran-founded team in Phoenix, AZ, typically in two to three weeks from call to live.";
 
 export const metadata: Metadata = {
   title,
@@ -107,6 +107,80 @@ export default async function IntakePage({
           </div>
         </section>
       )}
+
+      {/* WHAT HAPPENS NEXT */}
+      <section className="section-cream">
+        <div className="max-w-[820px] mx-auto px-6 sm:px-8 pb-12">
+          <h2 className="h-display text-2xl sm:text-3xl font-bold text-[#0F172A] mb-4">
+            What happens after you submit
+          </h2>
+          <p className="text-base text-[#475569] leading-relaxed mb-6">
+            Every intake is handled personally by Brandon Bible, the founder of
+            Adaptation Living LLC. You do not get handed off to a sales
+            development representative, routed to a call center, or dropped
+            into a 14-day drip sequence. You get a direct reply &mdash;
+            typically within a few hours during business hours and by the next
+            morning if you submit overnight.
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2 mt-6">
+            <div className="rounded-[14px] border border-[#0F172A]/10 bg-white p-5">
+              <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-accent mb-2">
+                Step 1 &middot; Discovery
+              </p>
+              <p className="text-sm text-[#475569] leading-relaxed">
+                A 30-minute call on your schedule. We map your current stack,
+                your customer flow, and where you are losing time and leads
+                today. You leave the call with a clear picture of what
+                Adaptation Living would build for you, even if you never sign.
+              </p>
+            </div>
+            <div className="rounded-[14px] border border-[#0F172A]/10 bg-white p-5">
+              <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-accent mb-2">
+                Step 2 &middot; Proposal
+              </p>
+              <p className="text-sm text-[#475569] leading-relaxed">
+                Within 48 hours of the discovery call, you get a written
+                proposal with exact pricing, scope, timeline, and deliverables
+                &mdash; tier-matched to what your business actually needs.
+                Nothing inflated to hit a quota.
+              </p>
+            </div>
+            <div className="rounded-[14px] border border-[#0F172A]/10 bg-white p-5">
+              <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-accent mb-2">
+                Step 3 &middot; Build
+              </p>
+              <p className="text-sm text-[#475569] leading-relaxed">
+                Signed engagements kick off within 48 hours of the deposit. We
+                build every system from scratch in your brand, wire up your AI
+                voice and chat agents, connect your calendar and payment
+                processor, and load the CRM with your current contacts.
+              </p>
+            </div>
+            <div className="rounded-[14px] border border-[#0F172A]/10 bg-white p-5">
+              <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-accent mb-2">
+                Step 4 &middot; Launch
+              </p>
+              <p className="text-sm text-[#475569] leading-relaxed">
+                Two to three weeks from deposit to live. You get a 60-minute
+                walkthrough, a login to everything you own, and full support
+                during the first month at no extra cost while your team learns
+                the platform.
+              </p>
+            </div>
+          </div>
+          <p className="text-base text-[#475569] leading-relaxed mt-8">
+            Every engagement includes a custom website fully optimized for
+            Search Engine Optimization, AI voice agents that answer your phones
+            24/7 in English and Spanish, AI chat agents that handle every
+            inbound message channel, automated follow-up workflows that work
+            every lead for fourteen days, review and reputation management,
+            appointment booking, payment processing, email and SMS marketing,
+            and full configuration from day one. You are not handed a blank
+            platform and wished good luck &mdash; you are handed a finished,
+            running system ready to use.
+          </p>
+        </div>
+      </section>
 
       {/* FORM */}
       <section className="section-cream">

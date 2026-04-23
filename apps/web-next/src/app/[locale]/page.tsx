@@ -22,10 +22,9 @@ import {
 } from "lucide-react";
 import { SeoGraderForm } from "../../components/seo-grader-form";
 
-const title =
-  "Adaptation Living LLC — AI, Automation & Web Development for Small Business | Phoenix AZ";
+const title = "Adaptation Living LLC — AI Automation Phoenix AZ";
 const description =
-  "Adaptation Living is what successful businesses do. Veteran-owned AI automation studio in Phoenix, AZ. We build AI voice and chat agents, websites, CRM, review automation, and follow-up workflows for law firms, mitigation specialists, and small businesses. Since 2021.";
+  "Adaptation Living is what successful businesses do. Veteran-founded AI automation studio in Phoenix, AZ. AI voice and chat agents, custom websites, CRM, review automation, and follow-up workflows for law firms, mitigation specialists, and small businesses.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

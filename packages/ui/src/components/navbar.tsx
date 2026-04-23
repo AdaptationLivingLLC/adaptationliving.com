@@ -70,7 +70,7 @@ export function NavBar() {
             href="/intake"
             className="text-[11px] lg:text-[12px] uppercase tracking-[0.22em] bg-[#2563EB] text-[#0F172A] px-4 py-2.5 lg:px-5 rounded-sm font-bold hover:bg-[#3B82F6] transition-all duration-200 shadow-[0_0_14px_rgba(37,99,235,0.35)]"
           >
-            Start Project
+            Book Setup Call
           </a>
         </div>
 
@@ -105,9 +105,9 @@ export function NavBar() {
           </a>
           <a
             href="/intake"
-            className="text-[10px] uppercase tracking-[0.22em] bg-[#2563EB] text-[#0F172A] px-3 py-1 rounded-sm font-bold"
+            className="text-[10px] uppercase tracking-[0.22em] bg-[#2563EB] text-white px-3 py-1 rounded-sm font-bold"
           >
-            Start
+            Book Setup Call
           </a>
         </div>
       </div>
@@ -130,7 +130,7 @@ export function NavBar() {
             <div className="w-16 h-px bg-[#2563EB]/40" />
             <a href="https://app.adaptationliving.com" className="text-[#1D4ED8] font-semibold hover:text-[#0F172A] transition-colors">Sign In</a>
             <a href="/intake" onClick={() => setMobileMenuOpen(false)} className="bg-[#2563EB] text-[#0F172A] px-8 py-3 rounded-sm font-bold hover:bg-[#3B82F6] transition-all shadow-[0_0_14px_rgba(37,99,235,0.35)]">
-              Start Project
+              Book Setup Call
             </a>
           </nav>
         </div>

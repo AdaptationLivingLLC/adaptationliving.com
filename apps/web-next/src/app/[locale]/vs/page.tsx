@@ -9,9 +9,9 @@ import {
 } from "../../../lib/seo";
 import { Breadcrumbs } from "../../../components/breadcrumbs";
 
-const title = "the Adaptation Living Platform vs the Competition — Honest Comparisons";
+const title = "Platform Comparisons";
 const description =
-  "the Adaptation Living Platform compared side-by-side with HubSpot, Salesforce, ActiveCampaign, ClickFunnels, Kartra, Klaviyo, Keap, Zoho, Vendasta, SharpSpring, and Linktree. Real prices, honest concessions.";
+  "The Adaptation Living Platform compared side-by-side with HubSpot, Salesforce, ActiveCampaign, ClickFunnels, Kartra, Klaviyo, Keap, Zoho, Vendasta, SharpSpring, and Linktree. Real prices, honest concessions.";
 
 export const metadata: Metadata = {
   title,

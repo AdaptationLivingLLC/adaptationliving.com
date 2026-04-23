@@ -7,7 +7,7 @@ import {
 } from "../../../lib/seo";
 import { Breadcrumbs } from "../../../components/breadcrumbs";
 
-const title = "Privacy Policy & Legal Notice — Adaptation Living LLC";
+const title = "Privacy & Terms";
 const description =
   "Privacy policy, terms of service, and legal notice for Adaptation Living LLC. Phoenix, AZ. Veteran-owned AI automation studio.";
 
