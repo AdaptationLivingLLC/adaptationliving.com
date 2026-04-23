@@ -319,13 +319,66 @@ const localBusinessSchema = {
   },
 };
 
+// Dual-typed so Google recognizes the platform as both a Product and a
+// SoftwareApplication. Google's rich-results validator requires
+// aggregateRating OR review on SoftwareApplication entities, plus
+// applicationCategory and offers. All present below.
 const reviewsSchema = {
   "@context": "https://schema.org",
-  "@type": "Product",
+  "@type": ["Product", "SoftwareApplication"],
   name: "Adaptation Living Platform",
   description:
     "AI automation, CRM, and web development platform built for small businesses, law firms, and mitigation specialists.",
   brand: { "@type": "Brand", name: "Adaptation Living LLC" },
+  applicationCategory: "BusinessApplication",
+  applicationSubCategory: "CRM, Marketing Automation, AI Voice & Chat Agents",
+  operatingSystem: "Web-based, iOS, Android",
+  softwareVersion: "2026.04",
+  url: "https://www.adaptationliving.com",
+  offers: [
+    {
+      "@type": "Offer",
+      name: "Launch — Self-Serve",
+      price: "497",
+      priceCurrency: "USD",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "497",
+        priceCurrency: "USD",
+        unitText: "MONTH",
+      },
+      availability: "https://schema.org/InStock",
+      url: "https://www.adaptationliving.com/pricing",
+    },
+    {
+      "@type": "Offer",
+      name: "Growth — Self-Serve",
+      price: "997",
+      priceCurrency: "USD",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "997",
+        priceCurrency: "USD",
+        unitText: "MONTH",
+      },
+      availability: "https://schema.org/InStock",
+      url: "https://www.adaptationliving.com/pricing",
+    },
+    {
+      "@type": "Offer",
+      name: "Scale — Self-Serve",
+      price: "1997",
+      priceCurrency: "USD",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "1997",
+        priceCurrency: "USD",
+        unitText: "MONTH",
+      },
+      availability: "https://schema.org/InStock",
+      url: "https://www.adaptationliving.com/pricing",
+    },
+  ],
   review: testimonials.map((t) => ({
     "@type": "Review",
     reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
@@ -336,6 +389,8 @@ const reviewsSchema = {
     "@type": "AggregateRating",
     ratingValue: "5.0",
     reviewCount: String(testimonials.length),
+    bestRating: "5",
+    worstRating: "5",
   },
 };
 
@@ -470,15 +525,15 @@ export default function HomePage() {
             <figure
               itemScope
               itemType="https://schema.org/ImageObject"
-              className="float-none md:float-right md:ml-7 md:mb-3 mb-6 w-full md:w-[360px] lg:w-[420px]"
+              className="float-none md:float-right md:ml-7 md:mb-3 mb-6 w-full md:w-[480px] lg:w-[560px]"
             >
-              <div className="relative aspect-[4/3] overflow-hidden rounded-[16px] border border-[#2563EB]/15 shadow-[0_18px_44px_rgba(37,99,235,0.22),0_4px_10px_rgba(37,99,235,0.10)]">
+              <div className="relative aspect-[16/9] overflow-hidden rounded-[16px] border border-[#2563EB]/15 shadow-[0_18px_44px_rgba(37,99,235,0.22),0_4px_10px_rgba(37,99,235,0.10)]">
                 <Image
                   src="/images/al-hq-daytime.webp"
-                  alt="Adaptation Living LLC headquarters in Phoenix AZ — the company monument sign and main entrance of Suite 507 at 3030 North Central Avenue, inside the Bank of America Tower."
+                  alt="Adaptation Living LLC headquarters in Phoenix AZ — the company monument sign at 3030 North Central Avenue, inside the Bank of America Tower."
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 420px"
+                  sizes="(max-width: 768px) 100vw, 560px"
                   loading="lazy"
                   itemProp="contentUrl"
                 />

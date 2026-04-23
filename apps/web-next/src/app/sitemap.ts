@@ -41,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
           en: `${baseUrl}${clean}`,
           es: `${baseUrl}/es${clean}`,
+          "x-default": `${baseUrl}${clean}`,
         },
       },
     });
@@ -54,6 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
           en: `${baseUrl}${clean}`,
           es: `${baseUrl}/es${clean}`,
+          "x-default": `${baseUrl}${clean}`,
         },
       },
     });

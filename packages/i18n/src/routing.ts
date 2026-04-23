@@ -15,4 +15,9 @@ export const routing = defineRouting({
   locales,
   defaultLocale,
   localePrefix,
+  // Disable Accept-Language auto-redirects. With this set to true (the
+  // next-intl default) visiting "/" from a Spanish browser 307s to "/es",
+  // which Google's crawlers flag as "hreflang redirect" on every indexed
+  // URL. Off = each URL is a 200 OK for the locale it was requested at.
+  localeDetection: false,
 });

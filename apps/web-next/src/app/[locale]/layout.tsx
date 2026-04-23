@@ -24,6 +24,10 @@ const inter = Inter({
 
 const baseUrl = "https://www.adaptationliving.com";
 
+// Static metadata that never depends on locale. Locale-dependent pieces
+// (canonical + hreflang alternates) are emitted from generateMetadata
+// below so /es/* pages get correct self-referencing canonicals instead
+// of inheriting the English root.
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
@@ -96,15 +100,32 @@ export const metadata: Metadata = {
         : {}),
     },
   },
-  alternates: {
-    canonical: baseUrl,
-    languages: {
-      en: baseUrl,
-      es: `${baseUrl}/es`,
-    },
-  },
   category: "technology",
 };
+
+// Locale-aware canonical + hreflang. Runs per-request with the locale
+// param so /es inherits canonical https://www.adaptationliving.com/es
+// (not the English root). Individual page.tsx files still override with
+// pageAlternates() for non-home URLs — this generateMetadata only
+// governs pages that do not set their own alternates block.
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const canonical = locale === "es" ? `${baseUrl}/es` : baseUrl;
+  return {
+    alternates: {
+      canonical,
+      languages: {
+        en: baseUrl,
+        es: `${baseUrl}/es`,
+        "x-default": baseUrl,
+      },
+    },
+  };
+}
 
 export default async function LocaleLayout({
   children,
