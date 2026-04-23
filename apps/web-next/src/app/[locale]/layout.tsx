@@ -326,6 +326,14 @@ export default async function LocaleLayout({
           data-widget-id="69db6e04d0d6ea75797b53f6"
           strategy="lazyOnload"
         />
+
+        {/* Adaptation Living Hub external tracking — site-wide on every page */}
+        <Script
+          id="al-hub-external-tracking"
+          src="https://hub.adaptationliving.com/js/external-tracking.js"
+          data-tracking-id="tk_7067e2d38e7e4938af9ab271cabaa2a9"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
