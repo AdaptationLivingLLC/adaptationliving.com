@@ -454,11 +454,12 @@ export default function HomePage() {
           className="pointer-events-none select-none absolute -top-8 -right-16 lg:-top-16 lg:-right-24 hidden md:block"
         >
           <div
-            className="font-display font-black bg-clip-text text-transparent bg-gradient-to-br from-[#60A5FA]/55 via-[#2563EB]/30 to-[#1D4ED8]/10"
+            className="font-display font-black bg-clip-text text-transparent bg-gradient-to-br from-[#FBCFE8]/55 via-[#F472B6]/35 to-[#EC4899]/15"
             style={{
               fontSize: "clamp(220px, 30vw, 480px)",
               lineHeight: 0.78,
               letterSpacing: "-0.07em",
+              filter: "drop-shadow(0 0 60px rgba(236, 72, 153, 0.35))",
             }}
           >
             $397
@@ -484,14 +485,15 @@ export default function HomePage() {
                 in seconds — 24/7, in English and Spanish.
               </p>
 
-              {/* Foreground price block — the in-your-face $397 */}
+              {/* Foreground price block — the in-your-face $397, neon-pink to match the OG creative */}
               <div className="mt-9 inline-flex items-end gap-4">
                 <span
-                  className="font-display font-black bg-clip-text text-transparent bg-gradient-to-br from-[#93C5FD] via-[#60A5FA] to-[#2563EB]"
+                  className="font-display font-black bg-clip-text text-transparent bg-gradient-to-br from-[#FBCFE8] via-[#F472B6] to-[#EC4899]"
                   style={{
                     fontSize: "clamp(80px, 13vw, 168px)",
                     lineHeight: 0.85,
                     letterSpacing: "-0.045em",
+                    filter: "drop-shadow(0 0 28px rgba(236, 72, 153, 0.55))",
                   }}
                 >
                   $397
@@ -500,7 +502,7 @@ export default function HomePage() {
                   <span className="text-[26px] lg:text-[32px] font-bold text-white/85 leading-none">
                     /mo
                   </span>
-                  <span className="mt-2 text-[10px] font-bold tracking-[0.28em] uppercase text-[#93C5FD]">
+                  <span className="mt-2 text-[10px] font-bold tracking-[0.28em] uppercase text-[#F472B6]">
                     Unlimited AI Agents + Usage
                   </span>
                 </div>
@@ -509,7 +511,7 @@ export default function HomePage() {
               <div className="mt-9 flex flex-wrap items-center gap-3">
                 <a
                   href="/intake?plan=ai-agents-unlimited"
-                  className="inline-flex items-center gap-2 px-8 py-4 rounded-[10px] bg-[#2563EB] text-white text-[13px] font-extrabold uppercase tracking-[0.14em] shadow-[0_8px_28px_rgba(37,99,235,0.45)] hover:bg-[#1D4ED8] hover:-translate-y-0.5 transition-all duration-200"
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-[10px] bg-[#EC4899] text-white text-[13px] font-extrabold uppercase tracking-[0.14em] shadow-[0_0_32px_rgba(236,72,153,0.55),0_8px_28px_rgba(236,72,153,0.35)] hover:bg-[#DB2777] hover:-translate-y-0.5 transition-all duration-200"
                 >
                   Start Now → $397/mo
                 </a>
@@ -520,6 +522,16 @@ export default function HomePage() {
                   See it work
                 </a>
               </div>
+
+              {/* Scope-of-offer fine print — locks the $397 promise to AI agents only */}
+              <p className="mt-5 max-w-[560px] text-[11px] leading-[1.55] text-white/55">
+                <span className="text-white/75 font-semibold">What&apos;s included at $397/mo:</span>{" "}
+                Unlimited AI voice agents, AI chat agents, and AI conversation
+                agents — with unlimited usage. CRM, custom website, SEO,
+                review management, calendar sync, and marketing automation are
+                separate add-ons priced individually. See full pricing for
+                bundles.
+              </p>
             </div>
 
             {/* SEO Audit tool — right side of hero, unchanged form handler */}
