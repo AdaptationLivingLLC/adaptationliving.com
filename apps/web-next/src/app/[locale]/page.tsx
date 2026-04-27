@@ -454,7 +454,7 @@ export default function HomePage() {
           className="pointer-events-none select-none absolute -top-8 -right-16 lg:-top-16 lg:-right-24 hidden md:block"
         >
           <div
-            className="font-display font-black bg-clip-text text-transparent bg-gradient-to-br from-[#D4AF37]/55 via-[#F4D03F]/30 to-[#B8941F]/10"
+            className="font-display font-black bg-clip-text text-transparent bg-gradient-to-br from-[#60A5FA]/55 via-[#2563EB]/30 to-[#1D4ED8]/10"
             style={{
               fontSize: "clamp(220px, 30vw, 480px)",
               lineHeight: 0.78,
@@ -487,7 +487,7 @@ export default function HomePage() {
               {/* Foreground price block — the in-your-face $397 */}
               <div className="mt-9 inline-flex items-end gap-4">
                 <span
-                  className="font-display font-black bg-clip-text text-transparent bg-gradient-to-br from-[#D4AF37] via-[#F4D03F] to-[#B8941F]"
+                  className="font-display font-black bg-clip-text text-transparent bg-gradient-to-br from-[#93C5FD] via-[#60A5FA] to-[#2563EB]"
                   style={{
                     fontSize: "clamp(80px, 13vw, 168px)",
                     lineHeight: 0.85,
@@ -500,16 +500,16 @@ export default function HomePage() {
                   <span className="text-[26px] lg:text-[32px] font-bold text-white/85 leading-none">
                     /mo
                   </span>
-                  <span className="mt-2 text-[10px] font-bold tracking-[0.28em] uppercase text-[#D4AF37]">
-                    AI Agents · Starter
+                  <span className="mt-2 text-[10px] font-bold tracking-[0.28em] uppercase text-[#93C5FD]">
+                    Unlimited AI Agents + Usage
                   </span>
                 </div>
               </div>
 
               <div className="mt-9 flex flex-wrap items-center gap-3">
                 <a
-                  href="/intake?plan=ai-agents-starter"
-                  className="inline-flex items-center gap-2 px-8 py-4 rounded-[10px] bg-[#D4AF37] text-[#0B1D3A] text-[13px] font-extrabold uppercase tracking-[0.14em] shadow-[0_8px_28px_rgba(212,175,55,0.45)] hover:bg-[#F4D03F] hover:-translate-y-0.5 transition-all duration-200"
+                  href="/intake?plan=ai-agents-unlimited"
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-[10px] bg-[#2563EB] text-white text-[13px] font-extrabold uppercase tracking-[0.14em] shadow-[0_8px_28px_rgba(37,99,235,0.45)] hover:bg-[#1D4ED8] hover:-translate-y-0.5 transition-all duration-200"
                 >
                   Start Now → $397/mo
                 </a>
