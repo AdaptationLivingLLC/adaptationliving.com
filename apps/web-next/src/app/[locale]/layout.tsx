@@ -66,7 +66,7 @@ export async function generateMetadata({
       alternateLocale: altLocale,
       images: [
         {
-          url: `${baseUrl}/images/og-share-2026.png`,
+          url: `${baseUrl}/images/og-share-2026-04-27.jpg`,
           width: 1200,
           height: 630,
           alt: "Adaptation Living LLC — AI, Automation & Web Development for Small Business",
@@ -75,7 +75,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      images: [`${baseUrl}/images/og-share-2026.png`],
+      images: [`${baseUrl}/images/og-share-2026-04-27.jpg`],
     },
     robots: {
       index: true,

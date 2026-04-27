@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     url: "https://www.adaptationliving.com",
     images: [
       {
-        url: "https://www.adaptationliving.com/images/og-share-2026.png",
+        url: "https://www.adaptationliving.com/images/og-share-2026-04-27.jpg",
         width: 1200,
         height: 630,
         alt: "Adaptation Living LLC — AI, Automation & Web Development for Small Business",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   twitter: {
     title,
     description,
-    images: ["https://www.adaptationliving.com/images/og-share-2026.png"],
+    images: ["https://www.adaptationliving.com/images/og-share-2026-04-27.jpg"],
   },
   alternates: {
     canonical: "https://www.adaptationliving.com",
@@ -284,7 +284,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   "@id": "https://www.adaptationliving.com/#localbusiness",
   name: "Adaptation Living LLC",
-  image: "https://www.adaptationliving.com/images/og-share-2026.png",
+  image: "https://www.adaptationliving.com/images/og-share-2026-04-27.jpg",
   url: "https://www.adaptationliving.com",
   telephone: "+1-623-219-1237",
   priceRange: "$497–$4,497/mo",
@@ -447,6 +447,24 @@ export default function HomePage() {
               "radial-gradient(ellipse 900px 500px at 50% 0%, rgba(37,99,235,0.28) 0%, transparent 70%), radial-gradient(ellipse 600px 500px at 100% 100%, rgba(37,99,235,0.18) 0%, transparent 70%)",
           }}
         />
+
+        {/* Massive watermark price — bleeds off the right edge for "holy shit" scale */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none select-none absolute -top-8 -right-16 lg:-top-16 lg:-right-24 hidden md:block"
+        >
+          <div
+            className="font-display font-black bg-clip-text text-transparent bg-gradient-to-br from-[#D4AF37]/55 via-[#F4D03F]/30 to-[#B8941F]/10"
+            style={{
+              fontSize: "clamp(220px, 30vw, 480px)",
+              lineHeight: 0.78,
+              letterSpacing: "-0.07em",
+            }}
+          >
+            $397
+          </div>
+        </div>
+
         <div className="relative mx-auto max-w-[1280px] px-6 sm:px-8 pt-16 pb-20 lg:pt-24 lg:pb-28">
           <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-14 items-center">
             <div>
@@ -457,28 +475,49 @@ export default function HomePage() {
                 id="hero-heading"
                 className="font-display text-[clamp(32px,5.2vw,58px)] font-extrabold leading-[1.04] tracking-[-0.025em]"
               >
-                Adaptation Living is what{" "}
-                <span className="text-[#60A5FA]">successful businesses</span>{" "}
-                do.
+                AI agents that answer every call,{" "}
+                <span className="text-[#60A5FA]">every text</span>, every time.
               </h1>
               <p className="mt-6 text-[16px] lg:text-[18px] text-white/80 leading-relaxed max-w-[560px]">
-                Since 2021, we&apos;ve built the AI systems, websites, and
-                automated platforms that keep small businesses, law firms,
-                and mitigation specialists competitive in a world that
-                rewards speed.
+                Phoenix-built. Veteran-run. Live in 14 days. Voice + chat
+                agents that book appointments, qualify leads, and reply
+                in seconds — 24/7, in English and Spanish.
               </p>
-              <div className="mt-8 flex flex-wrap items-center gap-3">
-                <a
-                  href="/demo"
-                  className="inline-flex items-center gap-2 px-8 py-4 rounded-[10px] bg-[#2563EB] text-white text-[13px] font-bold uppercase tracking-[0.14em] shadow-[0_8px_28px_rgba(37,99,235,0.45)] hover:bg-[#1D4ED8] hover:-translate-y-0.5 transition-all duration-200"
+
+              {/* Foreground price block — the in-your-face $397 */}
+              <div className="mt-9 inline-flex items-end gap-4">
+                <span
+                  className="font-display font-black bg-clip-text text-transparent bg-gradient-to-br from-[#D4AF37] via-[#F4D03F] to-[#B8941F]"
+                  style={{
+                    fontSize: "clamp(80px, 13vw, 168px)",
+                    lineHeight: 0.85,
+                    letterSpacing: "-0.045em",
+                  }}
                 >
-                  Book a Demo →
+                  $397
+                </span>
+                <div className="flex flex-col items-start pb-3 lg:pb-5">
+                  <span className="text-[26px] lg:text-[32px] font-bold text-white/85 leading-none">
+                    /mo
+                  </span>
+                  <span className="mt-2 text-[10px] font-bold tracking-[0.28em] uppercase text-[#D4AF37]">
+                    AI Agents · Starter
+                  </span>
+                </div>
+              </div>
+
+              <div className="mt-9 flex flex-wrap items-center gap-3">
+                <a
+                  href="/intake?plan=ai-agents-starter"
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-[10px] bg-[#D4AF37] text-[#0B1D3A] text-[13px] font-extrabold uppercase tracking-[0.14em] shadow-[0_8px_28px_rgba(212,175,55,0.45)] hover:bg-[#F4D03F] hover:-translate-y-0.5 transition-all duration-200"
+                >
+                  Start Now → $397/mo
                 </a>
                 <a
-                  href="/pricing"
+                  href="/demo"
                   className="inline-flex items-center gap-2 px-8 py-4 rounded-[10px] border-2 border-[#93C5FD]/40 text-[#93C5FD] text-[13px] font-bold uppercase tracking-[0.14em] hover:bg-[#2563EB]/15 hover:border-[#2563EB] hover:text-white transition-all duration-200"
                 >
-                  See Pricing
+                  See it work
                 </a>
               </div>
             </div>
@@ -502,6 +541,26 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Expansion message — body copy directly under hero, sets up that $397 is just the entry point */}
+      <section
+        aria-label="What you can add to the AI agents starter plan"
+        className="bg-gradient-to-b from-[#FEFCF8] via-[#FDF6EC] to-[#FEFCF8] py-9 lg:py-12 border-y border-[#0B1D3A]/5"
+      >
+        <div className="mx-auto max-w-[1100px] px-6 sm:px-8">
+          <p className="text-center text-[15px] lg:text-[18px] text-[#334155] leading-[1.6] tracking-[0.005em]">
+            <strong className="text-[#0B1D3A] font-extrabold">Start with AI agents.</strong>{" "}
+            Add{" "}
+            <span className="text-[#0B1D3A] font-semibold">CRM</span>,{" "}
+            <span className="text-[#0B1D3A] font-semibold">website</span>,{" "}
+            <span className="text-[#0B1D3A] font-semibold">SEO</span>,{" "}
+            <span className="text-[#0B1D3A] font-semibold">reviews</span>,{" "}
+            <span className="text-[#0B1D3A] font-semibold">calendar sync</span>, and{" "}
+            <span className="text-[#0B1D3A] font-semibold">marketing automation</span>{" "}
+            as you&apos;re ready.
+          </p>
         </div>
       </section>
 

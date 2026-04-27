@@ -56,7 +56,7 @@ export function pageOg(title: string, description: string, path: string) {
     url: `${baseUrl}${path}`,
     images: [
       {
-        url: `${baseUrl}/images/og-share-2026.png`,
+        url: `${baseUrl}/images/og-share-2026-04-27.jpg`,
         width: 1200,
         height: 630,
         alt: "Adaptation Living — Award-Winning AI Automation & CRM Platform (G2 Top 50, Capterra Shortlist 2026)",
@@ -70,6 +70,6 @@ export function pageTwitter(title: string, description: string) {
     card: "summary_large_image" as const,
     title,
     description,
-    images: [`${baseUrl}/images/og-share-2026.png`],
+    images: [`${baseUrl}/images/og-share-2026-04-27.jpg`],
   };
 }
