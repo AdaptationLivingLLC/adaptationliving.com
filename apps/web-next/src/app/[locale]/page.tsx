@@ -448,23 +448,6 @@ export default function HomePage() {
           }}
         />
 
-        {/* Massive watermark price — bleeds off the right edge for "holy shit" scale */}
-        <div
-          aria-hidden="true"
-          className="pointer-events-none select-none absolute -top-8 -right-16 lg:-top-16 lg:-right-24 hidden md:block"
-        >
-          <div
-            className="font-display font-black bg-clip-text text-transparent bg-gradient-to-br from-[#FBCFE8]/55 via-[#F472B6]/35 to-[#EC4899]/15"
-            style={{
-              fontSize: "clamp(220px, 30vw, 480px)",
-              lineHeight: 0.78,
-              letterSpacing: "-0.07em",
-              filter: "drop-shadow(0 0 60px rgba(236, 72, 153, 0.35))",
-            }}
-          >
-            $397
-          </div>
-        </div>
 
         <div className="relative mx-auto max-w-[1280px] px-6 sm:px-8 pt-16 pb-20 lg:pt-24 lg:pb-28">
           <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-14 items-center">
@@ -485,25 +468,74 @@ export default function HomePage() {
                 in seconds — 24/7, in English and Spanish.
               </p>
 
-              {/* Foreground price block — the in-your-face $397, neon-pink to match the OG creative */}
-              <div className="mt-9 inline-flex items-end gap-4">
-                <span
-                  className="font-display font-black bg-clip-text text-transparent bg-gradient-to-br from-[#FBCFE8] via-[#F472B6] to-[#EC4899]"
+              {/* TILTED NEON SALE SIGN — the centerpiece, drop-shipped from the OG creative */}
+              <div className="mt-10 mb-2 inline-block relative">
+                <div
+                  className="relative px-9 py-7 lg:px-14 lg:py-9 rounded-[20px] border-[3px] border-white/95 bg-gradient-to-br from-[#F472B6] via-[#EC4899] to-[#BE185D] transition-transform duration-300 hover:scale-[1.02]"
                   style={{
-                    fontSize: "clamp(80px, 13vw, 168px)",
-                    lineHeight: 0.85,
-                    letterSpacing: "-0.045em",
-                    filter: "drop-shadow(0 0 28px rgba(236, 72, 153, 0.55))",
+                    transform: "rotate(-7deg)",
+                    boxShadow:
+                      "0 0 0 4px rgba(236,72,153,0.30), 0 0 48px rgba(236,72,153,0.65), 0 0 110px rgba(244,114,182,0.55), 0 30px 60px -10px rgba(0,0,0,0.45)",
                   }}
                 >
-                  $397
-                </span>
-                <div className="flex flex-col items-start pb-3 lg:pb-5">
-                  <span className="text-[26px] lg:text-[32px] font-bold text-white/85 leading-none">
-                    /mo
-                  </span>
-                  <span className="mt-2 text-[10px] font-bold tracking-[0.28em] uppercase text-[#F472B6]">
-                    Unlimited AI Agents + Usage
+                  {/* Top eyebrow */}
+                  <div className="text-center">
+                    <span
+                      className="inline-block text-[11px] lg:text-[14px] font-black tracking-[0.42em] uppercase text-white"
+                      style={{
+                        textShadow: "0 0 14px rgba(255,255,255,0.75)",
+                      }}
+                    >
+                      ★ &nbsp;UNLIMITED&nbsp; ★
+                    </span>
+                  </div>
+
+                  {/* Massive price */}
+                  <div className="text-center mt-1 lg:mt-2 flex items-end justify-center">
+                    <span
+                      className="font-display font-black text-white leading-[0.85]"
+                      style={{
+                        fontSize: "clamp(78px, 12vw, 156px)",
+                        letterSpacing: "-0.05em",
+                        textShadow:
+                          "0 0 32px rgba(255,255,255,0.55), 0 4px 0 rgba(0,0,0,0.22)",
+                      }}
+                    >
+                      $397
+                    </span>
+                    <span
+                      className="text-[26px] lg:text-[40px] font-extrabold text-white/95 ml-2 pb-3 lg:pb-4"
+                      style={{
+                        textShadow: "0 0 12px rgba(255,255,255,0.5)",
+                      }}
+                    >
+                      /mo
+                    </span>
+                  </div>
+
+                  {/* Bottom subtitle */}
+                  <div className="text-center mt-2 lg:mt-3">
+                    <span className="block text-[14px] lg:text-[19px] font-extrabold uppercase tracking-[0.18em] text-white">
+                      AI Agents AND Usage
+                    </span>
+                    <span className="block text-[10px] lg:text-[12px] font-bold uppercase tracking-[0.36em] text-white/85 mt-1">
+                      per month
+                    </span>
+                  </div>
+                </div>
+
+                {/* Burst star top-right */}
+                <div
+                  aria-hidden="true"
+                  className="absolute -top-4 -right-4 lg:-top-6 lg:-right-6 w-14 h-14 lg:w-20 lg:h-20 rounded-full bg-white flex items-center justify-center"
+                  style={{
+                    transform: "rotate(15deg)",
+                    boxShadow:
+                      "0 0 24px rgba(236,72,153,0.55), 0 8px 24px rgba(0,0,0,0.35)",
+                  }}
+                >
+                  <span className="text-[10px] lg:text-[12px] font-black tracking-[0.18em] uppercase text-[#BE185D] leading-tight text-center">
+                    NEW<br />OFFER
                   </span>
                 </div>
               </div>
