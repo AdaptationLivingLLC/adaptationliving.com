@@ -12,6 +12,7 @@ import { MetaPixel } from "@al/analytics/meta-pixel";
 import { Analytics } from "@vercel/analytics/next";
 import { IntlProvider, locales } from "@al/i18n";
 import { NavBar } from "@al/ui/components/navbar";
+import { FloatingChatButton } from "../../components/floating-chat-button";
 import { competitors } from "../../data/competitors";
 import "@al/ui/globals.css";
 
@@ -328,14 +329,8 @@ export default async function LocaleLayout({
 
         <Analytics />
 
-        {/* GHL Chat Widget — floats in bottom corner, loads after page is interactive */}
-        <Script
-          id="ghl-chat-widget"
-          src="https://widgets.leadconnectorhq.com/loader.js"
-          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-          data-widget-id="69db6e04d0d6ea75797b53f6"
-          strategy="lazyOnload"
-        />
+        {/* Floating Chat Now button — links to /chat (the dedicated A2P-compliant chat page) */}
+        <FloatingChatButton locale={locale} />
 
         {/* Adaptation Living Hub external tracking — site-wide on every page */}
         <Script
