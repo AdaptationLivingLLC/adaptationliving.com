@@ -14,14 +14,18 @@ interface SiteChromeProps {
 }
 
 export function SiteChrome({ children, locale }: SiteChromeProps) {
-  // /chat is the A2P 10DLC chat landing page — it must render sterile
-  // (no NavBar, footer, alt-contact CTAs, floating button, or third-party
-  // CRM trackers) so the chat widget is the only contact-gathering surface
-  // on the page. Carrier reviewers fail submissions when a chat-consent
-  // landing shares a page with click-to-call links or other CTAs.
+  // /chat is a fully sterile A2P 10DLC chat landing — no chrome at all.
+  // The homepage (`/` and `/${locale}`) embeds the same chat widget per
+  // the Twilio 10DLC submission, so it also needs no competing
+  // phone/SMS contact-gathering surfaces: tel: and mailto: items in the
+  // footer Company column are dropped, and the AL Hub external-tracking
+  // script is omitted, on the homepage. NavBar links to other pages
+  // (which have their own forms) are not violations of GHL's policy.
   const pathname = usePathname() ?? "";
   const isChatLanding =
     pathname === "/chat" || pathname === `/${locale}/chat`;
+  const isHomepage =
+    pathname === "/" || pathname === "" || pathname === `/${locale}`;
 
   if (isChatLanding) {
     return <>{children}</>;
@@ -153,16 +157,20 @@ export function SiteChrome({ children, locale }: SiteChromeProps) {
                 Company
               </p>
               <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="tel:6232191237" className="text-[#94A3B8] hover:text-[#2563EB]">
-                    623-219-1237
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:info@adaptationliving.com" className="text-[#94A3B8] hover:text-[#2563EB]">
-                    info@adaptationliving.com
-                  </a>
-                </li>
+                {!isHomepage && (
+                  <>
+                    <li>
+                      <a href="tel:6232191237" className="text-[#94A3B8] hover:text-[#2563EB]">
+                        623-219-1237
+                      </a>
+                    </li>
+                    <li>
+                      <a href="mailto:info@adaptationliving.com" className="text-[#94A3B8] hover:text-[#2563EB]">
+                        info@adaptationliving.com
+                      </a>
+                    </li>
+                  </>
+                )}
                 <li><a href="/legal" className="text-[#94A3B8] hover:text-[#2563EB]">Privacy &amp; Terms</a></li>
                 <li><a href="/ls-2025.html" className="text-[#94A3B8] hover:text-[#2563EB]">LS-2025 Veteran Lifeline</a></li>
               </ul>
@@ -188,14 +196,16 @@ export function SiteChrome({ children, locale }: SiteChromeProps) {
         </div>
       </footer>
 
-      <FloatingChatButton locale={locale} />
+      {!isHomepage && <FloatingChatButton locale={locale} />}
 
-      <Script
-        id="al-hub-external-tracking"
-        src="https://hub.adaptationliving.com/js/external-tracking.js"
-        data-tracking-id="tk_7067e2d38e7e4938af9ab271cabaa2a9"
-        strategy="afterInteractive"
-      />
+      {!isHomepage && (
+        <Script
+          id="al-hub-external-tracking"
+          src="https://hub.adaptationliving.com/js/external-tracking.js"
+          data-tracking-id="tk_7067e2d38e7e4938af9ab271cabaa2a9"
+          strategy="afterInteractive"
+        />
+      )}
     </>
   );
 }

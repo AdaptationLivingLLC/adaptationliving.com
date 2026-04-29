@@ -20,7 +20,6 @@ import {
   Workflow,
   Zap,
 } from "lucide-react";
-import { SeoGraderForm } from "../../components/seo-grader-form";
 
 const title = "Adaptation Living LLC — AI Automation Phoenix AZ";
 const description =
@@ -581,7 +580,12 @@ export default function HomePage() {
                     hurting, and getting missed. No pitch. Just the data.
                   </p>
                 </div>
-                <SeoGraderForm />
+                <a
+                  href="/contact"
+                  className="inline-flex w-full items-center justify-center gap-2 px-7 py-4 rounded-[12px] bg-[#2563EB] text-white text-[13px] font-extrabold uppercase tracking-[0.14em] shadow-[0_8px_28px_rgba(37,99,235,0.35)] hover:bg-[#1D4ED8] hover:-translate-y-0.5 transition-all duration-200"
+                >
+                  Request Free SEO Audit →
+                </a>
               </div>
             </div>
           </div>
@@ -1147,12 +1151,6 @@ export default function HomePage() {
             >
               Book a Demo →
             </a>
-            <a
-              href="tel:+16232191237"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-[10px] border-2 border-[#93C5FD]/40 text-[#93C5FD] text-[13px] font-bold uppercase tracking-[0.14em] hover:bg-[#2563EB]/15 hover:border-[#2563EB] hover:text-white transition-all duration-200"
-            >
-              <Phone className="w-4 h-4" /> 623-219-1237
-            </a>
           </div>
           <p className="mt-10 text-[11px] tracking-[0.26em] uppercase text-white/45 font-semibold">
             Veteran-Owned · VOSB Pending SBA Approval · SAM.gov Registered · Since 2021
@@ -1160,6 +1158,61 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section
+        aria-label="Chat with us — SMS messaging consent"
+        className="section-cream border-t border-[#0B1D3A]/10"
+      >
+        <div className="mx-auto max-w-[760px] px-6 sm:px-8 py-14 lg:py-16">
+          <div className="text-center">
+            <span className="inline-block text-[10px] font-bold tracking-[0.32em] uppercase text-[#2563EB] bg-[#2563EB]/10 border border-[#2563EB]/30 rounded-full px-4 py-1.5 mb-5">
+              Live Chat
+            </span>
+            <h2 className="font-display text-[clamp(22px,3vw,30px)] font-extrabold text-[#0B1D3A] leading-[1.15] tracking-[-0.01em]">
+              Chat with the Adaptation Living team
+            </h2>
+            <p className="mt-4 text-[14px] text-[#4A5568] leading-relaxed max-w-[560px] mx-auto">
+              Use the chat window in the bottom-right corner of this page to
+              send us a message. We typically respond in minutes during
+              business hours and within one business day after hours.
+            </p>
+          </div>
+
+          <div className="mt-8 rounded-[20px] border border-[#2563EB]/20 bg-[#F8FAFC] p-6 sm:p-8">
+            <h3 className="font-display text-base font-bold text-[#0B1D3A]">
+              SMS messaging consent
+            </h3>
+            <p className="mt-3 text-[13px] text-[#4A5568] leading-relaxed">
+              By providing your phone number through the chat window on this
+              page, you agree to receive SMS messages from Adaptation Living
+              LLC related to your inquiry, appointment confirmations, and
+              service updates. Message frequency varies. Message and data
+              rates may apply. Reply <strong>STOP</strong> to unsubscribe at
+              any time. Reply <strong>HELP</strong> for help. Consent to
+              receive SMS messages is not a condition of any purchase. View
+              our{" "}
+              <a
+                href="/legal"
+                className="text-[#2563EB] underline hover:text-[#1D4ED8]"
+              >
+                Privacy Policy and Terms of Service
+              </a>{" "}
+              for more information about how we handle your data.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* GHL Chat Widget — A2P-compliant. The submitted opt-in URL for the
+          Twilio 10DLC campaign is adaptationliving.com, so the widget must
+          be embedded here on the homepage. */}
+      <Script
+        id="ghl-chat-widget"
+        src="https://widgets.leadconnectorhq.com/loader.js"
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+        data-widget-id="69f0893abaf63e9c89e2d5ca"
+        data-source="WEB_USER"
+        strategy="afterInteractive"
+      />
     </main>
   );
 }
