@@ -71,27 +71,6 @@ export default function ChatPage() {
               for more information about how we handle your data.
             </p>
           </div>
-
-          <div className="mt-8 text-center text-[12px] text-[#64748B]">
-            <p>
-              Prefer email? Reach us at{" "}
-              <a
-                href="mailto:info@adaptationliving.com"
-                className="text-[#2563EB] hover:text-[#1D4ED8]"
-              >
-                info@adaptationliving.com
-              </a>
-            </p>
-            <p className="mt-1">
-              Prefer phone? Call us at{" "}
-              <a
-                href="tel:6232191237"
-                className="text-[#2563EB] hover:text-[#1D4ED8]"
-              >
-                623-219-1237
-              </a>
-            </p>
-          </div>
         </div>
       </section>
 
