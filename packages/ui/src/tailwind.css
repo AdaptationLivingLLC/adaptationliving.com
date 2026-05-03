@@ -90,7 +90,7 @@
   .glow-accent { box-shadow: 0 0 20px var(--color-accent-glow); }
 
   .navbar-offset {
-    padding-top: var(--navbar-height);
+    padding-top: 0;
   }
 
   .section-cream {

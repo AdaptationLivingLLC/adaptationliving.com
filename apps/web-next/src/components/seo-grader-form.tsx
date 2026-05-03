@@ -207,10 +207,9 @@ export function SeoGraderForm() {
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-sm border-2 border-[#2563EB] bg-[#2563EB] px-6 py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-[#0F172A] shadow-[0_8px_24px_rgba(37,99,235,0.35)] transition-all hover:bg-[#3B82F6] disabled:cursor-not-allowed disabled:opacity-70"
+        className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-[10px] border-2 border-[#2563EB] bg-[#2563EB] px-6 py-3.5 text-xs font-extrabold uppercase tracking-[0.22em] text-white shadow-[0_8px_24px_rgba(37,99,235,0.45)] transition-all hover:bg-[#1D4ED8] hover:border-[#1D4ED8] hover:shadow-[0_10px_28px_rgba(37,99,235,0.55)] hover:-translate-y-px disabled:cursor-not-allowed disabled:opacity-70"
       >
-        {status === "submitting" ? "Running audit..." : "Run My Free Audit"}
-
+        {status === "submitting" ? "Running audit..." : "Run My Free SEO Audit →"}
       </button>
 
       {(status === "invalid" || status === "error") && errorMsg && (

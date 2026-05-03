@@ -20,6 +20,7 @@ import {
   Workflow,
   Zap,
 } from "lucide-react";
+import { SeoGraderForm } from "../../components/seo-grader-form";
 
 const title = "Adaptation Living LLC — AI Automation Phoenix AZ";
 const description =
@@ -448,20 +449,20 @@ export default function HomePage() {
         />
 
 
-        <div className="relative mx-auto max-w-[1280px] px-6 sm:px-8 pt-16 pb-20 lg:pt-24 lg:pb-28">
-          <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-14 items-center">
+        <div className="relative mx-auto max-w-[1100px] px-6 sm:px-8 pt-12 pb-20 lg:pt-20 lg:pb-28">
+          <div className="text-center">
             <div>
               <span className="inline-block text-[10px] font-bold tracking-[0.32em] uppercase text-[#93C5FD] bg-[#2563EB]/15 border border-[#2563EB]/40 rounded-full px-4 py-1.5 mb-7">
                 Veteran-Owned · Phoenix, AZ · Since 2021
               </span>
               <h1
                 id="hero-heading"
-                className="font-display text-[clamp(32px,5.2vw,58px)] font-extrabold leading-[1.04] tracking-[-0.025em]"
+                className="font-display text-[clamp(32px,5.2vw,58px)] font-extrabold leading-[1.04] tracking-[-0.025em] max-w-[920px] mx-auto"
               >
                 AI agents that answer every call,{" "}
                 <span className="text-[#60A5FA]">every text</span>, every time.
               </h1>
-              <p className="mt-6 text-[16px] lg:text-[18px] text-white/80 leading-relaxed max-w-[560px]">
+              <p className="mt-6 text-[16px] lg:text-[18px] text-white/80 leading-relaxed max-w-[640px] mx-auto">
                 Phoenix-built. Veteran-run. Live in 14 days. Voice + chat
                 agents that book appointments, qualify leads, and reply
                 in seconds — 24/7, in English and Spanish.
@@ -539,7 +540,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="mt-9 flex flex-wrap items-center gap-3">
+              <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
                 <a
                   href="/intake?plan=ai-agents-unlimited"
                   className="inline-flex items-center gap-2 px-8 py-4 rounded-[10px] bg-[#EC4899] text-white text-[13px] font-extrabold uppercase tracking-[0.14em] shadow-[0_0_32px_rgba(236,72,153,0.55),0_8px_28px_rgba(236,72,153,0.35)] hover:bg-[#DB2777] hover:-translate-y-0.5 transition-all duration-200"
@@ -555,7 +556,7 @@ export default function HomePage() {
               </div>
 
               {/* Scope-of-offer fine print — locks the $397 promise to AI agents only */}
-              <p className="mt-5 max-w-[560px] text-[11px] leading-[1.55] text-white/55">
+              <p className="mt-5 max-w-[640px] mx-auto text-[11px] leading-[1.55] text-white/55">
                 <span className="text-white/75 font-semibold">What&apos;s included at $397/mo:</span>{" "}
                 Unlimited AI voice agents, AI chat agents, and AI conversation
                 agents — with unlimited usage. CRM, custom website, SEO,
@@ -563,30 +564,6 @@ export default function HomePage() {
                 separate add-ons priced individually. See full pricing for
                 bundles.
               </p>
-            </div>
-
-            {/* SEO Audit tool — right side of hero, unchanged form handler */}
-            <div className="lg:pl-4">
-              <div className="bg-white rounded-[20px] p-6 lg:p-8 shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
-                <div className="mb-5">
-                  <span className="inline-block text-[10px] font-bold tracking-[0.32em] uppercase text-[#2563EB] mb-2">
-                    Free SEO Audit
-                  </span>
-                  <h2 className="font-display text-[20px] lg:text-[22px] font-extrabold text-[#0B1D3A] leading-tight tracking-[-0.01em]">
-                    See where your business actually stands.
-                  </h2>
-                  <p className="mt-2 text-[13px] text-[#475569] leading-relaxed">
-                    We analyze 50+ signals and show you what&apos;s helping,
-                    hurting, and getting missed. No pitch. Just the data.
-                  </p>
-                </div>
-                <a
-                  href="/contact"
-                  className="inline-flex w-full items-center justify-center gap-2 px-7 py-4 rounded-[12px] bg-[#2563EB] text-white text-[13px] font-extrabold uppercase tracking-[0.14em] shadow-[0_8px_28px_rgba(37,99,235,0.35)] hover:bg-[#1D4ED8] hover:-translate-y-0.5 transition-all duration-200"
-                >
-                  Request Free SEO Audit →
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -609,6 +586,127 @@ export default function HomePage() {
             <span className="text-[#0B1D3A] font-semibold">marketing automation</span>{" "}
             as you&apos;re ready.
           </p>
+        </div>
+      </section>
+
+      {/* ========================= SEO AUDIT — DEDICATED EDUCATIONAL SECTION ========================= */}
+      <section
+        id="seo-audit"
+        aria-labelledby="seo-audit-heading"
+        className="relative overflow-hidden border-y border-[#0B1D3A]/10"
+        style={{
+          background:
+            "linear-gradient(180deg, #FEFCF8 0%, #F1F5F9 50%, #FEFCF8 100%)",
+        }}
+      >
+        <div className="mx-auto max-w-[1280px] px-6 sm:px-8 py-20 lg:py-28">
+          <div className="text-center mb-14">
+            <span className="inline-block text-[10px] font-bold tracking-[0.32em] uppercase text-[#2563EB] bg-[#2563EB]/10 border border-[#2563EB]/30 rounded-full px-4 py-1.5 mb-5">
+              Free Tool · No Pitch · Plain English
+            </span>
+            <h2
+              id="seo-audit-heading"
+              className="font-display text-[clamp(28px,4.6vw,48px)] font-extrabold text-[#0B1D3A] leading-[1.06] tracking-[-0.02em] max-w-[960px] mx-auto"
+            >
+              Most firms won&apos;t even tell you what SEO actually means.
+            </h2>
+            <p className="mt-6 text-[16px] lg:text-[18px] text-[#475569] leading-relaxed max-w-[820px] mx-auto">
+              We show you what search engines, AI tools, and real customers
+              see when they look at your website — then we give you the data
+              in plain English.
+            </p>
+          </div>
+
+          <div className="grid gap-10 lg:grid-cols-[1.05fr_1fr] lg:gap-14 items-start">
+            {/* LEFT — educational copy + checks list */}
+            <div>
+              <div className="space-y-5 text-[15.5px] lg:text-[16px] text-[#334155] leading-[1.75]">
+                <p>
+                  SEO is not magic. It is not a secret trick. It is a
+                  combination of structure, speed, trust signals, content
+                  clarity, mobile performance, local visibility, and
+                  technical health. The problem is that most businesses
+                  never get shown what is actually being checked.
+                </p>
+                <p>
+                  Our SEO audit tool scans the things that usually stay
+                  hidden, explains what they mean, and shows where your
+                  website is helping you, hurting you, or missing
+                  opportunities.
+                </p>
+              </div>
+
+              <div className="mt-9 rounded-[18px] border border-[#0B1D3A]/10 bg-white/70 p-6 lg:p-7 shadow-[0_8px_24px_rgba(11,29,58,0.08)] backdrop-blur-sm">
+                <p className="text-[10px] font-bold tracking-[0.28em] uppercase text-[#2563EB] mb-4">
+                  What the audit checks
+                </p>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-2.5">
+                  {[
+                    "Technical SEO health",
+                    "Page speed and load performance",
+                    "Mobile responsiveness",
+                    "Meta titles and descriptions",
+                    "Heading structure",
+                    "Keyword clarity",
+                    "Content quality and search intent",
+                    "Local SEO signals",
+                    "Google Business Profile consistency",
+                    "Schema / structured data",
+                    "Indexing and crawlability",
+                    "Broken links and missing pages",
+                    "Image alt text and file optimization",
+                    "Internal linking",
+                    "Conversion clarity",
+                    "Trust signals",
+                    "Security / HTTPS",
+                    "Accessibility basics",
+                    "Open Graph and social preview data",
+                    "AI-search readiness",
+                  ].map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-2.5 text-[14px] text-[#0B1D3A] leading-snug"
+                    >
+                      <CheckCircle2 className="w-[18px] h-[18px] text-[#2563EB] flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <p className="mt-7 text-[15px] lg:text-[16px] text-[#475569] leading-[1.7]">
+                Run the audit. See the results. Learn what SEO really means.
+                And if you like what the tool does, you can own it for your
+                own business.
+              </p>
+            </div>
+
+            {/* RIGHT — the actual audit tool */}
+            <div id="seo-audit-form" className="lg:sticky lg:top-24">
+              <div className="rounded-[20px] border border-[#0B1D3A]/12 bg-white shadow-[0_22px_60px_rgba(11,29,58,0.18),0_4px_12px_rgba(11,29,58,0.08)] overflow-hidden">
+                <div className="px-6 pt-6 pb-1">
+                  <span className="inline-block text-[10px] font-bold tracking-[0.32em] uppercase text-[#2563EB] mb-2">
+                    Run The Audit
+                  </span>
+                  <h3 className="font-display text-[22px] lg:text-[24px] font-extrabold text-[#0B1D3A] leading-tight tracking-[-0.01em]">
+                    Test your website here.
+                  </h3>
+                  <p className="mt-2 text-[13.5px] text-[#475569] leading-relaxed">
+                    Drop in your URL and we&apos;ll run the full audit. You
+                    get the report by email in minutes — no pitch attached.
+                  </p>
+                </div>
+                <SeoGraderForm />
+              </div>
+
+              <a
+                href="/intake?service=SEO%20Audit%20Tool%20Reseller"
+                className="mt-4 inline-flex w-full items-center justify-center gap-2 px-6 py-3.5 rounded-[10px] border-2 border-[#0B1D3A] bg-transparent text-[#0B1D3A] text-[12px] font-extrabold uppercase tracking-[0.18em] hover:bg-[#0B1D3A] hover:text-[#faf0df] hover:-translate-y-px transition-all duration-200"
+              >
+                I Want This Tool For My Business →
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
