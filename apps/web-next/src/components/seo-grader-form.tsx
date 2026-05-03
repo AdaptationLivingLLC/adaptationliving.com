@@ -23,6 +23,7 @@ export function SeoGraderForm() {
     const phone = String(data.get("phone") ?? "").trim();
     const website = String(data.get("website") ?? "").trim();
     const website_confirm = String(data.get("website_confirm") ?? "");
+    const smsConsent = data.get("smsConsent") === "on";
 
     if (!firstName) {
       setErrorMsg("Please enter your first name.");
@@ -36,6 +37,13 @@ export function SeoGraderForm() {
     }
     if (!URL_RE.test(website)) {
       setErrorMsg("Please enter a valid website URL (e.g., yourbusiness.com).");
+      setStatus("invalid");
+      return;
+    }
+    if (phone && !smsConsent) {
+      setErrorMsg(
+        "To receive SMS, please check the consent box. Or remove your phone number to continue without SMS."
+      );
       setStatus("invalid");
       return;
     }
@@ -54,6 +62,11 @@ export function SeoGraderForm() {
           phone,
           website,
           website_confirm,
+          smsConsent,
+          smsConsentTimestamp: smsConsent ? new Date().toISOString() : null,
+          smsConsentText: smsConsent
+            ? "By providing my phone number and checking this box, I consent to receive recurring SMS text messages from Adaptation Living LLC at the number provided, including audit results, appointment reminders, account notifications, and customer care responses. Message frequency varies. Message and data rates may apply. Reply HELP for help, STOP to cancel. Consent is not a condition of purchase."
+            : null,
         }),
       });
 
@@ -202,6 +215,42 @@ export function SeoGraderForm() {
           placeholder="(555) 123-4567"
           className={inputCls}
         />
+      </div>
+
+      {/* A2P 10DLC / Toll-Free Verification — express written consent for SMS.
+          Checkbox starts UNCHECKED (carrier requirement). Required only when
+          the user supplies a phone number. The label below contains every
+          element CTIA + carriers grep for: brand, message types, frequency,
+          rates, STOP/HELP, and "consent is not a condition of purchase". */}
+      <div className="mt-2 rounded-[10px] border border-[#0F172A]/15 bg-[#FAFAF7] p-3.5">
+        <label
+          htmlFor="smsConsent"
+          className="flex items-start gap-2.5 cursor-pointer"
+        >
+          <input
+            type="checkbox"
+            id="smsConsent"
+            name="smsConsent"
+            className="mt-[3px] h-4 w-4 flex-shrink-0 rounded border-[#0F172A]/40 text-[#2563EB] focus:ring-2 focus:ring-[#2563EB]/40 cursor-pointer"
+          />
+          <span className="text-[11.5px] leading-[1.55] text-[#0F172A]/80">
+            By providing my phone number and checking this box, I consent to
+            receive recurring SMS text messages from{" "}
+            <strong>Adaptation Living LLC</strong> at the number provided,
+            including audit results, appointment reminders, account
+            notifications, and customer care responses. Message frequency
+            varies. Message and data rates may apply. Reply{" "}
+            <strong>HELP</strong> for help, <strong>STOP</strong> to cancel.
+            Consent is not a condition of purchase. View our{" "}
+            <a
+              href="/legal"
+              className="text-[#2563EB] underline hover:text-[#1D4ED8]"
+            >
+              Privacy Policy and Terms of Service
+            </a>
+            .
+          </span>
+        </label>
       </div>
 
       <button

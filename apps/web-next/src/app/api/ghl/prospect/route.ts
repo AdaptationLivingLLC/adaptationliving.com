@@ -104,10 +104,21 @@ export async function POST(request: Request) {
       );
     }
 
+    const smsConsent = body.smsConsent === true;
+    const smsConsentTimestamp =
+      typeof body.smsConsentTimestamp === "string"
+        ? body.smsConsentTimestamp.slice(0, 64)
+        : null;
+    const smsConsentText =
+      typeof body.smsConsentText === "string"
+        ? body.smsConsentText.slice(0, 2000)
+        : null;
+
     const tags = [
       "seo-grader",
       "website-prospect",
       "source:adaptationliving.com",
+      ...(phone && smsConsent ? ["sms-consent-granted"] : []),
     ];
 
     const contactResult = await createContact({
@@ -122,9 +133,16 @@ export async function POST(request: Request) {
 
     const contactId: string | undefined = contactResult?.contact?.id;
     if (contactId) {
+      const consentBlock =
+        phone && smsConsent
+          ? `\n\n--- SMS CONSENT (A2P 10DLC / TCPA) ---\nGranted: YES\nTimestamp: ${smsConsentTimestamp ?? "n/a"}\nIP: ${ip}\nSource URL: https://www.adaptationliving.com/#seo-audit-form\nConsent text shown to user:\n"${smsConsentText ?? ""}"`
+          : phone
+          ? "\n\n--- SMS CONSENT ---\nGranted: NO (phone provided without consent)\nDo NOT send SMS to this contact."
+          : "";
+
       await createNote(
         contactId,
-        `[SEO Grader] Requested audit of ${website}\nName: ${firstName} ${lastName}\nEmail: ${email}${phone ? `\nPhone: ${phone}` : ""}`
+        `[SEO Grader] Requested audit of ${website}\nName: ${firstName} ${lastName}\nEmail: ${email}${phone ? `\nPhone: ${phone}` : ""}${consentBlock}`
       );
     }
 
