@@ -51,12 +51,13 @@ export function NavBar() {
             </a>
           ))}
 
-          {/* LS-2025 — polished secondary CTA, navy on cream so it doesn't blend with the new header bg */}
+          {/* LS-2025 — flagship veteran-mission CTA, decorative red/white/blue stack so it pops off the cream bar */}
           <a
             href="/ls-2025.html"
-            className="text-[11px] lg:text-[12px] uppercase tracking-[0.16em] bg-[#0B1D3A] text-[#faf0df] font-extrabold px-[18px] py-[10px] rounded-[10px] border border-[#0B1D3A] shadow-[0_2px_10px_rgba(11,29,58,0.18)] transition-all duration-[180ms] hover:bg-[#13284C] hover:-translate-y-px"
+            className="inline-flex items-center gap-[6px] text-[11px] lg:text-[12px] uppercase tracking-[0.18em] bg-[#BF0A30] text-white font-extrabold px-[18px] py-[10px] rounded-[10px] border-2 border-white shadow-[0_0_0_2px_#002868,0_4px_14px_rgba(191,10,48,0.45)] transition-all duration-[180ms] hover:bg-[#A8082A] hover:-translate-y-px hover:shadow-[0_0_0_2px_#002868,0_6px_20px_rgba(191,10,48,0.65)]"
             aria-label="LS-2025 Veteran Lifeline"
           >
+            <span aria-hidden="true" className="text-white">★</span>
             LS-2025
           </a>
 
@@ -101,8 +102,9 @@ export function NavBar() {
           ))}
           <a
             href="/ls-2025.html"
-            className="text-[10px] uppercase tracking-[0.16em] bg-[#0B1D3A] text-[#faf0df] px-3 py-1 rounded-[8px] font-extrabold border border-[#0B1D3A] shadow-[0_2px_8px_rgba(11,29,58,0.18)]"
+            className="inline-flex items-center gap-[5px] text-[10px] uppercase tracking-[0.18em] bg-[#BF0A30] text-white px-3 py-1 rounded-[8px] font-extrabold border-2 border-white shadow-[0_0_0_2px_#002868,0_2px_10px_rgba(191,10,48,0.5)]"
           >
+            <span aria-hidden="true" className="text-white">★</span>
             LS-2025
           </a>
           <a
@@ -129,8 +131,9 @@ export function NavBar() {
             <a
               href="/ls-2025.html"
               onClick={() => setMobileMenuOpen(false)}
-              className="bg-[#0B1D3A] text-[#faf0df] font-extrabold px-7 py-3 rounded-[10px] border border-[#0B1D3A] shadow-[0_4px_14px_rgba(11,29,58,0.25)] hover:bg-[#13284C] transition-all duration-[180ms]"
+              className="inline-flex items-center gap-2 bg-[#BF0A30] text-white font-extrabold px-7 py-3 rounded-[10px] border-2 border-white shadow-[0_0_0_2px_#002868,0_4px_18px_rgba(191,10,48,0.5)] hover:bg-[#A8082A] hover:shadow-[0_0_0_2px_#002868,0_6px_22px_rgba(191,10,48,0.65)] transition-all duration-[180ms]"
             >
+              <span aria-hidden="true" className="text-white">★</span>
               LS-2025 Lifeline
             </a>
             <div className="w-16 h-px bg-[#0B1D3A]/30" />
