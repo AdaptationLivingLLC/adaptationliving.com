@@ -41,6 +41,18 @@ export function NavBar() {
 
         {/* Desktop nav links — visible from md up */}
         <div className="hidden md:flex items-center gap-4 lg:gap-6">
+          {/* LS-2025 — flagship veteran-mission CTA, leftmost so it cannot be missed even when the nav wraps on narrow desktop widths */}
+          <a
+            href="/ls-2025.html"
+            className="inline-flex items-center gap-[6px] text-[11px] lg:text-[12px] uppercase tracking-[0.18em] bg-[#BF0A30] text-white font-extrabold px-[18px] py-[10px] rounded-[10px] border-2 border-white shadow-[0_0_0_2px_#002868,0_4px_14px_rgba(191,10,48,0.45)] transition-all duration-[180ms] hover:bg-[#A8082A] hover:-translate-y-px hover:shadow-[0_0_0_2px_#002868,0_6px_20px_rgba(191,10,48,0.65)]"
+            aria-label="LS-2025 Veteran Lifeline"
+          >
+            <span aria-hidden="true" className="text-white">★</span>
+            LS-2025
+          </a>
+
+          <span className="w-px h-5 bg-[#0B1D3A]/20" />
+
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -50,16 +62,6 @@ export function NavBar() {
               {link.label}
             </a>
           ))}
-
-          {/* LS-2025 — flagship veteran-mission CTA, decorative red/white/blue stack so it pops off the cream bar */}
-          <a
-            href="/ls-2025.html"
-            className="inline-flex items-center gap-[6px] text-[11px] lg:text-[12px] uppercase tracking-[0.18em] bg-[#BF0A30] text-white font-extrabold px-[18px] py-[10px] rounded-[10px] border-2 border-white shadow-[0_0_0_2px_#002868,0_4px_14px_rgba(191,10,48,0.45)] transition-all duration-[180ms] hover:bg-[#A8082A] hover:-translate-y-px hover:shadow-[0_0_0_2px_#002868,0_6px_20px_rgba(191,10,48,0.65)]"
-            aria-label="LS-2025 Veteran Lifeline"
-          >
-            <span aria-hidden="true" className="text-white">★</span>
-            LS-2025
-          </a>
 
           <span className="w-px h-5 bg-[#0B1D3A]/20" />
 
@@ -91,6 +93,14 @@ export function NavBar() {
 
         {/* Mobile: always-visible quick links BELOW the brand row on small screens */}
         <div className="flex md:hidden w-full flex-wrap items-center justify-center gap-x-4 gap-y-1.5 border-t border-[#0B1D3A]/12 pt-2">
+          <a
+            href="/ls-2025.html"
+            className="inline-flex items-center gap-[5px] text-[10px] uppercase tracking-[0.18em] bg-[#BF0A30] text-white px-3 py-1 rounded-[8px] font-extrabold border-2 border-white shadow-[0_0_0_2px_#002868,0_2px_10px_rgba(191,10,48,0.5)]"
+            aria-label="LS-2025 Veteran Lifeline"
+          >
+            <span aria-hidden="true" className="text-white">★</span>
+            LS-2025
+          </a>
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -100,13 +110,6 @@ export function NavBar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="/ls-2025.html"
-            className="inline-flex items-center gap-[5px] text-[10px] uppercase tracking-[0.18em] bg-[#BF0A30] text-white px-3 py-1 rounded-[8px] font-extrabold border-2 border-white shadow-[0_0_0_2px_#002868,0_2px_10px_rgba(191,10,48,0.5)]"
-          >
-            <span aria-hidden="true" className="text-white">★</span>
-            LS-2025
-          </a>
           <a
             href="/intake"
             className="text-[10px] uppercase tracking-[0.16em] bg-[#2563EB] text-white px-3 py-1 rounded-[8px] font-extrabold border border-[#2563EB] shadow-[0_2px_10px_rgba(37,99,235,0.45)]"
@@ -122,20 +125,21 @@ export function NavBar() {
         <div className="fixed inset-0 top-[58px] z-40 bg-[#faf0df] md:hidden border-t border-[#0B1D3A]/15">
           <nav className="flex flex-col items-center gap-7 pt-14 font-display text-base tracking-[0.18em] uppercase" aria-label="Mobile navigation">
             <a href="/" onClick={() => setMobileMenuOpen(false)} className="text-[#0B1D3A] font-semibold hover:text-[#2563EB] transition-colors">Home</a>
+            <a
+              href="/ls-2025.html"
+              onClick={() => setMobileMenuOpen(false)}
+              aria-label="LS-2025 Veteran Lifeline"
+              className="inline-flex items-center gap-2 bg-[#BF0A30] text-white font-extrabold px-7 py-3 rounded-[10px] border-2 border-white shadow-[0_0_0_2px_#002868,0_4px_18px_rgba(191,10,48,0.5)] hover:bg-[#A8082A] hover:shadow-[0_0_0_2px_#002868,0_6px_22px_rgba(191,10,48,0.65)] transition-all duration-[180ms]"
+            >
+              <span aria-hidden="true" className="text-white">★</span>
+              LS-2025 Lifeline
+            </a>
             <a href="/features" onClick={() => setMobileMenuOpen(false)} className="text-[#0B1D3A] font-semibold hover:text-[#2563EB] transition-colors">Features</a>
             <a href="/services" onClick={() => setMobileMenuOpen(false)} className="text-[#0B1D3A] font-semibold hover:text-[#2563EB] transition-colors">Pricing</a>
             <a href="/demo" onClick={() => setMobileMenuOpen(false)} className="text-[#0B1D3A] font-semibold hover:text-[#2563EB] transition-colors">Demo</a>
             <a href="/vs" onClick={() => setMobileMenuOpen(false)} className="text-[#0B1D3A] font-semibold hover:text-[#2563EB] transition-colors">Compare</a>
             <a href="/ai" onClick={() => setMobileMenuOpen(false)} className="text-[#0B1D3A] font-semibold hover:text-[#2563EB] transition-colors">AI Agents</a>
             <a href="/contact" onClick={() => setMobileMenuOpen(false)} className="text-[#0B1D3A] font-semibold hover:text-[#2563EB] transition-colors">Contact</a>
-            <a
-              href="/ls-2025.html"
-              onClick={() => setMobileMenuOpen(false)}
-              className="inline-flex items-center gap-2 bg-[#BF0A30] text-white font-extrabold px-7 py-3 rounded-[10px] border-2 border-white shadow-[0_0_0_2px_#002868,0_4px_18px_rgba(191,10,48,0.5)] hover:bg-[#A8082A] hover:shadow-[0_0_0_2px_#002868,0_6px_22px_rgba(191,10,48,0.65)] transition-all duration-[180ms]"
-            >
-              <span aria-hidden="true" className="text-white">★</span>
-              LS-2025 Lifeline
-            </a>
             <div className="w-16 h-px bg-[#0B1D3A]/30" />
             <a href="https://app.adaptationliving.com" className="text-[#0B1D3A] font-semibold hover:text-[#2563EB] transition-colors">Sign In</a>
             <a
