@@ -317,7 +317,7 @@ export default function AIPage() {
                   AI agencies: $10,000+ setup + $500/mo.
                 </p>
                 <p className="text-accent text-sm font-semibold mt-2">
-                  We include it in every tier, starting at $194.90/mo with setup or $349.90/mo self-serve.
+                  We include it starting in the AI Agents tier — $397/mo self-serve or $997/mo done-for-you.
                 </p>
               </div>
             </div>
@@ -587,7 +587,7 @@ export default function AIPage() {
               Custom Build Engagement
             </p>
             <p className="text-[#0F172A] font-semibold text-sm">
-              Scale Setup ($5,000 + $694.90/mo) or a custom scoped engagement.
+              Scale DFY ($4,997/mo + $7,997 setup) or a custom scoped engagement.
               Book a call and we'll map your workflows.
             </p>
           </div>
@@ -698,8 +698,8 @@ export default function AIPage() {
           <p className="text-[#475569] text-sm mt-6 max-w-3xl">
             Add it up. The same stack agencies sell for $30,000–$50,000 in
             setup and $3,000–$8,000/mo ongoing — we deliver from{" "}
-            <strong className="text-[#0F172A]">$349.90/mo self-serve</strong> or{" "}
-            <strong className="text-[#0F172A]">$194.90/mo with setup ($1,500)</strong>.
+            <strong className="text-[#0F172A]">$397/mo self-serve (+ $997 setup)</strong> or{" "}
+            <strong className="text-[#0F172A]">$997/mo done-for-you (+ $1,997 setup)</strong>.
             Same features. Better technology. A fraction of the cost.
           </p>
         </div>
@@ -786,8 +786,8 @@ export default function AIPage() {
             product. And it's what we deploy for your business.
           </p>
           <p className="max-w-xl mx-auto mt-3 text-sm text-[#64748B]">
-            Self-serve plans from $349.90/mo. Done-for-you setups from $1,500
-            + $194.90/mo. Every tier includes the full AI suite.
+            Self-serve plans from $397/mo + $997 setup. Done-for-you setups
+            from $997/mo + $1,997 setup. AI agents included on every tier.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a

@@ -16,7 +16,7 @@ import {
 
 const title = "Pricing — Plans & Setup";
 const description =
-  "Transparent pricing for the Adaptation Living Platform. Self-Serve plans from $497/mo and Done-For-You plans from $1,497/mo. Every tier includes a custom SEO website, AI agents, CRM, automated follow-up, and review management. Veteran-owned, Phoenix AZ.";
+  "Transparent pricing for the Adaptation Living Platform. Self-Serve plans from $397/mo and Done-For-You plans from $997/mo. AI agents, CRM, automated follow-up, custom website, and review management. Veteran-owned, Phoenix AZ.";
 
 export const metadata: Metadata = {
   title,
@@ -31,45 +31,79 @@ type Tier = {
   users: string;
   monthly: string;
   setup: string;
+  blurb: string;
   highlighted?: boolean;
 };
 
 const selfServeTiers: Tier[] = [
-  { name: "Launch", users: "3 users", monthly: "$497", setup: "$1,500" },
+  {
+    name: "AI Agents",
+    users: "1 user",
+    monthly: "$397",
+    setup: "$997",
+    blurb:
+      "AI Voice + Chat agents plus the CRM, calendar, and messaging they need to operate. For solo operators who just want the agents working.",
+  },
+  {
+    name: "Launch",
+    users: "3 users",
+    monthly: "$797",
+    setup: "$1,997",
+    blurb:
+      "Everything in AI Agents + full website, automation builder, reputation management, payments, and branded mobile app. The complete platform.",
+  },
   {
     name: "Growth",
     users: "5 users",
-    monthly: "$997",
-    setup: "$2,500",
+    monthly: "$1,497",
+    setup: "$2,997",
     highlighted: true,
+    blurb:
+      "Everything in Launch + AI trained on your knowledge base, industry workflows, pipeline branching, custom reporting, and priority support.",
   },
   {
     name: "Scale",
-    users: "Up to 10 users",
-    monthly: "$1,997",
-    setup: "$5,000",
+    users: "10 users",
+    monthly: "$2,497",
+    setup: "$4,997",
+    blurb:
+      "Everything in Growth + multi-location, custom API integrations, advanced workflow architecture, team training, and a dedicated rep.",
   },
 ];
 
 const doneForYouTiers: Tier[] = [
   {
+    name: "AI Agents DFY",
+    users: "1 user",
+    monthly: "$997",
+    setup: "$1,997",
+    blurb:
+      "We configure your AI voice flow, train the chat agent on your business, link your calendar, and hand you a working system. Live in a week.",
+  },
+  {
     name: "Launch DFY",
     users: "3 users",
-    monthly: "$1,497",
-    setup: "$2,500",
+    monthly: "$1,997",
+    setup: "$2,997",
+    blurb:
+      "We build the custom website, configure agents, import contacts, link integrations, deploy your launch snapshot, and train your team. Live in 2 weeks.",
   },
   {
     name: "Growth DFY",
     users: "5 users",
-    monthly: "$2,497",
-    setup: "$3,500",
+    monthly: "$2,997",
+    setup: "$4,997",
     highlighted: true,
+    blurb:
+      "Launch DFY + AI trained on YOUR knowledge base, industry workflows configured, custom dashboards, and email campaign sequences pre-built.",
   },
   {
     name: "Scale DFY",
-    users: "Up to 10 users",
-    monthly: "$4,497",
-    setup: "$7,500",
+    users: "10 users",
+    monthly: "$4,997",
+    setup: "$7,997",
+    blurb:
+      "Growth DFY + multi-location build, custom API integrations to your existing stack, role mapping, and an embedded engineer for 30 days post-launch.",
   },
 ];
 
@@ -118,6 +152,9 @@ function TierCard({ tier, flavor }: { tier: Tier; flavor: "self" | "dfy" }) {
       <div className="mt-3 text-[13px] text-[#64748B]">
         One-time setup: <strong className="text-[#0B1D3A]">{tier.setup}</strong>
       </div>
+      <p className="mt-5 text-[13.5px] leading-[1.6] text-[#475569]">
+        {tier.blurb}
+      </p>
       <a
         href="/demo"
         className={`mt-7 w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-[10px] text-[12px] font-bold uppercase tracking-[0.14em] transition-all duration-200 ${
@@ -183,11 +220,16 @@ export default function PricingPage() {
               You run it. <span className="text-[#2563EB]">We support you.</span>
             </h2>
           </div>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {selfServeTiers.map((t) => (
               <TierCard key={t.name} tier={t} flavor="self" />
             ))}
           </div>
+          <p className="mx-auto mt-8 max-w-[820px] text-center text-[12.5px] leading-[1.7] text-[#64748B]">
+            Plans cover platform access and configuration. Phone calls, SMS,
+            email volume, and AI processing are billed based on actual usage —
+            you only pay for what your business consumes.
+          </p>
         </div>
       </section>
 
@@ -208,11 +250,16 @@ export default function PricingPage() {
               We run it. <span className="text-[#2563EB]">You focus on clients.</span>
             </h2>
           </div>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {doneForYouTiers.map((t) => (
               <TierCard key={t.name} tier={t} flavor="dfy" />
             ))}
           </div>
+          <p className="mx-auto mt-8 max-w-[820px] text-center text-[12.5px] leading-[1.7] text-[#64748B]">
+            Plans cover platform access and configuration. Phone calls, SMS,
+            email volume, and AI processing are billed based on actual usage —
+            you only pay for what your business consumes.
+          </p>
         </div>
       </section>
 
@@ -269,10 +316,10 @@ export default function PricingPage() {
                   Growth Self-Serve
                 </div>
                 <div className="font-display text-[24px] font-extrabold text-[#0B1D3A]">
-                  $497/mo
+                  $997/mo
                 </div>
                 <div className="text-[12px] text-[#64748B]">
-                  Locked for 12 months · Normally $997/mo
+                  Locked for 12 months · Normally $1,497/mo
                 </div>
               </div>
               <div className="rounded-[12px] border border-[#0B1D3A]/10 bg-white p-5 text-left">
@@ -280,10 +327,10 @@ export default function PricingPage() {
                   Growth Done-For-You
                 </div>
                 <div className="font-display text-[24px] font-extrabold text-[#0B1D3A]">
-                  $1,497/mo
+                  $1,997/mo
                 </div>
                 <div className="text-[12px] text-[#64748B]">
-                  Locked for 12 months · Normally $2,497/mo
+                  Locked for 12 months · Normally $2,997/mo
                 </div>
               </div>
             </div>

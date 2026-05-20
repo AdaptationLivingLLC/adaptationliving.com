@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!c) return {};
 
   const title = `the Adaptation Living Platform vs ${c.name} — Phoenix Small Business Platform`;
-  const description = `${c.tagline} Real price comparison, feature-by-feature breakdown, and honest concessions. the Adaptation Living Platform: $349.90/mo flat, unlimited users, AI phone + chat included.`;
+  const description = `${c.tagline} Real price comparison, feature-by-feature breakdown, and honest concessions. the Adaptation Living Platform: from $397/mo, AI phone + chat included on every tier.`;
 
   return {
     title,
@@ -62,7 +62,7 @@ export default async function VersusPage({ params }: Props) {
     ours: string;
     theirs: string;
   }> = [
-    { feature: "Starting Price", ours: "$349.90/mo flat", theirs: c.priceMonthly },
+    { feature: "Starting Price", ours: "From $397/mo", theirs: c.priceMonthly },
     { feature: "Users Included", ours: "Unlimited at every tier", theirs: "Per-seat billing" },
     { feature: "AI Phone Receptionist", ours: "Included", theirs: "Not offered" },
     { feature: "AI Chat Agent (SMS/Web/Social)", ours: "Included", theirs: "Add-on or not offered" },

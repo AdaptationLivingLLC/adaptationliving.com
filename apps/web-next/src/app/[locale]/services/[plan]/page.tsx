@@ -8,7 +8,7 @@ import {
   CreditCard,
   Sparkles,
 } from "lucide-react";
-import { plans, getPlan } from "../../../../data/plans";
+import { plans, getPlan, PLAN_USAGE_NOTE } from "../../../../data/plans";
 import {
   BreadcrumbSchema,
   pageAlternates,
@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       `${p.name}`,
       `the Adaptation Living Platform ${p.tier}`,
       `${p.tier} CRM plan Phoenix`,
-      `${p.kind === "setup" ? "done-for-you CRM setup" : "self-serve CRM"}`,
+      `${p.kind === "dfy" ? "done-for-you CRM setup" : "self-serve CRM"}`,
       "AI automation Phoenix",
       "all-in-one business platform",
     ],
@@ -86,7 +86,7 @@ export default async function PlanPage({ params }: Props) {
             <div>
               <div className="mb-5 flex flex-wrap items-center gap-2">
                 <span className="rounded-full border border-accent/50 bg-accent/10 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.28em] text-accent">
-                  {p.kind === "setup" ? "Done-For-You" : "Self-Serve · Instant Access"}
+                  {p.kind === "dfy" ? "Done-For-You" : "Self-Serve · Instant Access"}
                 </span>
                 <span className="rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.28em] text-white">
                   {p.tier} Tier
@@ -137,10 +137,10 @@ export default async function PlanPage({ params }: Props) {
                   <Clock className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
                   <div>
                     <dt className="text-[11px] uppercase tracking-[0.24em] text-[#94A3B8]">
-                      {p.kind === "setup" ? "Time To Launch" : "Time To First Login"}
+                      {p.kind === "dfy" ? "Time To Launch" : "Time To First Login"}
                     </dt>
                     <dd className="text-[15px] font-semibold text-white">
-                      {p.kind === "setup" ? "2–3 weeks" : "Under 5 minutes"}
+                      {p.kind === "dfy" ? "2–3 weeks" : "Under 5 minutes"}
                     </dd>
                   </div>
                 </div>
@@ -151,7 +151,7 @@ export default async function PlanPage({ params }: Props) {
                       Users
                     </dt>
                     <dd className="text-[15px] font-semibold text-white">
-                      {p.users} · $50/mo per additional
+                      {p.users} · $75/mo per additional
                     </dd>
                   </div>
                 </div>
@@ -178,6 +178,9 @@ export default async function PlanPage({ params }: Props) {
                   </div>
                 </div>
               </dl>
+              <p className="mt-5 border-t border-white/10 pt-4 text-[12px] leading-[1.6] text-[#94A3B8]">
+                {PLAN_USAGE_NOTE}
+              </p>
             </div>
           </div>
         </div>
@@ -241,7 +244,7 @@ export default async function PlanPage({ params }: Props) {
       <section className="section-cream border-t border-[#0F172A]/5 py-16 sm:py-20">
         <div className="mx-auto max-w-[1400px] px-6 sm:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="eyebrow">What Happens After You {p.kind === "setup" ? "Book" : "Sign Up"}</p>
+            <p className="eyebrow">What Happens After You {p.kind === "dfy" ? "Book" : "Sign Up"}</p>
             <h2 className="mt-3 font-display font-bold text-[#0F172A]">
               No mystery. Here's the exact sequence.
             </h2>
@@ -283,7 +286,7 @@ export default async function PlanPage({ params }: Props) {
           {sibling && (
             <div className="mx-auto mt-10 max-w-3xl rounded-[20px] border-2 border-accent/40 bg-white p-6 shadow-lift sm:p-8">
               <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-accent">
-                Same Tier · {p.kind === "setup" ? "Run It Yourself" : "We Build It For You"}
+                Same Tier · {p.kind === "dfy" ? "Run It Yourself" : "We Build It For You"}
               </p>
               <h3 className="mt-2 font-display text-[22px] font-bold text-[#0F172A]">
                 {sibling.name}
@@ -315,7 +318,7 @@ export default async function PlanPage({ params }: Props) {
                   className="group rounded-[16px] border border-[#0F172A]/10 bg-white p-5 shadow-soft transition-all hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-lift"
                 >
                   <p className="text-[10px] font-bold uppercase tracking-[0.26em] text-[#0F172A]/50">
-                    {other.kind === "setup" ? "Done-For-You" : "Self-Serve"}
+                    {other.kind === "dfy" ? "Done-For-You" : "Self-Serve"}
                   </p>
                   <h3 className="mt-1 font-display text-[17px] font-bold text-[#0F172A]">
                     {other.name}
@@ -342,7 +345,7 @@ export default async function PlanPage({ params }: Props) {
             Get started on {p.name}.
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-[15px] leading-relaxed text-[#94A3B8]">
-            {p.kind === "setup"
+            {p.kind === "dfy"
               ? "Book a 60-minute kickoff call. We'll map your current stack, confirm scope, and start building within 3 business days."
               : "Sign up in under 5 minutes. Stripe checkout, instant platform access, in-app onboarding from minute one."}
           </p>

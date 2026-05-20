@@ -61,7 +61,7 @@ export default function ContactPage() {
               opens: "08:00",
               closes: "18:00",
             },
-            priceRange: "$194.90 - $997.90",
+            priceRange: "$397 - $4,997",
             image: "https://www.adaptationliving.com/images/al-hq-daytime.webp",
             founder: {
               "@type": "Person",

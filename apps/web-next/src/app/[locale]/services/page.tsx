@@ -28,7 +28,7 @@ import { Breadcrumbs } from "../../../components/breadcrumbs";
 const title =
   "Adaptation Living Platform Pricing — AI Automation, CRM & Website Plans | Phoenix, AZ";
 const description =
-  "the Adaptation Living Platform pricing for Phoenix small businesses. Done-For-You setup from $1,500 + $194.90/mo, or Self-Serve from $349.90/mo. AI phone receptionist, AI chat agent, CRM, workflows, website, reviews, 70+ listings — all included on every plan. Veteran-owned.";
+  "the Adaptation Living Platform pricing for Phoenix small businesses. Self-Serve from $397/mo (+ $997 setup), Done-For-You from $997/mo (+ $1,997 setup). AI phone receptionist, AI chat agent, CRM, workflows, website, reviews, 70+ listings — included on full platform tiers. Veteran-owned.";
 
 export const metadata: Metadata = {
   title,
@@ -48,9 +48,11 @@ export const metadata: Metadata = {
   twitter: pageTwitter(title, description),
 };
 
-type DIYPlan = {
+type SelfPlan = {
+  slug: string;
   name: string;
   price: string;
+  setup: string;
   users: string;
   credits: string;
   support: string;
@@ -58,38 +60,56 @@ type DIYPlan = {
   description: string;
 };
 
-const diyPlans: DIYPlan[] = [
+const selfPlans: SelfPlan[] = [
   {
-    name: "Starter DIY",
-    price: "$349.90",
-    users: "Up to 3 users",
+    slug: "ai-agents-self",
+    name: "AI Agents",
+    price: "$397",
+    setup: "$997",
+    users: "1 user",
     credits: "$50 one-time credits at signup",
     support: "Standard email support",
     description:
-      "Full platform access for solo operators and early teams. CRM, calendars, forms, basic automation, and a website builder — ready the day you sign up.",
+      "AI Voice + Chat agents plus the CRM, calendar, and messaging they need to operate. For solo operators who just want the agents working — no full platform.",
   },
   {
-    name: "Growth DIY",
-    price: "$597.90",
-    users: "Up to 5 users",
+    slug: "launch-self",
+    name: "Launch",
+    price: "$797",
+    setup: "$1,997",
+    users: "3 users",
+    credits: "$50 one-time credits at signup",
+    support: "Standard email support",
+    description:
+      "Everything in AI Agents + the full platform: website + funnel builder, full automation, reputation management, payments, branded mobile app, and content AI.",
+  },
+  {
+    slug: "growth-self",
+    name: "Growth",
+    price: "$1,497",
+    setup: "$2,997",
+    users: "5 users",
     credits: "$50 one-time credits at signup",
     support: "Priority support",
     highlighted: true,
     description:
-      "Everything in Starter plus AI Voice + Chat agents, industry-specific workflows, pipeline automation, and custom reporting. The sweet spot for 90% of businesses.",
+      "Everything in Launch + AI agents trained on YOUR knowledge base, industry-specific workflows, pipeline automation with branching, custom reporting, and priority support.",
   },
   {
-    name: "Scale DIY",
-    price: "$997.90",
-    users: "Up to 10 users",
+    slug: "scale-self",
+    name: "Scale",
+    price: "$2,497",
+    setup: "$4,997",
+    users: "10 users",
     credits: "$50 one-time credits at signup",
     support: "Dedicated support contact",
     description:
-      "Everything in Growth plus multi-location configuration, advanced workflow architecture, custom API integrations, and team training access.",
+      "Everything in Growth + multi-location configuration, advanced workflow architecture, custom API integrations to your existing stack, team training, and a dedicated rep.",
   },
 ];
 
-type SetupPlan = {
+type DfyPlan = {
+  slug: string;
   name: string;
   setupFee: string;
   monthly: string;
@@ -100,51 +120,73 @@ type SetupPlan = {
   highlighted?: boolean;
 };
 
-const setupPlans: SetupPlan[] = [
+const dfyPlans: DfyPlan[] = [
   {
-    name: "Starter Setup",
-    setupFee: "$1,500",
-    monthly: "$194.90",
-    users: "Up to 3 users",
+    slug: "ai-agents-dfy",
+    name: "AI Agents DFY",
+    setupFee: "$1,997",
+    monthly: "$997",
+    users: "1 user",
     credits: "$100 one-time credits at signup",
     support: "Standard support",
     includes: [
-      "Contact database import",
-      "Custom domain linking + DNS",
-      "All API key integrations",
-      "Social media account linking",
-      "Starter snapshot deployment (CRM pipeline, calendar, follow-up, review automation, Content AI)",
+      "AI Voice Agent script + flow configuration",
+      "AI Chat Agent training on your website + FAQs",
+      "Calendar setup (availability, buffers, reminders)",
+      "Phone number provisioning + A2P 10DLC registration",
+      "Live kickoff call with implementation engineer",
     ],
   },
   {
-    name: "Growth Setup",
-    setupFee: "$2,500",
-    monthly: "$394.90",
-    users: "Up to 5 users",
+    slug: "launch-dfy",
+    name: "Launch DFY",
+    setupFee: "$2,997",
+    monthly: "$1,997",
+    users: "3 users",
+    credits: "$100 one-time credits at signup",
+    support: "Standard support",
+    includes: [
+      "Everything in AI Agents DFY",
+      "Custom website built and SEO-optimized",
+      "Contact database import",
+      "Custom domain linking + DNS",
+      "All API key + social media integrations",
+      "Launch snapshot deployment + team training",
+    ],
+  },
+  {
+    slug: "growth-dfy",
+    name: "Growth DFY",
+    setupFee: "$4,997",
+    monthly: "$2,997",
+    users: "5 users",
     credits: "$100 one-time credits at signup",
     support: "Priority support",
     highlighted: true,
     includes: [
-      "Everything in Starter Setup",
-      "Industry-specific workflow configurations",
-      "AI Voice + Chat agent training on your knowledge base",
-      "Custom reporting dashboard",
-      "Funnel + landing page templates loaded",
+      "Everything in Launch DFY",
+      "Industry-specific workflow configurations (40+ templates)",
+      "AI agents trained on your knowledge base, FAQs, and tone",
+      "Custom reporting dashboard with your KPIs",
+      "Funnel + landing page templates loaded and branded",
+      "Email campaign sequences pre-built",
     ],
   },
   {
-    name: "Scale Setup",
-    setupFee: "$5,000",
-    monthly: "$694.90",
-    users: "Up to 10 users",
+    slug: "scale-dfy",
+    name: "Scale DFY",
+    setupFee: "$7,997",
+    monthly: "$4,997",
+    users: "10 users",
     credits: "$100 one-time credits at signup",
     support: "Dedicated contact",
     includes: [
-      "Everything in Growth Setup",
-      "Multi-location configuration",
-      "Custom API integrations (your stack)",
+      "Everything in Growth DFY",
+      "Multi-location configuration (unlimited locations)",
+      "Custom API integrations (QuickBooks, ERP, Stripe Connect)",
       "Team training sessions (up to 3 hours)",
-      "Advanced workflow architecture (conditional branching, multi-step sequences)",
+      "Advanced workflow architecture (deep branching, complex triggers)",
+      "Dedicated implementation engineer for 30 days post-launch",
     ],
   },
 ];
@@ -171,11 +213,11 @@ const faqs = [
   },
   {
     q: "Are the credits monthly or one-time?",
-    a: "One-time credits at signup. The amount ($50 DIY or $100 Setup) is added to your wallet on day one and covers typical first-month SMS, email, and AI usage. After that, usage is billed at transparent wholesale pass-through rates — no markup.",
+    a: "One-time credits at signup. The amount ($50 Self-Serve or $100 Done-For-You) is added to your wallet on day one and covers typical first-month SMS, email, and AI usage. After that, usage is billed at transparent wholesale pass-through rates — no markup.",
   },
   {
     q: "What's actually included for that monthly price?",
-    a: "Every single feature on the platform: CRM, AI Voice Agent, AI Chat Agent, workflow automation, email and SMS marketing, review management, calendar booking, website and funnel builder, 70+ directory listings, social media scheduler, Facebook ad manager, invoicing and payments, branded mobile app, and reporting. Tiers differentiate on user count, setup depth, and support level — not feature access.",
+    a: "AI Agents ($397) includes AI Voice + Chat agents plus the CRM, calendar, and messaging they need to operate — the minimum platform required to run the agents. Launch and above unlock the full platform: workflow automation, website + funnel builder, 70+ directory listings, social media scheduler, Facebook ad manager, invoicing and payments, branded mobile app, and reporting. Growth adds AI training on your knowledge base, industry workflows, and custom reporting. Scale adds multi-location and custom API integrations. Phone, SMS, email, and AI processing usage is billed at-cost on top of the plan.",
   },
   {
     q: "Can I upgrade or downgrade later?",
@@ -213,16 +255,18 @@ export default function ServicesPage() {
             offers: {
               "@type": "AggregateOffer",
               priceCurrency: "USD",
-              lowPrice: "194.90",
-              highPrice: "997.90",
-              offerCount: 6,
+              lowPrice: "397",
+              highPrice: "4997",
+              offerCount: 8,
               offers: [
-                { "@type": "Offer", name: "Starter Setup", price: "194.90", priceCurrency: "USD", availability: "https://schema.org/InStock" },
-                { "@type": "Offer", name: "Growth Setup", price: "394.90", priceCurrency: "USD", availability: "https://schema.org/InStock" },
-                { "@type": "Offer", name: "Scale Setup", price: "694.90", priceCurrency: "USD", availability: "https://schema.org/InStock" },
-                { "@type": "Offer", name: "Starter DIY", price: "349.90", priceCurrency: "USD", availability: "https://schema.org/InStock" },
-                { "@type": "Offer", name: "Growth DIY", price: "597.90", priceCurrency: "USD", availability: "https://schema.org/InStock" },
-                { "@type": "Offer", name: "Scale DIY", price: "997.90", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+                { "@type": "Offer", name: "AI Agents Self-Serve", price: "397", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+                { "@type": "Offer", name: "Launch Self-Serve", price: "797", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+                { "@type": "Offer", name: "Growth Self-Serve", price: "1497", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+                { "@type": "Offer", name: "Scale Self-Serve", price: "2497", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+                { "@type": "Offer", name: "AI Agents DFY", price: "997", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+                { "@type": "Offer", name: "Launch DFY", price: "1997", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+                { "@type": "Offer", name: "Growth DFY", price: "2997", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+                { "@type": "Offer", name: "Scale DFY", price: "4997", priceCurrency: "USD", availability: "https://schema.org/InStock" },
               ],
             },
           }),
@@ -252,10 +296,10 @@ export default function ServicesPage() {
             Pricing Built <span className="text-accent">for Phoenix Businesses.</span>
           </h1>
           <p className="mt-4 text-base leading-relaxed text-[#475569] max-w-2xl">
-            Done-For-You from <strong className="text-[#0F172A]">$1,500 + $194.90/mo</strong>, or
-            Self-Serve from <strong className="text-[#0F172A]">$349.90/mo</strong>. Every plan
-            unlocks the full the Adaptation Living Platform — AI agents, CRM, workflows,
-            marketing, website, 70+ listings, and a branded mobile app.
+            Self-Serve from <strong className="text-[#0F172A]">$397/mo + $997 setup</strong>, or
+            Done-For-You from <strong className="text-[#0F172A]">$997/mo + $1,997 setup</strong>.
+            Four tiers each — start with just AI agents, scale up to the full platform with
+            multi-location support, custom integrations, and a dedicated rep.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <a
@@ -293,8 +337,8 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            {setupPlans.map((plan) => (
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {dfyPlans.map((plan) => (
               <div
                 key={plan.name}
                 className={`relative rounded-[22px] p-7 flex flex-col transition-all hover:-translate-y-1 ${
@@ -346,7 +390,7 @@ export default function ServicesPage() {
                 </div>
 
                 <a
-                  href="/intake"
+                  href={`/intake?plan=${plan.slug}`}
                   className={`block text-center px-6 py-3.5 text-xs font-bold uppercase tracking-[0.22em] rounded-sm transition-all ${
                     plan.highlighted
                       ? "border-2 border-accent bg-accent text-navy shadow-gold hover:bg-transparent hover:text-accent"
@@ -360,8 +404,14 @@ export default function ServicesPage() {
           </div>
 
           <p className="mt-10 text-center text-sm text-[#64748B]">
-            Book a call → we onboard you → launch in 2–3 weeks. Month-to-month
-            after setup. No long-term contracts.
+            Book a call → we onboard you → AI Agents live in a week, full
+            platform live in 2–3 weeks. Month-to-month after setup. No
+            long-term contracts.
+          </p>
+          <p className="mx-auto mt-4 max-w-[820px] text-center text-[12px] leading-[1.7] text-[#64748B]">
+            Plans cover platform access and configuration. Phone calls, SMS,
+            email volume, and AI processing are billed based on actual usage —
+            you only pay for what your business consumes.
           </p>
         </div>
       </section>
@@ -378,14 +428,13 @@ export default function ServicesPage() {
               You Run the Platform. Log In the Same Day.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-[#475569] max-w-3xl sm:text-lg">
-              Buy now, access the dashboard in minutes. No setup fee, no
-              long-term contract, cancel anytime. Every plan includes the full
-              the Adaptation Living Platform.
+              Buy now, access the dashboard in minutes. Month-to-month, cancel
+              anytime. Start with just the AI agents or get the full platform.
             </p>
           </div>
 
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            {diyPlans.map((plan) => (
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {selfPlans.map((plan) => (
               <div
                 key={plan.name}
                 className={`relative rounded-[22px] p-7 flex flex-col shadow-soft transition-all hover:-translate-y-1 hover:shadow-lift ${
@@ -409,7 +458,7 @@ export default function ServicesPage() {
                     <span className="text-sm font-normal text-[#0F172A]/50">/mo</span>
                   </p>
                   <p className="mt-2 text-xs text-[#0F172A]/60">
-                    No setup fee · Instant access
+                    + <strong className="text-[#0F172A]">{plan.setup}</strong> one-time setup · Instant access
                   </p>
                 </div>
 
@@ -427,7 +476,7 @@ export default function ServicesPage() {
                 </p>
 
                 <a
-                  href="/intake?plan=self-serve"
+                  href={`/intake?plan=${plan.slug}`}
                   className={`block text-center px-6 py-3.5 text-xs font-bold uppercase tracking-[0.22em] rounded-sm transition-all ${
                     plan.highlighted
                       ? "border-2 border-accent bg-accent text-navy shadow-gold hover:bg-transparent hover:text-accent"
@@ -441,8 +490,13 @@ export default function ServicesPage() {
           </div>
 
           <p className="mt-10 text-center text-sm text-[#475569]">
-            Additional users: $50/mo each. Secure signup. Instant provisioning
+            Additional users: $75/mo each. Secure signup. Instant provisioning
             through our team — you'll be live within 24 hours of intake.
+          </p>
+          <p className="mx-auto mt-4 max-w-[820px] text-center text-[12px] leading-[1.7] text-[#64748B]">
+            Plans cover platform access and configuration. Phone calls, SMS,
+            email volume, and AI processing are billed based on actual usage —
+            you only pay for what your business consumes.
           </p>
         </div>
       </section>
@@ -497,9 +551,9 @@ export default function ServicesPage() {
             <p className="mt-4 text-base leading-relaxed text-[#475569] max-w-3xl">
               Credits cover AI calls, SMS, email, content generation, and
               review responses. Every plan includes a <strong className="text-[#0F172A]">one-time credit bundle at signup</strong>{" "}
-              ($50 DIY, $100 Setup). After credits are used, usage is billed at
-              wholesale pass-through rates — no markup, no hidden fees. You see
-              every charge in your dashboard.
+              ($50 Self-Serve, $100 Done-For-You). After credits are used, usage
+              is billed at wholesale pass-through rates — no markup, no hidden
+              fees. You see every charge in your dashboard.
             </p>
           </div>
           <div className="grid gap-5 sm:grid-cols-3">
@@ -599,10 +653,10 @@ export default function ServicesPage() {
                   </td>
                   <td className="py-5 px-5 text-right">
                     <span className="block font-display font-bold text-2xl sm:text-3xl text-accent">
-                      $349.90
+                      $797
                     </span>
                     <span className="block text-[11px] text-[#64748B] font-mono mt-1">
-                      /mo · all-in
+                      /mo · all-in (Launch tier)
                     </span>
                   </td>
                 </tr>
@@ -615,17 +669,17 @@ export default function ServicesPage() {
                   <td className="py-5 px-5" colSpan={2}>
                     <div className="flex flex-wrap items-baseline gap-3">
                       <span className="font-display font-bold text-2xl sm:text-3xl text-white">
-                        $972–$3,409
+                        $525–$2,962
                       </span>
                       <span className="text-sm text-[#94A3B8]">per month</span>
                       <span className="text-accent">·</span>
                       <span className="font-display font-bold text-xl sm:text-2xl text-accent">
-                        $11,664–$40,908
+                        $6,300–$35,544
                       </span>
                       <span className="text-sm text-[#94A3B8]">per year</span>
                     </div>
                     <p className="mt-2 text-[11px] text-[#64748B]">
-                      Based on Starter DIY. Growth ($597.90) and Scale ($997.90) tiers still undercut the stack.
+                      Based on Launch Self-Serve. AI Agents ($397) replaces fewer tools at lower cost; Growth ($1,497) and Scale ($2,497) tiers add more capability and still undercut a full SaaS stack.
                     </p>
                   </td>
                 </tr>

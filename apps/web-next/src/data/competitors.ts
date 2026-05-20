@@ -38,7 +38,7 @@ export const competitors: Competitor[] = [
     tagline:
       "the Adaptation Living Platform vs HubSpot — Enterprise power without the enterprise invoice.",
     ourEdge: [
-      "Flat $349.90/mo vs HubSpot's $800+/mo for comparable features",
+      "From $397/mo vs HubSpot's $800+/mo for comparable features",
       "Unlimited users — no per-seat bill every time you hire",
       "Two-way SMS and social DMs built in, not a paid add-on",
       "Funnels, websites, and calendars included — no Marketing Hub upgrade",
@@ -77,7 +77,7 @@ export const competitors: Competitor[] = [
       "Legacy small-business CRM known for pioneering 'Infusionsoft' email automation, now dated and per-seat priced.",
     tagline: "the Adaptation Living Platform vs Keap — Modern AI built in, not bolted on.",
     ourEdge: [
-      "Starts at $349.90/mo with unlimited users and contacts",
+      "Starts at $397/mo with AI agents included",
       "Native 2-way SMS, calls, and conversation inbox included",
       "Visual workflow builder beats Keap's pre-built campaigns",
       "No per-seat or per-contact price creep as you grow",
@@ -156,7 +156,7 @@ export const competitors: Competitor[] = [
     tagline:
       "the Adaptation Living Platform vs SharpSpring — Unlimited contacts, not contact-tiered billing.",
     ourEdge: [
-      "$349.90/mo unlimited vs SharpSpring's contact-tiered bills",
+      "From $397/mo vs SharpSpring's contact-tiered bills",
       "2-way SMS and call tracking included, not add-ons",
       "Replaces three-plus tools most SharpSpring users stack",
       "White-label SaaS creation without developers",
@@ -216,7 +216,7 @@ export const competitors: Competitor[] = [
     tagline:
       "the Adaptation Living Platform vs Salesforce — Enterprise capability without the consulting bill.",
     ourEdge: [
-      "$349.90/mo flat vs $500/user/mo plus six-figure rollouts",
+      "From $397/mo vs $500/user/mo plus six-figure rollouts",
       "New hires productive in under an hour, not a quarter",
       "SMS, email, DMs, and calls — no AppExchange add-ons",
       "Landing pages, calendars, and automations built in",

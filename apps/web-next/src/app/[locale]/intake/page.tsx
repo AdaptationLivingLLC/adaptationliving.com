@@ -22,13 +22,18 @@ export const metadata: Metadata = {
 };
 
 const PLAN_LABELS: Record<string, string> = {
-  "starter-setup": "Starter Setup ($1,500 + $194.90/mo · up to 3 users)",
-  "growth-setup": "Growth Setup ($2,500 + $394.90/mo · up to 5 users)",
-  "scale-setup": "Scale Setup ($5,000 + $694.90/mo · up to 10 users)",
-  "self-serve": "Self-Serve (from $349.90/mo · instant access · no setup fee)",
-  "starter-diy": "Starter DIY ($349.90/mo · up to 3 users)",
-  "growth-diy": "Growth DIY ($597.90/mo · up to 5 users)",
-  "scale-diy": "Scale DIY ($997.90/mo · up to 10 users)",
+  // Self-Serve
+  "ai-agents-self": "AI Agents Self-Serve ($397/mo + $997 setup · 1 user)",
+  "launch-self": "Launch Self-Serve ($797/mo + $1,997 setup · 3 users)",
+  "growth-self": "Growth Self-Serve ($1,497/mo + $2,997 setup · 5 users)",
+  "scale-self": "Scale Self-Serve ($2,497/mo + $4,997 setup · 10 users)",
+  // Done-For-You
+  "ai-agents-dfy": "AI Agents DFY ($997/mo + $1,997 setup · 1 user)",
+  "launch-dfy": "Launch DFY ($1,997/mo + $2,997 setup · 3 users)",
+  "growth-dfy": "Growth DFY ($2,997/mo + $4,997 setup · 5 users)",
+  "scale-dfy": "Scale DFY ($4,997/mo + $7,997 setup · 10 users)",
+  // Generic
+  "self-serve": "Self-Serve (from $397/mo · instant access)",
 };
 
 export default async function IntakePage({

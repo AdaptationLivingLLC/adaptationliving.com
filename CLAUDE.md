@@ -29,51 +29,64 @@
 
 ## Pricing Tiers
 
-### Starter
+Updated 2026-05-20. Four tiers per kind (Self-Serve / Done-For-You). Every tier has a setup fee.
 
-| | Setup (Done-For-You) | DIY (Self-Serve) |
-|--|---------------------|------------------|
-| Setup Fee | $1,500 | None |
-| Monthly | $194.90/mo | $349.90/mo |
+### AI Agents (entry tier — agents only, minimum platform to support them)
+
+| | Self-Serve | Done-For-You |
+|--|------------|--------------|
+| Monthly | $397/mo | $997/mo |
+| Setup Fee | $997 | $1,997 |
+| Users Included | 1 | 1 |
+| Credits Included | $50 | $100 |
+| Support | Standard email | Standard |
+| What's In It | AI Voice + AI Chat agents, CRM (contacts/calendar/conversations), 2-way SMS + email, booking pages | Same + we configure agent flows, train chat on your business, link calendar, provision phone number |
+
+### Launch (full platform)
+
+| | Self-Serve | Done-For-You |
+|--|------------|--------------|
+| Monthly | $797/mo | $1,997/mo |
+| Setup Fee | $1,997 | $2,997 |
 | Users Included | 3 | 3 |
-| Credits Included | $100 | $50 |
-| Support | Standard | Standard |
-| Snapshot | Basic (CRM, pipeline, calendar, follow-up workflow, review automation, Content AI) | Same (auto-loaded on signup) |
-| CTA | "Book Setup Call" → /intake | "Get Started" → Stripe checkout |
+| Credits Included | $50 | $100 |
+| Support | Standard email | Standard |
+| What's In It | Everything in AI Agents + website + funnel builder, full workflow automation, reputation management, 70+ listings sync, payments, branded mobile app, Content/Workflow/Funnel AI | Same + custom website built, contact import, domain + DNS, API + social integrations, snapshot deployed, team training |
 
-### Growth
+### Growth (most-picked — adds depth on top of Launch)
 
-| | Setup (Done-For-You) | DIY (Self-Serve) |
-|--|---------------------|------------------|
-| Setup Fee | $2,500 | None |
-| Monthly | $394.90/mo | $597.90/mo |
+| | Self-Serve | Done-For-You |
+|--|------------|--------------|
+| Monthly | $1,497/mo | $2,997/mo |
+| Setup Fee | $2,997 | $4,997 |
 | Users Included | 5 | 5 |
-| Credits Included | $100 | $50 |
+| Credits Included | $50 | $100 |
 | Support | Priority | Priority |
-| Snapshot | Everything in Starter + industry-specific workflows, AI agent tuning, custom reporting dashboard | Same (auto-loaded) |
+| What's In It | Everything in Launch + AI trained on YOUR knowledge base, industry workflow snapshots, pipeline automation with branching, custom reporting dashboard | Same + industry workflows configured for your business, custom dashboard, funnel/email sequences pre-built |
 
-### Scale
+### Scale (multi-location + integrations)
 
-| | Setup (Done-For-You) | DIY (Self-Serve) |
-|--|---------------------|------------------|
-| Setup Fee | $5,000 | None |
-| Monthly | $694.90/mo | $997.90/mo |
+| | Self-Serve | Done-For-You |
+|--|------------|--------------|
+| Monthly | $2,497/mo | $4,997/mo |
+| Setup Fee | $4,997 | $7,997 |
 | Users Included | 10 | 10 |
-| Credits Included | $100 | $50 |
-| Support | Dedicated contact | Dedicated contact |
-| Snapshot | Everything in Growth + multi-location config, custom API integrations, team training, advanced workflow architecture | Same (auto-loaded) |
+| Credits Included | $50 | $100 |
+| Support | Dedicated rep | Dedicated rep |
+| What's In It | Everything in Growth + multi-location config, advanced workflow architecture, custom API integrations, team training library | Same + we build the multi-location shell, role/permission mapping, embedded engineer 30 days post-launch, quarterly optimization reviews |
 
 ### Universal Rules
-- Additional users: $50/mo per person (all tiers)
+- Additional users: $75/mo per person above tier cap (all tiers)
 - Referral program: 1 month free + $100 credits per converted referral
-- All tiers include the FULL platform — tiers differentiate on user count, setup depth, and support level
-- Credits cover: AI calls, SMS, email campaigns, content generation, review responses
-- Usage-based rebilling kicks in after credits are consumed
+- Usage costs (phone, SMS, email volume, AI processing) billed on top of plan, based on actual consumption — pass-through pricing at wholesale rates
+- Credits cover initial usage at signup; after that, billed monthly as consumed
+- AI Agents tier intentionally limited to AI Voice + AI Chat + supporting CRM/calendar/messaging — does NOT include website builder, full workflow automation, payments, mobile app, or 70+ listings (those start at Launch)
 
-### Stripe Checkout Links (Existing — may need updating for new prices)
-- Starter: https://buy.stripe.com/9B6fZhfK41e97a5de69MY0f
-- Growth: https://buy.stripe.com/28EaEX41m3mh661fme9MY0g
-- Scale: https://buy.stripe.com/cNicN5gO84qlfGBgqi9MY0i
+### Stripe Checkout Links — STALE (old prices)
+- Old Starter: https://buy.stripe.com/9B6fZhfK41e97a5de69MY0f
+- Old Growth: https://buy.stripe.com/28EaEX41m3mh661fme9MY0g
+- Old Scale: https://buy.stripe.com/cNicN5gO84qlfGBgqi9MY0i
+- **TODO:** Create new SaaS Configurator products in GHL for the 8 new tiers, generate new Stripe links, wire them into intake CTAs. Until then, all CTAs route to /demo or /intake to avoid charging wrong amounts.
 
 ---
 
@@ -301,8 +314,8 @@ Snapshots are pre-built business-in-a-box templates that auto-load when a client
 
 | Service | GHL Price | Brandon's Equivalent |
 |---------|-----------|---------------------|
-| Basic Account Setup | $299 | Starter Setup ($1,500) |
-| Advanced Account Setup | $1,000 | Growth/Scale Setup ($2,500-$5,000) |
+| Basic Account Setup | $299 | AI Agents DFY ($1,997 setup) / Launch DFY ($2,997 setup) |
+| Advanced Account Setup | $1,000 | Growth/Scale DFY ($4,997-$7,997 setup) |
 | Priority Support | $300/mo | Included in Growth/Scale tiers |
 | White-label Mobile App | $497/mo | Future premium add-on |
 | Eliza Agent | $500/mo | AI Employee built into platform |
@@ -324,7 +337,7 @@ Snapshots are pre-built business-in-a-box templates that auto-load when a client
 - Walk in with their SEO report on laptop
 - Live demo of AI chat responding on adaptationliving.com
 - Show dashboard with real metrics
-- Offer Starter Setup at $1,500 + $194.90/mo
+- Offer AI Agents Self-Serve at $397/mo + $997 setup, or Launch DFY at $1,997/mo + $2,997 setup
 
 ### Online Listings Pitch
 - "Your business info is inconsistent across 70+ sites — we fix that automatically"
