@@ -169,6 +169,13 @@ function TierCard({ tier, flavor }: { tier: Tier; flavor: "self" | "dfy" }) {
   );
 }
 
+// Annual price = monthly × 10 (two months free), minus $3 so the figure ends in
+// 7 instead of a round/even number; setup fee is waived on annual.
+function annualFromMonthly(monthly: string): string {
+  const n = Number(monthly.replace(/[^0-9.]/g, "")) * 10 - 3;
+  return `$${n.toLocaleString("en-US")}`;
+}
+
 export default function PricingPage() {
   const breadcrumbs = [
     { name: "Home", path: "/" },
@@ -260,6 +267,81 @@ export default function PricingPage() {
             email volume, and AI processing are billed based on actual usage —
             you only pay for what your business consumes.
           </p>
+        </div>
+      </section>
+
+      {/* Annual Pricing — pay yearly, two months free, setup waived */}
+      <section className="bg-white py-16 border-t border-[#0B1D3A]/5">
+        <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
+          <div className="text-center mb-10">
+            <span className="inline-block text-[10px] font-bold tracking-[0.32em] uppercase text-[#2563EB] mb-3">
+              Pay Annually
+            </span>
+            <h2 className="font-display text-[clamp(24px,3.5vw,38px)] font-extrabold text-[#0B1D3A] leading-[1.1] tracking-[-0.02em]">
+              Prepay the year.{" "}
+              <span className="text-[#2563EB]">Two months free, setup waived.</span>
+            </h2>
+            <p className="mx-auto mt-4 max-w-[680px] text-[14px] leading-[1.7] text-[#64748B]">
+              Pay 12 months upfront at 10× your monthly rate — you save two
+              months, and the one-time setup fee is removed entirely.
+            </p>
+          </div>
+
+          <div className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#2563EB] mb-4">
+            Self-Serve
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {selfServeTiers.map((t) => (
+              <div
+                key={`annual-self-${t.name}`}
+                className="rounded-[16px] border-2 border-[#0B1D3A]/10 bg-white p-6"
+              >
+                <h3 className="font-display text-[18px] font-extrabold text-[#0B1D3A]">
+                  {t.name}
+                </h3>
+                <div className="mt-1 text-[12px] text-[#64748B]">{t.users}</div>
+                <div className="mt-4 flex items-baseline gap-1">
+                  <span className="font-display text-[30px] font-extrabold text-[#0B1D3A] leading-none tracking-[-0.02em]">
+                    {annualFromMonthly(t.monthly)}
+                  </span>
+                  <span className="text-[13px] font-semibold text-[#64748B]">
+                    /yr
+                  </span>
+                </div>
+                <div className="mt-2 text-[12.5px] font-semibold text-[#2563EB]">
+                  Setup fee waived
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#2563EB] mt-10 mb-4">
+            Done-For-You
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {doneForYouTiers.map((t) => (
+              <div
+                key={`annual-dfy-${t.name}`}
+                className="rounded-[16px] border-2 border-[#0B1D3A]/10 bg-white p-6"
+              >
+                <h3 className="font-display text-[18px] font-extrabold text-[#0B1D3A]">
+                  {t.name}
+                </h3>
+                <div className="mt-1 text-[12px] text-[#64748B]">{t.users}</div>
+                <div className="mt-4 flex items-baseline gap-1">
+                  <span className="font-display text-[30px] font-extrabold text-[#0B1D3A] leading-none tracking-[-0.02em]">
+                    {annualFromMonthly(t.monthly)}
+                  </span>
+                  <span className="text-[13px] font-semibold text-[#64748B]">
+                    /yr
+                  </span>
+                </div>
+                <div className="mt-2 text-[12.5px] font-semibold text-[#2563EB]">
+                  Setup fee waived
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

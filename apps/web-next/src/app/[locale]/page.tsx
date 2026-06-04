@@ -287,7 +287,7 @@ const localBusinessSchema = {
   image: "https://www.adaptationliving.com/images/og-share-2026-04-27.jpg",
   url: "https://www.adaptationliving.com",
   telephone: "+1-623-219-1237",
-  priceRange: "$497–$4,497/mo",
+  priceRange: "$397–$4,997/mo",
   address: {
     "@type": "PostalAddress",
     streetAddress: "3030 N Central Ave, Suite 507",
@@ -1127,14 +1127,14 @@ export default function HomePage() {
                     <strong className="text-[#0B1D3A]">Launch</strong> · 3
                     users
                   </span>
-                  <span className="text-[#2563EB] font-extrabold">$497/mo</span>
+                  <span className="text-[#2563EB] font-extrabold">$797/mo</span>
                 </li>
                 <li className="flex justify-between gap-4 border-b border-[#0B1D3A]/6 pb-3">
                   <span>
                     <strong className="text-[#0B1D3A]">Growth</strong> · 5
                     users
                   </span>
-                  <span className="text-[#2563EB] font-extrabold">$997/mo</span>
+                  <span className="text-[#2563EB] font-extrabold">$1,497/mo</span>
                 </li>
                 <li className="flex justify-between gap-4">
                   <span>
@@ -1142,12 +1142,12 @@ export default function HomePage() {
                     10 users
                   </span>
                   <span className="text-[#2563EB] font-extrabold">
-                    $1,997/mo
+                    $2,497/mo
                   </span>
                 </li>
               </ul>
               <p className="mt-5 text-[12px] text-[#64748B]">
-                One-time setup: $1,500 / $2,500 / $5,000.
+                One-time setup: $1,997 / $2,997 / $4,997.
               </p>
             </div>
             {/* Done-For-You */}
@@ -1168,7 +1168,7 @@ export default function HomePage() {
                     users
                   </span>
                   <span className="text-[#2563EB] font-extrabold">
-                    $1,497/mo
+                    $1,997/mo
                   </span>
                 </li>
                 <li className="flex justify-between gap-4 border-b border-[#0B1D3A]/6 pb-3">
@@ -1177,7 +1177,7 @@ export default function HomePage() {
                     users
                   </span>
                   <span className="text-[#2563EB] font-extrabold">
-                    $2,497/mo
+                    $2,997/mo
                   </span>
                 </li>
                 <li className="flex justify-between gap-4">
@@ -1186,12 +1186,12 @@ export default function HomePage() {
                     to 10 users
                   </span>
                   <span className="text-[#2563EB] font-extrabold">
-                    $4,497/mo
+                    $4,997/mo
                   </span>
                 </li>
               </ul>
               <p className="mt-5 text-[12px] text-[#64748B]">
-                One-time setup: $2,500 / $3,500 / $7,500.
+                One-time setup: $2,997 / $4,997 / $7,997.
               </p>
             </div>
           </div>
@@ -1201,8 +1201,8 @@ export default function HomePage() {
             </div>
             <p className="text-[15px] leading-relaxed text-[#713F12] max-w-[760px] mx-auto">
               First 10 Phoenix law firms and mitigation specialists: Growth
-              Self-Serve locked at <strong>$497/mo</strong> for 12 months, or
-              Growth Done-For-You locked at <strong>$1,497/mo</strong> for 12
+              Self-Serve locked at <strong>$997/mo</strong> for 12 months, or
+              Growth Done-For-You locked at <strong>$1,997/mo</strong> for 12
               months. <strong>Setup fees waived.</strong>
             </p>
           </div>
