@@ -42,12 +42,12 @@ export function NavBar() {
       }`}
     >
       <div className="max-w-[1400px] mx-auto flex flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-10 lg:py-4">
-        <a href="/" className="flex items-baseline gap-3">
+        <a href="/" className="flex flex-col gap-1">
           <span className="font-display font-bold text-[#0B1D3A] tracking-[0.03em] leading-none text-[28px] sm:text-[34px] lg:text-[40px] hover:text-[#2563EB] transition-colors duration-200">
-            ADAPTATION LIVING
+            ADAPTIVE AI
           </span>
-          <span className="text-[13px] sm:text-[15px] lg:text-[17px] text-[#0B1D3A]/75 font-display tracking-[0.3em] uppercase font-bold leading-none">
-            LLC
+          <span className="text-[10px] sm:text-[11px] lg:text-[12px] text-[#0B1D3A]/70 font-display tracking-[0.24em] uppercase font-semibold leading-none">
+            born from Adaptation Living
           </span>
         </a>
 

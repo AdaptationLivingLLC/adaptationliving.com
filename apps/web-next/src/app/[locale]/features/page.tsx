@@ -29,9 +29,9 @@ import {
 import { Breadcrumbs } from "../../../components/breadcrumbs";
 
 const title =
-  "Every Adaptation Living Platform Feature — AI, CRM, Automation | Phoenix, AZ";
+  "Every Adaptive AI Feature — AI, CRM, Automation | Phoenix, AZ";
 const description =
-  "The complete the Adaptation Living Platform feature list. AI phone receptionist, AI chat agent, CRM with pipelines, workflow automation, email + SMS marketing, 70+ directory listings, reputation management, website builder, calendar booking, invoicing, branded mobile app. Every tier includes everything.";
+  "The complete Adaptive AI feature list. AI phone receptionist, AI chat agent, CRM with pipelines, workflow automation, email + SMS marketing, 70+ directory listings, reputation management, website builder, calendar booking, invoicing, branded mobile app. Every tier includes everything.";
 
 export const metadata: Metadata = {
   title,

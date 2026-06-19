@@ -93,11 +93,13 @@ export function SiteChrome({ children, locale }: SiteChromeProps) {
           <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:items-start">
             <div>
               <p className="font-display text-2xl font-bold text-white tracking-[0.04em]">
-                ADAPTATION LIVING{" "}
-                <span className="text-[#2563EB] text-sm tracking-[0.28em]">LLC</span>
+                ADAPTIVE AI
+              </p>
+              <p className="mt-1 text-[11px] uppercase tracking-[0.24em] text-[#2563EB] font-semibold">
+                born from Adaptation Living
               </p>
               <p className="mt-3 text-sm leading-relaxed text-[#94A3B8] max-w-md">
-                the Adaptation Living Platform — AI automation, CRM, and a complete business
+                Adaptive AI — automation, CRM, and a complete business
                 operating system for Phoenix, AZ. Veteran-owned, SAM.gov
                 registered, headquartered in Uptown Phoenix since 2021.
               </p>
@@ -136,7 +138,7 @@ export function SiteChrome({ children, locale }: SiteChromeProps) {
 
             <div>
               <p className="text-[10px] uppercase tracking-[0.26em] text-[#2563EB] font-bold mb-4">
-                the Adaptation Living Platform Vs
+                Adaptive AI Vs
               </p>
               <ul className="space-y-2 text-sm">
                 {competitors.map((c) => (
@@ -145,7 +147,7 @@ export function SiteChrome({ children, locale }: SiteChromeProps) {
                       href={`/vs/${c.slug}`}
                       className="text-[#94A3B8] hover:text-[#2563EB]"
                     >
-                      the Adaptation Living Platform Vs {c.name}
+                      Adaptive AI Vs {c.name}
                     </a>
                   </li>
                 ))}

@@ -118,14 +118,14 @@ export default function DemoPage() {
               </div>
 
               <h1 className="h-display font-bold tracking-tight text-white">
-                See the Adaptation Living Platform <span className="bg-gradient-to-r from-accent via-[#3B82F6] to-accent bg-clip-text text-transparent">Run Your Business</span> in 30 Minutes.
+                See <span className="bg-gradient-to-r from-accent via-[#3B82F6] to-accent bg-clip-text text-transparent">Adaptive AI Run Your Business</span> in 30 Minutes.
               </h1>
 
               <p className="mt-5 max-w-xl text-base leading-relaxed text-[#94A3B8] sm:text-lg">
                 Book a live walkthrough. We'll show your business running on the
                 platform — AI phone answering real calls, AI chat replying on
                 SMS, a pipeline closing deals, and workflows automating the
-                busywork. If the Adaptation Living Platform isn't the right fit, we'll say so.
+                busywork. If Adaptive AI isn't the right fit, we'll say so.
               </p>
 
               <ul className="mt-7 space-y-3">
